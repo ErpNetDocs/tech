@@ -4,7 +4,10 @@ items: CalculatedAttributeExamples
 
 # Get available to promise (ATP) quantity
 
-This example shows how you can create a calculated attribute that gets the **[avaible to promise (ATP)](https://docs.erp.net/tech/modules/logistics/planning/available-to-promise/index.html)** quantity on a particular date using the **AvailableToPromise** view.
+This example demonstrates how to use a Calculated Attribute to retrieve an **[Available To Promise (ATP)](https://docs.erp.net/tech/modules/logistics/planning/available-to-promise/index.html)** value for a product **on a specific date**. In this example, the date is the *Required Delivery Date* of a shipment order line, but the pattern shown here can be easily adapted—with minimal adjustments—to calculate ATP on any other date required by your business logic.
+
+The ATP calculation queries the **[Available To Promise view](https://docs.erp.net/model/entities/Logistics.Inventory.DemandManagement.AvailableToPromise.html)**, finds the ATP record that is valid as of the requested date, and returns its ATP Base Value.
+
 
 In the example, you'll learn how to get the ATP quantity in a shipment order line on its required delivery date.
 
@@ -13,32 +16,44 @@ In the example, you'll learn how to get the ATP quantity in a shipment order lin
 > The repository of the attributes is *Logistics.Shipment.ShipmentOrderLines*
 > 
 > The `ORDERBY` operator for `FromDate` in this report is supported starting from **version 26**.  
-> In earlier versions of ERP.net, `ORDERBY` was not available, so the same behavior had to be achieved by combining a `FILTER` with a `SORT`.  
+> In earlier versions of ERP.net, `ORDERBY` was not available, so the same behavior had to be achieved by combining a `FILTER` with a `SORT`.
 
-```
+## Overview
 
-10  GETOBJVALUE   EXP:20                                                      ATTRIB:A TPBaseValue
-20  FIRST         EXP:30
-30  SELECT        REPO:Logistics.Inventory.DemandManagement.AvailableToPromise  EXP:40
-40  TOP           CONST:1                                                    EXP:50
-50  ORDERBY       ATTRIB:FromDate   CONST:DESC                               EXP:60
-60  WHERE         EXP:90    EXP:70
-70  AND           EXP:120   EXP:80
-80  AND           EXP:150   EXP:180
-90  EQUAL         ATTRIB:ProductId                                            EXP:100
-100 GETOBJVALUE   INPUT:10                                                   EXP:110
-110 GETOBJVALUE   REF:ParentSalesOrderLine   ATTRIB:ProductId
-120 EQUAL         ATTRIB:StoreId                                               EXP:130
-130 GETOBJVALUE   INPUT:10                                                   EXP:140
-140 GETOBJVALUE   REF:ParentSalesOrderLine   ATTRIB:LineStoreId
-150 EQUAL         ATTRIB:EnterpriseCompanyId                                   EXP:160
-160 GETOBJVALUE   INPUT:10                                                   EXP:170
-170 GETOBJVALUE   REF:ShipmentOrder          ATTRIB:EnterpriseCompanyId
-180 LTE           ATTRIB:FromDate                                              EXP:190
-190 GETOBJVALUE   INPUT:10                                                   EXP:200
-200 GETOBJVALUE   REF:ShipmentOrder          ATTRIB:RequiredDeliveryDate
+The *Available To Promise* logic determines when a product can next be promised for delivery.  
+This example shows how the Calculated Attribute works:
+
+1. **Reads the ATP repository** for the given product.  
+2. **Filters** by Store, Enterprise Company, and Delivery Constraints.  
+3. **Sorts** the results by `FromDate`, newest first.  
+4. **Applies a delivery deadline** (`FromDate ≤ RequiredDeliveryDate`).  
+5. **Returns only the first valid record** using `TOP 1`.  
+6. **Outputs the `TPBaseValue`**, representing the promised availability.
+
+This section provides the conceptual overview; the next one shows the exact implementation.
 
 
+```txt
+10   GETOBJVALUE     EXP:20                                                          ATTRIB:ATPBaseValue 
+20   FIRST           EXP:30
+30   SELECT          REPO::Logistics.Inventory.DemandManagement.AvailableToPromise   EXP:40
+40   TOP             CONST:1
+50   ORDERBY         ATTRIB:FromDate                                                 CONST:DESC
+60   WHERE           EXP:70                                                          EXP:80
+70   AND             EXP:90                                                          EXP:120
+80   AND             EXP:150                                                         EXP:180
+90   EQUAL           ATTRIB:ProductId                                                EXP:100
+100  GETOBJVALUE     INPUT:10                                                        EXP:110
+110  GETOBJVALUE     REF::ParentSalesOrderLine                                       ATTRIB:ProductId
+120  EQUAL           ATTRIB:StoreId                                                  EXP:130
+130  GETOBJVALUE     INPUT:10                                                        EXP:140
+140  GETOBJVALUE     REF::ParentSalesOrderLine                                       ATTRIB:LineStoreId
+150  EQUAL           ATTRIB:EnterpriseCompanyId                                      EXP:160
+160  GETOBJVALUE     INPUT:10                                                        EXP:170
+170  GETOBJVALUE     REF::ShipmentOrder                                              ATTRIB:EnterpriseCompanyId
+180  LTE             ATTRIB:FromDate                                                 EXP:190
+190  GETOBJVALUE     INPUT:10                                                        EXP:200                                                 
+200  GETOBJVALUE     REF::ShipmentOrder       ATTRIB:RequiredDeliveryDate     
 ```
 
 **Explanation:**
