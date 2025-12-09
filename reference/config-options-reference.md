@@ -415,10 +415,10 @@ If you need to analyze the data, you may use Python code.
  - a.Action: Controls whether the web client should automatically save changes when a form is closed with unsaved data, instead of prompting the user with a confirmation dialog.<br>
    When the value of this key is:<br>
    "0" (false) or the key is not defined – The system shows a confirmation dialog with the following options:<br>
-   [Save changes] [Discard changes] [Cancel] and a checkbox:<br>
+   [Save changes] [Discard changes] [Cancel] and a toggle button:<br>
    [x] Always save automatically when closing<br>
    "1" (true) – The system saves the changes automatically and closes the form without showing the confirmation dialog.
-- b.The user sets it manually.  By selecting the checkbox "Always save automatically when closing" in the confirmation dialog.
+- b.The user sets it manually.  By switching ON the toggle button "Always save automatically when closing" in the confirmation dialog, and Customize panel/Settings
 - c.The key is introduced in version: 26.2
 
 ## 72. AllowNotificationPopups
