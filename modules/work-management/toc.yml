@@ -1,3 +1,8 @@
 - name: Overview
   href: index.md
-  
+- name: Agile PM
+  href: agile/toc.yml
+  topicHref: agile/index.md
+- name: AI
+  href: ai/toc.yml
+  topicHref: ai/index.md
