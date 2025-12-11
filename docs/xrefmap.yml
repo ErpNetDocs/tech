@@ -415,6 +415,9 @@ references:
 - uid: notifications
   name: Notifications
   href: modules/community/social-interactions/notifications/index.html
+- uid: notifications-agile
+  name: notifications-agile
+  href: modules/work-management/agile/cases/notifications.html
 - uid: opportunities
   name: Opportunities
   href: modules/crm/sales-force/sales-person-assignment-rules/opportunities.html
