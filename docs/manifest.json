@@ -20872,1303 +20872,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "modules/projects/agile/advanced-features/assignment-rules.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/projects/agile/advanced-features/assignment-rules.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/projects/agile/advanced-features/index.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/projects/agile/advanced-features/index.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/agile/advanced-features/pictures/rule-form2.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/agile/advanced-features/pictures/rule-form2.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/agile/advanced-features/pictures/rule-logic2.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/agile/advanced-features/pictures/rule-logic2.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/agile/advanced-features/pictures/rules.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/agile/advanced-features/pictures/rules.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/agile/advanced-features/pictures/stop-timer.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/agile/advanced-features/pictures/stop-timer.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/agile/advanced-features/pictures/time-entries.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/agile/advanced-features/pictures/time-entries.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/agile/advanced-features/pictures/time-entry.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/agile/advanced-features/pictures/time-entry.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/agile/advanced-features/pictures/timer-button2.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/agile/advanced-features/pictures/timer-button2.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/agile/advanced-features/pictures/timer-menu.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/agile/advanced-features/pictures/timer-menu.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/projects/agile/advanced-features/time-tracking.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/projects/agile/advanced-features/time-tracking.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "modules/projects/agile/advanced-features/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "modules/projects/agile/advanced-features/toc.html"
-        },
-        ".json": {
-          "relative_path": "modules/projects/agile/advanced-features/toc.json"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/projects/agile/cases/case-creation.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/projects/agile/cases/case-creation.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/projects/agile/cases/collaboration.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/projects/agile/cases/collaboration.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/projects/agile/cases/comments-and-developments.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/projects/agile/cases/comments-and-developments.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/projects/agile/cases/index.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/projects/agile/cases/index.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/projects/agile/cases/notifications.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/projects/agile/cases/notifications.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/agile/cases/pictures/case-add-description.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/agile/cases/pictures/case-add-description.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/agile/cases/pictures/case-creation.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/agile/cases/pictures/case-creation.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/agile/cases/pictures/case-developments.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/agile/cases/pictures/case-developments.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/agile/cases/pictures/case-discuss-notifications.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/agile/cases/pictures/case-discuss-notifications.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/agile/cases/pictures/case-discuss.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/agile/cases/pictures/case-discuss.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/agile/cases/pictures/case-files.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/agile/cases/pictures/case-files.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/agile/cases/pictures/case-form.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/agile/cases/pictures/case-form.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/agile/cases/pictures/case-hierarchy.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/agile/cases/pictures/case-hierarchy.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/agile/cases/pictures/case-initialization.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/agile/cases/pictures/case-initialization.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/agile/cases/pictures/case-main-fields.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/agile/cases/pictures/case-main-fields.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/agile/cases/pictures/case-notifications.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/agile/cases/pictures/case-notifications.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/agile/cases/pictures/case-parent-development-update.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/agile/cases/pictures/case-parent-development-update.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/agile/cases/pictures/case-parent.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/agile/cases/pictures/case-parent.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/agile/cases/pictures/case-priority.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/agile/cases/pictures/case-priority.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/agile/cases/pictures/case-responsibility.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/agile/cases/pictures/case-responsibility.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/agile/cases/pictures/case-social-group.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/agile/cases/pictures/case-social-group.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/agile/cases/pictures/case-tasks.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/agile/cases/pictures/case-tasks.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/agile/cases/pictures/case-template.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/agile/cases/pictures/case-template.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/agile/cases/pictures/case-time.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/agile/cases/pictures/case-time.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/agile/cases/pictures/cases.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/agile/cases/pictures/cases.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/agile/cases/pictures/notifications.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/agile/cases/pictures/notifications.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/agile/cases/pictures/social-group-cases.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/agile/cases/pictures/social-group-cases.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/agile/cases/pictures/system-states.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/agile/cases/pictures/system-states.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/agile/cases/pictures/user-states.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/agile/cases/pictures/user-states.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/agile/cases/pictures/wip-limits.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/agile/cases/pictures/wip-limits.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/projects/agile/cases/relationships-and-hierarchy.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/projects/agile/cases/relationships-and-hierarchy.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/projects/agile/cases/resp-priority-time-logging.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/projects/agile/cases/resp-priority-time-logging.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/projects/agile/cases/supporting-tools.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/projects/agile/cases/supporting-tools.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "modules/projects/agile/cases/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "modules/projects/agile/cases/toc.html"
-        },
-        ".json": {
-          "relative_path": "modules/projects/agile/cases/toc.json"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/projects/agile/cases/wip-limits.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/projects/agile/cases/wip-limits.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/projects/agile/cases/workflow-states.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/projects/agile/cases/workflow-states.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/projects/agile/configuration-and-structure/index.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/projects/agile/configuration-and-structure/index.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/projects/agile/configuration-and-structure/main-setup/case-categories.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/projects/agile/configuration-and-structure/main-setup/case-categories.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/projects/agile/configuration-and-structure/main-setup/index.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/projects/agile/configuration-and-structure/main-setup/index.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/agile/configuration-and-structure/main-setup/pictures/case-categories.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/agile/configuration-and-structure/main-setup/pictures/case-categories.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/agile/configuration-and-structure/main-setup/pictures/category-advanced.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/agile/configuration-and-structure/main-setup/pictures/category-advanced.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/agile/configuration-and-structure/main-setup/pictures/category-parents.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/agile/configuration-and-structure/main-setup/pictures/category-parents.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/agile/configuration-and-structure/main-setup/pictures/category-project-types.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/agile/configuration-and-structure/main-setup/pictures/category-project-types.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/agile/configuration-and-structure/main-setup/pictures/category-template.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/agile/configuration-and-structure/main-setup/pictures/category-template.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/agile/configuration-and-structure/main-setup/pictures/project-types.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/agile/configuration-and-structure/main-setup/pictures/project-types.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/agile/configuration-and-structure/main-setup/pictures/user-state-form.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/agile/configuration-and-structure/main-setup/pictures/user-state-form.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/agile/configuration-and-structure/main-setup/pictures/user-states.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/agile/configuration-and-structure/main-setup/pictures/user-states.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/projects/agile/configuration-and-structure/main-setup/project-types.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/projects/agile/configuration-and-structure/main-setup/project-types.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "modules/projects/agile/configuration-and-structure/main-setup/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "modules/projects/agile/configuration-and-structure/main-setup/toc.html"
-        },
-        ".json": {
-          "relative_path": "modules/projects/agile/configuration-and-structure/main-setup/toc.json"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/projects/agile/configuration-and-structure/main-setup/user-states.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/projects/agile/configuration-and-structure/main-setup/user-states.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/index.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/index.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/pictures/area-responsibility.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/pictures/area-responsibility.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/pictures/area-scope.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/pictures/area-scope.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/pictures/area-wip.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/pictures/area-wip.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/pictures/group-association.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/pictures/group-association.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/pictures/group-form.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/pictures/group-form.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/pictures/milestone-completion.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/pictures/milestone-completion.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/pictures/milestone-scope.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/pictures/milestone-scope.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/pictures/project-areas.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/pictures/project-areas.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/pictures/project-basic.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/pictures/project-basic.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/pictures/project-groups.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/pictures/project-groups.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/pictures/project-milestones.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/pictures/project-milestones.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/pictures/project-responsibility.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/pictures/project-responsibility.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/pictures/project-wip.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/pictures/project-wip.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/pictures/projects.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/pictures/projects.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/pictures/sprint-form.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/pictures/sprint-form.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/pictures/sprints.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/pictures/sprints.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/project-areas.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/project-areas.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/project-groups.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/project-groups.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/project-milestones.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/project-milestones.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/projects.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/projects.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/sprints.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/sprints.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/toc.html"
-        },
-        ".json": {
-          "relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/toc.json"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "modules/projects/agile/configuration-and-structure/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "modules/projects/agile/configuration-and-structure/toc.html"
-        },
-        ".json": {
-          "relative_path": "modules/projects/agile/configuration-and-structure/toc.json"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/projects/agile/index.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/projects/agile/index.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/projects/agile/security.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/projects/agile/security.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "modules/projects/agile/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "modules/projects/agile/toc.html"
-        },
-        ".json": {
-          "relative_path": "modules/projects/agile/toc.json"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/projects/ai/ai-business-rules.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/projects/ai/ai-business-rules.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/ai/ai-set.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/ai/ai-set.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/ai/ai-validate.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/ai/ai-validate.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/ai/ai-warning.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/ai/ai-warning.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/projects/ai/arbiter.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/projects/ai/arbiter.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/ai/how-to/ai_server_site.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/ai/how-to/ai_server_site.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/ai/how-to/compilation_error.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/ai/how-to/compilation_error.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/ai/how-to/compilation_success.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/ai/how-to/compilation_success.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/ai/how-to/compilations_panel.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/ai/how-to/compilations_panel.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/ai/how-to/compile_button.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/ai/how-to/compile_button.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/projects/ai/how-to/fine-tune-models.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/projects/ai/how-to/fine-tune-models.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/ai/how-to/finetune-qas.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/ai/how-to/finetune-qas.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/ai/how-to/finetune-system-message.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/ai/how-to/finetune-system-message.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/ai/how-to/finetune-train-ai-1.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/ai/how-to/finetune-train-ai-1.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/ai/how-to/finetune-train-ai-2.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/ai/how-to/finetune-train-ai-2.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/ai/how-to/finetune-train-ai-3.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/ai/how-to/finetune-train-ai-3.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/ai/how-to/finetune-train-ai-4.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/ai/how-to/finetune-train-ai-4.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/ai/how-to/finetune-train-ai-5.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/ai/how-to/finetune-train-ai-5.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/projects/ai/how-to/index.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/projects/ai/how-to/index.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/ai/how-to/provider.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/ai/how-to/provider.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/projects/ai/how-to/setup-ai.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/projects/ai/how-to/setup-ai.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "modules/projects/ai/how-to/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "modules/projects/ai/how-to/toc.html"
-        },
-        ".json": {
-          "relative_path": "modules/projects/ai/how-to/toc.json"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/projects/ai/index.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/projects/ai/index.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/ai/ingest-desktop-and-mobile.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/ai/ingest-desktop-and-mobile.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/ai/ingest-desktop.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/ai/ingest-desktop.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/ai/ingest-imported-doc.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/ai/ingest-imported-doc.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/ai/ingest-mobile.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/ai/ingest-mobile.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/ai/ingest-recognised-data.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/ai/ingest-recognised-data.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/ai/ingest-sucessful.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/ai/ingest-sucessful.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/projects/ai/ingest.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/projects/ai/ingest.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/ai/snap_to_doc.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/ai/snap_to_doc.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/ai/snap_to_doc1.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/ai/snap_to_doc1.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/ai/snap_to_invoice.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/ai/snap_to_invoice.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/ai/snap_to_invoicedoc.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/ai/snap_to_invoicedoc.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/ai/snap_to_invoicedoc_whiteback.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/ai/snap_to_invoicedoc_whiteback.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "modules/projects/ai/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "modules/projects/ai/toc.html"
-        },
-        ".json": {
-          "relative_path": "modules/projects/ai/toc.json"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/projects/index.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/projects/index.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "modules/projects/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "modules/projects/toc.html"
-        },
-        ".json": {
-          "relative_path": "modules/projects/toc.json"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "modules/system/index.md",
       "output": {
         ".html": {
@@ -22824,6 +21527,1280 @@
         },
         ".json": {
           "relative_path": "modules/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/work-management/agile/advanced-features/assignment-rules.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/work-management/agile/advanced-features/assignment-rules.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/work-management/agile/advanced-features/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/work-management/agile/advanced-features/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/agile/advanced-features/pictures/rule-form2.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/agile/advanced-features/pictures/rule-form2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/agile/advanced-features/pictures/rule-logic2.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/agile/advanced-features/pictures/rule-logic2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/agile/advanced-features/pictures/rules.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/agile/advanced-features/pictures/rules.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/agile/advanced-features/pictures/stop-timer.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/agile/advanced-features/pictures/stop-timer.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/agile/advanced-features/pictures/time-entries.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/agile/advanced-features/pictures/time-entries.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/agile/advanced-features/pictures/time-entry.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/agile/advanced-features/pictures/time-entry.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/agile/advanced-features/pictures/timer-button2.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/agile/advanced-features/pictures/timer-button2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/agile/advanced-features/pictures/timer-menu.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/agile/advanced-features/pictures/timer-menu.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/work-management/agile/advanced-features/time-tracking.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/work-management/agile/advanced-features/time-tracking.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "modules/work-management/agile/advanced-features/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "modules/work-management/agile/advanced-features/toc.html"
+        },
+        ".json": {
+          "relative_path": "modules/work-management/agile/advanced-features/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/work-management/agile/cases/case-creation.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/work-management/agile/cases/case-creation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/work-management/agile/cases/collaboration.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/work-management/agile/cases/collaboration.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/work-management/agile/cases/comments-and-developments.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/work-management/agile/cases/comments-and-developments.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/work-management/agile/cases/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/work-management/agile/cases/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/work-management/agile/cases/notifications.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/work-management/agile/cases/notifications.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/agile/cases/pictures/case-add-description.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/agile/cases/pictures/case-add-description.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/agile/cases/pictures/case-creation.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/agile/cases/pictures/case-creation.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/agile/cases/pictures/case-developments.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/agile/cases/pictures/case-developments.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/agile/cases/pictures/case-discuss-notifications.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/agile/cases/pictures/case-discuss-notifications.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/agile/cases/pictures/case-discuss.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/agile/cases/pictures/case-discuss.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/agile/cases/pictures/case-files.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/agile/cases/pictures/case-files.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/agile/cases/pictures/case-form.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/agile/cases/pictures/case-form.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/agile/cases/pictures/case-hierarchy.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/agile/cases/pictures/case-hierarchy.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/agile/cases/pictures/case-initialization.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/agile/cases/pictures/case-initialization.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/agile/cases/pictures/case-main-fields.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/agile/cases/pictures/case-main-fields.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/agile/cases/pictures/case-notifications.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/agile/cases/pictures/case-notifications.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/agile/cases/pictures/case-parent-development-update.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/agile/cases/pictures/case-parent-development-update.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/agile/cases/pictures/case-parent.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/agile/cases/pictures/case-parent.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/agile/cases/pictures/case-priority.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/agile/cases/pictures/case-priority.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/agile/cases/pictures/case-responsibility.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/agile/cases/pictures/case-responsibility.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/agile/cases/pictures/case-social-group.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/agile/cases/pictures/case-social-group.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/agile/cases/pictures/case-tasks.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/agile/cases/pictures/case-tasks.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/agile/cases/pictures/case-template.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/agile/cases/pictures/case-template.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/agile/cases/pictures/case-time.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/agile/cases/pictures/case-time.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/agile/cases/pictures/cases.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/agile/cases/pictures/cases.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/agile/cases/pictures/notifications.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/agile/cases/pictures/notifications.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/agile/cases/pictures/social-group-cases.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/agile/cases/pictures/social-group-cases.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/agile/cases/pictures/system-states.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/agile/cases/pictures/system-states.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/agile/cases/pictures/user-states.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/agile/cases/pictures/user-states.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/agile/cases/pictures/wip-limits.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/agile/cases/pictures/wip-limits.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/work-management/agile/cases/relationships-and-hierarchy.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/work-management/agile/cases/relationships-and-hierarchy.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/work-management/agile/cases/resp-priority-time-logging.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/work-management/agile/cases/resp-priority-time-logging.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/work-management/agile/cases/supporting-tools.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/work-management/agile/cases/supporting-tools.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "modules/work-management/agile/cases/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "modules/work-management/agile/cases/toc.html"
+        },
+        ".json": {
+          "relative_path": "modules/work-management/agile/cases/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/work-management/agile/cases/wip-limits.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/work-management/agile/cases/wip-limits.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/work-management/agile/cases/workflow-states.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/work-management/agile/cases/workflow-states.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/work-management/agile/configuration-and-structure/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/work-management/agile/configuration-and-structure/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/work-management/agile/configuration-and-structure/main-setup/case-categories.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/work-management/agile/configuration-and-structure/main-setup/case-categories.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/work-management/agile/configuration-and-structure/main-setup/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/work-management/agile/configuration-and-structure/main-setup/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/agile/configuration-and-structure/main-setup/pictures/case-categories.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/agile/configuration-and-structure/main-setup/pictures/case-categories.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/agile/configuration-and-structure/main-setup/pictures/category-advanced.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/agile/configuration-and-structure/main-setup/pictures/category-advanced.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/agile/configuration-and-structure/main-setup/pictures/category-parents.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/agile/configuration-and-structure/main-setup/pictures/category-parents.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/agile/configuration-and-structure/main-setup/pictures/category-project-types.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/agile/configuration-and-structure/main-setup/pictures/category-project-types.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/agile/configuration-and-structure/main-setup/pictures/category-template.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/agile/configuration-and-structure/main-setup/pictures/category-template.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/agile/configuration-and-structure/main-setup/pictures/project-types.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/agile/configuration-and-structure/main-setup/pictures/project-types.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/agile/configuration-and-structure/main-setup/pictures/user-state-form.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/agile/configuration-and-structure/main-setup/pictures/user-state-form.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/agile/configuration-and-structure/main-setup/pictures/user-states.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/agile/configuration-and-structure/main-setup/pictures/user-states.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/work-management/agile/configuration-and-structure/main-setup/project-types.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/work-management/agile/configuration-and-structure/main-setup/project-types.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "modules/work-management/agile/configuration-and-structure/main-setup/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "modules/work-management/agile/configuration-and-structure/main-setup/toc.html"
+        },
+        ".json": {
+          "relative_path": "modules/work-management/agile/configuration-and-structure/main-setup/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/work-management/agile/configuration-and-structure/main-setup/user-states.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/work-management/agile/configuration-and-structure/main-setup/user-states.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/work-management/agile/configuration-and-structure/project-definitions/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/work-management/agile/configuration-and-structure/project-definitions/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/agile/configuration-and-structure/project-definitions/pictures/area-responsibility.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/agile/configuration-and-structure/project-definitions/pictures/area-responsibility.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/agile/configuration-and-structure/project-definitions/pictures/area-scope.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/agile/configuration-and-structure/project-definitions/pictures/area-scope.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/agile/configuration-and-structure/project-definitions/pictures/area-wip.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/agile/configuration-and-structure/project-definitions/pictures/area-wip.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/agile/configuration-and-structure/project-definitions/pictures/group-association.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/agile/configuration-and-structure/project-definitions/pictures/group-association.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/agile/configuration-and-structure/project-definitions/pictures/group-form.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/agile/configuration-and-structure/project-definitions/pictures/group-form.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/agile/configuration-and-structure/project-definitions/pictures/milestone-completion.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/agile/configuration-and-structure/project-definitions/pictures/milestone-completion.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/agile/configuration-and-structure/project-definitions/pictures/milestone-scope.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/agile/configuration-and-structure/project-definitions/pictures/milestone-scope.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/agile/configuration-and-structure/project-definitions/pictures/project-areas.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/agile/configuration-and-structure/project-definitions/pictures/project-areas.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/agile/configuration-and-structure/project-definitions/pictures/project-basic.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/agile/configuration-and-structure/project-definitions/pictures/project-basic.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/agile/configuration-and-structure/project-definitions/pictures/project-groups.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/agile/configuration-and-structure/project-definitions/pictures/project-groups.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/agile/configuration-and-structure/project-definitions/pictures/project-milestones.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/agile/configuration-and-structure/project-definitions/pictures/project-milestones.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/agile/configuration-and-structure/project-definitions/pictures/project-responsibility.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/agile/configuration-and-structure/project-definitions/pictures/project-responsibility.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/agile/configuration-and-structure/project-definitions/pictures/project-wip.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/agile/configuration-and-structure/project-definitions/pictures/project-wip.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/agile/configuration-and-structure/project-definitions/pictures/projects.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/agile/configuration-and-structure/project-definitions/pictures/projects.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/agile/configuration-and-structure/project-definitions/pictures/sprint-form.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/agile/configuration-and-structure/project-definitions/pictures/sprint-form.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/agile/configuration-and-structure/project-definitions/pictures/sprints.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/agile/configuration-and-structure/project-definitions/pictures/sprints.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/work-management/agile/configuration-and-structure/project-definitions/project-areas.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/work-management/agile/configuration-and-structure/project-definitions/project-areas.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/work-management/agile/configuration-and-structure/project-definitions/project-groups.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/work-management/agile/configuration-and-structure/project-definitions/project-groups.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/work-management/agile/configuration-and-structure/project-definitions/project-milestones.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/work-management/agile/configuration-and-structure/project-definitions/project-milestones.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/work-management/agile/configuration-and-structure/project-definitions/projects.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/work-management/agile/configuration-and-structure/project-definitions/projects.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/work-management/agile/configuration-and-structure/project-definitions/sprints.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/work-management/agile/configuration-and-structure/project-definitions/sprints.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "modules/work-management/agile/configuration-and-structure/project-definitions/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "modules/work-management/agile/configuration-and-structure/project-definitions/toc.html"
+        },
+        ".json": {
+          "relative_path": "modules/work-management/agile/configuration-and-structure/project-definitions/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "modules/work-management/agile/configuration-and-structure/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "modules/work-management/agile/configuration-and-structure/toc.html"
+        },
+        ".json": {
+          "relative_path": "modules/work-management/agile/configuration-and-structure/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/work-management/agile/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/work-management/agile/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/work-management/agile/security.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/work-management/agile/security.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "modules/work-management/agile/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "modules/work-management/agile/toc.html"
+        },
+        ".json": {
+          "relative_path": "modules/work-management/agile/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/work-management/ai/ai-business-rules.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/work-management/ai/ai-business-rules.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/ai/ai-set.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/ai/ai-set.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/ai/ai-validate.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/ai/ai-validate.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/ai/ai-warning.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/ai/ai-warning.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/work-management/ai/arbiter.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/work-management/ai/arbiter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/ai/how-to/ai_server_site.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/ai/how-to/ai_server_site.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/ai/how-to/compilation_error.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/ai/how-to/compilation_error.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/ai/how-to/compilation_success.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/ai/how-to/compilation_success.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/ai/how-to/compilations_panel.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/ai/how-to/compilations_panel.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/ai/how-to/compile_button.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/ai/how-to/compile_button.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/work-management/ai/how-to/fine-tune-models.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/work-management/ai/how-to/fine-tune-models.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/ai/how-to/finetune-qas.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/ai/how-to/finetune-qas.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/ai/how-to/finetune-system-message.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/ai/how-to/finetune-system-message.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/ai/how-to/finetune-train-ai-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/ai/how-to/finetune-train-ai-1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/ai/how-to/finetune-train-ai-2.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/ai/how-to/finetune-train-ai-2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/ai/how-to/finetune-train-ai-3.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/ai/how-to/finetune-train-ai-3.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/ai/how-to/finetune-train-ai-4.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/ai/how-to/finetune-train-ai-4.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/ai/how-to/finetune-train-ai-5.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/ai/how-to/finetune-train-ai-5.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/work-management/ai/how-to/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/work-management/ai/how-to/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/ai/how-to/provider.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/ai/how-to/provider.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/work-management/ai/how-to/setup-ai.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/work-management/ai/how-to/setup-ai.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "modules/work-management/ai/how-to/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "modules/work-management/ai/how-to/toc.html"
+        },
+        ".json": {
+          "relative_path": "modules/work-management/ai/how-to/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/work-management/ai/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/work-management/ai/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/ai/ingest-desktop-and-mobile.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/ai/ingest-desktop-and-mobile.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/ai/ingest-desktop.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/ai/ingest-desktop.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/ai/ingest-imported-doc.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/ai/ingest-imported-doc.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/ai/ingest-mobile.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/ai/ingest-mobile.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/ai/ingest-recognised-data.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/ai/ingest-recognised-data.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/ai/ingest-sucessful.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/ai/ingest-sucessful.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/work-management/ai/ingest.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/work-management/ai/ingest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/ai/snap_to_doc.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/ai/snap_to_doc.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/ai/snap_to_doc1.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/ai/snap_to_doc1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/ai/snap_to_invoice.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/ai/snap_to_invoice.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/ai/snap_to_invoicedoc.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/ai/snap_to_invoicedoc.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/ai/snap_to_invoicedoc_whiteback.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/ai/snap_to_invoicedoc_whiteback.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "modules/work-management/ai/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "modules/work-management/ai/toc.html"
+        },
+        ".json": {
+          "relative_path": "modules/work-management/ai/toc.json"
         }
       },
       "version": ""

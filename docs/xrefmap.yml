@@ -3,7 +3,7 @@ sorted: true
 references:
 - uid: AI
   name: AI
-  href: modules/projects/ai/index.html
+  href: modules/work-management/ai/index.html
 - uid: ASN
   name: Advance Shipping Notice (ASN)
   href: modules/logistics/wms/logistic-units/asn.html
@@ -48,7 +48,7 @@ references:
   href: advanced/concepts/aggregates.html
 - uid: agile
   name: Agile PM
-  href: modules/projects/agile/index.html
+  href: modules/work-management/agile/index.html
 - uid: amount-to-pay
   name: Amount to pay
   href: modules/crm/sales/sales-concepts/amount-to-pay.html
@@ -57,7 +57,7 @@ references:
   href: reference/country-specific-functionality.html
 - uid: assignment-rules
   name: Assignment rules
-  href: modules/projects/agile/advanced-features/assignment-rules.html
+  href: modules/work-management/agile/advanced-features/assignment-rules.html
 - uid: attributechanged
   name: ATTRIBUTECHANGED
   href: advanced/user-business-rules/events/attributechanged.html
@@ -255,10 +255,10 @@ references:
   href: advanced/calculated-attributes/operators/where.html
 - uid: case-categories
   name: case-categories
-  href: modules/projects/agile/configuration-and-structure/main-setup/case-categories.html
+  href: modules/work-management/agile/configuration-and-structure/main-setup/case-categories.html
 - uid: case-creation
   name: case-creation
-  href: modules/projects/agile/cases/case-creation.html
+  href: modules/work-management/agile/cases/case-creation.html
 - uid: choose_unit
   name: Measurement unit of the order
   href: modules/logistics/inventory/inventory-control/ChooseUnit.html
@@ -273,10 +273,10 @@ references:
   href: modules/general/products/coding-systems.html
 - uid: collaboration
   name: collaboration
-  href: modules/projects/agile/cases/collaboration.html
+  href: modules/work-management/agile/cases/collaboration.html
 - uid: comments-and-developments
   name: comments-and-developments
-  href: modules/projects/agile/cases/comments-and-developments.html
+  href: modules/work-management/agile/cases/comments-and-developments.html
 - uid: commit
   name: COMMIT
   href: advanced/user-business-rules/events/commit.html
@@ -291,7 +291,7 @@ references:
   href: reference/config-options-reference.html
 - uid: configuration-and-structure
   name: configuration-and-structure
-  href: modules/projects/agile/configuration-and-structure/index.html
+  href: modules/work-management/agile/configuration-and-structure/index.html
 - uid: create-new
   name: CREATENEW
   href: advanced/user-business-rules/events/create-new.html
@@ -306,7 +306,7 @@ references:
   href: modules/financials/VAT/defining-vat-and-base-for-vat-entries.html
 - uid: definitions
   name: definitions
-  href: modules/projects/agile/configuration-and-structure/project-definitions/index.html
+  href: modules/work-management/agile/configuration-and-structure/project-definitions/index.html
 - uid: determine-line-amount-in-sales-orders
   name: Determine line amount in sales orders
   href: modules/crm/sales/sales-concepts/determining-algorithms/determine-line-amount-in-sales-orders.html
@@ -351,7 +351,7 @@ references:
   href: modules/general/products/product-relations/index.html
 - uid: ingest
   name: Ingest (AI) – Intelligent Import of Purchase Invoices
-  href: modules/projects/ai/ingest.html
+  href: modules/work-management/ai/ingest.html
 - uid: jobs-J30632
   name: J30632 Deletе old notifications
   href: advanced/jobs/J30632.html
@@ -402,7 +402,7 @@ references:
   href: modules/logistics/index.html
 - uid: main-setup
   name: main-setup
-  href: modules/projects/agile/configuration-and-structure/main-setup/index.html
+  href: modules/work-management/agile/configuration-and-structure/main-setup/index.html
 - uid: master-detail
   name: Master / Detail attributes
   href: advanced/concepts/master-detail-attributes.html
@@ -438,19 +438,19 @@ references:
   href: modules/general/products/product-relations/product_relations.html
 - uid: project-areas
   name: project-areas
-  href: modules/projects/agile/configuration-and-structure/project-definitions/project-areas.html
+  href: modules/work-management/agile/configuration-and-structure/project-definitions/project-areas.html
 - uid: project-groups
   name: project-groups
-  href: modules/projects/agile/configuration-and-structure/project-definitions/project-groups.html
+  href: modules/work-management/agile/configuration-and-structure/project-definitions/project-groups.html
 - uid: project-milestones
   name: project-milestones
-  href: modules/projects/agile/configuration-and-structure/project-definitions/project-milestones.html
+  href: modules/work-management/agile/configuration-and-structure/project-definitions/project-milestones.html
 - uid: project-types
   name: project-types
-  href: modules/projects/agile/configuration-and-structure/main-setup/project-types.html
+  href: modules/work-management/agile/configuration-and-structure/main-setup/project-types.html
 - uid: projects
   name: projects
-  href: modules/projects/agile/configuration-and-structure/project-definitions/projects.html
+  href: modules/work-management/agile/configuration-and-structure/project-definitions/projects.html
 - uid: promotional-package
   name: Promotional packages
   href: modules/crm/pricing/promotional-packages.html
@@ -459,10 +459,10 @@ references:
   href: modules/logistics/wms/wms-worker/reconcile.html
 - uid: relationships-and-hierarchy
   name: relationships-and-hierarchy
-  href: modules/projects/agile/cases/relationships-and-hierarchy.html
+  href: modules/work-management/agile/cases/relationships-and-hierarchy.html
 - uid: resp-priority-time-logging
   name: resp-priority-time-logging
-  href: modules/projects/agile/cases/resp-priority-time-logging.html
+  href: modules/work-management/agile/cases/resp-priority-time-logging.html
 - uid: rule-settings
   name: Rule settings
   href: modules/crm/sales-force/sales-person-assignment-rules/rule-settings.html
@@ -474,7 +474,7 @@ references:
   href: modules/crm/sales-force/sales-person-assignment-rules/index.html
 - uid: security
   name: security
-  href: modules/projects/agile/security.html
+  href: modules/work-management/agile/security.html
 - uid: setting-cost-when-purchasing-goods
   name: Setting cost when purchasing goods
   href: modules/logistics/procurement/setting-cost-when-purchasing-goods.html
@@ -486,7 +486,7 @@ references:
   href: modules/community/social-interactions/index.html
 - uid: sprints
   name: sprints
-  href: modules/projects/agile/configuration-and-structure/project-definitions/sprints.html
+  href: modules/work-management/agile/configuration-and-structure/project-definitions/sprints.html
 - uid: statechanged
   name: STATECHANGED
   href: advanced/user-business-rules/events/statechanged.html
@@ -501,7 +501,7 @@ references:
   href: modules/logistics/wms/wms-worker/orders/suggest-routing.html
 - uid: supporting-tools
   name: supporting-tools
-  href: modules/projects/agile/cases/supporting-tools.html
+  href: modules/work-management/agile/cases/supporting-tools.html
 - uid: system-variables
   name: System variables
   href: advanced/string-interpolation/system-variables.html
@@ -513,7 +513,7 @@ references:
   href: modules/logistics/inventory/how-to/the_bin.html
 - uid: time-tracking
   name: time-tracking
-  href: modules/projects/agile/advanced-features/time-tracking.html
+  href: modules/work-management/agile/advanced-features/time-tracking.html
 - uid: track-changes
   name: Track Changes
   href: advanced/data-objects/track-changes.html
@@ -528,7 +528,7 @@ references:
   href: modules/logistics/wms/wms-worker/unpack.html
 - uid: user-states
   name: user-states
-  href: modules/projects/agile/configuration-and-structure/main-setup/user-states.html
+  href: modules/work-management/agile/configuration-and-structure/main-setup/user-states.html
 - uid: vat-deviation
   name: VAT Deviation
   href: modules/crm/sales/sales-concepts/vat-deviation.html
@@ -552,7 +552,7 @@ references:
   href: includes/winclientfull.html
 - uid: wip-limits
   name: wip-limits
-  href: modules/projects/agile/cases/wip-limits.html
+  href: modules/work-management/agile/cases/wip-limits.html
 - uid: wms
   name: WMS
   href: modules/logistics/wms/index.html
@@ -561,7 +561,7 @@ references:
   href: modules/logistics/wms/wms-worker/index.html
 - uid: workflow-states
   name: workflow-states
-  href: modules/projects/agile/cases/workflow-states.html
+  href: modules/work-management/agile/cases/workflow-states.html
 - uid: wst-DOMAINAPI
   name: Domain API
   href: advanced/web-sites/types/domain-api.html

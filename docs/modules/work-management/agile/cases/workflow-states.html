@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title> | ERP.net Tech Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content=" | ERP.net Tech Docs ">
+      
+      
+      <link rel="icon" href="../../../../favicon.ico">
+      <link rel="stylesheet" href="../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/work-management/agile/cases/workflow-states.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../index.html">
+            <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="workflow-states">
+
+<h2 id="workflow-states">Workflow states</h2>
+<h3 id="system-states">System States</h3>
+<p>Each Case progresses through a predefined set of <strong>System States</strong>, reflecting its current stage in the workflow. These states guide users through the lifecycle of the task — from initial planning to resolution and closure.</p>
+<p>The standard System States are:</p>
+<p><strong>Backlog → Consider → Ready → In Progress → Waiting → Resolved → Closed</strong></p>
+<ul>
+<li><strong>Backlog</strong> – the initial state where the Case is drafted. It typically contains a description of the issue or request.</li>
+<li><strong>Consider</strong> – used for analysis, planning, or review before committing to work.</li>
+<li><strong>Ready</strong> – signals that the Case is approved and ready to be started.</li>
+<li><strong>In Progress</strong> – indicates that work on the Case has begun.</li>
+<li><strong>Waiting</strong> – temporarily halts progress, usually due to pending feedback or external dependencies.</li>
+<li><strong>Resolved</strong> – work on the Case is completed, awaiting final review or closure.</li>
+<li><strong>Closed</strong> – the Case is finalized. Once closed, it becomes read-only and cannot be edited.</li>
+</ul>
+<p><img src="pictures/system-states.png" alt="System States"></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Some System States may be hidden in the Case form, depending on the Case Category configuration.<br>
+<em>For details, see Case Categories –&gt; Advanced Settings –&gt; Visibility of System States.</em></p>
+</div>
+<p>Users can move Cases forward or backward between states, depending on workflow permissions and process requirements.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>A Case must always transition through <strong>Resolved</strong> before it can be <strong>Closed</strong>, ensuring that all necessary work is reviewed and finalized before the Case becomes final and read-only.</p>
+</div>
+<h3 id="user-states">User States</h3>
+<p>While System States define the main lifecycle stages, <strong>User States</strong> provide more granular control and reflect the internal processes within each stage.</p>
+<p>When a System State has applicable User States (based on the Case Category), the user is prompted to select a sub-stage from a dropdown menu when changing the Case state.<br>
+This allows users to add more context, such as:</p>
+<ul>
+<li>&quot;For approval&quot; or &quot;Needs a meeting&quot; for the <strong>Consider</strong> state</li>
+<li>&quot;Ready for design&quot; or &quot;Ready for execution&quot; for the <strong>Ready</strong> state</li>
+<li>&quot;Completed&quot; or &quot;Rejected&quot; for the <strong>Resolved</strong> state</li>
+</ul>
+<p>This functionality helps teams reflect the true status of work more precisely, without modifying the core state logic.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>User States are optional and appear only when defined for the selected System State and Case Category.<br>
+<em>For configuration details and setup instructions, see <a href="../configuration-and-structure/main-setup/user-states.html">User States</a>.</em></p>
+</div>
+<p><img src="pictures/user-states.png" alt="User States"></p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/work-management/agile/cases/workflow-states.md/#L1" class="edit-link">Suggest improvement to this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

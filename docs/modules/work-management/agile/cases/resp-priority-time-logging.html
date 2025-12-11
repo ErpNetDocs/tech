@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title> | ERP.net Tech Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content=" | ERP.net Tech Docs ">
+      
+      
+      <link rel="icon" href="../../../../favicon.ico">
+      <link rel="stylesheet" href="../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/work-management/agile/cases/resp-priority-time-logging.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../index.html">
+            <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="resp-priority-time-logging">
+
+<h2 id="responsibility-priority-and-time-logging">Responsibility, priority and time logging</h2>
+<h3 id="ownership-and-assignment">Ownership and assignment</h3>
+<p>Each Case includes two distinct roles that help define responsibility and execution:</p>
+<ul>
+<li><strong>Owner</strong> – the user ultimately responsible for the Case.</li>
+<li><strong>Assigned user</strong> – the user currently expected to work on and progress the Case.</li>
+</ul>
+<p>By default, the <strong>Owner</strong> is automatically set to the user who creates the Case. However, ownership can be manually changed to delegate responsibility — for example, when a supervisor creates a Case on behalf of a colleague.</p>
+<p>The <strong>Assigned To</strong> field <em>(System name: <code>Assigned To User</code>)</em> specifies the person actively working on the Case at any given time. This enables clear task ownership at the execution level and helps manage workloads across team members.</p>
+<p>This separation between ownership and assignment supports flexible workflows, including delegation, escalation, and collaborative execution.<br>
+For instance, a Case might be created and owned by a project lead but assigned to a team member for execution.</p>
+<p>The <strong>Assigned To</strong> field can be populated either manually or automatically through user-defined <strong>Assignment Rules</strong> — a system for defining routing logic based on project, states, category, and other contextual criteria.<br>
+This helps streamline operations by reducing manual effort and ensuring Cases are assigned to the right person.<br>
+<em>For configuration and automation options, see Assignment Rules.</em></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>When a Case is transitioned to the <strong>Resolved</strong> state, the system automatically reassigns it to its <strong>Owner</strong>.<br>
+This ensures that the responsible person reviews or finalizes the Case before closure.</p>
+</div>
+<p><img src="pictures/case-responsibility.png" alt="Responsibility"></p>
+<h3 id="priority">Priority</h3>
+<p>Each Case has a <strong>Priority</strong> field used to indicate its urgency and importance within the project.<br>
+The values range from <strong>7</strong> (lowest) to <strong>1</strong> (highest), enabling teams to triage tasks and allocate resources accordingly.</p>
+<p>The Priority can be set manually when creating or editing a Case, but the system also adjusts it automatically in specific scenarios — for example, if the initial priority is <strong>3</strong> or higher and the Case enters the <strong>In Progress</strong> state, it is updated to <strong>2</strong>.
+This mechanism helps surface more critical tasks once they are actively being worked on, ensuring they receive the appropriate level of attention.</p>
+<p><img src="pictures/case-priority.png" alt="Priority"></p>
+<h3 id="logged-time">Logged Time</h3>
+<p>The <strong>Logged Time</strong> field displays the total duration of work logged via Time Entries for the Case.<br>
+It offers immediate insight into the actual effort invested, supporting both progress tracking and retrospective analysis.</p>
+<p>In combination with the <strong>Estimated Time Hours</strong> field — which captures the initial time expectation for completing the Case — users and managers can evaluate how accurately the effort was projected, identify underestimations, and refine future planning.</p>
+<p><em>For more details about time tracking and Time Entry creation, see Time Tracking.</em></p>
+<p><img src="pictures/case-time.png" alt="Logged Time"></p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/work-management/agile/cases/resp-priority-time-logging.md/#L1" class="edit-link">Suggest improvement to this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

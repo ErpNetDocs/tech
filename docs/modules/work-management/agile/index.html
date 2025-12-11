@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Agile PM | ERP.net Tech Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Agile PM | ERP.net Tech Docs ">
+      
+      
+      <link rel="icon" href="../../../favicon.ico">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/work-management/agile/index.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="agile">
+<h1 id="agile-pm">Agile PM</h1>
+
+<p>The <strong>Agile Project Management</strong> (Agile PM) module in ERP.net enables organizations to manage projects in a flexible, iterative, and feedback-driven way — fully aligned with the principles of agile methodologies.</p>
+<p>Unlike traditional Waterfall models, Agile PM supports continuous delivery and adaptive planning, making it ideal for dynamic environments such as software development, marketing, finance, and internal process optimization.</p>
+<p>What sets <strong>Agile PM</strong> in ERP.net apart from general-purpose project management tools is its <strong>native integration with the ERP.net platform</strong> — providing direct access to enterprise data, built-in collaboration via Social Groups, and consistent logic, UI, and controls shared across the entire ERP.net system.
+All activities are performed within a single, secure system, without the need to switch platforms or integrate third-party tools — ensuring consistent governance, traceability, and compliance across the organization.</p>
+<h2 id="core-structures">Core structures</h2>
+<p>At its core, the module introduces configurable structures to reflect business logic and internal workflows:</p>
+<ul>
+<li><a href="configuration-and-structure/project-definitions/projects.html">Projects</a> define agile initiatives as containers for organizing related cases, areas, milestones, sprints, and configurations.</li>
+<li><a href="configuration-and-structure/project-definitions/project-groups.html">Project Groups</a> enable logical grouping of projects that share common configurations such as areas and milestones.</li>
+<li><a href="configuration-and-structure/main-setup/project-types.html">Project Types</a> help classify projects.</li>
+<li><a href="configuration-and-structure/project-definitions/project-areas.html">Project Areas</a> divide work into manageable domains.</li>
+<li><a href="configuration-and-structure/project-definitions/project-milestones.html">Project Milestones</a> highlight key delivery points along the project timeline.</li>
+<li><a href="configuration-and-structure/project-definitions/sprints.html">Sprints</a> represent fixed timeboxes (typically 1–4 weeks) during which a team works to complete a set of cases toward a defined sprint goal.</li>
+<li><a href="configuration-and-structure/main-setup/case-categories.html">Case Categories</a> determine task structure and flow.</li>
+<li><a href="cases/workflow-states.html#system-states">System States</a> define the main workflow lifecycle of tasks.</li>
+<li><a href="configuration-and-structure/main-setup/user-states.html">User States</a> extend this lifecycle by adding more granular tracking within each system-defined stage.</li>
+<li><a href="cases/index.html">Cases</a> serve as the core work units, bringing together all these structures into actionable items that move through the project lifecycle.</li>
+</ul>
+<h2 id="key-capabilities">Key capabilities</h2>
+<ul>
+<li><strong>Automated assignment logic</strong> via configurable Assignment Rules, ensuring that each Case is routed to the most appropriate user based on project context, state, and role.</li>
+<li><strong>Work-in-progress (WIP) limits</strong>, which help prevent overload and maintain a steady flow of work across critical workflow stages.</li>
+<li><strong>Time tracking tools</strong>, allowing users to log time on work performed within Cases — ensuring reliable input for analysis and planning.</li>
+<li><strong>Progress and workload monitoring</strong>, based on workflow states and activity logs (case developments), helping teams and managers track task movement, detect delays, and identify bottlenecks.</li>
+<li><strong>Hierarchical case structuring</strong>, enabling teams to break down the work within a project into traceable, manageable units using parent-child relationships.</li>
+<li><strong>Integrated collaboration features</strong>, including Social Group associations, internal discussions, activity logs, and smart notifications — all embedded directly into the Case form.</li>
+</ul>
+<p>Together, these tools provide agile teams with structure, transparency, and flexibility — allowing them to deliver value continuously, adapt quickly, and scale their efforts confidently across the organization.</p>
+<h2 id="learn-more-about-agile-pm-here">Learn more about Agile PM here:</h2>
+<ul>
+<li><a href="configuration-and-structure/index.html">Configuration and structure</a></li>
+<li><a href="cases/index.html">Cases</a></li>
+<li><a href="advanced-features/index.html">Advanced features</a></li>
+</ul>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/work-management/agile/index.md/#L1" class="edit-link">Suggest improvement to this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

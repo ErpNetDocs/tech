@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Fine-tune AI Models in ERP.net | ERP.net Tech Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Fine-tune AI Models in ERP.net | ERP.net Tech Docs ">
+      
+      
+      <link rel="icon" href="../../../../favicon.ico">
+      <link rel="stylesheet" href="../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/work-management/ai/how-to/fine-tune-models.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../index.html">
+            <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="fine-tune-ai-models-in-">Fine-tune AI Models in ERP.net</h1>
+
+<h2 id="what-is-fine-tuning">What is fine-tuning?</h2>
+<p>Fine-tuning in ERP.net means <strong>adapting a base AI model</strong> (from OpenAI) to your company’s specific rules, language, and way of working.</p>
+<p>Instead of using a general model that “knows a bit of everything”, you can train specialized assistants such as:</p>
+<ul>
+<li>“AI Marketing Assistant”</li>
+<li>“AI Sales Assistant”</li>
+<li>“AI Support Assistant”</li>
+<li>A company-wide “Master Assistant”</li>
+</ul>
+<p>Fine-tuning is done entirely inside ERP.net, using:</p>
+<ul>
+<li><strong>System Мessage</strong> – general instructions and behaviour.</li>
+<li><strong>Q&amp;A records</strong> – structured questions and answers.</li>
+<li><strong>Training Цonversations</strong> – real chat dialogues that the model has “learned from”.</li>
+</ul>
+<p>The result is a model that understands your processes, terminology, and internal rules much better than a generic ChatGPT.</p>
+<h2 id="when-do-you-need-fine-tuning">When do you need fine-tuning?</h2>
+<p>Fine-tuning is recommended when:</p>
+<ul>
+<li>You want an assistant who <strong>knows your internal procedures</strong>, not just generic best practices.</li>
+<li>You want different models for different departments (Marketing, Sales, Support, etc.).</li>
+<li>You want the model to give <strong>consistent</strong> answers in line with your company policies.</li>
+</ul>
+<p>From a technical perspective, fine-tuning is needed when:</p>
+<ul>
+<li>You want to use a <strong>fine-tuned model</strong> (Q&amp;A and/or Training Conversations).</li>
+<li>You want to use a <strong>dedicated AI Assistant</strong> (the <em>My Assistant</em> app or assistant panel) with its own behaviour.</li>
+</ul>
+<p>In all other scenarios (for example, simple backend AI rules without specialization), ERP.net can work directly with the <strong>base model</strong> from the AI Provider without fine-tuning.</p>
+<h2 id="fine-tuning-components">Fine-tuning components</h2>
+<p>Fine-tuning in ERP.net is built from three main elements:</p>
+<h4 id="1-system-message">1. System Message</h4>
+<p>The <strong>System message</strong> field in the AI Model contains high-level instructions that always apply.</p>
+<p>Typical examples:</p>
+<ul>
+<li>“Answer briefly and clearly.”</li>
+<li>“Always use the English language in replies, unless explicitly asked otherwise.”</li>
+<li>“Refer to the company as ‘ERP.BG’ in all messages.”</li>
+<li>“You are a marketing assistant for ERP.BG. You help with social media posts, newsletters, and campaign ideas.”</li>
+</ul>
+<p>Good practices:</p>
+<ul>
+<li>Keep it <strong>focused and concise</strong> (up to 5–6 sentences of text).</li>
+<li>Describe <strong>role, tone, language, constraints</strong>.</li>
+<li>Avoid including long policy documents here – those are better suited as Q&amp;A or Training Conversations.</li>
+</ul>
+<p><img src="finetune-system-message.png" alt="System Message"></p>
+<h4 id="2-qas">2. QAs</h4>
+<p><strong>Q&amp;A records</strong> define explicit question–answer pairs that the model should know.</p>
+<p>They are ideal for:</p>
+<ul>
+<li>Internal rules and policies</li>
+<li>Standard operating procedures</li>
+<li>Repetitive “how do we do X in our company?” questions</li>
+</ul>
+<p>Examples:</p>
+<ul>
+<li><p><strong>Question:</strong> “How often should we post on Instagram?”<br>
+<strong>Answer:</strong> “Our marketing team posts 4 times per week, with a mix of product, educational, and customer-story posts.”</p>
+</li>
+<li><p><strong>Question:</strong> “What is our rule for collecting e-mails for the newsletter?”<br>
+<strong>Answer:</strong> “We always ask for explicit consent and follow GDPR opt-in rules…”</p>
+</li>
+</ul>
+<p>When a user asks something similar, the model uses the Q&amp;A data to give an answer that follows your <strong>internal rule</strong>, not generic advice.</p>
+<p><img src="finetune-qas.png" alt="QAs"></p>
+<h4 id="3-training-conversations">3. Training Conversations</h4>
+<p><strong>Training Conversations</strong> let you fine-tune the model using <strong>real chat dialogues</strong>.</p>
+<p>They are especially useful when:</p>
+<ul>
+<li>You discover the model makes a recurring mistake.</li>
+<li>You want to teach a new topic in a natural, conversational way.</li>
+<li>You prefer to train “while working”, instead of writing static Q&amp;A.</li>
+</ul>
+<p>There are two ways to create Training Conversations:</p>
+<ol>
+<li><strong>Manually</strong> – by creating records in <code>Projects.AI.TrainingConversations</code> and <code>TrainingConversationMessages</code>.</li>
+<li><strong>Automatically from chat</strong> – using the <strong>Train AI</strong> command.</li>
+</ol>
+<h4 id="training-from-chat-train-ai">Training from chat (Train AI)</h4>
+<p>When you are chatting with the AI Arbiter in a group or direct chat:</p>
+<ol>
+<li>Ask the model a question.</li>
+<li>If the response is wrong or incomplete, correct it in the chat (explain what is actually correct).</li>
+<li>When you reach a good answer, right-click (or use the context menu) on the AI’s message and choose <strong>Train AI</strong>.</li>
+</ol>
+<p><img src="finetune-train-ai-1.png" alt="Train AI"></p>
+<ol start="4">
+<li>Select which messages from the conversation should be included.</li>
+</ol>
+<p><img src="finetune-train-ai-2.png" alt="Train AI"></p>
+<ol start="5">
+<li>Confirm.</li>
+</ol>
+<p><img src="finetune-train-ai-3.png" alt="Train AI"></p>
+<p>ERP.net will:</p>
+<ul>
+<li>Create a new <strong>Training Conversation</strong> for the corresponding model.</li>
+<li>Store the relevant messages as <strong>Training Conversation Messages</strong>.</li>
+<li>Mark the conversation as available for the next compilation.</li>
+</ul>
+<p><img src="finetune-train-ai-4.png" alt="Train AI">
+<img src="finetune-train-ai-5.png" alt="Train AI"></p>
+<p>This allows you to <strong>improve</strong> the model continuously while using it, without having to pre-invent hundreds of Q&amp;A pairs.</p>
+<h2 id="compilation-and-applying-the-fine-tuning">Compilation and applying the fine-tuning</h2>
+<p>After you add or change the <strong>System Message</strong>, <strong>Q&amp;A</strong>, or <strong>Training Conversations</strong>, the model must be <strong>compiled</strong> so that the updated fine-tuning is applied at the AI provider.</p>
+<p>Compilation:</p>
+<ul>
+<li>packages the current configuration and training data, and</li>
+<li>creates or updates the runnable model configuration used at runtime.</li>
+</ul>
+<p>For detailed, step-by-step instructions on how to run and monitor compilations, see: <strong><a href="https://docs.erp.net/tech/modules/projects/ai/how-to/setup-ai.html#4-model-compilation">AI Setup – Model compilation</a></strong></p>
+<p>In short:</p>
+<ul>
+<li>After a <strong>successful</strong> compilation, the new fine-tuned version becomes active for that model.</li>
+<li>If a compilation <strong>fails</strong>, the last successful version remains active until the issue is resolved and a new compilation completes successfully.</li>
+</ul>
+<h2 id="using-a-fine-tuned-model">Using a fine-tuned model</h2>
+<p>Once a fine-tuned model is compiled, it can be used as an <strong>arbiter</strong> in chats (added as a member to relevant groups, e.g., Marketing group).</p>
+<p>Which users see which behavior depends on which <strong>Virtual User/AI model</strong> is added as a member of the chat group (for arbiters).</p>
+<h2 id="model-hierarchy-and-reuse">Model hierarchy and reuse</h2>
+<p>The <strong>Parent</strong> field in the AI Model allows you to build a <strong>hierarchy of models</strong>.</p>
+<p>Typical pattern:</p>
+<ul>
+<li><p><strong>Master Company Model</strong><br>
+Parent: <em>null</em><br>
+Trained on: general company knowledge, policies, and products.</p>
+</li>
+<li><p><strong>Marketing Model</strong><br>
+Parent: <em>Master Company Model</em><br>
+Trained on: marketing-specific Q&amp;A and conversations.</p>
+</li>
+<li><p><strong>Sales Model</strong><br>
+Parent: <em>Master Company Model</em><br>
+Trained on: sales-specific Q&amp;A and conversations.</p>
+</li>
+</ul>
+<p>The parent can aggregate and reuse training from its children (according to your configuration), so you do not need to copy the same base knowledge to every model.<br>
+This is especially useful for a <strong>company-wide assistant</strong> for managers or general users.</p>
+<h2 id="best-practices-for-fine-tuning">Best practices for fine-tuning</h2>
+<ul>
+<li>Start with a <strong>small scope</strong> – for example, one model for a single department.</li>
+<li>Keep System messages <strong>short and clear</strong>.</li>
+<li>Use Q&amp;A for <strong>fixed rules</strong> and <strong>policies</strong>.</li>
+<li>Use Training Conversations for <strong>real-world examples</strong> and recurring issues.</li>
+<li>Train gradually using <strong>Train AI</strong> during actual work.</li>
+<li>Compile only when there are meaningful changes (to avoid unnecessary waiting).</li>
+<li>Document internally which model is used for which purpose (Marketing, Sales, etc.).</li>
+</ul>
+<p>Fine-tuning is not a one-time project – it is an <strong>ongoing process</strong>.<br>
+Over time, as you add more Q&amp;A and Training Conversations, your assistants will become more accurate, more “on brand”, and much more useful for your users.</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/work-management/ai/how-to/fine-tune-models.md/#L1" class="edit-link">Suggest improvement to this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title> | ERP.net Tech Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content=" | ERP.net Tech Docs ">
+      
+      
+      <link rel="icon" href="../../../../../favicon.ico">
+      <link rel="stylesheet" href="../../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/work-management/agile/configuration-and-structure/project-definitions/project-areas.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../../index.html">
+            <img id="logo" class="svg" src="../../../../../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="project-areas">
+
+<h2 id="project-areas">Project Areas</h2>
+<p>A <strong>Project Area</strong> in <strong>Agile PM</strong> represents a distinct structural unit, typically focused on a specific part of the overall work.<br>
+It provides a way to break down initiatives into smaller, more manageable components that can be handled independently by different teams or based on specialized expertise.</p>
+<p><img src="pictures/project-areas.png" alt="Project Areas"></p>
+<h3 id="scope-levels">Scope levels</h3>
+<p>Each Project Area can be defined at different levels, depending on the desired scope:</p>
+<ul>
+<li>specific to a single Project,</li>
+<li>shared across a Project Group, or</li>
+<li>global, valid for all Projects and Groups in the system.</li>
+</ul>
+<p><strong>For example</strong>:<br>
+A project of type <strong>Client Implementation</strong> may include Areas such as <strong>Data Migration</strong>, <strong>System Configuration</strong>, and <strong>User Training</strong>. Alternatively, a project group such as <strong>Marketing Projects</strong> may include shared areas like <strong>Campaigns</strong> and <strong>Content Creation</strong>, available to all projects in that group.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The scope of a Project Area depends on the combination of the <strong>Project</strong> and <strong>Project Group</strong> fields:<br>
+• If <strong>Project</strong> is selected, the Area applies only to that Project.<br>
+• If <strong>Project</strong> is empty but <strong>Project Group</strong> is selected, the Area applies to all Projects in that group.<br>
+• If both fields are empty, the Area is considered <strong>global</strong>, valid across the entire Agile PM module.</p>
+</div>
+<p><strong>Configuration path:</strong> <em>Project Area definition → Advanced panel → Project and Project Group fields</em><br>
+<em>Display panel name:</em> <code>Advanced</code><br>
+<em>System panel name:</em> <code>Project Area</code></p>
+<p><img src="pictures/area-scope.png" alt="Project Area Scope"></p>
+<h3 id="responsibility-and-collaboration-settings">Responsibility and collaboration settings</h3>
+<p>Each Project Area may have a designated <strong>Owner</strong> — the person responsible for overseeing and coordinating the work within that Area.<br>
+A <strong>Social Group</strong> can also be assigned to the Project Area — just like in <a href="projects.html">Projects</a> — to represent the team or department involved in discussions and decisions related to that area.<br>
+This helps ensure accountability, collaboration, and clear ownership over specific sections of the project.</p>
+<p><strong>Configuration path:</strong></p>
+<ul>
+<li><p><em>Project Area definition → Basic panel → Owner field</em><br>
+<em>Display panel name:</em> <code>Basic</code><br>
+<em>System panel name:</em> <code>Project Area</code><br>
+<em>Display field name:</em> <code>Owner</code><br>
+<em>System field name:</em> <code>Primary User</code></p>
+</li>
+<li><p><em>Project Area definition → Advanced panel → Social Group field</em><br>
+<em>Display panel name:</em> <code>Advanced</code><br>
+<em>System panel name:</em> <code>Project Area</code></p>
+</li>
+</ul>
+<p><img src="pictures/area-responsibility.png" alt="Project Area Responsibility"></p>
+<h3 id="wip-work-in-progress-limits">WIP (work-in-progress) Limits</h3>
+<p>Like <a href="projects.html">Projects</a>, Project Areas may also use WIP Limits to control the number of Cases that are allowed to remain in specific workflow states within that Area.<br>
+These limits are applied <strong>per Project Area</strong>, and they function independently from the WIP limits defined at the Project level.<br>
+This mechanism ensures that each Area of the project stays manageable and avoids bottlenecks.</p>
+<p>A separate WIP limit can be defined for each of the following System States:<br>
+<strong>CONSIDER, READY, IN PROGRESS</strong></p>
+<p>If a limit is exceeded, the system will block transitions to the respective state until the number of Cases in that state within the same Project Area in the Case’s Project falls below the defined limit.</p>
+<p><strong>Configuration path:</strong> <em>Project Area Definition → WIP Limits panel → Consider, Ready, and In Progress fields</em><br>
+<em>Display panel name:</em> <code>WIP Limits</code><br><br>
+<em>System panel name:</em> <code>Project</code><br>
+<em>Display field name:</em> <code>Consider</code>, <code>Ready</code>, and <code>In Progress</code> fields <br>
+<em>System field name:</em> <code>Consider WIP Limit</code>, <code>Ready WIP Limit</code>, and <code>In Progress WIP Limit</code> fields</p>
+<p><img src="pictures/area-wip.png" alt="Project Area WIP"></p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/work-management/agile/configuration-and-structure/project-definitions/project-areas.md/#L1" class="edit-link">Suggest improvement to this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

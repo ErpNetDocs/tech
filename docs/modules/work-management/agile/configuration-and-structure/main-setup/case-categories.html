@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title> | ERP.net Tech Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content=" | ERP.net Tech Docs ">
+      
+      
+      <link rel="icon" href="../../../../../favicon.ico">
+      <link rel="stylesheet" href="../../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/work-management/agile/configuration-and-structure/main-setup/case-categories.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../../index.html">
+            <img id="logo" class="svg" src="../../../../../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="case-categories">
+
+<h2 id="case-categories">Case Categories</h2>
+<p>Once <a href="../project-types.md">Project Types</a> have been defined, the next essential step in setting up <strong>Agile PM</strong> is to define the Case Categories — a required element before any Cases can be created.<br>
+<strong>Case Category</strong> is a classification unit that groups Cases with a similar purpose, structure, or role within the workflow. It is used for:</p>
+<ul>
+<li>Organizing and classifying individual Cases</li>
+<li>Reflecting the internal workflow logic of the organization</li>
+</ul>
+<p>Typical examples include bugs, features, enhancements, user stories, scheduled tasks, feedback, internal discussions, etc.</p>
+<p><img src="pictures/case-categories.png" alt="Case Categories"></p>
+<h2 id="main-settings">Main settings</h2>
+<h3 id="allowed-project-types">Allowed Project Types</h3>
+<p>Each Case Category must be explicitly linked to one or more <strong>Project Types</strong>.<br>
+This means that a Case of a given Category can only be associated with Projects of an allowed type.</p>
+<p><strong>For example:</strong></p>
+<ul>
+<li><p>The &quot;User Story&quot; category may allow Cases to be created only in Projects of type:</p>
+<ul>
+<li>Business Analysis</li>
+<li>Website Development</li>
+</ul>
+</li>
+<li><p>A Project of type Marketing Campaign will not appear in the selection list when creating a User Story.</p>
+</li>
+</ul>
+<p>This setup ensures consistency across the system and prevents Case misclassification.</p>
+<p><strong>Configuration path:</strong> <em>Case Category definition → Project Types panel</em></p>
+<p><img src="pictures/category-project-types.png" alt="Allowed Project Types"></p>
+<h3 id="allowed-parent-categories">Allowed Parent Categories</h3>
+<p>When defining a Case Category, it is also possible to specify which other Case Categories are allowed to act as parents for this Category.<br>
+This enables organizations to control the hierarchy of Cases based on business logic.</p>
+<p><strong>For example:</strong></p>
+<ul>
+<li>A Case of category &quot;User Story&quot; may only be allowed to be subordinated to parent Cases from categories such as:
+<ul>
+<li>User Story</li>
+<li>Feature</li>
+<li>Epic</li>
+<li>Feature</li>
+<li>Initiative</li>
+</ul>
+</li>
+<li>It would typically not be allowed to have another User Story as a parent, unless explicitly configured.</li>
+</ul>
+<p>These parent-child rules ensure logical structure and prevent recursive or nonsensical relationships between Cases.</p>
+<p><strong>Configuration path:</strong> <em>Case Category definition → Allowed Parents panel</em><br>
+<em>Display panel name:</em> <code>Allowed Parents</code><br>
+<em>System panel name:</em> <code>Relationships</code></p>
+<p><img src="pictures/category-parents.png" alt="Allowed Parent Categories"></p>
+<p><strong>Examples of Case Categories with their allowed Project Types and parent context</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Case Category</strong></th>
+<th><strong>Allowed Project Types</strong></th>
+<th><strong>Allowed Parent Categories</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bug</td>
+<td>Product Development</td>
+<td>User Story, Feature, Epic</td>
+</tr>
+<tr>
+<td>Feature</td>
+<td>Product Development</td>
+<td>Epic, Initiative</td>
+</tr>
+<tr>
+<td>User Story</td>
+<td>Product Development<br>Website Development</td>
+<td>Epic, Initiative</td>
+</tr>
+<tr>
+<td>QA Task</td>
+<td>Product Development<br>Client Implementation</td>
+<td>Feature</td>
+</tr>
+<tr>
+<td>Discussion</td>
+<td>Client Implementation<br>Process Optimization</td>
+<td>Epic, Initiative, Feature</td>
+</tr>
+<tr>
+<td>Scheduled Task</td>
+<td>Process Optimization<br>Client Implementation</td>
+<td>–</td>
+</tr>
+<tr>
+<td>Social Media Task</td>
+<td>Social Media Strategy</td>
+<td>Campaign Concept, Initiative</td>
+</tr>
+<tr>
+<td>Campaign Concept</td>
+<td>Social Media Strategy</td>
+<td>Initiative</td>
+</tr>
+</tbody>
+</table>
+<h2 id="advanced-settings">Advanced settings</h2>
+<h3 id="requires-parent-setting">Requires parent setting</h3>
+<p>Each Case Category can specify whether a parent Case is mandatory when creating a new Case of that category.<br>
+This is controlled by the Requires Parent setting in the Case Category definition.</p>
+<ul>
+<li>If the Requires Parent field is checked, the system will validate that the Parent field is populated when the Case is saved.</li>
+<li>If the field is not checked, a Case can be created without a parent.</li>
+</ul>
+<p>This setting helps enforce hierarchical consistency, especially in workflows where certain types of Cases must always be linked to broader context items such as User Stories, Features, or Epics.</p>
+<p><strong>Configuration path:</strong> <em>Case Category definition → Advanced panel → Requires Parent field</em><br>
+<em>Display panel name:</em> <code>Advanced</code><br>
+<em>System panel name:</em> <code>Case Category</code></p>
+<h3 id="visibility-of-system-states">Visibility of System States</h3>
+<p>The visibility of System States in the status bar of a Case form can be controlled via the <em>Hide Unused System States</em> option in the Case Category definition.</p>
+<ul>
+<li>When enabled, only System States that have at least one defined and active User State will be visible in the Case form.</li>
+<li>When disabled (which is the default), all System States are shown, even if no User States are assigned to them.</li>
+</ul>
+<p>This setting is useful in workflows where certain System States are not applicable.<br>
+Hiding unused states improves clarity and reduces interface noise — especially in teams that rely on a simplified or custom progression of work.</p>
+<p>It also supports a gradual rollout of User States:</p>
+<ul>
+<li>Initially, teams may define only a few User States while keeping all System States visible.</li>
+<li>Later, once the complete User State model is configured, the <em>Hide Unused System States</em> option can be activated to hide irrelevant system states and finalize the workflow experience.</li>
+</ul>
+<p><em>(For more on System States, see section … For User States, see section …)</em></p>
+<p><strong>Configuration path:</strong> <em>Case Category definition → Advanced panel → Hide Unused System States field</em><br>
+<em>Display panel name:</em> <code>Advanced</code><br>
+<em>System panel name:</em> <code>Case Category</code></p>
+<p><img src="pictures/category-advanced.png" alt="Category Advanced"></p>
+<h3 id="description-template">Description Template</h3>
+<p>Each Case Category can include a description template — a block of predefined text that is automatically displayed when a new Case of that category is created.<br>
+This template is defined in the Description Template field within the Case Category setup.</p>
+<p>The purpose of the template is to help users describe the Case in a structured, unified, and consistent manner.</p>
+<ul>
+<li>It may include formatting guidelines, placeholder phrases, and system variables</li>
+<li>Users can modify the content as needed when entering the details of a specific Case</li>
+</ul>
+<p><strong>Example:</strong><br>
+For a User Story category, the template might include:</p>
+<blockquote>
+<p>As a [type of user/role],
+I want to [perform an action / achieve a goal],<br>
+So that [benefit/value it delivers]</p>
+</blockquote>
+<p><strong>Configuration path:</strong> <em>Case Category definition → Template panel</em><br>
+<em>Display panel name:</em> <code>Template</code><br>
+<em>System panel name:</em> <code>Case Category (Description Template field)</code></p>
+<p><img src="pictures/category-template.png" alt="Description Template"></p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/work-management/agile/configuration-and-structure/main-setup/case-categories.md/#L1" class="edit-link">Suggest improvement to this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Ingest (AI) – Intelligent Import of Purchase Invoices | ERP.net Tech Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Ingest (AI) – Intelligent Import of Purchase Invoices | ERP.net Tech Docs ">
+      
+      
+      <link rel="icon" href="../../../favicon.ico">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/work-management/ai/ingest.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="ingest">
+<h1 id="ingest-ai--intelligent-import-of-purchase-invoices">Ingest (AI) – Intelligent Import of Purchase Invoices</h1>
+
+<h2 id="what-is-ingest-ai">What is Ingest AI?</h2>
+<p><strong>Ingest AI</strong> is an application in the ERP.net web client that automatically reads and imports purchase invoices into the system.</p>
+<p>Instead of manually retyping data from paper or PDF invoices, users can:</p>
+<ul>
+<li><strong>Snap a photo</strong> of the invoice with their smartphone, or</li>
+<li><strong>Upload a file</strong> (image or PDF) from their computer,</li>
+</ul>
+<p>Ingest AI converts it into a <strong>structured purchase invoice document</strong> in ERP.net.</p>
+<p><img src="snap_to_invoicedoc_whiteback.png" alt="Snap to Doc"></p>
+<p><strong>Ingest AI works:</strong></p>
+<ul>
+<li>On <strong>mobile</strong> – ideal for operational staff and accountants on the go.</li>
+<li>On <strong>desktop</strong> – for office users who drag &amp; drop or select files from their computer.</li>
+</ul>
+<p>The result is:</p>
+<ul>
+<li>Less manual data entry</li>
+<li>Fewer typing mistakes</li>
+<li>More time for higher-value, expert work instead of repetitive keying</li>
+</ul>
+<h2 id="primary-use-case-service-purchase-invoices">Primary use case: service purchase invoices</h2>
+<p>Ingest AI is optimized for <strong>service purchase invoices</strong>, where:</p>
+<ul>
+<li>Suppliers often send <strong>multi-line</strong> invoices, broken down by their internal products/services.</li>
+<li>For accounting and reporting, the customer usually needs <strong>one standard internal product or expense</strong> (e.g. <em>“External services expense”</em>, <em>“Software subscription”</em>, <em>“Maintenance fee”</em>), not the supplier’s detailed breakdown.</li>
+</ul>
+<h3 id="smart-mapping-to-your-internal-service-product">Smart mapping to your internal service product</h3>
+<p>When a new invoice from a known supplier is imported, Ingest AI:</p>
+<ol>
+<li>Finds the <strong>most recent purchase invoice</strong> from the same supplier (for up to one year back).</li>
+<li>If that previous invoice is <strong>single-line</strong>, Ingest AI:
+<ul>
+<li>Reuses the <strong>internal product</strong> from that line (e.g., your standard “External services” product).</li>
+<li>Copies the <strong>quantity</strong> and any <strong>user-defined attributes</strong>, if applicable.</li>
+<li>Uses the <strong>net amount</strong> from the newly recognized invoice.</li>
+<li>Copies relevant header settings such as:
+<ul>
+<li>Deal type</li>
+<li>Expense center (and revenue center if used)</li>
+<li>Notes/description</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<p>This means:</p>
+<blockquote>
+<p>Even if the supplier sends a multi-line invoice, ERP.net can work with a <strong>single, standardized line</strong> using <strong>your</strong> internal product for that service, while the detailed supplier structure remains in the attached original document.</p>
+</blockquote>
+<h3 id="why-this-is-a-good-practice">Why this is a good practice</h3>
+<p>From an accounting and process perspective, this approach:</p>
+<ul>
+<li>Reduces complexity by using <strong>standard internal products</strong> and expense categories.</li>
+<li>Simplifies <strong>reporting and analysis</strong> – you always see consistent categories, rather than dozens of supplier-specific items.</li>
+<li>Keeps all supplier details <strong>accessible but not intrusive</strong> – it stays in the scanned/attached document instead of cluttering your accounting lines.</li>
+</ul>
+<p>As long as the invoice in the system has:</p>
+<ul>
+<li>Correct supplier and customer</li>
+<li>Correct invoice number and date</li>
+<li>Correct totals (net, VAT, currency)</li>
+<li>The original document is attached</li>
+</ul>
+<p>You do <strong>not</strong> need to replicate the supplier’s line breakdown exactly inside ERP.net.</p>
+<h2 id="how-ingest-ai-works--end-to-end-flow">How Ingest AI works – end-to-end flow</h2>
+<h3 id="1-accessing-the-application">1. Accessing the application</h3>
+<p>Ingest AI is available in the ERP.net web client:</p>
+<ul>
+<li>From the <strong>main menu</strong> (as a business app).</li>
+<li>On both <strong>desktop</strong> and <strong>mobile view</strong>.</li>
+<li>As an installed mobile app (PWA), for quick access.</li>
+</ul>
+<p><img src="ingest-desktop-and-mobile.png" alt="Ingest Main Screen"></p>
+<h3 id="2-capturing-or-uploading-the-invoice">2. Capturing or uploading the invoice</h3>
+<p>You can provide the invoice to Ingest in several ways:</p>
+<ul>
+<li><strong>Mobile:</strong>
+<ul>
+<li>Choose <strong>Camera</strong> and take a photo of a paper invoice.</li>
+<li>Or pick an existing photo from your gallery.</li>
+</ul>
+</li>
+<li><strong>Desktop:</strong>
+<ul>
+<li>Use <strong>Select File</strong> to browse and upload.</li>
+<li>Or simply <strong>drag &amp; drop</strong> the file onto the Ingest screen.</li>
+</ul>
+</li>
+</ul>
+<p>Supported formats include:</p>
+<ul>
+<li>Photos (e.g., from a smartphone camera)</li>
+<li>PDF and other common image formats</li>
+</ul>
+<blockquote>
+<p><strong>Recommendation:</strong> Each file should contain <strong>exactly one invoice</strong>.<br>
+For multi-page invoices, include <strong>all pages in a single file</strong>.</p>
+</blockquote>
+<h3 id="3-ai-recognition">3. AI recognition</h3>
+<p>Once the file is uploaded, Ingest AI sends it to the AI model, which reads and structures the data. It recognizes core fields such as:</p>
+<ul>
+<li>Document type (e.g., Purchase Invoice, Credit Note)</li>
+<li>Invoice number</li>
+<li>Invoice date</li>
+<li>Supplier name</li>
+<li>Customer (your company)</li>
+<li>Registration / Tax number</li>
+<li>Address</li>
+<li>Total net amount</li>
+<li>VAT and total amount (depending on configuration)</li>
+<li>Currency</li>
+</ul>
+<p>The AI is designed to work reliably even with:</p>
+<ul>
+<li><strong>Scanned</strong> paper invoices</li>
+<li><strong>Hand-written</strong> or partially hand-written invoices (where legible)</li>
+</ul>
+<p>Names of companies are normalized to avoid problems with:</p>
+<ul>
+<li>Extra dots and dashes</li>
+<li>Different quote characters</li>
+<li>Mixed case or spacing</li>
+</ul>
+<p>This improves matching to existing supplier records.</p>
+<h3 id="4-reviewing-recognized-data">4. Reviewing recognized data</h3>
+<p>After recognition, Ingest AI displays a <strong>“Recognized data”</strong> panel where the user can:</p>
+<ul>
+<li>Review the extracted fields.</li>
+<li>Correct any values (e.g., date, number, supplier match, amount, currency).</li>
+<li>Add or edit notes.</li>
+</ul>
+<p>Key fields such as:</p>
+<ul>
+<li>Supplier</li>
+<li>Customer</li>
+<li>Document number</li>
+<li>Date</li>
+<li>Net amount</li>
+<li>Currency</li>
+</ul>
+<p>They are visible and editable, so the person has full control before importing.</p>
+<p>In most cases, the user simply reviews and presses <strong>Import</strong>, because the recognition accuracy is very high.</p>
+<p><img src="ingest-recognised-data.png" alt="Ingest Recognized Data"></p>
+<h3 id="5-validation-and-safety-checks">5. Validation and safety checks</h3>
+<p>Before creating the purchase invoice in ERP.net, Ingest AI performs several checks:</p>
+<ol>
+<li><p><strong>Recipient company check</strong></p>
+<ul>
+<li>Ensures that the <strong>customer on the invoice equals the current enterprise company</strong> in ERP.net.</li>
+<li>If there is a mismatch, import is stopped with a clear error message.</li>
+</ul>
+</li>
+<li><p><strong>Duplicate invoice check</strong></p>
+<ul>
+<li>Checks whether there is an existing, non-voided purchase invoice for:
+<ul>
+<li>The same supplier</li>
+<li>The same document number</li>
+<li>The same enterprise company</li>
+</ul>
+</li>
+<li>If a match is found, Ingest AI <strong>blocks</strong> creation of a duplicate invoice.</li>
+</ul>
+</li>
+<li><p><strong>Document validity</strong></p>
+<ul>
+<li>If the AI cannot recognize the document as a valid purchase invoice (missing supplier, customer, number, date, etc.), the import is not allowed.</li>
+</ul>
+</li>
+</ol>
+<p>These controls ensure that automation <strong>does not</strong> introduce duplicates or incorrect company mappings.</p>
+<h3 id="6-creating-the-purchase-invoice">6. Creating the purchase invoice</h3>
+<p>If validation passes and the user confirms:</p>
+<ol>
+<li>A new <strong>Purchase Invoice</strong> document is created in ERP.net.</li>
+<li>Header fields are filled with the recognized and/or corrected data.</li>
+<li>Ingest applies the <strong>smart mapping logic</strong>:
+<ul>
+<li>Looks up the most recent invoice for this supplier.</li>
+<li>Reuses the internal product and key settings if that invoice is single-line.</li>
+<li>Copies deal type, cost center, and notes.</li>
+<li>Sets the line amount to the net amount of the newly recognized invoice.</li>
+</ul>
+</li>
+<li>The original file (image or PDF) is <strong>attached</strong> to the invoice.</li>
+<li>VAT and other distributed amounts are recalculated automatically based on the totals.</li>
+</ol>
+<p><img src="ingest-sucessful.png" alt="Ingest Sucessfull Import"></p>
+<p>The user then sees:</p>
+<ul>
+<li>The fully created purchase invoice with:
+<ul>
+<li>VAT and totals</li>
+<li>Service line(s)</li>
+</ul>
+</li>
+<li>The attached invoice file can be opened directly in the web client without downloading.</li>
+</ul>
+<p>The accountant can do a final review and post the document as usual.</p>
+<p><img src="ingest-imported-doc.png" alt="Ingest Imported Doc"></p>
+<h2 id="limitations-and-known-behaviors">Limitations and known behaviors</h2>
+<ul>
+<li>Each uploaded file should contain <strong>one invoice</strong>.</li>
+<li>Multi-page invoices must be in a <strong>single file</strong> (multi-page PDF or multi-page image).</li>
+<li>Some environments (like the <strong>new Outlook web interface</strong>) may limit drag &amp; drop directly from email; in such cases, save the file locally first and then upload it to Ingest AI.</li>
+<li>Response time depends on the AI service; slow or unstable connections to the AI server can increase processing time.</li>
+</ul>
+<h2 id="requirements">Requirements</h2>
+<p>To use Ingest AI, you need:</p>
+<ul>
+<li><strong>License:</strong> X13 – Advanced AI</li>
+<li><strong>AI Server site:</strong> An active AI Server Site</li>
+<li><strong>AI provider:</strong> At least one configured AI Provider</li>
+<li><strong>AI model:</strong> A default AI model</li>
+</ul>
+<p>The technical setup of the AI Server Site, AI Provider, and default model is described here:  <a href="how-to/setup-ai.html">How to set up AI in ERP.net</a></p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/work-management/ai/ingest.md/#L1" class="edit-link">Suggest improvement to this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
