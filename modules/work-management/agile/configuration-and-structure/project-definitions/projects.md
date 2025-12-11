@@ -47,7 +47,7 @@ This group represents the team or department involved in the discussions and dec
 
 ### Association with Project Groups
 
-Each Project can optionally be associated with a [Project Group](project-group.md), which enables multiple related projects to share common configurations such as [Project Areas](project-areas.md) and [Project Milestones](project-milestones.md).  
+Each Project can optionally be associated with a [Project Group](project-groups.md), which enables multiple related projects to share common configurations such as [Project Areas](project-areas.md) and [Project Milestones](project-milestones.md).  
 This allows organizations to avoid duplication and manage shared structures more efficiently across related initiatives.  
 
 **For example**:<br>
