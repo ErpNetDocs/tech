@@ -104,13 +104,13 @@
 </ol>
 <p>The calendar events are managed by the mailbox, so each user must have a valid and enabled mailbox in Microsoft 365. Only users with an active mailbox can have calendar events synchronized.</p>
 <ol start="2">
-<li><strong>Each user has default enterprise company and location</strong></li>
+<li><strong>Each user has a default enterprise company and location</strong></li>
 </ol>
 <p>This is required when creating new activities in ERP.net. Since an activity is essentially a document, each document requires the <a href="https://docs.erp.net/model/entities/General.Activities.Activities.html#enterprisecompany">EnterpriseCompany</a> and <a href="https://docs.erp.net/model/entities/General.Activities.Activities.html#enterprisecompanylocation">EnterpriseCompanyLocation</a> properties to be filled.</p>
 <ol start="3">
 <li><strong>Each user must enable their own synchronization</strong></li>
 </ol>
-<p>Each user is responsible for enabling their own synchronization setting.</p>
+<p>Each user is responsible for enabling their own synchronization settings.</p>
 <blockquote>
 <p><strong>Important:</strong> Synchronization is only executed for activities created by users who have synchronization enabled.</p>
 </blockquote>
@@ -121,12 +121,12 @@
 <li>If <strong>User2</strong> has synchronization enabled but <strong>User1</strong> does not, the activity will <strong>not</strong> appear in Outlook.</li>
 <li>The same rule applies in reverse: when User2 creates an activity, it will only synchronize if <strong>User2</strong> has synchronization enabled.</li>
 </ul>
-<h2 id="initial-sync-first-time-synchronization">Initial sync (first-time synchronization)</h2>
-<ol>
-<li>Only remote events (from Microsoft 365) occurring from today until one month later will be synchronized.</li>
-</ol>
-<p>In other words, MSSync will pull all Microsoft 365 events from today until the next month and create corresponding ERP.net activities.</p>
 <h2 id="considerations-and-specific-scenarios">Considerations and specific scenarios</h2>
+<ul>
+<li>Only remote events from Microsoft 365 that fall within a rolling one-month window will be synchronized.
+MSSync retrieves Microsoft 365 events starting from the synchronization date and up to one month ahead, and creates corresponding ERP.net activities.</li>
+</ul>
+<p>Example: <em>If synchronization starts on January 25, MSSync will synchronize all Microsoft 365 events occurring between January 25 and February 25. An activity with a start date of February 10 will be synchronized, while an activity with a start date of March 1 will not.</em></p>
 <ul>
 <li>ERP.net activities older than 1 day will not be synchronized.</li>
 <li>When an ERP.net activity is in read-only state (<code>Released</code>, <code>Closed</code>), all updates triggered from Microsoft 365 will fail. This will result in a synchronization conflict, and the Microsoft 365 activity will be marked accordingly.</li>
