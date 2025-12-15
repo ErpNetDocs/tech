@@ -45,7 +45,10 @@ For example:
 
 ## Considerations and specific scenarios
 
--  Only remote events (from Microsoft 365) occurring from today until one month later will be synchronized. In other words, MSSync will pull all Microsoft 365 events from today until the next month and create corresponding @@name activities.
+- Only remote events from Microsoft 365 that fall within a rolling one-month window will be synchronized.
+MSSync retrieves Microsoft 365 events starting from the synchronization date and up to one month ahead, and creates corresponding @@name activities.
+
+Example: *If synchronization starts on January 25, MSSync will synchronize all Microsoft 365 events occurring between January 25 and February 25. An activity with a start date of February 10 will be synchronized, while an activity with a start date of March 1 will not.*
 - @@name activities older than 1 day will not be synchronized.
 - When an @@name activity is in read-only state (`Released`, `Closed`), all updates triggered from Microsoft 365 will fail. This will result in a synchronization conflict, and the Microsoft 365 activity will be marked accordingly.
 - Recurring events are not supported.
