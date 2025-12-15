@@ -26,13 +26,13 @@ When the default activity document type is secured with `CanUpdate` and/or `CanV
 The calendar events are managed by the mailbox, so each user must have a valid and enabled mailbox in Microsoft 365. Only users with an active mailbox can have calendar events synchronized.
 
 
-2. **Each user has default enterprise company and location**
+2. **Each user has a default enterprise company and location**
 
 This is required when creating new activities in @@name. Since an activity is essentially a document, each document requires the [EnterpriseCompany](https://docs.erp.net/model/entities/General.Activities.Activities.html#enterprisecompany) and [EnterpriseCompanyLocation](https://docs.erp.net/model/entities/General.Activities.Activities.html#enterprisecompanylocation) properties to be filled.
 
 3. **Each user must enable their own synchronization**
 
-Each user is responsible for enabling their own synchronization setting.  
+Each user is responsible for enabling their own synchronization settings.  
 
 > **Important:** Synchronization is only executed for activities created by users who have synchronization enabled.
 
@@ -42,14 +42,10 @@ For example:
 - If **User2** has synchronization enabled but **User1** does not, the activity will **not** appear in Outlook.
 - The same rule applies in reverse: when User2 creates an activity, it will only synchronize if **User2** has synchronization enabled.
 
-## Initial sync (first-time synchronization)
-
-1. Only remote events (from Microsoft 365) occurring from today until one month later will be synchronized.
-
-In other words, MSSync will pull all Microsoft 365 events from today until the next month and create corresponding @@name activities.
 
 ## Considerations and specific scenarios
 
+-  Only remote events (from Microsoft 365) occurring from today until one month later will be synchronized. In other words, MSSync will pull all Microsoft 365 events from today until the next month and create corresponding @@name activities.
 - @@name activities older than 1 day will not be synchronized.
 - When an @@name activity is in read-only state (`Released`, `Closed`), all updates triggered from Microsoft 365 will fail. This will result in a synchronization conflict, and the Microsoft 365 activity will be marked accordingly.
 - Recurring events are not supported.
