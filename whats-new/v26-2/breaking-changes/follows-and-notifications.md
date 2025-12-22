@@ -19,6 +19,7 @@ When an object is at **Follow Level = TAGGED**:
 - **Implicit notifications** (e.g. new related content) **are NOT sent**
 
 _To continue receiving notifications_
+
 Users must **explicitly mark objects as Follow or Favorite** to receive update or implicit notifications.
 
 _What does NOT change_
