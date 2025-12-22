@@ -3134,10 +3134,15 @@
     "title": "What’s New in ERP.net | ERP.net Tech Docs",
     "summary": "What’s New in ERP.net The What’s New section provides an overview of the latest updates and improvements across ERP.net. Each version includes detailed notes organized by key functional areas such as Product Management, WMS, Chat, AI, WEB client and others. This page serves as a central point for exploring new features, enhancements, and fixes, helping users and developers easily track the ongoing evolution of ERP.net. You can browse the version-specific threads to see what’s changed, what’s improved, and what’s coming next. Version 26.2"
   },
+  "whats-new/v26-2/breaking-changes/follows-and-notifications.html": {
+    "href": "whats-new/v26-2/breaking-changes/follows-and-notifications.html",
+    "title": "| ERP.net Tech Docs",
+    "summary": "⚠️ Breaking Change: Follow Levels and Notification Behavior This release introduces Follow-Level-aware notifications and updates the default behavior for existing follows. With this release, a new logic is introduced where notifications depend on the Follow Level of objects in the system. What’s changing All existing records in Social Follows are migrated to Follow Level = TAGGED. After the update, no objects will be marked as Favorite by default. What this means for users Users may temporarily stop receiving notifications they previously received. When an object is at Follow Level = TAGGED: Only chat / comment events are delivered Record update notifications are NOT sent Implicit notifications (e.g. new related content) are NOT sent To continue receiving notifications Users must explicitly mark objects as Follow or Favorite to receive update or implicit notifications. What does NOT change Chat events and direct mentions are still delivered, regardless of Follow Level Object access and group membership are not affected Technical note (for internal teams) Follow Level logic applies only to Record Update and Implicit notifications. Other business processes are not affected unless explicitly stated."
+  },
   "whats-new/v26-2/breaking-changes/index.html": {
     "href": "whats-new/v26-2/breaking-changes/index.html",
     "title": "Breaking changes in Version 26.2 | ERP.net Tech Docs",
-    "summary": "Breaking changes in Version 26.2 None"
+    "summary": "Breaking changes in Version 26.2"
   },
   "whats-new/v26-2/crm/index.html": {
     "href": "whats-new/v26-2/crm/index.html",
@@ -3152,7 +3157,7 @@
   "whats-new/v26-2/index.html": {
     "href": "whats-new/v26-2/index.html",
     "title": "Version 26.2 | ERP.net Tech Docs",
-    "summary": "Version 26.2 Breaking changes in Version 26.2 CRM My Apps Product Management Social Interaction WEB Client Work Management"
+    "summary": "Version 26.2 Breaking changes in Version 26.2 CRM My Apps Product Management Social Interaction WEB Client Work Management ⚠️ Breaking Change: Follow Levels and Notification Behavior"
   },
   "whats-new/v26-2/my-apps/index.html": {
     "href": "whats-new/v26-2/my-apps/index.html",
