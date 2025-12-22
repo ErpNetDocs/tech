@@ -1,4 +1,4 @@
-## ⚠️ Breaking Change: Follow Levels and Notification Behavior
+⚠️ **Breaking Change: Follow Levels and Notification Behavior**
 
 This release introduces Follow-Level-aware notifications and updates the default behavior for existing follows.
 
@@ -29,4 +29,3 @@ Users must **explicitly mark objects as Follow or Favorite** to receive update o
 ### Technical note (for internal teams)
 Follow Level logic applies **only** to Record Update and Implicit notifications.  
 Other business processes are not affected unless explicitly stated.
-
