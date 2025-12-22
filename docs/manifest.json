@@ -22959,6 +22959,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "whats-new/v26-2/breaking-changes/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "whats-new/v26-2/breaking-changes/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "whats-new/v26-2/crm/index.md",
       "output": {
         ".html": {
