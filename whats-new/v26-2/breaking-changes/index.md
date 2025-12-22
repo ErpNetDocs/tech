@@ -1,4 +1,4 @@
-## ⚠️ Breaking changes in Version 26.2
+# Breaking changes in Version 26.2
 
 **Follow Levels and Notification Behavior**
 
