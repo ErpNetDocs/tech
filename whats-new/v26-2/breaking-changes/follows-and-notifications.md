@@ -1,4 +1,4 @@
-⚠️ **Breaking Change: Follow Levels and Notification Behavior**
+**Breaking Change: Follow Levels and Notification Behavior**
 
 This release introduces Follow-Level-aware notifications and updates the default behavior for existing follows.
 
