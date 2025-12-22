@@ -11,6 +11,13 @@ Together, these tools create a connected, efficient, and adaptive collaboration 
 ![overview](pictures/social-interactions.png)
 
 ## Notable features
+### ⚠️ Breaking Change: Follow-Level-Aware Notifications
+
+Notifications now depend on the Follow Level of objects. All existing follows have been migrated to TAGGED
+
+TAGGED objects deliver chat/comment events only
+
+➡️ To continue receiving update or implicit notifications, mark important objects as Follow or Favorite.
 
 ## Other features
 
