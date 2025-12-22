@@ -1,5 +1,6 @@
 - name: Breaking Changes 
   href: breaking-changes/index.md 
+  topicHref: breaking-changes/index.md
 - name: Product Management 
   href: product-management/toc.yml 
   topicHref: product-management/index.md
