@@ -8,16 +8,15 @@ The **Social Interaction** framework in ERP.net brings team collaboration to lif
 
 Together, these tools create a connected, efficient, and adaptive collaboration environment for organizations of any size or industry.
 
-![overview](pictures/social-interactions.png)
 
 ## Notable features
-### ⚠️ Breaking Change: Follow-Level-Aware Notifications
+### ⚠️ Breaking Change: Follow Levels and Notification Behavior
 
-Notifications now depend on the Follow Level of objects. All existing follows have been migrated to TAGGED
+Notifications now depend on the Follow Level of objects. All existing follows have been migrated to TAGGED.
 
-TAGGED objects deliver chat/comment events only
+TAGGED objects deliver chat/comment events only.
 
-➡️ To continue receiving update or implicit notifications, mark important objects as Follow or Favorite.
+➡️ To continue receiving update or implicit notifications, mark important objects as Follow or Favorite.[Details](./breaking-changes/follows-and-notifications.md)
 
 ## Other features
 
