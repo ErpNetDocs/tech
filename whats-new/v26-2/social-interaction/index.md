@@ -10,7 +10,7 @@ The **Social Interaction** framework in ERP.net brings team collaboration to lif
 
 Notifications now depend on the Follow Level of objects. All existing follows have been migrated to TAGGED.
 <br>TAGGED objects deliver chat/comment events only.
-<br>➡️ To continue receiving update or implicit notifications, mark important objects as Follow or Favorite.[Details](./breaking-changes/follows-and-notifications.md)
+<br>➡️ To continue receiving update or implicit notifications, mark important objects as Follow or Favorite.[Details](../breaking-changes/follows-and-notifications.md)
 
 ## Other features
 
