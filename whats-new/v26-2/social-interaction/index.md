@@ -1,22 +1,16 @@
 # Social Interaction
 
 The **Social Interaction** framework in ERP.net brings team collaboration to life through three core components — Social Groups, the Discussions/Chat panel, and Notifications. 
-
-**Social Groups** provide a centralized space for teams to collaborate, share updates, and manage discussions, forming the foundation of the platform’s Social ERP concept. 
-
-Тhe integrated **Chat** component enables real-time communication within groups, while **Notifications** keep users informed and engaged with relevant activities. 
-
-Together, these tools create a connected, efficient, and adaptive collaboration environment for organizations of any size or industry.
-
+<br>**Social Groups** provide a centralized space for teams to collaborate, share updates, and manage discussions, forming the foundation of the platform’s Social ERP concept. 
+<br>Тhe integrated **Chat** component enables real-time communication within groups, while **Notifications** keep users informed and engaged with relevant activities. 
+<br>Together, these tools create a connected, efficient, and adaptive collaboration environment for organizations of any size or industry.
 
 ## Notable features
 ### ⚠️ Breaking Change: Follow Levels and Notification Behavior
 
 Notifications now depend on the Follow Level of objects. All existing follows have been migrated to TAGGED.
-
-TAGGED objects deliver chat/comment events only.
-
-➡️ To continue receiving update or implicit notifications, mark important objects as Follow or Favorite.[Details](./breaking-changes/follows-and-notifications.md)
+<br>TAGGED objects deliver chat/comment events only.
+<br>➡️ To continue receiving update or implicit notifications, mark important objects as Follow or Favorite.[Details](./breaking-changes/follows-and-notifications.md)
 
 ## Other features
 
