@@ -7,7 +7,7 @@ It is targeted towards implementation consultants and power users.
 ## Topics
 
 - [Concepts](./concepts/index.md) - general concepts which apply to all modules
-- [Modules](modules/index.md) - business functions and capabilities of ERP.net's modules
+- [Subsystems](modules/index.md) - business functions and capabilities of the different subsystems
 - [Advanced](./advanced/index.md) - documentation of advanced systems
 - [Reference](./reference/index.md) - reference data for different topics
 - [What’s New](./whats-new/index.md) - an overview of the latest updates and improvements across ERP.net
