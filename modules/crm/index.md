@@ -113,7 +113,7 @@ The CRM documentation is organized to guide you gradually from the big picture t
 - **[Sales Force](./sales-force/index.md)** – managing sales personnel, group structures, task assignment rules, and targets
 - **[Subscriptions](./subscriptions/index.md)** – agreements for recurring services and periodic invoicing
 - **[POS](./pos/index.md)** – managing point-of-sale operations in physical retail locations
-- **[Client Center](./client-center/index.md)** – configuring a platform for customer engagement and self-service
+- **[Client Center](./clientcenter/index.md)** – configuring a platform for customer engagement and self-service
 
 
 ---
