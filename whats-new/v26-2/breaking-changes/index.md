@@ -1,6 +1,6 @@
-# Breaking changes in Version 26.2
+# Breaking changes
 
-## **Follow Levels and Notification Behavior**
+## **Follow Levels and Notifications Behavior**
 
 Notifications now depend on the Follow Level of objects. All existing follows have been migrated to TAGGED.<br>
 TAGGED objects deliver chat/comment events only.
