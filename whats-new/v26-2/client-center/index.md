@@ -1,4 +1,4 @@
-# Cleint Center
+# Client Center
 
 ...........major enhancements in v.26.2.
 
