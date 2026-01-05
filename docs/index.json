@@ -3141,8 +3141,8 @@
   },
   "whats-new/v26-2/breaking-changes/index.html": {
     "href": "whats-new/v26-2/breaking-changes/index.html",
-    "title": "Breaking changes in Version 26.2 | ERP.net Tech Docs",
-    "summary": "Breaking changes in Version 26.2 Follow Levels and Notification Behavior Notifications now depend on the Follow Level of objects. All existing follows have been migrated to TAGGED. TAGGED objects deliver chat/comment events only. ➡️ To continue receiving update or implicit notifications, mark important objects as Follow or Favorite. Details"
+    "title": "Breaking changes | ERP.net Tech Docs",
+    "summary": "Breaking changes Follow Levels and Notifications Behavior Notifications now depend on the Follow Level of objects. All existing follows have been migrated to TAGGED. TAGGED objects deliver chat/comment events only. ➡️ To continue receiving update or implicit notifications, mark important objects as Follow or Favorite. Details"
   },
   "whats-new/v26-2/client-center/index.html": {
     "href": "whats-new/v26-2/client-center/index.html",
@@ -3167,7 +3167,7 @@
   "whats-new/v26-2/index.html": {
     "href": "whats-new/v26-2/index.html",
     "title": "Version 26.2 | ERP.net Tech Docs",
-    "summary": "Version 26.2 Breaking changes in Version 26.2 CRM Client Center My Apps Product Management Social Interaction WEB Client Work Management"
+    "summary": "Version 26.2 Breaking changes CRM Client Center My Apps Product Management Social Interaction WEB Client Work Management"
   },
   "whats-new/v26-2/my-apps/index.html": {
     "href": "whats-new/v26-2/my-apps/index.html",
