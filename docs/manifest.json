@@ -22979,6 +22979,36 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "whats-new/v26-2/client-center/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "whats-new/v26-2/client-center/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "whats-new/v26-2/client-center/pictures/1.png",
+      "output": {
+        "resource": {
+          "relative_path": "whats-new/v26-2/client-center/pictures/1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "whats-new/v26-2/client-center/pictures/pic.md",
+      "output": {
+        ".html": {
+          "relative_path": "whats-new/v26-2/client-center/pictures/pic.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "whats-new/v26-2/crm/index.md",
       "output": {
         ".html": {
