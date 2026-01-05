@@ -19,3 +19,6 @@
 - name: CRM
   href: crm/index.md
   topicHref: crm/index.md
+- name: Client Center
+  href: client-center/index.md
+  topicHref: client-center/index.md
