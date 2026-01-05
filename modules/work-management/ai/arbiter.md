@@ -43,7 +43,7 @@ To use an AI Arbiter, you need:
    - Required if you use Q&A / Training Conversations or want a dedicated assistant configuration.
    - See: *AI Setup – Model compilation* in the main docs.
 
-**For more info on steps from 4 to 5, see  [How to - Fine-tune AI Models](fine-tune-models.md)**
+**For more info on steps from 4 to 5, see  [How to - Fine-tune AI Models](./how-to/fine-tune-models.md)**
 
 ## Configuring the AI Arbiter in a chat
 
@@ -59,16 +59,16 @@ From this moment, the AI Arbiter is available in that chat.
 Inside the chat group where the arbiter is a member, users can:
 
 - Ask questions directly in the channel  
-  e.g. “@Marketing AI, how often should we post on Instagram?”  
+  e.g., “@Marketing AI, how often should we post on Instagram?”  
 - Ask it to review a message or thread  
-  e.g. “@AI, is this proposal consistent with our pricing rules?”  
+  e.g,. “@AI, is this proposal consistent with our pricing rules?”  
 - Ask for a summary  
   e.g. “@AI, summarise today’s discussion and list next steps.”
 
 The arbiter bases its answers on:
 
 - the **current conversation context** in the chat,
-- any **fine-tuning** (System Message, Q&A, Training Conversations) configured for its model - for more info, see **[How to - Fine-tune AI Models](fine-tune-models.md)**,
+- any **fine-tuning** (System Message, Q&A, Training Conversations) configured for its model - for more info, see **[How to - Fine-tune AI Models](./how-to/fine-tune-models.md)**,
 - the general knowledge of the underlying OpenAI model.
 
 
@@ -84,7 +84,7 @@ When the arbiter gives an answer that is not entirely correct or could be improv
 ERP.net will create a **Training Conversation** for the arbiter’s model.  
 After the next compilation (if used), the arbiter will use this new knowledge in future answers.
 
-For more info and exact steps, see **[How to - Fine-tune AI Models](fine-tune-models.md)**
+For more info and exact steps, see **[How to - Fine-tune AI Models](./how-to/fine-tune-models.md)**
 
 ## Notes and good practices
 
