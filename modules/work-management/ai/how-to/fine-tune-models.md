@@ -4,7 +4,7 @@
 
 Fine-tuning in @@name means **adapting a base AI model** (from OpenAI) to your company’s specific rules, language, and way of working.
 
-Instead of using a general model that “knows a bit of everything”, you can train specialized assistants such as:
+Instead of using a general model that “knows a bit of everything”, you can train specialised assistants such as:
 
 - “AI Marketing Assistant”
 - “AI Sales Assistant”
@@ -15,7 +15,7 @@ Fine-tuning is done entirely inside @@name, using:
 
 - **System Мessage** – general instructions and behaviour.
 - **Q&A records** – structured questions and answers.
-- **Training Цonversations** – real chat dialogues that the model has “learned from”.
+- **Training Conversations** – real chat dialogues that the model has “learned from”.
 
 The result is a model that understands your processes, terminology, and internal rules much better than a generic ChatGPT.
 
@@ -33,7 +33,7 @@ From a technical perspective, fine-tuning is needed when:
 - You want to use a **fine-tuned model** (Q&A and/or Training Conversations).
 - You want to use a **dedicated AI Assistant** (the *My Assistant* app or assistant panel) with its own behaviour.
 
-In all other scenarios (for example, simple backend AI rules without specialization), @@name can work directly with the **base model** from the AI Provider without fine-tuning.
+In all other scenarios (for example, simple backend AI rules without specialisation), @@name can work directly with the **base model** from the AI Provider without fine-tuning.
 
 
 ## Fine-tuning components
