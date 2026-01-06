@@ -1,9 +1,9 @@
 # Client Center
 
-...........major enhancements in v.26.2.
+This page summarizes the Client Center improvements delivered in v26.2. It is updated as related cases are completed.
 
 ## Notable features
-following
+Major Client Center highlights for v26.2 will be listed here when applicable. For the currently delivered items, see **Other features** below.
 
 ## Other features
 1. **Notes on order creation (Client Center)**  
