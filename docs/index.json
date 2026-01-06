@@ -3147,12 +3147,7 @@
   "whats-new/v26-2/client-center/index.html": {
     "href": "whats-new/v26-2/client-center/index.html",
     "title": "Client Center | ERP.net Tech Docs",
-    "summary": "Client Center ...........major enhancements in v.26.2. Notable features following Other features following"
-  },
-  "whats-new/v26-2/client-center/pictures/pic.html": {
-    "href": "whats-new/v26-2/client-center/pictures/pic.html",
-    "title": "| ERP.net Tech Docs",
-    "summary": ""
+    "summary": "Client Center This page summarizes the Client Center improvements delivered in v26.2. It is updated as related cases are completed. Notable features Major Client Center highlights for v26.2 will be listed here when applicable. For other delivered items, see Other features below. Other features Notes on order creation (Client Center) When creating a New Order in Client Center, users can now add a short Notes text directly in the Order tab. This is useful for delivery instructions, preferences, or other clarifications that should reach the fulfillment team immediately—without follow-up emails or calls. The field is optional and does not block order creation when left empty. Notes are stored in General.Documents.Documents.DocumentNotes."
   },
   "whats-new/v26-2/crm/index.html": {
     "href": "whats-new/v26-2/crm/index.html",
