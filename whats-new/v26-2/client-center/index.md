@@ -1,8 +1,3 @@
-В изречението за Notable features бих махнал “currently delivered”, за да не звучи сякаш има само “temporary state”. По-неутрално:
-Major Client Center highlights for v26.2 will be listed here when applicable. For other delivered items, see **Other features** below.
-Ако искате по-“release note” тон, можеш да смениш “This page summarizes…” с “This page lists…”, но сегашното е ок.
-Ето предложената финална версия (минимални промени):
-
 # Client Center
 
 This page summarizes the Client Center improvements delivered in v26.2. It is updated as related cases are completed.
