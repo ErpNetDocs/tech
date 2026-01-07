@@ -6,6 +6,11 @@ The **Work Management** module centralizes the entire work lifecycle—from plan
 following
 
 ## Other features
-following
+### 1. New rule for closing Cases
+
+A Case can be set to CLOSED only if all related Tasks (Todos) are COMPLETED.
+If there are unfinished Tasks, the system will block the action and prompt the user to complete them first.
+
+This revocable rule helps prevent incomplete work and improves process consistency.
 
 
