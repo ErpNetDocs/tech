@@ -8,6 +8,7 @@ This page summarizes the Client Center improvements delivered in v.26.2. It is u
 Major Client Center highlights for v.26.2 will be listed here when applicable. For other delivered items, see **Other features** below.
 
 
+
 ## Other features
 
 ### **1. Notes on order creation**  
