@@ -4,12 +4,11 @@ This release introduces Follow-Level-aware notifications and updates the default
 
 With this release, a new logic is introduced where **notifications depend on the Follow Level** of objects in the system.
 
-_What’s changing_
+_What’s changing?_
 
-All existing records in **Social Follows** are migrated to **Follow Level = TAGGED**.  
-After the update, **no objects will be marked as Favorite by default**.
+All existing Favorite records are migrated to **Follow Level = TAGGED**. After the update, **no objects will be marked as Favorite by default**.
 
-_What this means for users_
+_What this means for users?_
 
 Users may temporarily stop receiving notifications they previously received.
 
@@ -28,5 +27,4 @@ _What does NOT change_
 - Object access and group membership are not affected
 
 _Technical note (for internal teams)_
-Follow Level logic applies **only** to Record Update and Implicit notifications.  
-Other business processes are not affected unless explicitly stated.
+Follow Level logic applies **only** to Record Update and Implicit notifications.  Other business processes are not affected unless explicitly stated.
