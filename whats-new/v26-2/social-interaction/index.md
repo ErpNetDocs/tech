@@ -31,13 +31,14 @@ With this update:
 As part of this change, existing follows were migrated to an automatic follow level (a Breaking change). This means your Favorites list may initially be empty until you mark objects as Favorite again — helping you start fresh with a more meaningful set.
 
  **Follow levels at a glance**
+![followicons](pictures/followicons.png)
 
 Each followed object now has a follow level that shows why you are following it and how important it is to you.
 Follow levels are personal — different users can follow the same object at different levels.
 
-- Tagged: An automatic follow. You are tagged when the system involves you, such as through mentions or assignments.
-- Following: An explicit follow. You choose to follow the object to stay informed, without marking it as important.
-- Favorite:The highest level. You mark the object as important, and it appears in the Favorites app.
+- *Tagged*: An automatic follow. You are tagged when the system involves you, such as through mentions or assignments.
+- *Following*: An explicit follow. You choose to follow the object to stay informed, without marking it as important.
+- *Favorite*:The highest level. You mark the object as important, and it appears in the Favorites app.
 
 Follow levels are stored per user and per object, representing your personal relationship to what you follow and validating corresponding Notifications for you!
 
