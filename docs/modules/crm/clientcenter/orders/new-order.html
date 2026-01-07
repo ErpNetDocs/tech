@@ -139,6 +139,15 @@
 <p><img src="pictures/quantity_distribution_channel_clientcenter.png" alt="pictures"></p>
 </li>
 </ol>
+<h3 id="notes">Notes</h3>
+<p>To add additional instructions (e.g. delivery details or preferences) while creating the order, use the <strong>Add Notes</strong> action in the command bar of the <strong>Order</strong> tab.</p>
+<ul>
+<li>When no note is saved yet, the button is labeled <strong>Add Notes</strong>.</li>
+<li>After a note is saved, the button is labeled <strong>Notes</strong>.</li>
+</ul>
+<p>Clicking the button opens a popup where you can enter or edit the note. Use <strong>Save</strong> to store it or <strong>Cancel</strong> to close without changes.</p>
+<p>Notes are optional and do not block order creation when left empty.</p>
+<p>Notes are stored in <a href="https://docs.erp.net/model/entities/General.Documents.Documents.html#documentnotes">General.Documents.Documents.DocumentNotes</a>.</p>
 <h3 id="default-store-and-product-availability">Default store and product availability</h3>
 <p>All sales orders in the Client Center can have a <strong>store</strong> automatically set for them after they are created. Administrators can define it with the respective <strong><a href="https://docs.erp.net/tech/modules/crm/clientcenter/reference.html?q=defaultstore#defaultstore-setting">JSON setting</a></strong>. If not defined, the <strong>Store</strong> field will remain empty.</p>
 <p>Provided a store is specified and a <strong><a href="https://docs.erp.net/tech/modules/crm/clientcenter/reference.html?q=defaultstore#availabilitymax-setting">maximum availability threshold</a></strong> is in place, you will be able to see the <strong>availability</strong> of all products you wish to include in the order.</p>

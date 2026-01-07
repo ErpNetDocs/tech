@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Social Interaction | ERP.net Tech Docs </title>
+      <title>Social Interactions | ERP.net Tech Docs </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Social Interaction | ERP.net Tech Docs ">
+      <meta name="title" content="Social Interactions | ERP.net Tech Docs ">
       
       
       <link rel="icon" href="../../../favicon.ico">
@@ -85,18 +85,42 @@
         </div>
 
         <article data-uid="">
-<h1 id="social-interaction">Social Interaction</h1>
+<h1 id="social-interactions">Social Interactions</h1>
 
 <p>The <strong>Social Interaction</strong> framework in ERP.net brings team collaboration to life through three core components — Social Groups, the Discussions/Chat panel, and Notifications.
 <br><strong>Social Groups</strong> provide a centralized space for teams to collaborate, share updates, and manage discussions, forming the foundation of the platform’s Social ERP concept.
 <br>Тhe integrated <strong>Chat</strong> component enables real-time communication within groups, while <strong>Notifications</strong> keep users informed and engaged with relevant activities.
 <br>Together, these tools create a connected, efficient, and adaptive collaboration environment for organizations of any size or industry.</p>
 <h2 id="-breaking-changes">⚠️ Breaking Changes</h2>
-<h3 id="breaking-change-follow-levels-and-notification-behavior">Breaking Change: Follow Levels and Notification Behavior</h3>
-<p>Notifications now depend on the Follow Level of objects. All existing follows have been migrated to TAGGED.
-<br>TAGGED objects deliver chat/comment events only.
-<br>➡️ To continue receiving update or implicit notifications, mark important objects as Follow or Favorite.<a href="../breaking-changes/follows-and-notifications.html">Details</a></p>
+<p><strong>Breaking Change: Follow Levels</strong></p>
+<p>Follow levels are introduced - the level of interest you have for an object. All existing Favorites have been migrated to follow level TAGGED.</p>
+<p>1.Tagged level objects are listed in My Favorites app. As result the app will appear empty after the update.
+<br>➡️ To have Favorites, you need to mark the objects as such again.</p>
+<p>2.Second impact refers to the creation of Notifications. Tagged objects deliver chat/comment event notifications only.
+<br>➡️ To continue receiving update or implicit notifications, mark important objects as Following or Favorite.</p>
+<blockquote>
+<p><a href="../breaking-changes/follows-and-notifications.html">IN DETAILS</a></p>
+</blockquote>
 <h2 id="notable-features">Notable features</h2>
+<h3 id="1-introducing-follow-levels-for-clearer-favorites-and-smarter-notifications"><strong>1. Introducing Follow levels for clearer Favorites and smarter Notifications</strong></h3>
+<p>We’ve improved how following works in Social Interaction by introducing <a href="https://docs.erp.net/webclient/introduction/social/social-follows.html">Follow levels</a> — a new way to better reflect why you follow an object and how important it is to you.</p>
+<p>Until now, following was a simple on/off action. This often mixed together objects you were automatically involved in (for example, through mentions or assignments) with objects you truly cared about. Follow levels change that.</p>
+<p>With this update:</p>
+<ul>
+<li>Objects can be followed at different levels, depending on your intent.</li>
+<li>Favorites are now an explicit choice, reserved only for objects you mark as most important.</li>
+<li>Automatic follows (through mentions) no longer fill up your Favorites.</li>
+<li>Notifications organized in classes are better aligned with what actually matters to you and created if follow level allows.</li>
+</ul>
+<p>As part of this change, existing follows were migrated to an automatic follow level (a Breaking change). This means your Favorites list may initially be empty until you mark objects as Favorite again — helping you start fresh with a more meaningful set.</p>
+<p><strong>Follow levels at a glance</strong>
+<img src="pictures/followicons.png" alt="followicons"></p>
+<p>Follow levels are personal — different users can follow the same object at different levels. They are stored per user and per object, representing your personal relationship to what you follow and validating corresponding Notifications for you!</p>
+<ul>
+<li><em>Tagged</em>: An automatic follow. You are tagged when the system involves you through mentions. Assignments rely on current rules, this is not tagging.</li>
+<li><em>Following</em>: An explicit follow. You choose to follow the object to stay informed, without marking it as important.</li>
+<li><em>Favorite</em>:The highest level. You mark the object as important, and it appears in the Favorites app.</li>
+</ul>
 <h2 id="other-features">Other features</h2>
 <h3 id="1-gallery-of-uploaded-files"><strong>1. Gallery of uploaded files</strong></h3>
 <p>We’ve added a new Preview option to the Files tab in Social Groups! 🎉

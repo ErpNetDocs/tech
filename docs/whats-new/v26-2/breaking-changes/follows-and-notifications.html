@@ -87,29 +87,26 @@
         <article data-uid="">
 
 <p><strong>Breaking Change: Follow Levels and Notification Behavior</strong></p>
-<p>This release introduces Follow-Level-aware notifications and updates the default behavior for existing follows.</p>
-<p>With this release, a new logic is introduced where <strong>notifications depend on the Follow Level</strong> of objects in the system.</p>
-<p><em>What’s changing</em></p>
-<p>All existing records in <strong>Social Follows</strong> are migrated to <strong>Follow Level = TAGGED</strong>.<br>
-After the update, <strong>no objects will be marked as Favorite by default</strong>.</p>
-<p><em>What this means for users</em></p>
-<p>Users may temporarily stop receiving notifications they previously received.</p>
+<p>This release introduces Follow-Level-aware notifications and updates the default behavior for existing follows. With this release, a new logic is introduced where <strong>notifications depend on the Follow Level</strong> of objects in the system.</p>
+<p><em>What’s changing?</em>
+<br>All existing Favorite records are migrated to <strong>Follow Level = TAGGED</strong>. After the update, <strong>no objects will be marked as Favorite by default</strong>.</p>
+<p><em>What this means for users?</em>
+<br>Users may temporarily stop receiving notifications they previously received.</p>
 <p>When an object is at <strong>Follow Level = TAGGED</strong>:</p>
 <ul>
 <li>Only <strong>chat / comment events</strong> are delivered</li>
 <li><strong>Record update notifications are NOT sent</strong></li>
 <li><strong>Implicit notifications</strong> (e.g. new related content) <strong>are NOT sent</strong></li>
 </ul>
-<p><em>To continue receiving notifications</em></p>
-<p>Users must <strong>explicitly mark objects as Follow or Favorite</strong> to receive update or implicit notifications.</p>
-<p><em>What does NOT change</em></p>
+<p><em>To continue receiving notifications</em>
+<br>Users must <strong>explicitly mark objects as Follow or Favorite</strong> to receive update or implicit notifications.</p>
+<p><em>What does NOT change?</em></p>
 <ul>
 <li>Chat events and direct mentions are still delivered, regardless of Follow Level</li>
 <li>Object access and group membership are not affected</li>
 </ul>
 <p><em>Technical note (for internal teams)</em>
-Follow Level logic applies <strong>only</strong> to Record Update and Implicit notifications.<br>
-Other business processes are not affected unless explicitly stated.</p>
+<br>Follow Level logic applies <strong>only</strong> to Record Update and Implicit notifications.  Other business processes are not affected unless explicitly stated.</p>
 
 </article>
 

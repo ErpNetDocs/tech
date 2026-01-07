@@ -23008,6 +23008,26 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "whats-new/v26-2/client-center/pictures/cc-notes-neworder-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "whats-new/v26-2/client-center/pictures/cc-notes-neworder-1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "whats-new/v26-2/client-center/pictures/cc-notes-neworder-2.png",
+      "output": {
+        "resource": {
+          "relative_path": "whats-new/v26-2/client-center/pictures/cc-notes-neworder-2.png"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "whats-new/v26-2/crm/index.md",
       "output": {
@@ -23116,6 +23136,16 @@
       "output": {
         "resource": {
           "relative_path": "whats-new/v26-2/social-interaction/pictures/files-preview.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "whats-new/v26-2/social-interaction/pictures/followicons.png",
+      "output": {
+        "resource": {
+          "relative_path": "whats-new/v26-2/social-interaction/pictures/followicons.png"
         }
       },
       "version": ""
