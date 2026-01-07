@@ -81,6 +81,19 @@ To begin, add products to the order. There are several ways to do this:
 
    ![pictures](pictures/quantity_distribution_channel_clientcenter.png)
 
+### Notes
+
+To add additional instructions (e.g. delivery details or preferences) while creating the order, use the **Add Notes** action in the command bar of the **Order** tab.
+
+- When no note is saved yet, the button is labeled **Add Notes**.
+- After a note is saved, the button is labeled **Notes**.
+
+Clicking the button opens a popup where you can enter or edit the note. Use **Save** to store it or **Cancel** to close without changes.
+
+Notes are optional and do not block order creation when left empty.
+
+Notes are stored in [General.Documents.Documents.DocumentNotes](https://docs.erp.net/model/entities/General.Documents.Documents.html#documentnotes).
+
 ### Default store and product availability 
 
 All sales orders in the Client Center can have a **store** automatically set for them after they are created. Administrators can define it with the respective **[JSON setting](https://docs.erp.net/tech/modules/crm/clientcenter/reference.html?q=defaultstore#defaultstore-setting)**. If not defined, the **Store** field will remain empty.
