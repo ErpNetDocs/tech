@@ -14,7 +14,7 @@ Follow levels are introduced - the level of interest you have for an object. All
 <br>➡️ To have Favorites, you need to mark the objects as such again.
 
 2.Second impact refers to the creation of Notifications. Tagged objects deliver chat/comment event notifications only.
-<br>➡️ To continue receiving update or implicit notifications, mark important objects as Follow or Favorite.
+<br>➡️ To continue receiving update or implicit notifications, mark important objects as Following or Favorite.
 >[IN DETAILS](../breaking-changes/follows-and-notifications.md)
 
 ## Notable features
@@ -29,7 +29,7 @@ With this update:
 
 - Objects can be followed at different levels, depending on your intent.
 - Favorites are now an explicit choice, reserved only for objects you mark as most important.
-- Automatic follows (such as mentions) no longer fill up your Favorites.
+- Automatic follows (through mentions) no longer fill up your Favorites.
 - Notifications organized in classes are better aligned with what actually matters to you and created if follow level allows.
 
 As part of this change, existing follows were migrated to an automatic follow level (a Breaking change). This means your Favorites list may initially be empty until you mark objects as Favorite again — helping you start fresh with a more meaningful set.
@@ -37,14 +37,11 @@ As part of this change, existing follows were migrated to an automatic follow le
  **Follow levels at a glance**
 ![followicons](pictures/followicons.png)
 
-Each followed object now has a follow level that shows why you are following it and how important it is to you.
-Follow levels are personal — different users can follow the same object at different levels.
+Follow levels are personal — different users can follow the same object at different levels. They are stored per user and per object, representing your personal relationship to what you follow and validating corresponding Notifications for you!
 
-- *Tagged*: An automatic follow. You are tagged when the system involves you, such as through mentions or assignments.
+- *Tagged*: An automatic follow. You are tagged when the system involves you through mentions. Assignments rely on current rules, this is not tagging.
 - *Following*: An explicit follow. You choose to follow the object to stay informed, without marking it as important.
 - *Favorite*:The highest level. You mark the object as important, and it appears in the Favorites app.
-
-Follow levels are stored per user and per object, representing your personal relationship to what you follow and validating corresponding Notifications for you!
 
 ## Other features
 
