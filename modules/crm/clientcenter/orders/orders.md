@@ -15,6 +15,7 @@ You can find the following information about each order in the table:
 - **Document No** - The document number.
 - **Amount** - The amount of the order. 
 - **Status** - Current state of the order (e.g. New, Ordered, Cancelled).
+- **Notes** - Optional order notes. The column is not shown by default and can be enabled from the [Column chooser](https://docs.erp.net/tech/modules/crm/clientcenter/grid-control.html#column-chooser).
 
 > [!Important]
 >
