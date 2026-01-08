@@ -19221,40 +19221,30 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "modules/my/favorites/pictures/Favorites_add.png",
+      "source_relative_path": "modules/my/favorites/pictures/favmake.png",
       "output": {
         "resource": {
-          "relative_path": "modules/my/favorites/pictures/Favorites_add.png"
+          "relative_path": "modules/my/favorites/pictures/favmake.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "modules/my/favorites/pictures/Favorites_edit.png",
+      "source_relative_path": "modules/my/favorites/pictures/favremove.png",
       "output": {
         "resource": {
-          "relative_path": "modules/my/favorites/pictures/Favorites_edit.png"
+          "relative_path": "modules/my/favorites/pictures/favremove.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "modules/my/favorites/pictures/Favorites_remove_x.png",
+      "source_relative_path": "modules/my/favorites/pictures/overview.png",
       "output": {
         "resource": {
-          "relative_path": "modules/my/favorites/pictures/Favorites_remove_x.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/my/favorites/pictures/Favorites_view.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/my/favorites/pictures/Favorites_view.png"
+          "relative_path": "modules/my/favorites/pictures/overview.png"
         }
       },
       "version": ""
