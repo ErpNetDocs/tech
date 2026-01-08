@@ -41,7 +41,7 @@ Inside, you can find customer and enterprise company data, as well as individual
 
 ![pictures](pictures/orders_sele.png)
 
-Notes, if present, are displayed in the order document header.
+**Notes**, if present, are displayed in the order document header.
 
 It is possible to **download** an order as a PDF file.
 
