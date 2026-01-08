@@ -14,10 +14,6 @@ All marked favorites are displayed in one place, providing a centralized view of
 
 When an entity is added as a favorite, you will automatically receive **system notifications** about related updates and activities. For example, marking a customer as favorite may trigger notifications for new opportunities, campaigns, or communications linked to that customer.
 
-### Automatic inclusion of related documents
-
-Marking a document (e.g., an order, invoice, or contract) as a favorite will **automatically include its related documents** in the favorites list. This ensures that you stay informed of all dependent workflows and actions connected to the original document.
-
 ### Categories in Favorites
 
 Favorites are grouped automatically by entity type. Common categories include:
@@ -52,3 +48,5 @@ This toggles **edit mode** and displays controls for each favorite item. Click t
 > [!NOTE]
 > 
 > The screenshots taken for this article are from v26 of the platform.
+>
+> Follow the link to learn how to use [Favorites in Web Client](https://docs.erp.net/webclient/introduction/my-apps/favorites/index.html)
