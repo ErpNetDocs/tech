@@ -10,9 +10,13 @@ Major Client Center highlights for v.26.2 will be listed here when applicable. F
 
 ## Other features
 
-### **1. Notes on order creation**  
+### **1. Notes for orders**  
 
-   When creating a **New Order** in Client Center, users can now add a short **Notes** text directly in the **Order** tab. This is useful for delivery instructions, preferences, or other clarifications that should reach the fulfillment team immediately—without follow-up emails or calls. The field is optional and does not block order creation when left empty. Notes are stored in [General.Documents.Documents.DocumentNotes](https://docs.erp.net/model/entities/General.Documents.Documents.html#documentnotes).
+  Small clarifications (delivery instructions, preferences, internal handling details) can make a big difference during fulfillment. In v.26.2, Client Center makes it easier to capture these details and keep them visible throughout the order flow.  
+   - Add notes while creating a [**New Order**](https://docs.erp.net/tech/modules/crm/clientcenter/orders/new-order.html#notes) (via **Add Notes/Notes**).  
+   - Review notes in the [**order document**](https://docs.erp.net/tech/modules/crm/clientcenter/orders/orders.html#order-document) header.  
+   - Optionally show notes as a column in the [**Orders**](https://docs.erp.net/tech/modules/crm/clientcenter/orders/orders.html#details) list (via [Column Chooser](https://docs.erp.net/tech/modules/crm/clientcenter/grid-control.html#column-chooser)).  
+   Notes are optional and don’t block order creation when left empty. Notes are stored in [General.Documents.Documents.DocumentNotes](https://docs.erp.net/model/entities/General.Documents.Documents.html#documentnotes).
 
    ![Client Center – New Order – Notes (1)](pictures/cc-notes-neworder-1.png)
 
