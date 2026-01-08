@@ -4,7 +4,7 @@ The **Favorites** screen allows users to build a personalized list of frequently
 
 Favorites are context-aware and can include both top-level entities as well as individual records.
 
-![pictures](pictures/Favorites_view.png)
+![pictures](pictures/overview.png)
 
 ## Interface
 
@@ -35,22 +35,20 @@ To add a new item to your favorites:
 
 1. Open the entity page (e.g., a customer record, campaign, or document).
 
-2. Click the **star icon** at the top-right corner of the screen.
+2. Click the **star icon** at the top-right corner of the screen until it turns orange in colour and with status **Favorite**
 
 3. The item will now appear under the **Favorites** section of your My menu.
 
-![pictures](pictures/Favorites_add.png)
+![pictures](pictures/favmake.png)
 
 ## Remove a favorite
 
 To remove any of your existing favorites, click the **Menu** button (three vertical dots) at the top-right corner and select **Edit**.
 
-![pictures](pictures/Favorites_edit.png)
-
 This toggles **edit mode** and displays controls for each favorite item. Click the **cross button** of a favorite to remove it from the list.
 
-![pictures](pictures/Favorites_remove_x.png)
+![pictures](pictures/favremove.png)
 
 > [!NOTE]
 > 
-> The screenshots taken for this article are from v24 of the platform.
+> The screenshots taken for this article are from v26 of the platform.
