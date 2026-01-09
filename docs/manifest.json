@@ -23185,10 +23185,30 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "whats-new/v26-2/web-client/pictures/buttons.png",
+      "output": {
+        "resource": {
+          "relative_path": "whats-new/v26-2/web-client/pictures/buttons.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "whats-new/v26-2/web-client/pictures/details-panel.png",
       "output": {
         "resource": {
           "relative_path": "whats-new/v26-2/web-client/pictures/details-panel.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "whats-new/v26-2/web-client/pictures/discard.png",
+      "output": {
+        "resource": {
+          "relative_path": "whats-new/v26-2/web-client/pictures/discard.png"
         }
       },
       "version": ""
@@ -23249,6 +23269,16 @@
       "output": {
         "resource": {
           "relative_path": "whats-new/v26-2/web-client/pictures/selectbynav3.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "whats-new/v26-2/web-client/pictures/subformsave.png",
+      "output": {
+        "resource": {
+          "relative_path": "whats-new/v26-2/web-client/pictures/subformsave.png"
         }
       },
       "version": ""
