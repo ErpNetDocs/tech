@@ -65,28 +65,30 @@ We’ve refined the form command buttons to make saving and closing more predict
 
 ✨ When you press button **Save**
 -  saves your current changes to the database **and keeps the form open**.
-- **No changes = no Save:** if nothing has changed, **Save** is disabled.
+-  if nothing has changed, **Save** is disabled.
 
 ✨ When you press button **Close**
-Closes the form and returns to the page from where you eopened ot (e.g. the navigator).
-If you you attempt to close with pending changes, you’ll be prompted to choose whether to:
+<br>Closes the form and returns to the page, where you opened it from (e.g. the navigator).
+<br>If you you attempt to close with pending changes, you’ll be prompted to choose whether to:
   - **Save changes**, or
   - **Discard changes**, or
   - **Cancel** (stay on the form)
 
 ⚙️ The above choice is delivered together with a new config key, under number 71 [/WebClient/AlwaysSaveOnClose](https://docs.erp.net/tech/reference/config-options-reference.html#71-webclientalwayssaveonclose): *Always save automatically when closing* 
-Once selected *(Yes/No)* , the system remembers your choice for future closes. If you want to change this later, the setting is available in Settings tab (Customize panel menu).
+<br>Once selected *(Yes/No)* , the system remembers your choice for future closes. If you want to change this later, the setting is available in Settings tab (Customize panel menu).
 
 ✨ When you press button **Discard**
-The unsaved changes will be reverted. and you will stay in view mode on the form.
+The unsaved changes will be reverted and you will stay in view mode on the form.
+
 ![picture](pictures/discard.png)
 
 ✨ Behaviour of Save in subforms
-A Subform is a form, that you reached from another form. So this form usually has a return address. You can edit it, but the system needs to know what to do next. So button Save appears in two options - Save and close (to take you back to the initial form) and Save and reload (to stay in the current form).
+A Subform is a form, that you reached from another form. So this form usually has a return address. You can edit it, but the system needs to know what to do next. So button Save appears in two options - "Save and close" (to take you back to the initial form) and "Save and reload" (to stay in the current form).
+
 ![picture](pictures/subformsave.png)
 
 ✨ Small-screen improvements
-- On narrower screens (e.g., tablet widths), secondary commands such as **Share**, **Notifications**, and **Favorites** may move into the **“…”** (form menu) to keep primary actions accessible.
+- On narrower screens (e.g., tablet widths), secondary commands such as "Share", "Notifications", and "Favorites" may move into the **“…”** (form menu) to keep primary actions accessible.
 
 Learn how to use these buttons from the dedicated page [Command buttons](link here)
 
