@@ -56,3 +56,31 @@ Continue in the same way and save the new document.
 - Keeps your focus on your work — not on repetitive line editing.
 
 Try it out next time you’re adding several products — you’ll feel the difference right away!
+
+---
+title: Updated Save & Close experience in the ERP.net Web Client
+type: announcement
+---
+
+### 5. Updated Save & Close experience 
+
+We’ve refined the form command buttons to make saving and closing more predictable, consistent, and harder to do by accident—especially when working fast.
+
+1. button Save (updated behavior)
+- **What Save does:** saves your current changes to the database **and keeps the form open**.
+- **No changes = no Save:** if nothing has changed, **Save** is disabled.
+- **Validation-aware:** if validation fails, saving is aborted and the related validation messages are shown.
+
+2. button Close / Discard (clearer intent)
+- Closing a form is now more explicit when you have unsaved changes. If you attempt to close with pending changes, you’ll be prompted to choose whether to:
+  - **Save changes**, or
+  - **Discard changes**, or
+  - **Cancel** (stay on the form)
+
+The above choice is delivered through a new config key, under number 71 [/WebClient/AlwaysSaveOnClose](https://docs.erp.net/tech/reference/config-options-reference.html#71-webclientalwayssaveonclose):
+- **Always save automatically when closing** *(Yes/No)*  
+  Once selected, the system remembers your choice for future closes.
+
+3. Small-screen improvements (more responsive command area)
+- On narrower screens (e.g., tablet widths), secondary commands such as **Share**, **Notifications**, and **Favorites** may move into the **“…”** (form menu) to keep primary actions accessible.
+
