@@ -445,7 +445,7 @@ If you need to analyze the data, you may use Python code.
 - b. The user sets it manually.<br>
 - c. The key is introduced in version: (will be 26.2)
 
-## 75. UseNumericEnumConversionMode
+## 75. /Scripting/UseNumericEnumConversionMode
 - a. **Action:** Controls how CLR enum values are exposed in JavaScript scripts. When the option is enabled, enum values are exposed as their underlying numeric value. When disabled, enum values are exposed as their name string.  
   When the value of this key is:  
   `"0"` (False) or the key is not defined – Enum values are exposed as strings (e.g. `"Released"`). **(default behavior)**  
