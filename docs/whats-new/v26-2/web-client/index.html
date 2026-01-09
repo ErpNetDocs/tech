@@ -125,6 +125,42 @@
 <li>Keeps your focus on your work — not on repetitive line editing.</li>
 </ul>
 <p>Try it out next time you’re adding several products — you’ll feel the difference right away!</p>
+<hr>
+<h2 id="title-updated-save--close-experience-in-the-erpnet-web-clienttype-announcement">title: Updated Save &amp; Close experience in the ERP.net Web Client
+type: announcement</h2>
+<h3 id="5-updated-save--close-experience">5. Updated Save &amp; Close experience</h3>
+<p>We’ve refined the form command buttons to make saving and closing more predictable, consistent, and harder to do by accident—especially when working fast.</p>
+<ol>
+<li>button Save (updated behavior)</li>
+</ol>
+<ul>
+<li><strong>What Save does:</strong> saves your current changes to the database <strong>and keeps the form open</strong>.</li>
+<li><strong>No changes = no Save:</strong> if nothing has changed, <strong>Save</strong> is disabled.</li>
+<li><strong>Validation-aware:</strong> if validation fails, saving is aborted and the related validation messages are shown.</li>
+</ul>
+<ol start="2">
+<li>button Close / Discard (clearer intent)</li>
+</ol>
+<ul>
+<li>Closing a form is now more explicit when you have unsaved changes. If you attempt to close with pending changes, you’ll be prompted to choose whether to:
+<ul>
+<li><strong>Save changes</strong>, or</li>
+<li><strong>Discard changes</strong>, or</li>
+<li><strong>Cancel</strong> (stay on the form)</li>
+</ul>
+</li>
+</ul>
+<p>The above choice is delivered through a new config key, under number 71 <a href="https://docs.erp.net/tech/reference/config-options-reference.html#71-webclientalwayssaveonclose">/WebClient/AlwaysSaveOnClose</a>:</p>
+<ul>
+<li><strong>Always save automatically when closing</strong> <em>(Yes/No)</em><br>
+Once selected, the system remembers your choice for future closes.</li>
+</ul>
+<ol start="3">
+<li>Small-screen improvements (more responsive command area)</li>
+</ol>
+<ul>
+<li>On narrower screens (e.g., tablet widths), secondary commands such as <strong>Share</strong>, <strong>Notifications</strong>, and <strong>Favorites</strong> may move into the <strong>“…”</strong> (form menu) to keep primary actions accessible.</li>
+</ul>
 
 </article>
 

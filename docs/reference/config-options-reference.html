@@ -623,6 +623,15 @@ When the value of this key is:<br>
 <li>b. The user sets it manually.<br></li>
 <li>c. The key is introduced in version: (will be 26.2)</li>
 </ul>
+<h2 id="75-scriptingusenumericenumconversionmode">75. /Scripting/UseNumericEnumConversionMode</h2>
+<ul>
+<li>a. <strong>Action:</strong> Controls how CLR enum values are exposed in JavaScript scripts. When the option is enabled, enum values are exposed as their underlying numeric value. When disabled, enum values are exposed as their name string.<br>
+When the value of this key is:<br>
+<code>&quot;0&quot;</code> (False) or the key is not defined – Enum values are exposed as strings (e.g. <code>&quot;Released&quot;</code>). <strong>(default behavior)</strong><br>
+<code>&quot;1&quot;</code> (True) – Enum values are exposed as their underlying numeric value (e.g. <code>30</code>).</li>
+<li>b. <strong>The user sets it manually.</strong></li>
+<li>c. <strong>The key is introduced in version:</strong> 26.2</li>
+</ul>
 
 </article>
 
