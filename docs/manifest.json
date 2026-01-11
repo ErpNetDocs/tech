@@ -23165,6 +23165,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "whats-new/v26-2/user-business-rules/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "whats-new/v26-2/user-business-rules/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "whats-new/v26-2/web-client/editable-navigators/editable-navigators.md",
       "output": {
         ".html": {
