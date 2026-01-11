@@ -12,7 +12,7 @@ This page describes key limitations to consider when writing scripts, along with
   
 - **Timeouts and Resource Usage:**  
   Scripts have execution timeouts and limits on memory or CPU usage, as defined by system configuration.
-  - Memory allocations limit: 50 MB per script.
+  - Memory allocations limit: 200 MB per script.
   - Execution timeout: 5 seconds per script.
   - Maximum statements: 500,000 JavaScript statements.
   
