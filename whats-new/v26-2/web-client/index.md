@@ -76,7 +76,7 @@ We’ve refined the form command buttons to make saving and closing more predict
   - **Discard changes**, or
   - **Cancel** (stay on the form)
 
-⚙️ The above choice is delivered together with a new config key, under number 71 [/WebClient/AlwaysSaveOnClose](https://docs.erp.net/tech/reference/config-options-reference.html#71-webclientalwayssaveonclose): "Always save automatically when closing"
+⚙️ The above choice is delivered together with a new config key, under #71 [/WebClient/AlwaysSaveOnClose](https://docs.erp.net/tech/reference/config-options-reference.html#71-webclientalwayssaveonclose): "Always save automatically when closing"
 <br>Once selected -Toggle switch ON/OFF- the system remembers your choice for future closes. If you want to change this later, the setting is available in Settings tab (Customize panel menu).
 
 ✨ When you press button **Discard**
