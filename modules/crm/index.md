@@ -1,13 +1,13 @@
 # CRM Overview
 
-CRM in @@name organizes the work with potential and existing customers through clearly defined records and documents – **Leads, Contacts, Opportunities, Offers, and Orders**.  
-The system guides the user step by step – from the first contact, through a potential deal, to a completed sale.
+CRM in @@name organizes the work with potential and existing customers through clearly defined records and documents — Leads, Contacts, Opportunities, Offers, and Orders.  
+The system guides users from the first interaction with a potential contact to a completed sale and subsequent invoicing.
 
-CRM in @@name manages the entire sales process – from the initial signal of interest to order creation and invoicing. It is designed to structure sales activities through clearly defined records, roles, and steps, making the process easy to use for sales teams and reliable from a data integrity perspective.
+CRM in @@name manages the entire commercial process around sales. It is designed to structure sales work through clearly defined records, roles, and responsibilities, making the process intuitive for sales teams and reliable from a data and reporting perspective.
 
-In practice, CRM becomes essential when sales teams start to grow. That is why @@name treats the **Sales Representative (Sales Person)** as a core part of the CRM process — Leads can be assigned to a sales person, and every Opportunity has a leading sales representative responsible for driving the deal forward.
+As sales teams grow, the need for structure, ownership, and visibility becomes critical. That is why @@name treats the Sales Representative (Sales Person) as a core element of the CRM process — Leads and Opportunities are owned by sales people, ensuring accountability and clear responsibility for every deal.
 
-CRM in @@name allows you to start with minimal information, add structure only when it becomes necessary, and manage deals in a way that is traceable, accountable, and sustainable as teams and workload grow.
+At the same time, CRM in @@name allows you to start with minimal information, add structure only when it becomes logically necessary, and manage deals in a way that remains traceable, controllable, and scalable as the organization and workload expand.
 
 ---
 
@@ -29,7 +29,6 @@ A **Lead** is a record representing a potential contact. It can store as much in
 
 The purpose of the Lead is to capture interest in the system with minimal friction, while still allowing additional details, classifications, and custom fields to be added whenever they are available or relevant.
 
-
 ---
 
 ## Party (Person / Company)
@@ -50,23 +49,43 @@ Each Opportunity is assigned to a **leading Sales Person**, ensuring clear owner
 
 ---
 
-## Lead to Order and Lead to Cash – what is the difference
+### Activities
 
-In CRM documentation, two terms are commonly used: **Lead to Order** and **Lead to Cash**.  
-In @@name, they have a clear and practical meaning.
+Activities represent the actual sales work performed by sales representatives — meetings, calls, visits, demos, and other interactions with potential contacts and customers.
 
-### Lead to Order
+In @@name, Activities are closely linked to Opportunities and form the bridge between sales effort and sales results. Sales representatives use Activities to plan and report their work, while managers gain visibility into how deals progress as a result of real actions.
 
-**Lead to Order** covers the CRM part of the process — the path from the first contact to a confirmed sale.  
-The focus here is on:
+The relationship between Activities and Opportunities reflects real-world sales processes:
 
-- collecting and qualifying potential customers (Lead),
-- creating records for real business partners (Party),
-- managing the sales opportunity (Opportunity),
-- preparing a proposal (Offer),
-- reaching a confirmed order (Sales Order).
+- a single Activity may lead to multiple Opportunities;
+- a single Opportunity may involve multiple Activities over time.
 
-This is the stage where the sale is agreed and under control.
+By combining Activities with Opportunities, @@name provides a complete picture of both sales performance and sales effort.
+
+---
+
+### Lead to Order and Lead to Cash — what is the difference
+
+In CRM documentation, the terms **Lead to Order** and **Lead to Cash** are often used.
+
+**Lead to Order** covers the commercial part of the process — from the first contact to a confirmed sale. It includes:
+
+- qualifying interest (Lead),
+- identifying the business partner (Party),
+- managing the deal (Opportunity),
+- preparing proposals (Offer),
+- confirming the agreement (Sales Order).
+
+**Lead to Cash** extends this process to include invoicing and revenue realization:
+
+- preparation for invoicing (Invoice Order),
+- issuing invoices,
+- tracking payments, depending on configuration and used modules.
+
+If **Lead to Order** answers the question  
+*“Have we closed the deal?”*,  
+**Lead to Cash** answers  
+*“Have we completed it financially?”*.
 
 ---
 
@@ -114,7 +133,6 @@ The CRM documentation is organized to guide you gradually from the big picture t
 - **[Subscriptions](./subscriptions/index.md)** – agreements for recurring services and periodic invoicing
 - **[POS](./pos/index.md)** – managing point-of-sale operations in physical retail locations
 - **[Client Center](./clientcenter/index.md)** – configuring a platform for customer engagement and self-service
-
 
 ---
 
