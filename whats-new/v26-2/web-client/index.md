@@ -92,7 +92,7 @@ We’ve refined the form command buttons to make saving and closing more predict
 ✨ Small-screen improvements
 <br> On narrower screens (e.g., tablet widths), secondary commands such as "Share", "Notifications", and "Favorites" may move into the **“…”** (form menu) to keep primary actions accessible.
 
-Learn how to use these buttons from the dedicated page [Command buttons](link here)
+Learn how to use these buttons from the dedicated page [Command buttons](https://docs.erp.net/webclient/commands/buttons.html#save)
 
 ### **6. Search Enterprise Company and Company Location on profile menu enabled:**
 
