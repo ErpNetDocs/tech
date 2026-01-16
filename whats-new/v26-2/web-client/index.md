@@ -94,3 +94,10 @@ We’ve refined the form command buttons to make saving and closing more predict
 
 Learn how to use these buttons from the dedicated page [Command buttons](link here)
 
+### **Search Enterprise Company and Company Location on profile menu enabled:**
+
+Search in Enterprise Company and Company Location is designed to help users quickly find the right company when working with a large number of records. The search field automatically appears when the number of records exceeds 20. Users can enter a search string to instantly narrow down the list. Only matching companies are displayed, making selection faster, easier, and less error-prone.
+
+Use the arrow keys to navigate to the desired result and press Enter, or click with the mouse to confirm the selection.
+
+![picture](pictures/search.png)
