@@ -23255,6 +23255,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "whats-new/v26-2/web-client/pictures/search.png",
+      "output": {
+        "resource": {
+          "relative_path": "whats-new/v26-2/web-client/pictures/search.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "whats-new/v26-2/web-client/pictures/selectbynav1.png",
       "output": {
         "resource": {
