@@ -136,3 +136,36 @@ This information, on the other hand, is represented by a table:
 | John       | works for         | Company B | 1/1/2010  | 3/5/2015 |       |
 
 _From Date_ and _To Date_ represent the dates when the relationship was **established** and **terminated**, respectively.
+
+## Codes and numbers 
+
+This part explains codes and numbers administered to parties and suggests a troubleshooting method for a common hindrance - violation of uniqueness of values
+
+Upon creation, Parties are assigned a Party code, and Customers and Suppliers are assigned Numbers automatically. These are unique throughout the system.
+Party codes are a read only attribute, as Customer and Supplier numbers can be modified.
+
+There are system validation rules, that work together with the unique indexes and prevent one and the same code/number to be assigned to different records. Within large instances at creating a new Party or Customer or Supplier, it might happen so that these rule throw errors:
+e.g. 
+1. Duplicated Party Code:
+
+*Violation of UQ_Gen_Parties_Table_Party_Code
+ Duplicated value: (100000)*
+
+2. Duplicated Customer/Supplier number
+
+*The set of values for the following fields could not be saved more than once.
+
+Fields: (Customer_Number)
+
+Duplicated value:  (The statement has been terminated.)
+
+Index: IX_Crm_Customers_Table_Customer_Number
+
+Please remove the duplicate record or change the value of any of the fields listed.
+ One or more errors occurred.
+ 
+      Violation of Prevention of duplicating of values in columns 'Customer number' constraint.
+      Duplicated key value is (A1123).*
+
+ 
+
