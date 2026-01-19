@@ -149,13 +149,13 @@ System validation rules work together with unique indexes to prevent the same co
 
 1. Duplicated Party Code:
 
-*Violation of UQ_Gen_Parties_Table_Party_Code
+_Violation of UQ_Gen_Parties_Table_Party_Code
 
- Duplicated value: (100000)*
+ Duplicated value: (100000)_
 
 2. Duplicated Customer/Supplier number
 
-*The set of values for the following fields could not be saved more than once.
+_The set of values for the following fields could not be saved more than once.
 
 Fields: (Customer_Number)
 
@@ -166,8 +166,8 @@ Index: IX_Crm_Customers_Table_Customer_Number
 Please remove the duplicate record or change the value of any of the fields listed.
  One or more errors occurred.
  
-      Violation of Prevention of duplicating of values in columns 'Customer number' constraint.
-      Duplicated key value is (100000).*
+Violation of Prevention of duplicating of values in columns 'Customer number' constraint.
+Duplicated key value is (100000)._
 
  
 This prevents the creation of a new party, customer or supplier.
