@@ -424,8 +424,8 @@ If you need to analyze the data, you may use Python code.
 ## 72. AllowNotificationPopups
 - a. Action: Controls whether notifications pop-ups in desktop client to emerge on screen or not.<br>
   When the value of this key is:<br>
-  "0" – When the key is not defined or its value is 0, notification pop-up toasters will not be displayed.<br>
-  "1" – When the keys is set to 1, notification pop-up toasters will be displayed (default behavior).<br>
+  "0" – notification pop-up toasters will not be displayed.<br>
+  "1" or not defined - notification pop-up toasters will be displayed (default behavior).<br>
 - b. The user sets it manually.<br>
 - c. The key is introduced in version: (will be 26.2)
 
