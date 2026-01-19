@@ -149,9 +149,9 @@ System validation rules work together with unique indexes to prevent the same co
 
 1. Duplicated Party Code:
 
-_Violation of UQ_Gen_Parties_Table_Party_Code
+  _Violation of UQ_Gen_Parties_Table_Party_Code
 
- Duplicated value: (100000)_
+   Duplicated value: (100000)_
 
 2. Duplicated Customer/Supplier number
 
