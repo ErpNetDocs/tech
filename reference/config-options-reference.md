@@ -435,13 +435,13 @@ If you need to analyze the data, you may use Python code.
   “0” (False)  – linked ToDo tasks are not displayed.<br>
   “1” (True) or the key is not defined –  linked ToDo tasks are displayed by default (default behavior).<br>
 - b. The user sets it manually.<br>
-- c. The key is introduced in version: (will be 26.2)
+- c. The key is introduced in version: (26.2)
 
 ## 74. UseUnsupportedThemes
 - a. Action: Controls the activation and application of unsupported themes in the Desktop Client. When the option is enabled, the themes can be applied. When disabled, the themes cannot    be applied and appear visibly inactive in the menu.<br>
   When the value of this key is:<br>
-  "0" (False) or the key is not defined - Themes are inactive and cannot be applied (default behavior)<br>
-  "1" (True)  - Themes are active and can be applied.<br>
+  "0" (False)  - Themes are inactive and cannot be applied (default behavior)<br>
+  "1" (True) or the key is not defined - Themes are active and can be applied.<br>
 - b. The user sets it manually.<br>
 - c. The key is introduced in version: (will be 26.2)
 
