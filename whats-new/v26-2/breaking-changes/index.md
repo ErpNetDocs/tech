@@ -21,4 +21,4 @@ The default behavior of the ToDo application has changed.
 
 Linked ToDo tasks are now **visible by default**, whereas previously they were hidden until explicitly enabled by the user. Users who prefer the previous behavior can disable it using the [**/ToDo/ShowLinked** configuration key](https://docs.erp.net/tech/reference/config-options-reference.html#73-todoshowlinked).
 
-➡️ [Details](../my-apps/index.md)
+➡️ [Details](../my-apps/index.md#1--todo-application--change-in-concept-and-default-behavior)
