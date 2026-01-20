@@ -34,6 +34,9 @@ If you prefer **not** to see linked tasks in the ToDo application, you can contr
 > [!Note]
 > ToDos displayed in the **side panel of a record** are always visible, as they are inherently linked to that record.<br>
 > ToDos displayed in **Groups (tab ToDo)** are also always visible and are independent from the ToDo application view.
+> Topright corner of each ToDo indicates and the host record and is a link to it.
+
+[picture](pictures/todo.png)
 
 ---
 
