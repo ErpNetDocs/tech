@@ -91,7 +91,31 @@
 <p>The My module consists of several interconnected applications—each functioning independently while remaining fully compatible with the rest of the ERP.net platform. These include:Groups, Dashboard, Notifications, Search, Calendar, Timeline, Tiles, Favorites, To Do, Documents, AI Assistant and Folders</p>
 <p>In the sections that follow, you will find all new features and improvements introduced for these applications in ERP.net version 26.2.</p>
 <h2 id="notable-features">Notable features</h2>
-<p>follow</p>
+<hr>
+<h3 id="1--todo-application--change-in-concept-and-default-behavior">1. 📢 ToDo Application – Change in Concept and Default Behavior</h3>
+<p>We have updated the <strong>ToDo application concept</strong> so that <strong>all available tasks are now shown by default</strong> when opening the ToDo app.</p>
+<p>Previously, tasks that were linked to records in the system (documents, activities, cases, etc.) were <strong>not displayed initially</strong> and required manually switching <strong>ON</strong> the <em>Show linked</em> toggle.</p>
+<p><strong>Why this change?</strong></p>
+<p>We reconsidered the overall concept of ToDo tasks:</p>
+<ul>
+<li>ToDo tasks are <strong>“out-of-bound”</strong> of the assignment of their main document</li>
+<li>A ToDo task represents work you need to do regardless of whether the main document itself is assigned to you</li>
+</ul>
+<p>As a result, the <strong>Show linked</strong> toggle is now <strong>ON by default</strong>, and all tasks are visible when opening the ToDo application.</p>
+<p><strong>Configuration</strong></p>
+<p>If you prefer <strong>not</strong> to see linked tasks in the ToDo application, you can control this behavior using the configuration key:</p>
+<ul>
+<li><strong>/ToDo/ShowLinked</strong><br>
+<a href="https://docs.erp.net/tech/reference/config-options-reference.html#73-todoshowlinked">https://docs.erp.net/tech/reference/config-options-reference.html#73-todoshowlinked</a></li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>ToDos displayed in the <strong>side panel of a record</strong> are always visible, as they are inherently linked to that record.<br>
+ToDos displayed in <strong>Groups (tab ToDo)</strong> are also always visible and are independent from the ToDo application view.
+Topright corner of each ToDo indicates and the host record and is a link to it.</p>
+</div>
+<p><a href="pictures/todo.png">picture</a></p>
+<hr>
 <h2 id="other-features">Other features</h2>
 <p>follow</p>
 
