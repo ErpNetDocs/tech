@@ -7,7 +7,8 @@ uid: config-options-reference
 
 Config options are system settings with global and key importance for the operation of the database. Some of them can be set manually, while others are serviced automatically at system level.
 
-> **_IMPORTANT:_** These settings are of great importance and must be changed with great care and only by trained consultants.
+> [!IMPORTANT]
+> These settings are of great importance and must be changed with great care and only by trained consultants.
 
 The options set for the database are visible in the Configurations navigator and can have different values in each database. 
 
