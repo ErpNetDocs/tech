@@ -5,6 +5,8 @@
   topicHref: how-to/index.md
 - name: Ingest 
   href: ingest.md
+- name: AI Assistant 
+  href: assistant.md
 - name: AI Arbiter 
   href: arbiter.md
 - name: AI Business Rules 
