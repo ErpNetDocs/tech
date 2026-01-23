@@ -26,6 +26,8 @@ When you select this option, you can provide:
 - Free-form text (for example, copied from an email, website, or message), or
 - The content of an email
 
+![Fill data from text or Email (AI)](lead2.png)
+
 The AI analyzes the provided content and automatically recognizes and fills in relevant Lead attributes, such as:
 
 - Lead name
