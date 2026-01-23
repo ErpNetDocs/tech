@@ -137,19 +137,23 @@ Additional Instructions are **not training**. They do not change the model itsel
 
 Open the AI Assistant panel menu (⋮) and select Additional Instructions.
 
-This opens a window where you can:
+![Assistant Instructions Button](assistant_instructions_button.png)
+
+This opens a window with the default (current) instructions for this form.
+
+![Assistant Instructions Button](assistant_instructions_window.png)
+
+
+Here you can:
 
 * Review the instructions to understand how the assistant is currently configured
 
 * Edit them to better match your needs. Add your own rules, for example:
-
-- ask for shorter answers
-
-- change the tone
-
-- define how the assistant should react to certain questions
-
-* Experiment freely 
+  * ask for shorter answers
+  * change the tone
+  * define how the assistant should react to certain questions
+    
+* Experiment freely
 
 After saving, the assistant will immediately use your instructions for your assistant conversations.
 
