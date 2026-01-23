@@ -7,8 +7,6 @@ It is not just a generic AI chat, but a deeply integrated assistant that:
 * understands where you are in the system;
 * can work with the data from the current screen;
 * respects ERP.net access permissions;
-* can be trained according to real company processes.
-
 
 ## What is the @@name AI Assistant?
 
@@ -22,6 +20,11 @@ Instead of searching through documentation or manually formatting text, you can 
 * validate content.
 
 A key aspect is that the AI Assistant **can work within the current context**.
+
+**Important notes:**
+
+* the AI Assistant model **cannot be fine-tuned**;
+* fine-tuning is supported **only for Arbiter models**.
 
 
 ## Where can the AI Assistant be used?
@@ -172,7 +175,16 @@ Important notes:
 * the AI Assistant model **cannot be fine-tuned**;
 * fine-tuning is supported **only for Arbiter models**.
 
----
+### Fine-tuning limitations
+
+The AI Assistant model **cannot be fine-tuned**.
+
+This is not a product limitation, but a technical constraint that comes from the way the AI Assistant is implemented.
+
+AI Assistant is built on top of an API, which works only with base models and does not allow the use of fine-tuned models.  
+Because of this, neither Q&A data nor any other form of training can result in model fine-tuning when using the AI Assistant.
+
+Fine-tuning is supported **only for Arbiter (Arbitration) models**, which are designed for rule-based and knowledge-driven scenarios.
 
 ## Debugging and support tools
 
@@ -180,14 +192,14 @@ AI Assistant provides diagnostic tools intended primarily for support and develo
 
 ![Assistant Debug](assistant_debug.png)
 
-### Debug Mode
+#### Debug Mode
 
 Debug Info provides:
 
 * request and response details;
 * information required for investigating issues.
 
-### Diagnostic Info
+#### Diagnostic Info
 
 When enabled:
 
