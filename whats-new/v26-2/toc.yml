@@ -22,6 +22,9 @@
 - name: Client Center
   href: client-center/index.md
   topicHref: client-center/index.md
+- name: Calculated Attributes
+  href: calculated-attributes/index.md
+  topicHref: calculated-attributes/index.md  
 - name: User Business Rules
   href: user-business-rules/index.md
   topicHref: user-business-rules/index.md  

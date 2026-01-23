@@ -15,6 +15,7 @@ Choose the scripting language for your rule (JavaScript is recommended and offic
 Write your script directly in the business rule's `ScriptText` attribute. This script is executed whenever the rule is triggered (e.g., on a COMMIT event).
 
 The script runs in a sandboxed environment with access to:
+
 - The entity that triggered the rule (via the `subject` variable)
 - The entire @@name Domain Model
 - The global `Action` object for logging, notifications, and more

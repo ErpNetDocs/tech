@@ -3,12 +3,14 @@
 - name: Operators
   href: operators/toc.yml
   topicHref: operators/index.md
+- name: Parameter types
+  href: parameter-types/toc.yml
+  topicHref: parameter-types/index.md  
+- name: Scripting
+  href: scripting/index.md
 - name: Examples
   href: examples/toc.yml
   topicHref: examples/index.md
-- name: Parameter types
-  href: parameter-types/toc.yml
-  topicHref: parameter-types/index.md
 - name: Q & A
   href: QA/toc.yml  
   topicHref: QA/index.md
