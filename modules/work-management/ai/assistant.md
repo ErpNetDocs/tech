@@ -1,4 +1,4 @@
-# AI Assistant in ERP.net
+# AI Assistant in @@name
 
 AI Assistant in ERP.net is designed to help users **directly in the context of their work** – without copying data, without switching between systems, and without relying on external tools.
 
@@ -9,9 +9,8 @@ It is not just a generic AI chat, but a deeply integrated assistant that:
 * respects ERP.net access permissions;
 * can be trained according to real company processes.
 
----
 
-## What is AI Assistant?
+## What is the @@name AI Assistant?
 
 AI Assistant is a conversational interface embedded in ERP.net, created to support users in their daily tasks.
 
@@ -22,11 +21,10 @@ Instead of searching through documentation or manually formatting text, you can 
 * generate text (for example, a User Story);
 * validate content.
 
-A key aspect is that AI Assistant **can work within the current context**.
+A key aspect is that the AI Assistant **can work within the current context**.
 
----
 
-## Where can AI Assistant be used?
+## Where can the AI Assistant be used?
 
 AI Assistant is available in two main places within ERP.net.
 
@@ -44,8 +42,6 @@ The application can be pinned for quick access at any time.
 
 ![Assistant App](assistant_app.png)
 
-
----
 
 ### AI Assistant Side Panel
 
@@ -65,11 +61,10 @@ The panel is opened from the three-dot (overflow) menu and can be:
 
 ![Assistant Side Panel](assistant_side_panel.png)
 
----
 
 ## Conversations, privacy, and security
 
-Every conversation with AI Assistant is **personal**.
+Every conversation with the AI Assistant is **personal**.
 
 This means that:
 
@@ -79,25 +74,24 @@ This means that:
 
 Even when multiple users work with the same model, their conversations and context remain fully isolated.
 
----
 
 ## Working with context: Get Data
 
-One of the strongest capabilities of AI Assistant is its ability to work with the context of the current screen.
+One of the strongest capabilities of the AI Assistant is its ability to work with the context of the current screen.
 
 When working with a specific record (for example, a Feature, Case, or Document), you can use the **Get Data** button.
 
 It:
 
 * extracts the relevant data from the currently opened record;
-* sends it to AI Assistant as context;
+* sends it to the AI Assistant as context;
 * allows the assistant to base its responses on real data.
 
 Typical scenarios include:
 
 * generating a User Story from a Feature;
 * summarizing a record;
-* validating whether data is filled in correctly.
+* validating whether the data is filled in correctly.
 
 ![Assistant Get Data](assistant_get_data.png)
 
@@ -105,9 +99,9 @@ Typical scenarios include:
 
 ## Starting fresh: New Conversation
 
-Over time, AI Assistant accumulates context from the conversation.
+Over time, the AI Assistant accumulates context from the conversation.
 
-In some cases, this is not desirable – for example when:
+In some cases, this is not desirable – for example, when:
 
 * you change the topic;
 * the assistant starts producing inaccurate responses;
@@ -121,7 +115,46 @@ This function:
 * removes the accumulated context;
 * starts a new conversation.
 
----
+![New Conversation](assistant_new_convo.png)
+
+## Additional Instructions
+
+Additional Instructions allow you to control how AI Assistant behaves and how it formats its answers — without changing or retraining the underlying model.
+
+This functionality is especially useful when you want the assistant to:
+
+* follow a specific tone or style;
+
+* respond in a predefined format;
+
+* interpret attached files in a particular way;
+
+* apply consistent rules across conversations.
+
+Additional Instructions are **not training**. They do not change the model itself and are applied only as guidance during the conversation.
+
+### How to use them
+
+Open the AI Assistant panel menu (⋮) and select Additional Instructions.
+
+This opens a window where you can:
+
+* Review the instructions to understand how the assistant is currently configured
+
+* Edit them to better match your needs. Add your own rules, for example:
+
+- ask for shorter answers
+
+- change the tone
+
+- define how the assistant should react to certain questions
+
+* Experiment freely 
+
+After saving, the assistant will immediately use your instructions for your assistant conversations.
+
+If you clear the text, the assistant will automatically continue using the default instructions.
+
 
 ## Teaching the Assistant: the right way
 
