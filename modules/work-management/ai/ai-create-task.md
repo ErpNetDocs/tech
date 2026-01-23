@@ -17,7 +17,7 @@ This option allows users to instantly turn a chat comment into a ToDo without le
 2. Right-click any comment.
 3. Select **Create Task**.
 
-![Create Task from Chat Comment](taskcreate.png
+![Create Task from Chat Comment](taskcreate.png)
 
 ### How It Works
 
