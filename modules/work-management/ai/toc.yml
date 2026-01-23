@@ -11,5 +11,7 @@
   href: arbiter.md
 - name: Create Leads from Text or Email (AI)
   href: ai-create-lead.md
+- name: Create ToDos from Notifications or Comments (AI)
+  href: ai-create-task.md
 - name: AI Business Rules 
   href: ai-business-rules.md
