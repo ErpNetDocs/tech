@@ -23,11 +23,11 @@ This enables the AI to understand the unique rules, terminology, and business lo
 
 By embedding this technology throughout @@name, users can:
 
-- Chat with an **AI Assistant** directly inside the application.  
-- Involve AI as a **Chat Arbiter** in group or private conversations.  
+- Chat with an **[AI Assistant](assistant.md)** directly inside the application.  
+- Involve AI as a **[Chat Arbiter](arbiter.md)** in group or private conversations.  
 - Use AI in **form panels** to analyze, explain, or generate business data.  
-- Automate and validate operations through **AI-enhanced business rules**.  
-- Employ AI-powered tools such as **document ingestion**, **lead creation**, and **intelligent task generation**.
+- Automate and validate operations through **[AI-enhanced business rules](ai-business-rules.md)** 
+- Employ AI-powered tools such as **[document ingestion](ingest.md)**, **lead creation**, and **intelligent task generation**.
 
 The goal is to make AI a **natural and context-aware part of everyday ERP processes**, improving accuracy, speed, and decision-making across all departments.
 
