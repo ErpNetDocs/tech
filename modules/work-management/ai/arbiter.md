@@ -14,6 +14,27 @@ The arbiter uses an **AI Model** and speaks through a **Virtual User** that appe
 
 ![Arbiter](arbiter.png)
 
+## Specialized AI Arbiters
+
+ERP.net allows you to create **multiple AI Arbiters**, each fine-tuned for a specific domain or purpose.
+
+This means you can have, for example:
+- A **Marketing Arbiter** in marketing chats
+- A **Sales Arbiter** in sales chats
+- A **Support Arbiter** in support or customer-facing chats
+
+Each AI Arbiter:
+- Is backed by its **own AI Model**
+- Has its **own fine-tuning** (System Message, Q&A, Training Conversations)
+- Is represented by a **dedicated Virtual User**
+- Can be added **only to the chat groups where its expertise is relevant**
+
+Each arbiter will answer questions **according to its specialization**, rules, and training — even though they all use the same underlying AI provider (e.g. OpenAI).
+
+For more information on how fine-tuning works, see:  
+https://docs.erp.net/tech/modules/work-management/ai/how-to/fine-tune-models.html
+
+
 ## Configuring the AI Arbiter in a chat
 
 1. Open the desired **chat group** (e.g. *Marketing*, *Sales*, *Support*).
