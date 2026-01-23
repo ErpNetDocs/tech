@@ -943,6 +943,16 @@
       "version": ""
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/scripting/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/scripting/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "advanced/calculated-attributes/toc.yml",
       "output": {
@@ -23163,6 +23173,16 @@
       "output": {
         ".html": {
           "relative_path": "whats-new/v26-2/breaking-changes/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "whats-new/v26-2/calculated-attributes/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "whats-new/v26-2/calculated-attributes/index.html"
         }
       },
       "version": ""

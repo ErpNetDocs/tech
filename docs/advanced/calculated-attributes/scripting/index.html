@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Scripting in calculated attributes | ERP.net Tech Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Scripting in calculated attributes | ERP.net Tech Docs ">
+      
+      
+      <link rel="icon" href="../../../favicon.ico">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/advanced/calculated-attributes/scripting/index.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="scripting-in-calculated-attributes">Scripting in calculated attributes</h1>
+
+<p>Calculated Attributes can use JavaScript to compute their values dynamically, enabling custom logic beyond what integrated expressions can provide.</p>
+<p>This makes Calculated Attributes significantly more flexible and expressive, especially in scenarios where:</p>
+<ul>
+<li>The logic is too complex or verbose for integrated expressions</li>
+<li>Conditional or procedural calculations are required</li>
+<li>Existing domain data needs to be combined in non-trivial ways</li>
+</ul>
+<p>JavaScript-based calculated attributes are evaluated on demand and return their computed value directly.</p>
+<h2 id="how-it-works">How it works</h2>
+<ul>
+<li><p><strong>Script language</strong><br>
+Choose <code>JavaScript</code> as the <code>ScriptLanguage</code> of the calculated attribute.</p>
+</li>
+<li><p><strong>Script text</strong><br>
+Write JavaScript code in the calculated attribute's <code>ScriptText</code>.<br>
+This script is executed whenever the calculated attribute is evaluated.</p>
+</li>
+</ul>
+<p>The script runs in a sandboxed environment with access to:</p>
+<ul>
+<li>The entity for which the calculated attribute is being evaluated</li>
+<li>The entire ERP.net Domain Model (via the Domain object)</li>
+</ul>
+<p>Unlike user business rules, calculated attribute scripts are expected to <strong>produce a value</strong>.<br>
+The value returned by the script becomes the value of the calculated attribute.</p>
+<h2 id="returning-a-value">Returning a value</h2>
+<p>Calculated attribute scripts are written as <strong>function bodies</strong> and may use a top-level <code>return</code> statement.</p>
+<p>Example:</p>
+<pre><code class="lang-js">var base = 10;
+var multiplier = 2;
+return base * multiplier;
+</code></pre>
+<p>The returned value is the calculated attribute's value.</p>
+<p>If the script returns <code>null</code> or returns nothing (<code>undefined</code>), the calculated attribute value is <code>null</code>.</p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>Use JavaScript calculated attributes with care.<br>
+A script can easily query large datasets (or run many queries), which results in heavy processing during evaluation and may noticeably degrade performance for lists, forms, and reports where the attribute is shown.</p>
+</div>
+<h2 id="example-new-customer-check-exactly-one-released-sales-order">Example: New customer check (exactly one released sales order)</h2>
+<p>This calculated attribute determines whether the current customer is a &quot;new customer&quot;, based on the number of related sales orders.</p>
+<ul>
+<li><strong>Repository:</strong> Crm.Sales.Customers</li>
+<li><strong>Script Language:</strong> JavaScript</li>
+<li><strong>Script Text:</strong></li>
+</ul>
+<pre><code class="lang-js">const salesOrders = Domain.Crm.Sales.SalesOrdersRepository.query(
+    {
+        Customer: subject,
+        Status: 'Released'
+    },
+    { fetch: 2 }
+);
+return salesOrders.length == 1;
+</code></pre>
+<p>Notes:</p>
+<ul>
+<li><code>subject</code> is the current Customer entity instance (the entity this calculated attribute belongs to).</li>
+<li>The script queries <code>SalesOrdersRepository</code> for sales orders:
+<ul>
+<li><code>customer: subject</code> (only orders for the current customer)</li>
+<li><code>status: 'Released'</code> (only released orders)</li>
+</ul>
+</li>
+<li><code>{ fetch: 2 }</code> limits the retrieved records to a maximum of 2. This is an optimization:
+<ul>
+<li><code>0</code> results -&gt; no released orders</li>
+<li><code>1</code> result -&gt; exactly one released order (treated as &quot;new customer&quot;)</li>
+<li><code>2</code> results -&gt; at least two released orders (not a new customer)</li>
+</ul>
+</li>
+<li>The calculated attribute returns a boolean value (<code>true</code>/<code>false</code>).</li>
+</ul>
+<h2 id="example-sales-order-count-for-previous-vs-current-month">Example: Sales order count for previous vs current month</h2>
+<p>This calculated attribute returns a summary of how many sales orders a customer has in the <strong>previous month</strong> and the <strong>current month</strong>.</p>
+<p>The result is formatted as a string in the form:</p>
+<pre><code class="lang-text">&lt;previousMonthCount&gt;/&lt;currentMonthCount&gt;
+</code></pre>
+<ul>
+<li><strong>Repository:</strong> Crm.Sales.Customers</li>
+<li><strong>Script Language:</strong> JavaScript</li>
+<li><strong>Script Text:</strong></li>
+</ul>
+<pre><code class="lang-js">const now = new Date();
+const firstDayCurrentMonth = new Date(now.getFullYear(), now.getMonth(), 1);
+const firstDayPrevMonth = new Date(now.getFullYear(), now.getMonth() - 1, 1);
+
+const salesOrders = Domain.Crm.Sales.SalesOrdersRepository.query({
+    Customer: subject,
+    Status: 'Released',
+    DocumentDate: {
+        greaterthanorequal: firstDayPrevMonth
+    }
+});
+
+var prevMonthSales = 0;
+var currentMonthSales = 0;
+
+salesOrders.forEach((so) =&gt; {
+    const isPreviousMonth = so.documentDate &lt; firstDayCurrentMonth;
+
+    if (isPreviousMonth)
+        prevMonthSales++;
+    else
+        currentMonthSales++;
+});
+
+return `${prevMonthSales}/${currentMonthSales}`;
+</code></pre>
+<p>Notes:</p>
+<ul>
+<li><code>subject</code> is the current Customer entity instance (the entity this calculated attribute belongs to).</li>
+<li>Only <code>released</code> sales orders with a <code>documentDate</code> on or after the first day of the previous month are considered.</li>
+<li>Sales orders are split into:
+<ul>
+<li><strong>Previous month</strong>: orders with <code>documentDate</code> before the first day of the current month</li>
+<li><strong>Current month</strong>: orders with <code>documentDate</code> on or after the first day of the current month</li>
+</ul>
+</li>
+<li>The calculated attribute returns a formatted string suitable for display in lists or detail views.</li>
+</ul>
+<h2 id="example-total-atp-across-all-stores-as-of-shipment-required-date">Example: Total ATP across all stores (as-of shipment required date)</h2>
+<p>This calculated attribute returns the total Available-to-Promise (ATP) quantity for a shipment order line's product, summed across all stores.</p>
+<ul>
+<li><strong>Repository:</strong> Logistics.Shipment.ShipmentOrderLines</li>
+<li><strong>Script Language:</strong> JavaScript</li>
+<li><strong>Script Text:</strong></li>
+</ul>
+<pre><code class="lang-js">const shipmentOrder = subject.ShipmentOrder;
+const product = subject.Product;
+const enterpriseCompany = shipmentOrder
+    ? shipmentOrder.EnterpriseCompany
+    : null;
+
+const asOfDate =
+    (shipmentOrder ? shipmentOrder.RequiredDeliveryDate : null)
+    || (shipmentOrder ? shipmentOrder.DocumentDate : null)
+    || new Date();
+
+if (!product || !enterpriseCompany || !asOfDate) {
+    return 0;
+}
+
+// Load ATP rows for ALL stores for this product/company up to the selected date.
+const atpRows = Domain.Logistics.Inventory.DemandManagement.AvailableToPromiseRepository.query({
+    Product: product,
+    EnterpriseCompany: enterpriseCompany,
+    FromDate: { lessthanorequal: asOfDate }
+});
+
+// Keep only the latest ATP row per store (the one with the greatest FromDate).
+const latestRowPerStore = {};
+
+atpRows.forEach((r) =&gt; {
+    if (!r || !r.Store || !r.Store.Id)
+        return;
+
+    const storeId = r.Store.Id;
+    const current = latestRowPerStore[storeId];
+
+    if (!current
+        || (r.FromDate &amp;&amp; current.FromDate &amp;&amp; r.FromDate &gt; current.FromDate)
+        || (r.FromDate &amp;&amp; !current.FromDate)) {
+        latestRowPerStore[storeId] = r;
+    }
+});
+
+// Sum the ATP of the latest row from each store.
+let totalAtp = 0;
+
+for (const storeId in latestRowPerStore) {
+    const row = latestRowPerStore[storeId];
+
+    // If there's no ATP value, treat it as 0.
+    const atpValue = (row &amp;&amp; row.ATPBase &amp;&amp; row.ATPBase.Value != null)
+        ? row.ATPBase.Value
+        : 0;
+
+    totalAtp += atpValue;
+}
+
+return totalAtp;
+</code></pre>
+<p>Notes:</p>
+<ul>
+<li><code>subject</code> is the current <strong>Shipment Order Line</strong> (<code>Logistics.Shipment.ShipmentOrderLines</code>) instance.</li>
+<li>The &quot;as-of&quot; date is taken from:
+<ul>
+<li><code>ShipmentOrder.RequiredDeliveryDate</code>, then</li>
+<li><code>ShipmentOrder.DocumentDate</code>, then</li>
+<li>current date/time.</li>
+</ul>
+</li>
+<li>The script sums <code>ATPBase.Value</code> (ATP in base unit) across <strong>all stores</strong>, using the latest ATP snapshot per store up to <code>asOfDate</code>.</li>
+</ul>
+<h2 id="example-unique-invoice-numbers-for-a-sales-order-distinct">Example: Unique invoice numbers for a sales order (DISTINCT)</h2>
+<p>This calculated attribute returns a comma-separated list of the <strong>unique invoice numbers</strong> that have invoiced the current <strong>sales order</strong>.</p>
+<p>The result is formatted as:</p>
+<pre><code class="lang-text">0001, 0003, 0005...
+</code></pre>
+<ul>
+<li><strong>Repository:</strong> <code>Crm.Sales.SalesOrders</code></li>
+<li><strong>Script Language:</strong> JavaScript</li>
+<li><strong>Script Text:</strong></li>
+</ul>
+<pre><code class="lang-js">// Load all invoice lines related to the current Sales Order.
+const invoiceLines = Domain.Crm.Invoicing.InvoiceLinesRepository.query({
+    SalesOrder: subject
+});
+
+// Collect unique invoice numbers (DISTINCT) locally.
+const seen = new Set();
+const uniqueInvoiceNos = [];
+
+invoiceLines.forEach((line) =&gt; {
+    const invoiceNo = (line &amp;&amp; line.Invoice &amp;&amp; line.Invoice.DocumentNo)
+        ? line.Invoice.DocumentNo
+        : null;
+
+    if (!invoiceNo)
+        return;
+
+    if (seen.has(invoiceNo))
+        return;
+
+    seen.add(invoiceNo);
+    uniqueInvoiceNos.push(invoiceNo);
+});
+
+return uniqueInvoiceNos.join(', ');
+</code></pre>
+<p>Notes:</p>
+<ul>
+<li><code>subject</code> is the current <strong>Sales Order</strong> (<code>Crm.Sales.SalesOrders</code>) instance.</li>
+<li>The script performs DISTINCT <strong>locally</strong> (in JavaScript), because it cannot be pushed down to the database query.</li>
+<li>The invoice number is taken from <code>Invoice.DocumentNo</code>.</li>
+</ul>
+<h2 id="example-atp-by-lots-latest-per-lot-as-of-today">Example: ATP by lots (latest per lot as of today)</h2>
+<p>This calculated attribute returns a readable list of <strong>Available-to-Promise (ATP)</strong> quantities <strong>per lot</strong> for the selected product, as of today (<code>FromDate &lt;= today</code>).</p>
+<p>Because the <code>AvailableToPromiseByLots</code> view can contain <strong>multiple rows per lot</strong> (for different dates), the script keeps <strong>only the latest row per lot</strong> (maximum <code>FromDate</code> up to today), and then formats the result as:</p>
+<pre><code class="lang-text">No lot: 1
+L260122: 15
+L260123: 22
+...
+</code></pre>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>The view may return many rows (lots * dates).<br>
+Keep filters as narrow as possible (e.g., company/store/date) to avoid slow calculated attribute evaluation.</p>
+</div>
+<ul>
+<li><strong>Repository:</strong> Crm.Sales.SalesOrderLines</li>
+<li><strong>Script Language:</strong> JavaScript</li>
+<li><strong>Script Text:</strong></li>
+</ul>
+<pre><code class="lang-js">const product = subject.Product;
+const salesOrder = subject.SalesOrder;
+const enterpriseCompany = salesOrder ? salesOrder.EnterpriseCompany : null;
+
+// Pick a store context (line store if set, otherwise header store)
+const store =
+    (subject.LineStore ? subject.LineStore : null)
+    || (salesOrder ? salesOrder.Store : null);
+
+const now = new Date();
+const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+
+if (!product || !enterpriseCompany || !store) {
+    return '';
+}
+
+// Load ATP-by-lot rows for the product, up to today (ignore future dates)
+const atpRows = Domain.Logistics.Inventory.DemandManagement.AvailableToPromiseByLotsRepository.query({
+    Product: product,
+    EnterpriseCompany: enterpriseCompany,
+    Store: store,
+    FromDate: { lessthanorequal: today }
+});
+
+// Keep only the latest row per lot (max FromDate)
+const latestRowPerLotKey = {};
+
+atpRows.forEach((r) =&gt; {
+    const lotKey = (r &amp;&amp; r.Lot &amp;&amp; r.Lot.Id) ? r.Lot.Id : '__NO_LOT__';
+    const current = latestRowPerLotKey[lotKey];
+
+    if (!current
+        || (r.FromDate &amp;&amp; current.FromDate &amp;&amp; r.FromDate &gt; current.FromDate)
+        || (r.FromDate &amp;&amp; !current.FromDate)) {
+        latestRowPerLotKey[lotKey] = r;
+    }
+});
+
+// Build a user-friendly &quot;Lot: Qty&quot; list
+const resultLines = [];
+
+// Put &quot;No lot&quot; first (if present)
+const noLotRow = latestRowPerLotKey['__NO_LOT__'];
+if (noLotRow &amp;&amp; noLotRow.ATPBase &amp;&amp; noLotRow.ATPBase.Value != null) {
+    resultLines.push(`No lot: ${noLotRow.ATPBase.Value}`);
+}
+
+// Then list all lots
+for (const lotKey in latestRowPerLotKey) {
+    if (lotKey === '__NO_LOT__')
+      continue;
+
+    const row = latestRowPerLotKey[lotKey];
+    const lotName = (row &amp;&amp; row.Lot) ? row.Lot.DisplayText : lotKey;
+    const qty = (row &amp;&amp; row.ATPBase &amp;&amp; row.ATPBase.Value != null) ? row.ATPBase.Value : 0;
+
+    resultLines.push(`${lotName}: ${qty}`);
+}
+
+return resultLines.join('\n');
+</code></pre>
+<p>Notes:</p>
+<ul>
+<li><code>subject</code> is the current <strong>Sales Order Line</strong> (<code>Crm.Sales.SalesOrderLines</code>) instance.</li>
+<li>Only rows with <code>FromDate &lt;= today</code> are considered (future ATP is ignored).</li>
+<li>Duplicates per lot are resolved by taking the row with the latest <code>FromDate</code> for each lot, then formatting the output as a multi-line string suitable for display.</li>
+</ul>
+<hr>
+<p>For more details and advanced scripting scenarios, see the <a href="../../scripting/index.html">Scripting documentation</a>.</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/calculated-attributes/scripting/index.md/#L1" class="edit-link">Suggest improvement to this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
