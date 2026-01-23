@@ -12,6 +12,52 @@ It acts like a virtual colleague who can:
 
 The arbiter uses an **AI Model** and speaks through a **Virtual User** that appears as a normal chat participant.
 
+![Arbiter](arbiter.png)
+
+## Configuring the AI Arbiter in a chat
+
+1. Open the desired **chat group** (e.g. *Marketing*, *Sales*, *Support*).
+2. Open the **Members** / participants list.
+3. Add the **Virtual User** linked to your arbiter model as a member of the group.
+
+From this moment, the AI Arbiter is available in that chat.
+
+![Arbiter Members](arbiter_members.png)
+
+## Using the AI Arbiter
+
+Inside any chat group where the Arbiter is a member, users can interact with it in the following ways:
+
+- **Ask questions directly in the channel**
+  - Example: “@Marketing AI, how often should we post on Instagram?”
+
+- **Request a review of a message or thread**
+  - Example: “@AI, is this proposal consistent with our pricing rules?”
+
+- **Ask for a summary**
+  - Example: “@AI, summarise today’s discussion and list next steps.”
+
+The arbiter bases its answers on:
+
+- the **current conversation context** in the chat,
+- any **fine-tuning** (System Message, Q&A, Training Conversations) configured for its model - for more info, see **[How to - Fine-tune AI Models](./how-to/fine-tune-models.md)**,
+- the general knowledge of the underlying OpenAI model.
+
+
+## Training the Arbiter from real conversations (Train AI)
+
+When the arbiter gives an answer that is not entirely correct or could be improved, you can:
+
+1. Correct or refine the answer in the chat (explain what is right).
+2. When you reach a good version, open the context menu on the AI’s message and choose **Train AI**.
+3. Select which messages from the conversation should be included.
+4. Confirm.
+
+ERP.net will create a **Training Conversation** for the arbiter’s model.  
+After the next compilation (if used), the arbiter will use this new knowledge in future answers.
+
+For more info and exact steps, see **[How to - Fine-tune AI Models](./how-to/fine-tune-models.md)**
+
 ## Prerequisites
 
 To use an AI Arbiter, you need:
@@ -44,47 +90,6 @@ To use an AI Arbiter, you need:
    - See: *AI Setup – Model compilation* in the main docs.
 
 **For more info on steps from 4 to 5, see  [How to - Fine-tune AI Models](./how-to/fine-tune-models.md)**
-
-## Configuring the AI Arbiter in a chat
-
-1. Open the desired **chat group** (e.g. *Marketing*, *Sales*, *Support*).
-2. Open the **Members** / participants list.
-3. Add the **Virtual User** linked to your arbiter model as a member of the group.
-
-From this moment, the AI Arbiter is available in that chat.
-
-
-## Using the AI Arbiter
-
-Inside the chat group where the arbiter is a member, users can:
-
-- Ask questions directly in the channel  
-  e.g., “@Marketing AI, how often should we post on Instagram?”  
-- Ask it to review a message or thread  
-  e.g,. “@AI, is this proposal consistent with our pricing rules?”  
-- Ask for a summary  
-  e.g. “@AI, summarise today’s discussion and list next steps.”
-
-The arbiter bases its answers on:
-
-- the **current conversation context** in the chat,
-- any **fine-tuning** (System Message, Q&A, Training Conversations) configured for its model - for more info, see **[How to - Fine-tune AI Models](./how-to/fine-tune-models.md)**,
-- the general knowledge of the underlying OpenAI model.
-
-
-## Training the Arbiter from real conversations (Train AI)
-
-When the arbiter gives an answer that is not entirely correct or could be improved, you can:
-
-1. Correct or refine the answer in the chat (explain what is right).
-2. When you reach a good version, open the context menu on the AI’s message and choose **Train AI**.
-3. Select which messages from the conversation should be included.
-4. Confirm.
-
-ERP.net will create a **Training Conversation** for the arbiter’s model.  
-After the next compilation (if used), the arbiter will use this new knowledge in future answers.
-
-For more info and exact steps, see **[How to - Fine-tune AI Models](./how-to/fine-tune-models.md)**
 
 ## Notes and good practices
 
