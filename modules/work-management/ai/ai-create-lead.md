@@ -1,8 +1,10 @@
 # Create Leads from Text or Email (AI)
 
-@@name provides AI-assisted functionality for creating Leads directly from unstructured text or email content. Instead of manually entering lead details, you can let the system extract relevant information automatically and populate the Lead form for you.
+@@name uses AI to extract lead information from unstructured text or emails and automatically populate Lead fields. Instead of manual data entry, the system analyzes the content, identifies relevant business data, and prepares a Lead for review.
 
-This functionality is available through two AI features:
+This functionality speeds up lead creation, reduces manual effort, and helps ensure that important opportunities are captured from incoming communications.
+
+It is available through two AI features:
 - **Fill data from text or Email (AI)** in the Lead definition
 - **Create Lead from this Email (AI)** in the Mail business app
 
