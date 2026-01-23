@@ -19,6 +19,11 @@ Fine-tuning is done entirely inside @@name, using:
 
 The result is a model that understands your processes, terminology, and internal rules much better than a generic ChatGPT.
 
+### Important notes
+- **AI Assistant models** cannot be fine-tuned  
+- Fine-tuning is supported **only for Arbiter models**
+
+
 
 ## When do you need fine-tuning?
 
