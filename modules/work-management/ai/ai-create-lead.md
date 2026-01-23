@@ -18,7 +18,7 @@ This option is available when creating or editing a Lead.
 2. Create a new Lead or open an existing one.
 3. In the Lead form, choose **Fill data from text or Email (AI)**.
 
-![Fill data from text or Email (AI)](./pictures/lead1.jpg)
+![Fill data from text or Email (AI)](lead1.png)
 
 ### How It Works
 
@@ -48,7 +48,7 @@ This option is available directly from the **Mail** business app.
 2. Open an incoming email.
 3. Select **Create Lead from this Email (AI)**.
 
-![Create Lead from This Email (AI)](./pictures/leadfrommail.jpg)
+![Create Lead from This Email (AI)](leadfrommail.png)
 
 ### How It Works
 
@@ -65,4 +65,4 @@ You can then review the generated Lead, make adjustments if needed, and save it.
 
 Both options aim to speed up lead creation and reduce manual data entry while preserving the original context of the communication. The generated Lead should always be reviewed before saving to ensure accuracy.
 
-![Resultl (AI)](./pictures/lead3.jpg)
+![Resultl (AI)](lead3.png)
