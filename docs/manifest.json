@@ -22490,6 +22490,16 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/ai/announce.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/ai/announce.png"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "modules/work-management/ai/arbiter.md",
       "output": {
@@ -22605,6 +22615,16 @@
       "output": {
         "resource": {
           "relative_path": "modules/work-management/ai/assistant_user.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/ai/createfromnotif.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/ai/createfromnotif.png"
         }
       },
       "version": ""
@@ -22864,6 +22884,46 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/work-management/ai/lead1.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/ai/lead1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/ai/lead2.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/ai/lead2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/ai/lead3.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/ai/lead3.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/ai/leadfrommail.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/ai/leadfrommail.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/work-management/ai/snap_to_doc.png",
       "output": {
         "resource": {
@@ -22908,6 +22968,16 @@
       "output": {
         "resource": {
           "relative_path": "modules/work-management/ai/snap_to_invoicedoc_whiteback.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/ai/taskcreate.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/ai/taskcreate.png"
         }
       },
       "version": ""
