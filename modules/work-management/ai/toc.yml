@@ -9,5 +9,7 @@
   href: assistant.md
 - name: AI Arbiter 
   href: arbiter.md
+- name: Create Leads from Text or Email (AI)
+  href: ai-create-lead.md
 - name: AI Business Rules 
   href: ai-business-rules.md
