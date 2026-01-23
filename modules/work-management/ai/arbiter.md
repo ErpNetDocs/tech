@@ -115,7 +115,7 @@ To use an AI Arbiter, you need:
 ## Notes and good practices
 
 - Create **separate arbiters** for different domains (e.g., Marketing, Sales) if their knowledge and tone should differ.
-- Keep the System Message short and focused (“You are a marketing assistant for ERP.BG…”).
+- Keep the System Message short and focused (“You are a marketing assistant for @@name …”).
 - Use Q&A for fixed rules and policies, and Training Conversations for real examples.
 - Only add the arbiter to groups where it is actually useful, to avoid unnecessary noise.
 
