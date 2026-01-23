@@ -97,6 +97,69 @@ It acts like a virtual colleague who can:</p>
 <li>suggest next steps or rewrite texts.</li>
 </ul>
 <p>The arbiter uses an <strong>AI Model</strong> and speaks through a <strong>Virtual User</strong> that appears as a normal chat participant.</p>
+<p><img src="arbiter.png" alt="Arbiter"></p>
+<h2 id="specialized-ai-arbiters">Specialized AI Arbiters</h2>
+<p>ERP.net allows you to create <strong>multiple AI Arbiters</strong>, each fine-tuned for a specific domain or purpose.</p>
+<p>This means you can have, for example:</p>
+<ul>
+<li>A <strong>Marketing Arbiter</strong> in marketing chats</li>
+<li>A <strong>Sales Arbiter</strong> in sales chats</li>
+<li>A <strong>Support Arbiter</strong> in support or customer-facing chats</li>
+</ul>
+<p>Each AI Arbiter:</p>
+<ul>
+<li>Is backed by its <strong>own AI Model</strong></li>
+<li>Has its <strong>own fine-tuning</strong> (System Message, Q&amp;A, Training Conversations)</li>
+<li>Is represented by a <strong>dedicated Virtual User</strong></li>
+<li>Can be added <strong>only to the chat groups where its expertise is relevant</strong></li>
+</ul>
+<p>Each arbiter will answer questions <strong>according to its specialization</strong>, rules, and training — even though they all use the same underlying AI provider (e.g. OpenAI).</p>
+<p>For more information on how fine-tuning works, see:<br>
+<a href="https://docs.erp.net/tech/modules/work-management/ai/how-to/fine-tune-models.html">https://docs.erp.net/tech/modules/work-management/ai/how-to/fine-tune-models.html</a></p>
+<h2 id="configuring-the-ai-arbiter-in-a-chat">Configuring the AI Arbiter in a chat</h2>
+<ol>
+<li>Open the desired <strong>chat group</strong> (e.g. <em>Marketing</em>, <em>Sales</em>, <em>Support</em>).</li>
+<li>Open the <strong>Members</strong> / participants list.</li>
+<li>Add the <strong>Virtual User</strong> linked to your arbiter model as a member of the group.</li>
+</ol>
+<p>From this moment, the AI Arbiter is available in that chat.</p>
+<p><img src="arbiter_members.png" alt="Arbiter Members"></p>
+<h2 id="using-the-ai-arbiter">Using the AI Arbiter</h2>
+<p>Inside any chat group where the Arbiter is a member, users can interact with it in the following ways:</p>
+<ul>
+<li><p><strong>Ask questions directly in the channel</strong></p>
+<ul>
+<li>Example: “@Marketing AI, how often should we post on Instagram?”</li>
+</ul>
+</li>
+<li><p><strong>Request a review of a message or thread</strong></p>
+<ul>
+<li>Example: “<a class="xref" href="index.html">AI</a>, is this proposal consistent with our pricing rules?”</li>
+</ul>
+</li>
+<li><p><strong>Ask for a summary</strong></p>
+<ul>
+<li>Example: “<a class="xref" href="index.html">AI</a>, summarise today’s discussion and list next steps.”</li>
+</ul>
+</li>
+</ul>
+<p>The arbiter bases its answers on:</p>
+<ul>
+<li>the <strong>current conversation context</strong> in the chat,</li>
+<li>any <strong>fine-tuning</strong> (System Message, Q&amp;A, Training Conversations) configured for its model - for more info, see <strong><a href="how-to/fine-tune-models.html">How to - Fine-tune AI Models</a></strong>,</li>
+<li>the general knowledge of the underlying OpenAI model.</li>
+</ul>
+<h2 id="training-the-arbiter-from-real-conversations-train-ai">Training the Arbiter from real conversations (Train AI)</h2>
+<p>When the arbiter gives an answer that is not entirely correct or could be improved, you can:</p>
+<ol>
+<li>Correct or refine the answer in the chat (explain what is right).</li>
+<li>When you reach a good version, open the context menu on the AI’s message and choose <strong>Train AI</strong>.</li>
+<li>Select which messages from the conversation should be included.</li>
+<li>Confirm.</li>
+</ol>
+<p>ERP.net will create a <strong>Training Conversation</strong> for the arbiter’s model.<br>
+After the next compilation (if used), the arbiter will use this new knowledge in future answers.</p>
+<p>For more info and exact steps, see <strong><a href="how-to/fine-tune-models.html">How to - Fine-tune AI Models</a></strong></p>
 <h2 id="prerequisites">Prerequisites</h2>
 <p>To use an AI Arbiter, you need:</p>
 <ol>
@@ -143,44 +206,10 @@ It acts like a virtual colleague who can:</p>
 </li>
 </ol>
 <p><strong>For more info on steps from 4 to 5, see  <a href="how-to/fine-tune-models.html">How to - Fine-tune AI Models</a></strong></p>
-<h2 id="configuring-the-ai-arbiter-in-a-chat">Configuring the AI Arbiter in a chat</h2>
-<ol>
-<li>Open the desired <strong>chat group</strong> (e.g. <em>Marketing</em>, <em>Sales</em>, <em>Support</em>).</li>
-<li>Open the <strong>Members</strong> / participants list.</li>
-<li>Add the <strong>Virtual User</strong> linked to your arbiter model as a member of the group.</li>
-</ol>
-<p>From this moment, the AI Arbiter is available in that chat.</p>
-<h2 id="using-the-ai-arbiter">Using the AI Arbiter</h2>
-<p>Inside the chat group where the arbiter is a member, users can:</p>
-<ul>
-<li>Ask questions directly in the channel<br>
-e.g., “@Marketing AI, how often should we post on Instagram?”</li>
-<li>Ask it to review a message or thread<br>
-e.g,. “<a class="xref" href="index.html">AI</a>, is this proposal consistent with our pricing rules?”</li>
-<li>Ask for a summary<br>
-e.g. “<a class="xref" href="index.html">AI</a>, summarise today’s discussion and list next steps.”</li>
-</ul>
-<p>The arbiter bases its answers on:</p>
-<ul>
-<li>the <strong>current conversation context</strong> in the chat,</li>
-<li>any <strong>fine-tuning</strong> (System Message, Q&amp;A, Training Conversations) configured for its model - for more info, see <strong><a href="how-to/fine-tune-models.html">How to - Fine-tune AI Models</a></strong>,</li>
-<li>the general knowledge of the underlying OpenAI model.</li>
-</ul>
-<h2 id="training-the-arbiter-from-real-conversations-train-ai">Training the Arbiter from real conversations (Train AI)</h2>
-<p>When the arbiter gives an answer that is not entirely correct or could be improved, you can:</p>
-<ol>
-<li>Correct or refine the answer in the chat (explain what is right).</li>
-<li>When you reach a good version, open the context menu on the AI’s message and choose <strong>Train AI</strong>.</li>
-<li>Select which messages from the conversation should be included.</li>
-<li>Confirm.</li>
-</ol>
-<p>ERP.net will create a <strong>Training Conversation</strong> for the arbiter’s model.<br>
-After the next compilation (if used), the arbiter will use this new knowledge in future answers.</p>
-<p>For more info and exact steps, see <strong><a href="how-to/fine-tune-models.html">How to - Fine-tune AI Models</a></strong></p>
 <h2 id="notes-and-good-practices">Notes and good practices</h2>
 <ul>
 <li>Create <strong>separate arbiters</strong> for different domains (e.g., Marketing, Sales) if their knowledge and tone should differ.</li>
-<li>Keep the System Message short and focused (“You are a marketing assistant for ERP.BG…”).</li>
+<li>Keep the System Message short and focused (“You are a marketing assistant for ERP.net …”).</li>
 <li>Use Q&amp;A for fixed rules and policies, and Training Conversations for real examples.</li>
 <li>Only add the arbiter to groups where it is actually useful, to avoid unnecessary noise.</li>
 </ul>

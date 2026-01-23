@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>AI Assistant in ERP.net | ERP.net Tech Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="AI Assistant in ERP.net | ERP.net Tech Docs ">
+      
+      
+      <link rel="icon" href="../../../favicon.ico">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/work-management/ai/assistant.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="ai-assistant-in-">AI Assistant in ERP.net</h1>
+
+<p>AI Assistant in ERP.net is designed to help users <strong>directly in the context of their work</strong> – without copying data, without switching between systems, and without relying on external tools.</p>
+<p>It is not just a generic AI chat, but a deeply integrated assistant that:</p>
+<ul>
+<li>understands where you are in the system;</li>
+<li>can work with the data from the current screen;</li>
+<li>respects ERP.net access permissions;</li>
+</ul>
+<h2 id="what-is-the--ai-assistant">What is the ERP.net AI Assistant?</h2>
+<p>AI Assistant is a conversational interface embedded in ERP.net, created to support users in their daily tasks.</p>
+<p>Instead of searching through documentation or manually formatting text, you can ask AI Assistant to:</p>
+<ul>
+<li>explain the data from the current record;</li>
+<li>summarize information;</li>
+<li>generate text (for example, a User Story);</li>
+<li>validate content.</li>
+</ul>
+<p>A key aspect is that the AI Assistant <strong>can work within the current context</strong>.</p>
+<p><strong>Important notes:</strong></p>
+<ul>
+<li>the AI Assistant model <strong>cannot be fine-tuned</strong>;</li>
+<li>fine-tuning is supported <strong>only for Arbiter models</strong>.</li>
+</ul>
+<h2 id="where-can-the-ai-assistant-be-used">Where can the AI Assistant be used?</h2>
+<p>AI Assistant is available in two main places within ERP.net.</p>
+<h3 id="ai-assistant-application">AI Assistant Application</h3>
+<p>A standalone application accessible from <strong>My Apps</strong>.</p>
+<p>It is suitable for:</p>
+<ul>
+<li>general questions;</li>
+<li>quick lookups;</li>
+<li>work without a specific record open.</li>
+</ul>
+<p>The application can be pinned for quick access at any time.</p>
+<p><img src="assistant_app.png" alt="Assistant App"></p>
+<h3 id="ai-assistant-side-panel">AI Assistant Side Panel</h3>
+<p>The AI Assistant Side Panel is available in all entity definitions and navigators.</p>
+<p>This is the most commonly used way to work with the assistant because:</p>
+<ul>
+<li>it has access to the current record;</li>
+<li>it can work with real on-screen data;</li>
+<li>it supports concrete tasks as part of the working process.</li>
+</ul>
+<p>The panel is opened from the three-dot (overflow) menu and can be:</p>
+<ul>
+<li>minimized;</li>
+<li>maximized;</li>
+<li>expanded to full screen.</li>
+</ul>
+<p><img src="assistant_side_panel.png" alt="Assistant Side Panel"></p>
+<h2 id="conversations-privacy-and-security">Conversations, privacy, and security</h2>
+<p>Every conversation with the AI Assistant is <strong>personal</strong>.</p>
+<p>This means that:</p>
+<ul>
+<li>each user sees only their own conversations;</li>
+<li>conversations are not visible to other users;</li>
+<li>security is enforced by the ERP.net security system.</li>
+</ul>
+<p>Even when multiple users work with the same model, their conversations and context remain fully isolated.</p>
+<h2 id="working-with-context-get-data">Working with context: Get Data</h2>
+<p>One of the strongest capabilities of the AI Assistant is its ability to work with the context of the current screen.</p>
+<p>When working with a specific record (for example, a Feature, Case, or Document), you can use the <strong>Get Data</strong> button.</p>
+<p>It:</p>
+<ul>
+<li>extracts the relevant data from the currently opened record;</li>
+<li>sends it to the AI Assistant as context;</li>
+<li>allows the assistant to base its responses on real data.</li>
+</ul>
+<p>Typical scenarios include:</p>
+<ul>
+<li>generating a User Story from a Feature;</li>
+<li>summarizing a record;</li>
+<li>validating whether the data is filled in correctly.</li>
+</ul>
+<p><img src="assistant_get_data.png" alt="Assistant Get Data"></p>
+<hr>
+<h2 id="starting-fresh-new-conversation">Starting fresh: New Conversation</h2>
+<p>Over time, the AI Assistant accumulates context from the conversation.</p>
+<p>In some cases, this is not desirable – for example, when:</p>
+<ul>
+<li>you change the topic;</li>
+<li>the assistant starts producing inaccurate responses;</li>
+<li>you want a clean start.</li>
+</ul>
+<p>In such situations, use <strong>New Conversation</strong>.</p>
+<p>This function:</p>
+<ul>
+<li>clears the current conversation history;</li>
+<li>removes the accumulated context;</li>
+<li>starts a new conversation.</li>
+</ul>
+<p><img src="assistant_new_convo.png" alt="New Conversation"></p>
+<h2 id="additional-instructions">Additional Instructions</h2>
+<p>Additional Instructions allow you to control how AI Assistant behaves and how it formats its answers — without changing or retraining the underlying model.</p>
+<p>This functionality is especially useful when you want the assistant to:</p>
+<ul>
+<li><p>follow a specific tone or style;</p>
+</li>
+<li><p>respond in a predefined format;</p>
+</li>
+<li><p>interpret attached files in a particular way;</p>
+</li>
+<li><p>apply consistent rules across conversations.</p>
+</li>
+</ul>
+<p>Additional Instructions are <strong>not training</strong>. They do not change the model itself and are applied only as guidance during the conversation.</p>
+<h3 id="how-to-use-them">How to use them</h3>
+<p>Open the AI Assistant panel menu (⋮) and select Additional Instructions.</p>
+<p><img src="assistant_instructions_button.png" alt="Assistant Instructions Button"></p>
+<p>This opens a window with the default (current) instructions for this form.</p>
+<p><img src="assistant_instructions_window.png" alt="Assistant Instructions Button"></p>
+<p>Here you can:</p>
+<ul>
+<li><p>Review the instructions to understand how the assistant is currently configured</p>
+</li>
+<li><p>Edit them to better match your needs. Add your own rules, for example:</p>
+<ul>
+<li>ask for shorter answers</li>
+<li>change the tone</li>
+<li>define how the assistant should react to certain questions</li>
+</ul>
+</li>
+<li><p>Experiment freely</p>
+</li>
+</ul>
+<p>After saving, the assistant will immediately use your instructions for your assistant conversations.</p>
+<p>If you clear the text, the assistant will automatically continue using the default instructions.</p>
+<h2 id="models-and-configuration">Models and configuration</h2>
+<p>Each user in ERP.net has a <strong>Model</strong> setting in their user definition.</p>
+<p><img src="assistant_user.png" alt="Assistant User Model"></p>
+<p>This setting determines which AI model is used by the AI Assistant.</p>
+<p>Important notes:</p>
+<ul>
+<li>the AI Assistant model <strong>cannot be fine-tuned</strong>;</li>
+<li>fine-tuning is supported <strong>only for Arbiter models</strong>.</li>
+</ul>
+<h3 id="fine-tuning-limitations">Fine-tuning limitations</h3>
+<p>The AI Assistant model <strong>cannot be fine-tuned</strong>.</p>
+<p>This is not a product limitation, but a technical constraint that comes from the way the AI Assistant is implemented.</p>
+<p>AI Assistant is built on top of an API, which works only with base models and does not allow the use of fine-tuned models.<br>
+Because of this, neither Q&amp;A data nor any other form of training can result in model fine-tuning when using the AI Assistant.</p>
+<p>Fine-tuning is supported <strong>only for Arbiter (Arbitration) models</strong>, which are designed for rule-based and knowledge-driven scenarios.</p>
+<h2 id="debugging-and-support-tools">Debugging and support tools</h2>
+<p>AI Assistant provides diagnostic tools intended primarily for support and development teams.</p>
+<p><img src="assistant_debug.png" alt="Assistant Debug"></p>
+<h4 id="debug-mode">Debug Mode</h4>
+<p>Debug Info provides:</p>
+<ul>
+<li>request and response details;</li>
+<li>information required for investigating issues.</li>
+</ul>
+<h4 id="diagnostic-info">Diagnostic Info</h4>
+<p>When enabled:</p>
+<ul>
+<li>diagnostic information is added to each AI response;</li>
+<li>token usage and technical details are displayed.</li>
+</ul>
+<p>These tools should be used <strong>only when necessary and upon request by the support team</strong>.</p>
+<h2 id="summary">Summary</h2>
+<p>AI Assistant in ERP.net is designed to be practical, contextual, and adaptable.</p>
+<p>When used correctly, it:</p>
+<ul>
+<li>saves time;</li>
+<li>reduces manual effort;</li>
+<li>supports users directly within their working process.</li>
+</ul>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/work-management/ai/assistant.md/#L1" class="edit-link">Suggest improvement to this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

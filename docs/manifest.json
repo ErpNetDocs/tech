@@ -22481,6 +22481,116 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/work-management/ai/arbiter.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/ai/arbiter.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/ai/arbiter_members.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/ai/arbiter_members.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/work-management/ai/assistant.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/work-management/ai/assistant.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/ai/assistant_app.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/ai/assistant_app.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/ai/assistant_debug.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/ai/assistant_debug.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/ai/assistant_get_data.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/ai/assistant_get_data.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/ai/assistant_instructions_button.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/ai/assistant_instructions_button.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/ai/assistant_instructions_window.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/ai/assistant_instructions_window.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/ai/assistant_new_convo.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/ai/assistant_new_convo.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/ai/assistant_side_panel.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/ai/assistant_side_panel.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/ai/assistant_user.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/ai/assistant_user.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/work-management/ai/how-to/ai_server_site.png",
       "output": {
         "resource": {
