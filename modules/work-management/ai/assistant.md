@@ -143,7 +143,6 @@ This opens a window with the default (current) instructions for this form.
 
 ![Assistant Instructions Button](assistant_instructions_window.png)
 
-
 Here you can:
 
 * Review the instructions to understand how the assistant is currently configured
@@ -160,62 +159,13 @@ After saving, the assistant will immediately use your instructions for your assi
 If you clear the text, the assistant will automatically continue using the default instructions.
 
 
-## Teaching the Assistant: the right way
-
-AI Assistant **cannot be trained using Q&A**.
-
-This is a key architectural principle.
-
-### Training Conversations (Train AI)
-
-The only supported way to train AI Assistant is through **Training Conversations**.
-
-They allow:
-
-* training in real working scenarios;
-* correcting actual assistant responses;
-* adapting the assistant to company-specific processes.
-
-The process is straightforward:
-
-1. You have a conversation with AI Assistant;
-2. You correct one of its responses;
-3. You select **Train AI** on the AI message;
-4. You confirm the training action.
-
-📸 *Screenshot: Train AI option on an AI message*
-
----
-
-### Important: Training Conversations vs Q&A
-
-⚠️ **Important limitation**
-
-* AI Assistant does **NOT** support Q&A-based training;
-* Q&A training is supported **only for Arbiter (Arbitration) models**;
-* If a model contains Q&A data, **AI Assistant cannot be built** using that model.
-
-This is not a bug but an intentional architectural decision.
-
-AI Assistant relies on:
-
-* runtime context;
-* Training Conversations;
-* system instructions.
-
-Arbiter models, on the other hand, are designed for:
-
-* policies and rules;
-* static knowledge;
-* Q&A-based reasoning.
-
----
-
 ## Models and configuration
 
 Each user in ERP.net has a **Model** setting in their user definition.
 
-This setting determines which AI model is used by AI Assistant.
+![Assistant User Model](assistant_user.png)
+
+This setting determines which AI model is used by the AI Assistant.
 
 Important notes:
 
@@ -228,23 +178,24 @@ Important notes:
 
 AI Assistant provides diagnostic tools intended primarily for support and development teams.
 
+![Assistant Debug](assistant_debug.png)
+
 ### Debug Mode
-
-When enabled:
-
-* diagnostic information is added to each AI response;
-* token usage and technical details are displayed.
-
-### Debug Info
 
 Debug Info provides:
 
 * request and response details;
 * information required for investigating issues.
 
+### Diagnostic Info
+
+When enabled:
+
+* diagnostic information is added to each AI response;
+* token usage and technical details are displayed.
+
 These tools should be used **only when necessary and upon request by the support team**.
 
----
 
 ## Summary
 
