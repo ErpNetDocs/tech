@@ -1,6 +1,6 @@
 # Create ToDos from Notifications or Chat Comments (AI)
 
-@@name provides AI-assisted functionality for creating ToDos directly from notifications or chat comments. This allows users to turn contextual information into actionable tasks without switching screens or manually entering task details.
+@@name provides AI-assisted functionality for **creating ToDos directly from notifications or chat comments**. This allows users to turn contextual information into actionable tasks without switching screens or manually entering task details.
 
 The functionality is available through two AI features:
 - **Create ToDo (AI) from notifications**
