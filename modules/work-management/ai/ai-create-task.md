@@ -17,7 +17,7 @@ This option allows users to instantly turn a chat comment into a ToDo without le
 2. Right-click any comment.
 3. Select **Create Task**.
 
-![Create Task from Chat Comment](./pictures/taskcreate.jpg)
+![Create Task from Chat Comment](taskcreate.png
 
 ### How It Works
 
@@ -42,7 +42,7 @@ Once created, the ToDo:
 - Brings the related group into focus
 - Triggers notifications to group members, ensuring important actions are not missed
 
-![ToDo Announcement](./pictures/announce.jpg)
+![ToDo Announcement](announce.png)
 
 ## Create ToDo (AI) from Notifications
 
@@ -54,7 +54,7 @@ This option allows you to create a ToDo directly from the **Notifications** list
 2. Select a notification.
 3. Choose **Create ToDo (AI)**.
 
-![Create Task from Chat Comment](./pictures/taskcreate.jpg)
+![Create Task from Chat Comment](taskcreate.png)
 
 ### How It Works
 
