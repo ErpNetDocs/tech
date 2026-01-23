@@ -8,7 +8,7 @@ It acts like a virtual colleague who can:
 - answer questions inside a group conversation,
 - clarify or check information (“who is right here?”),
 - summarise long discussions,
-- suggest next steps or rewrite texts,
+- suggest next steps or rewrite texts.
 
 The arbiter uses an **AI Model** and speaks through a **Virtual User** that appears as a normal chat participant.
 
