@@ -22440,6 +22440,26 @@
       "version": ""
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "modules/work-management/ai/ai-create-lead.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/work-management/ai/ai-create-lead.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/work-management/ai/ai-create-task.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/work-management/ai/ai-create-task.html"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Resource",
       "source_relative_path": "modules/work-management/ai/ai-set.png",
       "output": {
