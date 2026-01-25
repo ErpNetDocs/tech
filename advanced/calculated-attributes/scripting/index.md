@@ -10,6 +10,16 @@ This makes Calculated Attributes significantly more flexible and expressive, esp
 
 JavaScript-based calculated attributes are evaluated on demand and return their computed value directly.
 
+## When to use JavaScript calculated attributes
+
+JavaScript-based calculated attributes are a good fit when:
+
+- Iteration or looping over related records is required
+- Multiple related records need to be queried and processed
+- Custom, user-defined ordering, grouping, or de-duplication logic is needed
+
+Before scripting support, these scenarios typically required workarounds, helper attributes, or were not feasible at all.
+
 ## How it works
 
 - **Script language**  
@@ -21,8 +31,8 @@ JavaScript-based calculated attributes are evaluated on demand and return their 
 
 The script runs in a sandboxed environment with access to:
 
-- The entity for which the calculated attribute is being evaluated
-- The entire @@name Domain Model (via the Domain object)
+- `subject` – the entity instance for which the calculated attribute is being evaluated
+- The entire @@name Domain Model (via the `Domain` object)
 
 Unlike user business rules, calculated attribute scripts are expected to **produce a value**.  
 The value returned by the script becomes the value of the calculated attribute.
@@ -44,8 +54,14 @@ The returned value is the calculated attribute's value.
 If the script returns `null` or returns nothing (`undefined`), the calculated attribute value is `null`.
 
 > [!IMPORTANT]
-> Use JavaScript calculated attributes with care.  
-> A script can easily query large datasets (or run many queries), which results in heavy processing during evaluation and may noticeably degrade performance for lists, forms, and reports where the attribute is shown.
+> Calculated attributes appear in lists, forms, and reports.  
+> JavaScript makes it easy to do expensive work, so restraint is required:
+>
+> - Keep queries narrow
+> - Limit fetched records when possible
+> - Avoid unnecessary loops
+>
+> Used responsibly, scripted calculated attributes remain fast and readable.
 
 ## Example: New customer check (exactly one released sales order)
 
