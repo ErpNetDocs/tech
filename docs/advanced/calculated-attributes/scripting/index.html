@@ -95,6 +95,14 @@
 <li>Existing domain data needs to be combined in non-trivial ways</li>
 </ul>
 <p>JavaScript-based calculated attributes are evaluated on demand and return their computed value directly.</p>
+<h2 id="when-to-use-javascript-calculated-attributes">When to use JavaScript calculated attributes</h2>
+<p>JavaScript-based calculated attributes are a good fit when:</p>
+<ul>
+<li>Iteration or looping over related records is required</li>
+<li>Multiple related records need to be queried and processed</li>
+<li>Custom, user-defined ordering, grouping, or de-duplication logic is needed</li>
+</ul>
+<p>Before scripting support, these scenarios typically required workarounds, helper attributes, or were not feasible at all.</p>
 <h2 id="how-it-works">How it works</h2>
 <ul>
 <li><p><strong>Script language</strong><br>
@@ -107,8 +115,8 @@ This script is executed whenever the calculated attribute is evaluated.</p>
 </ul>
 <p>The script runs in a sandboxed environment with access to:</p>
 <ul>
-<li>The entity for which the calculated attribute is being evaluated</li>
-<li>The entire ERP.net Domain Model (via the Domain object)</li>
+<li><code>subject</code> – the entity instance for which the calculated attribute is being evaluated</li>
+<li>The entire ERP.net Domain Model (via the <code>Domain</code> object)</li>
 </ul>
 <p>Unlike user business rules, calculated attribute scripts are expected to <strong>produce a value</strong>.<br>
 The value returned by the script becomes the value of the calculated attribute.</p>
@@ -123,8 +131,14 @@ return base * multiplier;
 <p>If the script returns <code>null</code> or returns nothing (<code>undefined</code>), the calculated attribute value is <code>null</code>.</p>
 <div class="IMPORTANT">
 <h5>Important</h5>
-<p>Use JavaScript calculated attributes with care.<br>
-A script can easily query large datasets (or run many queries), which results in heavy processing during evaluation and may noticeably degrade performance for lists, forms, and reports where the attribute is shown.</p>
+<p>Calculated attributes appear in lists, forms, and reports.<br>
+JavaScript makes it easy to do expensive work, so restraint is required:</p>
+<ul>
+<li>Keep queries narrow</li>
+<li>Limit fetched records when possible</li>
+<li>Avoid unnecessary loops</li>
+</ul>
+<p>Used responsibly, scripted calculated attributes remain fast and readable.</p>
 </div>
 <h2 id="example-new-customer-check-exactly-one-released-sales-order">Example: New customer check (exactly one released sales order)</h2>
 <p>This calculated attribute determines whether the current customer is a &quot;new customer&quot;, based on the number of related sales orders.</p>
