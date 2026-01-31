@@ -22,9 +22,10 @@ It covers supported scripting languages, integration with the domain model, avai
 
 ## Scripting availability
 
-Scripting is currently available only within [User Business Rules](../user-business-rules/index.md).
+Scripting is available within the functional areas listed below.  
+These links provide documentation on the specific integration points.
 
-Support for additional modules, where scripting will be available, is planned for future releases.
+[!list limit=1000 erp.type=module erp.topic=scripting default-text="None"]
 
 ## Script access scope
 

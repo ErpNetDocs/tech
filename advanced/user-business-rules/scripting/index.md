@@ -1,3 +1,8 @@
+---
+erp.type: module
+erp.topic: scripting
+---
+
 # Scripting in user business rules
 
 You can embed custom scripts directly in user business rules to automate logic, perform complex validations, or interact with @@name Domain Model.

@@ -1,3 +1,8 @@
+---
+erp.type: module
+erp.topic: scripting
+---
+
 # Scripting in calculated attributes
 
 Calculated Attributes can use JavaScript to compute their values dynamically, enabling custom logic beyond what integrated expressions can provide.
