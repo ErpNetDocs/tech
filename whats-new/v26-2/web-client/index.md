@@ -1,4 +1,4 @@
-# WEB Client
+# @@webclient
 
 The ERP.net Web Client is the web-based user interface of the ERP.net business-management platform. It is one of the primary ways to access and interact with all the modules inside the ERP.net system—such as CRM, financials, inventory, production and more.
 
@@ -99,3 +99,21 @@ Search in Enterprise Company and Company Location is designed to help users quic
 Use the arrow keys to navigate to the desired result and press Enter, or click with the mouse to confirm the selection.
 
 ![picture](pictures/search.png)
+
+### **7. A Modernized Look  - Same functionality. Better experience**
+
+The goal is simple: less visual noise, better focus, and a more contemporary UI/UX experience—without changing the way you work.This modernization focuses entirely on visual clarity and usability. All existing functionality remains intact—now presented in a cleaner, more modern way that supports long work sessions and complex data entry.
+
+The updated design makes everyday work lighter on the eyes, easier to scan, and more consistent across the application.
+
+![picture](pictures/modern.png)
+
+**Cleaner, borderless layout** - Panels and UI sections no longer rely on heavy frames. The interface feels more open, structured, and calm.
+**Clearer hierarchy and typography** - Entity titles are more prominent, secondary information is visually de-emphasized, and modern fonts are introduced for better readability and consistency.
+**Refined headers and actions** - Actions in the header are aligned and visually unified, making key operations easier to find and faster to access.
+**Advanced UI Mode** - A new Advanced Mode setting lets experienced users see additional UI controls, while keeping the default interface clean and minimal for everyday work.
+**Smarter field layout** - Fields now vary in width based on content, labels are clearly separated from values, and spacing is improved to support faster scanning.
+**Subtle interaction cues** - Hover highlights and contextual icons appear only when relevant—guiding attention without cluttering the screen.
+**Improved navigation context** - Breadcrumbs are now clearly positioned above the form, helping users stay oriented within the application.
+
+We believe this update makes the Web Client feel not only more modern, but also more comfortable and intuitive to use—today and going forward.
