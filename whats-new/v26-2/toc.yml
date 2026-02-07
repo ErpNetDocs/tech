@@ -1,30 +1,39 @@
 - name: Breaking Changes 
   href: breaking-changes/index.md
   topicHref: breaking-changes/index.md
+  
 - name: Product Management 
   href: product-management/toc.yml 
   topicHref: product-management/index.md
+  
 - name: WEB Client 
   href: web-client/index.md 
-  topicHref: web-client/index.md 
+  topicHref: web-client/index.md
+  
 - name: Social Interaction 
   href: social-interaction/index.md
   topicHref: social-interaction/index.md
+  
 - name: My Apps
   href: my-apps/index.md
   topicHref: my-apps/index.md
+  
 - name: Work Management
   href: work-management/index.md
   topicHref: work-management/index.md
+  
 - name: CRM
   href: crm/index.md
   topicHref: crm/index.md
+  
 - name: Client Center
   href: client-center/index.md
   topicHref: client-center/index.md
+  
 - name: Calculated Attributes
   href: calculated-attributes/index.md
-  topicHref: calculated-attributes/index.md  
+  topicHref: calculated-attributes/index.md 
+  
 - name: User Business Rules
   href: user-business-rules/index.md
   topicHref: user-business-rules/index.md  
