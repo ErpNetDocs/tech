@@ -108,13 +108,13 @@ The updated design makes everyday work lighter on the eyes, easier to scan, and 
 
 ![picture](pictures/modern.png)
 
-**Cleaner, borderless layout** - Panels and UI sections no longer rely on heavy frames. The interface feels more open, structured, and calm.<br>
-**Clearer hierarchy and typography** - Entity titles are more prominent, secondary information is visually de-emphasized, and modern fonts are introduced for better readability and consistency.<br>
-**Refined headers and actions** - Actions in the header are aligned and visually unified, making key operations easier to find and faster to access.<br>
-**Advanced UI Mode** - A new Advanced Mode setting lets experienced users see additional UI controls, while keeping the default interface clean and minimal for everyday work.<br>
-**Smarter field layout** - Fields now vary in width based on content, labels are clearly separated from values, and spacing is improved to support faster scanning.<br>
-**Subtle interaction cues** - Hover highlights and contextual icons appear only when relevant—guiding attention without cluttering the screen.<br>
-**Improved navigation context** - Breadcrumbs are now clearly positioned above the form, helping users stay oriented within the application.<br>
+✅ **Cleaner, borderless layout** - Panels and UI sections no longer rely on heavy frames. The interface feels more open, structured, and calm.<br>
+- **Clearer hierarchy and typography** - Entity titles are more prominent, secondary information is visually de-emphasized, and modern fonts are introduced for better readability and consistency.<br>
+- **Refined headers and actions** - Actions in the header are aligned and visually unified, making key operations easier to find and faster to access.<br>
+- **Advanced UI Mode** - A new Advanced Mode setting lets experienced users see additional UI controls, while keeping the default interface clean and minimal for everyday work.<br>
+- **Smarter field layout** - Fields now vary in width based on content, labels are clearly separated from values, and spacing is improved to support faster scanning.<br>
+- **Subtle interaction cues** - Hover highlights and contextual icons appear only when relevant—guiding attention without cluttering the screen.<br>
+- **Improved navigation context** - Breadcrumbs are now clearly positioned above the form, helping users stay oriented within the application.<br>
 
 We believe this update makes the Web Client feel not only more modern, but also more comfortable and intuitive to use—today and going forward.
 
