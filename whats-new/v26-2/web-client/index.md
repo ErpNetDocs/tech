@@ -117,3 +117,19 @@ The updated design makes everyday work lighter on the eyes, easier to scan, and 
 **Improved navigation context** - Breadcrumbs are now clearly positioned above the form, helping users stay oriented within the application.<br>
 
 We believe this update makes the Web Client feel not only more modern, but also more comfortable and intuitive to use—today and going forward.
+
+### **8. AI-assisted translations
+
+Managing multilingual data just became easier.Until now, when a field wasn’t translated, users often saw a transliterated value when switching work languages—something that frequently caused confusion and required manual re-translation.
+
+The Web Client now offers AI-assisted translation for multilingual fields.
+
+When a value exists in one language, that language becomes the source, and the system can automatically translate the value into the other active languages that don’t yet have translations.
+
+Users can choose how to handle missing translations:
+
+- Translate the value automatically
+- Transliterate the original text
+- Copy the value from the source language
+
+This removes friction, saves time, and makes working in multilingual environments more intuitive—while keeping users fully in control. Learn how to exploit this feature from the dedicated article [Translate multilanguage fields](https://docs.erp.net/webclient/introduction/how-to/translate-fields.html)
