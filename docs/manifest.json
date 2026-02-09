@@ -23564,6 +23564,16 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "whats-new/v26-2/web-client/pictures/translate.png",
+      "output": {
+        "resource": {
+          "relative_path": "whats-new/v26-2/web-client/pictures/translate.png"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "whats-new/v26-2/work-management/index.md",
       "output": {
