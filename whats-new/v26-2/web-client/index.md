@@ -100,7 +100,7 @@ Use the arrow keys to navigate to the desired result and press Enter, or click w
 
 ![picture](pictures/search.png)
 
-### **7. A Modernized Look  - Same functionality. Better experience**
+### **7. A modernized look  - same functionality, better experience**
 
 The goal is simple: less visual noise, better focus, and a more contemporary UI/UX experience—without changing the way you work.This modernization focuses entirely on visual clarity and usability. All existing functionality remains intact—now presented in a cleaner, more modern way that supports long work sessions and complex data entry.
 
@@ -131,5 +131,7 @@ Users can choose how to handle missing translations:
 - Translate the value automatically
 - Transliterate the original text
 - Copy the value from the source language
+
+![picture](pictures/translate.png)
 
 This removes friction, saves time, and makes working in multilingual environments more intuitive—while keeping users fully in control. Learn how to exploit this feature from the dedicated article [Translate multilanguage fields](https://docs.erp.net/webclient/introduction/how-to/translate-fields.html)
