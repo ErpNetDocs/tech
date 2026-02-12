@@ -135,3 +135,16 @@ Users can choose how to handle missing translations:
 ![picture](pictures/translate.png)
 
 This removes friction, saves time, and makes working in multilingual environments more intuitive—while keeping users fully in control. Learn how to exploit this feature from the dedicated article [Translate multilanguage fields](https://docs.erp.net/webclient/introduction/how-to/translate-fields.html)
+
+### 9. Open links in new browser tab
+
+We’ve added a new toggle option in the App-bar menu: "Open links in new tab".
+
+When enabled, records that open in full view will launch in a new browser tab, so you don’t lose your current page. This makes it easier to review related information while continuing your work uninterrupted.
+
+Currently, this behavior applies to:
+
+👉 Links in received notifications (clicking a notification opens the target record)<br>
+👉 Links in navigators (the first column link that opens a record)<br>
+👉 Links in chat (e.g., links to system objects in comments or shared items)<br>
+
