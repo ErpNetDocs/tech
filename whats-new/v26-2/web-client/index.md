@@ -148,3 +148,4 @@ Currently, this behavior applies to:
 👉 Links in navigators (the first column link that opens a record)<br>
 👉 Links in chat (e.g., links to objects in system comments or shared items)<br>
 
+![picture](pictures/newtab.png)
