@@ -33,6 +33,15 @@ A simple example:
 > [!NOTE] 
 > The UI in some apps might require the user to actually click on the notification in order to mark it as read.
 
+## Follow levels and Notifications
+
+Social Follows indicate interest about an object in the system. Follow levels idnicate the strength of this interest and thus act as triggers for the creation of notifications.
+Follow level is applied per notification class, not as a global “enable/disable notifications” switch:
+
+- Comment/Chat classes notifications are always created for TAGGED/FOLLOW/FAVORITE Follow levels.
+- Record Update classes notifications are created only when Follow level ≥ FOLLOW,
+- Implicit document-state change notifications (NT_DOC_STATE_IMPLICIT) are created only when Follow level = FAVORITE and this Favorite object is respected across all relevant follows for the document, which means that at least one relevant Favorite enables the creation of a notification upon State change, and the system must deduplicate so a single status change generates exactly one NT_DOC_STATE_IMPLICIT per recipient, even if multiple Favorite paths exist.
+
 ## Notification classes
 
 Each notification has a class which specifies the type of the notification. Additionally, all notification classes are grouped for better classification.
