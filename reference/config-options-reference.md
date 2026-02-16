@@ -428,13 +428,13 @@ If you need to analyze the data, you may use Python code.
   "0" – notification pop-up toasters will not be displayed.<br>
   "1" or not defined - notification pop-up toasters will be displayed (default behavior).<br>
 - b. The user sets it manually.<br>
-- c. The key is introduced in version: (will be 26.2)
+- c. The key is introduced in version: (26.2)
 
 ## 73. /ToDo/ShowLinked
 - a. Action: Controls whether the ToDo application displays tasks that are linked to an object in the database (e.g. documents, activities, social groups).The toggle switch is set to On    or Off.<br>
   When the value of this key is:<br>
-  “0” (False)  – linked ToDo tasks are not displayed.<br>
-  “1” (True) or the key is not defined –  linked ToDo tasks are displayed by default (default behavior).<br>
+  "0" (False)  – linked ToDo tasks are not displayed.<br>
+  "1" (True) or the key is not defined –  linked ToDo tasks are displayed by default (default behavior).<br>
 - b. The user sets it manually.<br>
 - c. The key is introduced in version: (26.2)
 
@@ -444,7 +444,7 @@ If you need to analyze the data, you may use Python code.
   "0" (False) or the key is not defined  - Themes are inactive and cannot be applied (default behavior)<br>
   "1" (True) - Themes are active and can be applied.<br>
 - b. The user sets it manually.<br>
-- c. The key is introduced in version: (will be 26.2)
+- c. The key is introduced in version: (26.2)
 
 ## 75. /Scripting/UseNumericEnumConversionMode
 - a. **Action:** Controls how CLR enum values are exposed in JavaScript scripts. When the option is enabled, enum values are exposed as their underlying numeric value. When disabled, enum values are exposed as their name string.  
