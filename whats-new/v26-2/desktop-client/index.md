@@ -16,6 +16,7 @@ We have identified several dark themes in the Desktop Client that contain visual
 > [!IMPORTANT] 
 > After upgrading, if an unsupported theme is currently in use, it will automatically revert to a supported theme.
 > If you still wish to use these themes, you must explicitly enable UseUnsupportedThemes after the update.
+> You must log out and log in again for the change to take effect.
 
 ![picture](pictures/dark-themes.png)
 
