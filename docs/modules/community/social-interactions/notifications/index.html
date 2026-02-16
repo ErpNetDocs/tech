@@ -118,6 +118,14 @@ In this scenario, if the notification is bound to a data object, it will be open
 <h5>Note</h5>
 <p>The UI in some apps might require the user to actually click on the notification in order to mark it as read.</p>
 </div>
+<h2 id="follow-levels-and-notifications">Follow levels and Notifications</h2>
+<p>Social Follows indicate interest about an object in the system. Follow levels idnicate the strength of this interest and thus act as triggers for the creation of notifications.
+Follow level is applied per notification class, not as a global “enable/disable notifications” switch:</p>
+<ul>
+<li>Comment/Chat classes notifications are always created for TAGGED/FOLLOW/FAVORITE Follow levels.</li>
+<li>Record Update classes notifications are created only when Follow level ≥ FOLLOW,</li>
+<li>Implicit document-state change notifications (NT_DOC_STATE_IMPLICIT) are created only when Follow level = FAVORITE and this Favorite object is respected across all relevant follows for the document, which means that at least one relevant Favorite enables the creation of a notification upon State change, and the system must deduplicate so a single status change generates exactly one NT_DOC_STATE_IMPLICIT per recipient, even if multiple Favorite paths exist.</li>
+</ul>
 <h2 id="notification-classes">Notification classes</h2>
 <p>Each notification has a class which specifies the type of the notification. Additionally, all notification classes are grouped for better classification.</p>
 <p>Also, most of the notifications are created automatically via business rules when the corresponding event occurs (e.g. when someone writes a comment).</p>
