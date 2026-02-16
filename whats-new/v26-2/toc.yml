@@ -3,7 +3,7 @@
   topicHref: breaking-changes/index.md
   
 - name: Product Management 
-  href: product-management/toc.yml 
+  href: product-management/index.md 
   topicHref: product-management/index.md
   
 - name: WEB Client 
@@ -37,3 +37,7 @@
 - name: User Business Rules
   href: user-business-rules/index.md
   topicHref: user-business-rules/index.md  
+
+- name: Desktop Client
+  href: desktop-client/index.md
+ 
