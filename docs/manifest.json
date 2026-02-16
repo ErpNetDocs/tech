@@ -23348,19 +23348,6 @@
       "version": ""
     },
     {
-      "type": "Toc",
-      "source_relative_path": "whats-new/v26-2/product-management/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "whats-new/v26-2/product-management/toc.html"
-        },
-        ".json": {
-          "relative_path": "whats-new/v26-2/product-management/toc.json"
-        }
-      },
-      "version": ""
-    },
-    {
       "type": "Conceptual",
       "source_relative_path": "whats-new/v26-2/social-interaction/index.md",
       "output": {
