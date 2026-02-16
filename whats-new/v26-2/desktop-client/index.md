@@ -21,6 +21,6 @@ We have identified several dark themes in the Desktop Client that contain visual
 
 ## Other features
 
-### **1. Greater control over desktop notifications
+### **1. Greater control over desktop notifications**
 
 Until now, every incoming notification automatically appeared as a blue pop-up balloon, occasionally obstructing part of the screen. With the new configuration option ["AllowNotificationPopups"](https://docs.erp.net/tech/reference/config-options-reference.html#72-allownotificationpopups), this behavior is now fully controllable. The setting is in Settings menu.
