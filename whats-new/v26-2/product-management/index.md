@@ -6,6 +6,6 @@ Its purpose is to ensure complete, accurate, and consistent product information 
 ![homepage](pictures/homepage.png)
 
 ### Notable features
-[!list folder="." depth=1 limit=100 default-text="None"]
+- [Product Relations](product-relations/index.md)
 
 ### Other features
