@@ -23259,6 +23259,26 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "whats-new/v26-2/desktop-client/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "whats-new/v26-2/desktop-client/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "whats-new/v26-2/desktop-client/pictures/dark-themes.png",
+      "output": {
+        "resource": {
+          "relative_path": "whats-new/v26-2/desktop-client/pictures/dark-themes.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "whats-new/v26-2/index.md",
       "output": {
         ".html": {
