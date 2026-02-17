@@ -23289,6 +23289,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "whats-new/v26-2/logistics/eso-serial-sequence.md",
+      "output": {
+        ".html": {
+          "relative_path": "whats-new/v26-2/logistics/eso-serial-sequence.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "whats-new/v26-2/my-apps/index.md",
       "output": {
         ".html": {
