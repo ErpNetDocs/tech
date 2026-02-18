@@ -1,4 +1,7 @@
-# Improved Serial Number Sequences in Execute Store Orders (v26.2)
+# Logistics
+Here we share the latest improvements and updates in Logistics, designed to make warehouse operations faster, smoother, and more reliable.
+
+## Improved Serial Number Sequences in Execute Store Orders (v26.2)
 
 In version **26.2**, we introduced an important improvement in the Barcode panel when working with serial numbers during **Execute Store Orders**.
 
