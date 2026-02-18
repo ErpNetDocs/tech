@@ -23299,16 +23299,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "whats-new/v26-2/logistics/index.md",
-      "output": {
-        ".html": {
-          "relative_path": "whats-new/v26-2/logistics/index.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "whats-new/v26-2/my-apps/index.md",
       "output": {
         ".html": {
