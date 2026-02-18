@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title> | ERP.net Tech Docs </title>
+      <title>Improved Serial Number Sequences in Execute Store Orders (v26.2) | ERP.net Tech Docs </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content=" | ERP.net Tech Docs ">
+      <meta name="title" content="Improved Serial Number Sequences in Execute Store Orders (v26.2) | ERP.net Tech Docs ">
       
       
       <link rel="icon" href="../../../favicon.ico">
@@ -85,8 +85,28 @@
         </div>
 
         <article data-uid="">
+<h1 id="improved-serial-number-sequences-in-execute-store-orders-v262">Improved Serial Number Sequences in Execute Store Orders (v26.2)</h1>
 
-<p>fdsfddrg</p>
+<p>In version <strong>26.2</strong>, we introduced an important improvement in the Barcode panel when working with serial numbers during <strong>Execute Store Orders</strong>.</p>
+<h2 id="what-changed">What changed?</h2>
+<p>Previously, the <strong>SEQUENCE START / SEQUENCE END</strong> modes were limited to Receipt-only scenarios.</p>
+<p>Now the system supports more flexible and realistic warehouse workflows:</p>
+<ul>
+<li><p><strong>Issue-only lines</strong><br>
+→ existing serial numbers are correctly identified and applied.</p>
+</li>
+<li><p><strong>Receipt-only lines</strong><br>
+→ new serial numbers are generated as expected.</p>
+</li>
+<li><p><strong>Mixed Receipt/Issue documents</strong><br>
+→ when an Issue line is detected, the system automatically uses existing serial numbers.</p>
+</li>
+</ul>
+<h2 id="current-limitation">Current limitation</h2>
+<p>To generate new serial numbers on Receipt lines, all visible document lines must still be of movement type <strong>Receipt</strong>.</p>
+<h2 id="why-this-matters">Why this matters</h2>
+<p>This improvement allows warehouse operators to handle serial numbers faster and more reliably in real-world scenarios, while maintaining strict control over serial number generation.</p>
+<p>Learn more here: <a href="https://docs.erp.net/winclient/introduction/barcode-commands/panel-modes/sequence-start.html">https://docs.erp.net/winclient/introduction/barcode-commands/panel-modes/sequence-start.html</a></p>
 
 </article>
 
