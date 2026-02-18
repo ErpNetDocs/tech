@@ -41,3 +41,7 @@
 - name: Desktop Client
   href: desktop-client/index.md
   topicHref: desktop-client/index.md
+
+- name: Logistics
+  href: logistics/eso-serial-sequence.md
+  topicHref: logistics/eso-serial-sequence.md
