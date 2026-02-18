@@ -24,3 +24,5 @@ To generate new serial numbers on Receipt lines, all visible document lines must
 ## Why this matters
 
 This improvement allows warehouse operators to handle serial numbers faster and more reliably in real-world scenarios, while maintaining strict control over serial number generation.
+
+Learn more here: https://docs.erp.net/winclient/introduction/barcode-commands/panel-modes/sequence-start.html
