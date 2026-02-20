@@ -22,3 +22,12 @@ Major Client Center highlights for v.26.2 will be listed here when applicable. F
    ![Client Center – New Order – Notes (1)](pictures/cc-notes-neworder-1.png)
 
    ![Client Center – New Order – Notes (2)](pictures/cc-notes-neworder-2.png)
+
+### **2. Files panel in Customer Profile**  
+
+  Customer documents now have their own dedicated space in Client Center. With the new **Files** panel in **Customer Profile**, external users can easily access and share files—without unnecessary back-and-forth over email.  
+   - View and download files attached to the customer and shared with external users.  
+   - Upload new files directly from Client Center (saved to the customer record).  
+   - Available for roles **L40 (Billing)** and above.  
+
+   If there are no accessible documents, the panel displays the message **"No documents available."**
