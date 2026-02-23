@@ -26,7 +26,7 @@ We have identified several dark themes in the Desktop Client that contain visual
 
 Until now, every incoming notification automatically appeared as a blue pop-up balloon, occasionally obstructing part of the screen. With the new configuration option ["AllowNotificationPopups"](https://docs.erp.net/tech/reference/config-options-reference.html#72-allownotificationpopups), this behavior is now fully controllable. The setting is in Settings menu.
 
-### **2.Create a Copy of a Calculated Attribute** 
+### **2. Create a Copy of a Calculated Attribute** 
 
 We’ve introduced a new option in the Desktop Client that allows you to create a copy of an existing calculated attribute.
 
