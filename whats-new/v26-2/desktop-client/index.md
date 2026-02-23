@@ -25,3 +25,13 @@ We have identified several dark themes in the Desktop Client that contain visual
 ### **1. Greater control over desktop notifications**
 
 Until now, every incoming notification automatically appeared as a blue pop-up balloon, occasionally obstructing part of the screen. With the new configuration option ["AllowNotificationPopups"](https://docs.erp.net/tech/reference/config-options-reference.html#72-allownotificationpopups), this behavior is now fully controllable. The setting is in Settings menu.
+
+### **2.Create a Copy of a Calculated Attribute** 
+
+We’ve introduced a new option in the Desktop Client that allows you to create a copy of an existing calculated attribute.
+
+This function duplicates the attribute’s parameters and all associated expressions, so you don’t need to recreate complex logic from scratch. After copying, you only need to adjust the Repository and Name and modify any parameters as required for the new purpose.
+
+This enhancement significantly reduces the effort involved in building similar or identical calculated attributes and helps prevent errors when re-entering complex expressions.
+
+![picture](pictures/CA.png)
