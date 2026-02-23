@@ -23269,6 +23269,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "whats-new/v26-2/desktop-client/pictures/CA.png",
+      "output": {
+        "resource": {
+          "relative_path": "whats-new/v26-2/desktop-client/pictures/CA.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "whats-new/v26-2/desktop-client/pictures/dark-themes.png",
       "output": {
         "resource": {
