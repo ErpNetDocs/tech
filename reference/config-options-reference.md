@@ -453,3 +453,11 @@ If you need to analyze the data, you may use Python code.
   `"1"` (True) – Enum values are exposed as their underlying numeric value (e.g. `30`).  
 - b. **The user sets it manually.**  
 - c. **The key is introduced in version:** 26.2
+
+## 76. /Crm/Pos/CompleteSalesOrderAfterFiscalPrintDisabled
+- a. **Action:** Controls whether a Sales Order is automatically completed after a successful fiscal receipt print.  
+  When the value of this key is:  
+  `"0"` (False) or the key is not defined – After a successful fiscal print, the Sales Order (and its sub-documents) is completed (switched to Completed state) and the Sales Order form is closed. **(default behavior)** <br>
+  `"1"` (True) – After a successful fiscal print, automatic completion is disabled: the Sales Order remains in Released state and the Sales Order form remains open (is not closed automatically). 
+- b. **The user sets it manually.**  
+- c. **The key is introduced in version:** 
