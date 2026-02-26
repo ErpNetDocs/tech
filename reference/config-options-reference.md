@@ -454,10 +454,12 @@ If you need to analyze the data, you may use Python code.
 - b. **The user sets it manually.**  
 - c. **The key is introduced in version:** 26.2
 
-## 76. /Crm/Pos/CompleteSalesOrderAfterFiscalPrintDisabled
-- a. **Action:** Controls whether a Sales Order is automatically completed after a successful fiscal receipt print.  
+## 76. /Crm/Pos/SalesOrderAfterFiscalPrintBehavior
+- a. **Action:** Controls the behavior after a successful fiscal receipt print from a Sales Order – both the document status transition and whether the Sales Order form is closed automatically. 
   When the value of this key is:  
-  `"0"` (False) or the key is not defined – After a successful fiscal print, the Sales Order and its sub-documents are completed (switched to Completed state) and the Sales Order form is closed. **(default behavior)** <br>
-  `"1"` (True) – After a successful fiscal print, automatic completion is disabled: the Sales Order remains in Released state and the Sales Order form remains open (is not closed automatically). 
+  `"CompleteAndClose"` **or the key is not defined or has an invalid value** - the Sales Order and its sub-documents are switched to Completed state and the Sales Order form is closed automatically. **(default behavior)** <br>
+ `"CompleteAndOpen"` - the Sales Order and its sub-documents are switched to Completed state and the Sales Order form remains open.<br>
+ `"KeepReleasedAndOpen"` - the Sales Order remains in Released state and the Sales Order form remains open.<br>
+ `"KeepReleasedAndClose"`- the Sales Order remains in Released state and the Sales Order form is closed automatically.
 - b. **The user sets it manually.**  
 - c. **The key is introduced in version:** 
