@@ -455,7 +455,7 @@ If you need to analyze the data, you may use Python code.
 - c. **The key is introduced in version:** 26.2
 
 ## 76. /Crm/Pos/SalesOrderAfterFiscalPrintBehavior
-- a. **Action:** Controls the behavior after a successful fiscal receipt print from a Sales Order – both the document status transition and whether the Sales Order form is closed automatically.<br> 
+- a. **Action:** Controls the behavior after a successful fiscal receipt print from a Sales Order – both the document status transition and whether the Sales Order form is closed automatically.<br>
   When the value of this key is:  
   `"CompleteAndClose"` **or the key is not defined or has an invalid value** - the Sales Order and its sub-documents are switched to Completed state and the Sales Order form is closed automatically. **(default behavior)** <br>
  `"CompleteAndOpen"` - the Sales Order and its sub-documents are switched to Completed state and the Sales Order form remains open.<br>
