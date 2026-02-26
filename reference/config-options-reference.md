@@ -459,7 +459,7 @@ If you need to analyze the data, you may use Python code.
   When the value of this key is:  
   `"CompleteAndClose"` **or the key is not defined or has an invalid value** - the Sales Order and its sub-documents are switched to Completed state and the Sales Order form is closed automatically. **(default behavior)** <br>
  `"CompleteAndOpen"` - the Sales Order and its sub-documents are switched to Completed state and the Sales Order form remains open.<br>
- `"KeepReleasedAndOpen"` - the Sales Order remains in Released state and the Sales Order form remains open.<br>
- `"KeepReleasedAndClose"`- the Sales Order remains in Released state and the Sales Order form is closed automatically.
+ `"KeepReleasedAndClose"`- the Sales Order remains in Released state and the Sales Order form is closed automatically.<br>
+ `"KeepReleasedAndOpen"` - the Sales Order remains in Released state and the Sales Order form remains open.
 - b. **The user sets it manually.**  
 - c. **The key is introduced in version:** 
