@@ -3154,6 +3154,11 @@
     "title": "What’s New in ERP.net | ERP.net Tech Docs",
     "summary": "What’s New in ERP.net The What’s New section provides an overview of the latest updates and improvements across ERP.net. Each version includes detailed notes organized by key functional areas such as Product Management, WMS, Chat, AI, WEB client and others. This page serves as a central point for exploring new features, enhancements, and fixes, helping users and developers easily track the ongoing evolution of ERP.net. You can browse the version-specific threads to see what’s changed, what’s improved, and what’s coming next. Version 26.2"
   },
+  "whats-new/v26-2/accounting/index.html": {
+    "href": "whats-new/v26-2/accounting/index.html",
+    "title": "Accounting | ERP.net Tech Docs",
+    "summary": "Accounting Notable features 1.Transfer Orders: Line-level posting for additional amounts using calculated attributes Accounting templates for Transfer Orders now support a new Amount source: Transfer Orders – Lines When this source is selected, the Amount on field can reference a calculated attribute defined for transfer order lines. This enables accounting for additional amounts (e.g. transport and other costs) per line, so that the allocated amounts can be posted to different accounts depending on the line context (e.g. product type) — a common requirement for SAF‑T aligned charts of accounts. Typical use case You enter additional amounts (transport/overheads) for a transfer. You need the distributed portion of these amounts to be posted per line to the correct accounts (e.g. separate accounts for goods/materials/finished goods), without requiring users to split transfers by product type. How it works Define calculated attributes for Transfer Order Lines to calculate the desired line-level amount (e.g. allocated transport). In the accounting template for the transfer order, set: Amount source = Transfer Orders – Lines Amount on = the relevant line calculated attribute The generated postings can now reflect the distributed amounts per line."
+  },
   "whats-new/v26-2/breaking-changes/follows-and-notifications.html": {
     "href": "whats-new/v26-2/breaking-changes/follows-and-notifications.html",
     "title": "| ERP.net Tech Docs",
@@ -3192,7 +3197,7 @@
   "whats-new/v26-2/index.html": {
     "href": "whats-new/v26-2/index.html",
     "title": "Version 26.2 | ERP.net Tech Docs",
-    "summary": "Version 26.2 Breaking changes CRM Calculated Attributes Client Center Desktop Client Logistics My Apps Product Management Social Interactions User Business Rules WEB Client Work Management"
+    "summary": "Version 26.2 Accounting Breaking changes CRM Calculated Attributes Client Center Desktop Client Logistics My Apps Product Management Social Interactions User Business Rules WEB Client Work Management"
   },
   "whats-new/v26-2/logistics/index.html": {
     "href": "whats-new/v26-2/logistics/index.html",

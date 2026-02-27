@@ -23159,6 +23159,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "whats-new/v26-2/accounting/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "whats-new/v26-2/accounting/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "whats-new/v26-2/breaking-changes/follows-and-notifications.md",
       "output": {
         ".html": {
