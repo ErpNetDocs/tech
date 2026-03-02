@@ -35,3 +35,13 @@ This function duplicates the attribute’s parameters and all associated express
 This enhancement significantly reduces the effort involved in building similar or identical calculated attributes and helps prevent errors when re-entering complex expressions.
 
 ![picture](pictures/CA.png)
+
+### **3. Save Product group in the view** 
+
+When you select a Product group in a form (e.g. Requisition, panels "Order by list" and "Available products"), the selected value can now be _saved in the form view_. The next time you open the form, the same Product group will be preselected and the product list will already be filtered accordingly.
+
+👉 Saves time when working repeatedly with the same product group
+👉 Reduces repetitive filtering actions
+👉 Improves efficiency when creating new requisitions from scratch
+
+![picture](pictures/PG.png)
