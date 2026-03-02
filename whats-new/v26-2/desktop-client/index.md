@@ -40,8 +40,8 @@ This enhancement significantly reduces the effort involved in building similar o
 
 When you select a Product group in a form (e.g. Requisition, panels "Order by list" and "Available products"), the selected value can now be _saved in the form view_. The next time you open the form, the same Product group will be preselected and the product list will already be filtered accordingly.
 
-👉 Saves time when working repeatedly with the same product group
-👉 Reduces repetitive filtering actions
+👉 Saves time when working repeatedly with the same product group <br>
+👉 Reduces repetitive filtering actions<br>
 👉 Improves efficiency when creating new requisitions from scratch
 
 ![picture](pictures/PG.png)
