@@ -143,7 +143,7 @@ You can also see a **list of all activities** for a given day by clicking the **
 
 As a general rule, the Calendar shows you all activities where you are designated as the **Owner**, **Responsible Party** or a **Participant**.
 
-The Calendar will also display activities from **[social groups](groups/features-in-groups.md)** you take part in. You once again need to be either the Owner, Responsible Party or a Participant. If you're neither of those, you will still see the actvities but only within the **[group-integrated Calendar](https://docs.erp.net/tech/modules/my/groups/features-in-groups.html#activity-access)**.
+The Calendar will also display activities from social groups you take part in. You once again need to be either the Owner, Responsible Party or a Participant. If you're neither of those, you will still see the actvities but only within the **[group-integrated Calendar](https://docs.erp.net/tech/modules/my/groups/features-in-groups.html#activity-access)**.
 
 ### Create an activity
 
@@ -169,7 +169,7 @@ When done, you need to once again click **Save and reload**. Your changes will b
 
 The @@name Calendar is not tied to one specific location.
 
-Apart from being able to interact with it in a **[group-specific context](https://docs.erp.net/tech/modules/my/groups/features-in-groups.html#calendar)**, you can also integrate it as a panel in the **[Dashboard](https://docs.erp.net/tech/modules/my/dashboard/index.html)**. 
+Apart from being able to interact with it in a group-specific context, you can also integrate it as a panel in the **[Dashboard](https://docs.erp.net/tech/modules/my/dashboard/index.html)**. 
 
 ![picture](../pictures/calendar_dashboard.png)
 
