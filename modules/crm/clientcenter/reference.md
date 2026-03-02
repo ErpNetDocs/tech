@@ -143,7 +143,7 @@ where DistributionChannel.Code is the code of the channel (e.g. "CC").
 
 > [!NOTE]
 > 
-> Settings are **[applied](how-to/apply-platform-settings.md)** in a key-value pair JSON format in the **Settings** field of the Client Center website definition. 
+> Settings are applied in a key-value pair JSON format in the **Settings** field of the Client Center website definition. 
 
 ## Error exception codes
 
