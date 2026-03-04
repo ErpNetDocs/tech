@@ -88,17 +88,16 @@
 <h1 id="accounting">Accounting</h1>
 
 <h2 id="notable-features">Notable features</h2>
-<h3 id="1transfer-orders-line-level-posting-for-additional-amounts-using-calculated-attributes"><strong>1.Transfer Orders: Line-level posting for additional amounts using calculated attributes</strong></h3>
+<h3 id="1transfer-orders-line-level-posting-using-calculated-attributes"><strong>1.Transfer Orders: Line-level posting using calculated attributes</strong></h3>
 <p>Accounting templates for <strong>Transfer Orders</strong> now support a new <strong>Amount source</strong>:</p>
 <ul>
 <li><strong>Transfer Orders – Lines</strong></li>
 </ul>
-<p>When this source is selected, the <strong>Amount on</strong> field can reference a <strong>calculated attribute defined for transfer order lines</strong>. This enables accounting for <strong>additional amounts</strong> (e.g. transport and other costs) <strong>per line</strong>,
-so that the allocated amounts can be posted to different accounts depending on the line context (e.g. product type) — a common requirement for SAF‑T aligned charts of accounts.</p>
+<p>When this source is selected, the <strong>Amount on</strong> field can reference a <strong>calculated attribute defined for transfer order lines</strong>. This enables line-level posting, where the posted amount is derived per line via calculated attributes. A common use case is posting <strong>additional amounts</strong> (e.g. transport and other costs) that are allocated and calculated per line, so the distributed amounts can be posted to different accounts depending on the line context (e.g. product type) — a common requirement for SAF-T aligned charts of accounts.</p>
 <p><strong>Typical use case</strong></p>
 <ul>
-<li>You enter additional amounts (transport/overheads) for a transfer.</li>
-<li>You need the distributed portion of these amounts to be posted per line to the correct accounts (e.g. separate accounts for goods/materials/finished goods), without requiring users to split transfers by product type.</li>
+<li>You enter additional amounts (transport/overheads) for a transfer order.</li>
+<li>You need the distributed portion of these amounts to be posted per line to the correct accounts (e.g. separate accounts for goods/materials/finished goods), without requiring users to split transfer orders by product type.</li>
 </ul>
 <p><strong>How it works</strong></p>
 <ol>
