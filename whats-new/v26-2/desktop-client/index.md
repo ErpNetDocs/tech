@@ -4,7 +4,7 @@ WIN Client also undergoes improvements and transformations, although less freque
 
 ## Notable features
 
-### **1.Unsupported Dark Themes Disabled by Default**
+### **1. Unsupported dark themes disabled by default**
 
 We have identified several dark themes in the Desktop Client that contain visual issues. These themes will not be fixed. Instead, we are introducing a configuration option:
 
@@ -19,6 +19,15 @@ We have identified several dark themes in the Desktop Client that contain visual
 > You must log out and log in again for the change to take effect.
 
 ![picture](pictures/dark-themes.png)
+
+### **2. At Void - parent document is not auto-reset anymore**
+
+When performing **Void** from inside a **document form**, the parameter **`Reset the state of parent document`** is no longer selected by default. This change prevents unnecessary processing. The parameter can still be selected manually if needed.
+
+- This change only applies when Void is executed from the document form.
+- The behavior **remains unchanged** when Void is executed from the **Document Route** or the **Navigator**.
+
+![picture](pictures/VOID.png)
 
 ## Other features
 
@@ -45,13 +54,4 @@ When you select a Product group in a form (e.g. Requisition, panels "Order by li
 👉 Improves efficiency when creating new requisitions from scratch
 
 ![picture](pictures/PG.png)
-
-### **4. At Void - parent document is not auto-reset anymore**
-
-When performing **Void** from inside a **document form**, the parameter **`Reset the state of parent document`** is no longer selected by default. This change prevents unnecessary processing. The parameter can still be selected manually if needed.
-
-- This change only applies when Void is executed from the document form.
-- The behavior **remains unchanged** when Void is executed from the **Document Route** or the **Navigator**.
-
-![picture](pictures/VOID.png)
 
