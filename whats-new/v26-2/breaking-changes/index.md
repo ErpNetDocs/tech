@@ -23,3 +23,11 @@ The default behavior of the ToDo application has changed.
 Linked ToDo tasks are now **visible by default**, whereas previously they were hidden until explicitly enabled by the user. Users who prefer the previous behavior can disable it using the [**/ToDo/ShowLinked** configuration key](https://docs.erp.net/tech/reference/config-options-reference.html#73-todoshowlinked).
 
 ➡️ [Details](../my-apps/index.md#1--todo-application--change-in-concept-and-default-behavior)
+
+## **4. At Void - parent document is not auto-reset anymore**
+
+When performing **Void** from inside a **document form**, the parameter **`Reset the state of parent document`** is no longer selected by default. This change prevents unnecessary processing. The parameter can still be selected manually if needed.
+
+- This change only applies when Void is executed from the document form.
+- The behavior **remains unchanged** when Void is executed from the **Document Route** or the **Navigator**.
+
