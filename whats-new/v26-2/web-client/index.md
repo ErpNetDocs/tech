@@ -92,7 +92,7 @@ We’ve refined the form command buttons to make saving and closing more predict
 
 Learn how to use these buttons from the dedicated page [Command buttons](https://docs.erp.net/webclient/commands/buttons.html#save)
 
-### **6. Search Enterprise Company and Company Location in profile menu enabled**
+### **6. Search Enterprise Company and Company Location in the profile menu**
 
 Search in Enterprise Company and Company Location is designed to help users quickly find the right company when working with a large number of records. The search field automatically appears when the number of records exceeds 20. Users can enter a search string to instantly narrow down the list. Only matching companies are displayed, making selection faster, easier, and less error-prone.
 
@@ -136,7 +136,7 @@ Users can choose how to handle missing translations:
 
 This removes friction, saves time, and makes working in multilingual environments more intuitive—while keeping users fully in control. Learn how to exploit this feature from the dedicated article [Translate multilanguage fields](https://docs.erp.net/webclient/introduction/how-to/translate-fields.html)
 
-### 9. Open links in new browser tab
+### 9. Open links in a new browser tab
 
 We’ve added a new toggle option in the App-bar menu: "Open links in new tab".
 
@@ -149,3 +149,13 @@ Currently, this behavior applies to:
 👉 Links in chat (e.g., links to objects in system comments or shared items)<br>
 
 ![picture](pictures/newtab.png)
+
+### 10. Double-Click to enter form Edit mode
+
+Simply **hover over a field and double-click it** to begin editing — making the workflow faster and more natural. No need to use the **Edit** button anymore.
+
+- Hovering over the fields makes them become light grey. Thus you know which the sensitive area is.
+- Double-click in a field to enter form Edit Mode and the same field will automatically receive **focus**.
+- Double-clicking a grid row does nothing, but when this row is opened in the side panel, the function works from within it the same way.
+
+![picture](pictures/editmode.png)
