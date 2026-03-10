@@ -19,23 +19,22 @@ When this source is selected, the **Amount on** field can reference a **calculat
 2. In the accounting template for the transfer order, set:
    - **Amount source** = *Transfer Orders – Lines*
    - **Amount on** = the relevant line calculated attribute
+   - optionally, use **Amount Source Filter** to limit which transfer order lines are included in the posting, for example by **Product Type**
 3. The generated postings can now reflect the distributed amounts per line.
 
 ### **2.Enterprise Companies: Close accounting period**
 
 A new UI function, **Close accounting period**, is now available in the definition of each **Enterprise Company** in both the **Web Client** and the **Desktop Client**.
 
-The function helps users close accounting periods in a safer and more controlled way. 
+This function helps users close accounting periods in a safer and more controlled way. It automatically closes eligible accounting vouchers for the selected enterprise company by changing their state from **Released** or **Completed** to **Closed**. At the same time, it updates the **End Date Of Closed Accounting Period** field in the Enterprise Company definition.
 
-Instead of allowing manual date entry, the system automatically suggests the next valid closing date:
+To ensure a consistent month-by-month process, the closing date cannot be entered manually. The system automatically suggests the next valid date:
 
-- If no accounting period has been closed yet, the suggested date is the **last day of the previous calendar month**.
+- If no period has been closed yet, the suggested date is the **last day of the previous calendar month**.
 - If a period has already been closed, the suggested date is the **last day of the next calendar month** after the last closed period, but never later than the **last day of the previous month**.
-
-After confirmation, the system sets all eligible accounting vouchers for the selected enterprise company to state **Closed** and updates the **End Date Of Closed Accounting Period** field in the Enterprise Company's definition.
 
 If there are no vouchers to close for the suggested period, the system still updates the closed-period end date. This allows companies to advance the closed accounting period consistently, month by month.
 
-For more details about the closing logic andd eligibility conditions, see [Close accounting period](/modules/financials/accounting/accounting-vouchers/close-accounting-period.md).
+For more details about the closing logic and eligibility conditions, see [Close accounting period](/modules/financials/accounting/accounting-vouchers/close-accounting-period.md).
 
 ![Close Accounting Period UI function](pictures/close-accounting-period.png)
