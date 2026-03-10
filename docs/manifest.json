@@ -23675,6 +23675,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "whats-new/v26-2/web-client/pictures/startandnav.png",
+      "output": {
+        "resource": {
+          "relative_path": "whats-new/v26-2/web-client/pictures/startandnav.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "whats-new/v26-2/web-client/pictures/subformsave.png",
       "output": {
         "resource": {
