@@ -3,3 +3,6 @@
 - name: Operations
   href: operations/toc.yml
   topicHref: operations/index.md
+- name: Accounting Vouchers
+  href: index.md
+  topicHref: accounting-vouchers/index.md
