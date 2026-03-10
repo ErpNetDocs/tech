@@ -16,7 +16,7 @@ The function is designed to support sequential month-by-month closing and to red
 
 To use the function, open the definition of the required **Enterprise Company** and run **Close accounting period**.
 
-![Close Accounting Period UI function](pictures/close-accounting-period.png)
+![Close Accounting Period UI function](pictures/close-accounting-period-1.png)
 
 After confirmation, the system:
 
@@ -26,6 +26,8 @@ After confirmation, the system:
 4. updates **End Date Of Closed Accounting Period** field with the determined closing date.
 
 If no eligible accounting vouchers are found for the period, the function still updates **End Date Of Closed Accounting Period**.
+
+![End Date Of Closed Accounting Period](pictures/close-accounting-period-2.png)
 
 ## Concepts
 
