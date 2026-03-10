@@ -116,7 +116,26 @@ The updated design makes everyday work lighter on the eyes, easier to scan, and 
 ✅ **Subtle interaction cues** - Hover highlights and contextual icons appear only when relevant—guiding attention without cluttering the screen.<br>
 ✅ **Improved navigation context** - Breadcrumbs are now clearly positioned above the form, helping users stay oriented within the application.<br>
 
+ 
+The **Start** button icon has been updated. The ERP.net arrows logo is no longer used for the **All apps** action, since the logo represents brand identity, while the action represents global application navigation. Separating these meanings improves semantic clarity in the interface.
+
+![picture](pictures/startandnav.png)
+
+**Default App-bar settings for new users**
+
+For new users (first login in a database or on a new device), the following App-bar settings are applied by default. These defaults are chosen to provide a clean and distraction-free starting interface for new users. Additional controls and navigation options can be enabled as needed, allowing each user to gradually adapt the interface to their preferred way of working - a “clean by default, power when needed” philosophy:
+
+- **Pin AppBar** — On  
+- **Pin navigation** — Off  
+- **Show navigation on hover** — Off  
+- **Icon buttons text** — Off  
+- **Show breadcrumb** — Off  
+- **Advanced mode** — Off  
+- **Open links in new tab** - Off
+  
 We believe this update makes the Web Client feel not only more modern, but also more comfortable and intuitive to use—today and going forward.
+
+How to utilize the [layouts and views](https://docs.erp.net/webclient/layouts-and-views/index.html) in WEB Client is explained in the dedicated help articles (follow link). 
 
 ### 8. AI-assisted translations
 
@@ -159,3 +178,6 @@ Simply **hover over a field and double-click it** to begin editing — making th
 - Double-clicking a grid row does nothing, but when this row is opened in the side panel, the function works from within it the same way.
 
 ![picture](pictures/editmode.png)
+
+
+
