@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Close accounting period | ERP.net Tech Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Close accounting period | ERP.net Tech Docs ">
+      
+      
+      <link rel="icon" href="../../../../favicon.ico">
+      <link rel="stylesheet" href="../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/financials/accounting/accounting-vouchers/close-accounting-period.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../index.html">
+            <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="close-accounting-period">Close accounting period</h1>
+
+<h2 id="overview">Overview</h2>
+<p>The <strong>Close accounting period</strong> UI function is available for <strong>Enterprise Companies</strong> in both the <strong>Web Client</strong> and the <strong>Desktop Client</strong>.</p>
+<p>It is used to close accounting vouchers in a controlled, period-by-period manner. When the function is executed, all eligible accounting vouchers for the selected enterprise company are set to state <strong>Closed</strong>, and the <strong>End Date Of Closed Accounting Period</strong> field is updated.</p>
+<p>The function is designed to support sequential month-by-month closing and to reduce the risk of accidental closing to an arbitrary future date.</p>
+<h2 id="getting-started">Getting started</h2>
+<p>To use the function, open the definition of the required <strong>Enterprise Company</strong> and run <strong>Close accounting period</strong>.</p>
+<p><img src="../pictures/close-accounting-period-1.png" alt="Close Accounting Period UI function"></p>
+<p>After confirmation, the system:</p>
+<ol>
+<li>determines the next valid closing date;</li>
+<li>finds all eligible accounting vouchers for the selected enterprise company;</li>
+<li>changes their state to <strong>Closed</strong>;</li>
+<li>updates <strong>End Date Of Closed Accounting Period</strong> field with the determined closing date.</li>
+</ol>
+<p>If no eligible accounting vouchers are found for the period, the function still updates <strong>End Date Of Closed Accounting Period</strong>.</p>
+<p><img src="../pictures/close-accounting-period-2.png" alt="End Date Of Closed Accounting Period"></p>
+<h2 id="concepts">Concepts</h2>
+<h3 id="what-close-accounting-period-means">What &quot;close accounting period&quot; means</h3>
+<p>In the context of this function, closing an accounting period means changing the state of eligible accounting vouchers from <strong>Released</strong> or <strong>Completed</strong> to <strong>Closed</strong> for the selected enterprise company.</p>
+<p>This operation does not rely on manual date entry. Instead, the system determines the next allowed closing date automatically as follows:</p>
+<ul>
+<li>If <strong>End Date Of Closed Accounting Period</strong> is empty, the suggested date is the <strong>last day of the previous calendar month</strong>.</li>
+<li>If <strong>End Date Of Closed Accounting Period</strong> already has a value, the suggested date is the <strong>last day of the next calendar month</strong> after the last closed period, but not later than the <strong>last day of the previous month</strong> relative to the current date.</li>
+</ul>
+<h3 id="eligible-accounting-vouchers">Eligible accounting vouchers</h3>
+<p>In the current implementation, an accounting voucher is closed only if all of the following conditions are met:</p>
+<ul>
+<li>it belongs to the selected enterprise company;</li>
+<li>its <strong>Document Date</strong> is on or after <strong>2026-01-01</strong>;</li>
+<li>its <strong>Release Time</strong> falls after the last closed date and within the newly determined closing period;</li>
+<li>its state is <strong>Released</strong> or <strong>Completed</strong>;</li>
+<li>it is not voided</li>
+</ul>
+<p>Only vouchers that meet all of these conditions are changed to state <strong>Closed</strong>.</p>
+<h3 id="closed-period-end-date">Closed-period end date</h3>
+<p>The function always updates <strong>End Date Of Closed Accounting Period</strong> field with the determined closing date, even if no eligible accounting vouchers are found.</p>
+<p>This allows the closed accounting period to continue advancing consistently, month by month.</p>
+<h3 id="period-by-period-closing">Period-by-period closing</h3>
+<p>The function is intended for controlled, sequential closing of accounting periods.</p>
+<p>By automatically suggesting the next valid closing date, the system prevents users from closing an arbitrary future period and enforces a predictable closing sequence.</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/financials/accounting/accounting-vouchers/close-accounting-period.md/#L1" class="edit-link">Suggest improvement to this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
