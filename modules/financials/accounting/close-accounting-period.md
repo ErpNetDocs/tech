@@ -6,7 +6,7 @@ uid: close-accounting-period
 
 ## Overview
 
-The **Close accounting period** function is available for **Enterprise Companies** in both the **Web Client** and the **Desktop Client**.
+The **Close accounting period** UI function is available for **Enterprise Companies** in both the **Web Client** and the **Desktop Client**.
 
 It is used to close accounting vouchers in a controlled, period-by-period manner. When the function is executed, all eligible accounting vouchers for the selected enterprise company are set to state **Closed**, and the **End Date Of Closed Accounting Period** field is updated.
 
