@@ -36,6 +36,6 @@ After confirmation, the system sets all eligible accounting vouchers for the sel
 
 If there are no vouchers to close for the suggested period, the system still updates the closed-period end date. This allows companies to advance the closed accounting period consistently, month by month.
 
-For more details about the closing logic andd eligibility conditions, see [Close accounting period](../enterprise-companies/close-accounting-period.html).
+For more details about the closing logic andd eligibility conditions, see [Close accounting period](/modules/financials/accounting/accounting-vouchers/close-accounting-period.md).
 
 ![Close Accounting Period UI function](pictures/close-accounting-period.png)
