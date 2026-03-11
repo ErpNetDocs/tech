@@ -24,7 +24,7 @@ As a result, the **Show linked** toggle is now **ON by default**, and all tasks 
 
 **Configuration**
 
-If you prefer **not** to see linked tasks in the ToDo application, you can control this behavior using the configuration key:[/ToDo/ShowLinked](https://docs.erp.net/tech/reference/config-options-reference.html#73-todoshowlinked)
+If you prefer **not** to see linked tasks in the ToDo application, you can control this behavior using the configuration key: [/ToDo/ShowLinked](https://docs.erp.net/tech/reference/config-options-reference.html#73-todoshowlinked)
 
 > [!NOTE]
 > ToDos displayed in the **side panel of a record** are always visible, as they are inherently linked to that record.<br>
