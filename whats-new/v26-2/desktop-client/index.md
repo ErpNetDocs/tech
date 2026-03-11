@@ -2,6 +2,7 @@
 
 WIN Client also undergoes improvements and transformations, although less frequently. Here are some of the novelties introduced in version 26.2.
 
+## [At VOID - parent document is not auto-reset anymore]
 ## Notable features
 
 ---
