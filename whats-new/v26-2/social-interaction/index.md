@@ -6,7 +6,8 @@ The **Social Interaction** framework in ERP.net brings team collaboration to lif
 <br>Together, these tools create a connected, efficient, and adaptive collaboration environment for organizations of any size or industry.
 
 ## ⚠️ Breaking Changes 
-**[Introduced Follow levels](https://docs.erp.net/tech/whats-new/v26-2/breaking-changes/index.html#1-follow-levels-and-notifications-behavior)
+
+- [Introduced Follow levels](https://docs.erp.net/tech/whats-new/v26-2/breaking-changes/index.html#1-follow-levels-and-notifications-behavior)
 
 ---
 
