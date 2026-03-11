@@ -19,7 +19,7 @@ This enhancement reduces administrative work, prevents confusion, and ensures a 
 
 ## Other features
 
-### **1. Configurable behavior after fiscal receipt printing from Sales Orders
+### **1. Configurable behavior after fiscal receipt printing from Sales Orders**
 
 A new configuration option, [`/Crm/Pos/SalesOrderAfterFiscalPrintBehavior`](../../../reference/config-options-reference.md#76-crmpossalesorderafterfiscalprintbehavior), allows controlling the behavior after a successful fiscal receipt print from the Sales form.
 
