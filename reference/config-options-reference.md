@@ -201,16 +201,11 @@ The options set for the database are visible in the Configurations navigator and
 > [!Note]
 > Before version 2019.1, a new user group was created automatically whenever a new user was created, and this behaviour could not be disabled. Since version 2019.1, the behaviour is disabled by default and could be activated manually using the current registry key.
 
-## 42. DocumentVersioningSystem
-- a.Action: When the value of this key is "VH" the system will use the "old" document versioning system. If the key's value is "TC" the system will not create records using the "old" document versioning system and will instead use the [Track changes](https://docs.erp.net/tech/advanced/track-changes.html) system. The minimum level that is going to be tracked when the "TC" option is activated is "Track Changes Level 3". If for the particular document entity is chosen a specific level, then this level will be applied only if it is a higher level than level 3. (For more information about the track changes system and its levels, please see topic [Track changes](https://docs.erp.net/tech/advanced/track-changes.html) 
-       
->[!Note]
-> Please note that the current key affects only entities which are a successor of the document entity (such as sales orders, store orders ...) and NOT entities such as product groups, bonus programs..
-
-- b.The user sets it manually, but if the key is not configured for the particular database or its value is different from "VH" or "TC", then the system will use the default value. The default value depends on the system version:
-    - Version 2019.1 - the default value is "VH";
-    - Version 2020.1 and later - the default value is "TC";
-- c.The key is introduced in version: 2019.1
+## 42. DocumentVersioningSystem (OBSOLETE as of v26.2)  
+- a. Action: In versions before **26.2**, this key controlled whether document versioning used the legacy **VH** system or **Track Changes** (**TC**).
+- b. Starting with **v26.2**, this key no longer has any effect. Document tracking always uses **Track Changes**.
+- c. The key is retained only for backward compatibility with older configurations.
+- d. The key was introduced in version: 2019.1
 
 ## 43. Crm/Pos/PrintGroupedSalesLinesType
 - a.Action: When the value of this key is "ShortName", then items in the fiscal receipt are grouped by the "ShortName" field in the product. When the value of this key is "ProductGroup", then items in the fiscal receipt are grouped by the product group of the product. When the value of this key is different or the key is missing, then items in the fiscal receipt are not grouped.
