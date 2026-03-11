@@ -94,11 +94,9 @@ Then:
 
    Your database must have a license to work with EnterpriseOne POS.
 
-2. If you want to print from the Sales form, all documents in the document flow must be generated as **Released**. Otherwise, after printing, the program will terminate the flow.
+2. If you want to print from the Sales form, note that after a successful fiscal receipt print, the post-print behavior of the Sales Order can be controlled by the config option [`/Crm/Pos/SalesOrderAfterFiscalPrintBehavior`](../../../reference/config-options-reference.md#76-crmpossalesorderafterfiscalprintbehavior). Depending on the selected value, the Sales Order can either be completed automatically or remain **Released**, and the Sales form can either close or remain open.
 
-   In the document flow, the generations of invoice orders and accounting vouchers from store transactions as **Next Documents** so they can remain Released upon completion of the flow. 
-
-   This will allow for a correction of the warehouse cost and the creation of invoices subsequently. The generation of an accounting voucher must occur in the Completed status to be re-accounted upon correction.
+   If the selected behavior completes the Sales Order flow automatically, the documents in the flow must be generated in **Released** statе. It is also necessary that, in the document flow, the generations of **invoice orders from sales order** and **accounting vouchers from store transactions** are configured as **Next Documents**, so they remain in **Released** state upon completion of the flow. This will allow subsequent **warehouse cost correction** and **invoice creation**. Accordingly, the generation of an accounting voucher must occur in **Completed** state so it can be re-accounted upon correction.
 
 ----
 
@@ -196,6 +194,6 @@ Then:
 
 13. Необходимо е базата да има **лиценз** за работа с **EnterpriseOne POS**.
 
-14. Ако ще се печата от **форма Продажба**, трябва всички документи в потока да се генерират **Пуснати**, защото след печат програмата завършва потока.
+12.  Ако искате да печатате от формата на Продажба, имайте предвид, че след успешен фискален печат поведението на Продажбата може да се управлява чрез конфигурационния ключ [`/Crm/Pos/SalesOrderAfterFiscalPrintBehavior`](../../../reference/config-options-reference.md#76-crmpossalesorderafterfiscalprintbehavior). В зависимост от избраната стойност, Продажбата може или да се завършва автоматично, или да остане в статус **Пуснат**, а формата на Продажбата може или да се затваря, или да остане отворена.
 
-15. Необходимо е в потока генерациите на **Нареждане за фактуриране от продажба** и **Счетоводна статия от складовата разписка** да се дефинират като **Следващ документ**, за да останат пуснати при завършване на потока. Това ще позволи да се направи **корекция на себестойност на склада** и **създаване на фактури** впоследствие. Съответно генерацията на счетоводна статия трябва да се случва на статус **Завършен**, за да се преосчетоводи при корекция.
+     Ако избраното поведение завършва автоматично потока на Продажбата, документите в потока трябва да се генерират в статус **Пуснат**. Необходимо е също така в потока генерациите на **Нареждане за фактуриране от продажба** и **Счетоводна статия от складовата разписка** да се дефинират като **Следващ документ**, за да останат в статус **Пуснат** при завършване на потока. Това ще позволи впоследствие да се извърши **корекция на себестойност на склада** и **създаване на фактури**. Съответно генерацията на счетоводна статия трябва да се извършва в статус **Завършен**, за да може да бъде преосчетоводена при корекция.
