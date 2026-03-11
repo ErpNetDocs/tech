@@ -88,28 +88,13 @@
 <h1 id="desktop-client">Desktop Client</h1>
 
 <p>WIN Client also undergoes improvements and transformations, although less frequently. Here are some of the novelties introduced in version 26.2.</p>
+<h2 id="-breaking-changes">⚠️ Breaking Changes</h2>
+<ul>
+<li><a href="https://docs.erp.net/tech/whats-new/v26-2/breaking-changes/index.html#4-at-void---parent-document-is-not-auto-reset-anymore">At VOID - parent document is not auto-reset anymore</a></li>
+</ul>
+<hr>
 <h2 id="notable-features">Notable features</h2>
-<h3 id="1-unsupported-dark-themes-disabled-by-default"><strong>1. Unsupported dark themes disabled by default</strong></h3>
-<p>We have identified several dark themes in the Desktop Client that contain visual issues. These themes will not be fixed. Instead, we are introducing a configuration option:</p>
-<p><a href="https://github.com/ErpNetDocs/tech/blob/master/reference/config-options-reference.md#74-useunsupportedthemes">&quot;UseUnsupportedThemes&quot;</a> in Settings menu</p>
-<ul>
-<li>Disabled (default): Unsupported themes are inactive and cannot be applied.</li>
-<li>Enabled: The themes can be used at your own discretion.</li>
-</ul>
-<div class="IMPORTANT">
-<h5>Important</h5>
-<p>After upgrading, if an unsupported theme is currently in use, it will automatically revert to a supported theme.
-If you still wish to use these themes, you must explicitly enable UseUnsupportedThemes after the update.
-You must log out and log in again for the change to take effect.</p>
-</div>
-<p><img src="pictures/dark-themes.png" alt="picture"></p>
-<h3 id="2-at-void---parent-document-is-not-auto-reset-anymore"><strong>2. At Void - parent document is not auto-reset anymore</strong></h3>
-<p>When performing <strong>Void</strong> from inside a <strong>document form</strong>, the parameter <strong><code>Reset the state of parent document</code></strong> is no longer selected by default. This change prevents unnecessary processing. The parameter can still be selected manually if needed.</p>
-<ul>
-<li>This change only applies when Void is executed from the document form.</li>
-<li>The behavior <strong>remains unchanged</strong> when Void is executed from the <strong>Document Route</strong> or the <strong>Navigator</strong>.</li>
-</ul>
-<p><img src="pictures/VOID.png" alt="picture"></p>
+<hr>
 <h2 id="other-features">Other features</h2>
 <h3 id="1-greater-control-over-desktop-notifications"><strong>1. Greater control over desktop notifications</strong></h3>
 <p>Until now, every incoming notification automatically appeared as a blue pop-up balloon, occasionally obstructing part of the screen. With the new configuration option <a href="https://docs.erp.net/tech/reference/config-options-reference.html#72-allownotificationpopups">&quot;AllowNotificationPopups&quot;</a>, this behavior is now fully controllable. The setting is in Settings menu.</p>
@@ -124,6 +109,28 @@ You must log out and log in again for the change to take effect.</p>
 👉 Reduces repetitive filtering actions<br>
 👉 Improves efficiency when creating new requisitions from scratch</p>
 <p><img src="pictures/PG.png" alt="picture"></p>
+<h3 id="4-unsupported-dark-themes-disabled-by-default"><strong>4. Unsupported dark themes disabled by default</strong></h3>
+<p>We have identified several dark themes in the Desktop Client that contain visual issues. These themes will not be fixed. Instead, we are introducing a configuration option:</p>
+<p><a href="https://github.com/ErpNetDocs/tech/blob/master/reference/config-options-reference.md#74-useunsupportedthemes">&quot;UseUnsupportedThemes&quot;</a> in Settings menu</p>
+<ul>
+<li>Disabled (default): Unsupported themes are inactive and cannot be applied.</li>
+<li>Enabled: The themes can be used at your own discretion.</li>
+</ul>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>After upgrading, if an unsupported theme is currently in use, it will automatically revert to a supported theme.
+If you still wish to use these themes, you must explicitly enable UseUnsupportedThemes after the update.
+You must log out and log in again for the change to take effect.</p>
+</div>
+<p><img src="pictures/dark-themes.png" alt="picture"></p>
+<h3 id="5-at-void---parent-document-is-not-auto-reset-anymore"><strong>5. At VOID - parent document is not auto-reset anymore</strong></h3>
+<p><em>(Breaking change)</em></p>
+<p>When performing <strong>Void</strong> from inside a <strong>document form</strong>, the parameter <strong><code>Reset the state of parent document</code></strong> is no longer selected by default. This change prevents unnecessary processing. The parameter can still be selected manually if needed.</p>
+<ul>
+<li>This change only applies when Void is executed from the document form.</li>
+<li>The behavior <strong>remains unchanged</strong> when Void is executed from the <strong>Document Route</strong> or the <strong>Navigator</strong>.</li>
+</ul>
+<p><img src="pictures/VOID.png" alt="picture"></p>
 
 </article>
 
