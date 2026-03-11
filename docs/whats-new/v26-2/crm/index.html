@@ -98,6 +98,10 @@ This enhancement reduces unnecessary steps, minimizes confusion, and provides a 
 All necessary data for creating the Customer is taken directly from the To Party information in the Offer, eliminating the need for users to manually create a Customer entry.
 This enhancement reduces administrative work, prevents confusion, and ensures a smooth transition from potential client to confirmed customer — all in one seamless step.</p>
 <h2 id="other-features">Other features</h2>
+<h3 id="1-configurable-behavior-after-fiscal-receipt-printing-from-sales-orders">**1. Configurable behavior after fiscal receipt printing from Sales Orders</h3>
+<p>A new configuration option, <a href="../../../reference/config-options-reference.html#76-crmpossalesorderafterfiscalprintbehavior"><code>/Crm/Pos/SalesOrderAfterFiscalPrintBehavior</code></a>, allows controlling the behavior after a successful fiscal receipt print from the Sales form.</p>
+<p>Depending on the selected value, the Sales Order and its sub-documents can either be completed automatically, or the Sales Order can remain in <strong>Released</strong> status, and the Sales form can either close or remain open.</p>
+<p>This provides more flexibility in POS scenarios where users need to continue working with the sales order after printing or keep the document flow available for subsequent processing.</p>
 
 </article>
 

@@ -160,9 +160,8 @@
 <li><p>Install <strong>&quot;EnterpriseOne POS&quot;</strong>.</p>
 <p>Your database must have a license to work with EnterpriseOne POS.</p>
 </li>
-<li><p>If you want to print from the Sales form, all documents in the document flow must be generated as <strong>Released</strong>. Otherwise, after printing, the program will terminate the flow.</p>
-<p>In the document flow, the generations of invoice orders and accounting vouchers from store transactions as <strong>Next Documents</strong> so they can remain Released upon completion of the flow.</p>
-<p>This will allow for a correction of the warehouse cost and the creation of invoices subsequently. The generation of an accounting voucher must occur in the Completed status to be re-accounted upon correction.</p>
+<li><p>If you want to print from the Sales form, note that after a successful fiscal receipt print, the post-print behavior of the Sales Order can be controlled by the config option <a href="../../../reference/config-options-reference.html#76-crmpossalesorderafterfiscalprintbehavior"><code>/Crm/Pos/SalesOrderAfterFiscalPrintBehavior</code></a>. Depending on the selected value, the Sales Order and its sub-documents can either be completed automatically, or the Sales Order can remain in <strong>Released</strong> state, and the Sales form can either close or remain open.</p>
+<p>If the selected behavior completes the Sales Order flow automatically, the documents in the flow must be generated in <strong>Released</strong> statе. It is also necessary that, in the document flow, the generations of <strong>invoice orders from sales order</strong> and <strong>accounting vouchers from store transactions</strong> are configured as <strong>Next Documents</strong>, so they remain in <strong>Released</strong> state upon completion of the flow. This will allow subsequent <strong>warehouse cost correction</strong> and <strong>invoice creation</strong>. Accordingly, the generation of an accounting voucher must occur in <strong>Completed</strong> state so it can be re-accounted upon correction.</p>
 </li>
 </ol>
 <hr>
@@ -242,9 +241,8 @@
 </li>
 <li><p>Необходимо е базата да има <strong>лиценз</strong> за работа с <strong>EnterpriseOne POS</strong>.</p>
 </li>
-<li><p>Ако ще се печата от <strong>форма Продажба</strong>, трябва всички документи в потока да се генерират <strong>Пуснати</strong>, защото след печат програмата завършва потока.</p>
-</li>
-<li><p>Необходимо е в потока генерациите на <strong>Нареждане за фактуриране от продажба</strong> и <strong>Счетоводна статия от складовата разписка</strong> да се дефинират като <strong>Следващ документ</strong>, за да останат пуснати при завършване на потока. Това ще позволи да се направи <strong>корекция на себестойност на склада</strong> и <strong>създаване на фактури</strong> впоследствие. Съответно генерацията на счетоводна статия трябва да се случва на статус <strong>Завършен</strong>, за да се преосчетоводи при корекция.</p>
+<li><p>Ако искате да печатате от формата на Продажба, имайте предвид, че след успешен фискален печат поведението на Продажбата може да се управлява чрез конфигурационния ключ <a href="../../../reference/config-options-reference.html#76-crmpossalesorderafterfiscalprintbehavior"><code>/Crm/Pos/SalesOrderAfterFiscalPrintBehavior</code></a>. В зависимост от избраната стойност, Продажбата и нейните под-документи могат или да се завършват автоматично, или Продажбата да остане в статус <strong>Пуснат</strong>, а формата на Продажбата може или да се затваря, или да остане отворена.</p>
+<p>Ако избраното поведение завършва автоматично потока на Продажбата, документите в потока трябва да се генерират в статус <strong>Пуснат</strong>. Необходимо е също така в потока генерациите на <strong>Нареждане за фактуриране от продажба</strong> и <strong>Счетоводна статия от складовата разписка</strong> да се дефинират като <strong>Следващ документ</strong>, за да останат в статус <strong>Пуснат</strong> при завършване на потока. Това ще позволи впоследствие да се извърши <strong>корекция на себестойност на склада</strong> и <strong>създаване на фактури</strong>. Съответно генерацията на счетоводна статия трябва да се извършва в статус <strong>Завършен</strong>, за да може да бъде преосчетоводена при корекция.</p>
 </li>
 </ol>
 
