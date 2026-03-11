@@ -4,6 +4,8 @@ The @@webclientfull is the web-based user interface of the ERP.net business-mana
 
 ## Notable features
 
+---
+
 ## Other features
 
 ### **1. New System-Calculated Attributes: “Total Line Amount” and “Amount To Pay”**
