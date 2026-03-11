@@ -25,7 +25,7 @@ Linked ToDo tasks are now **visible by default**, whereas previously they were h
 
 ➡️ [Details](../my-apps/index.md#1--todo-application--change-in-concept-and-default-behavior)
 
-## **4. At Void - parent document is not auto-reset anymore**
+## **4. At VOID - parent document is not auto-reset anymore**
 
 When performing **Void** from inside a **document form**, the parameter **`Reset the state of parent document`** is no longer selected by default. This change prevents unnecessary processing. The parameter can still be selected manually if needed.
 
