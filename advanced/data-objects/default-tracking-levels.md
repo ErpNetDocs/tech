@@ -1,6 +1,8 @@
 # Default tracking levels
 
-Some entities track their changes by default. The tracking level is system-configured and cannot be lowered. 
+All entities in ERP.net have at least **Track Changes Level 1** enabled by default as of **v26.2**.
+
+Some entities track their changes at a **higher** system-defined level. These higher defaults are listed below and cannot be lowered.
 
 However, you can specify a **higher** level.
 
