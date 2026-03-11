@@ -7,8 +7,6 @@ In the sections that follow, you will find all new features and improvements int
 
 ## Notable features
 
----
-
 ### 1. 📢 ToDo Application – Change in Concept and Default Behavior
 
 We have updated the **ToDo application concept** so that **all available tasks are now shown by default** when opening the ToDo app.
@@ -26,11 +24,9 @@ As a result, the **Show linked** toggle is now **ON by default**, and all tasks 
 
 **Configuration**
 
-If you prefer **not** to see linked tasks in the ToDo application, you can control this behavior using the configuration key:
+If you prefer **not** to see linked tasks in the ToDo application, you can control this behavior using the configuration key:[/ToDo/ShowLinked](https://docs.erp.net/tech/reference/config-options-reference.html#73-todoshowlinked)
 
-[/ToDo/ShowLinked](https://docs.erp.net/tech/reference/config-options-reference.html#73-todoshowlinked)
-
-> [!Note]
+> [!NOTE]
 > ToDos displayed in the **side panel of a record** are always visible, as they are inherently linked to that record.<br>
 > ToDos displayed in **Groups (tab ToDo)** are also always visible and are independent from the ToDo application view. <br>
 > Top right corner of each ToDo indicates the host record and is a link to it.<br>
@@ -38,9 +34,7 @@ If you prefer **not** to see linked tasks in the ToDo application, you can contr
 
 ![picture](pictures/todos.png)
 
----
-
 ## Other features
-follow
+
 
 
