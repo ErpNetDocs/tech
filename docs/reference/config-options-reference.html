@@ -330,22 +330,12 @@
 <h5>Note</h5>
 <p>Before version 2019.1, a new user group was created automatically whenever a new user was created, and this behaviour could not be disabled. Since version 2019.1, the behaviour is disabled by default and could be activated manually using the current registry key.</p>
 </div>
-<h2 id="42-documentversioningsystem">42. DocumentVersioningSystem</h2>
+<h2 id="42-documentversioningsystem-obsolete-as-of-v262">42. DocumentVersioningSystem (OBSOLETE as of v26.2)</h2>
 <ul>
-<li>a.Action: When the value of this key is &quot;VH&quot; the system will use the &quot;old&quot; document versioning system. If the key's value is &quot;TC&quot; the system will not create records using the &quot;old&quot; document versioning system and will instead use the <a href="https://docs.erp.net/tech/advanced/track-changes.html">Track changes</a> system. The minimum level that is going to be tracked when the &quot;TC&quot; option is activated is &quot;Track Changes Level 3&quot;. If for the particular document entity is chosen a specific level, then this level will be applied only if it is a higher level than level 3. (For more information about the track changes system and its levels, please see topic <a href="https://docs.erp.net/tech/advanced/track-changes.html">Track changes</a></li>
-</ul>
-<div class="NOTE">
-<h5>Note</h5>
-<p>Please note that the current key affects only entities which are a successor of the document entity (such as sales orders, store orders ...) and NOT entities such as product groups, bonus programs..</p>
-</div>
-<ul>
-<li>b.The user sets it manually, but if the key is not configured for the particular database or its value is different from &quot;VH&quot; or &quot;TC&quot;, then the system will use the default value. The default value depends on the system version:
-<ul>
-<li>Version 2019.1 - the default value is &quot;VH&quot;;</li>
-<li>Version 2020.1 and later - the default value is &quot;TC&quot;;</li>
-</ul>
-</li>
-<li>c.The key is introduced in version: 2019.1</li>
+<li>a. Action: In versions before <strong>26.2</strong>, this key controlled whether document versioning used the legacy <strong>VH</strong> system or <strong>Track Changes</strong> (<strong>TC</strong>).</li>
+<li>b. Starting with <strong>v26.2</strong>, this key no longer has any effect. Document tracking always uses <strong>Track Changes</strong>.</li>
+<li>c. The key is retained only for backward compatibility with older configurations.</li>
+<li>d. The key was introduced in version: 2019.1</li>
 </ul>
 <h2 id="43-crmposprintgroupedsaleslinestype">43. Crm/Pos/PrintGroupedSalesLinesType</h2>
 <ul>
