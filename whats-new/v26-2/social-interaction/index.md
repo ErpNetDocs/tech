@@ -9,8 +9,6 @@ The **Social Interaction** framework in ERP.net brings team collaboration to lif
 
 - [Introduced Follow levels](https://docs.erp.net/tech/whats-new/v26-2/breaking-changes/index.html#1-follow-levels-and-notifications-behavior)
 
----
-
 ## Notable features
 
 ### **1. Introducing Follow levels for clearer Favorites and smarter Notifications**
@@ -38,8 +36,6 @@ Follow levels are personal — different users can follow the same object at dif
 - *Tagged*: An automatic follow. You are tagged when the system involves you through mentions. Assignments rely on current rules, this is not tagging.
 - *Following*: An explicit follow. You choose to follow the object to stay informed, without marking it as important.
 - *Favorite*:The highest level. You mark the object as important, and it appears in the Favorites app.
-
----
 
 ## Other features
 
