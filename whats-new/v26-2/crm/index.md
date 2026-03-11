@@ -25,4 +25,6 @@ A new configuration option, [`/Crm/Pos/SalesOrderAfterFiscalPrintBehavior`](../.
 
 Depending on the selected value, the Sales Order and its sub-documents can either be completed automatically, or the Sales Order can remain in **Released** status, and the Sales form can either close or remain open.
 
+If the option is not set, the default behavior is to complete the Sales Order and its sub-documents automatically and close the Sales form.
+
 This provides more flexibility in POS scenarios by allowing organizations to choose whether the sales process should be completed automatically or remain available for subsequent processing, and whether the Sales form should close or remain open after fiscal printing.
