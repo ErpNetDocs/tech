@@ -39,6 +39,8 @@ Follow levels are personal — different users can follow the same object at dif
 - *Following*: An explicit follow. You choose to follow the object to stay informed, without marking it as important.
 - *Favorite*:The highest level. You mark the object as important, and it appears in the Favorites app.
 
+---
+
 ## Other features
 
 ### **1. Gallery of uploaded files**
