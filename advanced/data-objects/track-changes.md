@@ -121,22 +121,25 @@ Same as Level 3, but the values of BLOB attributes are also saved.
 
 It can severely affect storage requirements and should be used only for small tables and as a last-resort measure.
 
+
 ## Configuring track changes
 
-The track-changes functionality is activated through the **Entities navigator** (Systems.Core.EntitySettings table).
+The track-changes functionality is activated through the **Entities navigator** (`Systems.Core.EntitySettings` table).
 
 **Steps:**
- 
+
 1. Create a record in *Entity Types*, specifying the desired entity.
 2. In the *Track Changes Level* field, fill in the desired tracking level.
 3. Save and close.
 4. Tracking will soon start.
 
-For document entities, mass activation of the *Track Changes* system using the **DocumentVersioningSystem** registry key is possible. To learn more, see the description key number 42 in **[Config options reference](https://docs.erp.net/tech/reference/config-options-reference.html)**.
+Starting with **v26.2**, all entities have at least **Track Changes Level 1** enabled by default. This guarantees that the system maintains an object record for each entity object.
 
-> [!NOTE] 
-> 
-> If you try to configure a level lower than the default tracking levels, the option will be ignored.
+For document entities, the old **DocumentVersioningSystem** configuration key no longer affects behavior. Document tracking always uses **Track Changes**.
+
+> [!NOTE]
+> If you try to configure a level lower than the default tracking level for an entity, the lower value will be ignored.
+
 
 ### Enable or disable attribute changes tracking for document entities
 
