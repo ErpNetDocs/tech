@@ -1,16 +1,11 @@
 # Desktop Client
-
 WIN Client also undergoes improvements and transformations, although less frequently. Here are some of the novelties introduced in version 26.2.
 
 ## ⚠️ Breaking Changes
 
 - [At VOID - parent document is not auto-reset anymore](https://docs.erp.net/tech/whats-new/v26-2/breaking-changes/index.html#4-at-void---parent-document-is-not-auto-reset-anymore)
 
----
-
 ## Notable features
-
----
 
 ## Other features
 
