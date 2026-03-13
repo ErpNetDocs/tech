@@ -180,7 +180,7 @@ Simply **hover over a field and double-click it** to begin editing — making th
 
 ### 11. Mass Fill down of a cell value
 
-You can now use [Fill Down (Ctrl+D)](link to how to use it) to quickly copy a value down through selected rows in the same column (follow link for instructions).
+You can now use [Fill Down (Ctrl+D)]([link to how to use it](https://docs.erp.net/webclient/navigators/guide/fill-down.html)) to quickly copy a value down through selected rows in the same column (follow link for instructions).
 This makes mass editing in grid views much faster, especially when maintaining definitions, lists, and other tabular data.
 
 The option applies only to editable rows and cells in Navigators and Row-panels as well.
