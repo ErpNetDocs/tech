@@ -23594,6 +23594,16 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "whats-new/v26-2/web-client/pictures/filldown.png",
+      "output": {
+        "resource": {
+          "relative_path": "whats-new/v26-2/web-client/pictures/filldown.png"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "whats-new/v26-2/web-client/pictures/index.md",
       "output": {
