@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title> | ERP.net Tech Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content=" | ERP.net Tech Docs ">
+      
+      
+      <link rel="icon" href="../../../../favicon.ico">
+      <link rel="stylesheet" href="../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/work-management/agile/cases/specification.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../index.html">
+            <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="specification">
+
+<h2 id="specification-field-in-cases">Specification field in Cases</h2>
+<h3 id="purpose">Purpose</h3>
+<p>The <strong>Specification</strong> field defines <strong>what exactly must be implemented in the case</strong>.</p>
+<p>It represents the <strong>current agreed definition of the work</strong>. When a case reaches the <strong>READY</strong> status, the Specification must contain a clear and stable description of:</p>
+<ul>
+<li>what functionality will be implemented,</li>
+<li>how the system should behave,</li>
+<li>what conditions determine that the case is completed successfully.</li>
+</ul>
+<p>Developers should be able to implement the case based on the Specification.<br>
+Testers should be able to verify the case based on the Specification.</p>
+<p>If someone reads only the Specification, they should understand <strong>what the final result must be</strong>, without needing to read the discussion history.</p>
+<hr>
+<h2 id="what-the-specification-must-contain">What the Specification must contain</h2>
+<p>The Specification should describe the <strong>final intended behaviour of the system</strong>.</p>
+<p>Typical elements include:</p>
+<h3 id="1-functional-goal">1. Functional goal</h3>
+<p>A short description of the capability the system must provide.</p>
+<p>Example:</p>
+<blockquote>
+<p>The system must allow updating a single column in multiple rows using a paste operation.</p>
+</blockquote>
+<hr>
+<h3 id="2-behaviour">2. Behaviour</h3>
+<p>A precise description of how the system should behave.</p>
+<p>This may include:</p>
+<ul>
+<li>how inputs are processed</li>
+<li>how the system reacts to specific conditions</li>
+<li>how records are matched or modified</li>
+<li>what operations are allowed or restricted</li>
+</ul>
+<p>Example:</p>
+<blockquote>
+<p>Rows are matched by natural key.<br>
+Only the columns present in the pasted data are updated.<br>
+Other columns remain unchanged.</p>
+</blockquote>
+<hr>
+<h3 id="3-constraints-and-rules">3. Constraints and rules</h3>
+<p>Important rules or limitations.</p>
+<p>These help prevent ambiguity during implementation.</p>
+<p>Examples:</p>
+<ul>
+<li>whether new records are allowed</li>
+<li>validation rules</li>
+<li>data restrictions</li>
+<li>side effects or non-effects</li>
+</ul>
+<p>Example:</p>
+<blockquote>
+<p>If a pasted row does not match an existing record, no new record is created.</p>
+</blockquote>
+<hr>
+<h3 id="4-acceptance-criteria">4. Acceptance criteria</h3>
+<p>Acceptance Criteria define <strong>how the result can be verified</strong>.</p>
+<p>They must be <strong>clear, observable, and testable</strong>.</p>
+<p>Examples:</p>
+<ul>
+<li>If the pasted dataset contains an existing natural key, the corresponding record is updated.</li>
+<li>Only explicitly included columns are modified.</li>
+<li>Records not present in the pasted data remain unchanged.</li>
+</ul>
+<p>Acceptance Criteria should allow a tester to determine whether the implementation is correct.</p>
+<hr>
+<h2 id="what-must-not-be-included-in-the-specification">What must NOT be included in the Specification</h2>
+<p>The Specification must <strong>not</strong> contain information about the reasoning or discussions that led to the decision.</p>
+<p>The following content belongs elsewhere (for example in Developments or Chat):</p>
+<h3 id="1-rationale">1. Rationale</h3>
+<p>Explanations such as:</p>
+<ul>
+<li>why the feature is needed</li>
+<li>business motivation</li>
+<li>customer requests</li>
+<li>strategic goals</li>
+</ul>
+<p>Example of content that should <strong>not</strong> appear in the Specification:</p>
+<blockquote>
+<p>Users often need to update multiple rows, which currently requires manual editing.</p>
+</blockquote>
+<hr>
+<h3 id="2-context">2. Context</h3>
+<p>Background information such as:</p>
+<ul>
+<li>product context</li>
+<li>customer situations</li>
+<li>historical notes</li>
+</ul>
+<hr>
+<h3 id="3-research">3. Research</h3>
+<p>Investigation results or exploratory findings.</p>
+<p>Examples:</p>
+<ul>
+<li>comparisons of alternative approaches</li>
+<li>early experiments</li>
+<li>prototype descriptions</li>
+</ul>
+<hr>
+<h3 id="4-rejected-alternatives">4. Rejected alternatives</h3>
+<p>Descriptions of solutions that were considered but not chosen.</p>
+<p>Example:</p>
+<blockquote>
+<p>Another option was to add a bulk edit dialog, but this approach was rejected.</p>
+</blockquote>
+<p>This type of information belongs in <strong>Developments</strong>, not in the Specification.</p>
+<hr>
+<h2 id="specification-vs-developments-vs-chat">Specification vs Developments vs Chat</h2>
+<p>Each section of a case has a different role.</p>
+<h3 id="specification">Specification</h3>
+<p>Defines <strong>the current agreed behaviour to implement</strong>.</p>
+<p>It is <strong>edited and refined over time</strong>, but at any moment it should represent the current decision.</p>
+<hr>
+<h3 id="developments">Developments</h3>
+<p>Contain the <strong>history of the case evolution</strong>.</p>
+<p>Typical content includes:</p>
+<ul>
+<li>design proposals</li>
+<li>decisions and revisions</li>
+<li>investigation notes</li>
+<li>rationale for changes</li>
+</ul>
+<p>Developments are append-only and represent the <strong>decision timeline</strong>.</p>
+<hr>
+<h3 id="chat">Chat</h3>
+<p>Contains <strong>discussion and informal communication</strong>.</p>
+<p>Typical content includes:</p>
+<ul>
+<li>questions</li>
+<li>clarifications</li>
+<li>brainstorming</li>
+<li>quick exchanges between participants</li>
+</ul>
+<p>Chat messages are not authoritative and should not define the final solution.</p>
+<hr>
+<h2 id="when-the-specification-must-be-complete">When the Specification must be complete</h2>
+<p>The Specification must be sufficiently complete when the case reaches:</p>
+<p><strong>READY</strong></p>
+<p>At this point:</p>
+<ul>
+<li>the intended behaviour must be clearly defined</li>
+<li>implementation should not require further conceptual decisions</li>
+<li>developers should be able to start work without needing to interpret discussions.</li>
+</ul>
+<p>Minor clarifications may still occur later, but the core functionality must already be defined.</p>
+<hr>
+<h2 id="writing-guidelines">Writing guidelines</h2>
+<p>To keep Specifications clear and useful:</p>
+<ul>
+<li>describe <strong>observable behaviour</strong></li>
+<li>avoid long explanations</li>
+<li>avoid historical context</li>
+<li>focus on <strong>what the system must do</strong></li>
+<li>write in clear, precise statements</li>
+</ul>
+<p>A good rule is:</p>
+<blockquote>
+<p>If a tester can verify the feature using the Specification alone, the Specification is correct.</p>
+</blockquote>
+<hr>
+<h2 id="summary">Summary</h2>
+<p>The Specification is the <strong>authoritative definition of the work to be implemented</strong>.</p>
+<p>It should contain:</p>
+<ul>
+<li>the functional goal</li>
+<li>system behaviour</li>
+<li>rules and constraints</li>
+<li>acceptance criteria</li>
+</ul>
+<p>It should <strong>not contain</strong>:</p>
+<ul>
+<li>motivation</li>
+<li>background</li>
+<li>investigation</li>
+<li>discussion</li>
+<li>rejected alternatives</li>
+</ul>
+<p>Those belong in Developments or Chat.</p>
+<p>The Specification defines <strong>what must be built and what must be verified</strong>.</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/work-management/agile/cases/specification.md/#L1" class="edit-link">Suggest improvement to this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

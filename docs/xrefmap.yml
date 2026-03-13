@@ -487,6 +487,9 @@ references:
 - uid: social-interactions
   name: Social interactions
   href: modules/community/social-interactions/index.html
+- uid: specification
+  name: specification
+  href: modules/work-management/agile/cases/specification.html
 - uid: sprints
   name: sprints
   href: modules/work-management/agile/configuration-and-structure/project-definitions/sprints.html

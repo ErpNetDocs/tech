@@ -22029,6 +22029,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/work-management/agile/cases/specification.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/work-management/agile/cases/specification.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/work-management/agile/cases/supporting-tools.md",
       "output": {
         ".html": {
