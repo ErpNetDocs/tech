@@ -2,6 +2,8 @@
   href: index.md
 - name: Case creation
   href: case-creation.md
+- name: Specification
+  href: specification.md
 - name: Comments & developments
   href: comments-and-developments.md
 - name: Workflow states
