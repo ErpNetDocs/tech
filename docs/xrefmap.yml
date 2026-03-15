@@ -410,7 +410,7 @@ references:
   name: name
   href: includes/name.html
 - uid: notification-settings
-  name: Notification settings
+  name: Notifications settings
   href: modules/community/social-interactions/notifications/settings.html
 - uid: notifications
   name: Notifications
