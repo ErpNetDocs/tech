@@ -11291,6 +11291,59 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/general/products/functions-with-products.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/general/products/functions-with-products.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/general/products/how-to/add-related.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/general/products/how-to/add-related.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/general/products/how-to/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/general/products/how-to/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/general/products/how-to/replace-with.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/general/products/how-to/replace-with.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "modules/general/products/how-to/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "modules/general/products/how-to/toc.html"
+        },
+        ".json": {
+          "relative_path": "modules/general/products/how-to/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/general/products/index.md",
       "output": {
         ".html": {

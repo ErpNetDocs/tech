@@ -436,9 +436,6 @@ references:
 - uid: product-relation-types
   name: Product Relation Types
   href: modules/general/products/product-relations/product_relation_types.html
-- uid: product-relations
-  name: Product Relations
-  href: modules/general/products/product-relations/product_relations.html
 - uid: project-areas
   name: project-areas
   href: modules/work-management/agile/configuration-and-structure/project-definitions/project-areas.html

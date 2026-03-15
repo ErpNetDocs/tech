@@ -2079,6 +2079,26 @@
     "title": "Coding systems | ERP.net Tech Docs",
     "summary": "Coding systems Coding Systems group together multiple product codes according to different criteria. All product codes are grouped in coding systems. Product codes are codes other than the part numbers that bring meaning to the company such as supplier codes, customer codes, barcodes and more. A default measurement unit could also be specified in coding systems. If a product code relating to a coding system with a default measurement unit is selected, then this unit must load in the document instead of the product's default unit. For example, if in the products definition \"Measurement Unit = Pcs\" is set, and for this product there is also a product code that relates to a coding system with a \"Default Measurement Unit = Package\", then we expect the following behavior: When a product in the sales order is selected through product code via barcode, then: Product’s part number loads in the Product field in the particular sales order line; \"Quantity Unit = Package\", which corresponds to the default measurement unit in the coding system’s definition; \"Unit Price\" must be recalculated according to the product dimensions."
   },
+  "modules/general/products/functions-with-products.html": {
+    "href": "modules/general/products/functions-with-products.html",
+    "title": "Functions related to Products | ERP.net Tech Docs",
+    "summary": "Functions related to Products In terms of exploiting available Product relations...."
+  },
+  "modules/general/products/how-to/add-related.html": {
+    "href": "modules/general/products/how-to/add-related.html",
+    "title": "| ERP.net Tech Docs",
+    "summary": "How to use function Add related"
+  },
+  "modules/general/products/how-to/index.html": {
+    "href": "modules/general/products/how-to/index.html",
+    "title": "| ERP.net Tech Docs",
+    "summary": "How To Here, you will find step-by-step guides on how to utilize different functions for Products How to use function Replace with..."
+  },
+  "modules/general/products/how-to/replace-with.html": {
+    "href": "modules/general/products/how-to/replace-with.html",
+    "title": "How to use function Replace with... | ERP.net Tech Docs",
+    "summary": "How to use function Replace with... Within Desktop client Within WEB Client"
+  },
   "modules/general/products/index.html": {
     "href": "modules/general/products/index.html",
     "title": "Products | ERP.net Tech Docs",
@@ -2112,7 +2132,7 @@
   "modules/general/products/product-relations/product_relations.html": {
     "href": "modules/general/products/product-relations/product_relations.html",
     "title": "Product Relations | ERP.net Tech Docs",
-    "summary": "Product Relations System Product Relation Types define how the system interprets and handles a relation. Custom Product Relation Types define what that relation means in your business. Creating your own relation types gives you better control and clarity over product relationships, freedom to reflect your business terminology and logic and the ability to scale and extend product data without development effort."
+    "summary": "Product Relations System Product Relation Types define how the system interprets and handles a relation. Custom Product Relation Types define what that relation means in your business. Creating your own relation types gives you better control and clarity over product relationships, freedom to reflect your business terminology and logic and the ability to scale and extend product data without development effort. Product Relations define typed, directional relationships between products. Each relation connects a source product (FromProduct) to a target product (ToProduct) and is classified by a Product Relation Type, which determines the system behavior and the business meaning of the relationship. Relations may also have a validity period and an optional quantity factor (QtyFactor), which allows the system to adjust quantities when the relation is used operationally. Concepts Examples of Product Relations A Product Relation combines two elements: a System Type, which defines the system behavior of the relation a Relation Type name, which describes the business meaning of the relation The following examples illustrate typical relation names for each System Type. Generic Used for neutral or informational relationships without specific system behavior. Example relation type names: Related product Same product family Equivalent reference Alternative item Example: Product A → Product B / Relation type: Related product Replacement Used when one product can replace another. Replacement relations may be used by system functions that support product substitution and quantity adjustment through QtyFactor. Example relation type names: Supersession Alternative replacement Equivalent replacement New model replaces old model Example: Printer Model A → Printer Model B / Relation type: Supersession Merchandising Used for commercial relationships such as accessories, cross-sell items, or upsell suggestions. Example relation type names: Accessory Cross-sell Upsell Bundle component Similar product Example: Laptop → Laptop bag / Relation type: Accessory Fitment Used for compatibility relationships between products that can be used together. Example relation type names: Compatible with Fits Matching component Approved part Example: Printer → Toner cartridge / Relation type: Compatible with The system type defines how the relation can be used functionally, while the custom relation type name defines how the relation is understood in the business context. This allows organizations to keep consistent system behavior and, at the same time, use terminology that matches their own product model. Using Product Relations Product Relations are not only used to define links between products, but also support user actions when working with products in logistics documents. Currently, the following functions exploit Product Relations. They are accessible from the context meny of a Product field: Product replacement - Replace with... Allows the current product in a document row to be replaced with a valid related product of type Replacement. The system uses the current product as FromProduct and lists the valid related products from ToProduct. If the selected relation defines a positive QtyFactor, the quantity in the row is recalculated accordingly. This function is useful when the original product is discontinued, unavailable, or replaced by a newer model. Product addition - Add related Allows a related product to be added as a new document row without modifying the current row. The system uses the current product as FromProduct and lists the valid related products from ToProduct for relations of type Merchandising. If the selected relation defines a positive QtyFactor, the quantity of the new row is calculated based on the quantity in the current row. This function is useful when users need to add complementary or commercially related products during document entry."
   },
   "modules/general/products/product-types/index.html": {
     "href": "modules/general/products/product-types/index.html",
@@ -2702,7 +2722,7 @@
   "modules/logistics/wms/logistic-units/How-to/index.html": {
     "href": "modules/logistics/wms/logistic-units/How-to/index.html",
     "title": "Work with Logistic Units | ERP.net Tech Docs",
-    "summary": "Work with Logistic Units Logistic Units (LU) are an item established for logistics operations, such as receving, storage, movement, and dispathing. It represents all physical units handled in the same manner during logistic operations. When working with LUs, it is possible to execute inbound, outbound,internal warehouse operations, as well as create them with ease. Create a new LU Create multiple LUNs Work with Logistic Units"
+    "summary": "Work with Logistic Units Logistic Units (LU) are an item established for logistics operations, such as receving, storage, movement, and dispathing. It represents all physical units handled in the same manner during logistic operations. When working with LUs, it is possible to execute inbound, outbound,internal warehouse operations, as well as create them with ease. Create multiple LUNs Work with Logistic Units"
   },
   "modules/logistics/wms/logistic-units/How-to/working-with-lu.html": {
     "href": "modules/logistics/wms/logistic-units/How-to/working-with-lu.html",

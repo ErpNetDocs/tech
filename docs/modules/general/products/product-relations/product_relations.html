@@ -84,12 +84,75 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="product-relations">
+        <article data-uid="">
 <h1 id="product-relations">Product Relations</h1>
 
 <p>System Product Relation Types define how the system interprets and handles a relation.
 Custom Product Relation Types define what that relation means in your business.</p>
 <p>Creating your own relation types gives you better control and clarity over product relationships, freedom to reflect your business terminology and logic and the ability to scale and extend product data without development effort.</p>
+<p>Product Relations define <strong>typed, directional relationships between products</strong>.</p>
+<p>Each relation connects a <strong>source product</strong> (<code>FromProduct</code>) to a <strong>target product</strong> (<code>ToProduct</code>) and is classified by a <strong>Product Relation Type</strong>, which determines the system behavior and the business meaning of the relationship.</p>
+<p>Relations may also have a <strong>validity period</strong> and an optional <strong>quantity factor (<code>QtyFactor</code>)</strong>, which allows the system to adjust quantities when the relation is used operationally.</p>
+<h1 id="concepts">Concepts</h1>
+<h2 id="examples-of-product-relations">Examples of Product Relations</h2>
+<p>A Product Relation combines two elements:</p>
+<ul>
+<li>a <strong>System Type</strong>, which defines the system behavior of the relation</li>
+<li>a <strong>Relation Type name</strong>, which describes the business meaning of the relation</li>
+</ul>
+<p>The following examples illustrate typical relation names for each System Type.</p>
+<h3 id="generic">Generic</h3>
+<p>Used for neutral or informational relationships without specific system behavior.</p>
+<p>Example relation type names:</p>
+<ul>
+<li>Related product</li>
+<li>Same product family</li>
+<li>Equivalent reference</li>
+<li>Alternative item</li>
+</ul>
+<p>Example:  Product A → Product B /  Relation type: Related product</p>
+<h3 id="replacement">Replacement</h3>
+<p>Used when one product can replace another. Replacement relations may be used by system functions that support product substitution and quantity adjustment through <code>QtyFactor</code>.</p>
+<p>Example relation type names:</p>
+<ul>
+<li>Supersession</li>
+<li>Alternative replacement</li>
+<li>Equivalent replacement</li>
+<li>New model replaces old model</li>
+</ul>
+<p>Example: Printer Model A → Printer Model B / Relation type: Supersession</p>
+<h3 id="merchandising">Merchandising</h3>
+<p>Used for commercial relationships such as accessories, cross-sell items, or upsell suggestions.</p>
+<p>Example relation type names:</p>
+<ul>
+<li>Accessory</li>
+<li>Cross-sell</li>
+<li>Upsell</li>
+<li>Bundle component</li>
+<li>Similar product</li>
+</ul>
+<p>Example: Laptop → Laptop bag / Relation type: Accessory</p>
+<h3 id="fitment">Fitment</h3>
+<p>Used for compatibility relationships between products that can be used together.</p>
+<p>Example relation type names:</p>
+<ul>
+<li>Compatible with</li>
+<li>Fits</li>
+<li>Matching component</li>
+<li>Approved part</li>
+</ul>
+<p>Example: Printer → Toner cartridge / Relation type: Compatible with</p>
+<p>The system type defines how the relation can be used functionally, while the custom relation type name defines how the relation is understood in the business context. This allows organizations to keep consistent system behavior and, at the same time, use terminology that matches their own product model.</p>
+<h2 id="using-product-relations">Using Product Relations</h2>
+<p>Product Relations are not only used to define links between products, but also support user actions when working with products in <strong>logistics documents</strong>. Currently, the following functions exploit Product Relations. They are accessible from the context meny of a Product field:</p>
+<h3 id="product-replacement---replace-with">Product replacement - <em>Replace with...</em></h3>
+<p>Allows the current product in a document row to be replaced with a valid related product of type <strong>Replacement</strong>.</p>
+<p>The system uses the current product as <code>FromProduct</code> and lists the valid related products from <code>ToProduct</code>. If the selected relation defines a positive <code>QtyFactor</code>, the quantity in the row is recalculated accordingly.</p>
+<p>This function is useful when the original product is discontinued, unavailable, or replaced by a newer model.</p>
+<h3 id="product-addition---add-related">Product addition - <em>Add related</em></h3>
+<p>Allows a related product to be added as a <strong>new document row</strong> without modifying the current row.</p>
+<p>The system uses the current product as <code>FromProduct</code> and lists the valid related products from <code>ToProduct</code> for relations of type <strong>Merchandising</strong>. If the selected relation defines a positive <code>QtyFactor</code>, the quantity of the new row is calculated based on the quantity in the current row.</p>
+<p>This function is useful when users need to add complementary or commercially related products during document entry.</p>
 
 </article>
 
