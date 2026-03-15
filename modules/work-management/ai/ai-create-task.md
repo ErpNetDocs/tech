@@ -54,7 +54,7 @@ This option allows you to create a ToDo directly from the **Notifications** list
 2. Select a notification.
 3. Choose **Create ToDo (AI)**.
 
-![Create Task from Chat Comment](taskcreate.png)
+![Create Task from Chat Comment](createfromnotif.png)
 
 ### How It Works
 
