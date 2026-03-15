@@ -21,5 +21,7 @@
   href: coding-systems.md
 - name: Variable (dynamic) measurement ratios
   href: variable-dynamic-measurement-rations.md
-
+- name: How to
+  href: how-to/toc.yml
+  topicHref: how-to/index.md
   
