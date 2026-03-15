@@ -1,4 +1,4 @@
-# How to use function **Replace with...**
+# How to use function "Replace with..."
 
 ## Within Desktop client
 
