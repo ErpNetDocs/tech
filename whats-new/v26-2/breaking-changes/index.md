@@ -8,7 +8,7 @@ TAGGED objects deliver chat/comment events only.
 
 ➡️ To continue receiving update or implicit notifications, mark important objects as Follow or Favorite.
 
-[Details](follows-and-notifications.md)
+[Details](https://docs.erp.net/tech/modules/community/social-interactions/notifications/settings.html#follow-levels-and-notifications-behavior)
 
 ## **2. JavaScript Enum Handling in User Business Rules**
 
