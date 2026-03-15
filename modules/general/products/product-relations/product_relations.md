@@ -5,6 +5,14 @@ Custom Product Relation Types define what that relation means in your business.
 
 Creating your own relation types gives you better control and clarity over product relationships, freedom to reflect your business terminology and logic and the ability to scale and extend product data without development effort.
 
+Product Relations define **typed, directional relationships between products**.
+
+Each relation connects a **source product** (`FromProduct`) to a **target product** (`ToProduct`) and is classified by a **Product Relation Type**, which determines the system behavior and the business meaning of the relationship.
+
+Relations may also have a **validity period** and an optional **quantity factor (`QtyFactor`)**, which allows the system to adjust quantities when the relation is used operationally.
+
+# Concepts
+
 ## Examples of Product Relations
 
 A Product Relation combines two elements:
