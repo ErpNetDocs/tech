@@ -2,7 +2,7 @@
 uid: notification-settings
 ---
 
-# Notification settings
+# Notifications settings
 
 These settings allow users to specify which notifications they want to receive. They can also specify whether the notifications should be sent in-app, by mail or by sms.
 
