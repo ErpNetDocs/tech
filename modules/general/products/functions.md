@@ -1,0 +1,3 @@
+# Functions related to Products
+
+In terms of exploiting available Product relations....
