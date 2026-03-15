@@ -9,7 +9,7 @@ Product Relations define **typed, directional relationships between products**.
 
 Each relation connects a **source product** (`FromProduct`) to a **target product** (`ToProduct`) and is classified by a **Product Relation Type**, which determines the system behavior and the business meaning of the relationship.
 
-Relations may also have a **validity period** and an optional **quantity factor (`QtyFactor`)**, which allows the system to adjust quantities when the relation is used operationally.
+Relations may also have a **validity period** and an optional **quantity factor** (`QtyFactor`), which allows the system to adjust quantities when the relation is used operationally.
 
 # Concepts
 
@@ -80,7 +80,7 @@ The system type defines how the relation can be used functionally, while the cus
 
 ## Using Product Relations
 
-Product Relations are not only used to define links between products, but also support user actions when working with products in **logistics documents**. Currently, the following functions exploit Product Relations. They are accessible from the context meny of a Product field:
+Product Relations are not only used to define links between products, but also support user actions when working with products in **logistics documents**. Currently, the following _functions_ exploit Product Relations. They are accessible from the context menu of a Product field:
 
 ### Product replacement - _Replace with..._
 
