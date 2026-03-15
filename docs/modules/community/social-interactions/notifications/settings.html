@@ -103,6 +103,27 @@
 <li><p>For more information about notification types and classes, see <a class="xref" href="index.html">Notifications</a>.</p>
 </li>
 </ul>
+<h2 id="follow-levels-and-notifications-behavior">Follow Levels and Notifications Behavior</h2>
+<p>Release 26.2 introduces Follow-Level-aware notifications and updates the default behavior for existing follows. With this release, a new logic is introduced where <strong>notifications depend on the Follow Level</strong> of objects in the system.</p>
+<p><em>What’s changing?</em>
+<br>All existing Favorite records are migrated to <strong>Follow Level = TAGGED</strong>. After the update, <strong>no objects will be marked as Favorite by default</strong>.</p>
+<p><em>What this means for users?</em>
+<br>Users may temporarily stop receiving notifications they previously received.</p>
+<p>When an object is at <strong>Follow Level = TAGGED</strong>:</p>
+<ul>
+<li>Only <strong>chat / comment events</strong> are delivered</li>
+<li><strong>Record update notifications are NOT sent</strong></li>
+<li><strong>Implicit notifications</strong> (e.g. new related content) <strong>are NOT sent</strong></li>
+</ul>
+<p><em>To continue receiving notifications</em>
+<br>Users must <strong>explicitly mark objects as Follow or Favorite</strong> to receive update or implicit notifications.</p>
+<p><em>What does NOT change?</em></p>
+<ul>
+<li>Chat events and direct mentions are still delivered, regardless of Follow Level</li>
+<li>Object access and group membership are not affected</li>
+</ul>
+<p><em>Technical note (for internal teams)</em>
+<br>Follow Level logic applies <strong>only</strong> to Record Update and Implicit notifications.  Other business processes are not affected unless explicitly stated.</p>
 
 </article>
 

@@ -23295,16 +23295,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "whats-new/v26-2/breaking-changes/follows-and-notifications.md",
-      "output": {
-        ".html": {
-          "relative_path": "whats-new/v26-2/breaking-changes/follows-and-notifications.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "whats-new/v26-2/breaking-changes/index.md",
       "output": {
         ".html": {

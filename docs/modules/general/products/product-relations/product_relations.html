@@ -92,7 +92,7 @@ Custom Product Relation Types define what that relation means in your business.<
 <p>Creating your own relation types gives you better control and clarity over product relationships, freedom to reflect your business terminology and logic and the ability to scale and extend product data without development effort.</p>
 <p>Product Relations define <strong>typed, directional relationships between products</strong>.</p>
 <p>Each relation connects a <strong>source product</strong> (<code>FromProduct</code>) to a <strong>target product</strong> (<code>ToProduct</code>) and is classified by a <strong>Product Relation Type</strong>, which determines the system behavior and the business meaning of the relationship.</p>
-<p>Relations may also have a <strong>validity period</strong> and an optional <strong>quantity factor (<code>QtyFactor</code>)</strong>, which allows the system to adjust quantities when the relation is used operationally.</p>
+<p>Relations may also have a <strong>validity period</strong> and an optional <strong>quantity factor</strong> (<code>QtyFactor</code>), which allows the system to adjust quantities when the relation is used operationally.</p>
 <h1 id="concepts">Concepts</h1>
 <h2 id="examples-of-product-relations">Examples of Product Relations</h2>
 <p>A Product Relation combines two elements:</p>
@@ -144,7 +144,7 @@ Custom Product Relation Types define what that relation means in your business.<
 <p>Example: Printer → Toner cartridge / Relation type: Compatible with</p>
 <p>The system type defines how the relation can be used functionally, while the custom relation type name defines how the relation is understood in the business context. This allows organizations to keep consistent system behavior and, at the same time, use terminology that matches their own product model.</p>
 <h2 id="using-product-relations">Using Product Relations</h2>
-<p>Product Relations are not only used to define links between products, but also support user actions when working with products in <strong>logistics documents</strong>. Currently, the following functions exploit Product Relations. They are accessible from the context meny of a Product field:</p>
+<p>Product Relations are not only used to define links between products, but also support user actions when working with products in <strong>logistics documents</strong>. Currently, the following <em>functions</em> exploit Product Relations. They are accessible from the context menu of a Product field:</p>
 <h3 id="product-replacement---replace-with">Product replacement - <em>Replace with...</em></h3>
 <p>Allows the current product in a document row to be replaced with a valid related product of type <strong>Replacement</strong>.</p>
 <p>The system uses the current product as <code>FromProduct</code> and lists the valid related products from <code>ToProduct</code>. If the selected relation defines a positive <code>QtyFactor</code>, the quantity in the row is recalculated accordingly.</p>
