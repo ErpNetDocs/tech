@@ -23,7 +23,7 @@ In other words, it provides a single, structured way to describe how products re
 
 - Expected behavior: The system should provide one-click [replacement](https://docs.erp.net/tech/modules/general/products/how-to/replace-with.html) in all processes where a product is selected (e.g., SalesOrder, WorkOrder).<br>
 When a product is discontinued, invalid, or out of stock, the system automatically suggests a valid replacement (ToProduct).<br>
-The **Qty_Factor** is used to calculate adjusted quantities during replacement (e.g., 1 X = 2 Y). Negative factor is not advised.
+The **Qty_Factor** is used to calculate adjusted quantities during replacement (e.g., 1 X = 2 Y). Negative factor is not advised. <br>
 Relation **validity** is controlled by FromDate and ToDate.
 
 ## 3. Merchandising (MRC)
