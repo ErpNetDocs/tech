@@ -13,47 +13,33 @@ In other words, it provides a single, structured way to describe how products re
 
 ## 1. Generic (GEN)
 
-   - Description:
-A general or neutral link between two products without any built-in business logic.
+   - Description: A general or neutral link between two products without any built-in business logic.
 
-   - Expected behavior:
-The system only stores and displays the relation; no automatic actions are triggered.
-Used for free associations or for future relation types that don’t fit into other categories.
+   - Expected behavior: The system only stores and displays the relation; no automatic actions are triggered. Used for free associations or for future relation types that don’t fit into other categories.
 
 ## 2. Replacement (RPL)
 
-- Description:
-Defines a relation where one product can replace another.
+- Description: Defines a relation where one product can replace another.
 
-- Expected behavior:
-
-The system should provide one-click replacement in all processes where a product is selected (e.g., SalesOrder, WorkOrder).
-When a product is discontinued, invalid, or out of stock, the system automatically suggests a valid replacement (ToProduct).
-The Qty_Factor field is used to calculate adjusted quantities during replacement (e.g., 1 X = 2 Y).
-Relation validity is controlled by FromDate and ToDate.
-Can be used to model a supersession chain — tracking product replacements over time.
+- Expected behavior: The system should provide one-click [replacement](https://docs.erp.net/tech/modules/general/products/how-to/replace-with.html) in all processes where a product is selected (e.g., SalesOrder, WorkOrder).<br>
+When a product is discontinued, invalid, or out of stock, the system automatically suggests a valid replacement (ToProduct).<br>
+The **Qty_Factor** is used to calculate adjusted quantities during replacement (e.g., 1 X = 2 Y). Negative factor is not advised.
+Relation **validity** is controlled by FromDate and ToDate.
 
 ## 3. Merchandising (MRC)
 
-   - Description:
-A relation for commercial or marketing purposes — e.g., upsell, cross-sell, similarity, or accessories.
+   - Description: A relation for commercial or marketing purposes — e.g., upsell, cross-sell, similarity, or accessories.
 
-  -  Expected behavior:
-
-The system should use these relations to automatically suggest related products in the UI (Product Details, Cart, Sales screens, etc.).
-Subtypes can be defined via the Code field (e.g., UPSELL, CROSSSELL, SIMILAR).
-Relations can be time-bound using FromDate and ToDate (e.g., seasonal campaigns).
-Data can also be used for analytics such as attach rate, conversion uplift, and similar KPIs.
+  -  Expected behavior: The system should use these relations to automatically [suggest related products](https://docs.erp.net/tech/modules/general/products/how-to/add-related.html).<br>
+Subtypes can be defined via the Code field (e.g., UPSELL, CROSSSELL, SIMILAR).<br>
+Relations can be time-bound using FromDate and ToDate (e.g., seasonal campaigns).<br>
 
 ## 4. Fitment (FIT)
 
-  - Description:
-Defines compatibility between products — i.e., which products can be used together in configurations, technologies, or documents.
+  - Description: Defines compatibility between products — i.e., which products can be used together in configurations, technologies, or documents.
 
-   - Expected behavior:
-
-When a product is selected in a configuration, the system should filter or validate the available compatible products.
-Relations can be one-directional or bi-directional depending on the domain logic.
+   - Expected behavior: When a product is selected in a configuration, the system should filter or validate the available compatible products.<br>
+Relations can be one-directional or bi-directional depending on the domain logic.<br>
 Commonly used for verifying correctness in product recipes, technical documents, or assemblies.
 
 |SystemType |	Code|	Purpose| Behaviour|
