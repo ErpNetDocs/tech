@@ -10,6 +10,9 @@ By standardizing these relations, the model enables automation of key business p
 
 Ultimately, Product Relations **aim** to create a flexible foundation that supports better product lifecycle management, smarter system behavior, and richer customer experiences across all product-driven operations.
 
+Where to find it?
+**Product relations** entity is a sub-entity within Products. It is reachable as a details panel in the definition of a Product.
+
 ## Business Benefits
 
 - Improved operational efficiency: Enables automatic handling of replacements, compatibility checks, and related product suggestions — reducing manual effort.
