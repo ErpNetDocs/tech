@@ -11,6 +11,7 @@ The screenshot below shows the Cases navigator, grouped by Project and Case Type
 The sections that follow cover the full lifecycle of a Case and its supporting functionality:
 
 - [Case creation](case-creation.md)
+- [Specification](specification.md)
 - [Comments & Developments](comments-and-developments.md)
 - [Workflow states](workflow-states.md)
 - [Responsibility, priority and time logging](resp-priority-time-logging.md)
