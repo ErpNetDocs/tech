@@ -82,7 +82,7 @@ Modeling both relations explicitly keeps system logic clean and unambiguous.
 
 ## Defining company's Product Relations
 Each organization has its own business-specific needs and may require finer distinctions or naming for product relations within these system categories.
-This is where custom [Product Relation Types](https://docs.erp.net/tech/modules/general/products/product-relations/product_relations.html) come into play.
+This is where custom [Product Relations](https://docs.erp.net/tech/modules/general/products/product-relations/product_relations.html) come into play.
 
 Defining your own relation types allows you to:
 
