@@ -19,7 +19,7 @@ The expression rows define how its value is calculated.
 | **Is Active** | Specifies whether the calculated attribute is active. |
 | **Starting Expression No** | The number of the expression row whose result becomes the value of the calculated attribute. |
 | **Script Language** | Specifies how the attribute is calculated. Supported values are `Integrated` and `JavaScript`. |
-| **Script Text** | JavaScript code used when `ScriptLanguage` is set to `JavaScript`. |
+| **Script Text** | JavaScript code used when **Script Language** is set to `JavaScript`. |
 | **Notes** | Optional internal notes. |
 
 ### Expression rows
