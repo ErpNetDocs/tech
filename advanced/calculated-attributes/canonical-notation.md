@@ -81,6 +81,7 @@ Canonical notation:
 
 ```text
 10: GETOBJVALUE REF:Customer ATTRIB:DefaultPaymentTermDays
+```
 
 Explanation:
 
