@@ -1,4 +1,4 @@
-## Canonical notation
+# Canonical notation
 
 A calculated attribute definition consists of:
 
@@ -8,7 +8,7 @@ A calculated attribute definition consists of:
 The header defines the calculated attribute itself.  
 The expression rows define how its value is calculated.
 
-### Header fields
+## Header fields
 
 | Field | Description |
 | --- | --- |
@@ -22,13 +22,13 @@ The expression rows define how its value is calculated.
 | **Script Text** | JavaScript code used when Script Language is set to `JavaScript`. *Optional* |
 | **Notes** | Optional internal notes. *Optional* |
 
-### Expression rows
+## Expression rows
 
 When **Script Language** is set to **Integrated**, the calculated attribute is defined by expression rows.
 
 Each row defines one expression in the calculation.
 
-#### Fields
+### Fields
 
 | Field | Description |
 | --- | --- |
@@ -42,7 +42,7 @@ Each row defines one expression in the calculation.
 | **Parameter3 Value** | The value of the third parameter. Its meaning depends on the selected **Parameter3 Type**. |
 | **Notes** | Optional internal notes for the expression row. |
 
-#### Canonical form
+### Canonical form
 
 Each expression row can be written in the following canonical form:
 
@@ -52,9 +52,9 @@ Each expression row can be written in the following canonical form:
 
 If an operator uses fewer than three parameters, the unused parameters are omitted.
 
-### Examples
+## Examples
 
-#### Example 1 - Get a related value
+### Example 1 - Get a related value
 
 Header:
 
@@ -91,7 +91,7 @@ Explanation:
 
 ![Customer default payment term days](pictures/customer-default-payment-term-days.png)
 
-#### Example 2 - Chained navigation
+### Example 2 - Chained navigation
 
 Header:
 
@@ -129,7 +129,7 @@ Explanation:
 
 ![Product type name](pictures/product-type-name-int.png)
 
-### JavaScript
+## JavaScript
 
 When **Script Language** is set to **JavaScript**, the value of the calculated attribute is determined by the contents of **Script Text** field.
 
