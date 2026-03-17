@@ -22,24 +22,14 @@ You can also use this attribute in a business rule or another formula when you n
 
 **Explanation:**
 
-5: Conditional result:
-
-	If EXP:70 is true → return EXP:90
-
-	Else → return EXP:10
-  
-10: Adds EXP:50 and EXP:20, effectively computing: EndMinute + (−StartMinute) → EndMinute − StartMinute
-
-20: Multiplies EXP:30 by −1 (negates the StartTime minutes): −StartMinute
-
-30: Converts EXP:40 (minutes as text) to System.Int32
-
-40: Formats StartTime with "mm" to extract the minute component as text
-
-50: Converts EXP:60 (minutes as text) to System.Int32
-
-60: Formats EndTime with "mm" to extract the minute component as text
-
-70: Checks whether the minute difference is negative: EXP:10 < 0
-
+5: Conditional result:  
+	If EXP:70 is true → return EXP:90  
+	Else → return EXP:10   
+10: Adds EXP:50 and EXP:20, effectively computing: EndMinute + (−StartMinute) → EndMinute − StartMinute  
+20: Multiplies EXP:30 by −1 (negates the StartTime minutes): −StartMinute  
+30: Converts EXP:40 (minutes as text) to System.Int32  
+40: Formats StartTime with "mm" to extract the minute component as text  
+50: Converts EXP:60 (minutes as text) to System.Int32  
+60: Formats EndTime with "mm" to extract the minute component as text  
+70: Checks whether the minute difference is negative: EXP:10 < 0  
 90: If the minute difference is negative, add 60 to wrap it into the 0..59 range: EXP:10 + 60
