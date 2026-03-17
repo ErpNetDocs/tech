@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title> | ERP.net Tech Docs </title>
+      <title>Canonical notation | ERP.net Tech Docs </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content=" | ERP.net Tech Docs ">
+      <meta name="title" content="Canonical notation | ERP.net Tech Docs ">
       
       
       <link rel="icon" href="../../favicon.ico">
@@ -85,8 +85,8 @@
         </div>
 
         <article data-uid="">
+<h1 id="canonical-notation">Canonical notation</h1>
 
-<h2 id="canonical-notation">Canonical notation</h2>
 <p>A calculated attribute definition consists of:</p>
 <ul>
 <li>a header record in <strong><a class="xref" href="https://erpnetdocs.github.io/model/entities/Systems.Bpm.CalculatedAttributes.html">Systems.Bpm.CalculatedAttributes</a></strong>.</li>
@@ -94,7 +94,7 @@
 </ul>
 <p>The header defines the calculated attribute itself.<br>
 The expression rows define how its value is calculated.</p>
-<h3 id="header-fields">Header fields</h3>
+<h2 id="header-fields">Header fields</h2>
 <table>
 <thead>
 <tr>
@@ -141,10 +141,10 @@ The expression rows define how its value is calculated.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="expression-rows">Expression rows</h3>
+<h2 id="expression-rows">Expression rows</h2>
 <p>When <strong>Script Language</strong> is set to <strong>Integrated</strong>, the calculated attribute is defined by expression rows.</p>
 <p>Each row defines one expression in the calculation.</p>
-<h4 id="fields">Fields</h4>
+<h3 id="fields">Fields</h3>
 <table>
 <thead>
 <tr>
@@ -191,13 +191,13 @@ The expression rows define how its value is calculated.</p>
 </tr>
 </tbody>
 </table>
-<h4 id="canonical-form">Canonical form</h4>
+<h3 id="canonical-form">Canonical form</h3>
 <p>Each expression row can be written in the following canonical form:</p>
 <pre><code class="lang-text">&lt;ExpressionNo&gt;: &lt;Operator&gt; &lt;Parameter1Type&gt;:&lt;Parameter1Value&gt; &lt;Parameter2Type&gt;:&lt;Parameter2Value&gt; &lt;Parameter3Type&gt;:&lt;Parameter3Value&gt;
 </code></pre>
 <p>If an operator uses fewer than three parameters, the unused parameters are omitted.</p>
-<h3 id="examples">Examples</h3>
-<h4 id="example-1---get-a-related-value">Example 1 - Get a related value</h4>
+<h2 id="examples">Examples</h2>
+<h3 id="example-1---get-a-related-value">Example 1 - Get a related value</h3>
 <p>Header:</p>
 <table>
 <thead>
@@ -283,7 +283,7 @@ The expression rows define how its value is calculated.</p>
 <li>The result of expression <code>10</code> becomes the value of the calculated attribute.</li>
 </ul>
 <p><img src="pictures/customer-default-payment-term-days.png" alt="Customer default payment term days"></p>
-<h4 id="example-2---chained-navigation">Example 2 - Chained navigation</h4>
+<h3 id="example-2---chained-navigation">Example 2 - Chained navigation</h3>
 <p>Header:</p>
 <table>
 <thead>
@@ -379,7 +379,7 @@ The expression rows define how its value is calculated.</p>
 <li>The result of line <code>10</code> is the final value when <strong>Starting Expression No</strong> is <code>10</code>.</li>
 </ul>
 <p><img src="pictures/product-type-name-int.png" alt="Product type name"></p>
-<h3 id="javascript">JavaScript</h3>
+<h2 id="javascript">JavaScript</h2>
 <p>When <strong>Script Language</strong> is set to <strong>JavaScript</strong>, the value of the calculated attribute is determined by the contents of <strong>Script Text</strong> field.</p>
 <p>The script must return the calculated value.</p>
 <p>The following example is equivalent to <strong>Example 2 - Chained navigation</strong>.</p>
