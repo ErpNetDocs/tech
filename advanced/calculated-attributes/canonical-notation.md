@@ -127,7 +127,7 @@ Explanation:
 - Line `20` gets the `Name` attribute from the related `ProductType`.
 - The result of line `10` is the final value when **Starting Expression No** is `10`.
 
-![Product type name](pictures/product-type-name.png)
+![Product type name](pictures/product-type-name-int.png)
 
 ### JavaScript
 
