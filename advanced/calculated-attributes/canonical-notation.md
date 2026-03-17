@@ -70,7 +70,6 @@ Header:
 | **Script Text** | |
 | **Notes** |  |
 
-
 Expression rows:
 
 | Expression No | Operator | Parameter1 Type | Parameter1 Value | Parameter2 Type | Parameter2 Value | Parameter3 Type | Parameter3 Value |
@@ -112,7 +111,6 @@ Expression rows:
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | `10` | `GETOBJVALUE` | `REF` | `Product` | `EXP` | `20` |  |  |
 | `20` | `GETOBJVALUE` | `REF` | `ProductType` | `ATTRIB` | `Name` |  |  |
-
 
 Canonical notation:
 
