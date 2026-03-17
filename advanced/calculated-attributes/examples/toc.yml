@@ -42,3 +42,5 @@
   href: requisition-type.md
 - name: Calculate hours on Start time and End time
   href: calculate-hours-on-start-time-and-end-time.md
+  - name: Calculate the minute difference between StartTime and EndTime within the hour
+  href: calculate-minets-on-start-time-and-end-time.md
