@@ -155,6 +155,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/examples/Calculate-Hours-OnStartTime-and-EndTime.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/examples/Calculate-Hours-OnStartTime-and-EndTime.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "advanced/calculated-attributes/examples/calculate-standardpriceperlot.md",
       "output": {
         ".html": {

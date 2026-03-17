@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Examples | ERP.net Tech Docs </title>
+      <title>This calculated attribute derives an integer hour difference between two time attributes: EndTime and StartTime | ERP.net Tech Docs </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Examples | ERP.net Tech Docs ">
+      <meta name="title" content="This calculated attribute derives an integer hour difference between two time attributes: EndTime and StartTime | ERP.net Tech Docs ">
       
       
       <link rel="icon" href="../../../favicon.ico">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../../../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/advanced/calculated-attributes/examples/index.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/advanced/calculated-attributes/examples/Calculate-Hours-OnStartTime-and-EndTime.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -85,36 +85,35 @@
         </div>
 
         <article data-uid="">
-<h1 id="examples">Examples</h1>
+<h1 id="this-calculated-attribute-derives-an-integer-hour-difference-between-two-time-attributes-endtime-and-starttime">This calculated attribute derives an integer hour difference between two time attributes: EndTime and StartTime</h1>
 
-<ul>
-<li><a href="calculate-standardpriceperlot.html">Calculate standard price per lot based on ingredients and operations in a recipe</a></li>
-<li><a href="check-if-quantity-is-whole-number.html">Check if a quantity is a whole number</a></li>
-<li><a href="check-if-user-has-authorization.html">Check if a user has authorization</a></li>
-<li><a href="check-if-field-is-changed-in-adjustment.html">Check if a value of a field is changed in an adjustment document</a></li>
-<li><a href="check-if-entity-has-attached-files.html">Check if an entity record has attached files</a></li>
-<li><a href="check-if-system-type-is-in-cash.html">Check if the system type of a payment type in a sales order is 'In cash'</a></li>
-<li><a href="check-for-first-releasing.html">Check whether the releasing of a document is first or not</a></li>
-<li><a href="compare-unit-and-standard-unit-price.html">Compare unit price and standard unit price</a></li>
-<li><a href="convert-property-to-number.html">Convert a value of a custom property to a number</a></li>
-<li><a href="executed-and-remaining-quantities-for-warehouse-order-lines.html">Executed and Remaining Quantities for Warehouse Order Lines</a></li>
-<li><a href="execution-status-for-warehouse-orders.html">ExecutionStatus for Warehouse Orders</a></li>
-<li><a href="format-property-date.html">Format date type custom property</a></li>
-<li><a href="get-custom-property-from-parent-offer-line.html">Get a value of a custom property in sales order lines from the parent offer line</a></li>
-<li><a href="get-atp.html">Get available to promise (ATP) quantity</a></li>
-<li><a href="get-current-availability-of-product.html">Get current availability of a product</a></li>
-<li><a href="get-value-and-description-of-referent-object.html">Get value and description of referent object</a></li>
-<li><a href="requisition-type.html">RequisitionType of the Requisition linked to a Warehouse Order</a></li>
-<li><a href="sales-amounts-last-30-days.html">Sales amounts of a customer for the last 30 days</a></li>
-<li><a href="day-from-document-date.html">Specific day from document date</a></li>
-<li><a href="Calculate-Hours-OnStartTime-and-EndTime.html">This calculated attribute derives an integer hour difference between two time attributes: EndTime and StartTime</a></li>
-<li><a href="total-quantity-and-scrap-in-recipe-ingredients.html">Total quantity and scrap quantity in recipe ingredients</a></li>
-</ul>
+<p>It does this by:</p>
+<ol>
+<li>extracting the hour component from each time (as text formatted with <code>hh</code>),</li>
+<li>converting those hour strings to <code>System.Int32</code>, and</li>
+<li>calculating EndHour − StartHour.</li>
+</ol>
+<pre><code class="lang-text">10: ADD EXP:50 EXP:20
+20: MULTIPLY EXP:30 CONST:-1
+30: CONVERT EXP:40 CONST:System.Int32
+40: FORMATSTRING ATTRIB:StartTime CONST:hh
+50: CONVERT EXP:60 CONST:System.Int32
+60: FORMATSTRING ATTRIB:EndTime CONST:hh
+</code></pre>
+<p><strong>Explanation:</strong></p>
+<p>10: Adds EXP:50 and EXP:20, effectively computing: EndHour + (−StartHour) → EndHour − StartHour</p>
+<p>20: Multiplies EXP:30 by −1 (negates the StartTime hour): −StartHour</p>
+<p>30: Converts EXP:40 (a formatted string) to <code>System.Int32</code> to get an integer hour value.</p>
+<p>40: Formats StartTime using the format string <code>hh</code> to extract the hour part as text.</p>
+<p>50: Converts EXP:60 (a formatted string) to <code>System.Int32</code> to get an integer hour value.</p>
+<p>60: Formats EndTime using the format string <code>hh</code> to extract the hour part as text.</p>
+<p>One-line summary</p>
+<p>Result = Int32(Format(EndTime, &quot;hh&quot;)) − Int32(Format(StartTime, &quot;hh&quot;))</p>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/calculated-attributes/examples/index.md/#L1" class="edit-link">Suggest improvement to this page</a>
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/calculated-attributes/examples/Calculate-Hours-OnStartTime-and-EndTime.md/#L1" class="edit-link">Suggest improvement to this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>
