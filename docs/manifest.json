@@ -175,6 +175,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/examples/calculate-minets-on-start-time-and-end-time.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/examples/calculate-minets-on-start-time-and-end-time.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "advanced/calculated-attributes/examples/calculate-standardpriceperlot.md",
       "output": {
         ".html": {
@@ -329,6 +339,16 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/examples/get-custom-property-from-parent-offer-line.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/examples/get-latest-unit-price-based-on-customer-product-and-company.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/examples/get-latest-unit-price-based-on-customer-product-and-company.html"
         }
       },
       "version": ""

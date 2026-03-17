@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Client Center | ERP.net Tech Docs </title>
+      <title>Calculate the minute difference between StartTime and EndTime within the hour | ERP.net Tech Docs </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Client Center | ERP.net Tech Docs ">
+      <meta name="title" content="Calculate the minute difference between StartTime and EndTime within the hour | ERP.net Tech Docs ">
       
       
       <link rel="icon" href="../../../favicon.ico">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../../../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/whats-new/v26-2/client-center/index.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/advanced/calculated-attributes/examples/calculate-minets-on-start-time-and-end-time.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -85,37 +85,37 @@
         </div>
 
         <article data-uid="">
-<h1 id="client-center">Client Center</h1>
+<h1 id="calculate-the-minute-difference-between-starttime-and-endtime-within-the-hour">Calculate the minute difference between StartTime and EndTime within the hour</h1>
 
-<p>This page summarizes the Client Center improvements delivered in v.26.2. It is updated as related cases are completed.</p>
-<h2 id="notable-features">Notable features</h2>
-<p>Major Client Center highlights for v.26.2 will be listed here when applicable. For other delivered items, see <strong>Other features</strong> below.
- </p>
-<h2 id="other-features">Other features</h2>
-<h3 id="1-notes-for-orders"><strong>1. Notes for orders</strong></h3>
-<p>Small clarifications (delivery instructions, preferences, internal handling details) can make a big difference during fulfillment. In v.26.2, Client Center makes it easier to capture these details and keep them visible throughout the order flow.</p>
-<ul>
-<li>Add notes while creating a <a href="https://docs.erp.net/tech/modules/crm/clientcenter/orders/new-order.html#notes"><strong>New Order</strong></a> (via <strong>Add Notes/Notes</strong>).</li>
-<li>Review notes in the <a href="https://docs.erp.net/tech/modules/crm/clientcenter/orders/orders.html#order-document"><strong>order document</strong></a> header.</li>
-<li>Optionally show notes as a column in the <a href="https://docs.erp.net/tech/modules/crm/clientcenter/orders/orders.html#details"><strong>Orders</strong></a> list (via <a href="https://docs.erp.net/tech/modules/crm/clientcenter/grid-control.html#column-chooser">Column Chooser</a>).</li>
-</ul>
-<p>Notes are optional and don’t block order creation when left empty. Notes are stored in <a href="https://docs.erp.net/model/entities/General.Documents.Documents.html#documentnotes">General.Documents.Documents.DocumentNotes</a>.</p>
-<p><img src="pictures/cc-notes-neworder-1.png" alt="Client Center – New Order – Notes (1)"></p>
-<p><img src="pictures/cc-notes-neworder-2.png" alt="Client Center – New Order – Notes (2)"></p>
-<h3 id="2-customer-related-documents-in-customer-profile"><strong>2. Customer-Related Documents in Customer Profile</strong></h3>
-<p>Customer documents now have their own dedicated space in Client Center. With the new <strong>Files</strong> panel in <strong>Customer Profile</strong>, external users can easily access and share files—without unnecessary back-and-forth over email.</p>
-<p><strong>Key capabilities:</strong></p>
-<ul>
-<li>View and download files attached to the customer and shared with external users.</li>
-<li>Upload new files directly from Client Center (saved to the customer record).</li>
-<li>Available for roles <strong>L40 (Billing)</strong> and above.</li>
-</ul>
-<p>If there are no accessible documents, the panel displays the message <strong>&quot;No documents available.&quot;</strong></p>
+<p>With this calculated attribute, you can calculate the difference between the minute components of the StartTime and EndTime attributes. The result is determined by extracting the minute part of each time value, converting it to an integer, and subtracting the StartTime minute from the EndTime minute. If the result is negative, 60 is added so the final value remains in the range from 0 to 59.</p>
+<p>You can also use this attribute in a business rule or another formula when you need to work with the minute offset within an hour instead of the full duration between two time values.</p>
+<pre><code class="lang-text">5: IIF EXP:70 EXP:90 EXP:10
+10: ADD EXP:50 EXP:20
+20: MULTIPLY EXP:30 CONST:-1
+30: CONVERT EXP:40 CONST:System.Int32
+40: FORMATSTRING ATTRIB:StartTime CONST:mm
+50: CONVERT EXP:60 CONST:System.Int32
+60: FORMATSTRING ATTRIB:EndTime CONST:mm
+70: LT EXP:10 CONST:0
+90: ADD EXP:10 CONST:60
+</code></pre>
+<p><strong>Explanation:</strong></p>
+<p>5: Conditional result:<br>
+If EXP:70 is true → return EXP:90<br>
+Else → return EXP:10<br>
+10: Adds EXP:50 and EXP:20, effectively computing: EndMinute + (−StartMinute) → EndMinute − StartMinute<br>
+20: Multiplies EXP:30 by −1 (negates the StartTime minutes): −StartMinute<br>
+30: Converts EXP:40 (minutes as text) to System.Int32<br>
+40: Formats StartTime with &quot;mm&quot; to extract the minute component as text<br>
+50: Converts EXP:60 (minutes as text) to System.Int32<br>
+60: Formats EndTime with &quot;mm&quot; to extract the minute component as text<br>
+70: Checks whether the minute difference is negative: EXP:10 &lt; 0<br>
+90: If the minute difference is negative, add 60 to wrap it into the 0..59 range: EXP:10 + 60</p>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/ErpNetDocs/tech/blob/master/whats-new/v26-2/client-center/index.md/#L1" class="edit-link">Suggest improvement to this page</a>
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/calculated-attributes/examples/calculate-minets-on-start-time-and-end-time.md/#L1" class="edit-link">Suggest improvement to this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>
