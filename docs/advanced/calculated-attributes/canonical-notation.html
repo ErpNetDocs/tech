@@ -94,7 +94,7 @@
 </ul>
 <p>The header defines the calculated attribute itself.<br>
 The expression rows define how its value is calculated.</p>
-<h3 id="header-fields">Header fields</h3>
+<h3 id="header">Header</h3>
 <table>
 <thead>
 <tr>
@@ -143,73 +143,135 @@ The expression rows define how its value is calculated.</p>
 </table>
 <h3 id="expression-rows">Expression rows</h3>
 <p>When <strong>Script Language</strong> is set to <strong>Integrated</strong>, the calculated attribute is defined by expression rows.</p>
-<p>Each row contains:</p>
-<ul>
-<li><strong>Expression No</strong></li>
-<li><strong>Operator</strong></li>
-<li><strong>up to three parameters</strong>:
-<ul>
-<li><code>Parameter1Type</code> + <code>Parameter1Value</code></li>
-<li><code>Parameter2Type</code> + <code>Parameter2Value</code></li>
-<li><code>Parameter3Type</code> + <code>Parameter3Value</code></li>
-</ul>
-</li>
-</ul>
-<p>Each operator defines its own behavior and accepted parameters. For more information, see <a href="operators/index.html">Operators</a>.</p>
-<h3 id="canonical-form">Canonical form</h3>
+<p>Each row defines one expression in the calculation.</p>
+<h4 id="fields">Fields</h4>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Expression No</strong></td>
+<td>A unique number of the expression within the calculated attribute. This number can be referenced by other expressions through <code>EXP:&lt;ExpressionNo&gt;</code> or <code>INPUT:&lt;ExpressionNo&gt;</code>.</td>
+</tr>
+<tr>
+<td><strong>Operator</strong></td>
+<td>The operator that defines what the expression does. Each operator accepts a specific set of parameters. For more information, see <a href="operators/index.html">Operators</a>.</td>
+</tr>
+<tr>
+<td><strong>Parameter1 Type</strong></td>
+<td>Specifies how the value of the first parameter is obtained. For the supported parameter types, see <a href="parameter-types/index.html">Parameter types</a>.</td>
+</tr>
+<tr>
+<td><strong>Parameter1 Value</strong></td>
+<td>The value of the first parameter. Its meaning depends on the selected <strong>Parameter1 Type</strong>.</td>
+</tr>
+<tr>
+<td><strong>Parameter2 Type</strong></td>
+<td>Specifies how the value of the second parameter is obtained. For the supported parameter types, see <a href="parameter-types/index.html">Parameter types</a>.</td>
+</tr>
+<tr>
+<td><strong>Parameter2 Value</strong></td>
+<td>The value of the second parameter. Its meaning depends on the selected <strong>Parameter2 Type</strong>.</td>
+</tr>
+<tr>
+<td><strong>Parameter3 Type</strong></td>
+<td>Specifies how the value of the third parameter is obtained. For the supported parameter types, see <a href="parameter-types/index.html">Parameter types</a>.</td>
+</tr>
+<tr>
+<td><strong>Parameter3 Value</strong></td>
+<td>The value of the third parameter. Its meaning depends on the selected <strong>Parameter3 Type</strong>.</td>
+</tr>
+<tr>
+<td><strong>Notes</strong></td>
+<td>Optional internal notes for the expression row.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="canonical-form">Canonical form</h4>
 <p>Each expression row can be written in the following canonical form:</p>
 <pre><code class="lang-text">&lt;ExpressionNo&gt;: &lt;Operator&gt; &lt;Parameter1Type&gt;:&lt;Parameter1Value&gt; &lt;Parameter2Type&gt;:&lt;Parameter2Value&gt; &lt;Parameter3Type&gt;:&lt;Parameter3Value&gt;
 </code></pre>
 <p>If an operator uses fewer than three parameters, the unused parameters are omitted.</p>
-<h3 id="parameter-types">Parameter types</h3>
-<p>The canonical notation uses typed parameters in the form <code>Type:Value</code>.</p>
-<p>The meaning of <code>ParameterXValue</code> depends on the selected <code>ParameterXType</code>.</p>
+<h3 id="examples">Examples</h3>
+<p><strong>Example 1 - Get a related value</strong></p>
+<p>Header:</p>
 <table>
 <thead>
 <tr>
-<th>Type</th>
+<th>Field</th>
 <th>Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>CONST</code></td>
-<td>A constant value, for example <code>10</code>, <code>'Text'</code>, <code>true</code>, or a date value.</td>
+<td><strong>Repository Name</strong></td>
+<td><code>Crm.Sales.SalesOrders</code></td>
 </tr>
 <tr>
-<td><code>ATTRIB</code></td>
-<td>The name of an attribute, for example <code>DefaultPaymentTermDays</code>.</td>
+<td><strong>Name</strong></td>
+<td><code>CustomerDefaultPaymentTermDays</code></td>
 </tr>
 <tr>
-<td><code>REF</code></td>
-<td>The name of a reference, for example <code>Customer</code>.</td>
+<td><strong>Caption</strong></td>
+<td><code>Customer default payment term days</code></td>
 </tr>
 <tr>
-<td><code>CHILD</code></td>
-<td>The name of a child collection, related to the current master object.</td>
+<td><strong>Hint</strong></td>
+<td><code>Returns the default payment term days from the related customer.</code></td>
 </tr>
 <tr>
-<td><code>EXP</code></td>
-<td>An expression number, for example <code>20</code>.</td>
+<td><strong>Is Active</strong></td>
+<td><code>True</code></td>
 </tr>
 <tr>
-<td><code>INPUT</code></td>
-<td>An expression number whose input parameter will be used.</td>
+<td><strong>Starting Expression No</strong></td>
+<td><code>10</code></td>
 </tr>
 <tr>
-<td><code>REPO</code></td>
-<td>The name of a repository.</td>
+<td><strong>Script Language</strong></td>
+<td><code>Integrated</code></td>
 </tr>
 <tr>
-<td><code>SYS</code></td>
-<td>The name of a system variable.</td>
+<td><strong>Script Text</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Notes</strong></td>
+<td></td>
 </tr>
 </tbody>
 </table>
-<p>For more information about the supported parameter types, see <a href="parameter-types/index.html">Parameter types</a>.</p>
-<h3 id="example-1---get-a-related-value">Example 1 - Get a related value</h3>
-<pre><code class="lang-text">10: GETOBJVALUE REF:Customer ATTRIB:DefaultPaymentTermDays
-</code></pre>
+<p>Expression rows:</p>
+<table>
+<thead>
+<tr>
+<th>Expression No</th>
+<th>Operator</th>
+<th>Parameter1 Type</th>
+<th>Parameter1 Value</th>
+<th>Parameter2 Type</th>
+<th>Parameter2 Value</th>
+<th>Parameter3 Type</th>
+<th>Parameter3 Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>10</code></td>
+<td><code>GETOBJVALUE</code></td>
+<td><code>REF</code></td>
+<td><code>Customer</code></td>
+<td><code>ATTRIB</code></td>
+<td><code>DefaultPaymentTermDays</code></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 <p>Explanation:</p>
 <ul>
 <li><strong>GETOBJVALUE</strong> gets information from a related entity.</li>
@@ -217,10 +279,92 @@ The expression rows define how its value is calculated.</p>
 <li><code>ATTRIB:DefaultPaymentTermDays</code> specifies the attribute to return.</li>
 <li>The result of expression <code>10</code> becomes the value of the calculated attribute.</li>
 </ul>
-<h3 id="example-2---chained-navigation">Example 2 - Chained navigation</h3>
-<pre><code class="lang-text">10: GETOBJVALUE REF:Product EXP:20
-20: GETOBJVALUE REF:ProductType ATTRIB:Name
-</code></pre>
+<p><strong>Example 2 - Chained navigation</strong></p>
+<h4 id="example-2---chained-navigation">Example 2 - Chained navigation</h4>
+<p>Header:</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Repository Name</strong></td>
+<td><code>Crm.Sales.SalesOrderLines</code></td>
+</tr>
+<tr>
+<td><strong>Name</strong></td>
+<td><code>ProductTypeName</code></td>
+</tr>
+<tr>
+<td><strong>Caption</strong></td>
+<td><code>Product type name</code></td>
+</tr>
+<tr>
+<td><strong>Hint</strong></td>
+<td><code>Returns the name of the product type of the related product.</code></td>
+</tr>
+<tr>
+<td><strong>Is Active</strong></td>
+<td><code>True</code></td>
+</tr>
+<tr>
+<td><strong>Starting Expression No</strong></td>
+<td><code>10</code></td>
+</tr>
+<tr>
+<td><strong>Script Language</strong></td>
+<td><code>Integrated</code></td>
+</tr>
+<tr>
+<td><strong>Script Text</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Notes</strong></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Expression rows:</p>
+<table>
+<thead>
+<tr>
+<th>Expression No</th>
+<th>Operator</th>
+<th>Parameter1 Type</th>
+<th>Parameter1 Value</th>
+<th>Parameter2 Type</th>
+<th>Parameter2 Value</th>
+<th>Parameter3 Type</th>
+<th>Parameter3 Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>10</code></td>
+<td><code>GETOBJVALUE</code></td>
+<td><code>REF</code></td>
+<td><code>Product</code></td>
+<td><code>EXP</code></td>
+<td><code>20</code></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>20</code></td>
+<td><code>GETOBJVALUE</code></td>
+<td><code>REF</code></td>
+<td><code>ProductType</code></td>
+<td><code>ATTRIB</code></td>
+<td><code>Name</code></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 <p>Explanation:</p>
 <ul>
 <li>Line <code>10</code> gets the related <code>Product</code> and applies expression <code>20</code> to it.</li>
@@ -230,7 +374,55 @@ The expression rows define how its value is calculated.</p>
 <h3 id="javascript">JavaScript</h3>
 <p>When <strong>Script Language</strong> is set to <strong>JavaScript</strong>, the value of the calculated attribute is determined by the contents of <strong>Script Text</strong>.</p>
 <p>The script must return the calculated value.</p>
-<p>The following example is equivalent to <strong>Example 2 - Chained navigation</strong>:</p>
+<p>The following example is equivalent to <strong>Example 2 - Chained navigation</strong>.</p>
+<p>Header:</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Repository Name</strong></td>
+<td><code>Crm.Sales.SalesOrderLines</code></td>
+</tr>
+<tr>
+<td><strong>Name</strong></td>
+<td><code>ProductTypeName</code></td>
+</tr>
+<tr>
+<td><strong>Caption</strong></td>
+<td><code>Product type name</code></td>
+</tr>
+<tr>
+<td><strong>Hint</strong></td>
+<td><code>Returns the name of the product type of the related product.</code></td>
+</tr>
+<tr>
+<td><strong>Is Active</strong></td>
+<td><code>True</code></td>
+</tr>
+<tr>
+<td><strong>Starting Expression No</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Script Language</strong></td>
+<td><code>JavaScript</code></td>
+</tr>
+<tr>
+<td><strong>Script Text</strong></td>
+<td>See the script below.</td>
+</tr>
+<tr>
+<td><strong>Notes</strong></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Script Text:</p>
 <pre><code class="lang-js">const product = subject.Product;
 
 if (!product || !product.ProductType) {
@@ -239,8 +431,14 @@ if (!product || !product.ProductType) {
 
 return product.ProductType.Name;
 </code></pre>
-<p>The script gets the related <code>Product</code>, then gets its related <code>ProductType</code>, and finally returns the value of its <code>Name</code> attribute.</p>
-<p>If the script returns <code>null</code>, the value of the calculated attribute is <code>null</code>.</p>
+<p>Explanation:</p>
+<ul>
+<li><code>subject</code> is the current object for which the calculated attribute is evaluated.</li>
+<li>The script gets the related <code>Product</code>.</li>
+<li>Then it gets the related <code>ProductType</code>.</li>
+<li>Finally, it returns the value of the <code>Name</code> attribute.</li>
+<li>If the script returns <code>null</code>, the value of the calculated attribute is <code>null</code>.</li>
+</ul>
 <p>For more information, see <a href="scripting/index.html">Scripting in calculated attributes</a>.</p>
 
 </article>
