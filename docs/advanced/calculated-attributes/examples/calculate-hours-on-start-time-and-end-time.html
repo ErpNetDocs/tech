@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>This calculated attribute derives an integer hour difference between two time attributes: EndTime and StartTime | ERP.net Tech Docs </title>
+      <title>Calculate integer hour difference between EndTime and StartTime | ERP.net Tech Docs </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="This calculated attribute derives an integer hour difference between two time attributes: EndTime and StartTime | ERP.net Tech Docs ">
+      <meta name="title" content="Calculate integer hour difference between EndTime and StartTime | ERP.net Tech Docs ">
       
       
       <link rel="icon" href="../../../favicon.ico">
@@ -85,14 +85,10 @@
         </div>
 
         <article data-uid="">
-<h1 id="this-calculated-attribute-derives-an-integer-hour-difference-between-two-time-attributes-endtime-and-starttime">This calculated attribute derives an integer hour difference between two time attributes: EndTime and StartTime</h1>
+<h1 id="calculate-integer-hour-difference-between-endtime-and-starttime">Calculate integer hour difference between EndTime and StartTime</h1>
 
-<p>It does this by:</p>
-<ol>
-<li>extracting the hour component from each time (as text formatted with <code>hh</code>),</li>
-<li>converting those hour strings to <code>System.Int32</code>, and</li>
-<li>calculating EndHour − StartHour.</li>
-</ol>
+<p>With this calculated attribute, you can calculate the integer hour difference between the EndTime and StartTime attributes. The result is determined by the hour values of the two time attributes.</p>
+<p>You can also use this attribute in a business rule when you need to fill or compare a value based on the difference in hours between two time attributes.</p>
 <pre><code class="lang-text">10: ADD EXP:50 EXP:20
 20: MULTIPLY EXP:30 CONST:-1
 30: CONVERT EXP:40 CONST:System.Int32
@@ -107,8 +103,6 @@
 <p>40: Formats StartTime using the format string <code>hh</code> to extract the hour part as text.</p>
 <p>50: Converts EXP:60 (a formatted string) to <code>System.Int32</code> to get an integer hour value.</p>
 <p>60: Formats EndTime using the format string <code>hh</code> to extract the hour part as text.</p>
-<p>One-line summary</p>
-<p>Result = Int32(Format(EndTime, &quot;hh&quot;)) − Int32(Format(StartTime, &quot;hh&quot;))</p>
 
 </article>
 

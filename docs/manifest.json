@@ -155,6 +155,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/canonical-notation.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/canonical-notation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "advanced/calculated-attributes/examples/calculate-hours-on-start-time-and-end-time.md",
       "output": {
         ".html": {
