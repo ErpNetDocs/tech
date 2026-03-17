@@ -42,3 +42,5 @@
   href: requisition-type.md
 - name: Calculate hours on Start time and End time
   href: calculate-hours-on-start-time-and-end-time.md
+  - name: Get latest unit price based on customer, product and company
+  href: get-latest-unit-price-based-on-customer-product-and-company.md
