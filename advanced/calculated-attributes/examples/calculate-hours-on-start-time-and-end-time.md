@@ -2,13 +2,11 @@
 items: CalculatedAttributeExamples
 ---
 
-# This calculated attribute derives an integer hour difference between two time attributes: EndTime and StartTime
+# Calculate integer hour difference between EndTime and StartTime
 
-It does this by:
+With this calculated attribute, you can calculate the integer hour difference between the EndTime and StartTime attributes. The result is determined by the hour values of the two time attributes.
 
-1) extracting the hour component from each time (as text formatted with `hh`),  
-2) converting those hour strings to `System.Int32`, and  
-3) calculating EndHour − StartHour.
+You can also use this attribute in a business rule when you need to fill or compare a value based on the difference in hours between two time attributes.
 
 ```text
 10: ADD EXP:50 EXP:20
@@ -32,7 +30,3 @@ It does this by:
 50: Converts EXP:60 (a formatted string) to `System.Int32` to get an integer hour value.
 
 60: Formats EndTime using the format string `hh` to extract the hour part as text.
-
-One-line summary
-
-Result = Int32(Format(EndTime, "hh")) − Int32(Format(StartTime, "hh"))
