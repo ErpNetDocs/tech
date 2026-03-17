@@ -19,14 +19,9 @@ You can also use this attribute in a business rule when you need to fill or comp
 
 **Explanation:**
 
-10: Adds EXP:50 and EXP:20, effectively computing: EndHour + (−StartHour) → EndHour − StartHour
-
-20: Multiplies EXP:30 by −1 (negates the StartTime hour): −StartHour
-
-30: Converts EXP:40 (a formatted string) to `System.Int32` to get an integer hour value.
-
-40: Formats StartTime using the format string `hh` to extract the hour part as text.
-
-50: Converts EXP:60 (a formatted string) to `System.Int32` to get an integer hour value.
-
-60: Formats EndTime using the format string `hh` to extract the hour part as text.
+10: Adds EXP:50 and EXP:20, effectively computing: EndHour + (−StartHour) → EndHour − StartHour  
+20: Multiplies EXP:30 by −1 (negates the StartTime hour): −StartHour  
+30: Converts EXP:40 (a formatted string) to `System.Int32` to get an integer hour value  
+40: Formats StartTime using the format string `hh` to extract the hour part as text  
+50: Converts EXP:60 (a formatted string) to `System.Int32` to get an integer hour value  
+60: Formats EndTime using the format string `hh` to extract the hour part as text
