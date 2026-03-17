@@ -983,6 +983,46 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "advanced/calculated-attributes/pictures/customer-default-payment-term-days.png",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/calculated-attributes/pictures/customer-default-payment-term-days.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "advanced/calculated-attributes/pictures/product-type-name-int.png",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/calculated-attributes/pictures/product-type-name-int.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "advanced/calculated-attributes/pictures/product-type-name-js.png",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/calculated-attributes/pictures/product-type-name-js.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/pictures/readMe.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/pictures/readMe.html"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "advanced/calculated-attributes/scripting/index.md",
       "output": {
