@@ -8,7 +8,7 @@ A calculated attribute definition consists of:
 The header defines the calculated attribute itself.  
 The expression rows define how its value is calculated.
 
-### Header fields
+### Header
 
 | Field | Description |
 | --- | --- |
@@ -26,18 +26,23 @@ The expression rows define how its value is calculated.
 
 When **Script Language** is set to **Integrated**, the calculated attribute is defined by expression rows.
 
-Each row contains:
+Each row defines one expression in the calculation.
 
-- **Expression No**
-- **Operator**
-- **up to three parameters**:
-  - `Parameter1Type` + `Parameter1Value`
-  - `Parameter2Type` + `Parameter2Value`
-  - `Parameter3Type` + `Parameter3Value`
+#### Fields
 
-Each operator defines its own behavior and accepted parameters. For more information, see [Operators](operators/index.md).
+| Field | Description |
+| --- | --- |
+| **Expression No** | A unique number of the expression within the calculated attribute. This number can be referenced by other expressions through `EXP:<ExpressionNo>` or `INPUT:<ExpressionNo>`. |
+| **Operator** | The operator that defines what the expression does. Each operator accepts a specific set of parameters. For more information, see [Operators](operators/index.md). |
+| **Parameter1 Type** | Specifies how the value of the first parameter is obtained. For the supported parameter types, see [Parameter types](parameter-types/index.md). |
+| **Parameter1 Value** | The value of the first parameter. Its meaning depends on the selected **Parameter1 Type**. |
+| **Parameter2 Type** | Specifies how the value of the second parameter is obtained. For the supported parameter types, see [Parameter types](parameter-types/index.md). |
+| **Parameter2 Value** | The value of the second parameter. Its meaning depends on the selected **Parameter2 Type**. |
+| **Parameter3 Type** | Specifies how the value of the third parameter is obtained. For the supported parameter types, see [Parameter types](parameter-types/index.md). |
+| **Parameter3 Value** | The value of the third parameter. Its meaning depends on the selected **Parameter3 Type**. |
+| **Notes** | Optional internal notes for the expression row. |
 
-### Canonical form
+#### Canonical form
 
 Each expression row can be written in the following canonical form:
 
@@ -47,30 +52,30 @@ Each expression row can be written in the following canonical form:
 
 If an operator uses fewer than three parameters, the unused parameters are omitted.
 
-### Parameter types
+### Examples
 
-The canonical notation uses typed parameters in the form `Type:Value`.
+**Example 1 - Get a related value**
 
-The meaning of `ParameterXValue` depends on the selected `ParameterXType`.
+Header:
 
-| Type | Value |
+| Field | Value |
 | --- | --- |
-| `CONST` | A constant value, for example `10`, `'Text'`, `true`, or a date value. |
-| `ATTRIB` | The name of an attribute, for example `DefaultPaymentTermDays`. |
-| `REF` | The name of a reference, for example `Customer`. |
-| `CHILD` | The name of a child collection, related to the current master object. |
-| `EXP` | An expression number, for example `20`. |
-| `INPUT` | An expression number whose input parameter will be used. |
-| `REPO` | The name of a repository. |
-| `SYS` | The name of a system variable. |
+| **Repository Name** | `Crm.Sales.SalesOrders` |
+| **Name** | `CustomerDefaultPaymentTermDays` |
+| **Caption** | `Customer default payment term days` |
+| **Hint** | `Returns the default payment term days from the related customer.` |
+| **Is Active** | `True` |
+| **Starting Expression No** | `10` |
+| **Script Language** | `Integrated` |
+| **Script Text** |  |
+| **Notes** |  |
 
-For more information about the supported parameter types, see [Parameter types](parameter-types/index.md).
 
-### Example 1 - Get a related value
+Expression rows:
 
-```text
-10: GETOBJVALUE REF:Customer ATTRIB:DefaultPaymentTermDays
-```
+| Expression No | Operator | Parameter1 Type | Parameter1 Value | Parameter2 Type | Parameter2 Value | Parameter3 Type | Parameter3 Value |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| `10` | `GETOBJVALUE` | `REF` | `Customer` | `ATTRIB` | `DefaultPaymentTermDays` |  |  |
 
 Explanation:
 
@@ -79,12 +84,30 @@ Explanation:
 - `ATTRIB:DefaultPaymentTermDays` specifies the attribute to return.
 - The result of expression `10` becomes the value of the calculated attribute.
 
-### Example 2 - Chained navigation
+**Example 2 - Chained navigation**
 
-```text
-10: GETOBJVALUE REF:Product EXP:20
-20: GETOBJVALUE REF:ProductType ATTRIB:Name
-```
+#### Example 2 - Chained navigation
+
+Header:
+
+| Field | Value |
+| --- | --- |
+| **Repository Name** | `Crm.Sales.SalesOrderLines` |
+| **Name** | `ProductTypeName` |
+| **Caption** | `Product type name` |
+| **Hint** | `Returns the name of the product type of the related product.` |
+| **Is Active** | `True` |
+| **Starting Expression No** | `10` |
+| **Script Language** | `Integrated` |
+| **Script Text** |  |
+| **Notes** |  |
+
+Expression rows:
+
+| Expression No | Operator | Parameter1 Type | Parameter1 Value | Parameter2 Type | Parameter2 Value | Parameter3 Type | Parameter3 Value |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| `10` | `GETOBJVALUE` | `REF` | `Product` | `EXP` | `20` |  |  |
+| `20` | `GETOBJVALUE` | `REF` | `ProductType` | `ATTRIB` | `Name` |  |  |
 
 Explanation:
 
@@ -98,7 +121,23 @@ When **Script Language** is set to **JavaScript**, the value of the calculated a
 
 The script must return the calculated value.
 
-The following example is equivalent to **Example 2 - Chained navigation**:
+The following example is equivalent to **Example 2 - Chained navigation**.
+
+Header:
+
+| Field | Value |
+| --- | --- |
+| **Repository Name** | `Crm.Sales.SalesOrderLines` |
+| **Name** | `ProductTypeName` |
+| **Caption** | `Product type name` |
+| **Hint** | `Returns the name of the product type of the related product.` |
+| **Is Active** | `True` |
+| **Starting Expression No** |  |
+| **Script Language** | `JavaScript` |
+| **Script Text** | See the script below. |
+| **Notes** |  |
+
+Script Text:
 
 ```js
 const product = subject.Product;
@@ -110,8 +149,12 @@ if (!product || !product.ProductType) {
 return product.ProductType.Name;
 ```
 
-The script gets the related `Product`, then gets its related `ProductType`, and finally returns the value of its `Name` attribute.
+Explanation:
 
-If the script returns `null`, the value of the calculated attribute is `null`.
+- `subject` is the current object for which the calculated attribute is evaluated.
+- The script gets the related `Product`.
+- Then it gets the related `ProductType`.
+- Finally, it returns the value of the `Name` attribute.
+- If the script returns `null`, the value of the calculated attribute is `null`.
 
 For more information, see [Scripting in calculated attributes](scripting/index.md).
