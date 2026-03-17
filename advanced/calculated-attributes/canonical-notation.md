@@ -168,7 +168,7 @@ Explanation:
 - `subject` is the current object for which the calculated attribute is evaluated.
 - The script gets the related `Product`.
 - Then it gets the related `ProductType`.
-- Finally, it returns the value of the `Name` attribute.
+- Finally, it returns the value of the `Name` attribute from the related `ProductType`.
 - If the script returns `null`, the value of the calculated attribute is `null`.
 
 For more information, see [Scripting in calculated attributes](scripting/index.md).
