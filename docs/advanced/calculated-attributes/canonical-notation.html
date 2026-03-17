@@ -87,13 +87,13 @@
         <article data-uid="">
 <h1 id="canonical-notation">Canonical notation</h1>
 
+<p>This topic explains how the fields in the calculated attribute header and expression rows are filled and how they are represented in canonical notation.</p>
+<p>Canonical notation is the compact form used throughout the calculated attributes documentation to describe calculated attribute definitions.</p>
 <p>A calculated attribute definition consists of:</p>
 <ul>
 <li>a header record in <strong><a class="xref" href="https://erpnetdocs.github.io/model/entities/Systems.Bpm.CalculatedAttributes.html">Systems.Bpm.CalculatedAttributes</a></strong>.</li>
 <li>one or more expression rows in <strong><a class="xref" href="https://erpnetdocs.github.io/model/entities/Systems.Bpm.CalculatedAttributeExpressions.html">Systems.Bpm.CalculatedAttributeExpressions</a></strong>.</li>
 </ul>
-<p>Canonical notation is a compact way to represent how a calculated attribute is defined.
-This topic explains how the fields in the calculated attribute header and expression rows are filled and how they are represented in canonical notation.</p>
 <p>The header defines the calculated attribute itself.<br>
 The expression rows define how its value is calculated.</p>
 <h2 id="header-fields">Header fields</h2>
@@ -194,7 +194,8 @@ The expression rows define how its value is calculated.</p>
 </tbody>
 </table>
 <h3 id="canonical-form">Canonical form</h3>
-<p>Each expression row can be written in the following canonical form:</p>
+<p>Throughout the calculated attributes documentation, expression rows are represented in a compact canonical notation.</p>
+<p>This notation shows how the values of the row fields are written as a single expression:</p>
 <pre><code class="lang-text">&lt;ExpressionNo&gt;: &lt;Operator&gt; &lt;Parameter1Type&gt;:&lt;Parameter1Value&gt; &lt;Parameter2Type&gt;:&lt;Parameter2Value&gt; &lt;Parameter3Type&gt;:&lt;Parameter3Value&gt;
 </code></pre>
 <p>If an operator uses fewer than three parameters, the unused parameters are omitted.</p>
