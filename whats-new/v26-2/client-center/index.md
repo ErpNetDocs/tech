@@ -10,7 +10,7 @@ Major Client Center highlights for v.26.2 will be listed here when applicable. F
 
 ## Other features
 
-### **1. Notes for orders**  
+### **1. Notes Entry During Order Creation**  
 
 Small clarifications (delivery instructions, preferences, internal handling details) can make a big difference during fulfillment. In v.26.2, Client Center makes it easier to capture these details and keep them visible throughout the order flow.
 
