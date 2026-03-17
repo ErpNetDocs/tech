@@ -14,7 +14,7 @@ Major Client Center highlights for v.26.2 will be listed here when applicable. F
 
 Small clarifications (delivery instructions, preferences, internal handling details) can make a big difference during fulfillment. In v.26.2, Client Center makes it easier to capture these details and keep them visible throughout the order flow.
 
-   Key capabilities:
+**Key capabilities:**
 
    - Customers can add notes while creating a [**New Order**](https://docs.erp.net/tech/modules/crm/clientcenter/orders/new-order.html#notes) via **Add Notes/Notes**.
    - Notes are displayed in the [**order document**](https://docs.erp.net/tech/modules/crm/clientcenter/orders/orders.html#order-document) header when reviewing the order later.
