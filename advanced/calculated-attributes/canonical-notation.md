@@ -12,15 +12,15 @@ The expression rows define how its value is calculated.
 
 | Field | Description |
 | --- | --- |
-| **Repository Name** | The entity type for which the calculated attribute is defined (evaluated per instance). |
-| **Name** | The technical name of the calculated attribute. This name is used when the attribute is referenced in other formulas. |
-| **Caption** | The user-facing name of the attribute. |
-| **Hint** | Additional help text shown in the UI. |
-| **Is Active** | Specifies whether the calculated attribute is active. |
-| **Starting Expression No** | The number of the expression row whose result becomes the value of the calculated attribute. |
-| **Script Language** | Specifies how the attribute is calculated. Supported values are `Integrated` and `JavaScript`. |
-| **Script Text** | JavaScript code used when Script Language is set to `JavaScript`. |
-| **Notes** | Optional internal notes. |
+| **Repository Name** | The entity type for which the calculated attribute is defined (evaluated per instance). *Required* |
+| **Name** | The technical name of the calculated attribute. This name is used when the attribute is referenced in other formulas. *Required* |
+| **Caption** | The user-facing name of the attribute. *Required* |
+| **Hint** | Additional help text shown in the UI. *Optional* |
+| **Is Active** | Specifies whether the calculated attribute is active. *Required* |
+| **Starting Expression No** | The number of the expression row whose result becomes the value of the calculated attribute. *Required* |
+| **Script Language** | Specifies how the attribute is calculated. Supported values are `Integrated` and `JavaScript`. *Required* |
+| **Script Text** | JavaScript code used when Script Language is set to `JavaScript`. *Optional* |
+| **Notes** | Optional internal notes. *Optional* |
 
 ### Expression rows
 
@@ -89,6 +89,8 @@ Explanation:
 - `ATTRIB:DefaultPaymentTermDays` specifies the attribute to return.
 - The result of expression `10` becomes the value of the calculated attribute.
 
+![Customer default payment term days](pictures/customer-default-payment-term-days.png)
+
 #### Example 2 - Chained navigation
 
 Header:
@@ -124,6 +126,8 @@ Explanation:
 - Line `10` gets the related `Product` and applies expression `20` to it.
 - Line `20` gets the `Name` attribute from the related `ProductType`.
 - The result of line `10` is the final value when **Starting Expression No** is `10`.
+
+![Product type name](pictures/product-type-name.png)
 
 ### JavaScript
 
@@ -168,3 +172,6 @@ Explanation:
 - If the script returns `null`, the value of the calculated attribute is `null`.
 
 For more information, see [Scripting in calculated attributes](scripting/index.md).
+
+![Product type name JS](pictures/product-type-name-js.png)
+
