@@ -1,5 +1,7 @@
 - name: Overview
   href: index.md
+- name: Canonival notation
+  href: canonical-notation.md
 - name: Operators
   href: operators/toc.yml
   topicHref: operators/index.md
