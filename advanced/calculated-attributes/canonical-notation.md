@@ -9,8 +9,7 @@ A calculated attribute definition consists of:
 - a header record in **[Systems.Bpm.CalculatedAttributes](xref:Systems.Bpm.CalculatedAttributes)**.
 - one or more expression rows in **[Systems.Bpm.CalculatedAttributeExpressions](xref:Systems.Bpm.CalculatedAttributeExpressions)**.
 
-The header defines the calculated attribute itself.  
-The expression rows define how its value is calculated.
+The header defines the calculated attribute itself, while the expression rows define how its value is calculated.
 
 ## Header fields
 
