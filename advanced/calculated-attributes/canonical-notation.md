@@ -1,12 +1,13 @@
 # Canonical notation
 
+This topic explains how the fields in the calculated attribute header and expression rows are filled and how they are represented in canonical notation.
+
+Canonical notation is the compact form used throughout the calculated attributes documentation to describe calculated attribute definitions.
+
 A calculated attribute definition consists of:
 
 - a header record in **[Systems.Bpm.CalculatedAttributes](xref:Systems.Bpm.CalculatedAttributes)**.
 - one or more expression rows in **[Systems.Bpm.CalculatedAttributeExpressions](xref:Systems.Bpm.CalculatedAttributeExpressions)**.
-
-Canonical notation is a compact way to represent how a calculated attribute is defined.
-This topic explains how the fields in the calculated attribute header and expression rows are filled and how they are represented in canonical notation.
 
 The header defines the calculated attribute itself.  
 The expression rows define how its value is calculated.
@@ -47,7 +48,9 @@ Each row defines one expression in the calculation.
 
 ### Canonical form
 
-Each expression row can be written in the following canonical form:
+Throughout the calculated attributes documentation, expression rows are represented in a compact canonical notation.
+
+This notation shows how the values of the row fields are written as a single expression:
 
 ```text
 <ExpressionNo>: <Operator> <Parameter1Type>:<Parameter1Value> <Parameter2Type>:<Parameter2Value> <Parameter3Type>:<Parameter3Value>
