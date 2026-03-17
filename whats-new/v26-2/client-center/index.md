@@ -23,7 +23,7 @@ Major Client Center highlights for v.26.2 will be listed here when applicable. F
 
    ![Client Center – New Order – Notes (2)](pictures/cc-notes-neworder-2.png)
 
-### **2. Files panel in Customer Profile**  
+### **2. Customer-Related Documents in Customer Profile**  
 
   Customer documents now have their own dedicated space in Client Center. With the new **Files** panel in **Customer Profile**, external users can easily access and share files—without unnecessary back-and-forth over email.  
 
