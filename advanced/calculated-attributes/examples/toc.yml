@@ -38,5 +38,7 @@
   href: executed-and-remaining-quantities-for-warehouse-order-lines.md  
 - name: Execution Status for Warehouse Orders
   href: execution-status-for-warehouse-orders.md
-- name: Requisition Type.md
-  href: requisition-type.md  
+- name: Requisition Type
+  href: requisition-type.md
+- name: Calculate hours on Start time and End time
+  href: calculate-hours-on-start-time-and-end-time.md
