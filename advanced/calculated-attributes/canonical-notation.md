@@ -8,7 +8,7 @@ A calculated attribute definition consists of:
 The header defines the calculated attribute itself.  
 The expression rows define how its value is calculated.
 
-### Header field
+### Header fields
 
 | Field | Description |
 | --- | --- |
@@ -67,7 +67,7 @@ Header:
 | **Is Active** | `True` |
 | **Starting Expression No** | `10` |
 | **Script Language** | `Integrated` |
-| **Script Text** |  |
+| **Script Text** | |
 | **Notes** |  |
 
 
@@ -144,7 +144,7 @@ Header:
 | **Caption** | `Product type name` |
 | **Hint** | `Returns the name of the product type of the related product.` |
 | **Is Active** | `True` |
-| **Starting Expression No** |  |
+| **Starting Expression No** | Not used for JavaScript. |
 | **Script Language** | `JavaScript` |
 | **Script Text** | See the script below. |
 | **Notes** |  |
