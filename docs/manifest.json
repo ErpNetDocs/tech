@@ -255,6 +255,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/examples/check-whether-the-current-user-is-in-the-manager-group.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/examples/check-whether-the-current-user-is-in-the-manager-group.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "advanced/calculated-attributes/examples/compare-unit-and-standard-unit-price.md",
       "output": {
         ".html": {
@@ -269,6 +279,16 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/examples/convert-property-to-number.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/examples/count-outstanding-invoices-based-on-sales-order-to-party.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/examples/count-outstanding-invoices-based-on-sales-order-to-party.html"
         }
       },
       "version": ""
@@ -339,6 +359,16 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/examples/get-custom-property-from-parent-offer-line.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/examples/get-customer-telephone-based-on-sales-order-customer.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/examples/get-customer-telephone-based-on-sales-order-customer.html"
         }
       },
       "version": ""

@@ -92,6 +92,8 @@
 <li>a header record in <strong><a class="xref" href="https://erpnetdocs.github.io/model/entities/Systems.Bpm.CalculatedAttributes.html">Systems.Bpm.CalculatedAttributes</a></strong>.</li>
 <li>one or more expression rows in <strong><a class="xref" href="https://erpnetdocs.github.io/model/entities/Systems.Bpm.CalculatedAttributeExpressions.html">Systems.Bpm.CalculatedAttributeExpressions</a></strong>.</li>
 </ul>
+<p>Canonical notation is a compact way to represent how a calculated attribute is defined.
+This topic explains how the fields in the calculated attribute header and expression rows are filled and how they are represented in canonical notation.</p>
 <p>The header defines the calculated attribute itself.<br>
 The expression rows define how its value is calculated.</p>
 <h2 id="header-fields">Header fields</h2>
@@ -444,7 +446,7 @@ return product.ProductType.Name;
 <li><code>subject</code> is the current object for which the calculated attribute is evaluated.</li>
 <li>The script gets the related <code>Product</code>.</li>
 <li>Then it gets the related <code>ProductType</code>.</li>
-<li>Finally, it returns the value of the <code>Name</code> attribute.</li>
+<li>Finally, it returns the value of the <code>Name</code> attribute from the related <code>ProductType</code>.</li>
 <li>If the script returns <code>null</code>, the value of the calculated attribute is <code>null</code>.</li>
 </ul>
 <p>For more information, see <a href="scripting/index.html">Scripting in calculated attributes</a>.</p>
