@@ -86,8 +86,6 @@ Explanation:
 
 **Example 2 - Chained navigation**
 
-#### Example 2 - Chained navigation
-
 Header:
 
 | Field | Value |
@@ -117,7 +115,7 @@ Explanation:
 
 ### JavaScript
 
-When **Script Language** is set to **JavaScript**, the value of the calculated attribute is determined by the contents of **Script Text**.
+When **Script Language** is set to **JavaScript**, the value of the calculated attribute is determined by the content of **Script Text** field.
 
 The script must return the calculated value.
 
