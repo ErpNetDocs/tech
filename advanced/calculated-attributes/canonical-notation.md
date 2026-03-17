@@ -8,7 +8,7 @@ A calculated attribute definition consists of:
 The header defines the calculated attribute itself.  
 The expression rows define how its value is calculated.
 
-### Header
+### Header field
 
 | Field | Description |
 | --- | --- |
@@ -54,7 +54,7 @@ If an operator uses fewer than three parameters, the unused parameters are omitt
 
 ### Examples
 
-**Example 1 - Get a related value**
+#### Example 1 - Get a related value
 
 Header:
 
@@ -77,6 +77,11 @@ Expression rows:
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | `10` | `GETOBJVALUE` | `REF` | `Customer` | `ATTRIB` | `DefaultPaymentTermDays` |  |  |
 
+Canonical notation:
+
+```text
+10: GETOBJVALUE REF:Customer ATTRIB:DefaultPaymentTermDays
+
 Explanation:
 
 - **GETOBJVALUE** gets information from a related entity.
@@ -84,7 +89,7 @@ Explanation:
 - `ATTRIB:DefaultPaymentTermDays` specifies the attribute to return.
 - The result of expression `10` becomes the value of the calculated attribute.
 
-**Example 2 - Chained navigation**
+#### Example 2 - Chained navigation
 
 Header:
 
@@ -107,6 +112,14 @@ Expression rows:
 | `10` | `GETOBJVALUE` | `REF` | `Product` | `EXP` | `20` |  |  |
 | `20` | `GETOBJVALUE` | `REF` | `ProductType` | `ATTRIB` | `Name` |  |  |
 
+
+Canonical notation:
+
+```text
+10: GETOBJVALUE REF:Product EXP:20
+20: GETOBJVALUE REF:ProductType ATTRIB:Name
+```
+
 Explanation:
 
 - Line `10` gets the related `Product` and applies expression `20` to it.
@@ -115,7 +128,7 @@ Explanation:
 
 ### JavaScript
 
-When **Script Language** is set to **JavaScript**, the value of the calculated attribute is determined by the content of **Script Text** field.
+When **Script Language** is set to **JavaScript**, the value of the calculated attribute is determined by the contents of **Script Text** field.
 
 The script must return the calculated value.
 
