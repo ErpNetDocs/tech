@@ -11,7 +11,7 @@ Promotional offers are more useful when customers can see and order them directl
 
 **Key capabilities:**
 
-   - Customers can view the promotional packages available to them while creating a [**New Order**](https://docs.erp.net/tech/modules/crm/clientcenter/orders/new-order.html#promotional-packages).
+   - Customers can view the promotional packages available to them while [**creating a New Order**](https://docs.erp.net/tech/modules/crm/clientcenter/orders/new-order.html#create-a-new-order).
    - Customers can add a package directly to the order by entering a quantity in the [**Promotional packages**](https://docs.erp.net/tech/modules/crm/clientcenter/orders/new-order.html#promotional-packages) panel.
    - The system automatically adds the corresponding package lines to the [**Order**](https://docs.erp.net/tech/modules/crm/clientcenter/orders/new-order.html#create-a-new-order).
    - Promotional package lines are visually distinguished and remain non-editable after they are added.
