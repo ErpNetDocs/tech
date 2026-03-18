@@ -65,7 +65,7 @@ The **Managers** group is granted the following permissions:
 
 This means that members of the **Managers** group can modify the project, delete it, administer its security settings, and move associated Cases to the **READY** state.
 
-![Project security settings for the Managers group](pictures/security-project-managers.png)
+![Project security settings for the Managers group](pictures/access-permissions-managers.png)
 
 #### Permissions granted to the **Website Redesign** group
 
@@ -86,7 +86,7 @@ However, they are not allowed to:
 - **Administer** the project's security settings
 - change a Case to **READY**
 
-![Project security settings for the Website Redesign group](pictures/security-project-website-redesign.png)
+![Project security settings for the Website Redesign group](pictures/access-permissions-website-redesign.png)
 
 #### Effective permissions for specific users
 
@@ -104,4 +104,4 @@ If she attempts to change a Case to **READY**, the operation is rejected because
 
 The system displays an error indicating that the user does not have permission to change the Case to the READY state for the selected project.
 
-![Validation error when changing a Case to READY without permission](pictures/security-case-ready-denied.png)
+![Validation error when changing a Case to READY without permission](pictures/error-message.png)
