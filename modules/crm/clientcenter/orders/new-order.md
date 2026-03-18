@@ -41,6 +41,18 @@ New Order consists of one primary tab - **Order**, but it can be configured to i
 
    ![pictures](pictures/channel_CC_tab.png)
 
+5. **Promotional packages** - The Promotional packages tab in New Order shows the promotional packages available for the current customer and order context.
+
+Only packages that are active, valid for the current date, and applicable to the current order conditions are displayed.
+
+The panel shows the following fields:
+- Name
+- Code
+- Valid from
+- Valid to
+- Qty
+
+
 ### Product info
 
 You can see details about a product if you click on either its **code** or **name**. <br>
