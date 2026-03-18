@@ -23475,6 +23475,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "whats-new/v26-2/client-center/pictures/CC-Documents.png",
+      "output": {
+        "resource": {
+          "relative_path": "whats-new/v26-2/client-center/pictures/CC-Documents.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "whats-new/v26-2/client-center/pictures/cc-notes-in-new-order-1.png",
       "output": {
         "resource": {
