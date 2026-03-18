@@ -197,3 +197,4 @@ You can still see the original UTC value on hover. Users do not need to change a
 👉 Faster work in lists, forms, and navigators where time-based fields are used<br>
 👉 Better user experience with information presented in the context most relevant to each user
 
+![picture](pictures/localtime.png)
