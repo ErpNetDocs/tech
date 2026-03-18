@@ -54,20 +54,23 @@ A project named **Website Redesign** is configured with a **private access key**
 Because both groups are granted access to the project's private access key, their members can access the project and the Cases associated with it.
 Users who are not granted access to that key cannot access the project and cannot see the related Cases in the **Cases navigator** or in **Global Search**.
 
-**Permissions granted to the **Managers** group**
-
-The **Managers** group is granted the following permissions:
+**Permissions granted to the Managers group**
 
 - **Update**
 - **Delete**
 - **Administer**
+- **Change to CONSIDER**
 - **Change to READY**
+- **Change to IN PROGRESS**
+- **Change to WAITING**
+- **Change to RESOLVED**
+- **Change to CLOSED**
 
-This means that members of the **Managers** group can modify the project, delete it, administer its security settings, and move associated Cases to the **READY** state.
+This means that members of the **Managers** group have full control over the project and can perform all configured Case state transitions.
 
-![Project security settings for the Managers group](pictures/access-permissions-managers.png)
+![Project security settings for the Managers group](pictures/access-permissions-managers2.png)
 
-**Permissions granted to the **Website Redesign** group**
+**Permissions granted to the Website Redesign group**
 
 The **Website Redesign** group is also granted access to the same private access key, but with a different permission set.
 
@@ -92,9 +95,9 @@ However, they are not allowed to:
 
 This configuration affects users according to the groups they belong to.
 
-- **Jacob Turner** is a member of both **Managers** and **Website Redesign**. As a result, his effective permissions combine the rights granted through both groups. He can maintain the project and perform all allowed Case state transitions in this example.
+- **Jacob Turner** is a member of the **Managers** group. As a result, he can maintain the project and perform all allowed Case state transitions in this example.
 
-- **Sophia Fletcher** is a member of **Website Redesign** only. She can open the project and work with its Cases according to the permissions granted to that group, but she cannot update the project, delete it, administer its security settings, or move a Case to **READY**.
+- **Sophia Fletcher** is a member of the **Website Redesign** group. She can open the project and work with its Cases according to the permissions granted to that group, but she cannot update the project, delete it, administer its security settings, or move a Case to **READY**.
 
 **Visibility and blocked state transition**
 
@@ -102,6 +105,6 @@ Because **Sophia Fletcher** has access to the private access key of the **Websit
 
 If she attempts to change a Case to **READY**, the operation is rejected because her group has not been granted permission for that specific transition.
 
-The system displays an error indicating that the user does not have permission to change the Case to the READY state for the selected project.
+The system displays an error indicating that the user does not have permission to change the Case to the **READY** state for the selected project.
 
 ![Validation error when changing a Case to READY without permission](pictures/error-message.png)
