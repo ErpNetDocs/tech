@@ -458,3 +458,12 @@ If you need to analyze the data, you may use Python code.
  `"KeepReleasedAndOpen"` - the Sales Order remains in Released state and the Sales Order form remains open.
 - b. **The user sets it manually.**  
 - c. **The key is introduced in version:** 
+
+
+## 77. ResetStateOfParentDocument
+- a. Action: Controls parameter Reset state of parent document at VOID operation When the option is enabled, the state of the parent document will be reset.br>
+  When the value of this key is:<br>
+  "0" (False) or the key is not defined  - The parent document's state will NOT be reset.<br>
+  "1" (True) - The parent document's state will be reset. **(default behavior)** <br>
+- b. The user sets it manually.<br>
+- c. The key is introduced in version: (will be 26.2)
