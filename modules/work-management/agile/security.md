@@ -103,7 +103,7 @@ This configuration affects users according to the groups they belong to.
 
 Because **Sophia Fletcher** has access to the private access key of the **Website Redesign** project, she can open the project and see the Cases associated with it.
 
-If she attempts to change a Case to **READY**, the operation is rejected because her group has not been granted permission for that specific transition.
+If she attempts to change a Case related to that project to **READY**, the operation is rejected because her group has not been granted permission for that specific transition.
 
 The system displays an error indicating that the user does not have permission to change the Case to the **READY** state for the selected project.
 
