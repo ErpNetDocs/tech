@@ -22674,10 +22674,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "modules/work-management/agile/pictures/access-permissions-managers.png",
+      "source_relative_path": "modules/work-management/agile/pictures/access-permissions-managers2.png",
       "output": {
         "resource": {
-          "relative_path": "modules/work-management/agile/pictures/access-permissions-managers.png"
+          "relative_path": "modules/work-management/agile/pictures/access-permissions-managers2.png"
         }
       },
       "version": ""

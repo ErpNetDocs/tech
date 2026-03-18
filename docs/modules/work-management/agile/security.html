@@ -132,17 +132,21 @@ For example, if a user only has the &quot;Change to READY&quot; right for a proj
 </ul>
 <p>Because both groups are granted access to the project's private access key, their members can access the project and the Cases associated with it.
 Users who are not granted access to that key cannot access the project and cannot see the related Cases in the <strong>Cases navigator</strong> or in <strong>Global Search</strong>.</p>
-<p><strong>Permissions granted to the <strong>Managers</strong> group</strong></p>
-<p>The <strong>Managers</strong> group is granted the following permissions:</p>
+<p><strong>Permissions granted to the Managers group</strong></p>
 <ul>
 <li><strong>Update</strong></li>
 <li><strong>Delete</strong></li>
 <li><strong>Administer</strong></li>
+<li><strong>Change to CONSIDER</strong></li>
 <li><strong>Change to READY</strong></li>
+<li><strong>Change to IN PROGRESS</strong></li>
+<li><strong>Change to WAITING</strong></li>
+<li><strong>Change to RESOLVED</strong></li>
+<li><strong>Change to CLOSED</strong></li>
 </ul>
-<p>This means that members of the <strong>Managers</strong> group can modify the project, delete it, administer its security settings, and move associated Cases to the <strong>READY</strong> state.</p>
-<p><img src="pictures/access-permissions-managers.png" alt="Project security settings for the Managers group"></p>
-<p><strong>Permissions granted to the <strong>Website Redesign</strong> group</strong></p>
+<p>This means that members of the <strong>Managers</strong> group have full control over the project and can perform all configured Case state transitions.</p>
+<p><img src="pictures/access-permissions-managers2.png" alt="Project security settings for the Managers group"></p>
+<p><strong>Permissions granted to the Website Redesign group</strong></p>
 <p>The <strong>Website Redesign</strong> group is also granted access to the same private access key, but with a different permission set.</p>
 <p>Its members can change the state of Cases associated with the project to the following states:</p>
 <ul>
@@ -163,15 +167,15 @@ Users who are not granted access to that key cannot access the project and canno
 <p><strong>Effective permissions for specific users</strong></p>
 <p>This configuration affects users according to the groups they belong to.</p>
 <ul>
-<li><p><strong>Jacob Turner</strong> is a member of both <strong>Managers</strong> and <strong>Website Redesign</strong>. As a result, his effective permissions combine the rights granted through both groups. He can maintain the project and perform all allowed Case state transitions in this example.</p>
+<li><p><strong>Jacob Turner</strong> is a member of the <strong>Managers</strong> group. As a result, he can maintain the project and perform all allowed Case state transitions in this example.</p>
 </li>
-<li><p><strong>Sophia Fletcher</strong> is a member of <strong>Website Redesign</strong> only. She can open the project and work with its Cases according to the permissions granted to that group, but she cannot update the project, delete it, administer its security settings, or move a Case to <strong>READY</strong>.</p>
+<li><p><strong>Sophia Fletcher</strong> is a member of the <strong>Website Redesign</strong> group. She can open the project and work with its Cases according to the permissions granted to that group, but she cannot update the project, delete it, administer its security settings, or move a Case to <strong>READY</strong>.</p>
 </li>
 </ul>
 <p><strong>Visibility and blocked state transition</strong></p>
 <p>Because <strong>Sophia Fletcher</strong> has access to the private access key of the <strong>Website Redesign</strong> project, she can open the project and see the Cases associated with it.</p>
 <p>If she attempts to change a Case to <strong>READY</strong>, the operation is rejected because her group has not been granted permission for that specific transition.</p>
-<p>The system displays an error indicating that the user does not have permission to change the Case to the READY state for the selected project.</p>
+<p>The system displays an error indicating that the user does not have permission to change the Case to the <strong>READY</strong> state for the selected project.</p>
 <p><img src="pictures/error-message.png" alt="Validation error when changing a Case to READY without permission"></p>
 
 </article>
