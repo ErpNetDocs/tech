@@ -1044,16 +1044,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "advanced/calculated-attributes/pictures/readMe.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/calculated-attributes/pictures/readMe.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "advanced/calculated-attributes/scripting/index.md",
       "output": {
         ".html": {
@@ -22678,6 +22668,36 @@
       "output": {
         ".html": {
           "relative_path": "modules/work-management/agile/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/agile/pictures/access-permissions-managers.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/agile/pictures/access-permissions-managers.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/agile/pictures/access-permissions-website-redesign.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/agile/pictures/access-permissions-website-redesign.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/agile/pictures/error-message.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/agile/pictures/error-message.png"
         }
       },
       "version": ""

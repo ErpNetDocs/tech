@@ -95,7 +95,7 @@
 <ul>
 <li><strong>Update</strong> – modify the project or its related Cases</li>
 <li><strong>Delete</strong> – remove the project</li>
-<li><strong>Administer</strong> – full control over the project setup and its security settings</li>
+<li><strong>Administer</strong> – full control over the project security settings</li>
 </ul>
 </li>
 <li><p><strong>Extended permissions</strong> (specific to Agile PM Cases):</p>
@@ -109,12 +109,11 @@
 </ul>
 </li>
 </ul>
-<p><code>[screenshot]</code></p>
-<p>These extended permissions regulate <strong>status transitions</strong> for Cases under the project.<br>
+<p>These extended permissions regulate <strong>state transitions</strong> for Cases under the project.<br>
 For example, if a user only has the &quot;Change to READY&quot; right for a project, they can only move Cases into that state — and not others.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>These permissions are automatically inherited by all Cases linked to the Project.</p>
+<p>These permissions are automatically inherited by all Cases linked to the project.</p>
 </div>
 <p>When a user attempts an unauthorized state change, they receive a clear error message indicating the lack of permission to perform that specific transition for the project’s Cases.</p>
 <h3 id="visibility-filtering">Visibility filtering</h3>
@@ -124,6 +123,56 @@ For example, if a user only has the &quot;Change to READY&quot; right for a proj
 <li>In the <strong>Global Search</strong>, Cases outside the user's access scope are excluded from the results.</li>
 </ul>
 <p>This ensures that users can only discover and interact with project information that aligns with their granted permissions, reinforcing data confidentiality across the <strong>Agile PM</strong> module.</p>
+<h3 id="example-access-and-visibility-for-a-private-project">Example: Access and visibility for a private project</h3>
+<p>The following example shows how project-based access control and visibility filtering work together for a project secured with a private access key.</p>
+<p>A project named <strong>Website Redesign</strong> is configured with a <strong>private access key</strong>. Access to this key is granted to two groups:</p>
+<ul>
+<li><strong>Managers</strong></li>
+<li><strong>Website Redesign</strong></li>
+</ul>
+<p>Because both groups are granted access to the project's private access key, their members can access the project and the Cases associated with it.
+Users who are not granted access to that key cannot access the project and cannot see the related Cases in the <strong>Cases navigator</strong> or in <strong>Global Search</strong>.</p>
+<h4 id="permissions-granted-to-the-managers-group">Permissions granted to the <strong>Managers</strong> group</h4>
+<p>The <strong>Managers</strong> group is granted the following permissions:</p>
+<ul>
+<li><strong>Update</strong></li>
+<li><strong>Delete</strong></li>
+<li><strong>Administer</strong></li>
+<li><strong>Change to READY</strong></li>
+</ul>
+<p>This means that members of the <strong>Managers</strong> group can modify the project, delete it, administer its security settings, and move associated Cases to the <strong>READY</strong> state.</p>
+<p><img src="pictures/security-project-managers.png" alt="Project security settings for the Managers group"></p>
+<h4 id="permissions-granted-to-the-website-redesign-group">Permissions granted to the <strong>Website Redesign</strong> group</h4>
+<p>The <strong>Website Redesign</strong> group is also granted access to the same private access key, but with a different permission set.</p>
+<p>Its members can change the state of Cases associated with the project to the following states:</p>
+<ul>
+<li><strong>CONSIDER</strong></li>
+<li><strong>IN PROGRESS</strong></li>
+<li><strong>WAITING</strong></li>
+<li><strong>RESOLVED</strong></li>
+<li><strong>CLOSED</strong></li>
+</ul>
+<p>However, they are not allowed to:</p>
+<ul>
+<li><strong>Update</strong> the project</li>
+<li><strong>Delete</strong> the project</li>
+<li><strong>Administer</strong> the project's security settings</li>
+<li>change a Case to <strong>READY</strong></li>
+</ul>
+<p><img src="pictures/security-project-website-redesign.png" alt="Project security settings for the Website Redesign group"></p>
+<h4 id="effective-permissions-for-specific-users">Effective permissions for specific users</h4>
+<p>This configuration affects users according to the groups they belong to.</p>
+<ul>
+<li><p><strong>Jacob Turner</strong> is a member of both <strong>Managers</strong> and <strong>Website Redesign</strong>. As a result, his effective permissions combine the rights granted through both groups. He can maintain the project and perform all allowed Case state transitions in this example.</p>
+</li>
+<li><p><strong>Sophia Fletcher</strong> is a member of <strong>Website Redesign</strong> only. She can open the project and work with its Cases according to the permissions granted to that group, but she cannot update the project, delete it, administer its security settings, or move a Case to <strong>READY</strong>.</p>
+</li>
+</ul>
+<h4 id="visibility-and-blocked-state-transition">Visibility and blocked state transition</h4>
+<p>Because <strong>Sophia Fletcher</strong> has access to the private access key of the <strong>Website Redesign</strong> project, she can open the project and see the Cases associated with it.</p>
+<p>If she attempts to change a Case to <strong>READY</strong>, the operation is rejected because her group has not been granted permission for that specific transition.</p>
+<p>The system displays an error indicating that the user does not have permission to change the Case to the READY state for the selected project.</p>
+<p><img src="pictures/security-case-ready-denied.png" alt="Validation error when changing a Case to READY without permission"></p>
 
 </article>
 
