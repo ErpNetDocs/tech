@@ -54,7 +54,7 @@ A project named **Website Redesign** is configured with a **private access key**
 Because both groups are granted access to the project's private access key, their members can access the project and the Cases associated with it.
 Users who are not granted access to that key cannot access the project and cannot see the related Cases in the **Cases navigator** or in **Global Search**.
 
-#### Permissions granted to the **Managers** group
+**Permissions granted to the **Managers** group**
 
 The **Managers** group is granted the following permissions:
 
@@ -67,7 +67,7 @@ This means that members of the **Managers** group can modify the project, delete
 
 ![Project security settings for the Managers group](pictures/access-permissions-managers.png)
 
-#### Permissions granted to the **Website Redesign** group
+**Permissions granted to the **Website Redesign** group**
 
 The **Website Redesign** group is also granted access to the same private access key, but with a different permission set.
 
@@ -88,7 +88,7 @@ However, they are not allowed to:
 
 ![Project security settings for the Website Redesign group](pictures/access-permissions-website-redesign.png)
 
-#### Effective permissions for specific users
+**Effective permissions for specific users**
 
 This configuration affects users according to the groups they belong to.
 
@@ -96,7 +96,7 @@ This configuration affects users according to the groups they belong to.
 
 - **Sophia Fletcher** is a member of **Website Redesign** only. She can open the project and work with its Cases according to the permissions granted to that group, but she cannot update the project, delete it, administer its security settings, or move a Case to **READY**.
 
-#### Visibility and blocked state transition
+**Visibility and blocked state transition**
 
 Because **Sophia Fletcher** has access to the private access key of the **Website Redesign** project, she can open the project and see the Cases associated with it.
 
