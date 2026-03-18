@@ -460,7 +460,7 @@ If you need to analyze the data, you may use Python code.
 - c. **The key is introduced in version:** 
 
 
-## 77. ResetStateOfParentDocument
+## 77. /Documents/ResetStateOfParentDocument
 - a. Action: Controls parameter Reset state of parent document at VOID operation When the option is enabled, the state of the parent document will be reset.br>
   When the value of this key is:<br>
   "0" (False) or the key is not defined  - The parent document's state will NOT be reset.<br>
