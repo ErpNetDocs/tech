@@ -102,10 +102,10 @@ Only packages that are active, valid for the current date, and applicable to the
 
 The panel shows the following fields:
 - Name
-- **Code**
-- **Valid from**
-- **Valid to**
-- **Qty**
+- Code
+- Valid from
+- Valid to
+- Qty
 
 To add a promotional package, enter a quantity in the **Qty** field and use **Add prom. pack**. The system then automatically adds the corresponding package lines to the **Order** according to the package definition and pricing conditions.
 
