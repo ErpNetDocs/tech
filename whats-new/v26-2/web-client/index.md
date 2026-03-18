@@ -187,5 +187,13 @@ The option applies only to editable rows and cells in Navigators and Row-panels 
 
 ![picture](pictures/filldown.png)
 
+### 12. Know your time
 
+Date and time fields stored in UTC are now shown in your local browser time by default.<br>
+You can still see the original UTC value on hover. Users do not need to change anything. With this approach, it has been achieved:<br>
+
+👉 Easier reading of event times without manual timezone conversion<br>
+👉 Fewer mistakes when interpreting timestamps across different time zones<br>
+👉 Faster work in lists, forms, and navigators where time-based fields are used<br>
+👉 Better user experience with information presented in the context most relevant to each user
 
