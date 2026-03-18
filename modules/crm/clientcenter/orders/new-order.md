@@ -94,6 +94,29 @@ Notes are optional and do not block order creation when left empty.
 
 Notes are stored in [General.Documents.Documents.DocumentNotes](https://docs.erp.net/model/entities/General.Documents.Documents.html#documentnotes).
 
+### Promotional packages
+
+The Promotional packages panel in New Order shows the promotional packages available for the current customer and order context.
+
+Only packages that are active, valid for the current date, and applicable to the current order conditions are displayed.
+
+The panel shows the following fields:
+- **Name**
+- **Code**
+- **Valid from**
+- **Valid to**
+- **Qty**
+
+To add a promotional package, enter a quantity in the **Qty** field and use **Add prom. pack**. The system then automatically adds the corresponding package lines to the **Order** according to the package definition and pricing conditions.
+
+Lines added from a promotional package are visually distinguished and cannot be edited manually.
+
+The **Order** panel also includes a **Promotional package** field, which shows which package each added line originates from.
+
+![Client Center – Promotional packages panel](pictures/cc-promotional-packages-panel.png)
+
+![Client Center – Promotional package lines in order](pictures/cc-promotional-packages-order-lines.png)
+
 ### Default store and product availability 
 
 All sales orders in the Client Center can have a **store** automatically set for them after they are created. Administrators can define it with the respective **[JSON setting](https://docs.erp.net/tech/modules/crm/clientcenter/reference.html?q=defaultstore#defaultstore-setting)**. If not defined, the **Store** field will remain empty.
