@@ -94,6 +94,10 @@ Notes are optional and do not block order creation when left empty.
 
 Notes are stored in [General.Documents.Documents.DocumentNotes](https://docs.erp.net/model/entities/General.Documents.Documents.html#documentnotes).
 
+![Client Center – Add Notes button in New Order](pictures/cc-notes-add-button.png)
+
+![Client Center – Notes popup in New Order](pictures/cc-notes-popup-save.png)
+
 ### Promotional packages
 
 The Promotional packages panel in New Order shows the promotional packages available for the current customer and order context.
