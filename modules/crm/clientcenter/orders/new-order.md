@@ -51,6 +51,23 @@ This will trigger the **Product Info** pop-up which contains more information, i
    
 ![pictures](pictures/product_info_details.png)
 
+### Notes
+
+To add additional instructions (e.g. delivery details or preferences) while creating the order, use the **Add Notes** action in the command bar of the **Order** tab.
+
+- When no note is saved yet, the button is labeled **Add Notes**.
+- After a note is saved, the button is labeled **Notes**.
+
+Clicking the button opens a popup where you can enter or edit the note. Use **Save** to store it or **Cancel** to close without changes.
+
+Notes are optional and do not block order creation when left empty.
+
+Notes are stored in [General.Documents.Documents.DocumentNotes](https://docs.erp.net/model/entities/General.Documents.Documents.html#documentnotes).
+
+![Client Center – Add Notes button in New Order](pictures/cc-notes-add-button.png)
+
+![Client Center – Notes popup in New Order](pictures/cc-notes-popup-save.png)
+
 ## Create a new order
 
 To begin, add products to the order. There are several ways to do this:
@@ -80,23 +97,6 @@ To begin, add products to the order. There are several ways to do this:
 5. If the Client Center's **distribution channel** has products linked to it, they will be available for selection as well.
 
    ![pictures](pictures/quantity_distribution_channel_clientcenter.png)
-
-### Notes
-
-To add additional instructions (e.g. delivery details or preferences) while creating the order, use the **Add Notes** action in the command bar of the **Order** tab.
-
-- When no note is saved yet, the button is labeled **Add Notes**.
-- After a note is saved, the button is labeled **Notes**.
-
-Clicking the button opens a popup where you can enter or edit the note. Use **Save** to store it or **Cancel** to close without changes.
-
-Notes are optional and do not block order creation when left empty.
-
-Notes are stored in [General.Documents.Documents.DocumentNotes](https://docs.erp.net/model/entities/General.Documents.Documents.html#documentnotes).
-
-![Client Center – Add Notes button in New Order](pictures/cc-notes-add-button.png)
-
-![Client Center – Notes popup in New Order](pictures/cc-notes-popup-save.png)
 
 ### Promotional packages
 
