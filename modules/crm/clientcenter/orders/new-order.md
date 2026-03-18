@@ -101,7 +101,7 @@ The Promotional packages panel in New Order shows the promotional packages avail
 Only packages that are active, valid for the current date, and applicable to the current order conditions are displayed.
 
 The panel shows the following fields:
-- **Name**
+- Name
 - **Code**
 - **Valid from**
 - **Valid to**
