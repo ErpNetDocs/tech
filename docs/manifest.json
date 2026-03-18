@@ -5484,6 +5484,46 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/orders/pictures/cc-notes-add-button.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/orders/pictures/cc-notes-add-button.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/orders/pictures/cc-notes-popup-save.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/orders/pictures/cc-notes-popup-save.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/orders/pictures/cc-promotional-packages-order-lines.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/orders/pictures/cc-promotional-packages-order-lines.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/orders/pictures/cc-promotional-packages-panel.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/orders/pictures/cc-promotional-packages-panel.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/crm/clientcenter/orders/pictures/channel_CC_tab.png",
       "output": {
         "resource": {

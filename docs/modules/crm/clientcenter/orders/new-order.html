@@ -148,6 +148,24 @@
 <p>Clicking the button opens a popup where you can enter or edit the note. Use <strong>Save</strong> to store it or <strong>Cancel</strong> to close without changes.</p>
 <p>Notes are optional and do not block order creation when left empty.</p>
 <p>Notes are stored in <a href="https://docs.erp.net/model/entities/General.Documents.Documents.html#documentnotes">General.Documents.Documents.DocumentNotes</a>.</p>
+<p><img src="pictures/cc-notes-add-button.png" alt="Client Center – Add Notes button in New Order"></p>
+<p><img src="pictures/cc-notes-popup-save.png" alt="Client Center – Notes popup in New Order"></p>
+<h3 id="promotional-packages">Promotional packages</h3>
+<p>The Promotional packages panel in New Order shows the promotional packages available for the current customer and order context.</p>
+<p>Only packages that are active, valid for the current date, and applicable to the current order conditions are displayed.</p>
+<p>The panel shows the following fields:</p>
+<ul>
+<li>Name</li>
+<li>Code</li>
+<li>Valid from</li>
+<li>Valid to</li>
+<li>Qty</li>
+</ul>
+<p>To add a promotional package, enter a quantity in the <strong>Qty</strong> field and use <strong>Add prom. pack</strong>. The system then automatically adds the corresponding package lines to the <strong>Order</strong> according to the package definition and pricing conditions.</p>
+<p>Lines added from a promotional package are visually distinguished and cannot be edited manually.</p>
+<p>The <strong>Order</strong> panel also includes a <strong>Promotional package</strong> field, which shows which package each added line originates from.</p>
+<p><img src="pictures/cc-promotional-packages-panel.png" alt="Client Center – Promotional packages panel"></p>
+<p><img src="pictures/cc-promotional-packages-order-lines.png" alt="Client Center – Promotional package lines in order"></p>
 <h3 id="default-store-and-product-availability">Default store and product availability</h3>
 <p>All sales orders in the Client Center can have a <strong>store</strong> automatically set for them after they are created. Administrators can define it with the respective <strong><a href="https://docs.erp.net/tech/modules/crm/clientcenter/reference.html?q=defaultstore#defaultstore-setting">JSON setting</a></strong>. If not defined, the <strong>Store</strong> field will remain empty.</p>
 <p>Provided a store is specified and a <strong><a href="https://docs.erp.net/tech/modules/crm/clientcenter/reference.html?q=defaultstore#availabilitymax-setting">maximum availability threshold</a></strong> is in place, you will be able to see the <strong>availability</strong> of all products you wish to include in the order.</p>
