@@ -42,10 +42,10 @@ Starting with 26.2.1.90, this behavior is configurable per instance through the 
 
 During update to 26.2.1.90, the system creates this key with value 1. This restores the previous default behavior for upgraded instances.
 
-So in practice:
+So in practice:<br>
+- 26.2.1.60 to 26.2.1.89 → breaking-change behavior №4 applies. <br>
+- 26.2.1.90 and later → administrators can choose the behavior for their instance.
 
-26.2.1.60 to 26.2.1.89 → breaking-change behavior №4 applies 
-26.2.1.90 and later → administrators can choose the behavior for their instance
 This applies to Web Client and Windows Client.
 
 ![picture](void.png)
