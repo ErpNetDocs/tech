@@ -94,7 +94,7 @@ This function is useful when the original product is discontinued, unavailable, 
 
 Allows a related product to be added as a **new document row** without modifying the current row.
 
-The system uses the current product as `FromProduct` and lists the valid related products from `ToProduct` for relations of type **Merchandising**. If the selected relation defines a positive `QtyFactor`, the quantity of the new row is calculated based on the quantity in the current row.
+The system uses the current product as `FromProduct` and lists the valid related products from `ToProduct` for relations of type **Merchandise**. If the selected relation defines a positive `QtyFactor`, the quantity of the new row is calculated based on the quantity in the current row.
 
 This function is useful when users need to add complementary or commercially related products during document entry.
 
