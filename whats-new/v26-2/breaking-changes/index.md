@@ -44,7 +44,7 @@ During update to 26.2.1.90, the system creates this key with value 1. This resto
 
 So in practice:
 
-2026.2 CTP1 (1.60) to 26.2.1.89 → breaking-change behavior 4 applies 
+26.2.1.60 to 26.2.1.89 → breaking-change behavior №4 applies 
 26.2.1.90 and later → administrators can choose the behavior for their instance
 This applies to Web Client and Windows Client.
 
