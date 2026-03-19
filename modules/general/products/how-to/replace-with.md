@@ -30,10 +30,10 @@ In the next sections, you will see how to use this function in each client.
 **1.** Ensure that a product is already entered in the **Product** field of the document line. The function is available only when the field contains a product.
 
 **2.** Right-click in the **Product** field and reveal the context menu;  
-  
-**3.** Click **Replace with...** in it - the system opens a filtered navigator with the available replacements for the current product;
 
 ![picture](../../pictures/replace_with.png)
+  
+**3.** Click **Replace with...** in it - the system opens a filtered navigator with the available replacements for the current product;
 
 **4.** In the navigator, select the desired product relation;
 
