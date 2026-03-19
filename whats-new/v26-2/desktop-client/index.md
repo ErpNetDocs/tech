@@ -4,6 +4,7 @@ WIN Client also undergoes improvements and transformations, although less freque
 ## ⚠️ Breaking Changes
 
 - [At VOID - parent document is not auto-reset anymore](https://docs.erp.net/tech/whats-new/v26-2/breaking-changes/index.html#4-at-void---parent-document-is-not-auto-reset-anymore)
+[- At VOID- parent document reset is now configurable](https://docs.erp.net/tech/whats-new/v26-2/breaking-changes/index.html#5-at-void---parent-document-reset-default-is-now-configurable)
 
 ## Notable features
 
@@ -49,13 +50,4 @@ We have identified several dark themes in the Desktop Client that contain visual
 
 ![picture](pictures/dark-themes.png)
 
-### **5. At VOID - parent document is not auto-reset anymore**
 
-_(Breaking change)_
-
-When performing **Void** from inside a **document form**, the parameter **`Reset the state of parent document`** is no longer selected by default. This change prevents unnecessary processing. The parameter can still be selected manually if needed.
-
-- This change only applies when Void is executed from the document form.
-- The behavior **remains unchanged** when Void is executed from the **Document Route** or the **Navigator**.
-
-![picture](pictures/VOID.png)
