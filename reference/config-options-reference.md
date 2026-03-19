@@ -196,7 +196,7 @@ The options set for the database are visible in the Configurations navigator and
 ## 41. EnableCreateGroupForUser
 - a.Action: When this key has value and this value is "1" or "true" (case-insensitive), when creating a new user in the database, a new group with the user’s name will be created automatically as well. 
 - b.The user sets it manually.
-- c.The key is introduced in version: 2019.1 (in implementation)
+- c.The key is introduced in version: 2019.1.
 
 > [!Note]
 > Before version 2019.1, a new user group was created automatically whenever a new user was created, and this behaviour could not be disabled. Since version 2019.1, the behaviour is disabled by default and could be activated manually using the current registry key.
@@ -205,11 +205,11 @@ The options set for the database are visible in the Configurations navigator and
 - a. Action: In versions before **26.2**, this key controlled whether document versioning used the legacy **VH** system or **Track Changes** (**TC**).
 - b. Starting with **v26.2**, this key no longer has any effect. Document tracking always uses **Track Changes**.
 - c. The key is retained only for backward compatibility with older configurations.
-- d. The key was introduced in version: 2019.1
+- d. The key was introduced in version: 2019.1.
 
 ## 43. Crm/Pos/PrintGroupedSalesLinesType
 - a.Action: When the value of this key is "ShortName", then items in the fiscal receipt are grouped by the "ShortName" field in the product. When the value of this key is "ProductGroup", then items in the fiscal receipt are grouped by the product group of the product. When the value of this key is different or the key is missing, then items in the fiscal receipt are not grouped.
-- b.The key is introduced in version: 2019.1
+- b.The key is introduced in version: 2019.1.
            
 ## 44. UseStartScreen
 - a.Action: When the value of this key is:
@@ -218,7 +218,7 @@ The options set for the database are visible in the Configurations navigator and
     - "0", different from "1" and "2" or the key is not configured for the particular database and user - the system will use the default value. The default value for
     version 2020.1 is Main Menu.**Warning:** The current key's value will be taken into account only if there is no global policy specifying the use of the start screen for the whole database using the key "UseStartScreenPolicy"
 - b.The user sets it manually.
-- c. The key is introduced in version: 2020.1
+- c. The key is introduced in version: 2020.1.
 
 ## 45. UseStartScreenPolicy 
 - a.Action: When the value of this key is:
@@ -226,13 +226,13 @@ The options set for the database are visible in the Configurations navigator and
     - "2" - the starting form will be the Main menu. This applies to all users in the database, regardless of the "UseStartScreen" option/key.
     - "0", different from "1" and "2", or the key is not configured for the particular database - there is no global policy. Each user decides whether they want to use the start screen using "UseStartScreen" option/key.
 - b.The user sets it manually.
-- c.The key is introduced in version: 2020.1
+- c.The key is introduced in version: 2020.1.
 
 ## 46. UseDefaultMailClient
 
 - a.Action: When this key has a value for the particular user and this value is "1", then when creating an email, the system will start the default Windows Mail client. This will apply even if there is a mailbox defined for the user. 
 - b. The user sets it manually (directly in the registry or using the option available in the tab File => Settings => Use default Windows mail client).
-- c.The key is introduced in version: 2019.1
+- c.The key is introduced in version: 2019.1.
 
 ## 47. CodeNameFormat
 - a.Action: The default display text format for entities that provide Code and Name. The value is an integer number from 1 to 4:
@@ -241,12 +241,12 @@ The options set for the database are visible in the Configurations navigator and
     - "3" - {Name} ({Code})
     - "4" - {Name}
 - b.The user sets it manually.
-- c.The key is introduced in version: 2022
+- c.The key is introduced in version: 2022.
 
 ## 48. AllowBasicAuthForAllUsers 
 - a. When this key has a value and this value is "1", all users can use basic authentication, regardless of their settings.
 - b.The user sets it manually
-- c.The key is introduced in version: 2023
+- c.The key is introduced in version: 2023.
 
 ## 49. Calendar/TimePresets
 - a. When this key hasa  value and conforms to the format below, it overrides the time presets in the [calendar control](https://docs.erp.net/webclient/introduction/my-apps/calendar.html#time-presets).
@@ -258,34 +258,34 @@ e.g.,
 Morning=10:00;Lunch=12:30;Afternoon=15:00;Dinner=19:00
 ```
 - b.The user sets it manually
-- c.The key is introduced in version: 2023
+- c.The key is introduced in version: 2023.
 
 ## 50. InventoryControl/ReceiveDocumentType
 - a.The key defines the document type of the created document when using the Receive function of Inventory Control
 - b.The user sets it manually
-- c.The key is introduced in version: 23.2
+- c.The key is introduced in version: 23.2.
 
 ## 51. InventoryControl/IssueDocumentType
 - a.The key defines the document type of the created document when using the Issue function of Inventory Control
 - b.The user sets it manually
-- c.The key is introduced in version: 23.2
+- c.The key is introduced in version: 23.2.
 
 ## 52. InventoryControl/ScrapDocumentType
 - a.The key defines the document type of the created document when using the Scrap function of Inventory Control
 - b.The user sets it manually
-- c.The key is introduced in version: 23.2
+- c.The key is introduced in version: 23.2.
 
 ## 53. InventoryControl/ReconcileDocumentType
 - a.The key defines the document type of the created document when using the Reconcile function of Inventory Control
 - b.The user sets it manually
-- c.The key is introduced in version: 23.2
+- c.The key is introduced in version: 23.2.
 
 ## 54. /WMS/WMS-Worker/SingleBarcodeScanEntersQuantityOfOnePce - DEPRECATED v.25
 - a.Action: When the value of this key is:
     - "1" - When scanning a single barcode, then this is accepted as 1 PCE
     - "0" - When scanning a single barcode, then no quantity is accepted, the WMS-Worker APP just finds the line and goes to execute mode for this line.
 - b.The user sets it manually.
-- c.The key is introduced in version: 23.2
+- c.The key is introduced in version: 23.2.
 
 ## 55. /WMS/WMS-Worker/OrderDisplayFormat
 - a.Action: When this key is defined, the WMS Worker application will display the data you need, replacing the first row with Order information in the WO list and inside the WO.
@@ -305,7 +305,7 @@ Morning=10:00;Lunch=12:30;Afternoon=15:00;Dinner=19:00
 When the key is not defined or has no value, the retention period is set to 36 months by default.<br>
 If the [J35666 Delete attribute changes history](~/advanced/jobs/J35666.md) job is configured and active, the old history data for attribute changes, whose retention period is expired, will be deleted.
 - c.The user sets it manually.
-- d.The key is introduced in version: 24
+- d.The key is introduced in version: 24.
 
 ## 58. Acc/DisableAccountFilterLimit
 - a.Action: When the key is not defined or has a value and this value is "0", data loading is not allowed in the Chronological Statement Navigator if a filter is applied for more than 10 accounts or no accounts. An error message will be displayed.<br>
@@ -315,7 +315,7 @@ If the [J35666 Delete attribute changes history](~/advanced/jobs/J35666.md) job 
 ## 59. /AI/Assistant/DebugMode
 - a.Action: When this key has a value of '1', it determines whether an AI assistant will operate in debug mode.
 - b.The user sets it manually
-- c.The key is introduced in version: 24
+- c.The key is introduced in version: 24.
 
 ## 60. /AI/Assistant/AdditionalInstructions
 - a.Action: Additional instructions, passed to the AI assistant when it is launched from a single record form (definition). Defines additional guidance passed to the AI Assistant to tailor its behavior to a single record context. If no custom value is specified by the user, the system default instructions are applied.
@@ -329,7 +329,7 @@ If the [J35666 Delete attribute changes history](~/advanced/jobs/J35666.md) job 
   For example "my product: {Product.PartNumber}; size: {Product.@Property1: VD}" will be displayed as "my product: 0000001 ; size: 01:big"
 - b.If the key is not defined, the WMS Worker will display the default information, coming from the Product field and follow the default Web client display text format for Product, which is Product.Name.
 - c.The user sets it manually.
-- d.The key is introduced in version: 24 SP4
+- d.The key is introduced in version: 24 SP4.
 
 ## 62. /WMS/WMS-Worker/LocationDisplayFormat
 - a.Action: When this key is defined, the WMS Worker application will display the data you need, replacing the Location field in the Warehouse order line list.
@@ -345,40 +345,40 @@ If the [J35666 Delete attribute changes history](~/advanced/jobs/J35666.md) job 
 "1" - When the key is defined and its value is 1, all defined stores will be listed in the ToStore field in the Transfer function.<br>
 "0" - When a key is defined and its value is 0, or there is no defined key, only the stores to which the user has permission will be listed.
 - b.The user sets it manually.
-- c.The key is introduced in version: 24 SP5
+- c.The key is introduced in version: 24 SP5.
 
 ## 64. /Documents/AllowCompleteWithSubdocumentsIncludingUnreleased
 - a.Action: When the value of this key is: <br>
 "1" - When the key is defined and set to 1, 'Complete with sub-documents, including unreleased' will be available as a Completed status option.<br>
 "0" - When the key is defined and set to 0, or if no key is defined, 'Complete with sub-documents, including unreleased' will not be available as a Completed status option.<br>
 - b.The user sets it manually.
-- c.The key is introduced in version: 25
+- c.The key is introduced in version: 25.
 
 ## 65. /JobsManager/IgnoreSessionsForIdleSchedule
 - a.Action: When the value of this key is: <br>
 "1" - When the key is defined and set to 1, Jobs marked as Run On Idle will start automatically at the scheduled time, regardless of current server sessions.<br>
 "0" - When the key is defined and set to 0 or a value different from 1, or if no key is defined, Jobs marked as Run On Idle will start automatically at the scheduled time only if the server sessions are less than 5.<br>
 - b.The user sets it manually.
-- c.The key is introduced in version: 24 SP7
+- c.The key is introduced in version: 24 SP7.
 
 ## 66. /Monitoring/AuditLogEntriesRetentionMonths
 -	a.Action: When the key is defined and has a value, its value specifies the retention period, in months, of audit log entries (these are the records in the  [Audit Log Entries](xref:Systems.Monitoring.AuditLogEntries) table). The retention period starts from the date set in AuditLogEntries.Event_Time_Utc field.
 When the key is not defined or has no value, the retention period is set to 12 months by default.<br>
 If the [J38417 Delete old audit logs](~/advanced/jobs/J38417.md) job is configured and active - the audit log entries, whose retention period has expired, will be deleted.<br>
 -	b.The user sets it manually.<br>
--	c.The key is introduced in version: 25
+-	c.The key is introduced in version: 25.
 
 ## 67. /id/UserNameAutoComplete
 -	a.Action: When the value of this key is:<br>
 "1" - When the key is defined and set to 1, the autocomplete option for the user/email field of the Desktop client login screen is turned on. This means that previously entered login credentials will be suggested when clicking into the field.<br>
 "0" - When the key is defined and set to 0 or a value different from 1, or if no key is defined, the autocomplete option for the user/email field of the Desktop client login screen is turned off.<br>
 -	b.The user sets it manually.<br>
--	c.The key is introduced in version: 24 SP10
+-	c.The key is introduced in version: 24 SP10.
 
 ## 68. /AI/Chat/ContextDepth
 - a.Action: Context depth is the number of previous comments that will be included in the prompt. Defaults to `100`.
 - b.The user sets it manually
-- c.The key is introduced in version: 25
+- c.The key is introduced in version: 25.
 
 ## 69. /AI/Assistant/AdditionalNavigatorInstructions
 - a.Action: Additional instructions, passed to the AI assistant when it is launched from a navigator or report form. Defines additional guidance passed to the AI Assistant to tailor its behavior in the navigator or report contexts. If no custom value is specified by the user, the system default instructions are applied.
@@ -396,7 +396,7 @@ Remember the contents of this file for future questions, as the next questions m
 If you need to analyze the data, you may use Python code.
 ````
 - b.The user sets it manually
-- c.The key is introduced in version: 26
+- c.The key is introduced in version: 26.
 
 ## 70. /InventoryControl/OrderDisplayFormat
 - a.Action: When this key is defined, the Inventory Control application will display the data you need, replacing the first row with Order information in the Store Orders list.
@@ -405,7 +405,7 @@ If you need to analyze the data, you may use Python code.
   For example "{Parent}, Notes: {DocumentNotes:T}, {MasterDocument} will be displayed as "Invoice Order 00001 ; Notes: ASAP ; Sales Order 00001
 - b.If the key is not defined, the Inventory Control will display the default information, which comes from the To Party field in the Store Order header.
 - c.The user sets it manually
-- d. The key is introduced in version: 26
+- d. The key is introduced in version: 26.
 
  ## 71. /WebClient/AlwaysSaveOnClose
  - a.Action: Controls whether the web client should automatically save changes when a form is closed with unsaved data, instead of prompting the user with a confirmation dialog.<br>
@@ -415,7 +415,7 @@ If you need to analyze the data, you may use Python code.
    [x] Always save automatically when closing<br>
    "1" (true) – The system saves the changes automatically and closes the form without showing the confirmation dialog.
 - b.The user sets it manually.  By switching ON the toggle button "Always save automatically when closing" in the confirmation dialog, and Customize panel/Settings
-- c.The key is introduced in version: 26.2
+- c.The key is introduced in version: 26.2.
 
 ## 72. AllowNotificationPopups
 - a. Action: Controls whether notifications pop-ups in desktop client to emerge on screen or not.<br>
@@ -423,7 +423,7 @@ If you need to analyze the data, you may use Python code.
   "0" – notification pop-up toasters will not be displayed.<br>
   "1" or not defined - notification pop-up toasters will be displayed (default behavior).<br>
 - b. The user sets it manually.<br>
-- c. The key is introduced in version: (26.2)
+- c. The key is introduced in version: 26.2.
 
 ## 73. /ToDo/ShowLinked
 - a. Action: Controls whether the ToDo application displays tasks that are linked to an object in the database (e.g. documents, activities, social groups).The toggle switch is set to On    or Off.<br>
@@ -431,7 +431,7 @@ If you need to analyze the data, you may use Python code.
   "0" (False)  – linked ToDo tasks are not displayed.<br>
   "1" (True) or the key is not defined –  linked ToDo tasks are displayed by default (default behavior).<br>
 - b. The user sets it manually.<br>
-- c. The key is introduced in version: (26.2)
+- c. The key is introduced in version: 26.2.
 
 ## 74. UseUnsupportedThemes
 - a. Action: Controls the activation and application of unsupported themes in the Desktop Client. When the option is enabled, the themes can be applied. When disabled, the themes cannot    be applied and appear visibly inactive in the menu.<br>
@@ -439,15 +439,15 @@ If you need to analyze the data, you may use Python code.
   "0" (False) or the key is not defined  - Themes are inactive and cannot be applied (default behavior)<br>
   "1" (True) - Themes are active and can be applied.<br>
 - b. The user sets it manually.<br>
-- c. The key is introduced in version: (26.2)
+- c. The key is introduced in version: 26.2.
 
 ## 75. /Scripting/UseNumericEnumConversionMode
 - a. **Action:** Controls how CLR enum values are exposed in JavaScript scripts. When the option is enabled, enum values are exposed as their underlying numeric value. When disabled, enum values are exposed as their name string.  
   When the value of this key is:  
   `"0"` (False) or the key is not defined – Enum values are exposed as strings (e.g. `"Released"`). **(default behavior)**  
   `"1"` (True) – Enum values are exposed as their underlying numeric value (e.g. `30`).  
-- b. **The user sets it manually.**  
-- c. **The key is introduced in version:** 26.2
+- b. The user sets it manually.  
+- c. The key is introduced in version: 26.2.
 
 ## 76. /Crm/Pos/SalesOrderAfterFiscalPrintBehavior
 - a. **Action:** Controls the behavior after a successful fiscal receipt print from a Sales Order – both the document status transition and whether the Sales Order form is closed automatically.<br>
@@ -456,8 +456,8 @@ If you need to analyze the data, you may use Python code.
  `"CompleteAndOpen"` - the Sales Order and its sub-documents are switched to Completed state and the Sales Order form remains open.<br>
  `"KeepReleasedAndClose"`- the Sales Order remains in Released state and the Sales Order form is closed automatically.<br>
  `"KeepReleasedAndOpen"` - the Sales Order remains in Released state and the Sales Order form remains open.
-- b. **The user sets it manually.**  
-- c. **The key is introduced in version:** 
+- b. The user sets it manually. 
+- c. The key is introduced in version: 26.2.
 
 
 ## 77. /Documents/ResetStateOfParentDocument
@@ -466,4 +466,4 @@ If you need to analyze the data, you may use Python code.
   "0" (False) or the key is not defined  - The parent document's state will NOT be reset.<br>
   "1" (True) - The parent document's state will be reset. **(default behavior)** <br>
 - b. The user sets it manually.<br>
-- c. The key is introduced in version: (will be 26.2)
+- c. The key is introduced in version: 26.2.
