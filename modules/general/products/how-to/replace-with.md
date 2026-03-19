@@ -33,18 +33,19 @@ In the next sections, you will see how to use this function in each client.
   
 **3.** Click **Replace with...** in it - the system opens a filtered navigator with the available replacements for the current product;
 
-![picture](pictures/replace_with.png)
+![picture](../../pictures/replace_with.png)
 
 **4.** In the navigator, select the desired product relation;
 
 **5.** Confirm with button **Select** in the lower-right corner.
 
-![picture](pictures/confirm_replacement.png)
+![picture](../../pictures/confirm_replacement.png)
 
 **Result:**
 - The selected replacement product is entered in the **same document line**, replacing the original product. The replacement does not create a new line;
-- The quantity is recalculated in the same line. For example, if **QtyFactor = 2**, the original quantity is multiplied by 2.
+- The quantity is recalculated in the same line. For example, if **QtyFactor = 2**, the original quantity is multiplied by 2;
+- The price is updated.
 
-![picture](pictures/replaced.png)
+![picture](../../pictures/replaced.png)
 
 ## In WEB Client
