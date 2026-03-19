@@ -27,22 +27,22 @@ In the next sections, you will see how to use this function in each client.
 
 ## In Desktop client 
 
-1. Ensure that a product is already entered in the **Product** field of the document line. The function is available only when the field contains a product.
+**1.** Ensure that a product is already entered in the **Product** field of the document line. The function is available only when the field contains a product.
 
-2. Right-click in the **Product** field and reveal the context menu;  
+**2.** Right-click in the **Product** field and reveal the context menu;  
   
-3. Click **Replace with...** in it;
+**3.** Click **Replace with...** in it;
 
-4. The system opens a filtered navigator with the available replacements for the current product.
+**4.** The system opens a filtered navigator with the available replacements for the current product;
 
-5. In the navigator, select the desired product relation.
+**5.** In the navigator, select the desired product relation;
 
-6. Click **Select** in the lower-right corner of the navigator.
+**6.** Click **Select** in the lower-right corner of the navigator;
 
-7.The selected replacement product is entered in the **same document line**, replacing the original product.
+**7.** The selected replacement product is entered in the **same document line**, replacing the original product. The replacement does not create a new line;
 
-8. The quantity is recalculated in the same line. For example, if **QtyFactor = 2**, the original quantity is multiplied by 2.
+**8.** The quantity is recalculated in the same line. For example, if **QtyFactor = 2**, the original quantity is multiplied by 2.
 
-The replacement does **not** create a new document line.
+
 
 ## In WEB Client
