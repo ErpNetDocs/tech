@@ -27,14 +27,12 @@ Linked ToDo tasks are now **visible by default**, whereas previously they were h
 
 ## **4. At VOID - parent document is not auto-reset anymore**
 
-(versions 2026.2.1.60 up to 26.2.1.89)
+_(versions 2026.2.1.60 up to 26.2.1.89)_
 
 When performing **Void** from inside a **document form**, the parameter **`Reset the state of parent document`** is no longer selected by default. This change prevents unnecessary processing. The parameter can still be selected manually if needed.
 
 - This change only applies when Void is executed from the document form.
 - The behavior **remains unchanged** when Void is executed from the **Document Route** or the **Navigator**.
-
-Here is a ready-to-paste revised announcement in English:
 
 ## **5. At VOID - parent document reset default is now configurable**
 
@@ -50,5 +48,5 @@ So in practice:
 26.2.1.90 and later → administrators can choose the behavior for their instance
 This applies to Web Client and Windows Client.
 
-![picture](pictures/general.png)
+![picture](void.png)
 
