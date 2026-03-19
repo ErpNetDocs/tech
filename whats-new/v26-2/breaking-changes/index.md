@@ -36,9 +36,9 @@ When performing **Void** from inside a **document form**, the parameter **`Reset
 
 ## **5. At VOID - parent document reset default is now configurable**
 
-In versions 2026.2 CTP1 (1.60) up to 26.2.1.89, when performing Void from a document form, the parameter Reset state of parent document is not selected by default. This was introduced to prevent unnecessary processing.
+In versions 26.2.1.60 up to 26.2.1.89, when performing Void from a document form, the parameter Reset state of parent document is not selected by default. This was introduced to prevent unnecessary processing.
 
-Starting with 26.2.1.90, this behavior is configurable per instance through the configuration key:/Documents/DefautResetStateOfParentDocument
+Starting with 26.2.1.90, this behavior is configurable per instance through the configuration key:[/Documents/DefautResetStateOfParentDocument](https://docs.erp.net/tech/reference/config-options-reference.html#77-documentsresetstateofparentdocument)
 
 During update to 26.2.1.90, the system creates this key with value 1. This restores the previous default behavior for upgraded instances.
 
