@@ -31,18 +31,20 @@ In the next sections, you will see how to use this function in each client.
 
 **2.** Right-click in the **Product** field and reveal the context menu;  
   
-**3.** Click **Replace with...** in it;
+**3.** Click **Replace with...** in it - the system opens a filtered navigator with the available replacements for the current product;
 
-**4.** The system opens a filtered navigator with the available replacements for the current product;
+![picture](pictures/replace_with.png)
 
-**5.** In the navigator, select the desired product relation;
+**4.** In the navigator, select the desired product relation;
 
-**6.** Click **Select** in the lower-right corner of the navigator;
+**5.** Confirm with button **Select** in the lower-right corner.
 
-**7.** The selected replacement product is entered in the **same document line**, replacing the original product. The replacement does not create a new line;
+![picture](pictures/confirm_replacement.png)
 
-**8.** The quantity is recalculated in the same line. For example, if **QtyFactor = 2**, the original quantity is multiplied by 2.
+**Result:**
+- The selected replacement product is entered in the **same document line**, replacing the original product. The replacement does not create a new line;
+- The quantity is recalculated in the same line. For example, if **QtyFactor = 2**, the original quantity is multiplied by 2.
 
-
+![picture](pictures/replaced.png)
 
 ## In WEB Client
