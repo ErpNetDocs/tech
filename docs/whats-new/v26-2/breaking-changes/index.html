@@ -112,10 +112,12 @@ Numeric enum comparisons may no longer work as expected.</p>
 <p>In versions 2026.2 CTP1 (1.60) up to 26.2.1.89, when performing Void from a document form, the parameter Reset state of parent document is not selected by default. This was introduced to prevent unnecessary processing.</p>
 <p>Starting with 26.2.1.90, this behavior is configurable per instance through the configuration key:/Documents/DefautResetStateOfParentDocument</p>
 <p>During update to 26.2.1.90, the system creates this key with value 1. This restores the previous default behavior for upgraded instances.</p>
-<p>So in practice:</p>
-<p>2026.2 CTP1 (1.60) to 26.2.1.89 → breaking-change behavior 4 applies
-26.2.1.90 and later → administrators can choose the behavior for their instance
-This applies to Web Client and Windows Client.</p>
+<p>So in practice:<br></p>
+<ul>
+<li>26.2.1.60 to 26.2.1.89 → breaking-change behavior №4 applies. <br></li>
+<li>26.2.1.90 and later → administrators can choose the behavior for their instance.</li>
+</ul>
+<p>This applies to Web Client and Windows Client.</p>
 <p><img src="void.png" alt="picture"></p>
 
 </article>
