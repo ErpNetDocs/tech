@@ -23714,6 +23714,16 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "whats-new/v26-2/product-management/pictures/replace_with.png",
+      "output": {
+        "resource": {
+          "relative_path": "whats-new/v26-2/product-management/pictures/replace_with.png"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "whats-new/v26-2/product-management/product-relations/index.md",
       "output": {
