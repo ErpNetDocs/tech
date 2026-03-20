@@ -26,6 +26,6 @@ It helps users select approved substitute products without searching manually an
 
 ![picture](pictures/replace_with.png)
 
-Learn how to use it from [HERE](https://docs.erp.net/tech/modules/general/products/how-to/replace-with.html).
+Learn how to use it [HERE](https://docs.erp.net/tech/modules/general/products/how-to/replace-with.html).
 
 ### 2. Add a related product
