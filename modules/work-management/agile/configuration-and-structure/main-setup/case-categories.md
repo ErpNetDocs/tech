@@ -113,7 +113,7 @@ It also supports a gradual rollout of User States:
 
 ![Category Advanced](pictures/category-advanced.png)
 
-### Specification Template
+### Specification template
 
 Each Case Category can include a specification template — a block of predefined text that is automatically displayed when a new Case of that category is created.  
 This template is defined in the Specification Template field within the Case Category setup.
