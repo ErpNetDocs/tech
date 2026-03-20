@@ -220,7 +220,7 @@ A good rule is:
 
 ---
 
-## Specification Templates
+## Specification templates
 
 When creating a new Case, the **Specification** field may be automatically populated with a predefined **template**, depending on the configuration of the selected Case Category.
 
