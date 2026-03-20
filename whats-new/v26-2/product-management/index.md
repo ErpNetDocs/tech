@@ -24,6 +24,8 @@ ERP.net allows you to replace one product in a document line with another produc
 The function is called **"Replace with..."** and is available in both the Web Client and the Desktop Client.<br>
 It helps users select approved substitute products without searching manually and ensures that only currently valid replacements are offered.
 
+![picture](../../pictures/replace_with.png)
+
 Learn how to use it from [HERE](https://docs.erp.net/tech/modules/general/products/how-to/replace-with.html).
 
 ### 2. Add a related product
