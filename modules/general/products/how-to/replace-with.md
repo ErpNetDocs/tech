@@ -1,4 +1,4 @@
-# How to use function _"Replace with..."_
+# How to use function "Replace with..."
 
 ERP.net allows you to replace _one_ product in a document line with _another_ product that has been defined as a valid **Replacement**. <br>
 The feature is available in both the **Web Client** and the **Desktop Client**. It helps users select approved substitute products without searching manually and ensures that only currently valid replacements are offered.<br>
