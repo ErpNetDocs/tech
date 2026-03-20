@@ -198,3 +198,10 @@ You can still see the original UTC value on hover. Users do not need to change a
 👉 Better user experience with information presented in the context most relevant to each user
 
 ![picture](pictures/localtime.png)
+
+### 13. Product replacement with ["Replace with..."](https://docs.erp.net/tech/whats-new/v26-2/product-management/index.html)
+
+ERP.net allows you to replace one product in a document line with another product that has been defined as a valid Replacement in the Product Relations framework.<br>
+Learn more from the link above.
+
+![picture](pictures/replace_with_web.png)
