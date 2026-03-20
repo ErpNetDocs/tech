@@ -11181,6 +11181,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/general/pictures/confirm_replacement_web.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/pictures/confirm_replacement_web.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/general/pictures/fm1.png",
       "output": {
         "resource": {
@@ -11441,10 +11451,30 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/general/pictures/replace_with_web.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/pictures/replace_with_web.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/general/pictures/replaced.png",
       "output": {
         "resource": {
           "relative_path": "modules/general/pictures/replaced.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/general/pictures/replaced_web.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/pictures/replaced_web.png"
         }
       },
       "version": ""
@@ -11455,6 +11485,16 @@
       "output": {
         ".html": {
           "relative_path": "modules/general/products/coding-systems.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/general/products/confirm_replacement_web.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/products/confirm_replacement_web.png"
         }
       },
       "version": ""
@@ -11640,6 +11680,26 @@
         },
         ".json": {
           "relative_path": "modules/general/products/product-types/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/general/products/replace_with_web.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/products/replace_with_web.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/general/products/replaced_web.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/products/replaced_web.png"
         }
       },
       "version": ""

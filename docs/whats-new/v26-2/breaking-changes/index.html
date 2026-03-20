@@ -87,28 +87,28 @@
         <article data-uid="">
 <h1 id="breaking-changes">Breaking changes</h1>
 
-<h2 id="1-follow-levels-and-notifications-behavior"><strong>1. Follow Levels and Notifications Behavior</strong></h2>
+<h2 id="1-follow-levels-and-notifications-behavior">1. Follow Levels and Notifications Behavior</h2>
 <p>Notifications now depend on the Follow Level of objects. All existing follows have been migrated to TAGGED. As result the app will appear empty after the update.
 In order to have Favorites, you need to mark the objects as such again.<br>
 TAGGED objects deliver chat/comment events only.</p>
 <p>➡️ To continue receiving update or implicit notifications, mark important objects as Follow or Favorite.</p>
 <p><a href="https://docs.erp.net/tech/modules/community/social-interactions/notifications/settings.html#follow-levels-and-notifications-behavior">Details</a></p>
-<h2 id="2-javascript-enum-handling-in-user-business-rules"><strong>2. JavaScript Enum Handling in User Business Rules</strong></h2>
+<h2 id="2-javascript-enum-handling-in-user-business-rules">2. JavaScript Enum Handling in User Business Rules</h2>
 <p>Enum values are now handled as <strong>strings instead of numbers</strong> in JavaScript user business rules.<br>
 Numeric enum comparisons may no longer work as expected.</p>
 <p>➡️ <a href="../user-business-rules/index.html">Details</a></p>
-<h2 id="3-todo-application-shows-all-tasks-now"><strong>3. ToDo application shows all Tasks now</strong></h2>
+<h2 id="3-todo-application-shows-all-tasks-now">3. ToDo application shows all Tasks now</h2>
 <p>The default behavior of the ToDo application has changed.</p>
 <p>Linked ToDo tasks are now <strong>visible by default</strong>, whereas previously they were hidden until explicitly enabled by the user. Users who prefer the previous behavior can disable it using the <a href="https://docs.erp.net/tech/reference/config-options-reference.html#73-todoshowlinked"><strong>/ToDo/ShowLinked</strong> configuration key</a>.</p>
 <p>➡️ <a href="../my-apps/index.html#1--todo-application--change-in-concept-and-default-behavior">Details</a></p>
-<h2 id="4-at-void---parent-document-is-not-auto-reset-anymore"><strong>4. At VOID - parent document is not auto-reset anymore</strong></h2>
+<h2 id="4-at-void---parent-document-is-not-auto-reset-anymore">4. At VOID - parent document is not auto-reset anymore</h2>
 <p><em>(versions 2026.2.1.60 up to 26.2.1.89)</em></p>
 <p>When performing <strong>Void</strong> from inside a <strong>document form</strong>, the parameter <strong><code>Reset the state of parent document</code></strong> is no longer selected by default. This change prevents unnecessary processing. The parameter can still be selected manually if needed.</p>
 <ul>
 <li>This change only applies when Void is executed from the document form.</li>
 <li>The behavior <strong>remains unchanged</strong> when Void is executed from the <strong>Document Route</strong> or the <strong>Navigator</strong>.</li>
 </ul>
-<h2 id="5-at-void---parent-document-reset-default-is-now-configurable"><strong>5. At VOID - parent document reset default is now configurable</strong></h2>
+<h2 id="5-at-void---parent-document-reset-default-is-now-configurable">5. At VOID - parent document reset default is now configurable</h2>
 <p>In versions 26.2.1.60 up to 26.2.1.89, when performing Void from a document form, the parameter Reset state of parent document is not selected by default. This was introduced to prevent unnecessary processing.</p>
 <p>Starting with 26.2.1.90, this behavior is configurable per instance through the configuration key:<a href="https://docs.erp.net/tech/reference/config-options-reference.html#77-documentsresetstateofparentdocument">/Documents/DefautResetStateOfParentDocument</a></p>
 <p>During update to 26.2.1.90, the system creates this key with value 1. This restores the previous default behavior for upgraded instances.</p>
