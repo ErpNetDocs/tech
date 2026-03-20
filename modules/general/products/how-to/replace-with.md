@@ -52,3 +52,21 @@ Finally the product is replaced in the same line, quantity, measurement unit and
 ![picture](../../pictures/replaced.png)
 
 ## In WEB Client
+
+**1.** Ensure that a product is already entered in the **Product** field of the document line.  The function is available only when the field contains a product;
+
+**2.** Right-click the **Product** field to open the context menu;
+
+![picture](../../pictures/replace_with_web.png)
+
+**3.** In the context menu, click **Replace with...**.
+
+**4.** A modal window appears. It contains the valid replacement products
+
+![picture](../../pictures/confirm_replacement-web.png)
+
+**5.** Click the desired replacement product in the modal window.
+
+After selection, the replacement product is immediately substituted in the same line, quantity, measurement unit and price respected.
+
+![picture](../../pictures/replaced_web.png)
