@@ -90,7 +90,7 @@ The system uses the current product as `FromProduct` and lists the valid related
 
 This function is useful when the original product is discontinued, unavailable, or replaced by a newer model.
 
-Learn how to use it from [HERE](https://docs.erp.net/tech/modules/general/products/how-to/replace-with.html).
+Learn how to use it [HERE](https://docs.erp.net/tech/modules/general/products/how-to/replace-with.html).
 
 ### Product addition - _Add related_
 
@@ -100,5 +100,5 @@ The system uses the current product as `FromProduct` and lists the valid related
 
 This function is useful when users need to add complementary or commercially related products during document entry.
 
-Learn how to use it from [HERE](https://docs.erp.net/tech/modules/general/products/how-to/add-related.html)
+Learn how to use it [HERE](https://docs.erp.net/tech/modules/general/products/how-to/add-related.html)
 
