@@ -20,7 +20,7 @@ This brings to the table new features and functions too.
 
 ### 1. Replace a product
 
-ERP.net allows you to replace one product in a document line with another product that has been defined as a valid Replacement by the Product Relations framework.<br>
+ERP.net allows you to replace one product in a document line with another product that has been defined as a valid Replacement in the Product Relations framework.<br>
 The function is called **"Replace with..."** and is available in both the Web Client and the Desktop Client.<br>
 It helps users select approved substitute products without searching manually and ensures that only currently valid replacements are offered.
 
