@@ -232,7 +232,7 @@ This template is meant to guide users in providing a structured, consistent, and
 
 Users are free to edit or replace the template content before saving the Case.
 
-*For setup details, see [Case Categories –> Advanced settings –> Specification Template](../configuration-and-structure/main-setup/case-categories.md#description-template)*
+*For setup details, see [Case Categories –> Advanced settings –> Specification Template](../configuration-and-structure/main-setup/case-categories.md#specification-template)*
 
 ![Template](pictures/case-template-2.png)
 
