@@ -59,13 +59,13 @@ Finally the product is replaced in the same line, quantity, measurement unit and
 
 ![picture](../../pictures/replace_with_web.png)
 
-**3.** In the context menu, click **Replace with...**.
+**3.** In the context menu, click **Replace with...**;
 
-**4.** A modal window appears. It contains the valid replacement products
+**4.** A modal window appears. It contains the valid replacement products;
 
 ![picture](../../pictures/confirm_replacement_web.png)
 
-**5.** Click the desired replacement product in the modal window.
+**5.** Click the desired replacement product in the modal window;
 
 After selection, the replacement product is immediately substituted in the same line, quantity, measurement unit and price respected.
 
