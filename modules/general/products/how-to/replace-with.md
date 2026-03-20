@@ -27,24 +27,24 @@ If the selected replacement relation includes a **QtyFactor**, the quantity in t
 - The price is updated for the new product.
 - The measurement unit is updated for the new product.
 
-Generally speaking - the system treats the replacement product as if it was otiginally input in th eline, but respects the QtyFactor ratio in relation to the original product.
+Generally speaking - the system treats the replacement product as if it were originally in the line, but respects the details from the Relation.
 
 In the next sections, you will see how to use this function in each client.
 
 ## In Desktop client 
 
-**1.** Ensure that a product is already entered in the **Product** field of the document line. The function is available only when the field contains a product.
+   **1.** Ensure that a product is already entered in the **Product** field of the document line. The function is available only when the field contains a product.
 
-**2.** Right-click in the field and reveal the context menu;  
+   **2.** Right-click in the field and reveal the context menu;  
 
 ![picture](../../pictures/replace_with.png)
   
-**3.** Click **"Replace with..."** in it - the system opens a filtered navigator with the available replacements for the current product;
+  **3.** Click **"Replace with..."** in it - the system opens a filtered navigator with the available replacements for the current product;
 
-**4.** In the navigator, select the desired product relation;
+  **4.** In the navigator, select the desired product relation;
+  
+  **5.** Confirm with button **Select** in the lower-right corner.
 
-**5.** Confirm with button **Select** in the lower-right corner.
-.
 ![picture](../../pictures/confirm_replacement.png)
 
 Finally the product is replaced in the same line, quantity, measurement unit and price respected.
