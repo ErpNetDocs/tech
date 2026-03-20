@@ -50,7 +50,6 @@ You can find the configuration here:
 - Web Client: System > Configurations > Setup > Config
 
 > [!WARNING]
-> 
 > Due to the architecture of multilingual strings, the system does not keep track of previous language values. If you change the default language after it has been initially set:
 > - All existing translations will be lost
 > - Current string values will become invalid
