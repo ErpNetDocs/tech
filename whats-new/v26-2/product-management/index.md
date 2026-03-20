@@ -22,13 +22,14 @@ This brings to the table new features and functions too.
 
 ERP.net allows you to replace one product in a document line with another product that has been defined as a valid Replacement in the Product Relations framework.<br>
 The function is called **"Replace with..."** and is available in both the Web Client and the Desktop Client.<br>
-It helps users select approved substitute products without searching manually and ensures that only currently valid replacements are offered.<br>
+It helps users select approved substitute products without searching manually and ensures that only currently valid replacements are offered.
+
 Learn how to use it [HERE](https://docs.erp.net/tech/modules/general/products/how-to/replace-with.html).
 
-Desktop client
+Desktop client:
 ![picture](pictures/replace_with.png)
 
-Web client
+WEB client:
 ![picture](pictures/replace_with_web.png)
 
 ### 2. Add a related product
