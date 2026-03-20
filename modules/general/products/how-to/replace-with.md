@@ -63,7 +63,7 @@ Finally the product is replaced in the same line, quantity, measurement unit and
 
 **4.** A modal window appears. It contains the valid replacement products
 
-![picture](../../pictures/confirm_replacement-web.png)
+![picture](../../pictures/confirm_replacement_web.png)
 
 **5.** Click the desired replacement product in the modal window.
 
