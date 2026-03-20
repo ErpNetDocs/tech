@@ -5,7 +5,7 @@ The @@webclientfull is the web-based user interface of the ERP.net business-mana
 
 ## Other features
 
-### **1. New System-Calculated Attributes: “Total Line Amount” and “Amount To Pay”**
+### 1. New System-Calculated Attributes: “Total Line Amount” and “Amount To Pay
 
 Our latest update introduces two powerful system-calculated attributes — “Total Line Amount” and “Amount To Pay” — for all Invoice and Sales documents.
 
@@ -15,12 +15,12 @@ This improvement streamlines financial verification, enhances accuracy, and save
 ![picture](pictures/pic1.png)
 ![picture](pictures/pic2.png)
 
-### **2. Access to object system information**
+### 2. Access to object system information
 
 System information provides special data for the currently observed object, as its ID for example. It is now easier to access that through the menu, as a side panel System info.
 ![picture](pictures/system_info_panel.png)
 
-### **3. Additional support by the Details panel**
+### 3. Additional support by the Details panel
 
 The Details panel, one of the most frequently used sources of information, has been improved to offer enhanced support when viewing a record.
 
@@ -29,7 +29,7 @@ Now displayed as a side panel, it shows all the details of the currently opened 
 You can now customize the panel to display any fields you choose, not just the default ones. Additionally, if you navigate to another definition within the record, you can easily return to the main record details by clicking the Home icon.
 ![picture](pictures/details-panel.png)
 
-### **4. New time-saver in Line Panels - add multiple lines from Navigator**
+### 4. New time-saver in Line Panels - add multiple lines from Navigator
 
 The next feature serves those who work with line panels like Order Lines, Offer Lines, and others!
 
@@ -56,7 +56,7 @@ Continue in the same way and save the new document.
 
 Try it out next time you’re adding several products — you’ll feel the difference right away!
 
-### **5. Updated Save & Close experience**
+### 5. Updated Save & Close experience
 
 We’ve refined the form command buttons to make saving and closing more predictable, consistent, and harder to do by accident—especially when working fast.
 
@@ -91,7 +91,7 @@ We’ve refined the form command buttons to make saving and closing more predict
 
 Learn how to use these buttons from the dedicated page [Command buttons](https://docs.erp.net/webclient/commands/buttons.html#save)
 
-### **6. Search Enterprise Company and Company Location in the profile menu**
+### 6. Search Enterprise Company and Company Location in the profile menu
 
 Search in Enterprise Company and Company Location is designed to help users quickly find the right company when working with a large number of records. The search field automatically appears when the number of records exceeds 20. Users can enter a search string to instantly narrow down the list. Only matching companies are displayed, making selection faster, easier, and less error-prone.
 
@@ -99,7 +99,7 @@ Use the arrow keys to navigate to the desired result and press Enter, or click w
 
 ![picture](pictures/search.png)
 
-### **7. A modernized look  - same functionality, better experience**
+### 7. A modernized look  - same functionality, better experience
 
 The goal is simple: less visual noise, better focus, and a more contemporary UI/UX experience—without changing the way you work.This modernization focuses entirely on visual clarity and usability. All existing functionality remains intact—now presented in a cleaner, more modern way that supports long work sessions and complex data entry.
 
