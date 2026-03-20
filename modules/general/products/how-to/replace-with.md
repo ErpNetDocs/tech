@@ -29,7 +29,7 @@ In the next sections, you will see how to use this function in each client.
 
 **1.** Ensure that a product is already entered in the **Product** field of the document line. The function is available only when the field contains a product.
 
-**2.** Right-click in the **Product** field and reveal the context menu;  
+**2.** Right-click in the field and reveal the context menu;  
 
 ![picture](../../pictures/replace_with.png)
   
