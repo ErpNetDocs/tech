@@ -4,7 +4,8 @@ WIN Client also undergoes improvements and transformations, although less freque
 ## ⚠️ Breaking Changes
 
 - [At VOID - parent document is not auto-reset anymore](https://docs.erp.net/tech/whats-new/v26-2/breaking-changes/index.html#4-at-void---parent-document-is-not-auto-reset-anymore)
-[- At VOID- parent document reset is now configurable](https://docs.erp.net/tech/whats-new/v26-2/breaking-changes/index.html#5-at-void---parent-document-reset-default-is-now-configurable)
+  
+- [At VOID- parent document reset is now configurable](https://docs.erp.net/tech/whats-new/v26-2/breaking-changes/index.html#5-at-void---parent-document-reset-default-is-now-configurable)
 
 ## Notable features
 
