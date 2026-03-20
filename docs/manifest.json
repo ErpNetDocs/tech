@@ -11171,6 +11171,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/general/pictures/confirm_replacement.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/pictures/confirm_replacement.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/general/pictures/fm1.png",
       "output": {
         "resource": {
@@ -11425,6 +11435,16 @@
       "output": {
         "resource": {
           "relative_path": "modules/general/pictures/replace_with.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/general/pictures/replaced.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/pictures/replaced.png"
         }
       },
       "version": ""

@@ -107,22 +107,25 @@ The relation type that marks the link between the two products as a valid replac
 <li><strong>To Date</strong> must be empty or later than or equal to the current date.</li>
 </ul>
 <p>If the selected replacement relation includes a <strong>QtyFactor</strong>, the quantity in the document line is recalculated automatically when the replacement is performed.</p>
-<p>When a replacement is selected, the original product is substituted with the replacement product, and the quantity is recalculated automatically using the defined QtyFactor.</p>
+<p><strong>As a result:</strong></p>
+<ul>
+<li>The selected replacement product is entered in the <strong>same document line</strong>, replacing the original product. The replacement does not create a new line;</li>
+<li>The quantity is recalculated in the same line - eg. if QtyFactor = 2, the original quantity is multiplied by 2;</li>
+<li>The price is updated for the new product.</li>
+<li>The measurement unit is updated for the new product.</li>
+</ul>
+<p>Generally speaking - the system treats the replacement product as if it was otiginally input in th eline, but respects the QtyFactor ratio in relation to the original product.</p>
 <p>In the next sections, you will see how to use this function in each client.</p>
 <h2 id="in-desktop-client">In Desktop client</h2>
 <p><strong>1.</strong> Ensure that a product is already entered in the <strong>Product</strong> field of the document line. The function is available only when the field contains a product.</p>
-<p><strong>2.</strong> Right-click in the <strong>Product</strong> field and reveal the context menu;</p>
+<p><strong>2.</strong> Right-click in the field and reveal the context menu;</p>
 <p><img src="../../pictures/replace_with.png" alt="picture"></p>
-<p><strong>3.</strong> Click <strong>Replace with...</strong> in it - the system opens a filtered navigator with the available replacements for the current product;</p>
+<p><strong>3.</strong> Click <strong>&quot;Replace with...&quot;</strong> in it - the system opens a filtered navigator with the available replacements for the current product;</p>
 <p><strong>4.</strong> In the navigator, select the desired product relation;</p>
-<p><strong>5.</strong> Confirm with button <strong>Select</strong> in the lower-right corner.</p>
-<p><img src="../../pictures/confirm_replacement.png" alt="picture"></p>
-<p><strong>Result:</strong></p>
-<ul>
-<li>The selected replacement product is entered in the <strong>same document line</strong>, replacing the original product. The replacement does not create a new line;</li>
-<li>The quantity is recalculated in the same line. For example, if <strong>QtyFactor = 2</strong>, the original quantity is multiplied by 2;</li>
-<li>The price is updated.</li>
-</ul>
+<p><strong>5.</strong> Confirm with button <strong>Select</strong> in the lower-right corner.
+.
+<img src="../../pictures/confirm_replacement.png" alt="picture"></p>
+<p>Finally the product is replaced in the same line, quantity, measurement unit and price respected.</p>
 <p><img src="../../pictures/replaced.png" alt="picture"></p>
 <h2 id="in-web-client">In WEB Client</h2>
 
