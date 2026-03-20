@@ -23794,6 +23794,16 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "whats-new/v26-2/product-management/pictures/replace_with_web.png",
+      "output": {
+        "resource": {
+          "relative_path": "whats-new/v26-2/product-management/pictures/replace_with_web.png"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "whats-new/v26-2/product-management/product-relations/index.md",
       "output": {
@@ -23992,6 +24002,16 @@
       "output": {
         "resource": {
           "relative_path": "whats-new/v26-2/web-client/pictures/pic2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "whats-new/v26-2/web-client/pictures/replace_with_web.png",
+      "output": {
+        "resource": {
+          "relative_path": "whats-new/v26-2/web-client/pictures/replace_with_web.png"
         }
       },
       "version": ""
