@@ -51,4 +51,9 @@ We have identified several dark themes in the Desktop Client that contain visual
 
 ![picture](pictures/dark-themes.png)
 
+### **5. Product replacement with ["Replace with..."](https://docs.erp.net/tech/modules/general/products/how-to/replace-with.html) 
 
+ERP.net allows you to replace one product in a document line with another product that has been defined as a valid Replacement in the Product Relations framework.<br>
+Learn more from the link above.
+
+![picture](pictures/replace_with.png)
