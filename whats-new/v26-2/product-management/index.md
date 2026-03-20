@@ -25,8 +25,10 @@ The function is called **"Replace with..."** and is available in both the Web Cl
 It helps users select approved substitute products without searching manually and ensures that only currently valid replacements are offered.<br>
 Learn how to use it [HERE](https://docs.erp.net/tech/modules/general/products/how-to/replace-with.html).
 
+Desktop client
 ![picture](pictures/replace_with.png)
 
+Web client
 ![picture](pictures/replace_with_web.png)
 
 ### 2. Add a related product
