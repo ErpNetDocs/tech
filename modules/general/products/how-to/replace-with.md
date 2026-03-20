@@ -21,7 +21,13 @@ A product can be replaced only when there is an active **Product Relation**  - r
 
 If the selected replacement relation includes a **QtyFactor**, the quantity in the document line is recalculated automatically when the replacement is performed.
 
-When a replacement is selected, the original product is substituted with the replacement product, and the quantity is recalculated automatically using the defined QtyFactor.
+**As a result:**
+- The selected replacement product is entered in the **same document line**, replacing the original product. The replacement does not create a new line;
+- The quantity is recalculated in the same line - eg. if QtyFactor = 2, the original quantity is multiplied by 2;
+- The price is updated for the new product.
+- The measurement unit is updated for the new product.
+
+Generally speaking - the system treats the replacement product as if it was otiginally input in th eline, but respects the QtyFactor ratio in relation to the original product.
 
 In the next sections, you will see how to use this function in each client.
 
@@ -33,18 +39,15 @@ In the next sections, you will see how to use this function in each client.
 
 ![picture](../../pictures/replace_with.png)
   
-**3.** Click **Replace with...** in it - the system opens a filtered navigator with the available replacements for the current product;
+**3.** Click **"Replace with..."** in it - the system opens a filtered navigator with the available replacements for the current product;
 
 **4.** In the navigator, select the desired product relation;
 
 **5.** Confirm with button **Select** in the lower-right corner.
-
+.
 ![picture](../../pictures/confirm_replacement.png)
 
-**Result:**
-- The selected replacement product is entered in the **same document line**, replacing the original product. The replacement does not create a new line;
-- The quantity is recalculated in the same line. For example, if **QtyFactor = 2**, the original quantity is multiplied by 2;
-- The price is updated.
+Finally the product is replaced in the same line, quantity, measurement unit and price respected.
 
 ![picture](../../pictures/replaced.png)
 
