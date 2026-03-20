@@ -5,7 +5,7 @@ This page summarizes the Client Center improvements delivered in v.26.2. It is u
 
 ## Notable features
 
-### **1. Promotional Packages Available in New Order**  
+### 1. Promotional Packages Available in New Order 
 
 Promotional offers are more useful when customers can see and order them directly during self-service, without relying on a sales representative. In v.26.2, Client Center now supports Promotional Packages in [**New Order**](https://docs.erp.net/tech/modules/crm/clientcenter/orders/new-order.html#promotional-packages), bringing the experience closer to desktop sales and making promotional offers visible at the moment of ordering.
 
@@ -19,7 +19,7 @@ Promotional offers are more useful when customers can see and order them directl
 
 ## Other features
 
-### **1. Notes Entry During Order Creation**  
+### 1. Notes Entry During Order Creation 
 
 Small clarifications (delivery instructions, preferences, internal handling details) can make a big difference during fulfillment. In v.26.2, Client Center makes it easier to capture these details and keep them visible throughout the order flow.
 
@@ -34,7 +34,7 @@ Small clarifications (delivery instructions, preferences, internal handling deta
 
    ![Client Center – New Order – Notes (2)](pictures/cc-notes-neworder-2.png)
 
-### **2. Customer-Related Documents in Customer Profile**  
+### 2. Customer-Related Documents in Customer Profile  
 
   Customer documents now have their own dedicated space in Client Center. With the new **Files** panel in **Customer Profile**, external users can easily access and share files—without unnecessary back-and-forth over email.  
 
