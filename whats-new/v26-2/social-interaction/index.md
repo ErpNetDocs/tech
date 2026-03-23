@@ -10,7 +10,7 @@ The **Social Interactions** framework in ERP.net brings team collaboration to li
 
 ## Notable features
 
-### **1. Introducing Follow levels for clearer Favorites and smarter Notifications**
+### 1. Introducing Follow levels for clearer Favorites and smarter Notifications
 
 _(Breaking change)_
 
@@ -38,7 +38,7 @@ Follow levels are personal — different users can follow the same object at dif
 
 ## Other features
 
-### **1. Gallery of uploaded files**
+### 1. Gallery of uploaded files
 
 We’ve added a new Preview option to the Files tab in Social Groups! 🎉
 Now, when you select Preview from the file menu, the file opens in a pop-up window, and below it you’ll see a handy gallery of all uploaded files with thumbnails. 
@@ -47,7 +47,7 @@ This makes it easier to quickly browse and view shared content without downloadi
 
  ![files-preview](pictures/files-preview.png)  
 
-### **2. System comment when a Case is assigned**
+### 2. System comment when a Case is assigned
 
 In our effort to strengthen teamwork and ensure clear announcements, we’ve added a new rule: when a Case is assigned to a group, a system comment and the corresponding notification are automatically generated. This keeps the Case visible to all members and ensures nothing important is missed.
 

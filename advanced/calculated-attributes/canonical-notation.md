@@ -1,34 +1,37 @@
-## Canonical notation
+# Canonical notation
+
+This topic explains how the fields in the calculated attribute header and expression rows are filled and how they are represented in canonical notation.
+
+Canonical notation is the compact form used throughout the calculated attributes documentation to describe calculated attribute definitions.
 
 A calculated attribute definition consists of:
 
 - a header record in **[Systems.Bpm.CalculatedAttributes](xref:Systems.Bpm.CalculatedAttributes)**.
 - one or more expression rows in **[Systems.Bpm.CalculatedAttributeExpressions](xref:Systems.Bpm.CalculatedAttributeExpressions)**.
 
-The header defines the calculated attribute itself.  
-The expression rows define how its value is calculated.
+The header defines the calculated attribute itself, while the expression rows define how its value is calculated.
 
-### Header fields
+## Header fields
 
 | Field | Description |
 | --- | --- |
-| **Repository Name** | The entity type for which the calculated attribute is defined (evaluated per instance). |
-| **Name** | The technical name of the calculated attribute. This name is used when the attribute is referenced in other formulas. |
-| **Caption** | The user-facing name of the attribute. |
-| **Hint** | Additional help text shown in the UI. |
-| **Is Active** | Specifies whether the calculated attribute is active. |
-| **Starting Expression No** | The number of the expression row whose result becomes the value of the calculated attribute. |
-| **Script Language** | Specifies how the attribute is calculated. Supported values are `Integrated` and `JavaScript`. |
-| **Script Text** | JavaScript code used when Script Language is set to `JavaScript`. |
-| **Notes** | Optional internal notes. |
+| **Repository Name** | The entity type for which the calculated attribute is defined (evaluated per instance). *Required* |
+| **Name** | The technical name of the calculated attribute. This name is used when the attribute is referenced in other formulas. *Required* |
+| **Caption** | The user-facing name of the attribute. *Required* |
+| **Hint** | Additional help text shown in the UI. *Optional* |
+| **Is Active** | Specifies whether the calculated attribute is active. *Required* |
+| **Starting Expression No** | The number of the expression row whose result becomes the value of the calculated attribute. *Required* |
+| **Script Language** | Specifies how the attribute is calculated. Supported values are `Integrated` and `JavaScript`. *Required* |
+| **Script Text** | JavaScript code used when Script Language is set to `JavaScript`. *Optional* |
+| **Notes** | Optional internal notes. *Optional* |
 
-### Expression rows
+## Expression rows
 
 When **Script Language** is set to **Integrated**, the calculated attribute is defined by expression rows.
 
 Each row defines one expression in the calculation.
 
-#### Fields
+### Fields
 
 | Field | Description |
 | --- | --- |
@@ -42,9 +45,11 @@ Each row defines one expression in the calculation.
 | **Parameter3 Value** | The value of the third parameter. Its meaning depends on the selected **Parameter3 Type**. |
 | **Notes** | Optional internal notes for the expression row. |
 
-#### Canonical form
+### Canonical form
 
-Each expression row can be written in the following canonical form:
+Throughout the calculated attributes documentation, expression rows are represented in a compact canonical notation.
+
+This notation shows how the values of the row fields are written as a single expression:
 
 ```text
 <ExpressionNo>: <Operator> <Parameter1Type>:<Parameter1Value> <Parameter2Type>:<Parameter2Value> <Parameter3Type>:<Parameter3Value>
@@ -52,9 +57,9 @@ Each expression row can be written in the following canonical form:
 
 If an operator uses fewer than three parameters, the unused parameters are omitted.
 
-### Examples
+## Examples
 
-#### Example 1 - Get a related value
+### Example 1 - Get a related value
 
 Header:
 
@@ -89,7 +94,9 @@ Explanation:
 - `ATTRIB:DefaultPaymentTermDays` specifies the attribute to return.
 - The result of expression `10` becomes the value of the calculated attribute.
 
-#### Example 2 - Chained navigation
+![Customer default payment term days](pictures/customer-default-payment-term-days.png)
+
+### Example 2 - Chained navigation
 
 Header:
 
@@ -125,7 +132,9 @@ Explanation:
 - Line `20` gets the `Name` attribute from the related `ProductType`.
 - The result of line `10` is the final value when **Starting Expression No** is `10`.
 
-### JavaScript
+![Product type name](pictures/product-type-name-int.png)
+
+## JavaScript
 
 When **Script Language** is set to **JavaScript**, the value of the calculated attribute is determined by the contents of **Script Text** field.
 
@@ -164,7 +173,10 @@ Explanation:
 - `subject` is the current object for which the calculated attribute is evaluated.
 - The script gets the related `Product`.
 - Then it gets the related `ProductType`.
-- Finally, it returns the value of the `Name` attribute.
+- Finally, it returns the value of the `Name` attribute from the related `ProductType`.
 - If the script returns `null`, the value of the calculated attribute is `null`.
 
 For more information, see [Scripting in calculated attributes](scripting/index.md).
+
+![Product type name JS](pictures/product-type-name-js.png)
+

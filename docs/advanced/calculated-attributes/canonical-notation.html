@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title> | ERP.net Tech Docs </title>
+      <title>Canonical notation | ERP.net Tech Docs </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content=" | ERP.net Tech Docs ">
+      <meta name="title" content="Canonical notation | ERP.net Tech Docs ">
       
       
       <link rel="icon" href="../../favicon.ico">
@@ -85,16 +85,17 @@
         </div>
 
         <article data-uid="">
+<h1 id="canonical-notation">Canonical notation</h1>
 
-<h2 id="canonical-notation">Canonical notation</h2>
+<p>This topic explains how the fields in the calculated attribute header and expression rows are filled and how they are represented in canonical notation.</p>
+<p>Canonical notation is the compact form used throughout the calculated attributes documentation to describe calculated attribute definitions.</p>
 <p>A calculated attribute definition consists of:</p>
 <ul>
 <li>a header record in <strong><a class="xref" href="https://erpnetdocs.github.io/model/entities/Systems.Bpm.CalculatedAttributes.html">Systems.Bpm.CalculatedAttributes</a></strong>.</li>
 <li>one or more expression rows in <strong><a class="xref" href="https://erpnetdocs.github.io/model/entities/Systems.Bpm.CalculatedAttributeExpressions.html">Systems.Bpm.CalculatedAttributeExpressions</a></strong>.</li>
 </ul>
-<p>The header defines the calculated attribute itself.<br>
-The expression rows define how its value is calculated.</p>
-<h3 id="header">Header</h3>
+<p>The header defines the calculated attribute itself, while the expression rows define how its value is calculated.</p>
+<h2 id="header-fields">Header fields</h2>
 <table>
 <thead>
 <tr>
@@ -105,46 +106,46 @@ The expression rows define how its value is calculated.</p>
 <tbody>
 <tr>
 <td><strong>Repository Name</strong></td>
-<td>The entity type for which the calculated attribute is defined (evaluated per instance).</td>
+<td>The entity type for which the calculated attribute is defined (evaluated per instance). <em>Required</em></td>
 </tr>
 <tr>
 <td><strong>Name</strong></td>
-<td>The technical name of the calculated attribute. This name is used when the attribute is referenced in other formulas.</td>
+<td>The technical name of the calculated attribute. This name is used when the attribute is referenced in other formulas. <em>Required</em></td>
 </tr>
 <tr>
 <td><strong>Caption</strong></td>
-<td>The user-facing name of the attribute.</td>
+<td>The user-facing name of the attribute. <em>Required</em></td>
 </tr>
 <tr>
 <td><strong>Hint</strong></td>
-<td>Additional help text shown in the UI.</td>
+<td>Additional help text shown in the UI. <em>Optional</em></td>
 </tr>
 <tr>
 <td><strong>Is Active</strong></td>
-<td>Specifies whether the calculated attribute is active.</td>
+<td>Specifies whether the calculated attribute is active. <em>Required</em></td>
 </tr>
 <tr>
 <td><strong>Starting Expression No</strong></td>
-<td>The number of the expression row whose result becomes the value of the calculated attribute.</td>
+<td>The number of the expression row whose result becomes the value of the calculated attribute. <em>Required</em></td>
 </tr>
 <tr>
 <td><strong>Script Language</strong></td>
-<td>Specifies how the attribute is calculated. Supported values are <code>Integrated</code> and <code>JavaScript</code>.</td>
+<td>Specifies how the attribute is calculated. Supported values are <code>Integrated</code> and <code>JavaScript</code>. <em>Required</em></td>
 </tr>
 <tr>
 <td><strong>Script Text</strong></td>
-<td>JavaScript code used when <code>ScriptLanguage</code> is set to <code>JavaScript</code>.</td>
+<td>JavaScript code used when Script Language is set to <code>JavaScript</code>. <em>Optional</em></td>
 </tr>
 <tr>
 <td><strong>Notes</strong></td>
-<td>Optional internal notes.</td>
+<td>Optional internal notes. <em>Optional</em></td>
 </tr>
 </tbody>
 </table>
-<h3 id="expression-rows">Expression rows</h3>
+<h2 id="expression-rows">Expression rows</h2>
 <p>When <strong>Script Language</strong> is set to <strong>Integrated</strong>, the calculated attribute is defined by expression rows.</p>
 <p>Each row defines one expression in the calculation.</p>
-<h4 id="fields">Fields</h4>
+<h3 id="fields">Fields</h3>
 <table>
 <thead>
 <tr>
@@ -191,13 +192,14 @@ The expression rows define how its value is calculated.</p>
 </tr>
 </tbody>
 </table>
-<h4 id="canonical-form">Canonical form</h4>
-<p>Each expression row can be written in the following canonical form:</p>
+<h3 id="canonical-form">Canonical form</h3>
+<p>Throughout the calculated attributes documentation, expression rows are represented in a compact canonical notation.</p>
+<p>This notation shows how the values of the row fields are written as a single expression:</p>
 <pre><code class="lang-text">&lt;ExpressionNo&gt;: &lt;Operator&gt; &lt;Parameter1Type&gt;:&lt;Parameter1Value&gt; &lt;Parameter2Type&gt;:&lt;Parameter2Value&gt; &lt;Parameter3Type&gt;:&lt;Parameter3Value&gt;
 </code></pre>
 <p>If an operator uses fewer than three parameters, the unused parameters are omitted.</p>
-<h3 id="examples">Examples</h3>
-<p><strong>Example 1 - Get a related value</strong></p>
+<h2 id="examples">Examples</h2>
+<h3 id="example-1---get-a-related-value">Example 1 - Get a related value</h3>
 <p>Header:</p>
 <table>
 <thead>
@@ -272,6 +274,9 @@ The expression rows define how its value is calculated.</p>
 </tr>
 </tbody>
 </table>
+<p>Canonical notation:</p>
+<pre><code class="lang-text">10: GETOBJVALUE REF:Customer ATTRIB:DefaultPaymentTermDays
+</code></pre>
 <p>Explanation:</p>
 <ul>
 <li><strong>GETOBJVALUE</strong> gets information from a related entity.</li>
@@ -279,8 +284,8 @@ The expression rows define how its value is calculated.</p>
 <li><code>ATTRIB:DefaultPaymentTermDays</code> specifies the attribute to return.</li>
 <li>The result of expression <code>10</code> becomes the value of the calculated attribute.</li>
 </ul>
-<p><strong>Example 2 - Chained navigation</strong></p>
-<h4 id="example-2---chained-navigation">Example 2 - Chained navigation</h4>
+<p><img src="pictures/customer-default-payment-term-days.png" alt="Customer default payment term days"></p>
+<h3 id="example-2---chained-navigation">Example 2 - Chained navigation</h3>
 <p>Header:</p>
 <table>
 <thead>
@@ -365,14 +370,19 @@ The expression rows define how its value is calculated.</p>
 </tr>
 </tbody>
 </table>
+<p>Canonical notation:</p>
+<pre><code class="lang-text">10: GETOBJVALUE REF:Product EXP:20
+20: GETOBJVALUE REF:ProductType ATTRIB:Name
+</code></pre>
 <p>Explanation:</p>
 <ul>
 <li>Line <code>10</code> gets the related <code>Product</code> and applies expression <code>20</code> to it.</li>
 <li>Line <code>20</code> gets the <code>Name</code> attribute from the related <code>ProductType</code>.</li>
 <li>The result of line <code>10</code> is the final value when <strong>Starting Expression No</strong> is <code>10</code>.</li>
 </ul>
-<h3 id="javascript">JavaScript</h3>
-<p>When <strong>Script Language</strong> is set to <strong>JavaScript</strong>, the value of the calculated attribute is determined by the contents of <strong>Script Text</strong>.</p>
+<p><img src="pictures/product-type-name-int.png" alt="Product type name"></p>
+<h2 id="javascript">JavaScript</h2>
+<p>When <strong>Script Language</strong> is set to <strong>JavaScript</strong>, the value of the calculated attribute is determined by the contents of <strong>Script Text</strong> field.</p>
 <p>The script must return the calculated value.</p>
 <p>The following example is equivalent to <strong>Example 2 - Chained navigation</strong>.</p>
 <p>Header:</p>
@@ -406,7 +416,7 @@ The expression rows define how its value is calculated.</p>
 </tr>
 <tr>
 <td><strong>Starting Expression No</strong></td>
-<td></td>
+<td>Not used for JavaScript.</td>
 </tr>
 <tr>
 <td><strong>Script Language</strong></td>
@@ -436,10 +446,11 @@ return product.ProductType.Name;
 <li><code>subject</code> is the current object for which the calculated attribute is evaluated.</li>
 <li>The script gets the related <code>Product</code>.</li>
 <li>Then it gets the related <code>ProductType</code>.</li>
-<li>Finally, it returns the value of the <code>Name</code> attribute.</li>
+<li>Finally, it returns the value of the <code>Name</code> attribute from the related <code>ProductType</code>.</li>
 <li>If the script returns <code>null</code>, the value of the calculated attribute is <code>null</code>.</li>
 </ul>
 <p>For more information, see <a href="scripting/index.html">Scripting in calculated attributes</a>.</p>
+<p><img src="pictures/product-type-name-js.png" alt="Product type name JS"></p>
 
 </article>
 
