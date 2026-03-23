@@ -89,16 +89,16 @@
 
 <p>The CRM module in ERP.net manages the entire customer lifecycle — from the first interaction and opportunity tracking to offers and sales orders — ensuring complete visibility and traceability of all customer-related processes. It streamlines front-office activities, centralizes interactions, and provides a structured flow of documents and actions. With the upcoming improvements, CRM becomes more intuitive, more automated, and easier to use, reducing manual steps and creating a smoother, more efficient experience for both users and customers.</p>
 <h2 id="notable-features">Notable features</h2>
-<h3 id="1-improved-opportunity--offer-flow-customer-field-now-optional"><strong>1. Improved Opportunity → Offer Flow: Customer field now optional</strong></h3>
+<h3 id="1-improved-opportunity--offer-flow-customer-field-now-optional">1. Improved Opportunity → Offer Flow: Customer field now optional</h3>
 <p>When creating an Offer from an Opportunity (via Run → Create Offer), the system no longer requires a pre-existing Customer record. This simplifies the process and removes the need to create a Customer entry prematurely.
 Party information from the Opportunity is automatically transferred to the To Party field, allowing the Offer to be created quickly and efficiently. A formal Customer record is only needed later in the process, once the Offer is approved and moved to Released status.
 This enhancement reduces unnecessary steps, minimizes confusion, and provides a more streamlined experience when working with Opportunities and Offers.</p>
-<h3 id="2-automatic-customer-creation-when-an-offer-is-approved"><strong>2. Automatic Customer Creation When an Offer Is Approved</strong></h3>
+<h3 id="2-automatic-customer-creation-when-an-offer-is-approved">2. Automatic Customer Creation When an Offer Is Approved</h3>
 <p>To streamline the offer approval process, the system now automatically creates a Customer record when an Offer is moved to Released (or directly to Completed) status. The newly created Customer is immediately linked back to the Offer through the Customer field.
 All necessary data for creating the Customer is taken directly from the To Party information in the Offer, eliminating the need for users to manually create a Customer entry.
 This enhancement reduces administrative work, prevents confusion, and ensures a smooth transition from potential client to confirmed customer — all in one seamless step.</p>
 <h2 id="other-features">Other features</h2>
-<h3 id="1-configurable-behavior-after-fiscal-receipt-printing-from-sales-orders"><strong>1. Configurable behavior after fiscal receipt printing from Sales Orders</strong></h3>
+<h3 id="1-configurable-behavior-after-fiscal-receipt-printing-from-sales-orders">1. Configurable behavior after fiscal receipt printing from Sales Orders</h3>
 <p>A new configuration option, <a href="../../../reference/config-options-reference.html#76-crmpossalesorderafterfiscalprintbehavior"><code>/Crm/Pos/SalesOrderAfterFiscalPrintBehavior</code></a>, allows controlling the behavior after a successful fiscal receipt print from the Sales form.</p>
 <p>Depending on the selected value, the Sales Order and its sub-documents can either be completed automatically, or the Sales Order can remain in <strong>Released</strong> status, and the Sales form can either close or remain open.</p>
 <p>If the option is not set, the default behavior is to complete the Sales Order and its sub-documents automatically and close the Sales form.</p>

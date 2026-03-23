@@ -41,6 +41,9 @@ New Order consists of one primary tab - **Order**, but it can be configured to i
 
    ![pictures](pictures/channel_CC_tab.png)
 
+5. **Promotional packages** - This tab shows the promotional packages available for the current customer and order context. For details on how to use it, see [Promotional packages](#promotional-packages). 
+
+
 ### Product info
 
 You can see details about a product if you click on either its **code** or **name**. <br>
@@ -50,6 +53,23 @@ This will trigger the **Product Info** pop-up which contains more information, i
 **Clicking** the picture once will expand it further, hiding the remaining details.
    
 ![pictures](pictures/product_info_details.png)
+
+### Notes
+
+To add additional instructions (e.g. delivery details or preferences) while creating the order, use the **Add Notes** action in the command bar of the **Order** tab.
+
+- When no note is saved yet, the button is labeled **Add Notes**.
+- After a note is saved, the button is labeled **Notes**.
+
+Clicking the button opens a popup where you can enter or edit the note. Use **Save** to store it or **Cancel** to close without changes.
+
+Notes are optional and do not block order creation when left empty.
+
+Notes are stored in [General.Documents.Documents.DocumentNotes](https://docs.erp.net/model/entities/General.Documents.Documents.html#documentnotes).
+
+![Client Center – Add Notes button in New Order](pictures/cc-notes-add-button.png)
+
+![Client Center – Notes popup in New Order](pictures/cc-notes-popup-save.png)
 
 ## Create a new order
 
@@ -81,18 +101,28 @@ To begin, add products to the order. There are several ways to do this:
 
    ![pictures](pictures/quantity_distribution_channel_clientcenter.png)
 
-### Notes
+### Promotional packages
 
-To add additional instructions (e.g. delivery details or preferences) while creating the order, use the **Add Notes** action in the command bar of the **Order** tab.
+The Promotional packages panel in New Order shows the promotional packages available for the current customer and order context.
 
-- When no note is saved yet, the button is labeled **Add Notes**.
-- After a note is saved, the button is labeled **Notes**.
+Only packages that are active, valid for the current date, and applicable to the current order conditions are displayed.
 
-Clicking the button opens a popup where you can enter or edit the note. Use **Save** to store it or **Cancel** to close without changes.
+The panel shows the following fields:
+- Name
+- Code
+- Valid from
+- Valid to
+- Qty
 
-Notes are optional and do not block order creation when left empty.
+To add a promotional package, enter a quantity in the **Qty** field and use **Add prom. pack**. The system then automatically adds the corresponding package lines to the **Order** according to the package definition and pricing conditions.
 
-Notes are stored in [General.Documents.Documents.DocumentNotes](https://docs.erp.net/model/entities/General.Documents.Documents.html#documentnotes).
+Lines added from a promotional package are visually distinguished and cannot be edited manually.
+
+The **Order** panel also includes a **Promotional package** field, which shows which package each added line originates from.
+
+![Client Center – Promotional packages panel](pictures/cc-promotional-packages-panel.png)
+
+![Client Center – Promotional package lines in order](pictures/cc-promotional-packages-order-lines.png)
 
 ### Default store and product availability 
 

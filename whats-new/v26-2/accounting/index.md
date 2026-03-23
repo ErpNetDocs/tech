@@ -2,7 +2,7 @@
 
 ## Notable features
 
-### **1.Transfer Orders: Line-level posting using calculated attributes**
+### 1.Transfer Orders: Line-level posting using calculated attributes
 
 Accounting templates for **Transfer Orders** now support a new **Amount source**:
 
@@ -22,7 +22,7 @@ When this source is selected, the **Amount on** field can reference a **calculat
    - optionally, use **Amount Source Filter** to limit which transfer order lines are included in the posting, for example by **Product Type**
 3. The generated postings can now reflect the distributed amounts per line.
 
-### **2.Enterprise Companies: Close accounting period**
+### 2.Enterprise Companies: Close accounting period
 
 A new UI function, **Close accounting period**, is now available in the definition of each **Enterprise Company** in both the **Web Client** and the **Desktop Client**.
 

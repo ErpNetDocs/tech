@@ -30,20 +30,3 @@ When the **Parent** field is modified, development records are generated not onl
 *For more details on how case hierarchies work and how the **Parent** field influences structure and inheritance, see section [Relationships & hierarchy](relationships-and-hierarchy.md).*
 
 ![Developments On Parent Change](pictures/case-parent-development-update.png)
-
-
-### Description Templates
-
-When creating a new Case, the **Description** field may be automatically populated with a predefined **template**, depending on the configuration of the selected Case Category.
-
-This template is meant to guide users in providing a structured, consistent, and clear description of the Case. It may include:
-
-- Placeholder phrases (e.g., "As a [user], I want to [action], so that [goal]")
-- Formatting guidelines
-- [System variables](/advanced/string-interpolation/system-variables.md)
-
-Users are free to edit or replace the template content before saving the Case.
-
-*For setup details, see [Case Categories –> Advanced settings –> Description Template](../configuration-and-structure/main-setup/case-categories.md#description-template)*
-
-![Template](pictures/case-template.png)

@@ -10,10 +10,8 @@ For an overview, see [Calculated Attributes overview](../../../advanced/calculat
 
 Calculated Attributes now support JavaScript scripts for advanced calculations. See [Scripting in calculated attributes](../../../advanced/calculated-attributes/scripting/index.md).
 
----
-
 ## Other features
 
-### **1. Create a Copy of a Calculated Attribute** 
+### 1. Create a Copy of a Calculated Attribute 
 
 We’ve introduced a new option in the Desktop Client that allows you to [create a copy](https://docs.erp.net/tech/whats-new/v26-2/desktop-client/index.html#2-create-a-copy-of-a-calculated-attribute) of an existing calculated attribute.
