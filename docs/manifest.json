@@ -175,10 +175,10 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "advanced/calculated-attributes/examples/calculate-minets-on-start-time-and-end-time.md",
+      "source_relative_path": "advanced/calculated-attributes/examples/calculate-minute-on-start-time-and-end-time.md",
       "output": {
         ".html": {
-          "relative_path": "advanced/calculated-attributes/examples/calculate-minets-on-start-time-and-end-time.html"
+          "relative_path": "advanced/calculated-attributes/examples/calculate-minute-on-start-time-and-end-time.html"
         }
       },
       "version": ""
@@ -255,6 +255,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/examples/check-whether-the-current-user-is-in-the-manager-group.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/examples/check-whether-the-current-user-is-in-the-manager-group.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "advanced/calculated-attributes/examples/compare-unit-and-standard-unit-price.md",
       "output": {
         ".html": {
@@ -269,6 +279,16 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/examples/convert-property-to-number.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/examples/count-outstanding-invoices-based-on-sales-order-to-party.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/examples/count-outstanding-invoices-based-on-sales-order-to-party.html"
         }
       },
       "version": ""
@@ -339,6 +359,16 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/examples/get-custom-property-from-parent-offer-line.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/examples/get-customer-telephone-based-on-sales-order-customer.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/examples/get-customer-telephone-based-on-sales-order-customer.html"
         }
       },
       "version": ""
@@ -978,6 +1008,36 @@
         },
         ".json": {
           "relative_path": "advanced/calculated-attributes/parameter-types/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "advanced/calculated-attributes/pictures/customer-default-payment-term-days.png",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/calculated-attributes/pictures/customer-default-payment-term-days.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "advanced/calculated-attributes/pictures/product-type-name-int.png",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/calculated-attributes/pictures/product-type-name-int.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "advanced/calculated-attributes/pictures/product-type-name-js.png",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/calculated-attributes/pictures/product-type-name-js.png"
         }
       },
       "version": ""
@@ -5408,6 +5468,46 @@
       "output": {
         "resource": {
           "relative_path": "modules/crm/clientcenter/orders/pictures/cancel_order.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/orders/pictures/cc-notes-add-button.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/orders/pictures/cc-notes-add-button.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/orders/pictures/cc-notes-popup-save.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/orders/pictures/cc-notes-popup-save.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/orders/pictures/cc-promotional-packages-order-lines.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/orders/pictures/cc-promotional-packages-order-lines.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/orders/pictures/cc-promotional-packages-panel.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/orders/pictures/cc-promotional-packages-panel.png"
         }
       },
       "version": ""
@@ -11071,6 +11171,26 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/general/pictures/confirm_replacement.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/pictures/confirm_replacement.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/general/pictures/confirm_replacement_web.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/pictures/confirm_replacement_web.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/general/pictures/fm1.png",
       "output": {
         "resource": {
@@ -11320,11 +11440,61 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "modules/general/pictures/replace_with.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/pictures/replace_with.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/general/pictures/replace_with_web.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/pictures/replace_with_web.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/general/pictures/replaced.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/pictures/replaced.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/general/pictures/replaced_web.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/pictures/replaced_web.png"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "modules/general/products/coding-systems.md",
       "output": {
         ".html": {
           "relative_path": "modules/general/products/coding-systems.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/general/products/confirm_replacement_web.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/products/confirm_replacement_web.png"
         }
       },
       "version": ""
@@ -11510,6 +11680,26 @@
         },
         ".json": {
           "relative_path": "modules/general/products/product-types/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/general/products/replace_with_web.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/products/replace_with_web.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/general/products/replaced_web.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/products/replaced_web.png"
         }
       },
       "version": ""
@@ -22022,10 +22212,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "modules/work-management/agile/cases/pictures/case-template.png",
+      "source_relative_path": "modules/work-management/agile/cases/pictures/case-template-2.png",
       "output": {
         "resource": {
-          "relative_path": "modules/work-management/agile/cases/pictures/case-template.png"
+          "relative_path": "modules/work-management/agile/cases/pictures/case-template-2.png"
         }
       },
       "version": ""
@@ -22568,6 +22758,36 @@
       "output": {
         ".html": {
           "relative_path": "modules/work-management/agile/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/agile/pictures/access-permissions-managers2.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/agile/pictures/access-permissions-managers2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/agile/pictures/access-permissions-website-redesign.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/agile/pictures/access-permissions-website-redesign.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/agile/pictures/error-message.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/agile/pictures/error-message.png"
         }
       },
       "version": ""
@@ -23344,6 +23564,16 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "whats-new/v26-2/breaking-changes/void.png",
+      "output": {
+        "resource": {
+          "relative_path": "whats-new/v26-2/breaking-changes/void.png"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "whats-new/v26-2/calculated-attributes/index.md",
       "output": {
@@ -23359,6 +23589,16 @@
       "output": {
         ".html": {
           "relative_path": "whats-new/v26-2/client-center/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "whats-new/v26-2/client-center/pictures/CC-Documents.png",
+      "output": {
+        "resource": {
+          "relative_path": "whats-new/v26-2/client-center/pictures/CC-Documents.png"
         }
       },
       "version": ""
@@ -23455,20 +23695,20 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "whats-new/v26-2/desktop-client/pictures/VOID.png",
+      "source_relative_path": "whats-new/v26-2/desktop-client/pictures/dark-themes.png",
       "output": {
         "resource": {
-          "relative_path": "whats-new/v26-2/desktop-client/pictures/VOID.png"
+          "relative_path": "whats-new/v26-2/desktop-client/pictures/dark-themes.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "whats-new/v26-2/desktop-client/pictures/dark-themes.png",
+      "source_relative_path": "whats-new/v26-2/desktop-client/pictures/replace_with.png",
       "output": {
         "resource": {
-          "relative_path": "whats-new/v26-2/desktop-client/pictures/dark-themes.png"
+          "relative_path": "whats-new/v26-2/desktop-client/pictures/replace_with.png"
         }
       },
       "version": ""
@@ -23539,6 +23779,26 @@
       "output": {
         "resource": {
           "relative_path": "whats-new/v26-2/product-management/pictures/homepage.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "whats-new/v26-2/product-management/pictures/replace_with.png",
+      "output": {
+        "resource": {
+          "relative_path": "whats-new/v26-2/product-management/pictures/replace_with.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "whats-new/v26-2/product-management/pictures/replace_with_web.png",
+      "output": {
+        "resource": {
+          "relative_path": "whats-new/v26-2/product-management/pictures/replace_with_web.png"
         }
       },
       "version": ""
@@ -23698,6 +23958,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "whats-new/v26-2/web-client/pictures/localtime.png",
+      "output": {
+        "resource": {
+          "relative_path": "whats-new/v26-2/web-client/pictures/localtime.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "whats-new/v26-2/web-client/pictures/modern.png",
       "output": {
         "resource": {
@@ -23732,6 +24002,16 @@
       "output": {
         "resource": {
           "relative_path": "whats-new/v26-2/web-client/pictures/pic2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "whats-new/v26-2/web-client/pictures/replace_with_web.png",
+      "output": {
+        "resource": {
+          "relative_path": "whats-new/v26-2/web-client/pictures/replace_with_web.png"
         }
       },
       "version": ""

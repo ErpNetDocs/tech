@@ -90,11 +90,15 @@ The system uses the current product as `FromProduct` and lists the valid related
 
 This function is useful when the original product is discontinued, unavailable, or replaced by a newer model.
 
+Learn how to use it [HERE](https://docs.erp.net/tech/modules/general/products/how-to/replace-with.html).
+
 ### Product addition - _Add related_
 
 Allows a related product to be added as a **new document row** without modifying the current row.
 
-The system uses the current product as `FromProduct` and lists the valid related products from `ToProduct` for relations of type **Merchandising**. If the selected relation defines a positive `QtyFactor`, the quantity of the new row is calculated based on the quantity in the current row.
+The system uses the current product as `FromProduct` and lists the valid related products from `ToProduct` for relations of type **Merchandise**. If the selected relation defines a positive `QtyFactor`, the quantity of the new row is calculated based on the quantity in the current row.
 
 This function is useful when users need to add complementary or commercially related products during document entry.
+
+Learn how to use it [HERE](https://docs.erp.net/tech/modules/general/products/how-to/add-related.html)
 

@@ -220,6 +220,24 @@ A good rule is:
 
 ---
 
+## Specification templates
+
+When creating a new Case, the **Specification** field may be automatically populated with a predefined **template**, depending on the configuration of the selected Case Category.
+
+This template is meant to guide users in providing a structured, consistent, and clear specification of the Case. It may include:
+
+- Placeholder phrases (e.g., "As a [user], I want to [action], so that [goal]")
+- Formatting guidelines
+- [System variables](/advanced/string-interpolation/system-variables.md)
+
+Users are free to edit or replace the template content before saving the Case.
+
+*For setup details, see [Case Categories –> Advanced settings –> Specification Template](../configuration-and-structure/main-setup/case-categories.md#specification-template)*
+
+![Template](pictures/case-template-2.png)
+
+---
+
 ## Summary
 
 The Specification is the **authoritative definition of the work to be implemented**.

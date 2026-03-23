@@ -113,10 +113,10 @@ It also supports a gradual rollout of User States:
 
 ![Category Advanced](pictures/category-advanced.png)
 
-### Description Template
+### Specification template
 
-Each Case Category can include a description template — a block of predefined text that is automatically displayed when a new Case of that category is created.  
-This template is defined in the Description Template field within the Case Category setup.
+Each Case Category can include a specification template — a block of predefined text that is automatically displayed when a new Case of that category is created.  
+This template is defined in the Specification Template field within the Case Category setup.
 
 The purpose of the template is to help users describe the Case in a structured, unified, and consistent manner.
 
@@ -132,6 +132,6 @@ For a User Story category, the template might include:
 
 **Configuration path:** *Case Category definition → Template panel*<br> 
 *Display panel name:* `Template`<br>
-*System panel name:* `Case Category (Description Template field)`
+*System panel name:* `Case Category (Specification Template field)`
 
 ![Description Template](pictures/category-template.png)

@@ -87,8 +87,55 @@
         <article data-uid="">
 <h1 id="how-to-use-function-replace-with">How to use function &quot;Replace with...&quot;</h1>
 
-<h2 id="within-desktop-client">Within Desktop client</h2>
-<h2 id="within-web-client">Within WEB Client</h2>
+<p>ERP.net allows you to replace <em>one</em> product in a document line with <em>another</em> product that has been defined as a valid <strong>Replacement</strong>. <br>
+The feature is available in both the <strong>Web Client</strong> and the <strong>Desktop Client</strong>. It helps users select approved substitute products without searching manually and ensures that only currently valid replacements are offered.<br></p>
+<p>The product replacement function is executed within a document (an Offer, an Order...) and involves three main elements:</p>
+<ul>
+<li><p><strong>From Product</strong><br>
+The original product in the document line that will be replaced.</p>
+</li>
+<li><p><strong>To Product</strong><br>
+The substitute product that replaces the original product.</p>
+</li>
+<li><p><strong>Product Relation Type</strong> with <strong>System Type = Replacement</strong><br>
+The relation type that marks the link between the two products as a valid replacement relation.</p>
+</li>
+</ul>
+<p>A product can be replaced only when there is an active <strong>Product Relation</strong>  - relation validity period:</p>
+<ul>
+<li><strong>From Date</strong> must be empty or earlier than or equal to the current date.</li>
+<li><strong>To Date</strong> must be empty or later than or equal to the current date.</li>
+</ul>
+<p>If the selected replacement relation includes a <strong>QtyFactor</strong>, the quantity in the document line is recalculated automatically when the replacement is performed.</p>
+<p><strong>As a result:</strong></p>
+<ul>
+<li>The selected replacement product is entered in the <strong>same document line</strong>, replacing the original product. The replacement does not create a new line;</li>
+<li>The quantity is recalculated in the same line - eg. if QtyFactor = 2, the original quantity is multiplied by 2;</li>
+<li>The price is updated for the new product.</li>
+<li>The measurement unit is updated for the new product.</li>
+</ul>
+<p>Generally speaking - the system treats the replacement product as if it were originally in the line, but respects the details from the Relation.</p>
+<p>In the next sections, you will see how to use this function in each client.</p>
+<h2 id="in-desktop-client">In Desktop client</h2>
+<p><strong>1.</strong> Ensure that a product is already entered in the <strong>Product</strong> field of the document line. The function is available only when the field contains a product.</p>
+<p><strong>2.</strong> Right-click in the field and reveal the context menu;</p>
+<p><img src="../../pictures/replace_with.png" alt="picture"></p>
+<p><strong>3.</strong> Click <strong>&quot;Replace with...&quot;</strong> in it - the system opens a filtered navigator with the available replacements for the current product;</p>
+<p><strong>4.</strong> In the navigator, select the desired product relation;</p>
+<p><strong>5.</strong> Confirm with button <strong>Select</strong> in the lower-right corner.</p>
+<p><img src="../../pictures/confirm_replacement.png" alt="picture"></p>
+<p>Finally the product is replaced in the same line, quantity, measurement unit and price respected.</p>
+<p><img src="../../pictures/replaced.png" alt="picture"></p>
+<h2 id="in-web-client">In WEB Client</h2>
+<p><strong>1.</strong> Ensure that a product is already entered in the <strong>Product</strong> field of the document line.  The function is available only when the field contains a product;</p>
+<p><strong>2.</strong> Right-click the <strong>Product</strong> field to open the context menu;</p>
+<p><img src="../../pictures/replace_with_web.png" alt="picture"></p>
+<p><strong>3.</strong> In the context menu, click <strong>Replace with...</strong>;</p>
+<p><strong>4.</strong> A modal window appears. It contains the valid replacement products;</p>
+<p><img src="../../pictures/confirm_replacement_web.png" alt="picture"></p>
+<p><strong>5.</strong> Click the desired replacement product in the modal window;</p>
+<p>After selection, the replacement product is immediately substituted in the same line, quantity, measurement unit and price respected.</p>
+<p><img src="../../pictures/replaced_web.png" alt="picture"></p>
 
 </article>
 

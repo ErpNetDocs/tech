@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Count outstanding invoices based on Sales Order To Party | ERP.net Tech Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Count outstanding invoices based on Sales Order To Party | ERP.net Tech Docs ">
+      
+      
+      <link rel="icon" href="../../../favicon.ico">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/advanced/calculated-attributes/examples/count-outstanding-invoices-based-on-sales-order-to-party.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="count-outstanding-invoices-based-on-sales-order-to-party">Count outstanding invoices based on Sales Order To Party</h1>
+
+<p>This calculated attribute counts how many Payment Balances exist for the party from the current Sales Order (the order’s ToParty), where the remaining amount is greater than 0 (i.e., there is still an outstanding balance).
+If the expression fails for any reason, it returns the constant text &quot;Error&quot;.</p>
+<pre><code>5:   IFERROR EXP:10 EXP:100
+10:  COUNT EXP:20
+20:  SELECT  REPO:Finance.Payments.PaymentBalances EXP:30
+30:  WHERE EXP:40 EXP:70
+40:  EQUAL  ATTRIB:PartyId EXP:50
+50:  GETOBJVALUE INPUT:5 ATTRIB:ToPartyId
+70:  GT EXP:80 EXP:90
+80:  GETVALUE ATTRIB:RemainingAmountValue
+90:  CAST CONST:0 CONST:System.Decimal
+100: GETVALUE CONST:Error
+</code></pre>
+<p><strong>Explanation:</strong></p>
+<p>5 (IFERROR): Returns EXP:10; if an error occurs, returns EXP:100 (the text “Грешка”)<br>
+10 (COUNT): Counts the records returned by EXP:20<br>
+20 (SELECT): Queries the repository Finance.Payments.PaymentBalances<br>
+30 (WHERE): Filters the Payment Balances by two conditions:<br>
+EXP:40 (party match)<br>
+EXP:70 (remaining amount &gt; 0)</p>
+<p><strong>Filter 1: same party as the Sales Order “To Party”</strong><br>
+40 (EQUAL): Keeps balances where PartyId = EXP:50<br>
+(Conceptually: PaymentBalance.Party equals the SalesOrder.ToParty.)<br>
+50 (GETOBJVALUE): Gets the current Sales Order’s ToPartyId from the input object (INPUT:5)</p>
+<p><strong>Filter 2: outstanding amount exists</strong><br>
+70 (GT): Checks RemainingAmountValue &gt; 0<br>
+80 (GETVALUE): Gets RemainingAmountValue (the numeric value of the RemainingAmount)<br>
+90 (CAST): Casts constant 0 to System.Decimal for type-compatible comparison<br>
+100: Returns the constant string &quot;Error&quot; when an error happens</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/calculated-attributes/examples/count-outstanding-invoices-based-on-sales-order-to-party.md/#L1" class="edit-link">Suggest improvement to this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

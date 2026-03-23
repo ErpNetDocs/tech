@@ -4,16 +4,18 @@ WIN Client also undergoes improvements and transformations, although less freque
 ## ⚠️ Breaking Changes
 
 - [At VOID - parent document is not auto-reset anymore](https://docs.erp.net/tech/whats-new/v26-2/breaking-changes/index.html#4-at-void---parent-document-is-not-auto-reset-anymore)
+  
+- [At VOID- parent document reset is now configurable](https://docs.erp.net/tech/whats-new/v26-2/breaking-changes/index.html#5-at-void---parent-document-reset-default-is-now-configurable)
 
 ## Notable features
 
 ## Other features
 
-### **1. Greater control over desktop notifications**
+### 1. Greater control over desktop notifications
 
 Until now, every incoming notification automatically appeared as a blue pop-up balloon, occasionally obstructing part of the screen. With the new configuration option ["AllowNotificationPopups"](https://docs.erp.net/tech/reference/config-options-reference.html#72-allownotificationpopups), this behavior is now fully controllable. The setting is in Settings menu.
 
-### **2. Create a Copy of a Calculated Attribute** 
+### 2. Create a Copy of a Calculated Attribute
 
 We’ve introduced a new option in the Desktop Client that allows you to create a copy of an existing calculated attribute.
 
@@ -23,7 +25,7 @@ This enhancement significantly reduces the effort involved in building similar o
 
 ![picture](pictures/CA.png)
 
-### **3. Save Product group in the view** 
+### 3. Save Product group in the view 
 
 When you select a Product group in a form (e.g. Requisition, panels "Order by list" and "Available products"), the selected value can now be _saved in the form view_. The next time you open the form, the same Product group will be preselected and the product list will already be filtered accordingly.
 
@@ -33,7 +35,7 @@ When you select a Product group in a form (e.g. Requisition, panels "Order by li
 
 ![picture](pictures/PG.png)
 
-### **4. Unsupported dark themes disabled by default**
+### 4. Unsupported dark themes disabled by default
 
 We have identified several dark themes in the Desktop Client that contain visual issues. These themes will not be fixed. Instead, we are introducing a configuration option:
 
@@ -49,13 +51,9 @@ We have identified several dark themes in the Desktop Client that contain visual
 
 ![picture](pictures/dark-themes.png)
 
-### **5. At VOID - parent document is not auto-reset anymore**
+### 5. Product replacement with ["Replace with..."](https://docs.erp.net/tech/whats-new/v26-2/product-management/index.html)
 
-_(Breaking change)_
+ERP.net allows you to replace one product in a document line with another product that has been defined as a valid Replacement in the Product Relations framework.<br>
+Learn more from the link above.
 
-When performing **Void** from inside a **document form**, the parameter **`Reset the state of parent document`** is no longer selected by default. This change prevents unnecessary processing. The parameter can still be selected manually if needed.
-
-- This change only applies when Void is executed from the document form.
-- The behavior **remains unchanged** when Void is executed from the **Document Route** or the **Navigator**.
-
-![picture](pictures/VOID.png)
+![picture](pictures/replace_with.png)

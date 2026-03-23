@@ -90,24 +90,27 @@
 <p>WIN Client also undergoes improvements and transformations, although less frequently. Here are some of the novelties introduced in version 26.2.</p>
 <h2 id="-breaking-changes">⚠️ Breaking Changes</h2>
 <ul>
-<li><a href="https://docs.erp.net/tech/whats-new/v26-2/breaking-changes/index.html#4-at-void---parent-document-is-not-auto-reset-anymore">At VOID - parent document is not auto-reset anymore</a></li>
+<li><p><a href="https://docs.erp.net/tech/whats-new/v26-2/breaking-changes/index.html#4-at-void---parent-document-is-not-auto-reset-anymore">At VOID - parent document is not auto-reset anymore</a></p>
+</li>
+<li><p><a href="https://docs.erp.net/tech/whats-new/v26-2/breaking-changes/index.html#5-at-void---parent-document-reset-default-is-now-configurable">At VOID- parent document reset is now configurable</a></p>
+</li>
 </ul>
 <h2 id="notable-features">Notable features</h2>
 <h2 id="other-features">Other features</h2>
-<h3 id="1-greater-control-over-desktop-notifications"><strong>1. Greater control over desktop notifications</strong></h3>
+<h3 id="1-greater-control-over-desktop-notifications">1. Greater control over desktop notifications</h3>
 <p>Until now, every incoming notification automatically appeared as a blue pop-up balloon, occasionally obstructing part of the screen. With the new configuration option <a href="https://docs.erp.net/tech/reference/config-options-reference.html#72-allownotificationpopups">&quot;AllowNotificationPopups&quot;</a>, this behavior is now fully controllable. The setting is in Settings menu.</p>
-<h3 id="2-create-a-copy-of-a-calculated-attribute"><strong>2. Create a Copy of a Calculated Attribute</strong></h3>
+<h3 id="2-create-a-copy-of-a-calculated-attribute">2. Create a Copy of a Calculated Attribute</h3>
 <p>We’ve introduced a new option in the Desktop Client that allows you to create a copy of an existing calculated attribute.</p>
 <p>This function duplicates the attribute’s parameters and all associated expressions, so you don’t need to recreate complex logic from scratch. After copying, you only need to adjust the Repository and Name and modify any parameters as required for the new purpose.</p>
 <p>This enhancement significantly reduces the effort involved in building similar or identical calculated attributes and helps prevent errors when re-entering complex expressions.</p>
 <p><img src="pictures/CA.png" alt="picture"></p>
-<h3 id="3-save-product-group-in-the-view"><strong>3. Save Product group in the view</strong></h3>
+<h3 id="3-save-product-group-in-the-view">3. Save Product group in the view</h3>
 <p>When you select a Product group in a form (e.g. Requisition, panels &quot;Order by list&quot; and &quot;Available products&quot;), the selected value can now be <em>saved in the form view</em>. The next time you open the form, the same Product group will be preselected and the product list will already be filtered accordingly.</p>
 <p>👉 Saves time when working repeatedly with the same product group <br>
 👉 Reduces repetitive filtering actions<br>
 👉 Improves efficiency when creating new requisitions from scratch</p>
 <p><img src="pictures/PG.png" alt="picture"></p>
-<h3 id="4-unsupported-dark-themes-disabled-by-default"><strong>4. Unsupported dark themes disabled by default</strong></h3>
+<h3 id="4-unsupported-dark-themes-disabled-by-default">4. Unsupported dark themes disabled by default</h3>
 <p>We have identified several dark themes in the Desktop Client that contain visual issues. These themes will not be fixed. Instead, we are introducing a configuration option:</p>
 <p><a href="https://github.com/ErpNetDocs/tech/blob/master/reference/config-options-reference.md#74-useunsupportedthemes">&quot;UseUnsupportedThemes&quot;</a> in Settings menu</p>
 <ul>
@@ -121,14 +124,10 @@ If you still wish to use these themes, you must explicitly enable UseUnsupported
 You must log out and log in again for the change to take effect.</p>
 </div>
 <p><img src="pictures/dark-themes.png" alt="picture"></p>
-<h3 id="5-at-void---parent-document-is-not-auto-reset-anymore"><strong>5. At VOID - parent document is not auto-reset anymore</strong></h3>
-<p><em>(Breaking change)</em></p>
-<p>When performing <strong>Void</strong> from inside a <strong>document form</strong>, the parameter <strong><code>Reset the state of parent document</code></strong> is no longer selected by default. This change prevents unnecessary processing. The parameter can still be selected manually if needed.</p>
-<ul>
-<li>This change only applies when Void is executed from the document form.</li>
-<li>The behavior <strong>remains unchanged</strong> when Void is executed from the <strong>Document Route</strong> or the <strong>Navigator</strong>.</li>
-</ul>
-<p><img src="pictures/VOID.png" alt="picture"></p>
+<h3 id="5-product-replacement-with-replace-with">5. Product replacement with <a href="https://docs.erp.net/tech/whats-new/v26-2/product-management/index.html">&quot;Replace with...&quot;</a></h3>
+<p>ERP.net allows you to replace one product in a document line with another product that has been defined as a valid Replacement in the Product Relations framework.<br>
+Learn more from the link above.</p>
+<p><img src="pictures/replace_with.png" alt="picture"></p>
 
 </article>
 

@@ -3,6 +3,20 @@ The **Work Management** module centralizes the entire work lifecycle—from plan
 
 ## Notable features
 
+### 1. Project-based access control
+
+Agile PM now supports project-level access control through **Access Keys**. This allows sensitive projects to be secured so that only authorized users and groups can access the project and work with the Cases associated with it.
+
+Permissions are configured in the **Access Permissions** side panel of the project form and can control both general project actions (update, delete, administer) and specific Case state transitions. Access to Cases is also filtered by project access, so users without permission to the project's access key cannot see related Cases in the **Cases navigator** or in **Global Search**.
+
+Key benefits include:
+
+- restricted access to sensitive projects and their Cases;
+- per-project control over who can change Cases to specific states;
+- automatic filtering of inaccessible Cases from navigation and search results.
+
+For more information, see [Security](/modules/work-management/agile/security.md).
+
 ## Other features
 
 ### 1. New rule for closing Cases
