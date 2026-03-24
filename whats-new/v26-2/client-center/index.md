@@ -40,7 +40,7 @@ Small clarifications (delivery instructions, preferences, internal handling deta
 
   **Key capabilities:**  
    - View and download files attached to the customer and shared with external users.  
-   - Upload new files directly from Client Center (saved to the customer record).  
+   - Upload new files directly from Client Center. Uploaded files are saved to the customer record and shared with internal and external users..  
    - Available for roles **L40 (Billing)** and above.  
 
    If there are no accessible documents, the panel displays the message **"No documents available."**
