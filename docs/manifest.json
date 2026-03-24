@@ -5957,6 +5957,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/pictures/cc-documents-customer-profile.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/pictures/cc-documents-customer-profile.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/crm/clientcenter/pictures/client_center.png",
       "output": {
         "resource": {
@@ -23639,6 +23649,26 @@
       "output": {
         "resource": {
           "relative_path": "whats-new/v26-2/client-center/pictures/cc-notes-neworder-2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "whats-new/v26-2/client-center/pictures/cc-promotional-packages-order-lines.png",
+      "output": {
+        "resource": {
+          "relative_path": "whats-new/v26-2/client-center/pictures/cc-promotional-packages-order-lines.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "whats-new/v26-2/client-center/pictures/cc-promotional-packages-panel.png",
+      "output": {
+        "resource": {
+          "relative_path": "whats-new/v26-2/client-center/pictures/cc-promotional-packages-panel.png"
         }
       },
       "version": ""
