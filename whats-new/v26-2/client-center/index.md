@@ -39,7 +39,7 @@ Small clarifications (delivery instructions, preferences, internal handling deta
 
 ### 2. Customer-Related Documents in Customer Profile  
 
-  Customer documents now have their own dedicated space in Client Center. With the new **Files** panel in **Customer Profile**, external users can easily access and share files—without unnecessary back-and-forth over email.  
+  Customer documents now have their own dedicated space in Client Center. With the new **Files** panel in [**Customer Profile**](https://docs.erp.net/tech/modules/crm/clientcenter/index.html#customer-profile), external users can easily access and share files—without unnecessary back-and-forth over email.
 
   **Key capabilities:**  
    - View and download files attached to the customer and shared with external users.  
