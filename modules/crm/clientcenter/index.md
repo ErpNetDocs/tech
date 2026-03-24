@@ -58,15 +58,15 @@ It also determines the level of access they have.
 
 ### Customer Profile
 
-This page is where customers can see more information about their registered company, including UIN and VAT number.
+In **Customer Profile**, users can view information about their registered company, including UIN and VAT number.
 
-Users with external role **L40 - Billing** and above can also access a dedicated **Files** panel in **Customer Profile**.
+Users with external role **L40 - Billing** and above can also access a dedicated **Files** panel for customer-related company documents.
 
-The panel shows files attached to the customer record and shared with external users. Customers can:
+The panel shows files attached to the customer record that are available to both internal and external users, such as contracts, annexes, agreements, catalogs, and other company-related documents. Customers can:
 - view and download available files;
 - upload new files directly from Client Center.
 
-Uploaded files are saved to the customer record and shared with internal and external users.
+Uploaded files are saved to the customer record and made available to both internal and external users.
 
 If there are no accessible documents, the panel displays the message **"No documents available."**
 
