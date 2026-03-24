@@ -10,12 +10,39 @@ This section describes how to work with these types in your scripts.
 
 Entities can have user-defined (custom) properties that are accessible via the CustomProperties collection.
 
+You can retrieve or update the value of a custom property using a simple string assignment:
+
 ```js
 // Access the value of a custom property by its code
-var value = subject.CustomProperties['@C1'].Value;
+var currentTier = subject.CustomProperties['CustomerTier'].Value;
 
-// Update the value of a custom property
-subject.CustomProperties['@C1'] = 'New custom value';
+// Update only the value of a custom property
+subject.CustomProperties['CustomerTier'] = 'Platinum';
+```
+
+If you need to update both the value and the description simultaneously, you can instantiate a `CustomPropertyValue` object. For a standard, single-language description, you can simply pass two strings into the constructor:
+
+```js
+// Update both the value and description using standard strings
+var tierProperty = new Domain.Types.CustomPropertyValue('Platinum', 'Highest ranking customer tier');
+subject.CustomProperties['CustomerTier'] = tierProperty;
+```
+
+For advanced scenarios requiring localized descriptions, you can pass a `MultilanguageString` object directly into the `CustomPropertyValue` constructor instead of a plain string:
+
+```js
+// Create a multi-language description for the customer tier
+const localizedDescription = new Domain.Types.MultilanguageString({
+    en: 'Platinum Tier Customer',
+    bg: 'Платинен клиент',
+    fr: 'Client de niveau Platine',
+    es: 'Cliente de nivel Platino',
+    de: 'Platin-Stufe Kunde'
+});
+
+// Assign the value and the multi-language description
+var tierPropertyMultiLang = new Domain.Types.CustomPropertyValue('Platinum', localizedDescription);
+subject.CustomProperties['CustomerTier'] = tierPropertyMultiLang;
 ```
 
 > [!NOTE]
@@ -28,10 +55,12 @@ subject.CustomProperties['@C1'] = 'New custom value';
 
 ```js
 // Create a multilingual string with values for different languages
-var str = new Domain.Types.MultilanguageString({
-    en: 'Hello',
-    bg: 'Здрасти',
-    fr: 'Bonjour'
+var productStatus = new Domain.Types.MultilanguageString({
+    en: 'In Stock',
+    bg: 'В наличност',
+    fr: 'En stock',
+    es: 'En stock',
+    de: 'Auf Lager'
 });
 ```
 
@@ -39,10 +68,10 @@ To retrieve the value for a specific language, use the corresponding language co
 
 ```js
 // Get the value in English
-var englishValue = str['en']; // 'Hello'
+var englishValue = productStatus['en']; // 'In Stock'
 
 // Get the value in Bulgarian
-var bulgarianValue = str['bg']; // 'Здрасти'
+var bulgarianValue = productStatus['bg']; // 'В наличност'
 ```
 
 > [!WARNING]
