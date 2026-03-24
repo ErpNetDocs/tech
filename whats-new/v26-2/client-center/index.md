@@ -44,4 +44,6 @@ Small clarifications (delivery instructions, preferences, internal handling deta
    - Available for roles **L40 (Billing)** and above.  
 
    If there are no accessible documents, the panel displays the message **"No documents available."**
+
+      ![Client Center – Documents in Customer Profile](pictures/CC-Documents.png)
   
