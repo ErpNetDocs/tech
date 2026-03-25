@@ -15,6 +15,14 @@ You can find the following information about each due payment in the table:
 - **Currency** - The currency of the respective amount.
 - **Invoice No** - Number of the invoice document for which there is a due payment. Clicking the invoice number opens the corresponding invoice directly.
 
+### Open invoice
+
+In **Due Payments**, the **Invoice No** field is clickable and opens the corresponding invoice document directly.
+
+This allows users to review invoice details without manually searching for the invoice in the **Invoices** page.
+
+If the invoice is not accessible because of Client Center restrictions, an informative message is displayed instead of a system error.
+
 ### Expanded view
 
 With the Client Center's built-in **[Column Chooser](https://docs.erp.net/tech/modules/crm/clientcenter/grid-control.html#column-chooser)**, you can reveal more information about the payments in the table.
