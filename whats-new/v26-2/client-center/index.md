@@ -59,3 +59,5 @@ When reviewing unpaid obligations, customers often need to inspect the related i
    - Customers can open an invoice directly from the **Invoice No** link in [**Due Payments**](https://docs.erp.net/tech/modules/crm/clientcenter/billing/due-payments.html).
    - Clicking the invoice number opens the same invoice document view available in [**Invoices**](https://docs.erp.net/tech/modules/crm/clientcenter/billing/invoices.html#invoice-document).
    - If the invoice is not accessible because of Client Center restrictions, the system shows an informative message instead of a system error.
+
+![Client Center – Invoice link in Due Payments](pictures/cc-due-payments-invoice-link.png)
