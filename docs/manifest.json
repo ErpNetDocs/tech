@@ -4548,6 +4548,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/billing/pictures/cc-due-payments-invoice-link.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/billing/pictures/cc-due-payments-invoice-link.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/crm/clientcenter/billing/pictures/duepayments_columns.png",
       "output": {
         "resource": {
@@ -5961,6 +5971,16 @@
       "output": {
         "resource": {
           "relative_path": "modules/crm/clientcenter/pictures/cc-documents-customer-profile.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/pictures/cc-due-payments-invoice-link.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/pictures/cc-due-payments-invoice-link.png"
         }
       },
       "version": ""
@@ -23609,6 +23629,16 @@
       "output": {
         "resource": {
           "relative_path": "whats-new/v26-2/client-center/pictures/CC-Documents.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "whats-new/v26-2/client-center/pictures/cc-due-payments-invoice-link.png",
+      "output": {
+        "resource": {
+          "relative_path": "whats-new/v26-2/client-center/pictures/cc-due-payments-invoice-link.png"
         }
       },
       "version": ""
