@@ -167,14 +167,19 @@ var startedAt = Action.session.startedAt;  // ISO 8601 UTC session start time (s
 <p>The <code>Action.http</code> property lets your scripts interact with external web services by sending HTTP requests.</p>
 <p>You can use it to call REST APIs, fetch data, or integrate with other systems.</p>
 <h3 id="sending-http-get-requests">Sending HTTP GET requests</h3>
-<p>Use <code>Action.http.get()</code> to send an HTTP GET request to a specified URL and retrieve the response as a string.</p>
-<pre><code class="lang-js">var response = Action.http.get(&quot;https://api.example.com/status&quot;);
+<p>Use <code>Action.http.get()</code> to send an HTTP GET request to a specified URL and retrieve a detailed <strong>Response</strong> object.</p>
+<pre><code class="lang-js">// Basic GET request
+var response = Action.http.get(&quot;https://api.example.com/status&quot;);
+var body = response.body;
 </code></pre>
 <p>Optionally, you can provide custom headers as a string (e.g., &quot;Authorization: Bearer ...&quot;):</p>
-<pre><code class="lang-js">var response = Action.http.get(&quot;https://api.example.com/status&quot;, &quot;Authorization: Bearer TOKEN&quot;);
+<pre><code class="lang-js">var response = Action.http.get(
+    &quot;https://api.example.com/status&quot;, 
+    &quot;Authorization: Bearer TOKEN&quot;
+);
 </code></pre>
 <h3 id="sending-http-post-requests">Sending HTTP POST requests</h3>
-<p>Use <code>Action.http.post()</code> to send an HTTP POST request with a specified request body.</p>
+<p>Use <code>Action.http.post()</code> to send an HTTP POST request with a specified request body and retrieve a detailed <code>Response</code> object.</p>
 <pre><code class="lang-js">var response = Action.http.post(
     &quot;https://api.example.com/data&quot;,
     &quot;{ 'value': 42 }&quot;
@@ -190,7 +195,8 @@ var startedAt = Action.session.startedAt;  // ISO 8601 UTC session start time (s
 <p>This will send a POST request with both Content-Type and Authorization headers included.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>Always format multiple headers as separate lines within the same string.</p>
+<p>Always format multiple headers as separate lines within the same string.
+The returned object allows you to check <code>isSuccess</code>, <code>statusCode</code>, and the response <code>body</code>.</p>
 </div>
 <h2 id="api-reference">API Reference</h2>
 <h3 id="methods">Methods</h3>
