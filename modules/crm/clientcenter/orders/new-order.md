@@ -158,6 +158,12 @@ To conclude the order, click **Place Order**. You'll be asked to confirm if all 
 
 ![pictures](pictures/place_order_warning.png)
 
+When the user confirms **Place Order**, the order **date** is automatically **updated** to the current date.
+
+If the order is reopened later but not submitted, the date is not changed until the order is placed.
+
+If all order lines are removed and the order is not submitted, the order remains in **New** state and its date is not updated.
+
 Newly created orders are stored on the **[Orders](index.md)** page.
 
 > [!NOTE]
