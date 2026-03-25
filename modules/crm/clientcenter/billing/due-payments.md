@@ -13,7 +13,7 @@ You can find the following information about each due payment in the table:
 - **Ref document date** - The date when the reference document for which there is a due payment was created.
 - **Remaining amount** - The amount due to be paid.
 - **Currency** - The currency of the respective amount.
-- **Invoice No** - Number of the invoice document for which there is a due payment.
+- **Invoice No** - Number of the invoice document for which there is a due payment. Clicking the invoice number opens the corresponding invoice directly.
 
 ### Expanded view
 
