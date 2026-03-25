@@ -63,3 +63,13 @@ When reviewing unpaid obligations, customers often need to inspect the related i
    - If the invoice is not accessible because of Client Center restrictions, the system shows an informative message instead of a system error.
 
 ![Client Center – Invoice link in Due Payments](pictures/cc-due-payments-invoice-link.png)
+
+### **3. Order Date Updated When Placing an Order**  
+
+Orders are sometimes started earlier and completed later, which can lead to confusion if an outdated order date is submitted. In v.26.2, Client Center now updates the order date to the current date when the user places the order from [**New Order**](https://docs.erp.net/tech/modules/crm/clientcenter/orders/new-order.html#confirm-and-place), helping avoid operational mistakes caused by stale dates.
+
+**Key capabilities:**
+
+   - The order date is automatically updated to the current date when the user confirms [**Place Order**](https://docs.erp.net/tech/modules/crm/clientcenter/orders/new-order.html#confirm-and-place).
+   - The date is not changed while the order is still being edited in [**New Order**](https://docs.erp.net/tech/modules/crm/clientcenter/orders/new-order.html#create-a-new-order).
+   - If all order lines are removed and the order is not submitted, the order remains in **New** state and its date is not updated.
