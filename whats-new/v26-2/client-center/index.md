@@ -50,3 +50,12 @@ Small clarifications (delivery instructions, preferences, internal handling deta
 
    ![Client Center – Documents in Customer Profile](pictures/CC-Documents.png)
   
+### **3. Direct Invoice Access from Due Payments**  
+
+When reviewing unpaid obligations, customers often need to inspect the related invoice before taking action. In v.26.2, Client Center makes this easier by allowing direct access to invoice details from [**Due Payments**](https://docs.erp.net/tech/modules/crm/clientcenter/billing/due-payments.html), removing the need to manually search for the invoice in [**Invoices**](https://docs.erp.net/tech/modules/crm/clientcenter/billing/invoices.html).
+
+**Key capabilities:**
+
+   - Customers can open an invoice directly from the **Invoice No** link in [**Due Payments**](https://docs.erp.net/tech/modules/crm/clientcenter/billing/due-payments.html).
+   - Clicking the invoice number opens the same invoice document view available in [**Invoices**](https://docs.erp.net/tech/modules/crm/clientcenter/billing/invoices.html#invoice-document).
+   - If the invoice is not accessible because of Client Center restrictions, the system shows an informative message instead of a system error.
