@@ -23,6 +23,8 @@ This allows users to review invoice details without manually searching for the i
 
 If the invoice is not accessible because of Client Center restrictions, an informative message is displayed instead of a system error.
 
+![Client Center – Invoice link in Due Payments](pictures/cc-due-payments-invoice-link.png)
+
 ### Expanded view
 
 With the Client Center's built-in **[Column Chooser](https://docs.erp.net/tech/modules/crm/clientcenter/grid-control.html#column-chooser)**, you can reveal more information about the payments in the table.
