@@ -95,21 +95,27 @@ var start = Action.session.startedAt;
 
 HTTP request helpers.
 
-##### `Action.http.get(url: string, headers?: string): string`
+##### `Action.http.get(url: string, headers?: string): Response`
 
-Sends an HTTP GET request.
+Sends an HTTP GET request. Returns an `Response` object.
 
 ```js
+// Example 1: Basic GET request
 var response = Action.http.get("https://api.example.com/status");
+if (response.isSuccess) {
+    Action.log("Status is: " + response.body);
+}
+
+// Example 2: GET request with headers
 var response2 = Action.http.get(
   "https://api.example.com/status",
   "Authorization: Bearer TOKEN"
 );
 ```
 
-##### `Action.http.post(url: string, body: string, headers?: string): string`
+##### `Action.http.post(url: string, body: string, headers?: string): Response`
 
-Sends an HTTP POST request with a request body and optional headers.
+Sends an HTTP POST request with a request body and optional headers. Returns an `Response` object.
 
 ```js
 var response = Action.http.post(
@@ -117,19 +123,46 @@ var response = Action.http.post(
   '{ "value": 42 }',
   "Content-Type: application/json\nAuthorization: Bearer TOKEN"
 );
+
+if (response.statusCode == 201) {
+    Action.log("Resource created successfully.");
+}
+```
+
+#### `Response` (Object)
+
+The read-only object returned by `Action.http.get` and `Action.http.post` methods.
+
+| Property        | Type    | Description                                        |
+| --------------- | ------- | -------------------------------------------------- |
+| `isSuccess`     | boolean | `true` if the HTTP status code is in the 2xx range |
+| `statusCode`    | number  | The HTTP status code (e.g., 200, 404, 500)         |
+| `body`          | string  | The response body content                          |
+| `errorMessage`  | string  | Error details if the request failed (e.g. timeout) |
+
+```js
+var response = Action.http.get("https://api.example.com/data");
+
+if (response.isSuccess) {
+    Action.log("Success! Body length: " + response.body.length);
+} else if (response.statusCode == 404) {
+    Action.error("Resource not found.");
+} else {
+    Action.error("Request failed: " + response.errorMessage);
+}
 ```
 
 ---
 
 ### Summary Table
 
-| Property/Method                          | Description                              |
-| ---------------------------------------- | ---------------------------------------- |
-| `Action.log(message)`                    | Log informational message                |
-| `Action.error(message)`                  | Log error message                        |
-| `Action.cancel([message])`               | Cancel script execution                  |
-| `Action.notify.user(userId, message)`    | Send notification to user                |
-| `Action.user`                            | Current user information                 |
-| `Action.session`                         | Current session information              |
-| `Action.http.get(url, [headers])`        | Send HTTP GET request                    |
-| `Action.http.post(url, body, [headers])` | Send HTTP POST request with body/headers |
+| Property/Method                          | Description                                                  |
+| ---------------------------------------- | ------------------------------------------------------------ |
+| `Action.log(message)`                    | Log informational message                                    |
+| `Action.error(message)`                  | Log error message                                            |
+| `Action.cancel([message])`               | Cancel script execution                                      |
+| `Action.notify.user(userId, message)`    | Send notification to user                                    |
+| `Action.user`                            | Current user information                                     |
+| `Action.session`                         | Current session information                                  |
+| `Action.http.get(url, [headers])`        | Send HTTP GET request. Returns `Response`                    |
+| `Action.http.post(url, body, [headers])` | Send HTTP POST request with body/headers. Returns `Response` |

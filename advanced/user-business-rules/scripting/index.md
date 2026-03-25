@@ -7,7 +7,7 @@ erp.topic: scripting
 
 You can embed custom scripts directly in user business rules to automate logic, perform complex validations, or interact with @@name Domain Model.
 
-Scripting dramatically simplifies solutions that previously required complex configuration or workarounds-- such as creating additional Calculated Attributes just to enable a validation or automation. 
+Scripting dramatically simplifies solutions that previously required complex configuration or workarounds-- such as creating additional Calculated Attributes just to enable a validation or automation.
 
 Now, many of these scenarios can be handled more directly and elegantly with just a few lines of script.
 
