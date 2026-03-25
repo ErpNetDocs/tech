@@ -123,21 +123,26 @@ You can use it to call REST APIs, fetch data, or integrate with other systems.
 
 ### Sending HTTP GET requests
 
-Use `Action.http.get()` to send an HTTP GET request to a specified URL and retrieve the response as a string.
+Use `Action.http.get()` to send an HTTP GET request to a specified URL and retrieve a detailed **Response** object.
 
 ```js
+// Basic GET request
 var response = Action.http.get("https://api.example.com/status");
+var body = response.body;
 ```
 
 Optionally, you can provide custom headers as a string (e.g., "Authorization: Bearer ..."):
 
 ```js
-var response = Action.http.get("https://api.example.com/status", "Authorization: Bearer TOKEN");
+var response = Action.http.get(
+    "https://api.example.com/status", 
+    "Authorization: Bearer TOKEN"
+);
 ```
 
 ### Sending HTTP POST requests
 
-Use `Action.http.post()` to send an HTTP POST request with a specified request body.
+Use `Action.http.post()` to send an HTTP POST request with a specified request body and retrieve a detailed `Response` object.
 
 ```js
 var response = Action.http.post(
@@ -155,10 +160,12 @@ var response = Action.http.post(
     "Content-Type: application/json\nAuthorization: Bearer TOKEN"
 );
 ```
+
 This will send a POST request with both Content-Type and Authorization headers included.
 
 > [!NOTE]
 >
 > Always format multiple headers as separate lines within the same string.
+> The returned object allows you to check `isSuccess`, `statusCode`, and the response `body`.
 
 [!include[API Reference](api-reference.md)]
