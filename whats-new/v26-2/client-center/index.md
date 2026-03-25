@@ -20,6 +20,20 @@ Promotional offers are more useful when customers can see and order them directl
 
 ![Client Center – Promotional package lines in order](pictures/cc-promotional-packages-order-lines.png)
 
+### 2. Customer-Related Documents in Customer Profile  
+
+  Customer documents now have their own dedicated space in Client Center. With the new **Files** panel in [**Customer Profile**](https://docs.erp.net/tech/modules/crm/clientcenter/index.html#customer-profile), external users can easily access and share files—without unnecessary back-and-forth over email.
+
+  **Key capabilities:**  
+   - View and download files attached to the customer and shared with external users.  
+   - Upload new files directly from Client Center. Uploaded files are saved to the customer record and shared with internal and external users..  
+   - Available for roles **L40 (Billing)** and above.  
+
+   If there are no accessible documents, the panel displays the message **"No documents available."**
+
+   ![Client Center – Documents in Customer Profile](pictures/CC-Documents.png)
+   
+
 ## Other features
 
 ### 1. Notes Entry During Order Creation 
@@ -37,20 +51,8 @@ Small clarifications (delivery instructions, preferences, internal handling deta
 
    ![Client Center – New Order – Notes (2)](pictures/cc-notes-neworder-2.png)
 
-### 2. Customer-Related Documents in Customer Profile  
-
-  Customer documents now have their own dedicated space in Client Center. With the new **Files** panel in [**Customer Profile**](https://docs.erp.net/tech/modules/crm/clientcenter/index.html#customer-profile), external users can easily access and share files—without unnecessary back-and-forth over email.
-
-  **Key capabilities:**  
-   - View and download files attached to the customer and shared with external users.  
-   - Upload new files directly from Client Center. Uploaded files are saved to the customer record and shared with internal and external users..  
-   - Available for roles **L40 (Billing)** and above.  
-
-   If there are no accessible documents, the panel displays the message **"No documents available."**
-
-   ![Client Center – Documents in Customer Profile](pictures/CC-Documents.png)
   
-### **3. Direct Invoice Access from Due Payments**  
+### **2. Direct Invoice Access from Due Payments**  
 
 When reviewing unpaid obligations, customers often need to inspect the related invoice before taking action. In v.26.2, Client Center makes this easier by allowing direct access to invoice details from [**Due Payments**](https://docs.erp.net/tech/modules/crm/clientcenter/billing/due-payments.html), removing the need to manually search for the invoice in [**Invoices**](https://docs.erp.net/tech/modules/crm/clientcenter/billing/invoices.html).
 
