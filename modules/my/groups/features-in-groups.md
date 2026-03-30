@@ -14,9 +14,6 @@ It offers standard industry features such as message previewing and sending, rea
  
 ## Calendar 
 
-> [!IMPORTANT]
-> **The information and screenshots presented in this chapter are relevant for ERP.net v.26.** 
-
 The Calendar tab enables authorized members to create and view a range of events and meetings visible to the entire group. 
 
 Any group activities you create or participate in will also be reflected in your **[Calendar](https://docs.erp.net/tech/modules/my/calendar.html)**. 
@@ -63,7 +60,7 @@ Any to-dos added or assigned to you will also be visible in your personal Do spa
 
 ![picture](pictures/todo_groups.png) 
 
-### Create a task
+### Create a To-Do task
 
 To create a task click on the circular button with a **+** on it. 
 
@@ -84,6 +81,18 @@ Once the task is completed, click on the radio button next to it to mark it as d
 Tasks also offer various statuses like **New**, In** Progress**, or **Waiting** to indicate their progress.
 
 ![picture](pictures/Groups_task_complete_01_05.png) 
+
+## Cases
+
+[Cases](https://docs.erp.net/tech/modules/work-management/agile/cases/index.html) are accessible directly within Social Groups through a dedicated Cases tab. When opened, the tab displays a grid navigator listing all Cases assigned for attention to that group. Group members can view and access these Cases, enabling them to follow up and work on them within the relevant team context.
+
+![picture](pictures/social-group-cases.png) 
+
+### Create a new Case
+
+Cick on the "+ New "button at the top ribbon and choose a case category. The platform will redirect you to the form of the Case, where you need to fill the applicable data.
+
+Note that the newly created Case will be connected with the Social group, that is set into the Project of the new case, not with the group it is being created through. If the Project does not have any Group, the new case will not be assigned a group too. You will need to choose the Group on purpose, so that the case appears in the grid of tab Cases of the correct Group.
 
 ## Files
 
