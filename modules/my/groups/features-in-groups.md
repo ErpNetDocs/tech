@@ -84,7 +84,7 @@ Tasks also offer various statuses like **New**, In** Progress**, or **Waiting** 
 
 ## Cases
 
-[Cases](https://docs.erp.net/tech/modules/work-management/agile/cases/index.html) are accessible directly within Social Groups through a dedicated Cases tab. When opened, the tab displays a grid navigator listing all Cases assigned for attention to that group. Group members can view and access these Cases, enabling them to follow up and work on them within the relevant team context.
+[Cases](https://docs.erp.net/tech/modules/work-management/agile/cases/collaboration.html) are accessible directly within Social Groups through a dedicated Cases tab. When opened, the tab displays a grid navigator listing all Cases assigned for attention to that group. Group members can view and access these Cases, enabling them to follow up and work on them within the relevant team context.
 
 ![picture](pictures/social-group-cases.png) 
 
