@@ -16,6 +16,6 @@ Here's a brief overview of the features at your disposal:
 
 - [Files](https://docs.erp.net/tech/modules/my/groups/features-in-groups.html#files) - Provides access to uploaded file attachments with options for uploading, downloading, and deleting files.
 
-- [Cases] - Provides access to Cases, connected to the current Group.
+- [Cases](https://docs.erp.net/tech/modules/my/groups/features-in-groups.html#cases) - Provides access to Cases, connected to the current Group.
 
 - [Members](https://docs.erp.net/tech/modules/my/groups/features-in-groups.html#members) - Lists group members and their roles, with Admins having authority over adding, modifying roles, and removing participants.
