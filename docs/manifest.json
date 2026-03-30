@@ -20030,6 +20030,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/my/groups/pictures/social-group-cases.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/groups/pictures/social-group-cases.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/my/groups/pictures/todo_groups.png",
       "output": {
         "resource": {
