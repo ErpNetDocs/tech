@@ -205,3 +205,16 @@ ERP.net allows you to replace one product in a document line with another produc
 Learn more from the link above.
 
 ![picture](pictures/replace_with_web.png)
+
+### 14. Context-aware Timeline widget in forms
+
+In v.26.2, the [Timeline](https://docs.erp.net/webclient/introduction/my-apps/timeline.html) app can now be shown directly inside supported forms as a widget panel, so users can review related activities and documents without leaving the current record.
+
+This makes it easier to follow the history around a customer, supplier, person, lead, opportunity, or document while staying in context. Instead of switching to a separate screen and then filtering again, users can open a form and immediately see the related timeline there.
+
+Key capabilities:
+
+- Add **Timeline** as a widget panel in supported forms.
+- The widget follows the **currently opened record** and refreshes when the context changes.
+- Useful for party-based records, CRM records linked to a party or company, and documents.
+- Supports timeline navigation and multiple time scales such as **Day**, **Month**, and **Quarter**.
