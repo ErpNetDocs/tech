@@ -214,4 +214,4 @@ This makes it easier to follow the history around a customer, supplier, person, 
 
 The widget follows the record that is currently open in the form. When the user opens another record, the timeline refreshes and shows the relevant context for that record.
 
-The embedded Timeline also keeps the familiar navigation experience. Users can move through time, return to **Today**, switch between **Day**, **Month**, and **Quarter**, and use the date picker directly inside the form. The date picker now opens correctly when the Timeline is embedded in a form.
+The embedded Timeline also keeps the familiar navigation experience. Users can move through time, return to **Today**, switch between **Day**, **Month**, and **Quarter**, and use the date picker directly inside the form. 
