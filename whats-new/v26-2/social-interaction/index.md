@@ -56,6 +56,6 @@ This keeps the Case visible to all members and ensures nothing important is miss
 
 ### 3. Immediate access to the announced ToDo/Task
 
-Similarly to Cases, when a Task is associated with a social group, this is announced by a system comment in the chat. Now group members can see it too, for the title fo the Task is a link to it, and opens it wtihin the ToDo app.
+Similarly to Cases, when a Task is associated with a social group, this is announced by a system comment in the chat. Now group members can see its details, because the title of the Task is a link. It opens the Task in the ToDo app.
 
 ![todo-link](pictures/todo-link.png)
