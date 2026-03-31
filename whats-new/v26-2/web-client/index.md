@@ -208,13 +208,10 @@ Learn more from the link above.
 
 ### 14. Context-aware Timeline widget in forms
 
-In v.26.2, the [Timeline](https://docs.erp.net/webclient/introduction/my-apps/timeline.html) app can now be shown directly inside supported forms as a widget panel, so users can review related activities and documents without leaving the current record.
+In v.26.2, the [Timeline](https://docs.erp.net/webclient/introduction/my-apps/timeline.html) app can now be shown directly inside supported forms as a [widget panel](https://docs.erp.net/webclient/introduction/my-apps/index.html#widgets), so users can review related activities and documents without leaving the current record.
 
 This makes it easier to follow the history around a customer, supplier, person, lead, opportunity, or document while staying in context. Instead of switching to a separate screen and then filtering again, users can open a form and immediately see the related timeline there.
 
-Key capabilities:
+The widget follows the record that is currently open in the form. When the user opens another record, the timeline refreshes and shows the relevant context for that record.
 
-- Add **Timeline** as a widget panel in supported forms.
-- The widget follows the **currently opened record** and refreshes when the context changes.
-- Useful for party-based records, CRM records linked to a party or company, and documents.
-- Supports timeline navigation and multiple time scales such as **Day**, **Month**, and **Quarter**.
+The embedded Timeline also keeps the familiar navigation experience. Users can move through time, return to **Today**, switch between **Day**, **Month**, and **Quarter**, and use the date picker directly inside the form. The date picker now opens correctly when the Timeline is embedded in a form.
