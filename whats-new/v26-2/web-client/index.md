@@ -216,4 +216,4 @@ The widget follows the record that is currently open in the form. When the user 
 
 The embedded Timeline also keeps the familiar navigation experience. Users can move through time, return to **Today**, switch between **Day**, **Month**, and **Quarter**, and use the date picker directly inside the form.
 
-![Timeline widget in Customer form](Timeline%20-%20Customer.png)
+![Timeline widget in Customer form](Timeline-Customer.png)
