@@ -24,4 +24,10 @@ For more information, see [Security](/modules/work-management/agile/security.md)
 A Case can be set to CLOSED only if all related Tasks (To-Dos) are COMPLETED. If there are unfinished Tasks, the system will block the action and prompt the user to complete them first.<br>
 This revocable rule helps prevent incomplete work and improves process consistency.
 
+### 2. Notifications for favorite implicit Case followers
 
+Users who follow with level **Favorite** at least one object referenced in a Case header, such as the **Project**, **Project Area**, **Project Milestone**, **Sprint**, **Stakeholder Party** and other referenced objects, can now receive notifications for that Case when **Case Development** records a creation, edit, assignment, or state change. The user who performs the action is excluded.
+
+This helps users stay informed about important Cases related to the objects they are most interested in.
+
+For more information, see [R39543 - Case Developments: Notify All Case Implicit Followers](https://docs.erp.net/model/business-rules/R39543.html).
