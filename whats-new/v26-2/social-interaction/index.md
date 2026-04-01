@@ -54,8 +54,13 @@ This keeps the Case visible to all members and ensures nothing important is miss
 
 ![case_comment](pictures/case_comment.png)
 
-### 3. Immediate access to the announced records
+### 3. Immediate access to announced records
 
-Similarly to Cases, when a Task or an Activity is associated with a social group, this is announced by a system comment in the chat. Now group members can see its details, because the title is a link. Тhe Task opens in the ToDo app. The Activity opens in its form.
+Similarly to Cases, when a Task or an Activity is associated, or a File is uploaded within a Social group, this is announced by a system comment in the chat. 
+
+Now group members can open the related record, because the title is a link. 
+- Тhe Task opens in the ToDo app.
+- The Activity opens in its form.
+- The File opens in the Folders app.
 
 ![todo-link](pictures/todo-link.png)
