@@ -49,13 +49,13 @@ This makes it easier to quickly browse and view shared content without downloadi
 
 ### 2. System comment when a Case is assigned to a group
 
-In our effort to strengthen teamwork and ensure clear announcements, we’ve added a new rule: when a Case is assigned to a group, a system comment and the corresponding notification are automatically generated. More to this, the title of teh Case is a link, so you group members may quickly view it.<br>
+In our effort to strengthen teamwork and ensure clear announcements, we’ve added a new rule: when a Case is assigned to a group, a system comment and the corresponding notification are automatically generated. More to this, the title of the Case is a link, so group members may quickly view it.<br>
 This keeps the Case visible to all members and ensures nothing important is missed.
 
 ![case_comment](pictures/case_comment.png)
 
-### 3. Immediate access to the announced ToDo/Task
+### 3. Immediate access to the announced records
 
-Similarly to Cases, when a Task is associated with a social group, this is announced by a system comment in the chat. Now group members can see its details, because the title of the Task is a link. It opens the Task in the ToDo app.
+Similarly to Cases, when a Task or an Activity is associated with a social group, this is announced by a system comment in the chat. Now group members can see its details, because the title is a link. Тhe Task opens in the ToDo app. The Activity opens in its form.
 
 ![todo-link](pictures/todo-link.png)
