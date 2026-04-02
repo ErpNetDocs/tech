@@ -19,3 +19,5 @@ Here's a brief overview of the features at your disposal:
 - [Cases](https://docs.erp.net/tech/modules/my/groups/features-in-groups.html#cases) - Provides access to Cases, connected to the current Group.
 
 - [Members](https://docs.erp.net/tech/modules/my/groups/features-in-groups.html#members) - Lists group members and their roles, with Admins having authority over adding, modifying roles, and removing participants.
+
+- [Meet](
