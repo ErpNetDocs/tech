@@ -170,6 +170,12 @@ Once you’ve done that click the **Remove participant** button.
 
 ![picture](pictures/Groups_Members_remove_01_05.png)
 
-> [!NOTE]
-> 
-> The screenshot(s) taken for this article are from v.24 and v.26 of the platform.
+## Meet
+
+The Meet feature (Video Conferencing) enables real-time video conferencing directly within the system, allowing users to initiate and participate in online meetings without leaving their working context. It is designed to support immediate communication and collaboration across teams by integrating video meetings into the environments where work is already managed.
+
+Our company has chosen [jaas.8x8.vc](https://jaas.8x8.vc/#/) platform for this feature.
+
+Meet is available within Groups and can also be initiated from business-related records, including Cases, Activities, Service Activities and Marketing Activities.
+
+![picture](pictures/meet-tab.png)
