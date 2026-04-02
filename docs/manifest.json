@@ -20000,6 +20000,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/my/groups/pictures/meet-tab.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/groups/pictures/meet-tab.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/my/groups/pictures/members_groups.png",
       "output": {
         "resource": {
