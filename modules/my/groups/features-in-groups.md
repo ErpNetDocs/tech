@@ -178,4 +178,8 @@ Our company has chosen [jaas.8x8.vc](https://jaas.8x8.vc/#/) platform for this f
 
 Meet is available within Groups and can also be initiated from business-related records, including Cases, Activities, Service Activities and Marketing Activities.
 
+Meetings can also be recorded.
+
 ![picture](pictures/meet-tab.png)
+
+A complete guide on Meet is available [HERE](https://docs.erp.net/webclient/introduction/social/meet.html).
