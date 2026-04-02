@@ -20,4 +20,4 @@ Here's a brief overview of the features at your disposal:
 
 - [Members](https://docs.erp.net/tech/modules/my/groups/features-in-groups.html#members) - Lists group members and their roles, with Admins having authority over adding, modifying roles, and removing participants.
 
-- [Meet](
+- [Meet](groups/features-in-groups.md#meet) - Introduces the video conferencing feature.
