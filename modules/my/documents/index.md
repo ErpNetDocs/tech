@@ -1,4 +1,4 @@
-# Documents
+# My Documents
 
 The Documents screen is designed to centralize and display all documents in @@name that are relevant to a user's account. This includes documents you have created as well as those assigned to you.
 
@@ -168,6 +168,3 @@ You can save a specific configuration of the My Documents page as a **[tile](ht
 Opens the main customization window, allowing you to hide or reveal entire panels and widgets on the screen. 
 
 ![pictures](pictures/documents_customize_page.png)
-
-> [!NOTE]
-> The screenshots taken for this article are from v.26 of the platform.
