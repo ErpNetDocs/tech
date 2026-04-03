@@ -1,4 +1,4 @@
-# Dashboard
+# My Dashboard
 
 The Dashboard is a customizable workspace designed to centralize access to system modules and streamline daily operations. Each element is displayed as a panel (or widget) that can be added, removed, or rearranged to match user preferences.
 
