@@ -1,4 +1,4 @@
-# Timeline
+# My Timeline
 
 The Timeline screen provides a calendar-based chronological view for tracking **activities** and **documents** over extended periods of time. It emphasizes continuity across multiple time spans and offers a linear format, enabling clear visibility of overlapping or consecutive items.
 
