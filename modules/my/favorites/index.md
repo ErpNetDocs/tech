@@ -1,4 +1,4 @@
-# Favorites
+# My Favorites
 
 The **Favorites** screen allows users to build a personalized list of frequently accessed entities within @@name. This includes customers, campaigns, product groups, documents, or any other business entities. By marking items as favorites, you can easily access them from one place and receive notifications about relevant updates or events.
 
@@ -45,8 +45,4 @@ This toggles **edit mode** and displays controls for each favorite item. Click t
 
 ![pictures](pictures/favremove.png)
 
-> [!NOTE]
-> 
-> The screenshots taken for this article are from v26 of the platform.
->
-> Follow the link to learn how to use [Favorites in Web Client](https://docs.erp.net/webclient/introduction/my-apps/favorites/index.html)
+Follow the link to learn how to use [Favorites in Web Client](https://docs.erp.net/webclient/introduction/my-apps/favorites/index.html)
