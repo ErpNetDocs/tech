@@ -4,9 +4,9 @@ Groups, found within the **My** section, serve as a convenient platform for seam
 
 Admins within the platform create groups as needed, facilitating collaboration among individuals within the same company.
 
-## Features 
+## Features
 
-Here's a brief overview of the features at your disposal:
+Here's a brief overview of the [features](https://docs.erp.net/tech/modules/my/groups/features-in-groups.html) at your disposal:
 
 - [Chat](https://docs.erp.net/tech/modules/my/groups/features-in-groups.html#chat) - Enables rapid communication with message previewing, replying, and editing capabilities.
 
@@ -20,4 +20,4 @@ Here's a brief overview of the features at your disposal:
 
 - [Members](https://docs.erp.net/tech/modules/my/groups/features-in-groups.html#members) - Lists group members and their roles, with Admins having authority over adding, modifying roles, and removing participants.
 
-- [Meet](groups/features-in-groups.md#meet) - Introduces the video conferencing feature.
+- [Meet](https://docs.erp.net/tech/modules/my/groups/features-in-groups.html#meet) - Introduces the video conferencing feature.
