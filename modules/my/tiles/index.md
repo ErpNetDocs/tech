@@ -1,4 +1,4 @@
-# Tiles
+# My Tiles
 
 The Tiles screen provides key operational statistics and quick access to a variety of @@name forms and navigators. It allows you to track the number of objects (entities) relevant to your work, such as the count of all customers, sales orders, or specific product categories. 
 
