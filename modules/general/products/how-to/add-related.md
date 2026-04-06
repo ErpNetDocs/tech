@@ -24,7 +24,7 @@ As a **result** of the addition:
 - The selected related product is inserted in the new line, its quantity calculated by the Qty factor;
 - The original product and line details remain unchanged
 
-Generally speaking, the system treats the addition as another document line, but the core is that there is close relation between the products and one leads to another.
+Generally speaking, the system treats the addition as another document line, but the core is that there is close relation between the products and one leads to the another.
 
 Function "Add related" is available for use in the WEB client only.
 
