@@ -11201,6 +11201,66 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/general/pictures/add-related1.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/pictures/add-related1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/general/pictures/add-related2.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/pictures/add-related2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/general/pictures/add-related3.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/pictures/add-related3.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/general/pictures/add-related4.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/pictures/add-related4.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/general/pictures/add-related5.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/pictures/add-related5.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/general/pictures/add-related6.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/pictures/add-related6.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/general/pictures/confirm_replacement.png",
       "output": {
         "resource": {
@@ -23836,6 +23896,16 @@
       "output": {
         ".html": {
           "relative_path": "whats-new/v26-2/product-management/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "whats-new/v26-2/product-management/pictures/add-related1.png",
+      "output": {
+        "resource": {
+          "relative_path": "whats-new/v26-2/product-management/pictures/add-related1.png"
         }
       },
       "version": ""

@@ -87,6 +87,45 @@
         <article data-uid="">
 <h1 id="how-to-use-function-add-related">How to use function &quot;Add related&quot;</h1>
 
+<p>The function allows you to add a related product in a document line based on predefined product relations of type <strong>Merchandising</strong> between the base product and the added product.</p>
+<p>This enables quick addition of complementary or promotional products (e.g., accessories, gifts, add-ons) without manually searching for them. Generally this feature aims at increasing the total amount of the sale or offer.</p>
+<p>Unlike product Replacement, this function does not modify the original product. Instead, it adds a new document line with the selected related product.</p>
+<p>A related product is available only if there is an active product relation, where:</p>
+<ul>
+<li><strong>From Product</strong> is the product in the current document line</li>
+<li><strong>To Product</strong> is the related product</li>
+<li><strong>Product Relation Type</strong> engaging the products is of System Type = <strong>Merchandising</strong></li>
+</ul>
+<p>A product can be referred to as a Merchandise (related) if there is a valid relation in terms of the dates of the relation itself:</p>
+<ul>
+<li><strong>From Date</strong> is empty or earlier than or equal to today</li>
+<li><strong>To Date</strong> is empty or later than or equal to today</li>
+</ul>
+<p>If the relation has a defined <strong>QtyFactor</strong>, it is used to calculate the quantity of the added product, like this: New quantity (ToProduct) = Current quantity (FromProduct) × QtyFactor</p>
+<p>As a <strong>result</strong> of the addition:</p>
+<ul>
+<li>A new document line is added below the current line;</li>
+<li>The selected related product is inserted in the new line, its quantity calculated by the Qty factor;</li>
+<li>The original product and line details remain unchanged</li>
+</ul>
+<p>Generally speaking, the system treats the addition as another document line, but the core is that there is close relation between the products and one leads to the another.</p>
+<p>Function &quot;Add related&quot; is available for use in the WEB client only.</p>
+<p><strong>1.</strong> In the document, click into the Product field in the document line.</p>
+<p>Ensure that the Product field in the current document line contains a product. The option is available only when a product is present in the field.</p>
+<p><strong>2.</strong> Right-click to open the context menu.</p>
+<p><img src="../../pictures/add-related1.png" alt="picture"></p>
+<p><strong>3.</strong> Select &quot;Add related&quot; option - a pop-up window will open.</p>
+<p>The list contains all products, that are linked to the current product and in an active Merchandising relation.</p>
+<p><img src="../../pictures/add-related2.png" alt="picture"></p>
+<p><strong>4.</strong> In the pop-up window click on a desired related product.</p>
+<p>As a result a new ine will be added in the lines panel, containing the related product and respective attributes.</p>
+<p><img src="../../pictures/add-related3.png" alt="picture"></p>
+<p><strong>5.</strong> If you need to add another related product, repeat steps 1 - 4.</p>
+<p><img src="../../pictures/add-related4.png" alt="picture"></p>
+<p>The next related product is added into another line, and the Qty factor is observed (2pcs of product 45050010 are added for 1 set of product 42020005)</p>
+<p><img src="../../pictures/add-related5.png" alt="picture"></p>
+<p><strong>6.</strong> Save the document.</p>
+<p><img src="../../pictures/add-related6.png" alt="picture"></p>
 
 </article>
 
