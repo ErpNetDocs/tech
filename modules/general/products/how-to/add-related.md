@@ -57,3 +57,5 @@ The next related product is added into another line, and the Qty factor is obser
 ![picture](../../pictures/add-related5.png)
 
 6. Save the document.
+
+![picture](../../pictures/add-related6.png)
