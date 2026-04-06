@@ -28,27 +28,27 @@ Generally speaking, the system treats the addition as another document line, but
 
 Function "Add related" is available for use in the WEB client only.
 
-1. In the document, click into the Product field in the document line.
+**1.** In the document, click into the Product field in the document line.
 
 Ensure that the Product field in the current document line contains a product. The option is available only when a product is present in the field.
 
-2. Right-click to open the context menu.
+**2.** Right-click to open the context menu.
 
 ![picture](../../pictures/add-related1.png)
 
-3. Select "Add related" option - a pop-up window will open.
+**3.** Select "Add related" option - a pop-up window will open.
 
 The list contains all products, that are linked to the current product and in an active Merchandising relation.
 
 ![picture](../../pictures/add-related2.png)
 
-4. In the pop-up window click on a desired related product.
+**4.** In the pop-up window click on a desired related product.
    
 As a result a new ine will be added in the lines panel, containing the related product and respective attributes.
 
 ![picture](../../pictures/add-related3.png)
 
-5. If you need to add another related product, repeat steps 1 - 4.
+**5.** If you need to add another related product, repeat steps 1 - 4.
 
 ![picture](../../pictures/add-related4.png)
 
@@ -56,6 +56,6 @@ The next related product is added into another line, and the Qty factor is obser
 
 ![picture](../../pictures/add-related5.png)
 
-6. Save the document.
+**6.** Save the document.
 
 ![picture](../../pictures/add-related6.png)
