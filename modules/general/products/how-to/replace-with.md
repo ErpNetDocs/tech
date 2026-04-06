@@ -11,7 +11,7 @@ The product replacement function is executed within a document (an Offer, an Ord
 - **To Product**  
   The substitute product that replaces the original product.
 
-- **Product Relation Type** with **System Type = Replacement**  
+- **Product Relation Type** with System Type = **Replacement**  
   The relation type that marks the link between the two products as a valid replacement relation.
 
 A product can be replaced only when there is an active **Product Relation**  - relation validity period:
