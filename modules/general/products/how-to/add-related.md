@@ -42,7 +42,7 @@ The list contains all products, that are linked to the current product and in an
 
 ![picture](../../pictures/add-related2.png)
 
-4. In the pop-up window click on a desired related product
+4. In the pop-up window click on a desired related product.
    
 As a result a new ine will be added in the lines panel, containing the related product and respective attributes.
 
@@ -50,8 +50,10 @@ As a result a new ine will be added in the lines panel, containing the related p
 
 5. If you need to add another related product, repeat steps 1 - 4.
 
+![picture](../../pictures/add-related4.png)
+
 The next related product is added into another line, and the Qty factor is observed (2pcs of product 45050010 are added for 1 set of product 42020005)
 
-![picture](../../pictures/add-related4.png)
+![picture](../../pictures/add-related5.png)
 
 6. Save the document.
