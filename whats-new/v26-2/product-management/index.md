@@ -36,8 +36,8 @@ WEB client:
 
 Another way to increase the value of an offer or sale is by adding a related product to the base product.
 
-The ERP.net Web Client introduces the Add related functionality, which utilizes product relations of system type Merchandising. This allows users to easily offer and sell complementary products that are typically purchased together or enhance the main product. Unlike product replacement, this function does not substitute the base product. Instead, it adds a new document line with the selected related product.
+The ERP.net Web Client introduces the **Add related** functionality, which utilizes product relations of system type Merchandising. This allows users to easily offer and sell complementary products that are typically purchased together or enhance the main product. Unlike product replacement, this function does not substitute the base product. Instead, it adds a new document line with the selected related product.
 
 ![picture](pictures/add-related1.png)
 
-Learn hoo to use it [HERE](https://docs.erp.net/tech/modules/general/products/how-to/add-related.html)
+Learn how to use it [HERE](https://docs.erp.net/tech/modules/general/products/how-to/add-related.html)
