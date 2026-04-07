@@ -23952,6 +23952,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "whats-new/v26-2/security/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "whats-new/v26-2/security/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "whats-new/v26-2/social-interaction/index.md",
       "output": {
         ".html": {
