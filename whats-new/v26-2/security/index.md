@@ -4,7 +4,7 @@
 
 ## Other features
 
-**1.** System tweaks at User creation
+### 1. System tweaks at User creation
 Through a series of [business rules](https://docs.erp.net/model/entities/Systems.Security.Users.html#business-rules) we have introduced several improvements in **user creation and maintenance** to streamline data entry and ensure consistent defaults.
 
 These changes aim to:
