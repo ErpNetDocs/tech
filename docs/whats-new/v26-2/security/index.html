@@ -89,7 +89,34 @@
 
 <h2 id="notable-features">Notable features</h2>
 <h2 id="other-features">Other features</h2>
-<p><strong>1.</strong> System tweaks at User creation</p>
+<p><strong>1.</strong> System tweaks at User creation
+Through a series of <a href="https://docs.erp.net/model/entities/Systems.Security.Users.html#business-rules">business rules</a> we have introduced several improvements in <strong>user creation and maintenance</strong> to streamline data entry and ensure consistent defaults.</p>
+<p>These changes aim to:</p>
+<ul>
+<li>reduce manual input</li>
+<li>improve consistency</li>
+<li>provide sensible defaults while preserving user control</li>
+</ul>
+<p>➡️ Email → Login auto-fill<br>
+When <strong>Email</strong> is populated, the <strong>Login</strong> field is automatically filled with the same value.</p>
+<ul>
+<li>This applies only if <strong>Login is empty</strong>.</li>
+<li>Once a value exists in Login, it is <strong>not affected</strong> by further changes to Email.</li>
+</ul>
+<p>➡️ Person → Name synchronization <br>
+When a <strong>Person</strong> is selected, the <strong>Name</strong> field is automatically populated.</p>
+<ul>
+<li>If Person is changed → <strong>Name is updated accordingly</strong>.</li>
+<li>If Person is cleared → <strong>Name is also cleared</strong> (and validation will require it again on save).</li>
+</ul>
+<p>➡️ Default Language initialization (R39700-3) -This rule applies <strong>only on insert</strong><br>
+On <strong>user creation</strong>, <code>DefaultLanguage</code> is automatically set:</p>
+<ul>
+<li>First from the <strong>system configuration (Default language)</strong>.</li>
+<li>If not defined → from the <strong>current language of the user creating the record</strong>.</li>
+<li>If <code>DefaultLanguage</code> is later cleared, it is <strong>not re-populated automatically</strong>. In this case, the system uses <strong>English as an implicit fallback</strong>.</li>
+</ul>
+<p><img src="user.png" alt="picture"></p>
 
 </article>
 
