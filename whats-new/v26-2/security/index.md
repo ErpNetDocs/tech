@@ -28,4 +28,4 @@ On **user creation**, `DefaultLanguage` is automatically set:
   - If not defined → from the **current language of the user creating the record**.
   - If `DefaultLanguage` is later cleared, it is **not re-populated automatically**. In this case, the system uses **English as an implicit fallback**.
 
-
+![picture](user.png)
