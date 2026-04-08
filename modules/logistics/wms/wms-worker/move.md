@@ -47,3 +47,7 @@ You can toggle between the two modes by clicking the radio buttons or directly i
 If you move several products at the same time, they will all be transferred to the same place. If you want to transfer them to different places, they must be moved separately.
 
 Press the **Move** button to continue, set the destination, and press **Finish** to complete the operation.
+
+## Next move operation
+
+Once completed, WMS Worker is immediately ready to perform the next move operation.
