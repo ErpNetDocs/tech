@@ -29,3 +29,17 @@ On **user creation**, `DefaultLanguage` is automatically set:
   - If `DefaultLanguage` is later cleared, it is **not re-populated automatically**. In this case, the system uses **English as an implicit fallback**.
 
 ![picture](user.png)
+
+### 2. Different single-form layouts per User Type
+
+ERP.net now supports different single-form layouts for Users based on User Type. This means administrators with layout administration permissions can configure the User form differently for each user type, and save those layouts for shared use. Once saved, the appropriate layout is applied when working with users of the same type.
+
+This makes it easier to present only the fields and sections that are relevant for each type of user, without one layout affecting all others.
+
+This enhancement also establishes the same principle for scenarios where the layout category is based on a system-defined enum value.
+
+![picture](internal-user.png)
+
+VS
+
+![picture](external-user.png)
