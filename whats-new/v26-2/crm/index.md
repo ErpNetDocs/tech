@@ -45,4 +45,4 @@ If no eligible payments are available, the **Print (F7)** button is disabled.
 
 This reduces navigation between documents, makes the fiscal printing flow faster, and helps users clearly see what will be printed before starting the operation.
 
-For more information, see [Print on fiscal devices](/winclient/country-specific/bulgaria/print-on-fiscal-devices/print-on-fiscal-device.md).
+For more information, see [Print on fiscal devices](~/winclient/country-specific/bulgaria/print-on-fiscal-devices/print-on-fiscal-device.md).
