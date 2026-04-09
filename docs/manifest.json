@@ -23962,6 +23962,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "whats-new/v26-2/security/user-layouts.png",
+      "output": {
+        "resource": {
+          "relative_path": "whats-new/v26-2/security/user-layouts.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "whats-new/v26-2/security/user.png",
       "output": {
         "resource": {
