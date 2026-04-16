@@ -1,4 +1,4 @@
-## Planned Reconcile – Step-by-Step Guide
+## Step-by-Step Guide
 
 ### Step 1: Create a new Warehouse Reconciliation document
 
