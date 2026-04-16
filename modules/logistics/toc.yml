@@ -18,4 +18,6 @@
 - name: Planning
   href: planning/toc.yml
   topicHref: planning/index.md
-  
+- name: Planned Reconcile
+  href: planned-reconcile/toc.yml
+  topicHref: planned-reconcile/index.md  
