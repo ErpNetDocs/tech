@@ -105,8 +105,8 @@ This enhancement reduces administrative work, prevents confusion, and ensures a 
 <p>This provides more flexibility in POS scenarios by allowing organizations to choose whether the sales process should be completed automatically or remain available for subsequent processing, and whether the Sales form should close or remain open after fiscal printing.</p>
 <h3 id="2-print-fiscal-receipts-directly-from-invoices">2. Print fiscal receipts directly from Invoices</h3>
 <p>Invoices can now be used directly for fiscal receipt printing through the <strong>Print on fiscal printer</strong> panel.</p>
-<p>When the panel is included in the Invoice form layout and the system finds eligible linked payment transactions, it shows the payment that will be used for printing, together with its payment type and amount.</p>
-<p>Eligible payments are invoice-linked payment transactions that are not voided, are in state <strong>Planned</strong> or higher, are in the enterprise company base currency, and have not already been printed.</p>
+<p>When the panel is included in the Invoice form layout and the system finds eligible linked payment transactions, it shows the payment that will be used for printing, together with its due start date, due date, payment type and amount.</p>
+<p>Eligible payments are invoice-linked payment transactions that are not voided, are in state <strong>Planned</strong> or <strong>Released</strong>, are in the enterprise company base currency, and have not already been printed.</p>
 <p>If multiple eligible payment transactions are available, users can switch between them and select which one to print.</p>
 <p>After a successful fiscal print, the form refreshes automatically and shows the next available payment (if any).</p>
 <p>If no eligible payments are available, the <strong>Print (F7)</strong> button is disabled.</p>
