@@ -33,9 +33,9 @@ This provides more flexibility in POS scenarios by allowing organizations to cho
 
 Invoices can now be used directly for fiscal receipt printing through the **Print on fiscal printer** panel.
 
-When the panel is included in the Invoice form layout and the system finds eligible linked payment transactions, it shows the payment that will be used for printing, together with its payment type and amount.
+When the panel is included in the Invoice form layout and the system finds eligible linked payment transactions, it shows the payment that will be used for printing, together with its due start date, due date, payment type and amount.
 
-Eligible payments are invoice-linked payment transactions that are not voided, are in state **Planned** or higher, are in the enterprise company base currency, and have not already been printed.
+Eligible payments are invoice-linked payment transactions that are not voided, are in state **Planned** or **Released**, are in the enterprise company base currency, and have not already been printed.
 
 If multiple eligible payment transactions are available, users can switch between them and select which one to print. 
 
