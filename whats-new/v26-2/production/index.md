@@ -14,5 +14,7 @@ It follows the same logic as the existing Create completing output order functio
 This enables more efficient bulk processing of work orders from the user interface or through API integrations.
 
 ![Web Completing Output Order](pictures/web-completing-output-order.png)
+
 ![Web Completing Output Order Bulk](pictures/web-bulk-completing-output-order.png)
+
 ![Desktop Completing Output Order Bulk](pictures/desktop-bulk-completing-output-order.png)
