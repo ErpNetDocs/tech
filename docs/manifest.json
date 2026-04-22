@@ -23985,6 +23985,46 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "whats-new/v26-2/production/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "whats-new/v26-2/production/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "whats-new/v26-2/production/pictures/desktop-bulk-completing-output-order.png",
+      "output": {
+        "resource": {
+          "relative_path": "whats-new/v26-2/production/pictures/desktop-bulk-completing-output-order.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "whats-new/v26-2/production/pictures/web-bulk-completing-output-order.png",
+      "output": {
+        "resource": {
+          "relative_path": "whats-new/v26-2/production/pictures/web-bulk-completing-output-order.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "whats-new/v26-2/production/pictures/web-completing-output-order.png",
+      "output": {
+        "resource": {
+          "relative_path": "whats-new/v26-2/production/pictures/web-completing-output-order.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "whats-new/v26-2/security/index.md",
       "output": {
         ".html": {
