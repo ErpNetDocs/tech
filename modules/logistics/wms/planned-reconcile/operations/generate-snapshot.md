@@ -130,4 +130,4 @@ After **Generate Snapshot** is completed:
 > [!NOTE]
 > Because the snapshot captures the expected warehouse availability at a specific moment, the selected scope should remain free from warehouse movements after the snapshot is generated and before the counting process is completed.
 
-The next operation is usually [Initial Count](#initial-count). In targeted scenarios, users can continue directly with [Recount (Single Order)](#recount-single-order).
+The next operation is usually Initial Count. In targeted scenarios, users can continue directly with Recount (Single Order).
