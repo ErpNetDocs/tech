@@ -109,4 +109,18 @@ After **Initial Count** is completed:
 
 From a user perspective, this is the point where the reconciliation moves from preparation into execution on the warehouse floor.
 
-The next operation is usually to execute the generated count orders in **WMS Worker**. After the first counting pass is completed, the process continues with review and, if needed, 
+### What changes in the reconciliation details
+
+After **Initial Count** generates the first count orders, the included reconciliation rows enter the first counting session.
+
+For these rows:
+
+- **Session** becomes **1**
+- **ReviewStatus** becomes **Started**
+
+This marks them as active rows in the first counting cycle.
+
+> [!NOTE]
+> For an overview of how **Session** and **ReviewStatus** change throughout the process, see [Sessions and review statuses](sessions-and-review-statuses.md).
+
+The next operation is usually [Execute count orders in WMS Worker](execute-count-orders-in-wms-worker.md).
