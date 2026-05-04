@@ -130,4 +130,16 @@ After **Generate Snapshot** is completed:
 > [!NOTE]
 > Because the snapshot captures the expected warehouse availability at a specific moment, the selected scope should remain free from warehouse movements after the snapshot is generated and before the counting process is completed.
 
-The next operation is usually Initial Count. In targeted scenarios, users can continue directly with Recount (Single Order).
+### What changes in the reconciliation details
+
+When **Generate Snapshot** creates the reconciliation details, each new row starts with:
+
+- **Session = 0**
+- **ReviewStatus = Created**
+
+This marks the row as part of the generated snapshot, before any counting session has started.
+
+> [!NOTE]
+> For an overview of how **Session** and **ReviewStatus** change throughout the process, see [Sessions and review statuses](sessions-and-review-statuses.md).
+
+The next operation is usually [Initial Count](initial-count.md). In targeted scenarios, users can continue directly with [Generate recount orders](generate-recount-orders.md).
