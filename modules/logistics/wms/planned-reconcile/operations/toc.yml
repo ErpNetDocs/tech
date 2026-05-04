@@ -11,4 +11,6 @@
 - name: Approve counted results
   href: approve-counted-resultss.md 
 - name: Generate recount orders
-  href: generate-recount-orders.md  
+  href: generate-recount-orders.md
+- name: Generate warehouse transactions
+  href: generate-warehouse-transactions.md
