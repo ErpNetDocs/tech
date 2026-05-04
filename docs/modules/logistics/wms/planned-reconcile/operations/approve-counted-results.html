@@ -133,7 +133,15 @@
 <li>the remaining unapproved rows can continue through another recount cycle if needed.</li>
 </ul>
 <p>From a user perspective, this is the step where the manager confirms which rows already have a final accepted result.</p>
-<p>The next operation depends on the remaining rows. If some discrepancies still need another check, users continue with a recount operation. When all required rows are approved, the process can continue with <strong>Release</strong>.</p>
+<h3 id="what-changes-in-the-reconciliation-details">What changes in the reconciliation details</h3>
+<p>When the user approves the selected rows, their <strong>ReviewStatus</strong> becomes <strong>Approved</strong>.</p>
+<p>The <strong>Session</strong> does not change.</p>
+<p>This marks the current counted result as accepted for those reconciliation rows.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>For an overview of how <strong>Session</strong> and <strong>ReviewStatus</strong> change throughout the process, see <a href="sessions-and-review-statuses.html">Sessions and review statuses</a>.</p>
+</div>
+<p>If another verification is needed, the next operation is <a href="generate-recount-orders.html">Generate recount orders</a>. When the required rows are already approved, the process can continue with <a href="generate-warehouse-transactions.html">Generate warehouse transactions</a>.</p>
 
 </article>
 

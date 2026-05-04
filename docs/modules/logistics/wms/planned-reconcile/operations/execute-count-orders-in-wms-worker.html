@@ -148,7 +148,20 @@
 <p>A finished detail row is treated as completed for the current counting session.</p>
 <p>If no counted records exist for a finished reconciliation detail in that session, the later aggregation step treats its counted result as zero.</p>
 <p>This allows the reconciliation to distinguish between rows that are still in progress and rows that were completed but no quantity was found for them.</p>
-<p>The next operation is usually <strong>Populate Counted Quantities</strong>.</p>
+<p>T### What changes in the reconciliation details</p>
+<p>When the generated count orders for the current session are completed in <strong>WMS Worker</strong>, the related reconciliation rows move from:</p>
+<ul>
+<li><strong>ReviewStatus = Started</strong>
+to</li>
+<li><strong>ReviewStatus = Finished</strong></li>
+</ul>
+<p>The <strong>Session</strong> does not change at this stage.</p>
+<p>This is an automatic transition for the current counting session and marks the rows as ready for count aggregation and review.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>For an overview of how <strong>Session</strong> and <strong>ReviewStatus</strong> change throughout the process, see <a href="sessions-and-review-statuses.html">Sessions and review statuses</a>.</p>
+</div>
+<p>The next operation is usually <a href="populate-counted-quantities.html">Populate Counted Quantities</a>.</p>
 
 </article>
 

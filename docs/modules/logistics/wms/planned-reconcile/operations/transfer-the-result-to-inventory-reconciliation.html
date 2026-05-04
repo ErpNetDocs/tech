@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title> | ERP.net Tech Docs </title>
+      <title>Transfer the result to Inventory Reconciliation | ERP.net Tech Docs </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content=" | ERP.net Tech Docs ">
+      <meta name="title" content="Transfer the result to Inventory Reconciliation | ERP.net Tech Docs ">
       
       
       <link rel="icon" href="../../../../../favicon.ico">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../../../../../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/wms/planned-reconcile/operations/generate-warehouse-transactions.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/wms/planned-reconcile/operations/transfer-the-result-to-inventory-reconciliation.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -85,50 +85,17 @@
         </div>
 
         <article data-uid="">
+<h1 id="transfer-the-result-to-inventory-reconciliation">Transfer the result to Inventory Reconciliation</h1>
 
-<h2 id="generate-warehouse-transactions">Generate warehouse transactions</h2>
-<p>The warehouse manager changes the document state of the <strong>Warehouse Reconciliation</strong> to <strong>Release</strong> to generate <strong>Warehouse Transactions</strong> for the approved reconciliation differences.</p>
-<p>Use this operation after the counting and review are finished and the required reconciliation rows are already approved.</p>
-<p>The system uses the approved <strong>Warehouse Reconciliation Details</strong>. For each approved row, it compares the snapshot quantity with the approved counted quantity and generates the corresponding warehouse transaction for that stock position.</p>
-<p>The generated transactions use:</p>
-<ul>
-<li><strong>TaskType = Count</strong>;</li>
-<li>the warehouse and stock position from the approved reconciliation row;</li>
-<li>the quantity of the approved difference.</li>
-</ul>
-<p>The transaction direction depends on the approved result:</p>
-<ul>
-<li><strong>Count IN</strong> for positive differences;</li>
-<li><strong>Count OUT</strong> for negative differences.</li>
-</ul>
-<h3 id="example">Example</h3>
-<p>A row shows:</p>
-<ul>
-<li><strong>SnapshotQuantity</strong>: 10</li>
-<li><strong>CountedQuantity</strong>: 8</li>
-</ul>
-<p>After the row is approved, the warehouse manager changes the document state to <strong>Release</strong>. The system then generates a <strong>Count OUT</strong> warehouse transaction for the corresponding quantity.</p>
-<p>If another approved row has a counted quantity greater than the snapshot quantity, the system generates a <strong>Count IN</strong> warehouse transaction.</p>
-<h3 id="what-users-should-expect-after-the-operation-finishes">What users should expect after the operation finishes</h3>
-<p>After the warehouse manager changes the document state to <strong>Release</strong>:</p>
-<ul>
-<li>warehouse transactions are generated for the approved reconciliation differences;</li>
-<li>the approved differences are applied in the warehouse process;</li>
-<li>the reconciliation moves from reviewed result to applied result.</li>
-</ul>
-<h3 id="what-changes-in-the-reconciliation-details">What changes in the reconciliation details</h3>
-<p><strong>Generate warehouse transactions</strong> does not start a new counting session and does not change the counting lifecycle of the reconciliation rows.</p>
-<p>At this stage, the operation works with rows that are already <strong>Approved</strong> and uses them to generate warehouse transactions when the document state changes to <strong>Release</strong>.</p>
-<div class="NOTE">
-<h5>Note</h5>
-<p>For an overview of how <strong>Session</strong> and <strong>ReviewStatus</strong> change throughout the process, see <a href="sessions-and-review-statuses.html">Sessions and review statuses</a>.</p>
-</div>
-<p>This is the final operation in the reconciliation workflow.</p>
+<p>Use this step after the warehouse manager changes the document state of the <strong>Warehouse Reconciliation</strong> to <strong>Release</strong> and the system generates the corresponding warehouse transactions.</p>
+<p>Its purpose is to transfer the result from WMS to an <strong>Inventory Reconciliation</strong> document, where the loaded lines can be reviewed and then applied to the inventory availability.</p>
+<p>This is done by using the <strong>Add the reconciliation lines from the WMS module</strong> UI function in the <strong>Reconciliation</strong> document.</p>
+<p>For detailed information, see <a href="https://docs.erp.net/tech/modules/logistics/wms/how-to/reconcile.html">Reconcile</a>.</p>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/wms/planned-reconcile/operations/generate-warehouse-transactions.md/#L1" class="edit-link">Suggest improvement to this page</a>
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/wms/planned-reconcile/operations/transfer-the-result-to-inventory-reconciliation.md/#L1" class="edit-link">Suggest improvement to this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>

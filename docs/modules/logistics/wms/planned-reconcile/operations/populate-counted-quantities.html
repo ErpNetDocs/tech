@@ -152,7 +152,14 @@
 <li>newly found counted positions that were not part of the snapshot can appear as new reconciliation rows;</li>
 <li>the reconciliation is ready for review and approval.</li>
 </ul>
-<p>The next operation is usually <strong>Approve</strong>.</p>
+<h3 id="what-changes-in-the-reconciliation-details">What changes in the reconciliation details</h3>
+<p><strong>Populate Counted Quantities</strong> does not change the current <strong>Session</strong> or <strong>ReviewStatus</strong> of the reconciliation rows.</p>
+<p>Instead, it updates the counted result for the current session by refreshing the counted quantities in the existing reconciliation details.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>For an overview of how <strong>Session</strong> and <strong>ReviewStatus</strong> change throughout the process, see <a href="sessions-and-review-statuses.html">Sessions and review statuses</a>.</p>
+</div>
+<p>The next operation is usually <a href="approve-counted-results.html">Approve counted results</a>. If another verification is needed, the process can continue with <a href="generate-recount-orders.html">Generate recount orders</a>.</p>
 
 </article>
 

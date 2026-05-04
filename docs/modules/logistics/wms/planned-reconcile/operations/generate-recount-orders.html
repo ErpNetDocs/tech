@@ -163,7 +163,20 @@
 <li>the orders contain detailed stock positions for recount;</li>
 <li>the selected reconciliation rows move to the new recount session with status <strong>Started</strong>.</li>
 </ul>
-<p>The next step is to execute the generated recount orders in <strong>WMS Worker</strong>.</p>
+<h3 id="what-changes-in-the-reconciliation-details-1">What changes in the reconciliation details</h3>
+<p>When <strong>Generate recount orders</strong> is used, only the selected reconciliation rows move to the next counting session.</p>
+<p>For these rows:</p>
+<ul>
+<li><strong>Session</strong> becomes the next session number</li>
+<li><strong>ReviewStatus</strong> becomes <strong>Started</strong></li>
+</ul>
+<p>All other rows keep their current <strong>Session</strong> and <strong>ReviewStatus</strong>.</p>
+<p>This marks only the selected rows as active in the new recount cycle.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>For an overview of how <strong>Session</strong> and <strong>ReviewStatus</strong> change throughout the process, see <a href="sessions-and-review-statuses.html">Sessions and review statuses</a>.</p>
+</div>
+<p>The next operation is usually <a href="execute-count-orders-in-wms-worker.html">Execute count orders in WMS Worker</a>.</p>
 
 </article>
 

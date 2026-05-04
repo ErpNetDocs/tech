@@ -17848,6 +17848,16 @@
       "version": ""
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/wms/planned-reconcile/operations/sessions-and-review-statuses.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/wms/planned-reconcile/operations/sessions-and-review-statuses.html"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "modules/logistics/wms/planned-reconcile/operations/toc.yml",
       "output": {
@@ -17856,6 +17866,16 @@
         },
         ".json": {
           "relative_path": "modules/logistics/wms/planned-reconcile/operations/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/wms/planned-reconcile/operations/transfer-the-result-to-inventory-reconciliation.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/wms/planned-reconcile/operations/transfer-the-result-to-inventory-reconciliation.html"
         }
       },
       "version": ""

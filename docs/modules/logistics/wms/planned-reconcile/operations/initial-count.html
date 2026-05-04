@@ -173,7 +173,19 @@ The source of the data remains the same — the existing reconciliation details.
 <li>the reconciliation details are marked as started for the first counting session.</li>
 </ul>
 <p>From a user perspective, this is the point where the reconciliation moves from preparation into execution on the warehouse floor.</p>
-<p>The next operation is usually to execute the generated count orders in <strong>WMS Worker</strong>. After the first counting pass is completed, the process continues with review and, if needed,</p>
+<h3 id="what-changes-in-the-reconciliation-details-1">What changes in the reconciliation details</h3>
+<p>After <strong>Initial Count</strong> generates the first count orders, the included reconciliation rows enter the first counting session.</p>
+<p>For these rows:</p>
+<ul>
+<li><strong>Session</strong> becomes <strong>1</strong></li>
+<li><strong>ReviewStatus</strong> becomes <strong>Started</strong></li>
+</ul>
+<p>This marks them as active rows in the first counting cycle.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>For an overview of how <strong>Session</strong> and <strong>ReviewStatus</strong> change throughout the process, see <a href="sessions-and-review-statuses.html">Sessions and review statuses</a>.</p>
+</div>
+<p>The next operation is usually <a href="execute-count-orders-in-wms-worker.html">Execute count orders in WMS Worker</a>.</p>
 
 </article>
 

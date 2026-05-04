@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Sessions and review statuses | ERP.net Tech Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Sessions and review statuses | ERP.net Tech Docs ">
+      
+      
+      <link rel="icon" href="../../../../../favicon.ico">
+      <link rel="stylesheet" href="../../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/wms/planned-reconcile/operations/sessions-and-review-statuses.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../../index.html">
+            <img id="logo" class="svg" src="../../../../../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="sessions-and-review-statuses">Sessions and review statuses</h1>
+
+<p>This page explains how <strong>Session</strong> and <strong>ReviewStatus</strong> work in <strong>Planned Reconcile</strong>.</p>
+<p>These two values show where each <strong>Warehouse Reconciliation Detail</strong> is in the reconciliation process and which counting iteration it belongs to.</p>
+<h2 id="session">Session</h2>
+<p><strong>Session</strong> identifies the counting iteration for a reconciliation row.</p>
+<p>Use it to distinguish:</p>
+<ul>
+<li>the initial snapshot state;</li>
+<li>the first counting session;</li>
+<li>each next recount session.</li>
+</ul>
+<p>The values progress as follows:</p>
+<ul>
+<li><strong>Session = 0</strong> — the row is created by <a href="generate-snapshot.html">Generate Snapshot</a>;</li>
+<li><strong>Session = 1</strong> — the row enters the first counting session through <a href="initial-count.html">Initial Count</a>;</li>
+<li><strong>Session = 2, 3, ...</strong> — the row enters the next recount session through <a href="generate-recount-orders.html">Generate recount orders</a>.</li>
+</ul>
+<p>A new session is created only when a new counting cycle starts for that row.</p>
+<h2 id="reviewstatus">ReviewStatus</h2>
+<p><strong>ReviewStatus</strong> shows the current state of the reconciliation row inside the process.</p>
+<p>The possible values are:</p>
+<ul>
+<li><strong>Created</strong></li>
+<li><strong>Started</strong></li>
+<li><strong>Finished</strong></li>
+<li><strong>Approved</strong></li>
+<li><strong>Recount</strong></li>
+<li><strong>Cancelled</strong></li>
+</ul>
+<p>These values show whether the row is still only part of the snapshot, already sent for counting, finished for the current counting session, approved, or selected for another recount cycle.</p>
+<h2 id="how-session-and-reviewstatus-change">How Session and ReviewStatus change</h2>
+<p>The following table shows the typical lifecycle of a reconciliation row.</p>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th style="text-align: right;">Session</th>
+<th>ReviewStatus</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="generate-snapshot.html">Generate Snapshot</a></td>
+<td style="text-align: right;">0</td>
+<td>Created</td>
+<td>The reconciliation detail is created from the current warehouse availability.</td>
+</tr>
+<tr>
+<td><a href="initial-count.html">Initial Count</a></td>
+<td style="text-align: right;">1</td>
+<td>Started</td>
+<td>The row enters the first counting session.</td>
+</tr>
+<tr>
+<td><a href="execute-count-orders-in-wms-worker.html">Execute count orders in WMS Worker</a></td>
+<td style="text-align: right;">no change</td>
+<td>Finished</td>
+<td>After the orders for the current session are completed, the related rows move from <strong>Started</strong> to <strong>Finished</strong>.</td>
+</tr>
+<tr>
+<td><a href="populate-counted-quantities.html">Populate Counted Quantities</a></td>
+<td style="text-align: right;">no change</td>
+<td>no change</td>
+<td>The operation updates the counted quantities, but does not change the session or review status.</td>
+</tr>
+<tr>
+<td><a href="approve-counted-results.html">Approve counted results</a></td>
+<td style="text-align: right;">no change</td>
+<td>Approved</td>
+<td>The current counted result is accepted for the selected row.</td>
+</tr>
+<tr>
+<td><a href="generate-recount-orders.html">Generate recount orders</a></td>
+<td style="text-align: right;">next session for selected rows only</td>
+<td>Started</td>
+<td>Only the selected rows move to the next counting session.</td>
+</tr>
+<tr>
+<td><a href="execute-count-orders-in-wms-worker.html">Execute count orders in WMS Worker</a></td>
+<td style="text-align: right;">no change</td>
+<td>Finished</td>
+<td>The rows in the recount session move to <strong>Finished</strong> when the recount orders are completed.</td>
+</tr>
+<tr>
+<td><a href="populate-counted-quantities.html">Populate Counted Quantities</a></td>
+<td style="text-align: right;">no change</td>
+<td>no change</td>
+<td>The counted result is refreshed for the current recount session.</td>
+</tr>
+<tr>
+<td><a href="approve-counted-results.html">Approve counted results</a></td>
+<td style="text-align: right;">no change</td>
+<td>Approved</td>
+<td>The updated result is accepted for the selected row.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="important-rule-for-recount">Important rule for recount</h2>
+<p>Recount does not move all reconciliation rows to a new session.</p>
+<p>Only the rows selected for recount move to the next session when <a href="generate-recount-orders.html">Generate recount orders</a> is used.</p>
+<p>All other rows keep their current:</p>
+<ul>
+<li><strong>Session</strong></li>
+<li><strong>ReviewStatus</strong></li>
+</ul>
+<p>This is important because a reconciliation can contain rows that are already approved together with rows that continue through another recount cycle.</p>
+<h2 id="finished-rows">Finished rows</h2>
+<p>A row reaches <strong>Finished</strong> after the related count orders for the current session are completed in <a href="execute-count-orders-in-wms-worker.html">WMS Worker</a>.</p>
+<p>This is an automatic transition for the current counting session.</p>
+<p>After that, the row is ready for <a href="populate-counted-quantities.html">Populate Counted Quantities</a>, which updates the counted result for review.</p>
+<h2 id="approved-rows">Approved rows</h2>
+<p>A row reaches <strong>Approved</strong> when the user accepts its current counted result through <a href="approve-counted-results.html">Approve counted results</a>.</p>
+<p>An approved row keeps its current session and no longer continues in the active review cycle, unless the process explicitly sends it through another path.</p>
+<h2 id="recount-rows">Recount rows</h2>
+<p>A row enters another counting cycle when the user selects it and runs <a href="generate-recount-orders.html">Generate recount orders</a>.</p>
+<p>At that point:</p>
+<ul>
+<li>the row moves to the next session;</li>
+<li>the row status becomes <strong>Started</strong>;</li>
+<li>the row becomes active in the new recount cycle.</li>
+</ul>
+<h2 id="cancelled-rows">Cancelled rows</h2>
+<p>A row with <strong>ReviewStatus = Cancelled</strong> does not participate in the active counting cycle.</p>
+<p>Cancelled rows are excluded from count order generation.</p>
+<h2 id="example">Example</h2>
+<p>A reconciliation row is created by <a href="generate-snapshot.html">Generate Snapshot</a>.</p>
+<p>At that point:</p>
+<ul>
+<li><strong>Session = 0</strong></li>
+<li><strong>ReviewStatus = Created</strong></li>
+</ul>
+<p>Then the warehouse manager runs <a href="initial-count.html">Initial Count</a>.</p>
+<p>The row becomes:</p>
+<ul>
+<li><strong>Session = 1</strong></li>
+<li><strong>ReviewStatus = Started</strong></li>
+</ul>
+<p>After the worker completes the order in <a href="execute-count-orders-in-wms-worker.html">WMS Worker</a>, the row becomes:</p>
+<ul>
+<li><strong>Session = 1</strong></li>
+<li><strong>ReviewStatus = Finished</strong></li>
+</ul>
+<p>After <a href="populate-counted-quantities.html">Populate Counted Quantities</a>, the counted result is visible for review.</p>
+<p>If the result is accepted through <a href="approve-counted-results.html">Approve counted results</a>, the row becomes:</p>
+<ul>
+<li><strong>Session = 1</strong></li>
+<li><strong>ReviewStatus = Approved</strong></li>
+</ul>
+<p>If the result is not accepted, the user selects the row and runs <a href="generate-recount-orders.html">Generate recount orders</a>.</p>
+<p>The row then becomes:</p>
+<ul>
+<li><strong>Session = 2</strong></li>
+<li><strong>ReviewStatus = Started</strong></li>
+</ul>
+<p>This starts the next recount cycle for that row only.</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/wms/planned-reconcile/operations/sessions-and-review-statuses.md/#L1" class="edit-link">Suggest improvement to this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
