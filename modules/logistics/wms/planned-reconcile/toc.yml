@@ -2,3 +2,7 @@
   href: index.md
 - name: Getting started with Planned Reconcile
   href: step-by-step-guide.md  
+- name: Operations
+  href: operations/toc.yml
+  topicHref: operations/index.md
+  
