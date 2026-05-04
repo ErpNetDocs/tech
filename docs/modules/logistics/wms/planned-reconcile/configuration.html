@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Configuring Planned Reconcile | ERP.net Tech Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Configuring Planned Reconcile | ERP.net Tech Docs ">
+      
+      
+      <link rel="icon" href="../../../../favicon.ico">
+      <link rel="stylesheet" href="../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/wms/planned-reconcile/configuration.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../index.html">
+            <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="configuring-planned-reconcile">Configuring Planned Reconcile</h1>
+
+<p>This page describes the setup required to use <strong>Planned Reconcile</strong> in WMS.</p>
+<p>Before users start working with Planned Reconcile, prepare the required document types, warehouse policies, and warehouse zone structure.</p>
+<h2 id="required-setup">Required setup</h2>
+<p>Configure the following:</p>
+<ul>
+<li>a document type for <strong>Warehouse Reconciliations</strong>;</li>
+<li>a document type for <strong>Warehouse Orders</strong> used for count orders;</li>
+<li>the warehouse policy <strong>CountingOrderDocumentType</strong>;</li>
+<li>optionally, the warehouse policy <strong>CountingSplitLevel</strong>;</li>
+<li>the warehouse zone hierarchy, when count orders must be split by zones.</li>
+</ul>
+<h2 id="document-types">Document types</h2>
+<p>Create a document type for the entity <strong>Warehouse Reconciliations</strong>. This document type is used for the reconciliation document.</p>
+<p>Create a document type for the entity <strong>Warehouse Orders</strong>. This document type is used for the generated count orders.</p>
+<p>The document type for generated count orders is defined through the <a href="../how-to/setup-warehouse/warehouse-policies.html">Warehouse policies</a>, using the <strong>CountingOrderDocumentType</strong> policy.</p>
+<h2 id="warehouse-policies">Warehouse policies</h2>
+<p>Configure the <strong>CountingOrderDocumentType</strong> warehouse policy. Its value must be the <strong>DocumentType.Code</strong> of a document type for the entity <strong>Warehouse Orders</strong>.</p>
+<p>Configure the <strong>CountingSplitLevel</strong> warehouse policy when count orders must be split by warehouse zones. Its value must be a non-negative integer.</p>
+<p>Use the following values for <strong>CountingSplitLevel</strong>:</p>
+<ul>
+<li><code>0</code> for a single count order;</li>
+<li>a value greater than <code>0</code> to split count orders by warehouse zones at the corresponding hierarchy level.</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p><strong>CountingSplitLevel</strong> is used only in scenarios that support split order generation. It does not apply to <strong>Recount (Single Order)</strong>.</p>
+</div>
+<h2 id="warehouse-zone-hierarchy">Warehouse zone hierarchy</h2>
+<p>When <strong>CountingSplitLevel</strong> is used, review the warehouse zone hierarchy in advance so that the split level matches the intended order distribution.</p>
+<p>The generated count orders follow the configured zone hierarchy level.</p>
+<h2 id="warehouse-scope">Warehouse scope</h2>
+<p>Select the reconciliation scope in the warehouse:</p>
+<ul>
+<li>the whole warehouse;</li>
+<li>selected zones;</li>
+<li>selected locations.</li>
+</ul>
+<p>When zones or locations are selected, use ones that belong to the selected warehouse.</p>
+<h2 id="operational-preparation">Operational preparation</h2>
+<p>After the snapshot is generated, keep the selected scope free from warehouse movements until the counting and review are finished.</p>
+<p>Avoid operations such as:</p>
+<ul>
+<li>receipts;</li>
+<li>issues;</li>
+<li>moves;</li>
+<li>replenishments;</li>
+<li>transfers;</li>
+<li>and other warehouse movements</li>
+</ul>
+<p>for the selected locations and products during the reconciliation process.</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/wms/planned-reconcile/configuration.md/#L1" class="edit-link">Suggest improvement to this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
