@@ -1,9 +1,9 @@
 - name: Overview
   href: index.md
-- name: Getting started with Planned Reconcile
+- name: Getting started
   href: step-by-step-guide.md  
+- name: Configuration
+  href: configuration.md  
 - name: Operations
   href: operations/toc.yml
   topicHref: operations/index.md
-- name: Configuring Planned Reconcile
-  href: configuration.md  
