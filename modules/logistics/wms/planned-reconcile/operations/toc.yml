@@ -14,3 +14,5 @@
   href: generate-recount-orders.md
 - name: Generate warehouse transactions
   href: generate-warehouse-transactions.md
+- name: Transfer the result to Inventory Reconciliation
+  href: transfer-the-result-to-inventory-reconciliation.md
