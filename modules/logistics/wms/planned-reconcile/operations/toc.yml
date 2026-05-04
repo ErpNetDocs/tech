@@ -7,4 +7,6 @@
 - name: Execute count orders in WMS Worker
   href: execute-count-orders-in-wms-worker.md 
 - name: Populate Counted Quantities
-  href: populate-counted-quantities.md   
+  href: populate-counted-quantities.md
+- name: Approve counted results
+  href: approve-counted-resultss.md  
