@@ -17769,10 +17769,30 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/logistics/wms/planned-reconcile/operations/approve-counted-results.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/wms/planned-reconcile/operations/approve-counted-results.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/logistics/wms/planned-reconcile/operations/execute-count-orders-in-wms-worker.md",
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/planned-reconcile/operations/execute-count-orders-in-wms-worker.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/wms/planned-reconcile/operations/generate-recount-orders.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/wms/planned-reconcile/operations/generate-recount-orders.html"
         }
       },
       "version": ""

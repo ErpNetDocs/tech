@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title> | ERP.net Tech Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content=" | ERP.net Tech Docs ">
+      
+      
+      <link rel="icon" href="../../../../../favicon.ico">
+      <link rel="stylesheet" href="../../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/wms/planned-reconcile/operations/approve-counted-results.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../../index.html">
+            <img id="logo" class="svg" src="../../../../../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+
+<h2 id="approve-counted-results">Approve counted results</h2>
+<p>Use <strong>Approve counted results</strong> to confirm the counted result for the selected reconciliation rows.</p>
+<p>This operation is used after the current counting session is completed in <strong>WMS Worker</strong>, the related detail rows have moved to <strong>Finished</strong>, and <strong>Populate Counted Quantities</strong> has refreshed the counted result in the reconciliation details.</p>
+<h3 id="when-to-use-it">When to use it</h3>
+<p>Use <strong>Approve counted results</strong> when the user has already reviewed the current result and wants to confirm that no further recount is needed for the selected rows.</p>
+<p>At this stage, the selected rows already contain:</p>
+<ul>
+<li>the snapshot quantity;</li>
+<li>the latest counted quantity for the current session;</li>
+<li>the current difference between expected and counted result.</li>
+</ul>
+<h3 id="what-the-operation-uses-as-input">What the operation uses as input</h3>
+<p>The operation uses the selected <strong>Warehouse Reconciliation Details</strong>.</p>
+<p>The user decides which rows are accepted in their current state and approves only those rows.</p>
+<p>This means approval is done per reconciliation row, not for the whole document at once.</p>
+<h3 id="what-the-operation-does">What the operation does</h3>
+<p>For each selected row, <strong>Approve counted results</strong> confirms the currently visible counted result as accepted for the reconciliation process.</p>
+<p>The operation changes the row status to <strong>Approved</strong>.</p>
+<p>After that, the row is no longer part of the active review cycle for the current discrepancy, unless the process is explicitly continued in another way.</p>
+<h3 id="what-the-user-approves">What the user approves</h3>
+<p>The user approves the result for a specific reconciliation row in its current form.</p>
+<p>This means the user approves the currently reviewed stock position, for example:</p>
+<ul>
+<li>product <strong>A</strong> in location <strong>L-01</strong> with counted quantity equal to the snapshot quantity;</li>
+<li>product <strong>B</strong> in location <strong>L-02</strong> with a confirmed shortage;</li>
+<li>product <strong>C</strong> with a confirmed excess quantity;</li>
+<li>a row created during counting with <strong>SnapshotQuantity = 0</strong> and a counted quantity greater than zero.</li>
+</ul>
+<p>In all of these cases, the user is not approving the counting action itself. The user is approving the current reconciliation result for the selected row.</p>
+<h3 id="example">Example</h3>
+<p>A row shows:</p>
+<ul>
+<li><strong>Product</strong>: Item A</li>
+<li><strong>Location</strong>: Zone 01 / Loc 01</li>
+<li><strong>SnapshotQuantity</strong>: 10</li>
+<li><strong>CountedQuantity</strong>: 8</li>
+</ul>
+<p>If the manager reviews the row and decides that the counted quantity of <strong>8</strong> is correct, the row can be approved in that state.</p>
+<p>If the manager is not confident that the difference is final, the row should not be approved yet and can be sent to recount instead.</p>
+<h3 id="what-users-should-expect-after-the-operation-finishes">What users should expect after the operation finishes</h3>
+<p>After <strong>Approve counted results</strong> is completed:</p>
+<ul>
+<li>the selected reconciliation rows are marked as <strong>Approved</strong>;</li>
+<li>these rows are accepted with their current counted result;</li>
+<li>the remaining unapproved rows can continue through another recount cycle if needed.</li>
+</ul>
+<p>From a user perspective, this is the step where the manager confirms which rows already have a final accepted result.</p>
+<p>The next operation depends on the remaining rows. If some discrepancies still need another check, users continue with a recount operation. When all required rows are approved, the process can continue with <strong>Release</strong>.</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/wms/planned-reconcile/operations/approve-counted-results.md/#L1" class="edit-link">Suggest improvement to this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
