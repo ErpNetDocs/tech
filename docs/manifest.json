@@ -17769,6 +17769,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/logistics/wms/planned-reconcile/operations/execute-count-orders-in-wms-worker.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/wms/planned-reconcile/operations/execute-count-orders-in-wms-worker.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/logistics/wms/planned-reconcile/operations/generate-snapshot.md",
       "output": {
         ".html": {
@@ -23922,6 +23932,16 @@
       "output": {
         "resource": {
           "relative_path": "whats-new/v26-2/desktop-client/pictures/PG.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "whats-new/v26-2/desktop-client/pictures/currency_active.png",
+      "output": {
+        "resource": {
+          "relative_path": "whats-new/v26-2/desktop-client/pictures/currency_active.png"
         }
       },
       "version": ""

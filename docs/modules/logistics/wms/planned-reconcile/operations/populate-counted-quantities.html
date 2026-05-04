@@ -90,14 +90,13 @@
 <p>Use <strong>Populate Counted Quantities</strong> to update the reconciliation details with the latest counted result from the completed count session.</p>
 <p>This operation reads the performed counts and aggregates them into the corresponding <strong>Warehouse Reconciliation Details</strong>. It is the step that turns the raw counting result into a reviewable reconciliation result.</p>
 <h3 id="when-to-use-it">When to use it</h3>
-<p>Use <strong>Populate Counted Quantities</strong> after count orders have been executed in <strong>WMS Worker</strong> and before the next review step.</p>
+<p>Use <strong>Populate Counted Quantities</strong> after count orders have been executed in <strong>WMS Worker</strong> and after the related reconciliation details for the current session have moved to <strong>Finished</strong>.</p>
 <p>This operation is used after every counting iteration:</p>
 <ul>
 <li>after <strong>Initial Count</strong>;</li>
 <li>after <strong>Recount (Split Level)</strong>;</li>
 <li>after <strong>Recount (Single Order)</strong>.</li>
 </ul>
-<p>In practice, it is the recurring step between execution and approval.</p>
 <h3 id="what-the-operation-uses-as-input">What the operation uses as input</h3>
 <p>The operation uses:</p>
 <ul>
@@ -105,7 +104,7 @@
 <li>the existing <strong>Warehouse Reconciliation Details</strong>;</li>
 <li>the performed warehouse counts for the current counting session.</li>
 </ul>
-<p>It works only with the rows that belong to the current reconciliation and to the active counting session.</p>
+<p>It works with the rows that belong to the current reconciliation and to the current counting session.</p>
 <h3 id="what-the-operation-updates">What the operation updates</h3>
 <p>For each reconciliation detail, the operation updates the counted result with the aggregated quantities from the performed counts.</p>
 <p>The main updated fields are:</p>
@@ -114,9 +113,8 @@
 <li><strong>CountedQuantity</strong></li>
 <li><strong>LastAggregatedAt</strong></li>
 </ul>
-<p>The counted quantities are refreshed from the latest aggregated counting result for the current session.</p>
 <h3 id="how-the-aggregation-works">How the aggregation works</h3>
-<p>The operation matches the performed counts to the reconciliation details by the same detailed stock position.</p>
+<p>The operation matches the performed counts to the reconciliation details by the same counted stock position.</p>
 <p>The aggregation follows the detailed characteristics of the counted position, such as:</p>
 <ul>
 <li>warehouse location;</li>
@@ -127,27 +125,34 @@
 <li>logistic unit.</li>
 </ul>
 <p>When several count records belong to the same reconciliation detail, their result is aggregated into that detail.</p>
-<p>This produces one updated counted result per reconciliation row.</p>
-<h3 id="what-happens-when-counted-data-exists-for-a-missing-detail">What happens when counted data exists for a missing detail</h3>
+<h3 id="finished-rows-with-no-counted-records">Finished rows with no counted records</h3>
+<p>If a reconciliation detail belongs to the completed counting session and its status is <strong>Finished</strong>, but there are no matching counted records for it in that session, the operation sets its counted result to zero.</p>
+<p>In this case, the detail is updated with:</p>
+<ul>
+<li><strong>CountedQuantityBase = 0</strong></li>
+<li><strong>CountedQuantity = 0</strong></li>
+</ul>
+<p>This means that the row was part of the completed counting cycle, but no quantity was counted for that position.</p>
+<h3 id="counted-positions-that-do-not-exist-in-the-snapshot">Counted positions that do not exist in the snapshot</h3>
 <p>If the performed counts contain a position that does not yet exist in the reconciliation details, the operation creates a new <strong>Warehouse Reconciliation Detail</strong> for it.</p>
 <p>The new row is created with:</p>
 <ul>
 <li>the current <strong>Warehouse Reconciliation</strong>;</li>
-<li>the matching warehouse and product characteristics from the counted position;</li>
-<li><strong>SnapshotQuantityBase = 0</strong>;</li>
-<li><strong>SnapshotQuantity = 0</strong>;</li>
+<li>the matching warehouse and tracking characteristics from the counted position;</li>
+<li><strong>SnapshotQuantityBase = 0</strong></li>
+<li><strong>SnapshotQuantity = 0</strong></li>
 <li>populated counted quantities from the aggregated count result.</li>
 </ul>
-<p>This ensures that newly discovered counted positions also participate in the review process.</p>
+<p>This means the counted position was found during counting, but it was not part of the original snapshot.</p>
 <h3 id="what-users-should-expect-after-the-operation-finishes">What users should expect after the operation finishes</h3>
 <p>After <strong>Populate Counted Quantities</strong> is completed:</p>
 <ul>
 <li>the reconciliation details contain the latest counted result for the current session;</li>
-<li>newly counted positions that were not part of the snapshot can appear as new reconciliation rows;</li>
+<li>finished rows with no counted result are shown with zero counted quantity;</li>
+<li>newly found counted positions that were not part of the snapshot can appear as new reconciliation rows;</li>
 <li>the reconciliation is ready for review and approval.</li>
 </ul>
-<p>From a user perspective, this is the operation that refreshes the reconciliation result after each counting iteration.</p>
-<p>The next operation is usually <strong>Approve</strong>. If some rows still need another verification, the process can continue with another recount cycle.</p>
+<p>The next operation is usually <strong>Approve</strong>.</p>
 
 </article>
 
