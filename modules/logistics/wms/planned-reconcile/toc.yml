@@ -5,4 +5,5 @@
 - name: Operations
   href: operations/toc.yml
   topicHref: operations/index.md
-  
+- name: Configuring Planned Reconcile
+  href: configuration.md  
