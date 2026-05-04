@@ -35,3 +35,14 @@ After the warehouse manager changes the document state to **Release**:
 - warehouse transactions are generated for the approved reconciliation differences;
 - the approved differences are applied in the warehouse process;
 - the reconciliation moves from reviewed result to applied result.
+
+### What changes in the reconciliation details
+
+**Generate warehouse transactions** does not start a new counting session and does not change the counting lifecycle of the reconciliation rows.
+
+At this stage, the operation works with rows that are already **Approved** and uses them to generate warehouse transactions when the document state changes to **Release**.
+
+> [!NOTE]
+> For an overview of how **Session** and **ReviewStatus** change throughout the process, see [Sessions and review statuses](sessions-and-review-statuses.md).
+
+This is the final operation in the reconciliation workflow.
