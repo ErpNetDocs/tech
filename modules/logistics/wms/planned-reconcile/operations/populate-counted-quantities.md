@@ -83,4 +83,13 @@ After **Populate Counted Quantities** is completed:
 - newly found counted positions that were not part of the snapshot can appear as new reconciliation rows;
 - the reconciliation is ready for review and approval.
 
-The next operation is usually **Approve**.
+### What changes in the reconciliation details
+
+**Populate Counted Quantities** does not change the current **Session** or **ReviewStatus** of the reconciliation rows.
+
+Instead, it updates the counted result for the current session by refreshing the counted quantities in the existing reconciliation details.
+
+> [!NOTE]
+> For an overview of how **Session** and **ReviewStatus** change throughout the process, see [Sessions and review statuses](sessions-and-review-statuses.md).
+
+The next operation is usually [Approve counted results](approve-counted-results.md). If another verification is needed, the process can continue with [Generate recount orders](generate-recount-orders.md).
