@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title> | ERP.net Tech Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content=" | ERP.net Tech Docs ">
+      
+      
+      <link rel="icon" href="../../../../../favicon.ico">
+      <link rel="stylesheet" href="../../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/wms/planned-reconcile/operations/generate-snapshot.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../../index.html">
+            <img id="logo" class="svg" src="../../../../../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+
+<h2 id="generate-snapshot">Generate Snapshot</h2>
+<p>Use <strong>Generate Snapshot</strong> to create the initial reconciliation details from the current warehouse availability.</p>
+<p>This function takes the warehouse scope defined in the <strong>Warehouse Reconciliation</strong> document and creates the rows that will later be counted, reviewed, and recounted if needed.</p>
+<p>The generated snapshot is the <strong>momentary picture of the warehouse availability</strong> at the exact time when the function is executed. It is the reference point against which the counted result is later compared.</p>
+<h3 id="when-to-use-it">When to use it</h3>
+<p>Run this function after the reconciliation scope is prepared and before any counting starts.</p>
+<p>At this stage, the user has already:</p>
+<ul>
+<li>created the <strong>Warehouse Reconciliation</strong> document;</li>
+<li>selected the warehouse in the document header;</li>
+<li>defined the counting scope through the reconciliation lines.</li>
+</ul>
+<h3 id="what-the-function-uses-as-input">What the function uses as input</h3>
+<p>The function uses:</p>
+<ul>
+<li>the selected <strong>Warehouse</strong> from the document header;</li>
+<li>the selected <strong>Warehouse Zones</strong> and/or <strong>Warehouse Locations</strong> from the reconciliation lines;</li>
+<li>the current records in <strong>Warehouse Availability</strong>.</li>
+</ul>
+<p>The scope is built from the reconciliation lines as follows:</p>
+<ul>
+<li>if a line contains a <strong>Warehouse Zone</strong>, the function includes all warehouse locations under that zone according to the zone hierarchy;</li>
+<li>if a line contains a <strong>Warehouse Location</strong>, the function includes that exact location;</li>
+<li>if a line contains both <strong>Warehouse Zone</strong> and <strong>Warehouse Location</strong>, the function uses the <strong>Warehouse Location</strong>;</li>
+<li>if only the <strong>Warehouse</strong> is selected and no narrower scope is defined in the lines, the function uses all warehouse locations in that warehouse.</li>
+</ul>
+<h3 id="how-the-function-prepares-the-scope">How the function prepares the scope</h3>
+<p>Before reading the availability, the function resolves the final set of warehouse locations that belong to the reconciliation scope.</p>
+<p>This includes deduplication of the locations coming from the selected zones and locations.</p>
+<p>The purpose of this step is to produce one clean counting scope without overlapping locations.</p>
+<h3 id="what-the-function-creates">What the function creates</h3>
+<p>After the warehouse scope is resolved, the function reads the current records from <strong>Warehouse Availability</strong> for:</p>
+<ul>
+<li>the selected warehouse;</li>
+<li>and the warehouse locations included in the final deduplicated scope.</li>
+</ul>
+<p>It then creates rows in <strong>Warehouse Reconciliation Details</strong>.</p>
+<p>A separate detail row is created for each availability position in the selected scope. This means that the snapshot is created not only by location and product, but also by the tracked characteristics that distinguish separate availability positions.</p>
+<p>These characteristics include:</p>
+<ul>
+<li>location;</li>
+<li>product;</li>
+<li>lot;</li>
+<li>variant;</li>
+<li>serial number;</li>
+<li>logistic unit.</li>
+</ul>
+<h3 id="how-quantity-fields-are-populated">How quantity fields are populated</h3>
+<p>For each generated detail row:</p>
+<ul>
+<li><strong>SnapshotQuantityBase</strong> is taken from <code>WarehouseAvailability.QuantityBaseAvailable</code>;</li>
+<li><strong>SnapshotQuantity</strong> is taken from <code>WarehouseAvailability.StandardQuantityAvailable</code>;</li>
+<li><strong>QuantityUnit</strong> is the product’s default measurement unit;</li>
+<li><strong>CountedQuantityBase</strong> and <strong>CountedQuantity</strong> remain empty.</li>
+</ul>
+<p>This keeps the snapshot both in base quantity and in the product’s default measurement unit.</p>
+<h3 id="how-the-other-detail-fields-are-populated">How the other detail fields are populated</h3>
+<p>For each generated row, the function fills the reconciliation detail with the warehouse and tracking data from the matching availability record.</p>
+<p>The generated detail includes:</p>
+<ul>
+<li>the current <strong>Warehouse Reconciliation</strong> document;</li>
+<li><strong>Warehouse Location</strong>;</li>
+<li><strong>Warehouse Zone</strong>;</li>
+<li><strong>Product</strong>;</li>
+<li><strong>Lot</strong>;</li>
+<li><strong>Variant</strong>;</li>
+<li><strong>Serial Number</strong>;</li>
+<li><strong>Logistic Unit</strong>;</li>
+<li><strong>Base Unit</strong>;</li>
+<li><strong>SnapshotDateTime</strong>;</li>
+<li><strong>ReviewStatus</strong>;</li>
+<li><strong>Session</strong>.</li>
+</ul>
+<p>At snapshot generation:</p>
+<ul>
+<li><strong>SnapshotDateTime</strong> is set to the current moment;</li>
+<li><strong>ReviewStatus</strong> is set to <strong>Created</strong>;</li>
+<li><strong>Session</strong> is set to <strong>0</strong>;</li>
+<li><strong>LastAggregatedAt</strong> remains empty.</li>
+</ul>
+<h3 id="what-happens-for-locations-with-no-availability">What happens for locations with no availability</h3>
+<p>If a warehouse location is part of the selected scope but has no availability records, the function still creates a reconciliation detail row for that location.</p>
+<p>In this case, the row is created with:</p>
+<ul>
+<li>the <strong>Warehouse Reconciliation</strong> document;</li>
+<li>the <strong>Warehouse Location</strong>;</li>
+<li>the <strong>Warehouse Zone</strong>;</li>
+<li><strong>SnapshotQuantityBase = 0</strong>;</li>
+<li><strong>SnapshotQuantity = 0</strong>;</li>
+<li><strong>SnapshotDateTime = now</strong>;</li>
+<li><strong>ReviewStatus = Created</strong>;</li>
+<li><strong>Session = 0</strong>.</li>
+</ul>
+<p>The remaining product-specific and tracking fields stay empty.</p>
+<p>This ensures that empty locations are still included in the reconciliation and can later be counted.</p>
+<h3 id="running-the-function-again">Running the function again</h3>
+<p>If the snapshot is generated again before the counting process has started, the existing reconciliation details are replaced with a new snapshot based on the current reconciliation lines and the current warehouse availability.</p>
+<h3 id="what-users-should-expect-after-the-function-finishes">What users should expect after the function finishes</h3>
+<p>After <strong>Generate Snapshot</strong> is completed:</p>
+<ul>
+<li>the reconciliation contains the detailed rows that define what will be counted;</li>
+<li>each row contains the expected availability at the time of generation;</li>
+<li>the rows are ready for the next operational step.</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Because the snapshot captures the expected warehouse availability at a specific moment, the selected scope should remain free from warehouse movements after the snapshot is generated and before the counting process is completed.</p>
+</div>
+<p>The next operation is usually <a href="#initial-count">Initial Count</a>. In targeted scenarios, users can continue directly with <a href="#recount-single-order">Recount (Single Order)</a>.</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/wms/planned-reconcile/operations/generate-snapshot.md/#L1" class="edit-link">Suggest improvement to this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

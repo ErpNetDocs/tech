@@ -17769,6 +17769,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/logistics/wms/planned-reconcile/operations/generate-snapshot.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/wms/planned-reconcile/operations/generate-snapshot.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/logistics/wms/planned-reconcile/operations/index.md",
       "output": {
         ".html": {
