@@ -9,7 +9,7 @@
 - name: Populate Counted Quantities
   href: populate-counted-quantities.md
 - name: Approve counted results
-  href: approve-counted-resultss.md 
+  href: approve-counted-results.md 
 - name: Generate recount orders
   href: generate-recount-orders.md
 - name: Generate warehouse transactions
