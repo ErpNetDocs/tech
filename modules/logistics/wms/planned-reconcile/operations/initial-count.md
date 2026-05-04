@@ -109,4 +109,4 @@ After **Initial Count** is completed:
 
 From a user perspective, this is the point where the reconciliation moves from preparation into execution on the warehouse floor.
 
-The next operation is usually to execute the generated count orders in **WMS Worker**. After the first counting pass is completed, the process continues with review and, if needed, [Recount (Single Order)](recount-single-order.md).
+The next operation is usually to execute the generated count orders in **WMS Worker**. After the first counting pass is completed, the process continues with review and, if needed, 
