@@ -19,3 +19,6 @@
 - name: WMS Worker
   href: wms-worker/toc.yml
   topicHref: wms-worker/index.md
+- name: Planned Reconcile
+  href: planned-reconcile/toc.yml
+  topicHref: planned-reconcile/index.md
