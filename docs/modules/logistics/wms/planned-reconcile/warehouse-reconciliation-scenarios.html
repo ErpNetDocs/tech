@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Warehouse reconciliation scenarios | ERP.net Tech Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Warehouse reconciliation scenarios | ERP.net Tech Docs ">
+      
+      
+      <link rel="icon" href="../../../../favicon.ico">
+      <link rel="stylesheet" href="../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/wms/planned-reconcile/warehouse-reconciliation-scenarios.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../index.html">
+            <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="warehouse-reconciliation-scenarios">Warehouse reconciliation scenarios</h1>
+
+<p>This article describes the main operational scenarios for working with warehouse reconciliation in WMS.</p>
+<p>A reconciliation can cover a whole warehouse or a selected part of it, such as specific zones or locations. Depending on the business need, the process can start either with a broad first count or with a focused recount of selected product rows.</p>
+<h2 id="full-warehouse-reconciliation-for-a-whole-warehouse-or-selected-zones-and-locations">Full warehouse reconciliation for a whole warehouse or selected zones and locations</h2>
+<p>This scenario describes a complete warehouse reconciliation process. The reconciliation can cover a whole warehouse or a selected part of it, such as specific zones or locations.</p>
+<p>In the example below, the process is shown for a whole warehouse. The same overall flow also applies when the reconciliation scope is limited to selected zones or locations.</p>
+<p>The process starts with preparing the reconciliation and <a href="operations/generate-snapshot.html">generating the snapshot</a>, continues with the <a href="operations/initial-count.html">initial count</a>, and then moves to one focused recount for selected differences. When the result is confirmed, the reconciliation is released and the approved differences are applied through <a href="operations/generate-warehouse-transactions.html">warehouse transactions</a>.</p>
+<h3 id="before-you-begin">Before you begin</h3>
+<p>Before the counting starts, a warehouse manager creates a Warehouse Reconciliation document and defines the scope of the process.</p>
+<p>The scope can cover:</p>
+<ul>
+<li>the whole warehouse,</li>
+<li>selected zones, or</li>
+<li>selected locations.</li>
+</ul>
+<p>In the example below, the reconciliation is created for the whole warehouse.</p>
+<p>To keep the reconciliation reliable, the selected scope should not be affected by other warehouse operations while the process is running. As much as possible, avoid receipts, issues, moves, replenishments, or other warehouse movements in the selected locations and products until the counting and review are finished.</p>
+<p><strong>Expected result:</strong><br>
+The reconciliation is prepared, the scope is defined, and the warehouse team is ready to start.</p>
+<h3 id="step-1-open-the-warehouse-reconciliation-and-confirm-the-scope">Step 1: Open the Warehouse Reconciliation and confirm the scope</h3>
+<p>The warehouse manager opens the prepared Warehouse Reconciliation document and verifies that the correct warehouse, zones, and locations are included.</p>
+<p>In the example below, the manager works with a reconciliation for the whole warehouse.</p>
+<p>This is the point where the manager confirms exactly what will be counted.</p>
+<p><strong>Expected result:</strong><br>
+The reconciliation scope is confirmed and ready for execution.</p>
+<h3 id="step-2-generate-the-snapshot">Step 2: Generate the snapshot</h3>
+<p>From the Warehouse Reconciliation document, the warehouse manager runs <a href="operations/generate-snapshot.html">Generate Snapshot</a>.</p>
+<p>This creates the detailed reconciliation rows that will be used during counting and review.</p>
+<p>The snapshot is the momentary picture of the warehouse availability at the exact time when the function is executed. It records what the system expects to be available in the selected scope before the physical counting begins.</p>
+<p>From a user perspective, this is the step that turns the reconciliation from a prepared plan into a working document with detailed rows for review and counting.</p>
+<p>Because the snapshot captures the expected availability at a specific moment, it is best to avoid other warehouse movements in the selected scope after the snapshot is generated and before the counting is finished.</p>
+<p><strong>Expected result:</strong><br>
+The reconciliation now contains detailed rows with the expected availability captured at the moment of snapshot generation.</p>
+<h3 id="step-3-start-the-initial-count">Step 3: Start the initial count</h3>
+<p>After the snapshot is generated, the warehouse manager starts <a href="operations/initial-count.html">Initial Count</a>.</p>
+<p>When this function is executed, the system creates Warehouse Orders for the first counting pass.</p>
+<p>These orders are generated from the reconciliation details and are intended for the warehouse workers who will perform the counting in WMS Worker.</p>
+<p>In this first pass, the generated orders are focused on the locations that must be counted.</p>
+<p>Depending on the warehouse setup, the system may create:</p>
+<ul>
+<li>one Warehouse Order, or</li>
+<li>multiple Warehouse Orders.</li>
+</ul>
+<p>If a counting split policy is used, the initial count can be distributed between several orders. If no split is applied, the first pass is created as one order.</p>
+<p>In the example below, the initial count starts for the whole warehouse.</p>
+<p><strong>Expected result:</strong><br>
+One or more Warehouse Orders are created for the initial count.</p>
+<h3 id="step-4-open-the-initial-count-order-in-wms-worker">Step 4: Open the initial count order in WMS Worker</h3>
+<p>A warehouse worker opens WMS Worker and goes to the available Warehouse Orders.</p>
+<p>The worker opens one of the newly created count orders.</p>
+<p>In the initial count flow, the worker starts from the assigned locations. This is a broad first pass through the selected scope.</p>
+<p>In the example below, this scope covers the whole warehouse.</p>
+<p><strong>Expected result:</strong><br>
+The worker is inside the initial count flow and is ready to count by location.</p>
+<h3 id="step-5-perform-the-initial-count">Step 5: Perform the initial count</h3>
+<p>The worker goes through the assigned locations and records what is physically found there.</p>
+<p>During this process, the worker scans or enters the required values in <a href="operations/execute-count-orders-in-wms-worker.html">WMS Worker</a> and confirms each step until the location is completed.</p>
+<p>This first pass is intended to cover the whole selected scope of the reconciliation.</p>
+<p>If several orders were generated during Initial Count, different workers can process them separately. This allows the counting work to be distributed across zones or teams.</p>
+<p><strong>Expected result:</strong><br>
+The initial count is completed and the system has recorded the first counting result.</p>
+<h3 id="step-6-review-the-reconciliation-result">Step 6: Review the reconciliation result</h3>
+<p>After the first pass is completed, the warehouse manager returns to the Warehouse Reconciliation document.</p>
+<p>The manager reviews the result and checks which rows can be accepted and which rows require another verification.</p>
+<p>This review step separates the broad first pass from the focused second pass.</p>
+<p><strong>Expected result:</strong><br>
+The manager identifies the rows that need another count.</p>
+<h3 id="step-7-mark-selected-rows-for-recount">Step 7: Mark selected rows for recount</h3>
+<p>For the rows that need another physical check, the warehouse manager marks them for Recount.</p>
+<p>Only the selected rows should be included in this step. The goal is not to repeat the whole reconciliation, but to send back only the rows that need confirmation.</p>
+<p><strong>Expected result:</strong><br>
+The selected rows are marked for recount.</p>
+<h3 id="step-8-start-recount-single-order">Step 8: Start Recount (Single Order)</h3>
+<p>After the required rows are marked, the warehouse manager starts <a href="operations/generate-recount-orders.html">Generate recount orders</a> in <strong>Recount (Single Order)</strong> mode.</p>
+<p>At this point, the system creates one common Warehouse Order for the selected recount rows.</p>
+<p>This is different from Initial Count.</p>
+<p>During the initial count, the system may create one or several orders depending on the split policy. In Recount (Single Order), the system creates one single order that contains all selected recount rows.</p>
+<p>This order is more detailed than the initial count order.</p>
+<p><strong>Expected result:</strong><br>
+A single Warehouse Order is created for the selected recount rows.</p>
+<p>In the Recount (Single Order) scenario, the system creates one common order. It is not split by zones.</p>
+<h3 id="step-9-open-the-recount-order-in-wms-worker">Step 9: Open the recount order in WMS Worker</h3>
+<p>The warehouse worker opens WMS Worker again and selects the newly created recount order.</p>
+<p>Unlike the initial count, this order is not a broad location-based first pass. At this stage, the worker is checking specific products and their exact tracked characteristics for the selected rows.</p>
+<p>This means the recount is focused on concrete product positions such as:</p>
+<ul>
+<li>product,</li>
+<li>location,</li>
+<li>logistic unit,</li>
+<li>lot,</li>
+<li>serial number,</li>
+<li>variant,</li>
+<li>and other tracking data when applicable.</li>
+</ul>
+<p>From a user perspective, the worker is no longer counting the whole location again, but rechecking the exact products that need confirmation.</p>
+<p><strong>Expected result:</strong><br>
+The worker is ready to recheck the selected products and their tracking details.</p>
+<h3 id="step-10-perform-the-recount">Step 10: Perform the recount</h3>
+<p>The worker follows the recount order and checks the requested products again.</p>
+<p>This second pass is narrower and more precise than the initial count because it targets only the selected rows.</p>
+<p>The worker records the updated counted result for the specific products that were sent for recount.</p>
+<p><strong>Expected result:</strong><br>
+The recount result is recorded for the selected rows.</p>
+<h3 id="step-11-review-the-updated-result">Step 11: Review the updated result</h3>
+<p>After the recount is completed, the warehouse manager opens the Warehouse Reconciliation again and reviews the updated result.</p>
+<p>At this point, the reconciliation already contains:</p>
+<ul>
+<li>the result from the initial count for the full scope, and</li>
+<li>the recount result for the selected rows that needed another check.</li>
+</ul>
+<p>The manager decides which rows can now be accepted and whether another recount is still needed.</p>
+<p><strong>Expected result:</strong><br>
+The updated reconciliation result is ready for final review.</p>
+<h3 id="step-12-repeat-the-recount-if-necessary">Step 12: Repeat the recount if necessary</h3>
+<p>If some rows still require another verification, the process can continue with another recount.</p>
+<p>This means the warehouse manager can start:</p>
+<ul>
+<li>a second recount,</li>
+<li>a third recount,</li>
+<li>and so on,</li>
+</ul>
+<p>until the result is considered reliable.</p>
+<p>Each new recount is another controlled verification cycle for the selected rows only.</p>
+<p><strong>Expected result:</strong><br>
+Additional recount cycles can be performed until the remaining differences are clarified.</p>
+<h3 id="step-13-release-the-reconciliation">Step 13: Release the reconciliation</h3>
+<p>When all relevant rows are reviewed and the result is accepted, the warehouse manager releases the Warehouse Reconciliation.</p>
+<p>At this stage, the approved differences are turned into <a href="operations/generate-warehouse-transactions.html">Warehouse Transactions</a>.</p>
+<p>The created transactions use:</p>
+<ul>
+<li>task type Count,</li>
+<li>direction IN for positive differences,</li>
+<li>direction OUT for negative differences,</li>
+<li>and the corresponding quantities from the approved reconciliation result.</li>
+</ul>
+<p>This is the step where the confirmed reconciliation result is applied in the warehouse process.</p>
+<p><strong>Expected result:</strong><br>
+The approved differences are converted into warehouse transactions.</p>
+<h3 id="step-14-complete-the-reconciliation">Step 14: Complete the reconciliation</h3>
+<p>After release, the reconciliation can move to completion.</p>
+<p>This is the final step in which the process is no longer just a counting workflow, but a confirmed warehouse result for the selected scope.</p>
+<p><strong>Expected result:</strong><br>
+The reconciliation is completed with a reviewed and confirmed final result.</p>
+<h3 id="why-this-workflow-is-useful">Why this workflow is useful</h3>
+<p>This workflow separates the process into two practical stages:</p>
+<ul>
+<li>Initial Count – a broad first pass through the selected locations,</li>
+<li>Recount – a focused second pass only for selected rows.</li>
+</ul>
+<p>This approach keeps the process efficient:</p>
+<ul>
+<li>the whole scope is counted once,</li>
+<li>only selected differences are checked again,</li>
+<li>recount stays short and controlled,</li>
+<li>and the warehouse manager can guide the process step by step.</li>
+</ul>
+<h2 id="product-based-reconciliation-for-selected-products-in-a-whole-warehouse">Product-based reconciliation for selected products in a whole warehouse</h2>
+<p>This scenario describes a focused warehouse reconciliation process for selected products within a whole warehouse.</p>
+<p>Instead of starting with Initial Count, the process begins by <a href="operations/generate-snapshot.html">generating the reconciliation snapshot</a> for the whole warehouse, filtering the reconciliation details by product, and sending only the selected rows directly to recount.</p>
+<p>This approach is useful when the goal is not to perform a full warehouse count, but to verify only specific product positions across the warehouse. It allows the warehouse team to perform a targeted check, review the result, and repeat the recount only where needed.</p>
+<h3 id="before-you-begin-1">Before you begin</h3>
+<p>Before the counting starts, a warehouse manager creates a Warehouse Reconciliation document and defines the scope of the process.</p>
+<p>In this scenario, the reconciliation is created for the whole warehouse.</p>
+<p>After the reconciliation details are generated, the manager filters them by the product or products that need to be checked and starts the counting process only for those selected rows.</p>
+<p>To keep the reconciliation reliable, the selected scope should not be affected by other warehouse operations while the process is running. As much as possible, avoid receipts, issues, moves, replenishments, or other warehouse movements for the selected products in the warehouse until the counting and review are finished.</p>
+<p><strong>Expected result:</strong><br>
+The reconciliation is prepared for the whole warehouse and is ready for targeted product-based review.</p>
+<h3 id="step-1-open-the-warehouse-reconciliation-and-confirm-the-scope-1">Step 1: Open the Warehouse Reconciliation and confirm the scope</h3>
+<p>The warehouse manager opens the prepared Warehouse Reconciliation document and verifies that it covers the correct warehouse.</p>
+<p>In this scenario, the reconciliation scope is the whole warehouse, even though only selected product rows will be counted later.</p>
+<p><strong>Expected result:</strong><br>
+The reconciliation scope is confirmed and ready for execution.</p>
+<h3 id="step-2-generate-the-snapshot-1">Step 2: Generate the snapshot</h3>
+<p>From the Warehouse Reconciliation document, the warehouse manager runs <a href="operations/generate-snapshot.html">Generate Snapshot</a>.</p>
+<p>This creates the detailed reconciliation rows that will be used for filtering, counting, and review.</p>
+<p>The snapshot is the momentary picture of the warehouse availability at the exact time when the function is executed. It records what the system expects to be available in the warehouse before the physical counting begins.</p>
+<p>From a user perspective, this is the step that turns the reconciliation into a working document with detailed rows that can be reviewed and filtered.</p>
+<p>Because the snapshot captures the expected availability at a specific moment, it is best to avoid other warehouse movements for the selected products after the snapshot is generated and before the counting is finished.</p>
+<p><strong>Expected result:</strong><br>
+The reconciliation now contains detailed rows with the expected availability captured at the moment of snapshot generation.</p>
+<h3 id="step-3-filter-the-reconciliation-details-by-product">Step 3: Filter the reconciliation details by product</h3>
+<p>After the snapshot is generated, the warehouse manager reviews the reconciliation details and filters them by the product or products that need to be checked.</p>
+<p>This is the key difference in this scenario.</p>
+<p>The reconciliation still covers the whole warehouse, but the manager does not start a broad first counting pass. Instead, the manager narrows the working set to the specific product rows that require verification.</p>
+<p>These can be rows for one product or for a selected group of products, depending on the business need.</p>
+<p><strong>Expected result:</strong><br>
+Only the reconciliation rows for the selected products remain in focus for the next step.</p>
+<h3 id="step-4-mark-the-selected-product-rows-for-recount">Step 4: Mark the selected product rows for recount</h3>
+<p>The warehouse manager selects the filtered rows and marks them for Recount.</p>
+<p>Only these rows should be included. The goal is not to count the whole warehouse again, but to verify only the selected product positions.</p>
+<p>This makes the process suitable for product-based checks, cycle-style reviews, or targeted verification requested by the business.</p>
+<p><strong>Expected result:</strong><br>
+The selected product rows are marked for recount.</p>
+<h3 id="step-5-start-recount-single-order">Step 5: Start Recount (Single Order)</h3>
+<p>After the required rows are marked, the warehouse manager starts <a href="operations/generate-recount-orders.html">Generate recount orders</a> in <strong>Recount (Single Order)</strong> mode.</p>
+<p>At this point, the system creates one common Warehouse Order for the selected recount rows.</p>
+<p>This order contains only the selected product rows that need to be verified.</p>
+<p>In this scenario, Initial Count is not used. The process starts directly with a focused recount order based on the selected reconciliation details.</p>
+<p><strong>Expected result:</strong><br>
+A single Warehouse Order is created for the selected product rows.</p>
+<p>In the Recount (Single Order) scenario, the system creates one common order. It is not split by zones.</p>
+<h3 id="step-6-open-the-recount-order-in-wms-worker">Step 6: Open the recount order in WMS Worker</h3>
+<p>The warehouse worker opens WMS Worker and selects the newly created recount order.</p>
+<p>This is not a broad location-based counting pass. At this stage, the worker is checking specific products and their exact tracked characteristics for the selected rows.</p>
+<p>This means the recount is focused on concrete product positions such as:</p>
+<ul>
+<li>product,</li>
+<li>location,</li>
+<li>logistic unit,</li>
+<li>lot,</li>
+<li>serial number,</li>
+<li>variant,</li>
+<li>and other tracking data when applicable.</li>
+</ul>
+<p>From a user perspective, the worker is not counting the whole warehouse or the whole location. The worker is rechecking only the exact product positions that were selected in the reconciliation details.</p>
+<p><strong>Expected result:</strong><br>
+The worker is ready to recheck the selected products and their tracking details.</p>
+<h3 id="step-7-perform-the-recount">Step 7: Perform the recount</h3>
+<p>The worker follows the recount order and checks the requested products.</p>
+<p>The worker records the updated counted result only for the selected product rows.</p>
+<p>Because the order is already focused on the chosen products, this step is narrower and faster than a full counting pass.</p>
+<p><strong>Expected result:</strong><br>
+The recount result is recorded for the selected product rows.</p>
+<h3 id="step-8-review-the-updated-result">Step 8: Review the updated result</h3>
+<p>After the recount is completed, the warehouse manager opens the Warehouse Reconciliation again and reviews the updated result.</p>
+<p>At this point, the manager checks whether the recount result is acceptable for the selected rows.</p>
+<p>This is the review step where the manager decides whether the current result can be approved or whether another recount is still needed.</p>
+<p><strong>Expected result:</strong><br>
+The updated reconciliation result is ready for approval or for another recount cycle.</p>
+<h3 id="step-9-approve-the-result-or-repeat-the-recount">Step 9: Approve the result or repeat the recount</h3>
+<p>If the updated result is acceptable, the warehouse manager <a href="operations/approve-counted-results.html">approves the counted results</a> for the selected rows.</p>
+<p>If some rows still require another verification, the process can continue with another recount.</p>
+<p>This means the warehouse manager can start:</p>
+<ul>
+<li>a second recount,</li>
+<li>a third recount,</li>
+<li>and so on,</li>
+</ul>
+<p>until the result is considered reliable.</p>
+<p>Each new recount is another controlled verification cycle for the selected product rows only.</p>
+<p><strong>Expected result:</strong><br>
+The selected rows are either approved or sent to another recount cycle.</p>
+<h3 id="step-10-release-the-reconciliation">Step 10: Release the reconciliation</h3>
+<p>When all relevant rows are reviewed and the result is accepted, the warehouse manager releases the Warehouse Reconciliation.</p>
+<p>At this stage, the approved differences are turned into <a href="operations/generate-warehouse-transactions.html">Warehouse Transactions</a>.</p>
+<p>The created transactions use:</p>
+<ul>
+<li>task type Count,</li>
+<li>direction IN for positive differences,</li>
+<li>direction OUT for negative differences,</li>
+<li>and the corresponding quantities from the approved reconciliation result.</li>
+</ul>
+<p>In this scenario, only the selected product rows lead to differences that are applied through the reconciliation.</p>
+<p><strong>Expected result:</strong><br>
+The approved differences for the selected product rows are converted into warehouse transactions.</p>
+<h3 id="step-11-complete-the-reconciliation">Step 11: Complete the reconciliation</h3>
+<p>After release, the reconciliation can move to completion.</p>
+<p>This is the final step in which the process is no longer just a targeted counting workflow, but a confirmed warehouse result for the selected product rows within the warehouse.</p>
+<p><strong>Expected result:</strong><br>
+The reconciliation is completed with a reviewed and confirmed final result for the selected products.</p>
+<h3 id="why-this-workflow-is-useful-1">Why this workflow is useful</h3>
+<p>This workflow is useful when the business needs a product-based reconciliation instead of a full counting pass.</p>
+<p>It allows the warehouse team to:</p>
+<ul>
+<li>create a reconciliation for the whole warehouse,</li>
+<li>generate a complete snapshot,</li>
+<li>focus only on selected products,</li>
+<li>count only the selected product rows,</li>
+<li>approve the result or repeat the recount if necessary,</li>
+<li>and apply differences only for the checked product rows.</li>
+</ul>
+<p>This approach is especially useful for targeted product checks, recurring verification of specific items, and customer workflows where only selected products need to be reviewed without starting a full warehouse counting process.</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/wms/planned-reconcile/warehouse-reconciliation-scenarios.md/#L1" class="edit-link">Suggest improvement to this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
