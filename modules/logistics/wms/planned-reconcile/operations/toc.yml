@@ -4,5 +4,7 @@
   href: generate-snapshot.md  
 - name: Initial Count
   href: initial-count.md 
+- name: Execute count orders in WMS Worker
+  href: execute-count-orders-in-wms-worker.md 
 - name: Populate Counted Quantities
   href: populate-counted-quantities.md   
