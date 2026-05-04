@@ -57,3 +57,10 @@ ERP.net allows you to replace one product in a document line with another produc
 Learn more from the link above.
 
 ![picture](pictures/replace_with.png)
+
+### 6. Deactivate Currancy via “Is Active” field
+
+We’ve added the standard Is Active field to Currency, allowing currencies to be deactivated when no longer in use (e.g., BGN as a delisted currency). Inactive currencies are excluded from selection lists, preventing accidental use in documents.
+
+![picture](pictures/currency_active.png)
+
