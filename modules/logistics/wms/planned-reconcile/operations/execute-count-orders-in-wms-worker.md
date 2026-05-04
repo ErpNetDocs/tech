@@ -96,4 +96,19 @@ If no counted records exist for a finished reconciliation detail in that session
 
 This allows the reconciliation to distinguish between rows that are still in progress and rows that were completed but no quantity was found for them.
 
-The next operation is usually **Populate Counted Quantities**.
+T### What changes in the reconciliation details
+
+When the generated count orders for the current session are completed in **WMS Worker**, the related reconciliation rows move from:
+
+- **ReviewStatus = Started**
+to
+- **ReviewStatus = Finished**
+
+The **Session** does not change at this stage.
+
+This is an automatic transition for the current counting session and marks the rows as ready for count aggregation and review.
+
+> [!NOTE]
+> For an overview of how **Session** and **ReviewStatus** change throughout the process, see [Sessions and review statuses](sessions-and-review-statuses.md).
+
+The next operation is usually [Populate Counted Quantities](populate-counted-quantities.md).
