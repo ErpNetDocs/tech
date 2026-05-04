@@ -17809,6 +17809,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/logistics/wms/planned-reconcile/operations/generate-warehouse-transactions.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/wms/planned-reconcile/operations/generate-warehouse-transactions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/logistics/wms/planned-reconcile/operations/index.md",
       "output": {
         ".html": {
