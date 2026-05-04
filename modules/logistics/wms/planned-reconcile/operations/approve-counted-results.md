@@ -66,4 +66,15 @@ After **Approve counted results** is completed:
 
 From a user perspective, this is the step where the manager confirms which rows already have a final accepted result.
 
-The next operation depends on the remaining rows. If some discrepancies still need another check, users continue with a recount operation. When all required rows are approved, the process can continue with **Release**.
+### What changes in the reconciliation details
+
+When the user approves the selected rows, their **ReviewStatus** becomes **Approved**.
+
+The **Session** does not change.
+
+This marks the current counted result as accepted for those reconciliation rows.
+
+> [!NOTE]
+> For an overview of how **Session** and **ReviewStatus** change throughout the process, see [Sessions and review statuses](sessions-and-review-statuses.md).
+
+If another verification is needed, the next operation is [Generate recount orders](generate-recount-orders.md). When the required rows are already approved, the process can continue with [Generate warehouse transactions](generate-warehouse-transactions.md).
