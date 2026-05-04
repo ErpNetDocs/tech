@@ -108,4 +108,20 @@ After **Generate recount orders** is completed:
 - the orders contain detailed stock positions for recount;
 - the selected reconciliation rows move to the new recount session with status **Started**.
 
-The next step is to execute the generated recount orders in **WMS Worker**.
+### What changes in the reconciliation details
+
+When **Generate recount orders** is used, only the selected reconciliation rows move to the next counting session.
+
+For these rows:
+
+- **Session** becomes the next session number
+- **ReviewStatus** becomes **Started**
+
+All other rows keep their current **Session** and **ReviewStatus**.
+
+This marks only the selected rows as active in the new recount cycle.
+
+> [!NOTE]
+> For an overview of how **Session** and **ReviewStatus** change throughout the process, see [Sessions and review statuses](sessions-and-review-statuses.md).
+
+The next operation is usually [Execute count orders in WMS Worker](execute-count-orders-in-wms-worker.md).
