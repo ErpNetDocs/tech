@@ -3,5 +3,6 @@
 - name: Generate Snapshot
   href: generate-snapshot.md  
 - name: Initial Count
-  href: initial-count.md  
-  
+  href: initial-count.md 
+- name: Populate Counted Quantities
+  href: populate-counted-quantities.md   
