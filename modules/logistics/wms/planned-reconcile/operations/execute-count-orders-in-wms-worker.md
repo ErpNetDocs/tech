@@ -90,4 +90,10 @@ After the count orders are executed in **WMS Worker**:
 
 From a user perspective, this is the step where the physical count is performed and the system receives the counting result for the current session.
 
+A finished detail row is treated as completed for the current counting session.
+
+If no counted records exist for a finished reconciliation detail in that session, the later aggregation step treats its counted result as zero.
+
+This allows the reconciliation to distinguish between rows that are still in progress and rows that were completed but no quantity was found for them.
+
 The next operation is usually **Populate Counted Quantities**.
