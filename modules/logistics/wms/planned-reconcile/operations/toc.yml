@@ -2,3 +2,6 @@
   href: index.md
 - name: Generate Snapshot
   href: generate-snapshot.md  
+- name: Initial Count
+  href: initial-count.md  
+  
