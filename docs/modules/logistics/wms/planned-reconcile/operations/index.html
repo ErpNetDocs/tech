@@ -87,6 +87,33 @@
         <article data-uid="">
 <h1 id="operations">Operations</h1>
 
+<p>This section describes the main operations used in the <strong>Planned Reconcile</strong> workflow.</p>
+<p>These operations follow the reconciliation process from preparing the snapshot, through counting and review, to applying the approved differences in the warehouse.</p>
+<p>Use them in the following order:</p>
+<ol>
+<li><p><a href="generate-snapshot.html">Generate Snapshot</a><br>
+Create the reconciliation details from the current warehouse availability.</p>
+</li>
+<li><p><a href="initial-count.html">Initial Count</a><br>
+Generate the first count orders for the reconciliation scope.</p>
+</li>
+<li><p><a href="execute-count-orders-in-wms-worker.html">Execute count orders in WMS Worker</a><br>
+Perform the physical count and record the counting result for the current session.</p>
+</li>
+<li><p><a href="populate-counted-quantities.html">Populate Counted Quantities</a><br>
+Aggregate the performed counts into the reconciliation details.</p>
+</li>
+<li><p><a href="approve-counted-results.html">Approve counted results</a><br>
+Confirm the rows whose current counted result is accepted.</p>
+</li>
+<li><p><a href="generate-recount-orders.html">Generate recount orders</a><br>
+Send the selected rows to another counting cycle when another verification is needed.</p>
+</li>
+<li><p><a href="generate-warehouse-transactions.html">Generate warehouse transactions</a><br>
+Change the document state to <strong>Release</strong> to generate warehouse transactions for the approved differences.</p>
+</li>
+</ol>
+<p>Some operations can be repeated. For example, after a recount is executed in <strong>WMS Worker</strong>, users can populate the counted quantities again, review the result again, and generate another recount if needed.</p>
 
 </article>
 
