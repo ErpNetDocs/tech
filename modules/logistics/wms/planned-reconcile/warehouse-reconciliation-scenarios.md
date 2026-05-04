@@ -1,20 +1,20 @@
 # Warehouse reconciliation scenarios
 
-This article describes the main operational scenarios for working with **warehouse reconciliation** in WMS.
+This article describes the main operational scenarios for working with warehouse reconciliation in WMS.
 
-A reconciliation can cover a **whole warehouse** or a selected part of it, such as specific zones or locations. Depending on the business need, the process can start either with a broad first count or with a focused recount of selected product rows.
+A reconciliation can cover a whole warehouse or a selected part of it, such as specific zones or locations. Depending on the business need, the process can start either with a broad first count or with a focused recount of selected product rows.
 
 ## Full warehouse reconciliation for a whole warehouse or selected zones and locations
 
-This scenario describes a complete **warehouse reconciliation** process. The reconciliation can cover a **whole warehouse** or a selected part of it, such as specific zones or locations.
+This scenario describes a complete warehouse reconciliation process. The reconciliation can cover a whole warehouse or a selected part of it, such as specific zones or locations.
 
-In the example below, the process is shown for a **whole warehouse**. The same overall flow also applies when the reconciliation scope is limited to selected zones or locations.
+In the example below, the process is shown for a whole warehouse. The same overall flow also applies when the reconciliation scope is limited to selected zones or locations.
 
-The process starts with preparing the reconciliation and generating the snapshot, continues with the **initial count**, and then moves to one focused **recount** for selected differences. When the result is confirmed, the reconciliation is released and the approved differences are applied through warehouse transactions.
+The process starts with preparing the reconciliation and [generating the snapshot](operations/generate-snapshot.md), continues with the [initial count](operations/initial-count.md), and then moves to one focused recount for selected differences. When the result is confirmed, the reconciliation is released and the approved differences are applied through [warehouse transactions](operations/generate-warehouse-transactions.md).
 
-## Before you begin
+### Before you begin
 
-Before the counting starts, a warehouse manager creates a **Warehouse Reconciliation** document and defines the scope of the process.
+Before the counting starts, a warehouse manager creates a Warehouse Reconciliation document and defines the scope of the process.
 
 The scope can cover:
 
@@ -22,18 +22,18 @@ The scope can cover:
 - selected zones, or
 - selected locations.
 
-In the example below, the reconciliation is created for the **whole warehouse**.
+In the example below, the reconciliation is created for the whole warehouse.
 
-To keep the reconciliation reliable, the selected scope should not be affected by other warehouse operations while the process is running. As much as possible, avoid **receipts, issues, moves, replenishments**, or other warehouse movements in the selected locations and products until the counting and review are finished.
+To keep the reconciliation reliable, the selected scope should not be affected by other warehouse operations while the process is running. As much as possible, avoid receipts, issues, moves, replenishments, or other warehouse movements in the selected locations and products until the counting and review are finished.
 
 **Expected result:**  
 The reconciliation is prepared, the scope is defined, and the warehouse team is ready to start.
 
 ### Step 1: Open the Warehouse Reconciliation and confirm the scope
 
-The warehouse manager opens the prepared **Warehouse Reconciliation** document and verifies that the correct warehouse, zones, and locations are included.
+The warehouse manager opens the prepared Warehouse Reconciliation document and verifies that the correct warehouse, zones, and locations are included.
 
-In the example below, the manager works with a reconciliation for the **whole warehouse**.
+In the example below, the manager works with a reconciliation for the whole warehouse.
 
 This is the point where the manager confirms exactly what will be counted.
 
@@ -42,11 +42,11 @@ The reconciliation scope is confirmed and ready for execution.
 
 ### Step 2: Generate the snapshot
 
-From the **Warehouse Reconciliation** document, the warehouse manager runs **Generate Snapshot**.
+From the Warehouse Reconciliation document, the warehouse manager runs [Generate Snapshot](operations/generate-snapshot.md).
 
 This creates the detailed reconciliation rows that will be used during counting and review.
 
-The snapshot is the **momentary picture of the warehouse availability** at the exact time when the function is executed. It records what the system expects to be available in the selected scope before the physical counting begins.
+The snapshot is the momentary picture of the warehouse availability at the exact time when the function is executed. It records what the system expects to be available in the selected scope before the physical counting begins.
 
 From a user perspective, this is the step that turns the reconciliation from a prepared plan into a working document with detailed rows for review and counting.
 
@@ -57,35 +57,35 @@ The reconciliation now contains detailed rows with the expected availability cap
 
 ### Step 3: Start the initial count
 
-After the snapshot is generated, the warehouse manager starts **Initial Count**.
+After the snapshot is generated, the warehouse manager starts [Initial Count](operations/initial-count.md).
 
-When this function is executed, the system creates **Warehouse Orders** for the first counting pass.
+When this function is executed, the system creates Warehouse Orders for the first counting pass.
 
-These orders are generated from the reconciliation details and are intended for the warehouse workers who will perform the counting in **WMS Worker**.
+These orders are generated from the reconciliation details and are intended for the warehouse workers who will perform the counting in WMS Worker.
 
-In this first pass, the generated orders are focused on the **locations that must be counted**.
+In this first pass, the generated orders are focused on the locations that must be counted.
 
 Depending on the warehouse setup, the system may create:
 
-- **one Warehouse Order**, or
-- **multiple Warehouse Orders**.
+- one Warehouse Order, or
+- multiple Warehouse Orders.
 
 If a counting split policy is used, the initial count can be distributed between several orders. If no split is applied, the first pass is created as one order.
 
-In the example below, the initial count starts for the **whole warehouse**.
+In the example below, the initial count starts for the whole warehouse.
 
 **Expected result:**  
 One or more Warehouse Orders are created for the initial count.
 
 ### Step 4: Open the initial count order in WMS Worker
 
-A warehouse worker opens **WMS Worker** and goes to the available **Warehouse Orders**.
+A warehouse worker opens WMS Worker and goes to the available Warehouse Orders.
 
 The worker opens one of the newly created count orders.
 
-In the **initial count** flow, the worker starts from the assigned locations. This is a broad first pass through the selected scope.
+In the initial count flow, the worker starts from the assigned locations. This is a broad first pass through the selected scope.
 
-In the example below, this scope covers the **whole warehouse**.
+In the example below, this scope covers the whole warehouse.
 
 **Expected result:**  
 The worker is inside the initial count flow and is ready to count by location.
@@ -94,18 +94,18 @@ The worker is inside the initial count flow and is ready to count by location.
 
 The worker goes through the assigned locations and records what is physically found there.
 
-During this process, the worker scans or enters the required values in **WMS Worker** and confirms each step until the location is completed.
+During this process, the worker scans or enters the required values in [WMS Worker](operations/execute-count-orders-in-wms-worker.md) and confirms each step until the location is completed.
 
 This first pass is intended to cover the whole selected scope of the reconciliation.
 
-If several orders were generated during **Initial Count**, different workers can process them separately. This allows the counting work to be distributed across zones or teams.
+If several orders were generated during Initial Count, different workers can process them separately. This allows the counting work to be distributed across zones or teams.
 
 **Expected result:**  
 The initial count is completed and the system has recorded the first counting result.
 
 ### Step 6: Review the reconciliation result
 
-After the first pass is completed, the warehouse manager returns to the **Warehouse Reconciliation** document.
+After the first pass is completed, the warehouse manager returns to the Warehouse Reconciliation document.
 
 The manager reviews the result and checks which rows can be accepted and which rows require another verification.
 
@@ -116,7 +116,7 @@ The manager identifies the rows that need another count.
 
 ### Step 7: Mark selected rows for recount
 
-For the rows that need another physical check, the warehouse manager marks them for **Recount**.
+For the rows that need another physical check, the warehouse manager marks them for Recount.
 
 Only the selected rows should be included in this step. The goal is not to repeat the whole reconciliation, but to send back only the rows that need confirmation.
 
@@ -125,26 +125,26 @@ The selected rows are marked for recount.
 
 ### Step 8: Start Recount (Single Order)
 
-After the required rows are marked, the warehouse manager starts **Recount (Single Order)**.
+After the required rows are marked, the warehouse manager starts [Generate recount orders](operations/generate-recount-orders.md) in **Recount (Single Order)** mode.
 
-At this point, the system creates **one common Warehouse Order** for the selected recount rows.
+At this point, the system creates one common Warehouse Order for the selected recount rows.
 
-This is different from **Initial Count**.
+This is different from Initial Count.
 
-During the initial count, the system may create one or several orders depending on the split policy. In **Recount (Single Order)**, the system creates **one single order** that contains all selected recount rows.
+During the initial count, the system may create one or several orders depending on the split policy. In Recount (Single Order), the system creates one single order that contains all selected recount rows.
 
 This order is more detailed than the initial count order.
 
 **Expected result:**  
 A single Warehouse Order is created for the selected recount rows.
 
-> In the **Recount (Single Order)** scenario, the system creates **one common order**. It is **not** split by zones.
+In the Recount (Single Order) scenario, the system creates one common order. It is not split by zones.
 
 ### Step 9: Open the recount order in WMS Worker
 
-The warehouse worker opens **WMS Worker** again and selects the newly created recount order.
+The warehouse worker opens WMS Worker again and selects the newly created recount order.
 
-Unlike the initial count, this order is not a broad location-based first pass. At this stage, the worker is checking **specific products** and their exact tracked characteristics for the selected rows.
+Unlike the initial count, this order is not a broad location-based first pass. At this stage, the worker is checking specific products and their exact tracked characteristics for the selected rows.
 
 This means the recount is focused on concrete product positions such as:
 
@@ -174,7 +174,7 @@ The recount result is recorded for the selected rows.
 
 ### Step 11: Review the updated result
 
-After the recount is completed, the warehouse manager opens the **Warehouse Reconciliation** again and reviews the updated result.
+After the recount is completed, the warehouse manager opens the Warehouse Reconciliation again and reviews the updated result.
 
 At this point, the reconciliation already contains:
 
@@ -205,15 +205,15 @@ Additional recount cycles can be performed until the remaining differences are c
 
 ### Step 13: Release the reconciliation
 
-When all relevant rows are reviewed and the result is accepted, the warehouse manager releases the **Warehouse Reconciliation**.
+When all relevant rows are reviewed and the result is accepted, the warehouse manager releases the Warehouse Reconciliation.
 
-At this stage, the approved differences are turned into **Warehouse Transactions**.
+At this stage, the approved differences are turned into [Warehouse Transactions](operations/generate-warehouse-transactions.md).
 
 The created transactions use:
 
-- task type **Count**,
-- direction **IN** for positive differences,
-- direction **OUT** for negative differences,
+- task type Count,
+- direction IN for positive differences,
+- direction OUT for negative differences,
 - and the corresponding quantities from the approved reconciliation result.
 
 This is the step where the confirmed reconciliation result is applied in the warehouse process.
@@ -230,12 +230,12 @@ This is the final step in which the process is no longer just a counting workflo
 **Expected result:**  
 The reconciliation is completed with a reviewed and confirmed final result.
 
-## Why this workflow is useful
+### Why this workflow is useful
 
 This workflow separates the process into two practical stages:
 
-- **Initial Count** – a broad first pass through the selected locations,
-- **Recount** – a focused second pass only for selected rows.
+- Initial Count – a broad first pass through the selected locations,
+- Recount – a focused second pass only for selected rows.
 
 This approach keeps the process efficient:
 
@@ -246,41 +246,41 @@ This approach keeps the process efficient:
 
 ## Product-based reconciliation for selected products in a whole warehouse
 
-This scenario describes a focused **warehouse reconciliation** process for selected products within a **whole warehouse**.
+This scenario describes a focused warehouse reconciliation process for selected products within a whole warehouse.
 
-Instead of starting with **Initial Count**, the process begins by generating the reconciliation snapshot for the whole warehouse, filtering the reconciliation details by product, and sending only the selected rows directly to **Recount**.
+Instead of starting with Initial Count, the process begins by [generating the reconciliation snapshot](operations/generate-snapshot.md) for the whole warehouse, filtering the reconciliation details by product, and sending only the selected rows directly to recount.
 
 This approach is useful when the goal is not to perform a full warehouse count, but to verify only specific product positions across the warehouse. It allows the warehouse team to perform a targeted check, review the result, and repeat the recount only where needed.
 
-## Before you begin
+### Before you begin
 
-Before the counting starts, a warehouse manager creates a **Warehouse Reconciliation** document and defines the scope of the process.
+Before the counting starts, a warehouse manager creates a Warehouse Reconciliation document and defines the scope of the process.
 
-In this scenario, the reconciliation is created for the **whole warehouse**.
+In this scenario, the reconciliation is created for the whole warehouse.
 
 After the reconciliation details are generated, the manager filters them by the product or products that need to be checked and starts the counting process only for those selected rows.
 
-To keep the reconciliation reliable, the selected scope should not be affected by other warehouse operations while the process is running. As much as possible, avoid **receipts, issues, moves, replenishments**, or other warehouse movements for the selected products in the warehouse until the counting and review are finished.
+To keep the reconciliation reliable, the selected scope should not be affected by other warehouse operations while the process is running. As much as possible, avoid receipts, issues, moves, replenishments, or other warehouse movements for the selected products in the warehouse until the counting and review are finished.
 
 **Expected result:**  
 The reconciliation is prepared for the whole warehouse and is ready for targeted product-based review.
 
 ### Step 1: Open the Warehouse Reconciliation and confirm the scope
 
-The warehouse manager opens the prepared **Warehouse Reconciliation** document and verifies that it covers the correct warehouse.
+The warehouse manager opens the prepared Warehouse Reconciliation document and verifies that it covers the correct warehouse.
 
-In this scenario, the reconciliation scope is the **whole warehouse**, even though only selected product rows will be counted later.
+In this scenario, the reconciliation scope is the whole warehouse, even though only selected product rows will be counted later.
 
 **Expected result:**  
 The reconciliation scope is confirmed and ready for execution.
 
 ### Step 2: Generate the snapshot
 
-From the **Warehouse Reconciliation** document, the warehouse manager runs **Generate Snapshot**.
+From the Warehouse Reconciliation document, the warehouse manager runs [Generate Snapshot](operations/generate-snapshot.md).
 
 This creates the detailed reconciliation rows that will be used for filtering, counting, and review.
 
-The snapshot is the **momentary picture of the warehouse availability** at the exact time when the function is executed. It records what the system expects to be available in the warehouse before the physical counting begins.
+The snapshot is the momentary picture of the warehouse availability at the exact time when the function is executed. It records what the system expects to be available in the warehouse before the physical counting begins.
 
 From a user perspective, this is the step that turns the reconciliation into a working document with detailed rows that can be reviewed and filtered.
 
@@ -304,7 +304,7 @@ Only the reconciliation rows for the selected products remain in focus for the n
 
 ### Step 4: Mark the selected product rows for recount
 
-The warehouse manager selects the filtered rows and marks them for **Recount**.
+The warehouse manager selects the filtered rows and marks them for Recount.
 
 Only these rows should be included. The goal is not to count the whole warehouse again, but to verify only the selected product positions.
 
@@ -315,24 +315,24 @@ The selected product rows are marked for recount.
 
 ### Step 5: Start Recount (Single Order)
 
-After the required rows are marked, the warehouse manager starts **Recount (Single Order)**.
+After the required rows are marked, the warehouse manager starts [Generate recount orders](operations/generate-recount-orders.md) in **Recount (Single Order)** mode.
 
-At this point, the system creates **one common Warehouse Order** for the selected recount rows.
+At this point, the system creates one common Warehouse Order for the selected recount rows.
 
 This order contains only the selected product rows that need to be verified.
 
-In this scenario, **Initial Count** is not used. The process starts directly with a focused recount order based on the selected reconciliation details.
+In this scenario, Initial Count is not used. The process starts directly with a focused recount order based on the selected reconciliation details.
 
 **Expected result:**  
 A single Warehouse Order is created for the selected product rows.
 
-> In the **Recount (Single Order)** scenario, the system creates **one common order**. It is **not** split by zones.
+In the Recount (Single Order) scenario, the system creates one common order. It is not split by zones.
 
 ### Step 6: Open the recount order in WMS Worker
 
-The warehouse worker opens **WMS Worker** and selects the newly created recount order.
+The warehouse worker opens WMS Worker and selects the newly created recount order.
 
-This is not a broad location-based counting pass. At this stage, the worker is checking **specific products** and their exact tracked characteristics for the selected rows.
+This is not a broad location-based counting pass. At this stage, the worker is checking specific products and their exact tracked characteristics for the selected rows.
 
 This means the recount is focused on concrete product positions such as:
 
@@ -362,7 +362,7 @@ The recount result is recorded for the selected product rows.
 
 ### Step 8: Review the updated result
 
-After the recount is completed, the warehouse manager opens the **Warehouse Reconciliation** again and reviews the updated result.
+After the recount is completed, the warehouse manager opens the Warehouse Reconciliation again and reviews the updated result.
 
 At this point, the manager checks whether the recount result is acceptable for the selected rows.
 
@@ -373,7 +373,7 @@ The updated reconciliation result is ready for approval or for another recount c
 
 ### Step 9: Approve the result or repeat the recount
 
-If the updated result is acceptable, the warehouse manager approves the selected rows.
+If the updated result is acceptable, the warehouse manager [approves the counted results](operations/approve-counted-results.md) for the selected rows.
 
 If some rows still require another verification, the process can continue with another recount.
 
@@ -392,15 +392,15 @@ The selected rows are either approved or sent to another recount cycle.
 
 ### Step 10: Release the reconciliation
 
-When all relevant rows are reviewed and the result is accepted, the warehouse manager releases the **Warehouse Reconciliation**.
+When all relevant rows are reviewed and the result is accepted, the warehouse manager releases the Warehouse Reconciliation.
 
-At this stage, the approved differences are turned into **Warehouse Transactions**.
+At this stage, the approved differences are turned into [Warehouse Transactions](operations/generate-warehouse-transactions.md).
 
 The created transactions use:
 
-- task type **Count**,
-- direction **IN** for positive differences,
-- direction **OUT** for negative differences,
+- task type Count,
+- direction IN for positive differences,
+- direction OUT for negative differences,
 - and the corresponding quantities from the approved reconciliation result.
 
 In this scenario, only the selected product rows lead to differences that are applied through the reconciliation.
@@ -417,9 +417,9 @@ This is the final step in which the process is no longer just a targeted countin
 **Expected result:**  
 The reconciliation is completed with a reviewed and confirmed final result for the selected products.
 
-## Why this workflow is useful
+### Why this workflow is useful
 
-This workflow is useful when the business needs a **product-based reconciliation** instead of a full counting pass.
+This workflow is useful when the business needs a product-based reconciliation instead of a full counting pass.
 
 It allows the warehouse team to:
 
