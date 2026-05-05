@@ -24,3 +24,5 @@
   href: start-business-rule.md
 - name: Whole quantity validation
   href: whole-quantity-validation.md
+- name: Auto-create and release a sales order when an offer is released
+  href: auto-release-document.md
