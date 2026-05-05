@@ -62,8 +62,6 @@ The reconciliation now contains detailed rows with the expected availability cap
 
 After the [snapshot](operations/generate-snapshot.md) is generated, the warehouse manager starts [Initial Count](operations/initial-count.md).
 
-![Initial Count button](pictures/initial-count-button1.png)
-
 When this function is executed, the system creates Warehouse Orders for the first counting pass.
 
 These orders are generated from the reconciliation details and are intended for the warehouse workers who will perform the counting in [WMS Worker](operations/execute-count-orders-in-wms-worker.md).
@@ -81,6 +79,8 @@ In the example below, the initial count starts for the whole warehouse.
 
 **Expected result:**  
 One or more Warehouse Orders are created for the initial count.
+
+![Initial Count button](pictures/initial-count-button1.png)
 
 ### Step 4: Open the initial count order in WMS Worker
 
