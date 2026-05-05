@@ -224,11 +224,26 @@ Additional recount cycles can be performed until the remaining differences are c
 <p>This is the step where the confirmed reconciliation result is applied in the warehouse process.</p>
 <p><strong>Expected result:</strong><br>
 The approved differences are converted into warehouse transactions.</p>
-<h3 id="step-14-complete-the-reconciliation">Step 14: Complete the reconciliation</h3>
-<p>After release, the reconciliation can move to completion.</p>
-<p>This is the final step in which the process is no longer just a counting workflow, but a confirmed warehouse result for the selected scope.</p>
+<h3 id="step-14-apply-the-approved-differences-in-wms">Step 14: Apply the approved differences in WMS</h3>
+<p>When all relevant rows are reviewed and the result is accepted, the warehouse manager changes the document state of the <strong>Warehouse Reconciliation</strong> to <strong>Release</strong>.</p>
+<p>At this stage, the system generates <strong>Warehouse Transactions</strong> for the approved reconciliation differences.</p>
+<p>The created transactions use:</p>
+<ul>
+<li>task type <strong>Count</strong>;</li>
+<li>direction <strong>IN</strong> for positive differences;</li>
+<li>direction <strong>OUT</strong> for negative differences;</li>
+<li>and the corresponding quantities from the approved reconciliation result.</li>
+</ul>
+<p>With this step, the warehouse availability in the <strong>WMS warehouse</strong> is updated according to the approved counted result.</p>
 <p><strong>Expected result:</strong><br>
-The reconciliation is completed with a reviewed and confirmed final result.</p>
+The approved differences are applied in WMS, and the warehouse availability is updated.</p>
+<h3 id="step-15-transfer-the-result-to-inventory-reconciliation">Step 15: Transfer the result to Inventory Reconciliation</h3>
+<p>After the approved differences are applied in WMS, the result can be transferred to an <strong>Inventory Reconciliation</strong> document.</p>
+<p>This is done by using the <strong>Add the reconciliation lines from the WMS module</strong> UI function in the <strong>Reconciliation</strong> document.</p>
+<p>At this stage, the result from WMS is ready to be loaded into the Inventory module for further review and application to the inventory availability.</p>
+<p>For detailed information, see <a href="https://docs.erp.net/tech/modules/logistics/wms/how-to/reconcile.html">Reconcile</a>.</p>
+<p><strong>Expected result:</strong><br>
+The generated warehouse transactions are available to be loaded into an <strong>Inventory Reconciliation</strong> document.</p>
 <h3 id="why-this-workflow-is-useful">Why this workflow is useful</h3>
 <p>This workflow separates the process into two practical stages:</p>
 <ul>
