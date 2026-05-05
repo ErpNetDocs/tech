@@ -199,7 +199,7 @@ At this point, the reconciliation already contains:
 - the result from the initial count for the full scope, and
 - the recount result for the selected rows that needed another check.
 
-The manager decides which rows can now be accepted and whether another recount is still needed.
+The manager decides which rows can now be Approved and whether another recount is still needed.
 
 **Expected result:**  
 The updated reconciliation result is ready for final review.
