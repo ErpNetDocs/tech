@@ -154,6 +154,8 @@ A single Warehouse Order is created for the selected recount rows.
 
 In the Recount (Single Order) scenario, the system creates one common order. It is not split by zones.
 
+![Recount](pictures/recount.png)
+
 ### Step 9: Open the recount order in WMS Worker
 
 The warehouse worker opens WMS Worker again and selects the newly created recount order.
