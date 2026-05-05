@@ -105,11 +105,13 @@
 <li>Orders created by <strong>Recount</strong> are detail-based.</li>
 </ul>
 <p>This difference is important because the worker does not follow the same counting flow in both cases.</p>
+<p><img src="../pictures/wms-worker-orders.png" alt="Orders list"></p>
 <h3 id="initial-count-execution">Initial Count execution</h3>
 <p>In <strong>Initial Count</strong>, the generated order lines represent the locations that must be counted.</p>
 <p>The worker starts from the assigned warehouse location and performs the first physical count for that location.</p>
 <p>At this stage, the order does not guide the worker through a predefined list of detailed product positions. Instead, the worker counts what is physically found at the location.</p>
 <p>This makes <strong>Initial Count</strong> the broad first pass through the selected reconciliation scope.</p>
+<p><img src="../pictures/wms-worker.png" alt="WMS Worker"></p>
 <h3 id="recount-execution">Recount execution</h3>
 <p>In <strong>Recount</strong>, the generated order already contains the exact positions that must be checked again.</p>
 <p>The worker does not recount the whole location. Instead, the worker recounts the selected product positions and their tracked characteristics.</p>
@@ -124,6 +126,7 @@
 <li>and other tracking data when applicable.</li>
 </ul>
 <p>This makes recount a focused verification step instead of a broad counting pass.</p>
+<p><img src="../pictures/recount-worker.png" alt="Recount Worker"></p>
 <h3 id="what-the-worker-records">What the worker records</h3>
 <p>During execution, the worker records the counted result in <strong>WMS Worker</strong>.</p>
 <p>Each performed count is stored as a count record for the current counting session.</p>
@@ -132,7 +135,7 @@
 <h3 id="how-repeated-counting-works">How repeated counting works</h3>
 <p>A worker can record multiple counts during the same counting session.</p>
 <p>The reconciliation result for the session is not taken directly from a single last action on the screen. Instead, the system later aggregates the count records for the session and updates the reconciliation details with the resulting counted quantities.</p>
-<p>This is why the execution step and the later <strong>Populate Counted Quantities</strong> step are separate parts of the process.</p>
+<p>This is why the execution step and the later <a href="populate-counted-quantities.html">Populate Counted Quantities</a> step are separate parts of the process.</p>
 <h3 id="what-happens-when-the-orders-are-completed">What happens when the orders are completed</h3>
 <p>When the generated count orders for the current session are completed, the related reconciliation details move from <strong>Started</strong> to <strong>Finished</strong>.</p>
 <p>This is an automatic system step for the current counting session.</p>
@@ -142,7 +145,7 @@
 <ul>
 <li>the performed counts are stored for the current session;</li>
 <li>the related reconciliation details move to <strong>Finished</strong> when the session orders are completed;</li>
-<li>the reconciliation is ready for <strong>Populate Counted Quantities</strong>.</li>
+<li>the reconciliation is ready for <a href="populate-counted-quantities.html">Populate Counted Quantities</a>.</li>
 </ul>
 <p>From a user perspective, this is the step where the physical count is performed and the system receives the counting result for the current session.</p>
 <p>A finished detail row is treated as completed for the current counting session.</p>
@@ -155,7 +158,6 @@
 to</li>
 <li><strong>ReviewStatus = Finished</strong></li>
 </ul>
-<p>The <strong>Session</strong> does not change at this stage.</p>
 <p>This is an automatic transition for the current counting session and marks the rows as ready for count aggregation and review.</p>
 <div class="NOTE">
 <h5>Note</h5>

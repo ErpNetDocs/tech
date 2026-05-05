@@ -90,6 +90,7 @@
 <p>Use <strong>Generate recount orders</strong> to create new count orders for the reconciliation rows that need another verification.</p>
 <p>This operation is used after the current counted result has been reviewed and some rows are not ready to be approved yet. Instead of accepting the current result, the user selects those rows and sends them to a new recount session.</p>
 <p>Recount always works with detailed reconciliation rows. Unlike <strong>Initial Count</strong>, it does not generate location-based first-pass orders.</p>
+<p><img src="../pictures/recount.png" alt="Recount"></p>
 <h3 id="when-to-use-it">When to use it</h3>
 <p>Use <strong>Generate recount orders</strong> after:</p>
 <ul>
@@ -127,12 +128,17 @@
 <li>logistic unit.</li>
 </ul>
 <p>This means the worker does not recount the whole location again. The worker recounts the exact selected stock positions.</p>
+<p><img src="../pictures/recount-order.png" alt="Recount Order"></p>
+<h3 id="recount-single-order">Recount (Single Order)</h3>
+<p>Use <strong>Recount (Single Order)</strong> when all selected rows must be sent together in one common recount order.</p>
+<p>This option always creates one order for the selected recount rows.</p>
+<p>It does not use split distribution by warehouse zones.</p>
+<p>This option is suitable when the recount is small, targeted, or should be handled as one task.</p>
 <h3 id="recount-split-level">Recount (Split Level)</h3>
 <p>Use <strong>Recount (Split Level)</strong> when the recount must be distributed across multiple orders according to the configured warehouse zone split.</p>
 <p>The split is controlled by the warehouse policy <strong>CountingSplitLevel</strong>.</p>
 <ul>
-<li>If <strong>CountingSplitLevel</strong> is not defined, the recount remains in one order.</li>
-<li>If <strong>CountingSplitLevel = 0</strong>, the recount remains in one order.</li>
+<li>If <strong>CountingSplitLevel = 0</strong> or is not defined, the recount remains in one order.</li>
 <li>If <strong>CountingSplitLevel</strong> is greater than <code>0</code>, the recount orders are split by warehouse zones at the corresponding hierarchy level.</li>
 </ul>
 <p>The generated distribution depends on:</p>
@@ -142,15 +148,12 @@
 <li>and the configured split level.</li>
 </ul>
 <p>This option is suitable when the recount work must be distributed between workers or teams by zone.</p>
-<h3 id="recount-single-order">Recount (Single Order)</h3>
-<p>Use <strong>Recount (Single Order)</strong> when all selected rows must be sent together in one common recount order.</p>
-<p>This option always creates one order for the selected recount rows.</p>
-<p>It does not use split distribution by warehouse zones.</p>
-<p>This option is suitable when the recount is small, targeted, or should be handled as one task.</p>
+<p><img src="../pictures/split-levels.png" alt="Split levels"></p>
 <h3 id="what-changes-in-the-reconciliation-details">What changes in the reconciliation details</h3>
 <p>After the recount orders are generated, the selected reconciliation rows move to the new recount session.</p>
 <p>Their status becomes <strong>Started</strong> for that new session.</p>
 <p>This marks them as active rows in the next recount cycle.</p>
+<p><img src="../pictures/recount-session.png" alt="Recount session"></p>
 <h3 id="example">Example</h3>
 <p>A manager reviews the current reconciliation result and selects several rows with differences that need another check.</p>
 <p>If the recount must be distributed by warehouse zones, the manager uses <strong>Recount (Split Level)</strong>.</p>

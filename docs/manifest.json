@@ -17951,6 +17951,106 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/planned-reconcile/pictures/populate-qty.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/planned-reconcile/pictures/populate-qty.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/planned-reconcile/pictures/recount-order.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/planned-reconcile/pictures/recount-order.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/planned-reconcile/pictures/recount-session.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/planned-reconcile/pictures/recount-session.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/planned-reconcile/pictures/recount-worker.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/planned-reconcile/pictures/recount-worker.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/planned-reconcile/pictures/recount.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/planned-reconcile/pictures/recount.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/planned-reconcile/pictures/release.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/planned-reconcile/pictures/release.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/planned-reconcile/pictures/select-recounts.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/planned-reconcile/pictures/select-recounts.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/planned-reconcile/pictures/split-levels.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/planned-reconcile/pictures/split-levels.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/planned-reconcile/pictures/wms-worker-orders.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/planned-reconcile/pictures/wms-worker-orders.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/planned-reconcile/pictures/wms-worker.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/planned-reconcile/pictures/wms-worker.png"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "modules/logistics/wms/planned-reconcile/toc.yml",
       "output": {

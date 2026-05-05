@@ -156,12 +156,13 @@
 <p>The generated orders can remain in a single document or be split into multiple documents.</p>
 <p>This is controlled by the <a href="../../how-to/setup-warehouse/warehouse-policies.html">warehouse policy</a> <code>CountingSplitLevel</code>.</p>
 <ul>
-<li>If the policy is not defined, the system creates one Warehouse Order.</li>
-<li>If the policy is set to <code>0</code>, the system creates one Warehouse Order.</li>
+<li>If the policy is set to <code>0</code> or is not defined, the system creates one Warehouse Order.</li>
 <li>If the policy is set to a value greater than <code>0</code>, the system splits the orders by warehouse zones at the corresponding hierarchy level.</li>
 </ul>
+<p>The split follows the warehouse zone hierarchy. The deeper the configured hierarchy level, the more specific the zones become, and the more Warehouse Orders can be generated.</p>
 <p>This affects only the distribution of the initial counting work. The source data remains the same - the existing reconciliation details.</p>
 <p>For details about how the <code>CountingSplitLevel</code> policy is configured for Planned Reconcile, see <a href="../configuration.html#warehouse-policies">Configuration</a>.</p>
+<p><img src="../pictures/split-levels.png" alt="Zone split levels"></p>
 <h2 id="what-changes-in-the-reconciliation-details">What changes in the reconciliation details</h2>
 <p>After <strong>Initial Count</strong> generates the first count orders, the included reconciliation rows enter the first counting session.</p>
 <p>For these rows:</p>

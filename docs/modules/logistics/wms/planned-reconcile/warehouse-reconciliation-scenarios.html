@@ -145,6 +145,7 @@ One or more Warehouse Orders are created for the initial count.</p>
 <p>In the example below, this scope covers the whole warehouse.</p>
 <p><strong>Expected result:</strong><br>
 The worker is inside the initial count flow and is ready to count by location.</p>
+<p><img src="pictures/wms-worker-orders.png" alt="Orders List"></p>
 <h3 id="step-5-perform-the-initial-count">Step 5: Perform the initial count</h3>
 <p>The worker goes through the assigned locations and records what is physically found there.</p>
 <p>During this process, the worker scans or enters the required values in <a href="operations/execute-count-orders-in-wms-worker.html">WMS Worker</a> and confirms each step until the location is completed.</p>
@@ -152,17 +153,21 @@ The worker is inside the initial count flow and is ready to count by location.</
 <p>If several orders were generated during Initial Count, different workers can process them separately. This allows the counting work to be distributed across zones or teams.</p>
 <p><strong>Expected result:</strong><br>
 The initial count is completed and the system has recorded the first counting result.</p>
-<h3 id="step-6-review-the-reconciliation-result">Step 6: Review the reconciliation result</h3>
-<p>After the first pass is completed, the warehouse manager returns to the Warehouse Reconciliation document.</p>
-<p>The manager reviews the result and checks which rows can be accepted and which rows require another verification.</p>
+<p><img src="pictures/wms-worker.png" alt="WMS Worker"></p>
+<h2 id="step-6-populate-counted-quantities-and-review-the-result">Step 6: Populate Counted Quantities and review the result</h2>
+<p>After the first counting pass is completed in <a href="operations/execute-count-orders-in-wms-worker.html">WMS Worker</a>, the warehouse manager returns to the Warehouse Reconciliation document and runs <a href="operations/populate-counted-quantities.html">Populate Counted Quantities</a>.</p>
+<p>This operation transfers the counted result from the completed count orders to the reconciliation details for the current session. It updates the counted quantities in the existing rows and prepares the reconciliation for review.</p>
+<p>After that, the manager reviews the result and decides which rows can be accepted and which rows require another verification.</p>
 <p>This review step separates the broad first pass from the focused second pass.</p>
 <p><strong>Expected result:</strong><br>
-The manager identifies the rows that need another count.</p>
+The reconciliation details are updated with the counted quantities, and the manager identifies the rows that need another count.</p>
+<p><img src="pictures/populate-qty.png" alt="Populate Counted Quantities"></p>
 <h3 id="step-7-mark-selected-rows-for-recount">Step 7: Mark selected rows for recount</h3>
 <p>For the rows that need another physical check, the warehouse manager marks them for Recount.</p>
 <p>Only the selected rows should be included in this step. The goal is not to repeat the whole reconciliation, but to send back only the rows that need confirmation.</p>
 <p><strong>Expected result:</strong><br>
 The selected rows are marked for recount.</p>
+<p><img src="pictures/select-recounts.png" alt="Select recounts"></p>
 <h3 id="step-8-start-recount-single-order">Step 8: Start Recount (Single Order)</h3>
 <p>After the required rows are marked, the warehouse manager starts <a href="operations/generate-recount-orders.html">Generate recount orders</a> in <strong>Recount (Single Order)</strong> mode.</p>
 <p>At this point, the system creates one common Warehouse Order for the selected recount rows.</p>
@@ -172,6 +177,7 @@ The selected rows are marked for recount.</p>
 <p><strong>Expected result:</strong><br>
 A single Warehouse Order is created for the selected recount rows.</p>
 <p>In the Recount (Single Order) scenario, the system creates one common order. It is not split by zones.</p>
+<p><img src="pictures/recount.png" alt="Recount"></p>
 <h3 id="step-9-open-the-recount-order-in-wms-worker">Step 9: Open the recount order in WMS Worker</h3>
 <p>The warehouse worker opens WMS Worker again and selects the newly created recount order.</p>
 <p>Unlike the initial count, this order is not a broad location-based first pass. At this stage, the worker is checking specific products and their exact tracked characteristics for the selected rows.</p>
@@ -188,6 +194,7 @@ A single Warehouse Order is created for the selected recount rows.</p>
 <p>From a user perspective, the worker is no longer counting the whole location again, but rechecking the exact products that need confirmation.</p>
 <p><strong>Expected result:</strong><br>
 The worker is ready to recheck the selected products and their tracking details.</p>
+<p><img src="pictures/recount-worker.png" alt="Recount worker"></p>
 <h3 id="step-10-perform-the-recount">Step 10: Perform the recount</h3>
 <p>The worker follows the recount order and checks the requested products again.</p>
 <p>This second pass is narrower and more precise than the initial count because it targets only the selected rows.</p>
@@ -229,6 +236,7 @@ Additional recount cycles can be performed until the remaining differences are c
 <p>This is the step where the confirmed reconciliation result is applied in the warehouse process.</p>
 <p><strong>Expected result:</strong><br>
 The approved differences are converted into warehouse transactions.</p>
+<p><img src="pictures/release.png" alt="Release"></p>
 <h3 id="step-14-apply-the-approved-differences-in-wms">Step 14: Apply the approved differences in WMS</h3>
 <p>When all relevant rows are reviewed and the result is accepted, the warehouse manager changes the document state of the <strong>Warehouse Reconciliation</strong> to <strong>Release</strong>.</p>
 <p>At this stage, the system generates <strong>Warehouse Transactions</strong> for the approved reconciliation differences.</p>
