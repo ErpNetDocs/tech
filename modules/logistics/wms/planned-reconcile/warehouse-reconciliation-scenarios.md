@@ -94,6 +94,8 @@ In the example below, this scope covers the whole warehouse.
 **Expected result:**  
 The worker is inside the initial count flow and is ready to count by location.
 
+![Orders List](pictures/wms-worker-orders.png)
+
 ### Step 5: Perform the initial count
 
 The worker goes through the assigned locations and records what is physically found there.
