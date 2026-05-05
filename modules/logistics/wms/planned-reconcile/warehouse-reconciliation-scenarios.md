@@ -83,7 +83,7 @@ One or more Warehouse Orders are created for the initial count.
 
 ### Step 4: Open the initial count order in WMS Worker
 
-A warehouse worker opens WMS Worker and goes to the available Warehouse Orders.
+A warehouse worker opens [WMS Worker](https://wmsworker.app.erp.net/) and goes to the available Warehouse Orders.
 
 The worker opens one of the newly created count orders.
 
