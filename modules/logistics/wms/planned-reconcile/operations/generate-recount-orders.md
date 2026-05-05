@@ -74,8 +74,7 @@ Use **Recount (Split Level)** when the recount must be distributed across multip
 
 The split is controlled by the warehouse policy **CountingSplitLevel**.
 
-- If **CountingSplitLevel** is not defined, the recount remains in one order.
-- If **CountingSplitLevel = 0**, the recount remains in one order.
+- If **CountingSplitLevel = 0** or is not defined, the recount remains in one order.
 - If **CountingSplitLevel** is greater than `0`, the recount orders are split by warehouse zones at the corresponding hierarchy level.
 
 The generated distribution depends on:
@@ -85,6 +84,9 @@ The generated distribution depends on:
 - and the configured split level.
 
 This option is suitable when the recount work must be distributed between workers or teams by zone.
+
+![Split levels](../pictures/split-levels.png)
+
 
 ### What changes in the reconciliation details
 
