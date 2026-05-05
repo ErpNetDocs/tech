@@ -6,6 +6,8 @@ This operation is used after the current counted result has been reviewed and so
 
 Recount always works with detailed reconciliation rows. Unlike **Initial Count**, it does not generate location-based first-pass orders.
 
+![Recount](../pictures/recount.png)
+
 ### When to use it
 
 Use **Generate recount orders** after:
@@ -53,6 +55,9 @@ Each included position can contain data such as:
 - logistic unit.
 
 This means the worker does not recount the whole location again. The worker recounts the exact selected stock positions.
+
+![Recount Order](../pictures/recount-order.png)
+
 
 ### Recount (Split Level)
 
