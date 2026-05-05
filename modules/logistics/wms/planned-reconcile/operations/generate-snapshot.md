@@ -1,6 +1,6 @@
 ## Generate Snapshot
 
-Use **Generate Snapshot** to create the initial reconciliation details from the current warehouse availability.
+Use **Generate Snapshot** to create the initial reconciliation **Details** from the current warehouse availability.
 
 This function takes the warehouse scope defined in the **Warehouse Reconciliation** document and creates the rows that will later be counted, reviewed, and recounted if needed.
 
