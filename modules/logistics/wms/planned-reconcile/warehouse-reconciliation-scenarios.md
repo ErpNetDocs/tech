@@ -22,7 +22,7 @@ The scope can cover:
 - selected zones, or
 - selected locations.
 
-[!Note]
+> [!Note]
 > In the example below, the reconciliation is created for the **Whole Warehouse**.
 
 To keep the reconciliation reliable, the selected scope should not be affected by other warehouse operations while the process is running. As much as possible, avoid receipts, issues, moves, replenishments, or other warehouse movements in the selected locations and products until the counting and review are finished.
