@@ -58,6 +58,9 @@ Depending on the counted position, this can include:
 
 This makes recount a focused verification step instead of a broad counting pass.
 
+![Recount Worker](../pictures/recount-worker.png)
+
+
 ### What the worker records
 
 During execution, the worker records the counted result in **WMS Worker**.
