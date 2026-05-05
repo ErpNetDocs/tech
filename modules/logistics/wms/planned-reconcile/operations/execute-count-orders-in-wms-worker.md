@@ -26,7 +26,7 @@ The user experience depends on how the order was created.
 
 This difference is important because the worker does not follow the same counting flow in both cases.
 
-![Orders list](../pictures/wms-workrer-orders.png)
+![Orders list](../pictures/wms-worker-orders.png)
 
 ### Initial Count execution
 
@@ -38,7 +38,7 @@ At this stage, the order does not guide the worker through a predefined list of 
 
 This makes **Initial Count** the broad first pass through the selected reconciliation scope.
 
-![Orders list](../pictures/wms-workrer.png)
+![WMS Worker](../pictures/wms-worker.png)
 
 ### Recount execution
 
