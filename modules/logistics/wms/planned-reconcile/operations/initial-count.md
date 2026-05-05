@@ -21,7 +21,7 @@ At this stage:
 Before generating the count orders, the system checks that:
 
 - the reconciliation document is in state **Planned** or **Firm Planned**;
-- the document type of the generated Warehouse Orders can be determined by the [warehouse policy](../../how-to/setup-warehouse/warehouse-policies.md) CountingOrderDocumentType policy;
+- the document type of the generated Warehouse Orders can be determined by the CountingOrderDocumentType [warehouse policy](../../how-to/setup-warehouse/warehouse-policies.md) ;
 - there is at least one reconciliation detail that is not **Cancelled**;
 - all non-cancelled reconciliation details are still in their initial state:
   - **ReviewStatus = Created**
