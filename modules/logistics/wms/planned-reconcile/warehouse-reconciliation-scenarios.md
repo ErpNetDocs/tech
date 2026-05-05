@@ -29,6 +29,8 @@ To keep the reconciliation reliable, the selected scope should not be affected b
 **Expected result:**  
 The reconciliation is prepared, the scope is defined, and the warehouse team is ready to start.
 
+![Generate Snapshot](pictures/generate-snapshot1.png)
+
 ### Step 1: Open the Warehouse Reconciliation and confirm the scope
 
 The warehouse manager opens the prepared Warehouse Reconciliation document and verifies that the correct warehouse, zones, and locations are included.
@@ -39,6 +41,8 @@ This is the point where the manager confirms exactly what will be counted.
 
 **Expected result:**  
 The reconciliation scope is confirmed and ready for execution.
+
+![Generate Snapshot warehouse](pictures/generate-snapshot-warehouse.png)
 
 ### Step 2: Generate the snapshot
 
