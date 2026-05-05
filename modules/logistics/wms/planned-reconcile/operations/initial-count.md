@@ -83,15 +83,15 @@ The detailed product fields remain empty at this stage, because the first counti
 
 The generated orders can remain in a single document or be split into multiple documents.
 
-This is controlled by the warehouse policy **CountingSplitLevel**.
+This is controlled by the CountingSplitLevel [warehouse policy](../../how-to/setup-warehouse/warehouse-policies.md).
 
-- If the policy is not defined, the system creates **one Warehouse Order**.
-- If the policy is set to **0**, the system creates **one Warehouse Order**.
-- If the policy is set to a value greater than **0**, the system splits the orders by warehouse zones at the corresponding hierarchy level.
+- If the policy is not defined, the system creates one Warehouse Order.
+- If the policy is set to `0`, the system creates one Warehouse Order.
+- If the policy is set to a value greater than `0`, the system splits the orders by warehouse zones at the corresponding hierarchy level.
 
-This split affects only how the initial counting work is distributed.  
-The source of the data remains the same — the existing reconciliation details.
+This affects only the distribution of the initial counting work. The source data remains the same - the existing reconciliation details.
 
+For details about how the `CountingSplitLevel` policy is configured for Planned Reconcile, see [Configuration](../configuration.md#warehouse-policies).
 ### What changes in the reconciliation details
 
 After the orders are generated:
