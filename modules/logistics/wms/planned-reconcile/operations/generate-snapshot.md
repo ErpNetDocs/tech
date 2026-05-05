@@ -66,7 +66,7 @@ These characteristics include:
 For each generated detail row:
 
 - **SnapshotQuantityBase** is taken from `WarehouseAvailability.QuantityBaseAvailable`;
-- **SnapshotQuantity** is taken from `WarehouseAvailability.StandardQuantityAvailable`;
+- **SnapshotQuantity** is taken and converted from `WarehouseAvailability.StandardQuantityAvailable`
 - **QuantityUnit** is the product’s default measurement unit;
 - **CountedQuantityBase** and **CountedQuantity** remain empty.
 
@@ -129,7 +129,7 @@ After **Generate Snapshot** is completed:
 - each row contains the expected availability at the time of generation;
 - the rows are ready for the next operational step.
 
-> [!NOTE]
+> [!Important]
 > Because the snapshot captures the expected warehouse availability at a specific moment, the selected scope should remain free from warehouse movements after the snapshot is generated and before the counting process is completed.
 
 ### What changes in the reconciliation details
