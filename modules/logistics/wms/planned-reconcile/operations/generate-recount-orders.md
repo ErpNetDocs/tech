@@ -58,6 +58,15 @@ This means the worker does not recount the whole location again. The worker reco
 
 ![Recount Order](../pictures/recount-order.png)
 
+### Recount (Single Order)
+
+Use **Recount (Single Order)** when all selected rows must be sent together in one common recount order.
+
+This option always creates one order for the selected recount rows.
+
+It does not use split distribution by warehouse zones.
+
+This option is suitable when the recount is small, targeted, or should be handled as one task.
 
 ### Recount (Split Level)
 
@@ -76,16 +85,6 @@ The generated distribution depends on:
 - and the configured split level.
 
 This option is suitable when the recount work must be distributed between workers or teams by zone.
-
-### Recount (Single Order)
-
-Use **Recount (Single Order)** when all selected rows must be sent together in one common recount order.
-
-This option always creates one order for the selected recount rows.
-
-It does not use split distribution by warehouse zones.
-
-This option is suitable when the recount is small, targeted, or should be handled as one task.
 
 ### What changes in the reconciliation details
 
