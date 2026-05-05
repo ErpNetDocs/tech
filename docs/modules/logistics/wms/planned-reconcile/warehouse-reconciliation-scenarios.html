@@ -101,13 +101,16 @@
 <li>selected zones, or</li>
 <li>selected locations.</li>
 </ul>
-<p>In the example below, the reconciliation is created for the whole warehouse.</p>
 <p>To keep the reconciliation reliable, the selected scope should not be affected by other warehouse operations while the process is running. As much as possible, avoid receipts, issues, moves, replenishments, or other warehouse movements in the selected locations and products until the counting and review are finished.</p>
 <p><strong>Expected result:</strong><br>
 The reconciliation is prepared, the scope is defined, and the warehouse team is ready to start.</p>
+<p><img src="pictures/generate-snapshot1.png" alt="Generate Snapshot"></p>
 <h3 id="step-1-open-the-warehouse-reconciliation-and-confirm-the-scope">Step 1: Open the Warehouse Reconciliation and confirm the scope</h3>
 <p>The warehouse manager opens the prepared Warehouse Reconciliation document and verifies that the correct warehouse, zones, and locations are included.</p>
-<p>In the example below, the manager works with a reconciliation for the whole warehouse.</p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>In the example below, the reconciliation is created for the <strong>Whole Warehouse</strong>.</p>
+</div>
 <p>This is the point where the manager confirms exactly what will be counted.</p>
 <p><strong>Expected result:</strong><br>
 The reconciliation scope is confirmed and ready for execution.</p>
@@ -119,20 +122,22 @@ The reconciliation scope is confirmed and ready for execution.</p>
 <p>Because the snapshot captures the expected availability at a specific moment, it is best to avoid other warehouse movements in the selected scope after the snapshot is generated and before the counting is finished.</p>
 <p><strong>Expected result:</strong><br>
 The reconciliation now contains detailed rows with the expected availability captured at the moment of snapshot generation.</p>
-<h3 id="step-3-start-the-initial-count">Step 3: Start the initial count</h3>
-<p>After the snapshot is generated, the warehouse manager starts <a href="operations/initial-count.html">Initial Count</a>.</p>
+<p><img src="pictures/generate-snapshot-warehouse.png" alt="Generate Snapshot warehouse"></p>
+<h2 id="step-3-start-the-initial-count">Step 3: Start the <a href="operations/initial-count.html">Initial Count</a></h2>
+<p>After the <a href="operations/generate-snapshot.html">snapshot</a> is generated, the warehouse manager starts <a href="operations/initial-count.html">Initial Count</a>.</p>
 <p>When this function is executed, the system creates Warehouse Orders for the first counting pass.</p>
-<p>These orders are generated from the reconciliation details and are intended for the warehouse workers who will perform the counting in WMS Worker.</p>
+<p>These orders are generated from the reconciliation details and are intended for the warehouse workers who will perform the counting in <a href="operations/execute-count-orders-in-wms-worker.html">WMS Worker</a>.</p>
 <p>In this first pass, the generated orders are focused on the locations that must be counted.</p>
 <p>Depending on the warehouse setup, the system may create:</p>
 <ul>
 <li>one Warehouse Order, or</li>
 <li>multiple Warehouse Orders.</li>
 </ul>
-<p>If a counting split policy is used, the initial count can be distributed between several orders. If no split is applied, the first pass is created as one order.</p>
+<p>If a <a href="operations/initial-count.html#how-the-split-works">counting split policy</a> is used, the initial count can be distributed between several orders. If no split is applied, the first pass is created as one order.</p>
 <p>In the example below, the initial count starts for the whole warehouse.</p>
 <p><strong>Expected result:</strong><br>
 One or more Warehouse Orders are created for the initial count.</p>
+<p><img src="pictures/initial-count-button1.png" alt="Initial Count button"></p>
 <h3 id="step-4-open-the-initial-count-order-in-wms-worker">Step 4: Open the initial count order in WMS Worker</h3>
 <p>A warehouse worker opens WMS Worker and goes to the available Warehouse Orders.</p>
 <p>The worker opens one of the newly created count orders.</p>
@@ -356,11 +361,26 @@ The selected rows are either approved or sent to another recount cycle.</p>
 <p>In this scenario, only the selected product rows lead to differences that are applied through the reconciliation.</p>
 <p><strong>Expected result:</strong><br>
 The approved differences for the selected product rows are converted into warehouse transactions.</p>
-<h3 id="step-11-complete-the-reconciliation">Step 11: Complete the reconciliation</h3>
-<p>After release, the reconciliation can move to completion.</p>
-<p>This is the final step in which the process is no longer just a targeted counting workflow, but a confirmed warehouse result for the selected product rows within the warehouse.</p>
+<h3 id="step-11-apply-the-approved-differences-in-wms">Step 11: Apply the approved differences in WMS</h3>
+<p>When all relevant rows are reviewed and the result is accepted, the warehouse manager changes the document state of the <strong>Warehouse Reconciliation</strong> to <strong>Release</strong>.</p>
+<p>At this stage, the system generates <strong>Warehouse Transactions</strong> for the approved reconciliation differences.</p>
+<p>The created transactions use:</p>
+<ul>
+<li>task type <strong>Count</strong>;</li>
+<li>direction <strong>IN</strong> for positive differences;</li>
+<li>direction <strong>OUT</strong> for negative differences;</li>
+<li>and the corresponding quantities from the approved reconciliation result.</li>
+</ul>
+<p>With this step, the warehouse availability in the <strong>WMS warehouse</strong> is updated for the selected product rows according to the approved counted result.</p>
 <p><strong>Expected result:</strong><br>
-The reconciliation is completed with a reviewed and confirmed final result for the selected products.</p>
+The approved differences for the selected product rows are applied in WMS, and the warehouse availability is updated.</p>
+<h3 id="step-12-transfer-the-result-to-inventory-reconciliation">Step 12: Transfer the result to Inventory Reconciliation</h3>
+<p>After the approved differences are applied in WMS, the result can be transferred to an <strong>Inventory Reconciliation</strong> document.</p>
+<p>This is done by using the <strong>Add the reconciliation lines from the WMS module</strong> UI function in the <strong>Reconciliation</strong> document.</p>
+<p>At this stage, the result for the selected product rows is ready to be loaded into the Inventory module for further review and application to the inventory availability.</p>
+<p>For detailed information, see <a href="https://docs.erp.net/tech/modules/logistics/wms/how-to/reconcile.html">Reconcile</a>.</p>
+<p><strong>Expected result:</strong><br>
+The generated warehouse transactions for the selected product rows are available to be loaded into an <strong>Inventory Reconciliation</strong> document.</p>
 <h3 id="why-this-workflow-is-useful-1">Why this workflow is useful</h3>
 <p>This workflow is useful when the business needs a product-based reconciliation instead of a full counting pass.</p>
 <p>It allows the warehouse team to:</p>

@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title> | ERP.net Tech Docs </title>
+      <title>Initial Count | ERP.net Tech Docs </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content=" | ERP.net Tech Docs ">
+      <meta name="title" content="Initial Count | ERP.net Tech Docs ">
       
       
       <link rel="icon" href="../../../../../favicon.ico">
@@ -85,12 +85,13 @@
         </div>
 
         <article data-uid="">
+<h1 id="initial-count">Initial Count</h1>
 
-<h2 id="initial-count">Initial Count</h2>
 <p>Use <strong>Initial Count</strong> to generate the first count orders for the reconciliation.</p>
-<p>This operation starts the first counting session and creates one or more <strong>Warehouse Orders</strong> based only on the existing <strong>Warehouse Reconciliation Details</strong>.</p>
+<p>This operation starts the first counting session and creates one or more Warehouse Orders based only on the existing Warehouse Reconciliation Details.</p>
 <p>The purpose of <strong>Initial Count</strong> is to send the selected reconciliation scope to the warehouse workers for the first physical count.</p>
-<h3 id="when-to-use-it">When to use it</h3>
+<p><img src="../pictures/initial-count-button1.png" alt="Initial Count button"></p>
+<h2 id="when-to-use-it">When to use it</h2>
 <p>Use <strong>Initial Count</strong> after <a href="generate-snapshot.html">Generate Snapshot</a> and before any counting has started.</p>
 <p>At this stage:</p>
 <ul>
@@ -98,11 +99,11 @@
 <li>the snapshot has already created the reconciliation details;</li>
 <li>the first counting session has not started yet.</li>
 </ul>
-<h3 id="what-the-operation-checks">What the operation checks</h3>
+<h2 id="what-the-operation-checks">What the operation checks</h2>
 <p>Before generating the count orders, the system checks that:</p>
 <ul>
 <li>the reconciliation document is in state <strong>Planned</strong> or <strong>Firm Planned</strong>;</li>
-<li>the selected warehouse has a defined <strong>CountingOrderDocumentType</strong> policy;</li>
+<li>the document type of the generated Warehouse Orders can be determined by the <a href="../../how-to/setup-warehouse/warehouse-policies.html">warehouse policy</a> <code>CountingOrderDocumentType</code>;</li>
 <li>there is at least one reconciliation detail that is not <strong>Cancelled</strong>;</li>
 <li>all non-cancelled reconciliation details are still in their initial state:
 <ul>
@@ -112,8 +113,9 @@
 </li>
 </ul>
 <p>This means <strong>Initial Count</strong> is used only for the first counting pass.</p>
-<h3 id="what-the-operation-uses-as-input">What the operation uses as input</h3>
-<p>The operation uses only the existing <strong>Warehouse Reconciliation Details</strong>.</p>
+<p>For details about how the <code>CountingOrderDocumentType</code> policy is configured for Planned Reconcile, see <a href="../configuration.html#warehouse-policies">Configuration</a>.</p>
+<h2 id="what-the-operation-uses-as-input">What the operation uses as input</h2>
+<p>The operation uses only the existing Warehouse Reconciliation Details.</p>
 <p>No additional source is read at this stage.</p>
 <p>For order generation, the system includes only details that are:</p>
 <ul>
@@ -121,63 +123,49 @@
 <li><strong>Session = 0</strong></li>
 </ul>
 <p>Rows with <strong>ReviewStatus = Cancelled</strong> are not included in the generated orders.</p>
-<h3 id="what-the-operation-creates">What the operation creates</h3>
-<p>The system creates one or more <strong>Warehouse Orders</strong> with:</p>
+<h2 id="what-the-operation-creates">What the operation creates</h2>
+<p>The system creates one or more Warehouse Orders with:</p>
 <ul>
-<li><strong>TaskType = Count</strong></li>
-<li>document type defined by the <strong>CountingOrderDocumentType</strong> policy</li>
-<li><strong>Warehouse = Warehouse Reconciliation.Warehouse</strong></li>
-<li><strong>Parent = Warehouse Reconciliation</strong></li>
-<li><strong>DocumentDate = today</strong></li>
-<li><strong>State = Planned</strong></li>
+<li><code>TaskType = Count</code></li>
+<li>a document type determined by the <a href="../../how-to/setup-warehouse/warehouse-policies.html">warehouse policy</a> <code>CountingOrderDocumentType</code></li>
+<li><code>Warehouse = Warehouse Reconciliation.Warehouse</code></li>
+<li><code>Parent = Warehouse Reconciliation</code></li>
+<li><code>Prime Cause Document = Warehouse Reconciliation</code></li>
+<li><code>DocumentDate = today</code></li>
+<li><code>State = Planned</code></li>
 </ul>
-<p>In the order header, <strong>AdditionalDetailsJson</strong> stores the counting session information:</p>
+<p>In the order header, <code>AdditionalDetailsJson</code> stores the counting session information:</p>
 <ul>
-<li><strong>CountingSession = 1</strong></li>
+<li><code>CountingSession = 1</code></li>
 </ul>
-<p>It also stores <strong>TotalQuantityBase</strong> for the details included in the respective order.</p>
-<h3 id="how-the-order-lines-are-generated">How the order lines are generated</h3>
-<p>The generated <strong>Warehouse Order Lines</strong> contain only counting locations.</p>
+<p>It also stores <code>TotalQuantityBase</code> for the details included in the respective order.</p>
+<h2 id="how-the-order-lines-are-generated">How the order lines are generated</h2>
+<p>The generated Warehouse Order Lines contain only counting locations.</p>
 <p>They do not contain detailed product positions.</p>
-<p>If the reconciliation details contain several rows for the same <strong>Warehouse Location</strong>, the system creates only one order line for that location.</p>
-<p>In other words, the details are grouped by <strong>Warehouse Location</strong>, so each location appears only once in the generated order lines.</p>
+<p>If the reconciliation details contain several rows for the same Warehouse Location, the system creates only one order line for that location.</p>
+<p>In other words, the details are grouped by Warehouse Location, so each location appears only once in the generated order lines.</p>
 <p>Each generated order line contains:</p>
 <ul>
-<li><strong>Warehouse Location</strong></li>
-<li><strong>Warehouse Zone</strong></li>
-<li><strong>TaskType = Count</strong></li>
+<li><code>Warehouse Location</code></li>
+<li><code>Warehouse Zone</code></li>
+<li><code>TaskType = Count</code></li>
 </ul>
 <p>The detailed product fields remain empty at this stage, because the first counting pass is location-based.</p>
-<h3 id="how-the-split-works">How the split works</h3>
+<h2 id="how-the-split-works">How the split works</h2>
 <p>The generated orders can remain in a single document or be split into multiple documents.</p>
-<p>This is controlled by the warehouse policy <strong>CountingSplitLevel</strong>.</p>
+<p>This is controlled by the <a href="../../how-to/setup-warehouse/warehouse-policies.html">warehouse policy</a> <code>CountingSplitLevel</code>.</p>
 <ul>
-<li>If the policy is not defined, the system creates <strong>one Warehouse Order</strong>.</li>
-<li>If the policy is set to <strong>0</strong>, the system creates <strong>one Warehouse Order</strong>.</li>
-<li>If the policy is set to a value greater than <strong>0</strong>, the system splits the orders by warehouse zones at the corresponding hierarchy level.</li>
+<li>If the policy is not defined, the system creates one Warehouse Order.</li>
+<li>If the policy is set to <code>0</code>, the system creates one Warehouse Order.</li>
+<li>If the policy is set to a value greater than <code>0</code>, the system splits the orders by warehouse zones at the corresponding hierarchy level.</li>
 </ul>
-<p>This split affects only how the initial counting work is distributed.<br>
-The source of the data remains the same — the existing reconciliation details.</p>
-<h3 id="what-changes-in-the-reconciliation-details">What changes in the reconciliation details</h3>
-<p>After the orders are generated:</p>
-<ul>
-<li>the included detail rows change from <strong>ReviewStatus = Created</strong> to <strong>ReviewStatus = Started</strong></li>
-<li>the counting session becomes <strong>Session = 1</strong></li>
-</ul>
-<p>This marks the reconciliation as already started and prevents the first counting session from being generated again as a new initial count.</p>
-<h3 id="what-users-should-expect-after-the-operation-finishes">What users should expect after the operation finishes</h3>
-<p>After <strong>Initial Count</strong> is completed:</p>
-<ul>
-<li>one or more <strong>Warehouse Orders</strong> are created;</li>
-<li>each order contains only the locations that need to be counted;</li>
-<li>the reconciliation details are marked as started for the first counting session.</li>
-</ul>
-<p>From a user perspective, this is the point where the reconciliation moves from preparation into execution on the warehouse floor.</p>
-<h3 id="what-changes-in-the-reconciliation-details-1">What changes in the reconciliation details</h3>
+<p>This affects only the distribution of the initial counting work. The source data remains the same - the existing reconciliation details.</p>
+<p>For details about how the <code>CountingSplitLevel</code> policy is configured for Planned Reconcile, see <a href="../configuration.html#warehouse-policies">Configuration</a>.</p>
+<h2 id="what-changes-in-the-reconciliation-details">What changes in the reconciliation details</h2>
 <p>After <strong>Initial Count</strong> generates the first count orders, the included reconciliation rows enter the first counting session.</p>
 <p>For these rows:</p>
 <ul>
-<li><strong>Session</strong> becomes <strong>1</strong></li>
+<li><strong>Session</strong> becomes <code>1</code></li>
 <li><strong>ReviewStatus</strong> becomes <strong>Started</strong></li>
 </ul>
 <p>This marks them as active rows in the first counting cycle.</p>

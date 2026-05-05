@@ -87,9 +87,10 @@
         <article data-uid="">
 
 <h2 id="generate-snapshot">Generate Snapshot</h2>
-<p>Use <strong>Generate Snapshot</strong> to create the initial reconciliation details from the current warehouse availability.</p>
+<p>Use <strong>Generate Snapshot</strong> to create the initial reconciliation <strong>Details</strong> from the current warehouse availability.</p>
 <p>This function takes the warehouse scope defined in the <strong>Warehouse Reconciliation</strong> document and creates the rows that will later be counted, reviewed, and recounted if needed.</p>
 <p>The generated snapshot is the <strong>momentary picture of the warehouse availability</strong> at the exact time when the function is executed. It is the reference point against which the counted result is later compared.</p>
+<p><img src="../pictures/generate-snapshot-button.png" alt="Generate Snapshot button"></p>
 <h3 id="when-to-use-it">When to use it</h3>
 <p>Run this function after the reconciliation scope is prepared and before any counting starts.</p>
 <p>At this stage, the user has already:</p>
@@ -137,7 +138,7 @@
 <p>For each generated detail row:</p>
 <ul>
 <li><strong>SnapshotQuantityBase</strong> is taken from <code>WarehouseAvailability.QuantityBaseAvailable</code>;</li>
-<li><strong>SnapshotQuantity</strong> is taken from <code>WarehouseAvailability.StandardQuantityAvailable</code>;</li>
+<li><strong>SnapshotQuantity</strong> is taken and converted from <code>WarehouseAvailability.StandardQuantityAvailable</code></li>
 <li><strong>QuantityUnit</strong> is the product’s default measurement unit;</li>
 <li><strong>CountedQuantityBase</strong> and <strong>CountedQuantity</strong> remain empty.</li>
 </ul>
@@ -190,8 +191,8 @@
 <li>each row contains the expected availability at the time of generation;</li>
 <li>the rows are ready for the next operational step.</li>
 </ul>
-<div class="NOTE">
-<h5>Note</h5>
+<div class="IMPORTANT">
+<h5>Important</h5>
 <p>Because the snapshot captures the expected warehouse availability at a specific moment, the selected scope should remain free from warehouse movements after the snapshot is generated and before the counting process is completed.</p>
 </div>
 <h3 id="what-changes-in-the-reconciliation-details">What changes in the reconciliation details</h3>

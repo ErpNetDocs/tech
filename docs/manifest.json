@@ -17881,11 +17881,51 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/planned-reconcile/pictures/generate-snapshot-button.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/planned-reconcile/pictures/generate-snapshot-button.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/planned-reconcile/pictures/generate-snapshot-warehouse.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/planned-reconcile/pictures/generate-snapshot-warehouse.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/planned-reconcile/pictures/generate-snapshot1.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/planned-reconcile/pictures/generate-snapshot1.png"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "modules/logistics/wms/planned-reconcile/pictures/index.md",
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/planned-reconcile/pictures/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/planned-reconcile/pictures/initial-count-button1.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/planned-reconcile/pictures/initial-count-button1.png"
         }
       },
       "version": ""
