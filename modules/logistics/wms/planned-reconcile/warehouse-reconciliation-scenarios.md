@@ -22,9 +22,6 @@ The scope can cover:
 - selected zones, or
 - selected locations.
 
-> [!Note]
-> In the example below, the reconciliation is created for the **Whole Warehouse**.
-
 To keep the reconciliation reliable, the selected scope should not be affected by other warehouse operations while the process is running. As much as possible, avoid receipts, issues, moves, replenishments, or other warehouse movements in the selected locations and products until the counting and review are finished.
 
 **Expected result:**  
@@ -36,7 +33,8 @@ The reconciliation is prepared, the scope is defined, and the warehouse team is 
 
 The warehouse manager opens the prepared Warehouse Reconciliation document and verifies that the correct warehouse, zones, and locations are included.
 
-In the example below, the manager works with a reconciliation for the whole warehouse.
+> [!Attension]
+> In the example below, the reconciliation is created for the **Whole Warehouse**.
 
 This is the point where the manager confirms exactly what will be counted.
 
