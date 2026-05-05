@@ -303,7 +303,7 @@ Run [Generate Snapshot](operations/generate-snapshot.md).
 
 This creates the reconciliation details for the warehouse availability at the moment of snapshot generation. After that, the manager filters the details and keeps only the rows for the products that need to be verified.
 
-[Generate Snapshot](operations/generate-snapshot-button.md).
+![Generate Snapshot](pictures/generate-snapshot-button.png)
 
 ### Step 2: Generate the recount order
 
@@ -311,7 +311,7 @@ Mark the filtered rows for Recount and run [Generate recount orders](operations/
 
 This creates one recount order for the selected product rows. In this scenario, the process starts directly with recount instead of a broad first count.
 
-[Recount](operations/recount.md).
+![Recount](pictures/recount.png)
 
 
 ### Step 3: Execute the recount in WMS Worker
@@ -320,7 +320,7 @@ Open the recount order in [WMS Worker](operations/execute-count-orders-in-wms-wo
 
 Unlike the initial count flow, this step is focused directly on the selected product positions.
 
-[Recount worker](operations/recount-worker.md).
+![Recount worker](pictures/recount-worker.png)
 
 
 ### Step 4: Populate and review the result
