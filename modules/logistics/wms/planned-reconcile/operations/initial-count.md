@@ -90,9 +90,10 @@ The generated orders can remain in a single document or be split into multiple d
 
 This is controlled by the [warehouse policy](../../how-to/setup-warehouse/warehouse-policies.md) `CountingSplitLevel`.
 
-- If the policy is not defined, the system creates one Warehouse Order.
-- If the policy is set to `0`, the system creates one Warehouse Order.
+- If the policy is set to `0` or is not defined, the system creates one Warehouse Order.
 - If the policy is set to a value greater than `0`, the system splits the orders by warehouse zones at the corresponding hierarchy level.
+
+The split follows the warehouse zone hierarchy. The deeper the configured hierarchy level, the more specific the zones become, and the more Warehouse Orders can be generated.
 
 This affects only the distribution of the initial counting work. The source data remains the same - the existing reconciliation details.
 
