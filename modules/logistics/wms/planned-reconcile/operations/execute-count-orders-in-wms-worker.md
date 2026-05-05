@@ -77,7 +77,7 @@ A worker can record multiple counts during the same counting session.
 
 The reconciliation result for the session is not taken directly from a single last action on the screen. Instead, the system later aggregates the count records for the session and updates the reconciliation details with the resulting counted quantities.
 
-This is why the execution step and the later **Populate Counted Quantities** step are separate parts of the process.
+This is why the execution step and the later [Populate Counted Quantities](populate-counted-quantities.md) step are separate parts of the process.
 
 ### What happens when the orders are completed
 
@@ -93,7 +93,7 @@ After the count orders are executed in **WMS Worker**:
 
 - the performed counts are stored for the current session;
 - the related reconciliation details move to **Finished** when the session orders are completed;
-- the reconciliation is ready for **Populate Counted Quantities**.
+- the reconciliation is ready for [Populate Counted Quantities](populate-counted-quantities.md).
 
 From a user perspective, this is the step where the physical count is performed and the system receives the counting result for the current session.
 
