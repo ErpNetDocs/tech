@@ -4,6 +4,8 @@ Use **Populate Counted Quantities** to update the reconciliation details with th
 
 This operation reads the performed counts and aggregates them into the corresponding **Warehouse Reconciliation Details**. It is the step that turns the raw counting result into a reviewable reconciliation result.
 
+![Populate Quantities](../pictures/populate-qty.png)
+
 ### When to use it
 
 Use **Populate Counted Quantities** after count orders have been executed in **WMS Worker** and after the related reconciliation details for the current session have moved to **Finished**.
