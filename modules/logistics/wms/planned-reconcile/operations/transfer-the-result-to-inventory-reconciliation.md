@@ -6,4 +6,4 @@ Its purpose is to transfer the result from WMS to an **Inventory Reconciliation*
 
 This is done by using the **Add the reconciliation lines from the WMS module** UI function in the **Reconciliation** document.
 
-For detailed information, see [Reconcile](https://docs.erp.net/tech/modules/logistics/wms/how-to/reconcile.html).
+For detailed information, see [Update the availability in the Inventory module](../../how-to/reconcile.md#update-the-availability-in-the-inventory-module)
