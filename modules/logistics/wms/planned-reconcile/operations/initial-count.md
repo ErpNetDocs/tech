@@ -99,6 +99,9 @@ This affects only the distribution of the initial counting work. The source data
 
 For details about how the `CountingSplitLevel` policy is configured for Planned Reconcile, see [Configuration](../configuration.md#warehouse-policies).
 
+![Zone split levels](../pictures/split-levels.png)
+
+
 ## What changes in the reconciliation details
 
 After **Initial Count** generates the first count orders, the included reconciliation rows enter the first counting session.
