@@ -6,7 +6,7 @@ This function takes the warehouse scope defined in the **Warehouse Reconciliatio
 
 The generated snapshot is the **momentary picture of the warehouse availability** at the exact time when the function is executed. It is the reference point against which the counted result is later compared.
 
-![Generate Snapshot button](../Pictures/generate-snapshot-button.png)
+![Generate Snapshot button](../pictures/generate-snapshot-button.png)
 
 ### When to use it
 
