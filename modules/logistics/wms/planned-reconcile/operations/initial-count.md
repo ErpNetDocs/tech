@@ -82,7 +82,7 @@ Each generated order line contains:
 
 The detailed product fields remain empty at this stage, because the first counting pass is location-based.
 
-![Created Warehouse Order](../pictures/created-wo.png)
+![Created Warehouse Order](../pictures/initial-wo.png)
 
 ## How the split works
 
