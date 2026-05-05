@@ -158,7 +158,7 @@ In the Recount (Single Order) scenario, the system creates one common order. It 
 
 ### Step 9: Open the recount order in WMS Worker
 
-The warehouse worker opens WMS Worker again and selects the newly created recount order.
+The warehouse worker opens [WMS Worker](https://wmsworker.app.erp.net/) again and selects the newly created recount order.
 
 Unlike the initial count, this order is not a broad location-based first pass. At this stage, the worker is checking specific products and their exact tracked characteristics for the selected rows.
 
