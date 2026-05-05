@@ -58,8 +58,7 @@ The reconciliation now contains detailed rows with the expected availability cap
 
 ![Generate Snapshot warehouse](pictures/generate-snapshot-warehouse.png)
 
-## Step 3: Start the [Initial Count](operations/initial-count.md)
-
+## Step 3: Start the Initial Count
 After the [snapshot](operations/generate-snapshot.md) is generated, the warehouse manager starts [Initial Count](operations/initial-count.md).
 
 When this function is executed, the system creates Warehouse Orders for the first counting pass.
