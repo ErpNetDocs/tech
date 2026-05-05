@@ -62,7 +62,7 @@ The reconciliation now contains detailed rows with the expected availability cap
 
 After the [snapshot](operations/generate-snapshot.md) is generated, the warehouse manager starts [Initial Count](operations/initial-count.md).
 
-![Initial Count button](../pictures/nitial-count-button.png)
+![Initial Count button](../pictures/initial-count-button1.png)
 
 When this function is executed, the system creates Warehouse Orders for the first counting pass.
 
