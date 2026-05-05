@@ -26,6 +26,8 @@ The user experience depends on how the order was created.
 
 This difference is important because the worker does not follow the same counting flow in both cases.
 
+![Orders list](../pictures/wms-workrer-orders.png)
+
 ### Initial Count execution
 
 In **Initial Count**, the generated order lines represent the locations that must be counted.
@@ -35,6 +37,8 @@ The worker starts from the assigned warehouse location and performs the first ph
 At this stage, the order does not guide the worker through a predefined list of detailed product positions. Instead, the worker counts what is physically found at the location.
 
 This makes **Initial Count** the broad first pass through the selected reconciliation scope.
+
+![Orders list](../pictures/wms-workrer.png)
 
 ### Recount execution
 
