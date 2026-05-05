@@ -111,7 +111,7 @@ The initial count is completed and the system has recorded the first counting re
 
 ![WMS Worker](pictures/wms-worker.png)
 
-## Step 6: [Populate Counted Quantities](operations/populate-counted-quantities.md) and review the result
+## Step 6: Populate Counted Quantities and review the result
 
 After the first counting pass is completed in [WMS Worker](operations/execute-count-orders-in-wms-worker.md), the warehouse manager returns to the Warehouse Reconciliation document and runs [Populate Counted Quantities](operations/populate-counted-quantities.md).
 
@@ -123,6 +123,8 @@ This review step separates the broad first pass from the focused second pass.
 
 **Expected result:**  
 The reconciliation details are updated with the counted quantities, and the manager identifies the rows that need another count.
+
+![populate Counted Quantities](pictures/populate-qty.png)
 
 ### Step 7: Mark selected rows for recount
 
