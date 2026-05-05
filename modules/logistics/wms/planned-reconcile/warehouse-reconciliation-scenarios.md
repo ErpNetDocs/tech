@@ -177,6 +177,8 @@ From a user perspective, the worker is no longer counting the whole location aga
 **Expected result:**  
 The worker is ready to recheck the selected products and their tracking details.
 
+![Recount worker](pictures/recount-worker.png)
+
 ### Step 10: Perform the recount
 
 The worker follows the recount order and checks the requested products again.
