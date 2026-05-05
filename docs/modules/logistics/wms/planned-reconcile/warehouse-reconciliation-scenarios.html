@@ -114,7 +114,7 @@ The reconciliation is prepared, the scope is defined, and the warehouse team is 
 <p>This is the point where the manager confirms exactly what will be counted.</p>
 <p><strong>Expected result:</strong><br>
 The reconciliation scope is confirmed and ready for execution.</p>
-<h3 id="step-2-generate-the-snapshot">Step 2: Generate the snapshot</h3>
+<h3 id="step-2-generate-snapshot">Step 2: Generate Snapshot</h3>
 <p>From the Warehouse Reconciliation document, the warehouse manager runs <a href="operations/generate-snapshot.html">Generate Snapshot</a>.</p>
 <p>This creates the detailed reconciliation rows that will be used during counting and review.</p>
 <p>The snapshot is the momentary picture of the warehouse availability at the exact time when the function is executed. It records what the system expects to be available in the selected scope before the physical counting begins.</p>
@@ -123,7 +123,7 @@ The reconciliation scope is confirmed and ready for execution.</p>
 <p><strong>Expected result:</strong><br>
 The reconciliation now contains detailed rows with the expected availability captured at the moment of snapshot generation.</p>
 <p><img src="pictures/generate-snapshot-warehouse.png" alt="Generate Snapshot warehouse"></p>
-<h2 id="step-3-start-the-initial-count">Step 3: Start the <a href="operations/initial-count.html">Initial Count</a></h2>
+<h2 id="step-3-start-the-initial-count">Step 3: Start the Initial Count</h2>
 <p>After the <a href="operations/generate-snapshot.html">snapshot</a> is generated, the warehouse manager starts <a href="operations/initial-count.html">Initial Count</a>.</p>
 <p>When this function is executed, the system creates Warehouse Orders for the first counting pass.</p>
 <p>These orders are generated from the reconciliation details and are intended for the warehouse workers who will perform the counting in <a href="operations/execute-count-orders-in-wms-worker.html">WMS Worker</a>.</p>
@@ -278,7 +278,7 @@ The reconciliation is prepared for the whole warehouse and is ready for targeted
 <p>In this scenario, the reconciliation scope is the whole warehouse, even though only selected product rows will be counted later.</p>
 <p><strong>Expected result:</strong><br>
 The reconciliation scope is confirmed and ready for execution.</p>
-<h3 id="step-2-generate-the-snapshot-1">Step 2: Generate the snapshot</h3>
+<h3 id="step-2-generate-the-snapshot">Step 2: Generate the snapshot</h3>
 <p>From the Warehouse Reconciliation document, the warehouse manager runs <a href="operations/generate-snapshot.html">Generate Snapshot</a>.</p>
 <p>This creates the detailed reconciliation rows that will be used for filtering, counting, and review.</p>
 <p>The snapshot is the momentary picture of the warehouse availability at the exact time when the function is executed. It records what the system expects to be available in the warehouse before the physical counting begins.</p>
