@@ -33,7 +33,7 @@ The reconciliation is prepared, the scope is defined, and the warehouse team is 
 
 The warehouse manager opens the prepared Warehouse Reconciliation document and verifies that the correct warehouse, zones, and locations are included.
 
-> [!Warning]
+> [!Important]
 > In the example below, the reconciliation is created for the **Whole Warehouse**.
 
 This is the point where the manager confirms exactly what will be counted.
