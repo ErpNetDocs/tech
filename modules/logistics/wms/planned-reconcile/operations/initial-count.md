@@ -6,7 +6,7 @@ This operation starts the first counting session and creates one or more Warehou
 
 The purpose of **Initial Count** is to send the selected reconciliation scope to the warehouse workers for the first physical count.
 
-![Initial Count button](../pictures/nitial-count-button.png)
+![Initial Count button](../pictures/initial-count-button.png)
 
 ## When to use it
 
