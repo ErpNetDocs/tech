@@ -51,7 +51,7 @@ The system creates one or more **Warehouse Orders** with:
 - **TaskType = Count**
 - document type defined by the **CountingOrderDocumentType** policy
 - **Warehouse = Warehouse Reconciliation.Warehouse**
-- **Parent = Warehouse Reconciliation**
+- **Prime Cause Document = Warehouse Reconciliation**
 - **DocumentDate = today**
 - **State = Planned**
 
