@@ -221,14 +221,36 @@ This is the step where the confirmed reconciliation result is applied in the war
 **Expected result:**  
 The approved differences are converted into warehouse transactions.
 
-### Step 14: Complete the reconciliation
+### Step 14: Apply the approved differences in WMS
 
-After release, the reconciliation can move to completion.
+When all relevant rows are reviewed and the result is accepted, the warehouse manager changes the document state of the **Warehouse Reconciliation** to **Release**.
 
-This is the final step in which the process is no longer just a counting workflow, but a confirmed warehouse result for the selected scope.
+At this stage, the system generates **Warehouse Transactions** for the approved reconciliation differences.
+
+The created transactions use:
+
+- task type **Count**;
+- direction **IN** for positive differences;
+- direction **OUT** for negative differences;
+- and the corresponding quantities from the approved reconciliation result.
+
+With this step, the warehouse availability in the **WMS warehouse** is updated according to the approved counted result.
 
 **Expected result:**  
-The reconciliation is completed with a reviewed and confirmed final result.
+The approved differences are applied in WMS, and the warehouse availability is updated.
+
+### Step 15: Transfer the result to Inventory Reconciliation
+
+After the approved differences are applied in WMS, the result can be transferred to an **Inventory Reconciliation** document.
+
+This is done by using the **Add the reconciliation lines from the WMS module** UI function in the **Reconciliation** document.
+
+At this stage, the result from WMS is ready to be loaded into the Inventory module for further review and application to the inventory availability.
+
+For detailed information, see [Reconcile](https://docs.erp.net/tech/modules/logistics/wms/how-to/reconcile.html).
+
+**Expected result:**  
+The generated warehouse transactions are available to be loaded into an **Inventory Reconciliation** document.
 
 ### Why this workflow is useful
 
