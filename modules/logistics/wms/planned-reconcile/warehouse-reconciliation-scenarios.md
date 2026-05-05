@@ -41,7 +41,7 @@ This is the point where the manager confirms exactly what will be counted.
 **Expected result:**  
 The reconciliation scope is confirmed and ready for execution.
 
-### Step 2: Generate snapshot
+### Step 2: Generate Snapshot
 
 From the Warehouse Reconciliation document, the warehouse manager runs [Generate Snapshot](operations/generate-snapshot.md).
 
