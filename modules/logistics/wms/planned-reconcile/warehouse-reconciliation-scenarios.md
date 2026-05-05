@@ -289,210 +289,50 @@ This approach keeps the process efficient:
 
 ## Product-based reconciliation for selected products in a whole warehouse
 
-This scenario describes a focused warehouse reconciliation process for selected products within a whole warehouse.
+This scenario is used when the reconciliation is created for a whole warehouse, but the counting is performed only for selected products.
 
-Instead of starting with Initial Count, the process begins by [generating the reconciliation snapshot](operations/generate-snapshot.md) for the whole warehouse, filtering the reconciliation details by product, and sending only the selected rows directly to recount.
-
-This approach is useful when the goal is not to perform a full warehouse count, but to verify only specific product positions across the warehouse. It allows the warehouse team to perform a targeted check, review the result, and repeat the recount only where needed.
+The process starts in the same way as in the full warehouse scenario - with a prepared reconciliation and a [generated snapshot](operations/generate-snapshot.md). The difference is that the manager does not start a broad first counting pass. Instead, the manager filters the reconciliation details by product and sends only the selected rows to [recount](operations/generate-recount-orders.md).
 
 ### Before you begin
 
-Before the counting starts, a warehouse manager creates a Warehouse Reconciliation document and defines the scope of the process.
+Create a Warehouse Reconciliation for the whole warehouse and make sure the selected products will not be affected by other warehouse movements while the process is running.
 
-In this scenario, the reconciliation is created for the whole warehouse.
+### Step 1: Generate the snapshot
 
-After the reconciliation details are generated, the manager filters them by the product or products that need to be checked and starts the counting process only for those selected rows.
+Run [Generate Snapshot](operations/generate-snapshot.md).
 
-To keep the reconciliation reliable, the selected scope should not be affected by other warehouse operations while the process is running. As much as possible, avoid receipts, issues, moves, replenishments, or other warehouse movements for the selected products in the warehouse until the counting and review are finished.
+This creates the reconciliation details for the warehouse availability at the moment of snapshot generation. After that, the manager filters the details and keeps only the rows for the products that need to be verified.
 
-**Expected result:**  
-The reconciliation is prepared for the whole warehouse and is ready for targeted product-based review.
+### Step 2: Generate the recount order
 
-### Step 1: Open the Warehouse Reconciliation and confirm the scope
+Mark the filtered rows for recount and run [Generate recount orders](operations/generate-recount-orders.md) in **Recount (Single Order)** mode.
 
-The warehouse manager opens the prepared Warehouse Reconciliation document and verifies that it covers the correct warehouse.
+This creates one recount order for the selected product rows. In this scenario, the process starts directly with recount instead of a broad first count.
 
-In this scenario, the reconciliation scope is the whole warehouse, even though only selected product rows will be counted later.
+### Step 3: Execute the recount in WMS Worker
 
-**Expected result:**  
-The reconciliation scope is confirmed and ready for execution.
+Open the recount order in [WMS Worker](operations/execute-count-orders-in-wms-worker.md) and record the counted result for the selected product rows.
 
-### Step 2: Generate the snapshot
+Unlike the initial count flow, this step is focused directly on the selected product positions.
 
-From the Warehouse Reconciliation document, the warehouse manager runs [Generate Snapshot](operations/generate-snapshot.md).
+### Step 4: Populate and review the result
 
-This creates the detailed reconciliation rows that will be used for filtering, counting, and review.
+Run [Populate Counted Quantities](operations/populate-counted-quantities.md) and review the updated reconciliation result.
 
-The snapshot is the momentary picture of the warehouse availability at the exact time when the function is executed. It records what the system expects to be available in the warehouse before the physical counting begins.
+At this stage, the manager decides which rows can be accepted and which rows need another recount cycle.
 
-From a user perspective, this is the step that turns the reconciliation into a working document with detailed rows that can be reviewed and filtered.
+### Step 5: Approve the accepted rows or repeat the recount
 
-Because the snapshot captures the expected availability at a specific moment, it is best to avoid other warehouse movements for the selected products after the snapshot is generated and before the counting is finished.
+Approve the accepted rows with [Approve counted results](operations/approve-counted-results.md).
 
-**Expected result:**  
-The reconciliation now contains detailed rows with the expected availability captured at the moment of snapshot generation.
+If some rows still require verification, repeat the recount cycle for those rows until the result is accepted.
 
-### Step 3: Filter the reconciliation details by product
+### Step 6: Apply the approved differences in WMS
 
-After the snapshot is generated, the warehouse manager reviews the reconciliation details and filters them by the product or products that need to be checked.
+When the result is accepted, release the reconciliation and let the system generate the [warehouse transactions](operations/generate-warehouse-transactions.md).
 
-This is the key difference in this scenario.
+This applies the approved differences in WMS for the selected product rows.
 
-The reconciliation still covers the whole warehouse, but the manager does not start a broad first counting pass. Instead, the manager narrows the working set to the specific product rows that require verification.
+### Step 7: Transfer the result to Inventory Reconciliation
 
-These can be rows for one product or for a selected group of products, depending on the business need.
-
-**Expected result:**  
-Only the reconciliation rows for the selected products remain in focus for the next step.
-
-### Step 4: Mark the selected product rows for recount
-
-The warehouse manager selects the filtered rows and marks them for Recount.
-
-Only these rows should be included. The goal is not to count the whole warehouse again, but to verify only the selected product positions.
-
-This makes the process suitable for product-based checks, cycle-style reviews, or targeted verification requested by the business.
-
-**Expected result:**  
-The selected product rows are marked for recount.
-
-### Step 5: Start Recount (Single Order)
-
-After the required rows are marked, the warehouse manager starts [Generate recount orders](operations/generate-recount-orders.md) in **Recount (Single Order)** mode.
-
-At this point, the system creates one common Warehouse Order for the selected recount rows.
-
-This order contains only the selected product rows that need to be verified.
-
-In this scenario, Initial Count is not used. The process starts directly with a focused recount order based on the selected reconciliation details.
-
-**Expected result:**  
-A single Warehouse Order is created for the selected product rows.
-
-In the Recount (Single Order) scenario, the system creates one common order. It is not split by zones.
-
-### Step 6: Open the recount order in WMS Worker
-
-The warehouse worker opens WMS Worker and selects the newly created recount order.
-
-This is not a broad location-based counting pass. At this stage, the worker is checking specific products and their exact tracked characteristics for the selected rows.
-
-This means the recount is focused on concrete product positions such as:
-
-- product,
-- location,
-- logistic unit,
-- lot,
-- serial number,
-- variant,
-- and other tracking data when applicable.
-
-From a user perspective, the worker is not counting the whole warehouse or the whole location. The worker is rechecking only the exact product positions that were selected in the reconciliation details.
-
-**Expected result:**  
-The worker is ready to recheck the selected products and their tracking details.
-
-### Step 7: Perform the recount
-
-The worker follows the recount order and checks the requested products.
-
-The worker records the updated counted result only for the selected product rows.
-
-Because the order is already focused on the chosen products, this step is narrower and faster than a full counting pass.
-
-**Expected result:**  
-The recount result is recorded for the selected product rows.
-
-### Step 8: Review the updated result
-
-After the recount is completed, the warehouse manager opens the Warehouse Reconciliation again and reviews the updated result.
-
-At this point, the manager checks whether the recount result is acceptable for the selected rows.
-
-This is the review step where the manager decides whether the current result can be approved or whether another recount is still needed.
-
-**Expected result:**  
-The updated reconciliation result is ready for approval or for another recount cycle.
-
-### Step 9: Approve the result or repeat the recount
-
-If the updated result is acceptable, the warehouse manager [approves the counted results](operations/approve-counted-results.md) for the selected rows.
-
-If some rows still require another verification, the process can continue with another recount.
-
-This means the warehouse manager can start:
-
-- a second recount,
-- a third recount,
-- and so on,
-
-until the result is considered reliable.
-
-Each new recount is another controlled verification cycle for the selected product rows only.
-
-**Expected result:**  
-The selected rows are either approved or sent to another recount cycle.
-
-### Step 10: Release the reconciliation
-
-When all relevant rows are reviewed and the result is accepted, the warehouse manager releases the Warehouse Reconciliation.
-
-At this stage, the approved differences are turned into [Warehouse Transactions](operations/generate-warehouse-transactions.md).
-
-The created transactions use:
-
-- task type Count,
-- direction IN for positive differences,
-- direction OUT for negative differences,
-- and the corresponding quantities from the approved reconciliation result.
-
-In this scenario, only the selected product rows lead to differences that are applied through the reconciliation.
-
-**Expected result:**  
-The approved differences for the selected product rows are converted into warehouse transactions.
-
-### Step 11: Apply the approved differences in WMS
-
-When all relevant rows are reviewed and the result is accepted, the warehouse manager changes the document state of the **Warehouse Reconciliation** to **Release**.
-
-At this stage, the system generates **Warehouse Transactions** for the approved reconciliation differences.
-
-The created transactions use:
-
-- task type **Count**;
-- direction **IN** for positive differences;
-- direction **OUT** for negative differences;
-- and the corresponding quantities from the approved reconciliation result.
-
-With this step, the warehouse availability in the **WMS warehouse** is updated for the selected product rows according to the approved counted result.
-
-**Expected result:**  
-The approved differences for the selected product rows are applied in WMS, and the warehouse availability is updated.
-
-### Step 12: Transfer the result to Inventory Reconciliation
-
-After the approved differences are applied in WMS, the result can be transferred to an **Inventory Reconciliation** document.
-
-This is done by using the **Add the reconciliation lines from the WMS module** UI function in the **Reconciliation** document.
-
-At this stage, the result for the selected product rows is ready to be loaded into the Inventory module for further review and application to the inventory availability.
-
-For detailed information, see [Reconcile](https://docs.erp.net/tech/modules/logistics/wms/how-to/reconcile.html).
-
-**Expected result:**  
-The generated warehouse transactions for the selected product rows are available to be loaded into an **Inventory Reconciliation** document.
-
-### Why this workflow is useful
-
-This workflow is useful when the business needs a product-based reconciliation instead of a full counting pass.
-
-It allows the warehouse team to:
-
-- create a reconciliation for the whole warehouse,
-- generate a complete snapshot,
-- focus only on selected products,
-- count only the selected product rows,
-- approve the result or repeat the recount if necessary,
-- and apply differences only for the checked product rows.
-
-This approach is especially useful for targeted product checks, recurring verification of specific items, and customer workflows where only selected products need to be reviewed without starting a full warehouse counting process.
+If needed, continue with [Transfer the result to Inventory Reconciliation](operations/transfer-the-result-to-inventory-reconciliation.md).
