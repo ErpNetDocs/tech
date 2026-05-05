@@ -1,12 +1,12 @@
-## Initial Count
+# Initial Count
 
 Use **Initial Count** to generate the first count orders for the reconciliation.
 
-This operation starts the first counting session and creates one or more **Warehouse Orders** based only on the existing **Warehouse Reconciliation Details**.
+This operation starts the first counting session and creates one or more Warehouse Orders based only on the existing Warehouse Reconciliation Details.
 
 The purpose of **Initial Count** is to send the selected reconciliation scope to the warehouse workers for the first physical count.
 
-### When to use it
+## When to use it
 
 Use **Initial Count** after [Generate Snapshot](generate-snapshot.md) and before any counting has started.
 
@@ -16,12 +16,12 @@ At this stage:
 - the snapshot has already created the reconciliation details;
 - the first counting session has not started yet.
 
-### What the operation checks
+## What the operation checks
 
 Before generating the count orders, the system checks that:
 
 - the reconciliation document is in state **Planned** or **Firm Planned**;
-- the document type of the generated Warehouse Orders can be determined by the CountingOrderDocumentType [warehouse policy](../../how-to/setup-warehouse/warehouse-policies.md) ;
+- the document type of the generated Warehouse Orders can be determined by the [warehouse policy](../../how-to/setup-warehouse/warehouse-policies.md) `CountingOrderDocumentType`;
 - there is at least one reconciliation detail that is not **Cancelled**;
 - all non-cancelled reconciliation details are still in their initial state:
   - **ReviewStatus = Created**
@@ -31,9 +31,9 @@ This means **Initial Count** is used only for the first counting pass.
 
 For details about how the `CountingOrderDocumentType` policy is configured for Planned Reconcile, see [Configuration](../configuration.md#warehouse-policies).
 
-### What the operation uses as input
+## What the operation uses as input
 
-The operation uses only the existing **Warehouse Reconciliation Details**.
+The operation uses only the existing Warehouse Reconciliation Details.
 
 No additional source is read at this stage.
 
@@ -44,46 +44,47 @@ For order generation, the system includes only details that are:
 
 Rows with **ReviewStatus = Cancelled** are not included in the generated orders.
 
-### What the operation creates
+## What the operation creates
 
-The system creates one or more **Warehouse Orders** with:
+The system creates one or more Warehouse Orders with:
 
-- **TaskType = Count**
-- document type defined by the **CountingOrderDocumentType** policy
-- **Warehouse = Warehouse Reconciliation.Warehouse**
-- **Prime Cause Document = Warehouse Reconciliation**
-- **DocumentDate = today**
-- **State = Planned**
+- `TaskType = Count`
+- a document type determined by the [warehouse policy](../../how-to/setup-warehouse/warehouse-policies.md) `CountingOrderDocumentType`
+- `Warehouse = Warehouse Reconciliation.Warehouse`
+- `Parent = Warehouse Reconciliation`
+- `Prime Cause Document = Warehouse Reconciliation`
+- `DocumentDate = today`
+- `State = Planned`
 
-In the order header, **AdditionalDetailsJson** stores the counting session information:
+In the order header, `AdditionalDetailsJson` stores the counting session information:
 
-- **CountingSession = 1**
+- `CountingSession = 1`
 
-It also stores **TotalQuantityBase** for the details included in the respective order.
+It also stores `TotalQuantityBase` for the details included in the respective order.
 
-### How the order lines are generated
+## How the order lines are generated
 
-The generated **Warehouse Order Lines** contain only counting locations.
+The generated Warehouse Order Lines contain only counting locations.
 
 They do not contain detailed product positions.
 
-If the reconciliation details contain several rows for the same **Warehouse Location**, the system creates only one order line for that location.
+If the reconciliation details contain several rows for the same Warehouse Location, the system creates only one order line for that location.
 
-In other words, the details are grouped by **Warehouse Location**, so each location appears only once in the generated order lines.
+In other words, the details are grouped by Warehouse Location, so each location appears only once in the generated order lines.
 
 Each generated order line contains:
 
-- **Warehouse Location**
-- **Warehouse Zone**
-- **TaskType = Count**
+- `Warehouse Location`
+- `Warehouse Zone`
+- `TaskType = Count`
 
 The detailed product fields remain empty at this stage, because the first counting pass is location-based.
 
-### How the split works
+## How the split works
 
 The generated orders can remain in a single document or be split into multiple documents.
 
-This is controlled by the CountingSplitLevel [warehouse policy](../../how-to/setup-warehouse/warehouse-policies.md).
+This is controlled by the [warehouse policy](../../how-to/setup-warehouse/warehouse-policies.md) `CountingSplitLevel`.
 
 - If the policy is not defined, the system creates one Warehouse Order.
 - If the policy is set to `0`, the system creates one Warehouse Order.
@@ -92,32 +93,14 @@ This is controlled by the CountingSplitLevel [warehouse policy](../../how-to/set
 This affects only the distribution of the initial counting work. The source data remains the same - the existing reconciliation details.
 
 For details about how the `CountingSplitLevel` policy is configured for Planned Reconcile, see [Configuration](../configuration.md#warehouse-policies).
-### What changes in the reconciliation details
 
-After the orders are generated:
-
-- the included detail rows change from **ReviewStatus = Created** to **ReviewStatus = Started**
-- the counting session becomes **Session = 1**
-
-This marks the reconciliation as already started and prevents the first counting session from being generated again as a new initial count.
-
-### What users should expect after the operation finishes
-
-After **Initial Count** is completed:
-
-- one or more **Warehouse Orders** are created;
-- each order contains only the locations that need to be counted;
-- the reconciliation details are marked as started for the first counting session.
-
-From a user perspective, this is the point where the reconciliation moves from preparation into execution on the warehouse floor.
-
-### What changes in the reconciliation details
+## What changes in the reconciliation details
 
 After **Initial Count** generates the first count orders, the included reconciliation rows enter the first counting session.
 
 For these rows:
 
-- **Session** becomes **1**
+- **Session** becomes `1`
 - **ReviewStatus** becomes **Started**
 
 This marks them as active rows in the first counting cycle.
