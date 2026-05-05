@@ -109,7 +109,7 @@ If several orders were generated during Initial Count, different workers can pro
 **Expected result:**  
 The initial count is completed and the system has recorded the first counting result.
 
-![WMS Worker](pictures/wms-orker.png)
+![WMS Worker](pictures/wms-worker.png)
 
 ### Step 6: Review the reconciliation result
 
