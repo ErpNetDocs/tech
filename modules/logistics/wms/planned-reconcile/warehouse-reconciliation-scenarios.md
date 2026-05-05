@@ -124,7 +124,7 @@ This review step separates the broad first pass from the focused second pass.
 **Expected result:**  
 The reconciliation details are updated with the counted quantities, and the manager identifies the rows that need another count.
 
-![populate Counted Quantities](pictures/populate-qty.png)
+![Populate Counted Quantities](pictures/populate-qty.png)
 
 ### Step 7: Mark selected rows for recount
 
@@ -134,6 +134,8 @@ Only the selected rows should be included in this step. The goal is not to repea
 
 **Expected result:**  
 The selected rows are marked for recount.
+
+![Select recounts](pictures/select-recounts.png)
 
 ### Step 8: Start Recount (Single Order)
 
