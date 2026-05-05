@@ -96,6 +96,9 @@ Their status becomes **Started** for that new session.
 
 This marks them as active rows in the next recount cycle.
 
+![Recount session](../pictures/recount-session.png)
+
+
 ### Example
 
 A manager reviews the current reconciliation result and selects several rows with differences that need another check.
