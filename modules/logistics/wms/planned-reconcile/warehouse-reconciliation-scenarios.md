@@ -239,6 +239,9 @@ This is the step where the confirmed reconciliation result is applied in the war
 **Expected result:**  
 The approved differences are converted into warehouse transactions.
 
+![Release](pictures/release.png)
+
+
 ### Step 14: Apply the approved differences in WMS
 
 When all relevant rows are reviewed and the result is accepted, the warehouse manager changes the document state of the **Warehouse Reconciliation** to **Release**.
