@@ -111,8 +111,6 @@ When the generated count orders for the current session are completed in **WMS W
 to
 - **ReviewStatus = Finished**
 
-The **Session** does not change at this stage.
-
 This is an automatic transition for the current counting session and marks the rows as ready for count aggregation and review.
 
 > [!NOTE]
