@@ -82,6 +82,8 @@ Each generated order line contains:
 
 The detailed product fields remain empty at this stage, because the first counting pass is location-based.
 
+![Created Warehouse Order](../pictures/created-wo.png)
+
 ## How the split works
 
 The generated orders can remain in a single document or be split into multiple documents.
