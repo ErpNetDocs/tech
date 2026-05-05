@@ -58,13 +58,15 @@ The reconciliation now contains detailed rows with the expected availability cap
 
 ![Generate Snapshot warehouse](pictures/generate-snapshot-warehouse.png)
 
-### Step 3: Start the initial count
+## Step 3: Start the [Initial Count](operations/initial-count.md)
 
-After the snapshot is generated, the warehouse manager starts [Initial Count](operations/initial-count.md).
+After the [snapshot](operations/generate-snapshot.md) is generated, the warehouse manager starts [Initial Count](operations/initial-count.md).
+
+![Initial Count button](../pictures/nitial-count-button.png)
 
 When this function is executed, the system creates Warehouse Orders for the first counting pass.
 
-These orders are generated from the reconciliation details and are intended for the warehouse workers who will perform the counting in WMS Worker.
+These orders are generated from the reconciliation details and are intended for the warehouse workers who will perform the counting in [WMS Worker](operations/execute-count-orders-in-wms-worker.md).
 
 In this first pass, the generated orders are focused on the locations that must be counted.
 
@@ -73,7 +75,7 @@ Depending on the warehouse setup, the system may create:
 - one Warehouse Order, or
 - multiple Warehouse Orders.
 
-If a counting split policy is used, the initial count can be distributed between several orders. If no split is applied, the first pass is created as one order.
+If a [counting split policy](operations/initial-count.md#how-the-split-works) is used, the initial count can be distributed between several orders. If no split is applied, the first pass is created as one order.
 
 In the example below, the initial count starts for the whole warehouse.
 
