@@ -2541,6 +2541,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "advanced/user-business-rules/examples/auto-release-document.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/user-business-rules/examples/auto-release-document.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "advanced/user-business-rules/examples/azure-service-bus-send-message.md",
       "output": {
         ".html": {
