@@ -42,8 +42,6 @@ This is the point where the manager confirms exactly what will be counted.
 **Expected result:**  
 The reconciliation scope is confirmed and ready for execution.
 
-![Generate Snapshot warehouse](pictures/generate-snapshot-warehouse.png)
-
 ### Step 2: Generate the snapshot
 
 From the Warehouse Reconciliation document, the warehouse manager runs [Generate Snapshot](operations/generate-snapshot.md).
@@ -58,6 +56,8 @@ Because the snapshot captures the expected availability at a specific moment, it
 
 **Expected result:**  
 The reconciliation now contains detailed rows with the expected availability captured at the moment of snapshot generation.
+
+![Generate Snapshot warehouse](pictures/generate-snapshot-warehouse.png)
 
 ### Step 3: Start the initial count
 
