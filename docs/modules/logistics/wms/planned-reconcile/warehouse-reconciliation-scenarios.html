@@ -290,13 +290,10 @@ The generated warehouse transactions are available to be loaded into an <strong>
 <h3 id="step-4-populate-and-review-the-result">Step 4: Populate and review the result</h3>
 <p>Run <a href="operations/populate-counted-quantities.html">Populate Counted Quantities</a> and review the updated reconciliation result.</p>
 <p>At this stage, the manager decides which rows can be accepted and which rows need another recount cycle.</p>
-<h3 id="step-5-approve-the-accepted-rows-or-repeat-the-recount">Step 5: Approve the accepted rows or repeat the recount</h3>
-<p>Approve the accepted rows with <a href="operations/approve-counted-results.md">Approve counted results</a>.</p>
-<p>If some rows still require verification, repeat the recount cycle for those rows until the result is accepted.</p>
-<h3 id="step-6-apply-the-approved-differences-in-wms">Step 6: Apply the approved differences in WMS</h3>
-<p>When the result is accepted, release the reconciliation and let the system generate the <a href="operations/generate-warehouse-transactions.html">warehouse transactions</a>.</p>
-<p>This applies the approved differences in WMS for the selected product rows.</p>
-<h3 id="step-7-transfer-the-result-to-inventory-reconciliation">Step 7: Transfer the result to Inventory Reconciliation</h3>
+<h3 id="step-5-approve-the-accepted-rows-or-repeat-the-recount-then-apply-the-approved-differences-in-wms">Step 5: Approve the accepted rows or repeat the recount, then apply the approved differences in WMS</h3>
+<p>Review the counted quantities and either approve the accepted rows or generate <a href="operations/generate-recount-orders.html">recount orders</a> for the rows that still require verification. For more information about the review flow, see <a href="operations/sessions-and-review-statuses.html">Sessions and review statuses</a>.</p>
+<p>After the result is accepted, change the state of the reconciliation document to <strong>Released</strong>. This lets the system generate the <a href="operations/generate-warehouse-transactions.html">warehouse transactions</a> and apply the approved differences in WMS for the selected product rows.</p>
+<h3 id="step-6-transfer-the-result-to-inventory-reconciliation">Step 6: Transfer the result to Inventory Reconciliation</h3>
 <p>If needed, continue with <a href="operations/transfer-the-result-to-inventory-reconciliation.html">Transfer the result to Inventory Reconciliation</a>.</p>
 
 </article>

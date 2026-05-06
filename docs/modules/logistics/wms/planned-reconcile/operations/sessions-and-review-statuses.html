@@ -87,8 +87,8 @@
         <article data-uid="">
 <h1 id="sessions-and-review-statuses">Sessions and review statuses</h1>
 
-<p>This page explains how <strong>Session</strong> and <strong>ReviewStatus</strong> work in <strong>Planned Reconcile</strong>.</p>
-<p>These two values show where each <strong>Warehouse Reconciliation Detail</strong> is in the reconciliation process and which counting iteration it belongs to.</p>
+<p>This page explains how <strong>Session</strong> and <strong>ReviewStatus</strong> work in Planned Reconcile.</p>
+<p>These two values show where each Warehouse Reconciliation Detail is in the reconciliation process and which counting iteration it belongs to.</p>
 <h2 id="session">Session</h2>
 <p><strong>Session</strong> identifies the counting iteration for a reconciliation row.</p>
 <p>Use it to distinguish:</p>
@@ -105,7 +105,7 @@
 </ul>
 <p>A new session is created only when a new counting cycle starts for that row.</p>
 <h2 id="reviewstatus">ReviewStatus</h2>
-<p><strong>ReviewStatus</strong> shows the current state of the reconciliation row inside the process.</p>
+<p><strong>ReviewStatus</strong> shows the current state of the reconciliation row in the process.</p>
 <p>The possible values are:</p>
 <ul>
 <li><strong>Created</strong></li>
@@ -115,13 +115,12 @@
 <li><strong>Recount</strong></li>
 <li><strong>Cancelled</strong></li>
 </ul>
-<p>These values show whether the row is still only part of the snapshot, already sent for counting, finished for the current counting session, approved, or selected for another recount cycle.</p>
-<h2 id="how-session-and-reviewstatus-change">How Session and ReviewStatus change</h2>
-<p>The following table shows the typical lifecycle of a reconciliation row.</p>
+<h2 id="workflow">Workflow</h2>
+<p>The following table shows the typical workflow of a reconciliation row through the counting and review cycle.</p>
 <table>
 <thead>
 <tr>
-<th>Step</th>
+<th>Workflow step</th>
 <th style="text-align: right;">Session</th>
 <th>ReviewStatus</th>
 <th>Notes</th>
@@ -142,102 +141,54 @@
 </tr>
 <tr>
 <td><a href="execute-count-orders-in-wms-worker.html">Execute count orders in WMS Worker</a></td>
-<td style="text-align: right;">no change</td>
+<td style="text-align: right;">—</td>
 <td>Finished</td>
 <td>After the orders for the current session are completed, the related rows move from <strong>Started</strong> to <strong>Finished</strong>.</td>
 </tr>
 <tr>
 <td><a href="populate-counted-quantities.html">Populate Counted Quantities</a></td>
-<td style="text-align: right;">no change</td>
-<td>no change</td>
+<td style="text-align: right;">—</td>
+<td>—</td>
 <td>The operation updates the counted quantities, but does not change the session or review status.</td>
 </tr>
 <tr>
-<td>Approve counted results</td>
-<td style="text-align: right;">no change</td>
-<td>Approved</td>
-<td>The current counted result is accepted for the selected row.</td>
+<td>Review the counted result</td>
+<td style="text-align: right;">—</td>
+<td>Approved / Recount / Cancelled</td>
+<td>Review the current counted result for the selected row. Set <strong>Approved</strong> when the result is accepted, <strong>Recount</strong> when another counting cycle is required, or <strong>Cancelled</strong> when the current result should be discarded.</td>
 </tr>
 <tr>
 <td><a href="generate-recount-orders.html">Generate recount orders</a></td>
-<td style="text-align: right;">next session for selected rows only</td>
+<td style="text-align: right;">2, 3, 4, ...</td>
 <td>Started</td>
-<td>Only the selected rows move to the next counting session.</td>
+<td>Only the selected rows marked for <strong>Recount</strong> move to the next session.</td>
 </tr>
 <tr>
 <td><a href="execute-count-orders-in-wms-worker.html">Execute count orders in WMS Worker</a></td>
-<td style="text-align: right;">no change</td>
+<td style="text-align: right;">—</td>
 <td>Finished</td>
 <td>The rows in the recount session move to <strong>Finished</strong> when the recount orders are completed.</td>
 </tr>
 <tr>
 <td><a href="populate-counted-quantities.html">Populate Counted Quantities</a></td>
-<td style="text-align: right;">no change</td>
-<td>no change</td>
+<td style="text-align: right;">—</td>
+<td>—</td>
 <td>The counted result is refreshed for the current recount session.</td>
 </tr>
 <tr>
-<td>Approve counted results</td>
-<td style="text-align: right;">no change</td>
-<td>Approved</td>
-<td>The updated result is accepted for the selected row.</td>
+<td>Review the recounted result</td>
+<td style="text-align: right;">—</td>
+<td>Approved / Cancelled</td>
+<td>Review the updated result and set <strong>Approved</strong> or <strong>Cancelled</strong>.</td>
 </tr>
 </tbody>
 </table>
-<h2 id="important-rule-for-recount">Important rule for recount</h2>
-<p>Recount does not move all reconciliation rows to a new session.</p>
-<p>Only the rows selected for recount move to the next session when <a href="generate-recount-orders.html">Generate recount orders</a> is used.</p>
-<p>All other rows keep their current:</p>
-<ul>
-<li><strong>Session</strong></li>
-<li><strong>ReviewStatus</strong></li>
-</ul>
-<p>This is important because a reconciliation can contain rows that are already approved together with rows that continue through another recount cycle.</p>
-<h2 id="finished-rows">Finished rows</h2>
-<p>A row reaches <strong>Finished</strong> after the related count orders for the current session are completed in <a href="execute-count-orders-in-wms-worker.html">WMS Worker</a>.</p>
-<p>This is an automatic transition for the current counting session.</p>
-<p>After that, the row is ready for <a href="populate-counted-quantities.html">Populate Counted Quantities</a>, which updates the counted result for review.</p>
-<h2 id="approved-rows">Approved rows</h2>
-<p>A row reaches <strong>Approved</strong> when the user accepts its current counted result.
-An approved row keeps its current session and no longer continues in the active review cycle, unless the process explicitly sends it through another path.</p>
-<h2 id="recount-rows">Recount rows</h2>
-<p>A row enters another counting cycle when the user selects it and runs <a href="generate-recount-orders.html">Generate recount orders</a>.</p>
-<p>At that point:</p>
-<ul>
-<li>the row moves to the next session;</li>
-<li>the row status becomes <strong>Started</strong>;</li>
-<li>the row becomes active in the new recount cycle.</li>
-</ul>
-<h2 id="cancelled-rows">Cancelled rows</h2>
-<p>A row with <strong>ReviewStatus = Cancelled</strong> does not participate in the active counting cycle.</p>
-<p>Cancelled rows are excluded from count order generation.</p>
-<h2 id="example">Example</h2>
-<p>A reconciliation row is created by <a href="generate-snapshot.html">Generate Snapshot</a>.</p>
-<p>At that point:</p>
-<ul>
-<li><strong>Session = 0</strong></li>
-<li><strong>ReviewStatus = Created</strong></li>
-</ul>
-<p>Then the warehouse manager runs <a href="initial-count.html">Initial Count</a>.</p>
-<p>The row becomes:</p>
-<ul>
-<li><strong>Session = 1</strong></li>
-<li><strong>ReviewStatus = Started</strong></li>
-</ul>
-<p>After the worker completes the order in <a href="execute-count-orders-in-wms-worker.html">WMS Worker</a>, the row becomes:</p>
-<ul>
-<li><strong>Session = 1</strong></li>
-<li><strong>ReviewStatus = Finished</strong></li>
-</ul>
-<p>After <a href="populate-counted-quantities.html">Populate Counted Quantities</a>, the counted result is visible for review.</p>
-<p>If the manager wants to approve the result, the Review Status, myst be set to Approved status.</p>
-<p>If the result is not accepted, the user selects the row and runs <a href="generate-recount-orders.html">Generate recount orders</a>.</p>
-<p>The row then becomes:</p>
-<ul>
-<li><strong>Session = 2</strong></li>
-<li><strong>ReviewStatus = Started</strong></li>
-</ul>
-<p>This starts the next recount cycle for that row only.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Recount does not move all reconciliation rows to a new session.
+Only the rows selected for recount move to the next session when <a href="generate-recount-orders.html">Generate recount orders</a> is used.
+All other rows keep their current <strong>Session</strong> and <strong>ReviewStatus</strong>.</p>
+</div>
 
 </article>
 
