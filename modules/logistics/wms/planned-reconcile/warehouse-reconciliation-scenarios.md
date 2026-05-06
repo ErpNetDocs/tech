@@ -329,18 +329,12 @@ Run [Populate Counted Quantities](operations/populate-counted-quantities.md) and
 
 At this stage, the manager decides which rows can be accepted and which rows need another recount cycle.
 
-### Step 5: Approve the accepted rows or repeat the recount
+### Step 5: Approve the accepted rows or repeat the recount, then apply the approved differences in WMS
 
-Approve the accepted rows with [Approve counted results](operations/approve-counted-results.md).
+Review the counted quantities and either approve the accepted rows or generate [recount orders](operations/generate-recount-orders.md) for the rows that still require verification. For more information about the review flow, see [Sessions and review statuses](operations/sessions-and-review-statuses.md).
 
-If some rows still require verification, repeat the recount cycle for those rows until the result is accepted.
+After the result is accepted, change the state of the reconciliation document to **Released**. This lets the system generate the [warehouse transactions](operations/generate-warehouse-transactions.md) and apply the approved differences in WMS for the selected product rows.
 
-### Step 6: Apply the approved differences in WMS
-
-When the result is accepted, release the reconciliation and let the system generate the [warehouse transactions](operations/generate-warehouse-transactions.md).
-
-This applies the approved differences in WMS for the selected product rows.
-
-### Step 7: Transfer the result to Inventory Reconciliation
+### Step 6: Transfer the result to Inventory Reconciliation
 
 If needed, continue with [Transfer the result to Inventory Reconciliation](operations/transfer-the-result-to-inventory-reconciliation.md).
