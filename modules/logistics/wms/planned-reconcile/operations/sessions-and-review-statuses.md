@@ -47,11 +47,11 @@ The following table shows the typical lifecycle of a reconciliation row.
 | [Initial Count](initial-count.md) | 1 | Started | The row enters the first counting session. |
 | [Execute count orders in WMS Worker](execute-count-orders-in-wms-worker.md) | no change | Finished | After the orders for the current session are completed, the related rows move from **Started** to **Finished**. |
 | [Populate Counted Quantities](populate-counted-quantities.md) | no change | no change | The operation updates the counted quantities, but does not change the session or review status. |
-| [Approve counted results](approve-counted-results.md) | no change | Approved | The current counted result is accepted for the selected row. |
+| Approve counted results | no change | Approved | The current counted result is accepted for the selected row. |
 | [Generate recount orders](generate-recount-orders.md) | next session for selected rows only | Started | Only the selected rows move to the next counting session. |
 | [Execute count orders in WMS Worker](execute-count-orders-in-wms-worker.md) | no change | Finished | The rows in the recount session move to **Finished** when the recount orders are completed. |
 | [Populate Counted Quantities](populate-counted-quantities.md) | no change | no change | The counted result is refreshed for the current recount session. |
-| [Approve counted results](approve-counted-results.md) | no change | Approved | The updated result is accepted for the selected row. |
+| Approve counted results | no change | Approved | The updated result is accepted for the selected row. |
 
 ## Important rule for recount
 
@@ -76,8 +76,7 @@ After that, the row is ready for [Populate Counted Quantities](populate-counted-
 
 ## Approved rows
 
-A row reaches **Approved** when the user accepts its current counted result through [Approve counted results](approve-counted-results.md).
-
+A row reaches **Approved** when the user accepts its current counted result.
 An approved row keeps its current session and no longer continues in the active review cycle, unless the process explicitly sends it through another path.
 
 ## Recount rows
@@ -119,10 +118,7 @@ After the worker completes the order in [WMS Worker](execute-count-orders-in-wms
 
 After [Populate Counted Quantities](populate-counted-quantities.md), the counted result is visible for review.
 
-If the result is accepted through [Approve counted results](approve-counted-results.md), the row becomes:
-
-- **Session = 1**
-- **ReviewStatus = Approved**
+If the manager wants to approve the result, the Review Status, myst be set to Approved status. 
 
 If the result is not accepted, the user selects the row and runs [Generate recount orders](generate-recount-orders.md).
 
