@@ -41,18 +41,15 @@ These values show whether the row is still only part of the snapshot, already se
 
 The following table shows the typical lifecycle of a reconciliation row.
 
-| Step | Session | ReviewStatus | Notes |
-|---|---:|---|---|
-| [Generate Snapshot](generate-snapshot.md) | 0 | Created | The reconciliation detail is created from the current warehouse availability. |
-| [Initial Count](initial-count.md) | 1 | Started | The row enters the first counting session. |
-| [Execute count orders in WMS Worker](execute-count-orders-in-wms-worker.md) | no change | Finished | After the orders for the current session are completed, the related rows move from **Started** to **Finished**. |
-| [Populate Counted Quantities](populate-counted-quantities.md) | no change | no change | The operation updates the counted quantities, but does not change the session or review status. |
-| Approve counted results | no change | Approved | The current counted result is accepted for the selected row. |
-| [Generate recount orders](generate-recount-orders.md) | next session for selected rows only | Started | Only the selected rows move to the next counting session. |
-| [Execute count orders in WMS Worker](execute-count-orders-in-wms-worker.md) | no change | Finished | The rows in the recount session move to **Finished** when the recount orders are completed. |
-| [Populate Counted Quantities](populate-counted-quantities.md) | no change | no change | The counted result is refreshed for the current recount session. |
-| Approve counted results | no change | Approved | The updated result is accepted for the selected row. |
+## Review decisions and their effect
 
+During the review, the user does not manually enter a review status value. Instead, the user reviews the counted result for each row and chooses what to do next. The system then updates the row accordingly.
+
+| User decision | When to use it | System effect | What happens next |
+|---|---|---|---|
+| **Approve** | The counted result is accepted. | The row is marked as accepted for the reconciliation result. | The approved difference can be applied when the reconciliation is released. |
+| **Recount** | The counted result still requires verification. | The current result is not accepted yet, and the row remains pending final acceptance. | Generate recount orders for the selected rows and repeat the counting cycle. |
+| **Cancel** | The current counting result should not be used. | The current review result is discarded for the affected row. | The row can remain excluded from the accepted result or be processed again, depending on the scenario. |
 ## Important rule for recount
 
 Recount does not move all reconciliation rows to a new session.
