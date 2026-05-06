@@ -51,7 +51,7 @@ The review status shows the current review result for each reconciliation row af
 
 ## Review statuses
 
-The review status shows the current review result for each reconciliation row after the counted quantities are reviewed.
+The table below shows the typical workflow of a reconciliation row through the counting and review cycle. After the counted quantities are populated, the reviewer decides whether to approve the current result, request a recount, or cancel the current result.
 
 | Workflow step | Session | ReviewStatus | Notes |
 |---|---:|---|---|
