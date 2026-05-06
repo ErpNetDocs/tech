@@ -1,7 +1,7 @@
 - name: Overview
   href: index.md
 - name: Getting started
-  href: Scenarios.md 
+  href: warehouse-reconciliation-scenarios.md 
 - name: Configuration
   href: configuration.md  
 - name: Operations
