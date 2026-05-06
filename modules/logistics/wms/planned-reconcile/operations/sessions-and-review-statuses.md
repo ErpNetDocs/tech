@@ -53,19 +53,17 @@ The review status shows the current review result for each reconciliation row af
 
 The review status shows the current review result for each reconciliation row after the counted quantities are reviewed.
 
-| Step | Session | ReviewStatus | Notes |
+| Workflow step | Session | ReviewStatus | Notes |
 |---|---:|---|---|
 | [Generate Snapshot](generate-snapshot.md) | 0 | Created | The reconciliation detail is created from the current warehouse availability. |
 | [Initial Count](initial-count.md) | 1 | Started | The row enters the first counting session. |
 | [Execute count orders in WMS Worker](execute-count-orders-in-wms-worker.md) | no change | Finished | After the orders for the current session are completed, the related rows move from **Started** to **Finished**. |
 | [Populate Counted Quantities](populate-counted-quantities.md) | no change | no change | The operation updates the counted quantities, but does not change the session or review status. |
-| Approve counted results | no change | Approved | Use this when the current counted result is accepted for the selected row. |
-| Set review status to **Recount** | no change | Recount | Use this when the current counted result requires another verification cycle for the selected row. |
-| [Generate recount orders](generate-recount-orders.md) | next session for selected rows only | Started | Only the selected rows marked for recount move to the next counting session. |
+| Make a review decision | no change | Approved / Recount / Cancelled | Review the current counted result for the selected row. Set **Approved** when the result is accepted, **Recount** when another counting cycle is required, or **Cancelled** when the current result should be discarded. |
+| [Generate recount orders](generate-recount-orders.md) | next session for selected rows only | Started | Only the selected rows marked with **Recount** move to the next counting session. |
 | [Execute count orders in WMS Worker](execute-count-orders-in-wms-worker.md) | no change | Finished | The rows in the recount session move to **Finished** when the recount orders are completed. |
 | [Populate Counted Quantities](populate-counted-quantities.md) | no change | no change | The counted result is refreshed for the current recount session. |
-| Approve counted results | no change | Approved | The updated result is accepted for the selected row. |
-
+| Make the final review decision | no change | Approved / Cancelled | Review the updated result. Set **Approved** when the recount result is accepted, or **Cancelled** when the current result should not be used. |
 Recount does not move all reconciliation rows to a new session.
 
 Only the rows selected for recount move to the next session when [Generate recount orders](generate-recount-orders.md) is used.
