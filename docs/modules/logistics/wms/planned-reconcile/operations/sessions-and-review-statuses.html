@@ -153,7 +153,7 @@
 <td>The operation updates the counted quantities, but does not change the session or review status.</td>
 </tr>
 <tr>
-<td><a href="approve-counted-results.md">Approve counted results</a></td>
+<td>Approve counted results</td>
 <td style="text-align: right;">no change</td>
 <td>Approved</td>
 <td>The current counted result is accepted for the selected row.</td>
@@ -177,7 +177,7 @@
 <td>The counted result is refreshed for the current recount session.</td>
 </tr>
 <tr>
-<td><a href="approve-counted-results.md">Approve counted results</a></td>
+<td>Approve counted results</td>
 <td style="text-align: right;">no change</td>
 <td>Approved</td>
 <td>The updated result is accepted for the selected row.</td>
@@ -198,8 +198,8 @@
 <p>This is an automatic transition for the current counting session.</p>
 <p>After that, the row is ready for <a href="populate-counted-quantities.html">Populate Counted Quantities</a>, which updates the counted result for review.</p>
 <h2 id="approved-rows">Approved rows</h2>
-<p>A row reaches <strong>Approved</strong> when the user accepts its current counted result through <a href="approve-counted-results.md">Approve counted results</a>.</p>
-<p>An approved row keeps its current session and no longer continues in the active review cycle, unless the process explicitly sends it through another path.</p>
+<p>A row reaches <strong>Approved</strong> when the user accepts its current counted result.
+An approved row keeps its current session and no longer continues in the active review cycle, unless the process explicitly sends it through another path.</p>
 <h2 id="recount-rows">Recount rows</h2>
 <p>A row enters another counting cycle when the user selects it and runs <a href="generate-recount-orders.html">Generate recount orders</a>.</p>
 <p>At that point:</p>
@@ -230,11 +230,7 @@
 <li><strong>ReviewStatus = Finished</strong></li>
 </ul>
 <p>After <a href="populate-counted-quantities.html">Populate Counted Quantities</a>, the counted result is visible for review.</p>
-<p>If the result is accepted through <a href="approve-counted-results.md">Approve counted results</a>, the row becomes:</p>
-<ul>
-<li><strong>Session = 1</strong></li>
-<li><strong>ReviewStatus = Approved</strong></li>
-</ul>
+<p>If the manager wants to approve the result, the Review Status, myst be set to Approved status.</p>
 <p>If the result is not accepted, the user selects the row and runs <a href="generate-recount-orders.html">Generate recount orders</a>.</p>
 <p>The row then becomes:</p>
 <ul>
