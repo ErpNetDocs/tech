@@ -36,7 +36,7 @@ Use the following values for **CountingSplitLevel**:
 > [!NOTE]
 > **CountingSplitLevel** is used only in scenarios that support split order generation. It does not apply to **Recount (Single Order)**.
 
-![Warehouse policies](policies.png)
+![Warehouse policies](pictures/policies.png)
 
 ## Warehouse zone hierarchy
 
