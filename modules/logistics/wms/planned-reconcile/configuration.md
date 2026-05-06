@@ -54,7 +54,7 @@ Select the reconciliation scope in the warehouse:
 
 When zones or locations are selected, use ones that belong to the selected warehouse.
 
-![Split levels](split-levels.png)
+![Split levels](pictures/split-levels.png)
 
 ## Operational preparation
 
