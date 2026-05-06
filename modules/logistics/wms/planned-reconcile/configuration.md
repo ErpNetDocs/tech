@@ -36,6 +36,8 @@ Use the following values for **CountingSplitLevel**:
 > [!NOTE]
 > **CountingSplitLevel** is used only in scenarios that support split order generation. It does not apply to **Recount (Single Order)**.
 
+![Warehouse policies](policies.png)
+
 ## Warehouse zone hierarchy
 
 When **CountingSplitLevel** is used, review the warehouse zone hierarchy in advance so that the split level matches the intended order distribution.
@@ -51,6 +53,8 @@ Select the reconciliation scope in the warehouse:
 - selected locations.
 
 When zones or locations are selected, use ones that belong to the selected warehouse.
+
+![Split levels](split-levels.png)
 
 ## Operational preparation
 
