@@ -2762,7 +2762,7 @@
   "modules/logistics/wms/logistic-units/How-to/index.html": {
     "href": "modules/logistics/wms/logistic-units/How-to/index.html",
     "title": "Work with Logistic Units | ERP.net Tech Docs",
-    "summary": "Work with Logistic Units Logistic Units (LU) are an item established for logistics operations, such as receving, storage, movement, and dispathing. It represents all physical units handled in the same manner during logistic operations. When working with LUs, it is possible to execute inbound, outbound,internal warehouse operations, as well as create them with ease. Create a new LU Create multiple LUNs Work with Logistic Units"
+    "summary": "Work with Logistic Units Logistic Units (LU) are an item established for logistics operations, such as receving, storage, movement, and dispathing. It represents all physical units handled in the same manner during logistic operations. When working with LUs, it is possible to execute inbound, outbound,internal warehouse operations, as well as create them with ease. Create multiple LUNs Work with Logistic Units"
   },
   "modules/logistics/wms/logistic-units/How-to/working-with-lu.html": {
     "href": "modules/logistics/wms/logistic-units/How-to/working-with-lu.html",
