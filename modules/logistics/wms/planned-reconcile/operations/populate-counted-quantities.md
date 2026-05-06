@@ -94,4 +94,4 @@ Instead, it updates the counted result for the current session by refreshing the
 > [!NOTE]
 > For an overview of how **Session** and **ReviewStatus** change throughout the process, see [Sessions and review statuses](sessions-and-review-statuses.md).
 
-The next operation is usually [Approve counted results](approve-counted-results.md). If another verification is needed, the process can continue with [Generate recount orders](generate-recount-orders.md).
+The next operation is usually [Generate recount orders](generate-recount-orders.md).
