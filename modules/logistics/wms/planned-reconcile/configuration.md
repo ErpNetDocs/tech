@@ -2,7 +2,7 @@
 
 This page describes the setup required to use **Planned Reconcile** in WMS.
 
-Before users start working with Planned Reconcile, prepare the required document types, warehouse policies, and warehouse zone structure.
+Before users start working with Planned Reconcile, prepare the required document types, [warehouse policies](../how-to/setup-warehouse/warehouse-policies.md), and warehouse zone structure.
 
 ## Required setup
 
@@ -56,13 +56,4 @@ When zones or locations are selected, use ones that belong to the selected wareh
 
 After the snapshot is generated, keep the selected scope free from warehouse movements until the counting and review are finished.
 
-Avoid operations such as:
-
-- receipts;
-- issues;
-- moves;
-- replenishments;
-- transfers;
-- and other warehouse movements
-
-for the selected locations and products during the reconciliation process.
+Do not perform warehouse movements for the selected locations and products during the reconciliation process.
