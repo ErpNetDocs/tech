@@ -59,11 +59,12 @@ The review status shows the current review result for each reconciliation row af
 | [Initial Count](initial-count.md) | 1 | Started | The row enters the first counting session. |
 | [Execute count orders in WMS Worker](execute-count-orders-in-wms-worker.md) | no change | Finished | After the orders for the current session are completed, the related rows move from **Started** to **Finished**. |
 | [Populate Counted Quantities](populate-counted-quantities.md) | no change | no change | The operation updates the counted quantities, but does not change the session or review status. |
-| [Approve counted results](approve-counted-results.md) | no change | Approved | The current counted result is accepted for the selected row. |
-| [Generate recount orders](generate-recount-orders.md) | next session for selected rows only | Started | Only the selected rows move to the next counting session. |
+| Approve counted results | no change | Approved | Use this when the current counted result is accepted for the selected row. |
+| Set review status to **Recount** | no change | Recount | Use this when the current counted result requires another verification cycle for the selected row. |
+| [Generate recount orders](generate-recount-orders.md) | next session for selected rows only | Started | Only the selected rows marked for recount move to the next counting session. |
 | [Execute count orders in WMS Worker](execute-count-orders-in-wms-worker.md) | no change | Finished | The rows in the recount session move to **Finished** when the recount orders are completed. |
 | [Populate Counted Quantities](populate-counted-quantities.md) | no change | no change | The counted result is refreshed for the current recount session. |
-| [Approve counted results](approve-counted-results.md) | no change | Approved | The updated result is accepted for the selected row. |
+| Approve counted results | no change | Approved | The updated result is accepted for the selected row. |
 
 Recount does not move all reconciliation rows to a new session.
 
