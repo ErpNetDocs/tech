@@ -88,7 +88,7 @@
 <h1 id="configuring-planned-reconcile">Configuring Planned Reconcile</h1>
 
 <p>This page describes the setup required to use <strong>Planned Reconcile</strong> in WMS.</p>
-<p>Before users start working with Planned Reconcile, prepare the required document types, warehouse policies, and warehouse zone structure.</p>
+<p>Before users start working with Planned Reconcile, prepare the required document types, <a href="../how-to/setup-warehouse/warehouse-policies.html">warehouse policies</a>, and warehouse zone structure.</p>
 <h2 id="required-setup">Required setup</h2>
 <p>Configure the following:</p>
 <ul>
@@ -114,6 +114,7 @@
 <h5>Note</h5>
 <p><strong>CountingSplitLevel</strong> is used only in scenarios that support split order generation. It does not apply to <strong>Recount (Single Order)</strong>.</p>
 </div>
+<p><img src="pictures/policies.png" alt="Warehouse policies"></p>
 <h2 id="warehouse-zone-hierarchy">Warehouse zone hierarchy</h2>
 <p>When <strong>CountingSplitLevel</strong> is used, review the warehouse zone hierarchy in advance so that the split level matches the intended order distribution.</p>
 <p>The generated count orders follow the configured zone hierarchy level.</p>
@@ -125,18 +126,10 @@
 <li>selected locations.</li>
 </ul>
 <p>When zones or locations are selected, use ones that belong to the selected warehouse.</p>
+<p><img src="pictures/split-levels.png" alt="Split levels"></p>
 <h2 id="operational-preparation">Operational preparation</h2>
 <p>After the snapshot is generated, keep the selected scope free from warehouse movements until the counting and review are finished.</p>
-<p>Avoid operations such as:</p>
-<ul>
-<li>receipts;</li>
-<li>issues;</li>
-<li>moves;</li>
-<li>replenishments;</li>
-<li>transfers;</li>
-<li>and other warehouse movements</li>
-</ul>
-<p>for the selected locations and products during the reconciliation process.</p>
+<p>Do not perform warehouse movements for the selected locations and products during the reconciliation process.</p>
 
 </article>
 

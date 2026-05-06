@@ -17952,6 +17952,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/planned-reconcile/pictures/policies.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/planned-reconcile/pictures/policies.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/logistics/wms/planned-reconcile/pictures/populate-qty.png",
       "output": {
         "resource": {
