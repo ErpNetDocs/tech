@@ -7,3 +7,6 @@ The process guides users through creating a snapshot of the current warehouse st
 This ensures that discrepancies are handled systematically and that the final approved quantities are reliable and accurate before updating warehouse availability.<br><br>
 
 Additionally, the solution improves efficiency by reducing manual effort during review and decision-making, while maintaining full visibility and control over the entire reconciliation process.
+
+
+To get started with the process, see [Scenarios](warehouse-reconciliation-scenarios.md)
