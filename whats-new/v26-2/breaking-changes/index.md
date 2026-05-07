@@ -50,3 +50,20 @@ This applies to Web Client and Windows Client.
 
 ![picture](void.png)
 
+## 6. Enterprise Company Location is now required in documents
+
+Starting with version 26.2, documents require a value in **Enterprise Company Location** field.
+
+This may affect databases where some **Enterprise Companies** do not have any defined **Company Locations**. In such cases, users may be unable to create or save documents because there is no available value to select for **Enterprise Company Location**.
+
+To prevent this issue during upgrade, the system runs an update procedure that:
+
+- creates a default **Company Location** for each **Enterprise Company** that has none;
+- fills **Enterprise Company Location** in existing documents where the field is empty, using the newly created **Company Location**.
+
+The created **Company Location** uses the following name:
+
+- **en:** Head Office
+- **bg:** Централен офис
+
+As a result, all **Enterprise Companies** will have at least one available **Company Location**, and existing documents with missing **Enterprise Company Location** values will be updated automatically.
