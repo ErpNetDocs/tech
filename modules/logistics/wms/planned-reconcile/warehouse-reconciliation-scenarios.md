@@ -268,8 +268,6 @@ This is done by using the **Add the reconciliation lines from the WMS module** U
 
 At this stage, the result from WMS is ready to be loaded into the Inventory module for further review and application to the inventory availability.
 
-For detailed information, see [Reconcile](https://docs.erp.net/tech/modules/logistics/wms/how-to/reconcile.html).
-
 **Expected result:**  
 The generated warehouse transactions are available to be loaded into an **Inventory Reconciliation** document.
 
