@@ -119,6 +119,20 @@ Numeric enum comparisons may no longer work as expected.</p>
 </ul>
 <p>This applies to Web Client and Windows Client.</p>
 <p><img src="void.png" alt="picture"></p>
+<h2 id="6-enterprise-company-location-is-now-required-in-documents">6. Enterprise Company Location is now required in documents</h2>
+<p>Starting with version 26.2, documents require a value in <strong>Enterprise Company Location</strong> field.</p>
+<p>This may affect databases where some <strong>Enterprise Companies</strong> do not have any defined <strong>Company Locations</strong>. In such cases, users may be unable to create or save documents because there is no available value to select for <strong>Enterprise Company Location</strong>.</p>
+<p>To prevent this issue during upgrade, the system runs an update procedure that:</p>
+<ul>
+<li>creates a default <strong>Company Location</strong> for each <strong>Enterprise Company</strong> that has none;</li>
+<li>fills <strong>Enterprise Company Location</strong> in existing documents where the field is empty, using the newly created <strong>Company Location</strong>.</li>
+</ul>
+<p>The created <strong>Company Location</strong> uses the following name:</p>
+<ul>
+<li><strong>en:</strong> Head Office</li>
+<li><strong>bg:</strong> Централен офис</li>
+</ul>
+<p>As a result, all <strong>Enterprise Companies</strong> will have at least one available <strong>Company Location</strong>, and existing documents with missing <strong>Enterprise Company Location</strong> values will be updated automatically.</p>
 
 </article>
 
