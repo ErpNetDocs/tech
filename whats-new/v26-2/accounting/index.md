@@ -2,7 +2,7 @@
 
 ## Notable features
 
-### 1.Transfer Orders: Line-level posting using calculated attributes
+### 1. Transfer Orders: Line-level posting using calculated attributes
 
 Accounting templates for **Transfer Orders** now support a new **Amount source**:
 
@@ -22,7 +22,7 @@ When this source is selected, the **Amount on** field can reference a **calculat
    - optionally, use **Amount Source Filter** to limit which transfer order lines are included in the posting, for example by **Product Type**
 3. The generated postings can now reflect the distributed amounts per line.
 
-### 2.Enterprise Companies: Close accounting period
+### 2. Enterprise Companies: Close accounting period
 
 A new UI function, **Close accounting period**, is now available in the definition of each **Enterprise Company** in both the **Web Client** and the **Desktop Client**.
 
@@ -38,3 +38,27 @@ If there are no vouchers to close for the suggested period, the system still upd
 For more details about the closing logic and eligibility conditions, see [Close accounting period](/modules/financials/accounting/accounting-vouchers/close-accounting-period.md).
 
 ![Close Accounting Period UI function](pictures/close-accounting-period.png)
+
+### 3. Accounting vouchers: Create reversal entry
+
+A new UI function, **Create reversal entry**, is now available for **Accounting Vouchers** in both the **Web Client** and the **Desktop Client**.
+
+The function creates a new accounting voucher as a reversal posting of the current voucher by copying its lines and reversing the sign of the accounting amounts. The new voucher is linked to the original one through the **Reverse Of Document** field.
+
+The function is available only for vouchers in **Completed** state or higher.
+
+To ensure consistent reversal logic:
+
+- only one reversal entry can be created for a voucher;
+- a voucher that is already a reversal entry cannot be reversed again.
+
+After successful execution, users receive confirmation and can identify the newly created reversal voucher directly from the interface.
+
+This feature helps accountants reverse completed vouchers faster while preserving traceability between the original voucher and its reversal entry.
+
+For more details about the closing logic and eligibility conditions, see [Create reversal entry](/modules/financials/accounting/accounting-vouchers/create-reversal-entry.md).
+
+![Create Reversal Entry UI function](pictures/create-reversal-entry.png)
+
+
+
