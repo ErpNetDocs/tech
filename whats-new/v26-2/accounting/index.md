@@ -35,7 +35,7 @@ To ensure a consistent month-by-month process, the closing date cannot be entere
 
 If there are no vouchers to close for the suggested period, the system still updates the closed-period end date. This allows companies to advance the closed accounting period consistently, month by month.
 
-For more details about the closing logic and eligibility conditions, see [Close accounting period](/modules/financials/accounting/accounting-vouchers/close-accounting-period.md).
+For more details about the closing logic and eligibility conditions, see [Close accounting period](../modules/financials/accounting/accounting-vouchers/close-accounting-period.md).
 
 ![Close Accounting Period UI function](pictures/close-accounting-period.png)
 
