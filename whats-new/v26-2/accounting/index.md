@@ -56,6 +56,6 @@ After successful execution, users receive confirmation and can identify the newl
 
 This feature helps accountants reverse completed vouchers faster while preserving traceability between the original voucher and its reversal entry.
 
-For more details, see [Create reversal entry](/modules/financials/accounting/accounting-vouchers/create-reversal-entry.md).
+For more details, see [Create reversal entry](/modules/financials/accounting/accounting-vouchers/create-reversal-entry.md). 
 
 ![Create Reversal Entry UI function](pictures/create-reversal-entry.png)
