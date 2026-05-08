@@ -14,11 +14,18 @@ The function is intended for controlled reversal of already completed accounting
 
 To use the function:
 
-1. Open an accounting voucher in **Completed** state.
-2. Run **Create reversal entry**.
+1. Open an accounting voucher in **Completed** or а higher state.
+2. Run **Create reversal entry** from the **Actions** drop-down menu.
 3. Confirm the operation.
 
+![Create Reversal Entry UI function](../pictures/create-reversal-entry.png)
+
 After confirmation, the system creates a new accounting voucher as a reversal entry of the current one.
+
+After successful execution:
+
+- in the **Web Client**, the system shows a success message and provides a link to the newly created voucher;
+- in the **Desktop Client**, the created voucher is opened.
 
 The new voucher:
 
@@ -26,10 +33,7 @@ The new voucher:
 - contains copied voucher lines with reversed accounting amounts;
 - is created as a separate voucher, so the reversal remains traceable.
 
-After successful execution:
-
-- in the **Web Client**, the system shows a success message and provides a link to the newly created voucher;
-- in the **Desktop Client**, the created voucher is opened.
+![Reversal Entry](../pictures/reversal-entry.png)
 
 ## Concepts
 
@@ -43,7 +47,7 @@ The original voucher remains available, while the new one records the compensati
 
 ### Availability conditions
 
-The function can be executed only when the current accounting voucher is in **Completed** state.
+The function can be executed only when the current accounting voucher is in **Completed** or higher state.
 
 If the voucher is in any other state, the function cannot be executed.
 
