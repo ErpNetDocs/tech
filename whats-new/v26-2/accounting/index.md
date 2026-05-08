@@ -59,6 +59,3 @@ This feature helps accountants reverse completed vouchers faster while preservin
 For more details about the closing logic and eligibility conditions, see [Create reversal entry](/modules/financials/accounting/accounting-vouchers/create-reversal-entry.md).
 
 ![Create Reversal Entry UI function](pictures/create-reversal-entry.png)
-
-
-
