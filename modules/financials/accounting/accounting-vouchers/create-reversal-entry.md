@@ -14,8 +14,10 @@ The function is intended for controlled reversal of already completed accounting
 
 To use the function:
 
-1. Open an accounting voucher in **Completed** or а higher state.
-2. Run **Create reversal entry** from the **Actions** drop-down menu.
+1. Open an accounting voucher in **Completed** or a higher state.
+2. Run **Create reversal entry**:
+   - in the **Web Client**, from the **Actions** drop-down menu;
+   - in the **Desktop Client**, from the **Functions** tab.
 3. Confirm the operation.
 
 ![Create Reversal Entry UI function](../pictures/create-reversal-entry.png)
