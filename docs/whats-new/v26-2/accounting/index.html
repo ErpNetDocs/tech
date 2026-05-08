@@ -88,7 +88,7 @@
 <h1 id="accounting">Accounting</h1>
 
 <h2 id="notable-features">Notable features</h2>
-<h3 id="1transfer-orders-line-level-posting-using-calculated-attributes">1.Transfer Orders: Line-level posting using calculated attributes</h3>
+<h3 id="1-transfer-orders-line-level-posting-using-calculated-attributes">1. Transfer Orders: Line-level posting using calculated attributes</h3>
 <p>Accounting templates for <strong>Transfer Orders</strong> now support a new <strong>Amount source</strong>:</p>
 <ul>
 <li><strong>Transfer Orders – Lines</strong></li>
@@ -111,7 +111,7 @@
 </li>
 <li>The generated postings can now reflect the distributed amounts per line.</li>
 </ol>
-<h3 id="2enterprise-companies-close-accounting-period">2.Enterprise Companies: Close accounting period</h3>
+<h3 id="2-enterprise-companies-close-accounting-period">2. Enterprise Companies: Close accounting period</h3>
 <p>A new UI function, <strong>Close accounting period</strong>, is now available in the definition of each <strong>Enterprise Company</strong> in both the <strong>Web Client</strong> and the <strong>Desktop Client</strong>.</p>
 <p>This function helps users close accounting periods in a safer and more controlled way. It automatically closes eligible accounting vouchers for the selected enterprise company by changing their state from <strong>Released</strong> or <strong>Completed</strong> to <strong>Closed</strong>. At the same time, it updates the <strong>End Date Of Closed Accounting Period</strong> field in the Enterprise Company definition.</p>
 <p>To ensure a consistent month-by-month process, the closing date cannot be entered manually. The system automatically suggests the next valid date:</p>
@@ -122,6 +122,19 @@
 <p>If there are no vouchers to close for the suggested period, the system still updates the closed-period end date. This allows companies to advance the closed accounting period consistently, month by month.</p>
 <p>For more details about the closing logic and eligibility conditions, see <a href="/modules/financials/accounting/accounting-vouchers/close-accounting-period.md">Close accounting period</a>.</p>
 <p><img src="pictures/close-accounting-period.png" alt="Close Accounting Period UI function"></p>
+<h3 id="3-accounting-vouchers-create-reversal-entry">3. Accounting vouchers: Create reversal entry</h3>
+<p>A new UI function, <strong>Create reversal entry</strong>, is now available for <strong>Accounting Vouchers</strong> in both the <strong>Web Client</strong> and the <strong>Desktop Client</strong>.</p>
+<p>The function creates a new accounting voucher as a reversal posting of the current voucher by copying its lines and reversing the sign of the accounting amounts. The new voucher is linked to the original one through the <strong>Reverse Of Document</strong> field.</p>
+<p>The function is available only for vouchers in <strong>Completed</strong> state or higher.</p>
+<p>To ensure consistent reversal logic:</p>
+<ul>
+<li>only one reversal entry can be created for a voucher;</li>
+<li>a voucher that is already a reversal entry cannot be reversed again.</li>
+</ul>
+<p>After successful execution, users receive confirmation and can identify the newly created reversal voucher directly from the interface.</p>
+<p>This feature helps accountants reverse completed vouchers faster while preserving traceability between the original voucher and its reversal entry.</p>
+<p>For more details, see <a href="/modules/financials/accounting/accounting-vouchers/create-reversal-entry.md">Create reversal entry</a>.</p>
+<p><img src="pictures/create-reversal-entry.png" alt="Create Reversal Entry UI function"></p>
 
 </article>
 

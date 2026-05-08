@@ -9575,6 +9575,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/financials/accounting/accounting-vouchers/create-reversal-entry.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/financials/accounting/accounting-vouchers/create-reversal-entry.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/financials/accounting/accounting-vouchers/index.md",
       "output": {
         ".html": {
@@ -9715,6 +9725,26 @@
       "output": {
         "resource": {
           "relative_path": "modules/financials/accounting/pictures/close-accounting-period-2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/financials/accounting/pictures/create-reversal-entry.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/financials/accounting/pictures/create-reversal-entry.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/financials/accounting/pictures/reversal-entry.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/financials/accounting/pictures/reversal-entry.png"
         }
       },
       "version": ""
@@ -23982,6 +24012,16 @@
       "output": {
         "resource": {
           "relative_path": "whats-new/v26-2/accounting/pictures/close-accounting-period.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "whats-new/v26-2/accounting/pictures/create-reversal-entry.png",
+      "output": {
+        "resource": {
+          "relative_path": "whats-new/v26-2/accounting/pictures/create-reversal-entry.png"
         }
       },
       "version": ""
