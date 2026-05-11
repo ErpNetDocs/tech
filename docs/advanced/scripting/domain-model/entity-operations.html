@@ -99,6 +99,10 @@ This resource provides the exact paths and structure you need when working with 
 <p>Any modification made in a script- creation, update, or delete- will not take effect until the actual transaction is committed.
 The script itself <strong>does not</strong> control the transaction; committing or rolling back changes is handled by the outer business logic that invoked the script.</p>
 </div>
+<div class="TIP">
+<h5>Tip</h5>
+<p>For more advanced patterns and examples - object initializers, complex query filters, range and reference queries, and flexible type matching - see <a href="advanced-examples.html">Advanced examples</a>.</p>
+</div>
 <h2 id="accessing-the-current-entity-aka-subject">Accessing the current entity (a.k.a <code>subject</code>)</h2>
 <p>You can access the entity that triggered the script using the <code>subject</code> variable. This variable is automatically provided in the script's context and refers to the object that caused the script to execute.</p>
 <p>E.g., in a user business rule attached to the <a href="https://docs.erp.net/model/entities/Crm.Sales.Customers.html">Customers repository</a>, the <code>subject</code> variable will refer to the specific customer entity being processed when the script runs.</p>
