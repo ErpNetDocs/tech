@@ -14,6 +14,10 @@ The examples below demonstrate typical usage patterns.
 > Any modification made in a script- creation, update, or delete- will not take effect until the actual transaction is committed.
 > The script itself **does not** control the transaction; committing or rolling back changes is handled by the outer business logic that invoked the script.
 
+> [!TIP]
+>
+> For more advanced patterns and examples - object initializers, complex query filters, range and reference queries, and flexible type matching - see [Advanced examples](advanced-examples.md).
+
 ## Accessing the current entity (a.k.a `subject`)
 
 You can access the entity that triggered the script using the `subject` variable. This variable is automatically provided in the script's context and refers to the object that caused the script to execute.
