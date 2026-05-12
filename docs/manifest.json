@@ -23998,39 +23998,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "whats-new/v.27/index.md",
-      "output": {
-        ".html": {
-          "relative_path": "whats-new/v.27/index.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "whats-new/v.27/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "whats-new/v.27/toc.html"
-        },
-        ".json": {
-          "relative_path": "whats-new/v.27/toc.json"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "whats-new/v.27/web-client/index.md",
-      "output": {
-        ".html": {
-          "relative_path": "whats-new/v.27/web-client/index.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "whats-new/v26-2/accounting/index.md",
       "output": {
         ".html": {
@@ -24758,6 +24725,39 @@
       "output": {
         ".html": {
           "relative_path": "whats-new/v26-2/work-management/pictures/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "whats-new/v27/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "whats-new/v27/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "whats-new/v27/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "whats-new/v27/toc.html"
+        },
+        ".json": {
+          "relative_path": "whats-new/v27/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "whats-new/v27/web-client/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "whats-new/v27/web-client/index.html"
         }
       },
       "version": ""
