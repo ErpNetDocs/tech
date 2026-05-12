@@ -171,19 +171,21 @@ Currently, this behavior applies to:
 
 ![picture](pictures/newtab.png)
 
-### 10. Double-Click to enter form Edit mode
+### 10. Double-click to enter Edit mode
 
-Simply **hover over a field and double-click it** to begin editing — making the workflow faster and more natural. No need to use the **Edit** button anymore.
+This feature applies for single-record forms and the navigators. Simply **hover over a field and double-click it** to begin editing — the workflow is faster and more natural. No need to use the **Edit** button anymore.
 
-- Hovering over the fields makes them become light grey. Thus you know which the sensitive area is.
+- Hovering over editable fields makes them become light grey. Thus you know which the sensitive area is.
 - Double-click in a field to enter form Edit Mode and the same field will automatically receive **focus**.
 - Double-clicking a grid row does nothing, but when this row is opened in the side panel, the function works from within it the same way.
 
 ![picture](pictures/editmode.png)
 
+![picture](pictures/edit-navigator.png)
+
 ### 11. Bulk Fill down of a cell value
 
-You can now use [Fill Down (Ctrl+D)]([link to how to use it](https://docs.erp.net/webclient/navigators/guide/fill-down.html)) to quickly copy a value down through selected rows in the same column (follow link for instructions).
+You can now use [Fill Down (Ctrl+D)]((https://docs.erp.net/webclient/navigators/guide/fill-down.html) to quickly copy a value down through selected rows in the same column (follow link for instructions).
 This makes mass editing in grid views much faster, especially when maintaining definitions, lists, and other tabular data.
 
 The option applies only to editable rows and cells in Navigators and Row-panels as well.
