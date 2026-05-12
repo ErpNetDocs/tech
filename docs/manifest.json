@@ -24541,6 +24541,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "whats-new/v26-2/web-client/pictures/edit-navigator.png",
+      "output": {
+        "resource": {
+          "relative_path": "whats-new/v26-2/web-client/pictures/edit-navigator.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "whats-new/v26-2/web-client/pictures/editmode.png",
       "output": {
         "resource": {
