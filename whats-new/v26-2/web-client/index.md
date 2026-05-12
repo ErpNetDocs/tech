@@ -185,7 +185,7 @@ This feature applies for single-record forms and the navigators. Simply **hover 
 
 ### 11. Bulk Fill down of a cell value
 
-You can now use [Fill Down (Ctrl+D)]((https://docs.erp.net/webclient/navigators/guide/fill-down.html) to quickly copy a value down through selected rows in the same column (follow link for instructions).
+You can now use [Fill Down, Ctrl+D](https://docs.erp.net/webclient/navigators/guide/fill-down.html) to quickly copy a value down through selected rows in the same column (follow link for instructions).
 This makes mass editing in grid views much faster, especially when maintaining definitions, lists, and other tabular data.
 
 The option applies only to editable rows and cells in Navigators and Row-panels as well.
