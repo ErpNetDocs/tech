@@ -1634,6 +1634,11 @@
     "title": "Price types | ERP.net Tech Docs",
     "summary": "Price types Price types are used to set additional priority conditions for the prices. 5 is the highest priority level that can be selected in the Priority field of the price. To add an additional higher priority, a price type must be defined and selected as a price type of the price. Priorities among the different price types are set by filling a number in the ordinal position field in the definition of the price type – the lower the number, the higher the priority. Price types add additional priority under the following algorithm: If a price has a defined price type, this price will be with the highest priority among other prices - no matter their level of priority. If more than one price has a defined price type, the price with the price type that has the lowest ordinal position will be with the highest priority. If more than one price has a defined price type and their price types have equal ordinal positions, the price with the highest priority will be selected."
   },
+  "modules/crm/pricing/product-prices/index.html": {
+    "href": "modules/crm/pricing/product-prices/index.html",
+    "title": "| ERP.net Tech Docs",
+    "summary": "Product Prices Product Prices define the sales prices that can be applied to products under specific commercial conditions. They are used when a product can have different prices depending on business context, such as the customer, quantity, validity period, price list, or other pricing conditions. A product can have multiple price records at the same time. During sales processing, ERP.net evaluates the applicable product prices and selects the one that best matches the current conditions according to the pricing rules. Product Prices support scenarios such as standard prices, customer-specific prices, quantity-based prices, time-limited prices, and other condition-based pricing rules."
+  },
   "modules/crm/pricing/promotional-packages.html": {
     "href": "modules/crm/pricing/promotional-packages.html",
     "title": "Promotional packages | ERP.net Tech Docs",

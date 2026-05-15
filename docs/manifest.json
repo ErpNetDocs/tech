@@ -7380,6 +7380,29 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/crm/pricing/product-prices/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/pricing/product-prices/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "modules/crm/pricing/product-prices/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/pricing/product-prices/toc.html"
+        },
+        ".json": {
+          "relative_path": "modules/crm/pricing/product-prices/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/crm/pricing/promotional-packages.md",
       "output": {
         ".html": {
