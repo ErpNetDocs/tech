@@ -1,2 +1,2 @@
 
-{"order":100,"items":[{"name":"Overview","href":"index.html","topicHref":"index.html"}],"pdf":false}
+{"order":100,"items":[{"name":"Overview","href":"index.html","topicHref":"index.html"},{"name":"Concepts","href":"concepts/determine-product-price.html","topicHref":"concepts/determine-product-price.html","includedFrom":"~/modules/crm/pricing/product-prices/concepts/toc.yml","items":[{"name":"Determine product price","href":"concepts/determine-product-price.html","topicHref":"concepts/determine-product-price.html"}]}],"pdf":false}
