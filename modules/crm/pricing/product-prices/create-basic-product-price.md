@@ -14,10 +14,14 @@ This example shows how to create a basic product price and verify that it is app
 > [!NOTE]
 > By default, the product price is defined for a quantity of `1` in the product's default measurement unit. **Enterprise Company** is filled in automatically with the current enterprise company.
 
+![Create Product Price](pictures/create-product-price.png)
+
 4. Save the record.
 
 > [!TIP]
 > You can also open the product definition and review the created price in the **Prices** panel.
+
+![Review Product Price](pictures/review-product-price.png)
 
 ## Verify the result
 
@@ -27,3 +31,6 @@ This example shows how to create a basic product price and verify that it is app
 4. Review the value in **Unit Price** field.
 
 The **Unit Price** should be filled in with the price from the product price record.
+
+![Sales Order Set Product Price](pictures/sales-order-product-price.png)
+
