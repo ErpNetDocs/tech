@@ -5,7 +5,7 @@ This example shows how to create a basic product price and verify that it is app
 ## Steps
 
 1. Open the **Pricing** module.
-2. In the **Product Prices** tile, select **+**.
+2. In the **Product Prices** tile, select **+** button.
 3. In the new product price record, enter the following:
    - **Product** – the product to which the price applies
    - **Price** – the sales price amount
