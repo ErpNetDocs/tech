@@ -2,7 +2,7 @@
 
 This example shows how to create a basic product price and verify that it is applied in a sales order.
 
-## Create a basic product price
+## Steps
 
 1. Open the **Pricing** module.
 2. In the **Product Prices** tile, select **+**.
