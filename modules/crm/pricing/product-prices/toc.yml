@@ -2,7 +2,8 @@
   href: index.md
   topicHref: index.md
 - name: Getting started
-  href: create-basic-product-price.md 
+  href: create-basic-product-price.md
+  topicHref: create-basic-product-price.md
 - name: Concepts
   href: concepts/toc.yml
   topicHref: concepts/determine-product-price.md
