@@ -7403,10 +7403,60 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/crm/pricing/product-prices/create-basic-product-price.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/pricing/product-prices/create-basic-product-price.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/crm/pricing/product-prices/index.md",
       "output": {
         ".html": {
           "relative_path": "modules/crm/pricing/product-prices/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/pricing/product-prices/pictures/create-product-price.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/pricing/product-prices/pictures/create-product-price.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/pricing/product-prices/pictures/product-prices.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/pricing/product-prices/pictures/product-prices.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/pricing/product-prices/pictures/review-product-price.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/pricing/product-prices/pictures/review-product-price.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/pricing/product-prices/pictures/sales-order-product-price.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/pricing/product-prices/pictures/sales-order-product-price.png"
         }
       },
       "version": ""
