@@ -7370,16 +7370,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "modules/crm/pricing/price-types.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/crm/pricing/price-types.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "modules/crm/pricing/product-prices/concepts/determine-product-price.md",
       "output": {
         ".html": {
@@ -7397,6 +7387,79 @@
         },
         ".json": {
           "relative_path": "modules/crm/pricing/product-prices/concepts/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/crm/pricing/product-prices/configuration/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/pricing/product-prices/configuration/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/pricing/product-prices/configuration/pictures/product-price-definition-advanced.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/pricing/product-prices/configuration/pictures/product-price-definition-advanced.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/pricing/product-prices/configuration/pictures/product-price-definition-basic.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/pricing/product-prices/configuration/pictures/product-price-definition-basic.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/crm/pricing/product-prices/configuration/pictures/readME.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/pricing/product-prices/configuration/pictures/readME.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/crm/pricing/product-prices/configuration/price-lists.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/pricing/product-prices/configuration/price-lists.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/crm/pricing/product-prices/configuration/price-types.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/pricing/product-prices/configuration/price-types.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "modules/crm/pricing/product-prices/configuration/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/pricing/product-prices/configuration/toc.html"
+        },
+        ".json": {
+          "relative_path": "modules/crm/pricing/product-prices/configuration/toc.json"
         }
       },
       "version": ""
