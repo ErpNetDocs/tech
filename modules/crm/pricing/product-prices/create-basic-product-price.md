@@ -35,5 +35,8 @@ This example shows how to create a basic product price and verify that it is app
 
 The **Unit Price** should be filled in with the price from the product price record.
 
+> [!TIP]
+> In the sales order line, the price loaded in **Unit Price** can also be traced through the **Product Price** field. This field refers to the product price definition from which the value was loaded.
+
 ![Sales Order Set Product Price](pictures/sales-order-product-price.png)
 
