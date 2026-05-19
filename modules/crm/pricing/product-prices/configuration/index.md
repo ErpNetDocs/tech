@@ -4,7 +4,7 @@ Product prices are configured by defining a product price record and the conditi
 
 A product can have multiple product price records at the same time, each with its own applicability conditions. When more than one product price matches the current context, ERP.net determines the final price according to the product price determination algorithm.
 
-For more information, see [Determine product price](../concepts/determine-product-price.html).
+For more information, see [Determine product price](../concepts/determine-product-price.md).
 
 When a product price is applied in a sales order line, the selected product price record is loaded in the **Product Price** field. ERP.net then calculates the value in the **Unit Price** field based on that product price record.
 
@@ -63,6 +63,8 @@ Use these conditions when the price depends on the organizational context of the
 - **Enterprise Company** – limits the price to sales orders made from a specific enterprise company.
 - **Enterprise Company Location** – limits the price to sales orders made from a specific enterprise company location.
 
+![Product Price Configuration Basic](pictures/product-price-definition-basic.png)
+
 ### Validity context
 
 Use these conditions when the price must be available only during a specific period or only while the record is enabled.
@@ -85,9 +87,9 @@ These fields include:
 
 If a product price record has a defined **Price Type**, it takes precedence over applicable prices without a price type. If more than one applicable price has a defined price type, the product price with the lower **Ordinal Position** of its price type has higher priority.
 
-For more information, see [Price Types](../price-types.md) and [Determine product price](../concepts/determine-product-price.md).
+For more information, see [Price Types](price-types.md) and [Determine product price](../concepts/determine-product-price.md).
 
-![Product Price Configuration](pictures/product-price-configuration.png)
+![Product Price Configuration Advanced](pictures/product-price-definition-advanced.png)
 
 ## Matching configured conditions
 
@@ -328,5 +330,5 @@ This product price is not considered.
 
 In addition to the product price record itself, product price configuration can also depend on related pricing components.
 
-- **[Price Types](../price-types.md)** – define an additional priority condition used when more than one product price is applicable.
-- **[Price Lists](../price-lists.md)** – define reusable pricing groupings for different commercial contexts.
+- **[Price Types](price-types.md)** – define an additional priority condition used when more than one product price is applicable.
+- **[Price Lists](price-lists.md)** – define reusable pricing groupings for different commercial contexts.
