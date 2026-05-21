@@ -15,7 +15,8 @@ A lower value means a higher priority.
 
 When applicable product prices have different price types, the price with the higher-priority price type is preferred.
 
-For example, a company can define price types such as Regular, Promotional, and Special, and assign different Ordinal Positions to distinguish which type of price should take precedence in a given commercial context.
+**For example**:
+A company can define price types such as Regular, Promotional, and Special, and assign different Ordinal Positions to distinguish which type of price should take precedence in a given commercial context.
 
 For an overview of product price applicability conditions, including price types, see [Configuring product prices](../index.md).
 
