@@ -7403,6 +7403,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/crm/pricing/product-prices/configuration/pictures/price-list.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/pricing/product-prices/configuration/pictures/price-list.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/crm/pricing/product-prices/configuration/pictures/product-price-definition-advanced.png",
       "output": {
         "resource": {
