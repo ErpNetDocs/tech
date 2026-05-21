@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Price types | ERP.net Tech Docs </title>
+      <title>Price Types | ERP.net Tech Docs </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Price types | ERP.net Tech Docs ">
+      <meta name="title" content="Price Types | ERP.net Tech Docs ">
       
       
       <link rel="icon" href="../../../../../favicon.ico">
@@ -85,16 +85,25 @@
         </div>
 
         <article data-uid="">
-<h1 id="price-types">Price types</h1>
+<h1 id="price-types">Price Types</h1>
 
-<p><strong>Price types</strong> are used to set additional priority conditions for the prices.</p>
-<p>5 is the highest priority level that can be selected in the <em>Priority</em> field of the price.</p>
-<p>To add an additional higher priority, a price type must be <strong>defined</strong> and <strong>selected</strong> as a price type of the price.</p>
-<p><strong>Priorities</strong> among the different price types are set by filling a number in the ordinal position field in the definition of the price type – the lower the number, the higher the priority.</p>
-<h4 id="price-types-add-additional-priority-under-the-following-algorithm">Price types add additional priority under the <strong>following algorithm:</strong></h4>
-<p>If a price has a defined price type, this price will be with the highest priority among other prices - no matter their level of priority.</p>
-<p>If more than one price has a defined price type, the price with the price type that has the lowest ordinal position will be with the highest priority.</p>
-<p>If more than one price has a defined price type and their price types have equal ordinal positions, the price with the highest priority will be selected.</p>
+<p>Price types are defined in <strong>Pricing</strong> → <strong>Price Types</strong> in the <strong>Set Up</strong> section.</p>
+<p>A price type is used to add an additional priority layer to product prices.<br>
+When multiple product prices are applicable in the same sales context, the price type helps determine which one has higher priority.</p>
+<p>The main settings of a price type define:</p>
+<ul>
+<li>its code and name;</li>
+<li>its position relative to other price types;</li>
+<li>whether it is active.</li>
+</ul>
+<p>The <strong>Ordinal Position</strong> field defines the priority of the price type relative to the other price types.<br>
+A lower value means a higher priority.</p>
+<p>When applicable product prices have different price types, the price with the higher-priority price type is preferred.</p>
+<p><strong>For example</strong>:<br>
+<em>A company can define price types such as Regular, Promotional, and Special, and assign different Ordinal Positions to distinguish which type of price should take precedence in a given commercial context.</em></p>
+<p>For an overview of product price applicability conditions, including price types, see <a href="../index.html">Configuring product prices</a>.</p>
+<p>For more information about how ERP.net selects the final price when multiple product prices are applicable, see <a href="../concepts/determine-product-price.html">Determine product price</a>.</p>
+<p><img src="pictures/price-type.png" alt="Price Type"></p>
 
 </article>
 

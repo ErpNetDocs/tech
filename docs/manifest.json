@@ -385,6 +385,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/examples/get-the-total-amount-of-the-selected-offer-lines.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/examples/get-the-total-amount-of-the-selected-offer-lines.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "advanced/calculated-attributes/examples/get-value-and-description-of-referent-object.md",
       "output": {
         ".html": {
@@ -7413,6 +7423,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/crm/pricing/product-prices/configuration/pictures/price-type.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/pricing/product-prices/configuration/pictures/price-type.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/crm/pricing/product-prices/configuration/pictures/product-price-definition-advanced.png",
       "output": {
         "resource": {
@@ -7427,16 +7447,6 @@
       "output": {
         "resource": {
           "relative_path": "modules/crm/pricing/product-prices/configuration/pictures/product-price-definition-basic.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/crm/pricing/product-prices/configuration/pictures/readME.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/crm/pricing/product-prices/configuration/pictures/readME.html"
         }
       },
       "version": ""
