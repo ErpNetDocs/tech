@@ -87,144 +87,108 @@
         <article data-uid="">
 <h1 id="determine-product-price">Determine product price</h1>
 
-<p>When a user enters a sales order (or similar document), the system automatically assigns the appropriate sales price.</p>
-<p>Selecting the correct price is the main topic of the pricing.</p>
-<h3 id="product-prices-in-reality">Product prices in reality</h3>
-<p>Each product can have multiple prices associated with it.</p>
-<p>For example, product A can have 3 standard prices:</p>
+<p>Product prices allow different prices for the same product to be defined under different conditions.</p>
+<p>Typical examples include:</p>
 <ul>
-<li>50.00 USD - open price, for everyone who asks. This price is defined as Standard.</li>
-<li>48.00 USD - for regular customers</li>
-<li>45.00 USD - for special customers</li>
+<li>a general product price valid for all customers;</li>
+<li>a product price valid only for a specific customer;</li>
+<li>a promotional product price valid for a limited period;</li>
+<li>a product price valid only for a specific price list;</li>
+<li>a product price valid only for a specific quantity range.</li>
 </ul>
-<p>Additionally, product A can have a special price for some customers:</p>
+<p>To determine the applicable product price in a specific business context, ERP.net evaluates the available product prices against the context data and then selects the best match.</p>
+<p>The determination has two stages:</p>
+<ol>
+<li>ERP.net filters the available product prices by applicability.</li>
+<li>If more than one product price remains, ERP.net selects the best match according to the selection criteria.</li>
+</ol>
+<h2 id="context-data-used-to-determine-the-product-price">Context data used to determine the product price</h2>
+<p>ERP.net determines the applicable product price based on data from the current sales context, typically provided by the current sales document and its lines.</p>
+<p>Some context data is required so that product price determination is possible.<br>
+Other context data is used when available to narrow the selection.</p>
+<h3 id="minimum-required-data">Minimum required data</h3>
+<p>The following data must be available:</p>
 <ul>
-<li>44.00 USD for Customer X</li>
-<li>43.50 USD for Customer Y</li>
+<li><strong>Product</strong></li>
+<li><strong>Quantity</strong></li>
+<li><strong>Quantity unit</strong></li>
+<li><strong>Date</strong></li>
 </ul>
-<p>Also, there might be a discount campaign:</p>
+<h3 id="additional-context-data">Additional context data</h3>
+<p>The following data is used when available to narrow the selection:</p>
 <ul>
-<li>42.00 USD for everyone, from 1/1/2021 till 2/2/2021. This price is defined as Promotion and it should be with higher priority than the Standard price.</li>
+<li><strong>Customer</strong></li>
+<li><strong>Ship To Customer</strong></li>
+<li><strong>Enterprise Company</strong></li>
+<li><strong>Enterprise Company Location</strong></li>
+<li><strong>Distribution Channel</strong></li>
+<li><strong>Price List</strong></li>
 </ul>
-<h2 id="entering-product-prices-in-">Entering product prices in ERP.net</h2>
-<p>The following table shows how we can define the prices from the above example in ERP.net.</p>
-<table>
-<thead>
-<tr>
-<th>Product</th>
-<th>Customer</th>
-<th>Price list</th>
-<th>From date</th>
-<th>To date</th>
-<th>Price type</th>
-<th>Priority</th>
-<th>Price</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Product A</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>Standard</td>
-<td>1</td>
-<td>50.00</td>
-</tr>
-<tr>
-<td>Product A</td>
-<td></td>
-<td>Regular</td>
-<td></td>
-<td></td>
-<td></td>
-<td>2</td>
-<td>48.00</td>
-</tr>
-<tr>
-<td>Product A</td>
-<td></td>
-<td>Special</td>
-<td></td>
-<td></td>
-<td></td>
-<td>2</td>
-<td>45.00</td>
-</tr>
-<tr>
-<td>Product A</td>
-<td>Customer X</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>3</td>
-<td>44.00</td>
-</tr>
-<tr>
-<td>Product A</td>
-<td>Customer Y</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>3</td>
-<td>43.50</td>
-</tr>
-<tr>
-<td>Product A</td>
-<td></td>
-<td></td>
-<td>1/1/2021</td>
-<td>2/2/2021</td>
-<td>Promotion</td>
-<td>5</td>
-<td>42.00</td>
-</tr>
-</tbody>
-</table>
-<h2 id="how--determines-the-correct-price">How ERP.net determines the correct price</h2>
-<p>The most important thing to note is the Price type field. The price type with the lowest Ordinal position is with highest priority.</p>
-<p>If the Price type field has a blank value, the first thing that is taken into consideration is the Priority field of the price. The higher the priority, the more likely the price will be selected.</p>
-<p>After the user specifies the customer, date and product, ERP.net filters all prices, that match this criteria. When a price is defined with blank value for Customer, the price is applicable to <strong>all</strong> customers. The same goes for Price list, From date, To date, etc. Only the Product field is required, it cannot be blank. If it could be blank, this means, that we can define the same price for ALL products.</p>
-<p>Generally, the algorithm is the following:</p>
-<p>ERP.net filters the prices, based on Product, Customer, Price list and all other conditional fields.</p>
+<p>In addition, the algorithm can consider the <strong>Current Product Price</strong> when preserving an already selected applicable product price.</p>
+<h2 id="filtering-conditions">Filtering conditions</h2>
+<p>ERP.net filters the available product prices by comparing the conditions defined in each product price with the corresponding context data.</p>
+<p>A product price remains in the candidate set only if all of the following conditions are met:</p>
 <ul>
-<li>If among the remaining prices, there are prices with defined price type, the one that has a price type with the lowest Ordinal position is selected</li>
+<li><strong>From Date</strong> is empty or is earlier than or equal to the context <strong>Date</strong>.</li>
+<li><strong>Thru Date</strong> is empty or is later than or equal to the context <strong>Date</strong>.</li>
+<li><strong>Product</strong> is equal to the context <strong>Product</strong>.</li>
+<li><strong>Customer</strong> is empty or is equal to the context <strong>Customer</strong>.</li>
+<li><strong>Ship To Customer</strong> is empty or is equal to the context <strong>Ship To Customer</strong>.</li>
+<li><strong>Min Quantity</strong> is empty or is less than or equal to the context <strong>Quantity</strong>.</li>
+<li><strong>Max Quantity</strong> is empty or is greater than or equal to the context <strong>Quantity</strong>.</li>
+<li><strong>Enterprise Company</strong> is empty or is equal to the context <strong>Enterprise Company</strong>.</li>
+<li><strong>Enterprise Company Location</strong> is empty or is equal to the context <strong>Enterprise Company Location</strong>.</li>
+<li><strong>Distribution Channel</strong> is empty or is equal to the context <strong>Distribution Channel</strong>.</li>
+<li><strong>Price List</strong> is empty or is equal to the context <strong>Price List</strong>, and the price list is valid on the context <strong>Date</strong>.</li>
+<li><strong>Target Group</strong> is empty or the context <strong>Customer</strong> or <strong>Ship To Customer</strong> belongs to the target group.</li>
 </ul>
-<p>*<em>If there is more than one price within the same lowest Ordinal position, the one with the highest priority is selected</em></p>
+<p>If any specified condition does not match, the product price is excluded from the candidate set.</p>
+<h2 id="selection-logic">Selection logic</h2>
+<p>After filtering, ERP.net may find one, many, or no applicable product prices.</p>
 <ul>
-<li>If among the remaining prices, there are no prices with defined price type, the one with the highest priority is selected</li>
+<li>If no product price remains in the candidate set, no product price is determined.</li>
+<li>If exactly one product price remains, that product price is selected.</li>
+<li>If more than one product price remains, ERP.net selects one of them according to the following criteria, in this order:
+<ol>
+<li><strong>Lowest Price Type ordinal position</strong></li>
+<li><strong>Highest Priority</strong></li>
+<li><strong>Latest From Date</strong></li>
+</ol>
+</li>
 </ul>
-<p>*<em>If there is more than one price within the same highest priority, the newer one is selected (the one with later From date)</em></p>
-<p>So, after the selection process, one and only one price is selected and applied to the sales document.</p>
-<p><strong>For a detailed description of the algorithm of the method determining the product price, see <a class="xref" href="../../determining-algorithms/determine-product-price.html">Determine product price</a> topic.</strong></p>
-<h2 id="more-conditional-filtering-fields">More conditional filtering fields</h2>
-<p>ERP.net employs many more conditional fields, which allow fine-grained tuning of the product pricing strategy. All conditional fields work in the same basic way as described above.</p>
-<p>The following additional conditional fields further filter down the prices:</p>
+<p>This ensures deterministic selection when multiple product prices are applicable at the same time.</p>
+<h3 id="current-product-price-preservation">Current product price preservation</h3>
+<p>When more than one applicable product price remains, ERP.net can also consider the <strong>Current Product Price</strong>.</p>
+<p>If the current product price is still applicable and has the same selection priority as the newly selected product price, ERP.net can preserve the current product price instead of replacing it.</p>
+<p>This helps avoid unnecessary changes when the current product price is still equally valid.</p>
+<h2 id="result">Result</h2>
+<p>The algorithm returns one applicable product price.</p>
+<p>If no product price satisfies the filtering conditions, no product price is returned.</p>
+<h2 id="troubleshooting-product-price-determination">Troubleshooting product price determination</h2>
+<p>When the selected product price is not the expected one, check the following:</p>
+<ol>
+<li>Whether the expected product price satisfies all filtering conditions.</li>
+<li>Whether another applicable product price outranks it by:
+<ol>
+<li><strong>Price Type</strong> ordinal position;</li>
+<li><strong>Priority</strong>;</li>
+<li><strong>From Date</strong>.</li>
+</ol>
+</li>
+<li>Whether the <strong>Current Product Price</strong> was preserved because it is still applicable and equally ranked.</li>
+</ol>
+<p>Keep in mind that:</p>
 <ul>
-<li><strong>Enterprise Company</strong> - for sales only in the specified enterprise company</li>
-<li><strong>Min Quantity</strong> - for sales quantities above (or equal to) the specified</li>
-<li><strong>Max Quantity</strong> - for sales quantities below (or equal to) the specified</li>
-<li><strong>Target Group</strong> - for customers in the target group</li>
-<li><strong>Ship To Customer</strong> - self explanatory</li>
-<li><strong>Distribution Channel</strong> - self explanatory</li>
-<li><strong>Customer Type</strong> - self explanatory</li>
+<li>empty condition values mean &quot;applies to all&quot;;</li>
+<li>filtering is performed before ranking;</li>
+<li>multiple applicable product prices can exist at the same time, but only one is selected.</li>
 </ul>
-<h2 id="specifying-the-price">Specifying the price</h2>
-<p>The price is specified using the following fields:</p>
+<h2 id="see-also">See also</h2>
 <ul>
-<li><strong>Price</strong> - the decimal part of the price</li>
-<li><strong>Currency</strong> - the currency of the price</li>
-<li><strong>Quantity</strong> - the quantity for which the price is specified</li>
-<li><strong>Quantity Measurement Unit</strong> - the measurement unit in which the quantity is specified</li>
+<li><a href="../create-basic-product-price.html">Create basic product price</a></li>
+<li><a href="../configuration/price-lists.html">Price Lists</a></li>
+<li><a href="../configuration/price-types.html">Price Types</a></li>
 </ul>
-<p>Examples:</p>
-<blockquote>
-<p>5.00 USD for 1 pcs</p>
-<p>10.00 EUR for 3 packs</p>
-</blockquote>
 
 </article>
 
