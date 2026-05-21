@@ -1,90 +1,117 @@
 # Determine product price
 
-When a user enters a sales order (or similar document), the system automatically assigns the appropriate sales price. 
+Product prices allow different prices for the same product to be defined under different conditions.
 
-Selecting the correct price is the main topic of the pricing.
+Typical examples include:
+- a general product price valid for all customers;
+- a product price valid only for a specific customer;
+- a promotional product price valid for a limited period;
+- a product price valid only for a specific price list;
+- a product price valid only for a specific quantity range.
 
-### Product prices in reality
+To determine the applicable product price in a specific business context, ERP.net evaluates the available product prices against the context data and then selects the best match.
 
-Each product can have multiple prices associated with it.
+The determination has two stages:
+1. ERP.net filters the available product prices by applicability.
+2. If more than one product price remains, ERP.net selects the best match according to the selection criteria.
 
-For example, product A can have 3 standard prices:
+## Context data used to determine the product price
 
-- 50.00 USD - open price, for everyone who asks. This price is defined as Standard.
-- 48.00 USD - for regular customers
-- 45.00 USD - for special customers
+ERP.net determines the applicable product price based on data from the current sales context, typically provided by the current sales document and its lines.
 
-Additionally, product A can have a special price for some customers:
+Some context data is required so that product price determination is possible.  
+Other context data is used when available to narrow the selection.
 
-- 44.00 USD for Customer X
-- 43.50 USD for Customer Y
+### Minimum required data
 
-Also, there might be a discount campaign:
+The following data must be available:
 
-- 42.00 USD for everyone, from 1/1/2021 till 2/2/2021. This price is defined as Promotion and it should be with higher priority than the Standard price.
+- **Product**
+- **Quantity**
+- **Quantity unit**
+- **Date**
 
-## Entering product prices in @@name
+### Additional context data
 
-The following table shows how we can define the prices from the above example in @@name.
+The following data is used when available to narrow the selection:
 
-| Product   | Customer   | Price list | From date | To date  | Price type | Priority | Price |
-| --------- | ---------- | ---------- | --------- | -------- | ---------- | -------- | ----- |
-| Product A |            |            |           |          | Standard   | 1        | 50.00 |
-| Product A |            | Regular    |           |          |            | 2        | 48.00 |
-| Product A |            | Special    |           |          |            | 2        | 45.00 |
-| Product A | Customer X |            |           |          |            | 3        | 44.00 |
-| Product A | Customer Y |            |           |          |            | 3        | 43.50 |
-| Product A |            |            | 1/1/2021  | 2/2/2021 | Promotion  | 5        | 42.00 |
+- **Customer**
+- **Ship To Customer**
+- **Enterprise Company**
+- **Enterprise Company Location**
+- **Distribution Channel**
+- **Price List**
 
-## How @@name determines the correct price
+In addition, the algorithm can consider the **Current Product Price** when preserving an already selected applicable product price.
 
-The most important thing to note is the Price type field. The price type with the lowest Ordinal position is with highest priority. 
+## Filtering conditions
 
-If the Price type field has a blank value, the first thing that is taken into consideration is the Priority field of the price. The higher the priority, the more likely the price will be selected. 
+ERP.net filters the available product prices by comparing the conditions defined in each product price with the corresponding context data.
 
-After the user specifies the customer, date and product, @@name filters all prices, that match this criteria. When a price is defined with blank value for Customer, the price is applicable to **all** customers. The same goes for Price list, From date, To date, etc. Only the Product field is required, it cannot be blank. If it could be blank, this means, that we can define the same price for ALL products.
+A product price remains in the candidate set only if all of the following conditions are met:
 
-Generally, the algorithm is the following:
+- **From Date** is empty or is earlier than or equal to the context **Date**.
+- **Thru Date** is empty or is later than or equal to the context **Date**.
+- **Product** is equal to the context **Product**.
+- **Customer** is empty or is equal to the context **Customer**.
+- **Ship To Customer** is empty or is equal to the context **Ship To Customer**.
+- **Min Quantity** is empty or is less than or equal to the context **Quantity**.
+- **Max Quantity** is empty or is greater than or equal to the context **Quantity**.
+- **Enterprise Company** is empty or is equal to the context **Enterprise Company**.
+- **Enterprise Company Location** is empty or is equal to the context **Enterprise Company Location**.
+- **Distribution Channel** is empty or is equal to the context **Distribution Channel**.
+- **Price List** is empty or is equal to the context **Price List**, and the price list is valid on the context **Date**.
+- **Target Group** is empty or the context **Customer** or **Ship To Customer** belongs to the target group.
 
-@@name filters the prices, based on Product, Customer, Price list and all other conditional fields.
+If any specified condition does not match, the product price is excluded from the candidate set.
 
-- If among the remaining prices, there are prices with defined price type, the one that has a price type with the lowest Ordinal position is selected
+## Selection logic
 
-**If there is more than one price within the same lowest Ordinal position, the one with the highest priority is selected*
+After filtering, ERP.net may find one, many, or no applicable product prices.
 
-- If among the remaining prices, there are no prices with defined price type, the one with the highest priority is selected
+- If no product price remains in the candidate set, no product price is determined.
+- If exactly one product price remains, that product price is selected.
+- If more than one product price remains, ERP.net selects one of them according to the following criteria, in this order:
+  1. **Lowest Price Type ordinal position**
+  2. **Highest Priority**
+  3. **Latest From Date**
 
-**If there is more than one price within the same highest priority, the newer one is selected (the one with later From date)*
+This ensures deterministic selection when multiple product prices are applicable at the same time.
 
-So, after the selection process, one and only one price is selected and applied to the sales document.
+### Current product price preservation
 
-**For a detailed description of the algorithm of the method determining the product price, see @determine-product-price topic.**
+When more than one applicable product price remains, ERP.net can also consider the **Current Product Price**.
 
-## More conditional filtering fields
+If the current product price is still applicable and has the same selection priority as the newly selected product price, ERP.net can preserve the current product price instead of replacing it.
 
-@@name employs many more conditional fields, which allow fine-grained tuning of the product pricing strategy. All conditional fields work in the same basic way as described above.
+This helps avoid unnecessary changes when the current product price is still equally valid.
 
-The following additional conditional fields further filter down the prices:
+## Result
 
-- **Enterprise Company** - for sales only in the specified enterprise company
-- **Min Quantity** - for sales quantities above (or equal to) the specified
-- **Max Quantity** - for sales quantities below (or equal to) the specified
-- **Target Group** - for customers in the target group
-- **Ship To Customer** - self explanatory
-- **Distribution Channel** - self explanatory
-- **Customer Type** - self explanatory
+The algorithm returns one applicable product price.
 
-## Specifying the price
+If no product price satisfies the filtering conditions, no product price is returned.
 
-The price is specified using the following fields:
+## Troubleshooting product price determination
 
-- **Price** - the decimal part of the price
-- **Currency** - the currency of the price
-- **Quantity** - the quantity for which the price is specified
-- **Quantity Measurement Unit** - the measurement unit in which the quantity is specified
+When the selected product price is not the expected one, check the following:
 
-Examples:
+1. Whether the expected product price satisfies all filtering conditions.
+2. Whether another applicable product price outranks it by:
+   1. **Price Type** ordinal position;
+   2. **Priority**;
+   3. **From Date**.
+3. Whether the **Current Product Price** was preserved because it is still applicable and equally ranked.
 
-> 5.00 USD for 1 pcs
->
-> 10.00 EUR for 3 packs
+Keep in mind that:
+- empty condition values mean "applies to all";
+- filtering is performed before ranking;
+- multiple applicable product prices can exist at the same time, but only one is selected.
+
+## See also
+
+- [Create basic product price](../create-basic-product-price.md)
+- [Price Lists](../configuration/price-lists.md)
+- [Price Types](../configuration/price-types.md)
+
+  
