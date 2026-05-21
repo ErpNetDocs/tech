@@ -25,6 +25,6 @@ Repository: Crm.Presales.Offers
 ```
 
 **Explanation:**  
-10: Sum the values of LineAmountValue from the records returned by EXP:20.
-20: Filter the child records from Lines by the condition in EXP:30.
+10: Sum the values of LineAmountValue from the records returned by EXP:20.  
+20: Filter the child records from Lines by the condition in EXP:30.  
 30: Check whether IsSelected is equal to True.
