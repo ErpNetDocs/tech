@@ -1,17 +1,24 @@
-# Price types
+# Price Types
 
-**Price types** are used to set additional priority conditions for the prices. 
+Price types are defined in **Pricing** → **Price Types** in the **Set Up** section.
 
-5 is the highest priority level that can be selected in the *Priority* field of the price. 
+A price type is used to add an additional priority layer to product prices.  
+When multiple product prices are applicable in the same sales context, the price type helps determine which one has higher priority.
 
-To add an additional higher priority, a price type must be **defined** and **selected** as a price type of the price. 
+The main settings of a price type define:
+- its code and name;
+- its position relative to other price types;
+- whether it is active.
 
-**Priorities** among the different price types are set by filling a number in the ordinal position field in the definition of the price type – the lower the number, the higher the priority.
+The **Ordinal Position** field defines the priority of the price type relative to the other price types.  
+A lower value means a higher priority.
 
-#### Price types add additional priority under the **following algorithm:**
+When applicable product prices have different price types, the price with the higher-priority price type is preferred.
 
-If a price has a defined price type, this price will be with the highest priority among other prices - no matter their level of priority. 
+For example, a company can define price types such as Regular, Promotional, and Special, and assign different Ordinal Positions to distinguish which type of price should take precedence in a given commercial context.
 
-If more than one price has a defined price type, the price with the price type that has the lowest ordinal position will be with the highest priority.
+For an overview of product price applicability conditions, including price types, see [Configuring product prices](../index.md).
 
-If more than one price has a defined price type and their price types have equal ordinal positions, the price with the highest priority will be selected.
+For more information about how ERP.net selects the final price when multiple product prices are applicable, see [Determine product price](../concepts/determine-product-price.md).
+
+![Price Type](pictures/price-type.png)
