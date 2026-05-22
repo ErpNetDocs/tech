@@ -15,12 +15,12 @@ This example shows how to create a basic line discount and verify that it is app
 - **Discount Percent** – the discount percentage to apply
 - **Product** – the product for which the discount is defined
 
+4. Save the record.
+
 > [!NOTE]
 > **Enterprise Company** is filled in automatically with the current enterprise company.
 
 ![Create Line Discount](pictures/create-line-discount.png)
-
-4. Save the record.
 
 > [!TIP]
 > You can also open the product definition and review the created discount in the **Discounts** panel.
