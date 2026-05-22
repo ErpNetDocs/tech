@@ -18,7 +18,7 @@ A product price record includes the following basic fields:
 
 These fields define the product being priced, the price amount, the currency, and the quantity and measurement unit for which the price is valid.
 
-The **Price** field stores the price for the configured **Price Quantity** and **Price Quantity Measurement Unit**. When the product price is applied in a sales document line, ERP.net calculates the corresponding **Unit Price** value according to the quantity base defined in the product price and the quantity measurement unit used in the line.
+The **Price** field stores the price for the configured **Price Quantity** and **Price Quantity Measurement Unit**. When the product price is applied in a sales document line, @@name calculates the corresponding **Unit Price** value according to the quantity base defined in the product price and the quantity measurement unit used in the line.
 
 Different product price records can specify, for example:
 
@@ -72,7 +72,7 @@ Use these conditions when the price must be available only during a specific per
 - **Active** – indicates whether the product price record is enabled for use.
 
 > [!NOTE]
-> A product price record must be unique for its combination of product and pricing context fields, such as price list, customer, ship-to customer, target group, validity period, quantity range, price type, and enterprise company. As a result, ERP.net does not allow duplicate product price records for the same pricing context.
+> A product price record must be unique for its combination of product and pricing context fields, such as price list, customer, ship-to customer, target group, validity period, quantity range, price type, and enterprise company. As a result, @@name does not allow duplicate product price records for the same pricing context.
 
 ## Priority and price type
 
