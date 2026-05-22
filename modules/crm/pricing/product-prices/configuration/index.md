@@ -2,11 +2,9 @@
 
 Product prices are configured by defining a product price record and the conditions under which it can be applied.
 
-A product can have multiple product price records at the same time, each with its own applicability conditions. When more than one product price matches the current context, ERP.net determines the final price according to the product price determination algorithm.
+A product can have multiple product price records at the same time, each with its own applicability conditions. When more than one product price matches the current context, @@name determines the final price according to the [product price determination algorithm](../concepts/determine-product-price.md).
 
-For more information, see [Determine product price](../concepts/determine-product-price.md).
-
-When a product price is applied in a sales document line, the selected product price record is loaded in the **Product Price** field. ERP.net then calculates the value in the **Unit Price** field based on that product price record.
+When a sales document line is processed, the system automatically populates the **Product Price** field with the applicable product price record and calculates the **Unit Price** based on it.
 
 ## Price definition
 
