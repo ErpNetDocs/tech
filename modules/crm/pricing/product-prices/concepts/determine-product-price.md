@@ -13,15 +13,15 @@ Typical examples include:
 - a product price valid only for a specific price list;
 - a product price valid only for a specific quantity range.
 
-To determine the applicable product price in a specific business context, ERP.net evaluates the available product prices against the context data and then selects the best match.
+To determine the applicable product price in a specific business context, @@name evaluates the available product prices against the context data and then selects the best match.
 
 The determination has two stages:
-1. ERP.net filters the available product prices by applicability.
-2. If more than one product price remains, ERP.net selects the best match according to the selection criteria.
+1. @@name filters the available product prices by applicability.
+2. If more than one product price remains, @@name selects the best match according to the selection criteria.
 
 ## Context data used to determine the product price
 
-ERP.net determines the applicable product price based on data from the current sales context, typically provided by the current sales document and its lines.
+@@name determines the applicable product price based on data from the current sales context, typically provided by the current sales document and its lines.
 
 Some context data is required so that product price determination is possible.  
 Other context data is used when available to narrow the selection.
@@ -50,7 +50,7 @@ In addition, the algorithm can consider the **Current Product Price** when prese
 
 ## Filtering conditions
 
-ERP.net filters the available product prices by comparing the conditions defined in each product price with the corresponding context data.
+@@name filters the available product prices by comparing the conditions defined in each product price with the corresponding context data.
 
 A product price remains in the candidate set only if all of the following conditions are met:
 
@@ -71,11 +71,11 @@ If any specified condition does not match, the product price is excluded from th
 
 ## Selection logic
 
-After filtering, ERP.net may find one, many, or no applicable product prices.
+After filtering, @@name may find one, many, or no applicable product prices.
 
 - If no product price remains in the candidate set, no product price is determined.
 - If exactly one product price remains, that product price is selected.
-- If more than one product price remains, ERP.net selects one of them according to the following criteria, in this order:
+- If more than one product price remains, @@name selects one of them according to the following criteria, in this order:
   1. **Lowest Price Type ordinal position**
   2. **Highest Priority**
   3. **Latest From Date**
@@ -84,9 +84,9 @@ This ensures deterministic selection when multiple product prices are applicable
 
 ### Current product price preservation
 
-When more than one applicable product price remains, ERP.net can also consider the **Current Product Price**.
+When more than one applicable product price remains, @@name can also consider the **Current Product Price**.
 
-If the current product price is still applicable and has the same selection priority as the newly selected product price, ERP.net can preserve the current product price instead of replacing it.
+If the current product price is still applicable and has the same selection priority as the newly selected product price, @@name can preserve the current product price instead of replacing it.
 
 This helps avoid unnecessary changes when the current product price is still equally valid.
 
