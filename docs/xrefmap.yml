@@ -313,9 +313,15 @@ references:
 - uid: determine-line-discount
   name: Determine line discount
   href: modules/crm/pricing/determining-algorithms/determine-line-discount.html
+- uid: determine-line-discount2
+  name: Determine line discount
+  href: modules/crm/pricing/line-discounts/concepts/determine-line-discount.html
 - uid: determine-product-price
   name: Determine product price
   href: modules/crm/pricing/determining-algorithms/determine-product-price.html
+- uid: determine-product-price2
+  name: Determine product price
+  href: modules/crm/pricing/product-prices/concepts/determine-product-price.html
 - uid: deterministic-generations
   name: Deterministic generations
   href: advanced/document-flow/deterministic-generations.html
