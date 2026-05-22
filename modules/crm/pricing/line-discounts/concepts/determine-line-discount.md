@@ -1,5 +1,5 @@
 ---
-uid: determine-line-discount2
+uid: determine-line-discount
 ---
 
 # Determine line discount
