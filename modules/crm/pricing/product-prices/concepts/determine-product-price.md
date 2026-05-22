@@ -1,5 +1,5 @@
 ---
-uid: determine-product-price2
+uid: determine-product-price
 ---
 
 # Determine product price
