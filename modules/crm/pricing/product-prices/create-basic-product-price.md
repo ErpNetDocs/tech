@@ -9,7 +9,7 @@ This example shows how to create a basic product price and verify that it is app
 
 ![Product Prices](pictures/product-prices.png)
 
-4. In the new product price record, enter the following:
+3. In the new product price record, enter the following:
    - **Product** – the product to which the price applies
    - **Price** – the sales price amount
    - **Currency** – the currency in which the price is defined
