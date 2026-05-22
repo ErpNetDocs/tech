@@ -14,12 +14,12 @@ This example shows how to create a basic product price and verify that it is app
    - **Price** – the sales price amount
    - **Currency** – the currency in which the price is defined
 
+4. Save the record.
+
 > [!NOTE]
 > By default, the product price is defined for a quantity of `1` in the product's default measurement unit. **Enterprise Company** is filled in automatically with the current enterprise company.
 
 ![Create Product Price](pictures/create-product-price.png)
-
-4. Save the record.
 
 > [!TIP]
 > You can also open the product definition and review the created price in the **Prices** panel.
