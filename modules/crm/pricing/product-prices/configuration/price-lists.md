@@ -24,6 +24,6 @@ In the **Prices** panel, users can add, review, and edit the product prices assi
 
 For an overview of product price applicability conditions, including price lists, see [Configuring product prices](../index.md).
 
-For more information about how ERP.net selects the final price when multiple product prices are applicable, see [Determine product price](../concepts/determine-product-price.md).
+For more information about how @@name selects the final price when multiple product prices are applicable, see [Determine product price](../concepts/determine-product-price.md).
 
 ![Price List](pictures/price-list.png)
