@@ -20,6 +20,6 @@ When more than one applicable product price has a defined price type, the price 
 
 For an overview of product price applicability conditions, including price types, see [Configuring product prices](../index.md).
 
-For more information about how ERP.net selects the final price when multiple product prices are applicable, see [Determine product price](../concepts/determine-product-price.md).
+For more information about how @@name selects the final price when multiple product prices are applicable, see [Determine product price](../concepts/determine-product-price.md).
 
 ![Price Type](pictures/price-type.png)
