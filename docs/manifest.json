@@ -7317,49 +7317,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "modules/crm/pricing/determining-algorithms/determine-line-discount.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/crm/pricing/determining-algorithms/determine-line-discount.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/crm/pricing/determining-algorithms/determine-product-price.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/crm/pricing/determining-algorithms/determine-product-price.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/crm/pricing/determining-algorithms/index.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/crm/pricing/determining-algorithms/index.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "modules/crm/pricing/determining-algorithms/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "modules/crm/pricing/determining-algorithms/toc.html"
-        },
-        ".json": {
-          "relative_path": "modules/crm/pricing/determining-algorithms/toc.json"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "modules/crm/pricing/index.md",
       "output": {
         ".html": {
