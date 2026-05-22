@@ -1,6 +1,6 @@
 ## Product Prices
 
-**Product prices** define the sales prices that @@name can apply to sales document lines. A product can have multiple product price records, each valid under specific conditions such as customer, price list, date range, quantity, or other pricing conditions.
+**Product prices** define the sales prices that @@name can apply to sales document lines. A product can have multiple product price records, each configured for different pricing conditions and commercial scenarios.
 
 When a sales document line is processed, ERP.net evaluates the available product price records and applies the one that best matches the document context.
 
