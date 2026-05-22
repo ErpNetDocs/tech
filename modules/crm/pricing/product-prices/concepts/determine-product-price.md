@@ -1,3 +1,7 @@
+---
+uid: determine-product-price2
+---
+
 # Determine product price
 
 Product prices allow different prices for the same product to be defined under different conditions.
