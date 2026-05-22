@@ -7370,6 +7370,89 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/crm/pricing/line-discounts/create-basic-line-discount.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/pricing/line-discounts/create-basic-line-discount.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/crm/pricing/line-discounts/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/pricing/line-discounts/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/pricing/line-discounts/pictures/create-line-discount.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/pricing/line-discounts/pictures/create-line-discount.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/pricing/line-discounts/pictures/line-discounts.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/pricing/line-discounts/pictures/line-discounts.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/crm/pricing/line-discounts/pictures/readME.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/pricing/line-discounts/pictures/readME.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/pricing/line-discounts/pictures/review-line-discount.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/pricing/line-discounts/pictures/review-line-discount.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/pricing/line-discounts/pictures/sales-order-line-discount.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/pricing/line-discounts/pictures/sales-order-line-discount.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "modules/crm/pricing/line-discounts/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/pricing/line-discounts/toc.html"
+        },
+        ".json": {
+          "relative_path": "modules/crm/pricing/line-discounts/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/crm/pricing/multiple-line-discounts.md",
       "output": {
         ".html": {
