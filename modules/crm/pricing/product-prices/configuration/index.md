@@ -76,7 +76,7 @@ Use these conditions when the price must be available only during a specific per
 
 ## Priority and price types
 
-When multiple product prices are applicable, ERP.net uses priority rules to determine which price is selected. Some of these rules are controlled by fields in the product price record.
+When multiple product prices are applicable, @@name uses priority rules to determine which price is selected. Some of these rules are controlled by fields in the product price record.
 
 These fields include:
 
@@ -95,7 +95,7 @@ A product price can be considered only when the values in the sales document mat
 
 If a product price record contains multiple applicability conditions, all of them must match for the price to be considered.
 
-For more information about how ERP.net selects the final price when multiple product prices are applicable, see [Determine product price](../concepts/determine-product-price.html).
+For more information about how @@name selects the final price when multiple product prices are applicable, see [Determine product price](../concepts/determine-product-price.html).
 
 ## Example scenarios
 
