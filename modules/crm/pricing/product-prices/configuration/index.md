@@ -74,7 +74,7 @@ Use these conditions when the price must be available only during a specific per
 > [!NOTE]
 > A product price record must be unique for its combination of product and pricing context fields, such as price list, customer, ship-to customer, target group, validity period, quantity range, price type, and enterprise company. As a result, ERP.net does not allow duplicate product price records for the same pricing context.
 
-## Priority and price types
+## Priority and price type
 
 When multiple product prices are applicable, @@name uses priority rules to determine which price is selected. Some of these rules are controlled by fields in the product price record.
 
