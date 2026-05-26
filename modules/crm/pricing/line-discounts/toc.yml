@@ -4,6 +4,9 @@
 - name: Getting started
   href: create-basic-line-discount.md
   topicHref: create-basic-line-discount.md
+- name: Configuration
+  href: configuration.md
+  topicHref: configurationt.md
 - name: Concepts
   href: concepts/toc.yml
   topicHref: concepts/determine-line-discount.md
