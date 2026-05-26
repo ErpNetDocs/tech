@@ -67,8 +67,8 @@ Use these conditions when the price depends on the organizational context of the
 
 Use these conditions when the price must be available only during a specific period or only while the record is enabled.
 
-- **From Date** – limits the price to sales documents whose document date is on or after this date.
-- **Thru Date** – limits the price to sales documents whose document date is on or before this date.
+- **From Date** – limits the price to sales documents whose required delivery date is on or after this date.
+- **Thru Date** – limits the price to sales documents whose required delivery date is on or before this date.
 - **Active** – indicates whether the product price record is enabled for use.
 
 > [!NOTE]
