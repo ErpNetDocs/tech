@@ -59,14 +59,14 @@ Use these conditions when the discount depends on the organizational context of 
 - **Enterprise Company** – limits the discount to sales documents issued from a specific enterprise company.  
 - **Enterprise Company Location** – limits the discount to sales documents issued from a specific enterprise company location.
 
-![Line Discount Configuration Basic](pictures/line-discount-definition-basic.png)
+![Line Discount Configuration Basic](pictures/line-discount-definition-basic2.png)
 
 ### Validity context
 
 Use these conditions when the discount must be available only during a specific period or only while the record is enabled.
 
-- **From Date** – limits the discount to sales documents whose document date is on or after this date.  
-- **Thru Date** – limits the discount to sales documents whose document date is on or before this date.  
+- **From Date** – limits the discount to sales documents whose required delivery date is on or after this date.  
+- **Thru Date** – limits the discount to sales documents whose required delivery date is on or before this date.  
 - **Active** – indicates whether the line discount record is enabled for use.
 
 ## Priority and discount level
@@ -99,7 +99,7 @@ This field does not participate in the line discount determination algorithm and
 
 For more information about document amounts, see [Additional amounts](~/advanced/document-amounts/index.md) and [Additional amounts determination and recording](~/advanced/document-amounts/determination-and-recording.md).
 
-![Line Discount Configuration Advanced](pictures/line-discount-definition-advanced.png)
+![Line Discount Configuration Advanced](pictures/line-discount-definition-advanced2.png)
 
 ## Matching configured conditions
 
