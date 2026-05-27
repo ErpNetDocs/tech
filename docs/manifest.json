@@ -7350,6 +7350,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/crm/pricing/line-discounts/configuration.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/pricing/line-discounts/configuration.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/crm/pricing/line-discounts/create-basic-line-discount.md",
       "output": {
         ".html": {
@@ -7380,20 +7390,30 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "modules/crm/pricing/line-discounts/pictures/line-discounts.png",
+      "source_relative_path": "modules/crm/pricing/line-discounts/pictures/line-discount-definition-advanced2.png",
       "output": {
         "resource": {
-          "relative_path": "modules/crm/pricing/line-discounts/pictures/line-discounts.png"
+          "relative_path": "modules/crm/pricing/line-discounts/pictures/line-discount-definition-advanced2.png"
         }
       },
       "version": ""
     },
     {
-      "type": "Conceptual",
-      "source_relative_path": "modules/crm/pricing/line-discounts/pictures/readME.md",
+      "type": "Resource",
+      "source_relative_path": "modules/crm/pricing/line-discounts/pictures/line-discount-definition-basic2.png",
       "output": {
-        ".html": {
-          "relative_path": "modules/crm/pricing/line-discounts/pictures/readME.html"
+        "resource": {
+          "relative_path": "modules/crm/pricing/line-discounts/pictures/line-discount-definition-basic2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/pricing/line-discounts/pictures/line-discounts.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/pricing/line-discounts/pictures/line-discounts.png"
         }
       },
       "version": ""

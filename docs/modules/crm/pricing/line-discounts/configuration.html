@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Configuring line discounts | ERP.net Tech Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Configuring line discounts | ERP.net Tech Docs ">
+      
+      
+      <link rel="icon" href="../../../../favicon.ico">
+      <link rel="stylesheet" href="../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/crm/pricing/line-discounts/configuration.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../index.html">
+            <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="configuring-line-discounts">Configuring line discounts</h1>
+
+<p>Line discounts are configured by defining a line discount record and the conditions under which it can be applied.</p>
+<p>Multiple line discount records can be defined, each with its own applicability conditions. When more than one line discount matches the current context, ERP.net determines the final discount for each discount level according to the <a href="../concepts/determine-line-discount.md">line discount determination algorithm</a>.</p>
+<p>When a sales document line is processed, the system automatically populates the corresponding <strong>Level 1 Discount</strong>, <strong>Level 2 Discount</strong>, or <strong>Level 3 Discount</strong> field with the selected line discount record, loads its discount percent into the corresponding discount percent field, and includes the result in the calculated <em>Line Standard Discount Percent</em>* field.</p>
+<h2 id="discount-definition">Discount definition</h2>
+<p>A line discount record includes the following basic fields:</p>
+<ul>
+<li><strong>Description</strong></li>
+<li><strong>Discount Percent</strong></li>
+<li><strong>Discount Level</strong></li>
+</ul>
+<p>These fields define how the discount is identified, what percentage is applied, and on which discount level it participates.</p>
+<p>The <strong>Description</strong> field helps users recognize the discount when reviewing or selecting discount records.</p>
+<p>The <strong>Discount Percent</strong> field stores the discount percentage that is applied when all configured conditions are matched.</p>
+<p>The <strong>Discount Level</strong> field specifies the cascade level on which the discount is applied. ERP.net supports three discount levels. Each level is determined separately and can populate a different discount field in the sales document.</p>
+<h2 id="applicability-conditions">Applicability conditions</h2>
+<p>In addition to the base discount definition fields, a line discount record can include applicability condition fields. These fields limit when the discount can be considered during sales document processing.</p>
+<p>If a line discount record contains multiple applicability conditions, all of them must match for the discount to be considered.</p>
+<h3 id="product-context">Product context</h3>
+<p>Use these conditions when the discount depends on the product being sold.</p>
+<ul>
+<li><strong>Product</strong> – limits the discount to a specific product.</li>
+<li><strong>Product Group</strong> – limits the discount to products in a specific product group.</li>
+<li><strong>Min Quantity</strong> – the minimum product quantity in the sales document line for which the discount can be considered.</li>
+<li><strong>Max Quantity</strong> – the maximum product quantity in the sales document line for which the discount can be considered.</li>
+</ul>
+<h3 id="customer-context">Customer context</h3>
+<p>Use these conditions when the discount depends on customer-related information in the sales document.</p>
+<ul>
+<li><strong>Customer</strong> – limits the discount to sales documents for a specific customer.</li>
+<li><strong>Customer Type</strong> – limits the discount to sales documents for customers of a specific type.</li>
+<li><strong>Target Group</strong> – limits the discount to sales documents for customers in a specific target group.</li>
+</ul>
+<h3 id="commercial-context">Commercial context</h3>
+<p>Use these conditions when the discount depends on the commercial setup of the sales document.</p>
+<ul>
+<li><strong>Price List</strong> – limits the discount to sales documents that use a specific price list.</li>
+<li><strong>Distribution Channel</strong> – limits the discount to sales documents in a specific distribution channel.</li>
+</ul>
+<h3 id="organizational-context">Organizational context</h3>
+<p>Use these conditions when the discount depends on the organizational context of the sales document.</p>
+<ul>
+<li><strong>Enterprise Company</strong> – limits the discount to sales documents issued from a specific enterprise company.</li>
+<li><strong>Enterprise Company Location</strong> – limits the discount to sales documents issued from a specific enterprise company location.</li>
+</ul>
+<p><img src="pictures/line-discount-definition-basic2.png" alt="Line Discount Configuration Basic"></p>
+<h3 id="validity-context">Validity context</h3>
+<p>Use these conditions when the discount must be available only during a specific period or only while the record is enabled.</p>
+<ul>
+<li><strong>From Date</strong> – limits the discount to sales documents whose required delivery date is on or after this date.</li>
+<li><strong>Thru Date</strong> – limits the discount to sales documents whose required delivery date is on or before this date.</li>
+<li><strong>Active</strong> – indicates whether the line discount record is enabled for use.</li>
+</ul>
+<h2 id="priority-and-discount-level">Priority and discount level</h2>
+<p>When more than one line discount is applicable for the same discount level, ERP.net selects the matching policy with the highest priority.</p>
+<p>These fields control that behavior:</p>
+<ul>
+<li><strong>Priority</strong> – ranks applicable line discounts for the same level.</li>
+<li><strong>Discount Level</strong> – determines which discount field in the sales document line is affected.</li>
+</ul>
+<p>A line discount with <strong>Discount Level = 1</strong> can populate the <strong>Level 1 Discount</strong> field in the sales document line.<br>
+A line discount with <strong>Discount Level = 2</strong> can populate the <strong>Level 2 Discount</strong> field.<br>
+A line discount with <strong>Discount Level = 3</strong> can populate the <strong>Level 3 Discount</strong> field.</p>
+<p>The selected line discount also provides the value for the corresponding discount percent field. The final calculated result is reflected in the <strong>Line Standard Discount Percent</strong> field of the sales document line.</p>
+<p>For more information about applying discounts from multiple levels and how the final standard discount is accumulated, see <a href="../concepts/multiple-line-discounts.md">Multiple line discounts</a>.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>A line discount record must be unique for its combination of discount level and applicability context fields, such as product, product group, customer, customer type, price list, target group, distribution channel, validity period, quantity range, enterprise company, and enterprise company location. As a result, ERP.net does not allow duplicate line discount records for the same discount level and applicability context.</p>
+</div>
+<h2 id="document-amount-categorization">Document amount categorization</h2>
+<p>The <strong>Document Amount Type</strong> field specifies the document amount category for the line discount.</p>
+<p>When a line discount with a specified <strong>Document Amount Type</strong> is applied in a sales order, ERP.net records the corresponding discount amount as a document amount and distributes it to the affected sales order line. This enables separate tracking of discount amounts for reporting and posting purposes.</p>
+<p>This field does not participate in the line discount determination algorithm and does not affect discount applicability.</p>
+<p>For more information about document amounts, see <a href="../../../../advanced/document-amounts/index.html">Additional amounts</a> and <a href="../../../../advanced/document-amounts/determination-and-recording.html">Additional amounts determination and recording</a>.</p>
+<p><img src="pictures/line-discount-definition-advanced2.png" alt="Line Discount Configuration Advanced"></p>
+<h2 id="matching-configured-conditions">Matching configured conditions</h2>
+<p>A line discount can be considered only when the values in the sales document match the configured applicability conditions.</p>
+<p>If a line discount record contains multiple applicability conditions, all of them must match for the discount to be applied.</p>
+<p>For example, a line discount configured for a specific product and customer is considered only when both the product and the customer in the sales document line match the configured values.</p>
+<p>For more information about how ERP.net selects the final discount when multiple line discounts are applicable for the same discount level, see <a href="../concepts/determine-line-discount.md">Determine line discount</a>.</p>
+<h2 id="example-scenarios">Example scenarios</h2>
+<p>The following examples show how line discounts can be configured for different business needs and how the configured conditions affect the discount values loaded in the sales document line.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The following examples assume that no other applicable line discount with higher priority exists for the same discount level.</p>
+</div>
+<h3 id="discount-for-a-specific-product">Discount for a specific product</h3>
+<p>Use this scenario when a product should always receive a specific line discount.</p>
+<p><strong>Example configuration</strong></p>
+<p><strong>Line Discount: Line Discount A</strong><br>
+Description: Product A discount<br>
+Product: Product A<br>
+Discount Percent: 10%<br>
+Discount Level: 1</p>
+<p><strong>Sales document context</strong><br>
+Product: Product A</p>
+<p><strong>Result</strong><br>
+Level 1 Discount: Line Discount A<br>
+Level 1 Discount Percent: 10<br>
+Standard Discount: 10%</p>
+<h3 id="discount-for-a-specific-customer">Discount for a specific customer</h3>
+<p>Use this scenario when one customer has negotiated line discount terms.</p>
+<p><strong>Example configuration</strong></p>
+<p><strong>Line Discount: Line Discount A</strong><br>
+Description: Customer A discount<br>
+Customer: Customer A<br>
+Discount Percent: 12%<br>
+Discount Level: 1</p>
+<p><strong>Sales document context</strong><br>
+Customer: Customer A</p>
+<p><strong>Result</strong><br>
+Level 1 Discount: Line Discount A<br>
+Level 1 Discount Percent: 12%<br>
+Standard Discount: 12%</p>
+<h3 id="discount-by-quantity-range">Discount by quantity range</h3>
+<p>Use this scenario when the discount depends on the ordered quantity of a specific product.</p>
+<p><strong>Example configuration</strong></p>
+<p><strong>Line Discount: Line Discount A</strong><br>
+Description:Product A - quantity-based discount<br>
+Product: Product A<br>
+Min Quantity: 10<br>
+Max Quantity: 50<br>
+Discount Percent: 8%<br>
+Discount Level: 1</p>
+<p><strong>Sales document context</strong><br>
+Product: Product A<br>
+Quantity: 12</p>
+<p><strong>Result</strong><br>
+Level 1 Discount: Line Discount A<br>
+Level 1 Discount Percent: 8%<br>
+Standard Discount: 8%</p>
+<h3 id="time-limited-discount">Time-limited discount</h3>
+<p>Use this scenario when a line discount must be valid only during a specific period.</p>
+<p><strong>Example configuration</strong></p>
+<p><strong>Line Discount: Line Discount A</strong><br>
+Description: June promotion<br>
+From Date: 2026-06-01<br>
+Thru Date: 2026-06-30<br>
+Discount Percent: 15%<br>
+Discount Level: 1</p>
+<p><strong>Sales document context</strong><br>
+Document Date: 2026-06-15</p>
+<p><strong>Result</strong><br>
+Level 1 Discount: Line Discount A<br>
+Level 1 Discount Percent: 15%<br>
+Standard Discount: 15%</p>
+<h2 id="negative-examples">Negative examples</h2>
+<p>The following examples show cases in which a line discount is not considered because the sales order context does not match the configured applicability conditions.</p>
+<h3 id="product-mismatch">Product mismatch</h3>
+<p>Use this scenario to show that a product-specific line discount is not considered for a different product.</p>
+<p><strong>Example configuration</strong></p>
+<p><strong>Line Discount: Line Discount A</strong><br>
+Product: Product A<br>
+Discount Percent: 10%<br>
+Discount Level: 1</p>
+<p><strong>Sales document context</strong><br>
+Product: Product B</p>
+<p><strong>Result</strong><br>
+This line discount is not considered.</p>
+<h3 id="quantity-outside-range">Quantity outside range</h3>
+<p>Use this scenario to show that a quantity-based line discount is not considered when the sold quantity is outside the configured range.</p>
+<p><strong>Example configuration</strong></p>
+<p><strong>Line Discount: Line Discount A</strong><br>
+Product: Product A<br>
+Min Quantity: 10<br>
+Max Quantity: 50<br>
+Discount Percent: 8%<br>
+Discount Level: 1</p>
+<p><strong>Sales document context</strong><br>
+Product: Product A<br>
+Quantity: 5</p>
+<p><strong>Result</strong><br>
+This line discount is not considered.</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/crm/pricing/line-discounts/configuration.md/#L1" class="edit-link">Suggest improvement to this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
