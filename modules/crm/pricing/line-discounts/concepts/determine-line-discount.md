@@ -110,7 +110,7 @@ This ensures deterministic selection when multiple line discounts are applicable
 
 ### Current line discount preservation
 
-When more than one applicable line discount remains, @@name can also consider the **Current Line Discount**.
+When more than one applicable line discount remains, @@name can also consider the **current line discount**.
 
 If the current line discount is still applicable and has the same selection priority as the newly selected line discount, @@name can preserve the current line discount instead of replacing it.
 
