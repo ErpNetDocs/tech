@@ -56,7 +56,8 @@ The following data is used when available to narrow the selection:
 - **Distribution Channel**
 - **Price List**
 
-The requested **Discount Level** determines which level is evaluated by the algorithm. Automatic application of higher discount levels depends on the selected price list. For more information, see [Multi-level line discounts](multi-level-line-discounts.md).
+The requested **Discount Level** determines which level is evaluated by the algorithm. Automatic application of higher discount levels depends on the selected price list. 
+For more information, see [Multi-level line discounts](multi-level-line-discounts.md).
 
 > [!NOTE]
 > If the requested **Discount Level** is not specified, @@name determines the line discount for level 1.
@@ -111,7 +112,7 @@ The algorithm returns at most one applicable line discount for the requested dis
 
 If no line discount satisfies the filtering conditions, no line discount is returned.
 
-If discounts from multiple levels are present in the sales document line, this algorithm is executed separately for each level. For more information, see [Multiple line discounts](../../multiple-line-discounts.md).
+If discounts from multiple levels are present in the sales document line, this algorithm is executed separately for each level. For more information, see [Multi-level line discounts](multi-level-line-discounts.md).
 
 ## Troubleshooting line discount determination
 
