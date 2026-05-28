@@ -32,11 +32,11 @@ This example shows how to create a basic line discount and verify that it is app
 1. Create a new **Sales Order**.  
 2. Select a customer.  
 3. Add a line for the same product.  
-4. Review the values in the **Level 1 Discount**, **Level 1 Discount Percent**, and **Standard Discount** fields.
+4. Review the values in the **Level 1 Discount**, **Level 1 Discount Percent**, and **Line Standard Discount Percent** fields.
 
 The **Level 1 Discount** field should contain a reference to the line discount that was just created.  
 The **Level 1 Discount Percent** field should contain the discount percent from the selected line discount.  
-The **Standard Discount** field should contain the calculated discount applied to the sales order line.
+The **Line Standard Discount Percent** field should contain the calculated discount applied to the sales order line.
 
 ![Sales Order Set Line Discount](pictures/sales-order-line-discount.png)
 
