@@ -136,7 +136,7 @@ Product: Product A
 **Result**  
 Level 1 Discount: Line Discount A  
 Level 1 Discount Percent: 10  
-Standard Discount: 10%
+Line Standard Discount Percent: 10%
 
 ### Discount for a specific customer
 
@@ -156,7 +156,7 @@ Customer: Customer A
 **Result**  
 Level 1 Discount: Line Discount A  
 Level 1 Discount Percent: 12%  
-Standard Discount: 12%
+Line Standard Discount Percent: 12%
 
 ### Discount by quantity range
 
@@ -179,7 +179,7 @@ Quantity: 12
 **Result**  
 Level 1 Discount: Line Discount A  
 Level 1 Discount Percent: 8%  
-Standard Discount: 8%
+Line Standard Discount Percent: 8%
 
 ### Time-limited discount
 
@@ -200,7 +200,7 @@ Document Date: 2026-06-15
 **Result**  
 Level 1 Discount: Line Discount A  
 Level 1 Discount Percent: 15%  
-Standard Discount: 15%
+Line Standard Discount Percent: 15%
 
 ## Negative examples
 
@@ -233,7 +233,7 @@ Use this scenario to show that a quantity-based line discount is not considered 
 Product: Product A  
 Min Quantity: 10  
 Max Quantity: 50  
-Discount Percent: 8%  
+Line Standard Discount Percent: 8%  
 Discount Level: 1  
 
 **Sales document context**  
