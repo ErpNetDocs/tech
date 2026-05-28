@@ -2,7 +2,7 @@
 
 Line discounts are configured by defining a line discount record and the conditions under which it can be applied.
 
-Multiple line discount records can be defined, each with its own applicability conditions. When more than one line discount matches the current context, @@name determines the final discount for each discount level according to the [line discount determination algorithm](../concepts/determine-line-discount.md).
+Multiple line discount records can be defined, each with its own applicability conditions. When more than one line discount matches the current context, @@name determines the final discount for each discount level according to the [line discount determination algorithm](concepts/determine-line-discount.md).
 
 When a sales document line is processed, the system automatically populates the corresponding **Level 1 Discount**, **Level 2 Discount**, or **Level 3 Discount** field with the selected line discount record, loads its discount percent into the corresponding discount percent field, and includes the result in the calculated *Line Standard Discount Percent** field.
 
@@ -84,7 +84,7 @@ A line discount with **Discount Level = 3** can populate the **Level 3 Discount*
 
 The selected line discount also provides the value for the corresponding discount percent field. The final calculated result is reflected in the **Line Standard Discount Percent** field of the sales document line.
 
-For more information about applying discounts from multiple levels and how the final standard discount is accumulated, see [Multiple line discounts](../concepts/multiple-line-discounts.md).
+For more information about applying discounts from multiple levels and how the final standard discount is accumulated, see [Multi-level line discounts](concepts/multi-level-line-discounts.md).
 
 > [!NOTE]
 > A line discount record must be unique for its combination of discount level and applicability context fields, such as product, product group, customer, customer type, price list, target group, distribution channel, validity period, quantity range, enterprise company, and enterprise company location. As a result, @@name does not allow duplicate line discount records for the same discount level and applicability context.
