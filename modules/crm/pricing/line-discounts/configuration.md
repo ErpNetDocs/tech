@@ -2,7 +2,7 @@
 
 Line discounts are configured by defining a line discount record and the conditions under which it can be applied.
 
-Multiple line discount records can be defined, each with its own applicability conditions. When more than one line discount matches the current context, @@name determines the final discount for each discount level according to the [line discount determination algorithm](concepts/determine-line-discount.md).
+Multiple line discount records can be defined, each with its own applicability conditions. When more than one line discount matches the current context, @@name determines the applicable line discount for each discount level according to the [line discount determination algorithm](concepts/determine-line-discount.md).
 
 When a sales document line is processed, the system automatically populates the corresponding **Level 1 Discount**, **Level 2 Discount**, or **Level 3 Discount** field with the selected line discount record, loads its discount percent into the corresponding discount percent field, and includes the result in the calculated *Line Standard Discount Percent** field.
 
