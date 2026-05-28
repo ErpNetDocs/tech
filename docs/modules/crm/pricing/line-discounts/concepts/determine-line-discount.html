@@ -146,7 +146,7 @@ For more information, see <a href="multi-level-line-discounts.html">Multi-level 
 <h5>Note</h5>
 <p>If the requested <strong>Discount Level</strong> is not specified, ERP.net determines the line discount for level 1.</p>
 </div>
-<p>In addition, the algorithm can consider the <strong>Current Line Discount</strong> when preserving an already selected applicable line discount.</p>
+<p>In addition, the algorithm can consider the <strong>current Line Discount</strong> when preserving an already selected applicable line discount.</p>
 <h2 id="filtering-conditions">Filtering conditions</h2>
 <p>ERP.net filters the available line discounts by comparing the conditions defined in each line discount with the corresponding context data.</p>
 <p>A line discount remains in the candidate set only if all of the following conditions are met:</p>
@@ -180,7 +180,7 @@ For more information, see <a href="multi-level-line-discounts.html">Multi-level 
 </ul>
 <p>This ensures deterministic selection when multiple line discounts are applicable for the same discount level.</p>
 <h3 id="current-line-discount-preservation">Current line discount preservation</h3>
-<p>When more than one applicable line discount remains, ERP.net can also consider the <strong>Current Line Discount</strong>.</p>
+<p>When more than one applicable line discount remains, ERP.net can also consider the <strong>current Line Discount</strong>.</p>
 <p>If the current line discount is still applicable and has the same selection priority as the newly selected line discount, ERP.net can preserve the current line discount instead of replacing it.</p>
 <p>This helps avoid unnecessary changes when the current line discount is still equally valid.</p>
 <h2 id="result">Result</h2>
@@ -205,8 +205,7 @@ For more information, see <a href="multi-level-line-discounts.html">Multi-level 
 <li>empty condition values mean &quot;applies to all&quot;;</li>
 <li>filtering is performed before ranking;</li>
 <li>multiple applicable line discounts can exist for the same discount level, but only one is selected;</li>
-<li><strong>Product Group</strong> matching also considers parent product groups;</li>
-<li><strong>Target Group</strong> and <strong>Customer Type</strong> matching is derived from the context <strong>List of customers</strong>.</li>
+<li><strong>Product Group</strong> matching also considers parent product groups.</li>
 </ul>
 <h2 id="see-also">See also</h2>
 <ul>
