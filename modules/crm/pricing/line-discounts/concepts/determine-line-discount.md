@@ -139,8 +139,7 @@ Keep in mind that:
 - empty condition values mean "applies to all";
 - filtering is performed before ranking;
 - multiple applicable line discounts can exist for the same discount level, but only one is selected;
-- **Product Group** matching also considers parent product groups;
-- **Target Group** and **Customer Type** matching is derived from the context **List of customers**.
+- **Product Group** matching also considers parent product groups.
 
 ## See also
 
