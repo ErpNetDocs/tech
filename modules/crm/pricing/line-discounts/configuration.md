@@ -76,13 +76,13 @@ When more than one line discount is applicable for the same discount level, ERP.
 These fields control that behavior:
 
 - **Priority** – ranks applicable line discounts for the same level.  
-- **Discount Level** – determines which discount field in the sales document line is affected.
+- **Discount Level** – determines which discount field in the sales order line is affected.
 
-A line discount with **Discount Level = 1** can populate the **Level 1 Discount** field in the sales document line.  
+A line discount with **Discount Level = 1** can populate the **Level 1 Discount** field.  
 A line discount with **Discount Level = 2** can populate the **Level 2 Discount** field.  
 A line discount with **Discount Level = 3** can populate the **Level 3 Discount** field.
 
-The selected line discount also provides the value for the corresponding discount percent field. The final calculated result is reflected in the **Line Standard Discount Percent** field of the sales document line.
+The selected line discount also provides the value for the corresponding discount percent field. The final calculated result is reflected in the **Line Standard Discount Percent** field of the sales order line.
 
 For more information about applying discounts from multiple levels and how the final standard discount is accumulated, see [Multi-level line discounts](concepts/multi-level-line-discounts.md).
 
