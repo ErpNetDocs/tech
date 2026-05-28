@@ -55,4 +55,77 @@ The calculation formula is:
 1 - ((1 - [Level 1 Discount Percent]) *
      (1 - [Level 2 Discount Percent]) *
      (1 - [Level 3 Discount Percent]))
+```
+If a level discount percent is empty, it is treated as 0.
 
+This means that the final line standard discount percent is not calculated by simple addition.  
+Instead, each discount level is applied successively to the remaining amount after the previous level.
+
+### Example 1
+
+If there are no discounts in the line, then the line standard discount percent is:
+
+```text
+[Line Standard Discount Percent] =
+1 - ((1 - 0) * (1 - 0) * (1 - 0)) = 0.00%
+```
+
+### Example 2
+
+If the line contains the following discount percentages:
+
+- **Level 1 Discount Percent** = 12%
+- **Level 2 Discount Percent** = 5%
+- **Level 3 Discount Percent** = 8%
+
+then the line standard discount percent is:
+
+```text
+[Line Standard Discount Percent] =
+1 - ((1 - 0.12) * (1 - 0.05) * (1 - 0.08)) = 23.088%
+```
+
+## Example business model
+
+A company can use the discount levels for different purposes.
+
+For example:
+
+### Level 1 - according to the customer type and product group
+
+- Customer Type Wholesale, Product Group Foods - 10%
+- Customer Type Wholesale, Product Group Non-food items - 5%
+- Customer Type Retail, Product Group Foods - 8%
+- Customer Type Retail, Product Group Non-food items - 4%
+
+### Level 2 - according to the target group or distribution channel
+
+- Target Group VIP Customers, Product Group Foods - 6%
+- Distribution Channel Online Store, Product Group Non-food items - 4%
+
+### Level 3 - discounts assigned through user business rules
+
+At this level, predefined line discounts can be assigned through user business rules.
+
+The discount percent is defined in the line discount record itself, while the additional applicability conditions are defined in the user business rule.
+
+For instance:
+
+- a user business rule can assign a predefined level 3 line discount with 5% when a lot has less than 20 days remaining until expiration date;
+- a user business rule can assign a predefined level 3 line discount with 2% when a sales order line amount is greater than 1000 BGN.
+
+In this business model, level 1 and level 2 discounts are determined from line discount records that match the sales document context.
+
+Level 3 discounts are assigned through user business rules based on conditions that are outside the standard line discount applicability fields.
+
+A sales document can then apply discounts from the selected levels according to the price list configuration and any additional business rules.
+
+If the price list selected in the sales order is configured with **Auto Apply Discount Level = 2**, @@name can apply level 1 and level 2 discounts automatically.
+
+Level 3 discounts can also be assigned through user business rules when the relevant conditions are met.
+
+## See also
+
+- [Create a basic line discount](../create-basic-line-discount.md)
+- [Configuring line discounts](../configuration.md)
+- [Determine line discount](determine-line-discount.md)
