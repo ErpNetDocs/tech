@@ -23,6 +23,10 @@ The determination has two stages:
 
 @@name determines the applicable product price based on data from the current sales context, typically provided by the current sales document and its lines.
 
+In this topic, **sales documents** refers to:
+- **Offers**
+- **Sales Orders**
+
 Some context data is required so that product price determination is possible.  
 Other context data is used when available to narrow the selection.
 
@@ -33,7 +37,7 @@ The following data must be available:
 - **Product**
 - **Quantity**
 - **Quantity unit**
-- **Date**
+- **Required Delivery Date**
 
 ### Additional context data
 
