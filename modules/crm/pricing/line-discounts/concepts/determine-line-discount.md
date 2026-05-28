@@ -72,7 +72,7 @@ For more information, see [Multi-level line discounts](multi-level-line-discount
 > [!NOTE]
 > If the requested **Discount Level** is not specified, @@name determines the line discount for level 1.
 
-In addition, the algorithm can consider the **Current Line Discount** when preserving an already selected applicable line discount.
+In addition, the algorithm can consider the **current Line Discount** when preserving an already selected applicable line discount.
 
 ## Filtering conditions
 
@@ -110,7 +110,7 @@ This ensures deterministic selection when multiple line discounts are applicable
 
 ### Current line discount preservation
 
-When more than one applicable line discount remains, @@name can also consider the **current line discount**.
+When more than one applicable line discount remains, @@name can also consider the **current Line Discount**.
 
 If the current line discount is still applicable and has the same selection priority as the newly selected line discount, @@name can preserve the current line discount instead of replacing it.
 
