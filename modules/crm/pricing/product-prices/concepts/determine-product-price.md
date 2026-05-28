@@ -54,6 +54,7 @@ In addition, the algorithm can consider the **Current Product Price** when prese
 
 A product price remains in the candidate set only if all of the following conditions are met:
 
+- **Is Active** is true.
 - **From Date** is empty or is earlier than or equal to the context **Date**.
 - **Thru Date** is empty or is later than or equal to the context **Date**.
 - **Product** is equal to the context **Product**.
