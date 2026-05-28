@@ -103,7 +103,7 @@ For example:
 - Target Group VIP Customers, Product Group Foods - 6%
 - Distribution Channel Online Store, Product Group Non-food items - 4%
 
-### Level 3 - discounts assigned through user business rules
+### Level 3 - according to additional conditions
 
 At this level, predefined line discounts can be assigned through user business rules.
 
