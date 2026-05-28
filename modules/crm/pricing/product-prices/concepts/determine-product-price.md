@@ -50,7 +50,7 @@ The following data is used when available to narrow the selection:
 - **Distribution Channel**
 - **Price List**
 
-In addition, the algorithm can consider the **Current Product Price** when preserving an already selected applicable product price.
+In addition, the algorithm can consider the **current Product Price** when preserving an already selected applicable product price.
 
 ## Filtering conditions
 
@@ -89,7 +89,7 @@ This ensures deterministic selection when multiple product prices are applicable
 
 ### Current product price preservation
 
-When more than one applicable product price remains, @@name can also consider the **Current Product Price**.
+When more than one applicable product price remains, @@name can also consider the **current Product Price**.
 
 If the current product price is still applicable and has the same selection priority as the newly selected product price, @@name can preserve the current product price instead of replacing it.
 
