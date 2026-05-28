@@ -406,6 +406,9 @@ references:
 - uid: master-detail
   name: Master / Detail attributes
   href: advanced/concepts/master-detail-attributes.html
+- uid: multi-level-line-discounts
+  name: Multi-level line discounts
+  href: modules/crm/pricing/line-discounts/concepts/multi-level-line-discounts.html
 - uid: name
   name: name
   href: includes/name.html

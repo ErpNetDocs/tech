@@ -87,46 +87,132 @@
         <article data-uid="determine-line-discount">
 <h1 id="determine-line-discount">Determine line discount</h1>
 
-<p>ERP.net allows multiple discounts at multiple levels to be defined.</p>
-<p>Typically, Level 1 discount is determined among the active discounts from level 1. This means that if we want to calculate Level 1 discount, we might not explicitly specify a Discount Level filter, because its default value is 1.</p>
-<p>For the discounts for all other levels, we need to specify a Discount Level filter that is equal to the level we are trying to calculate.</p>
-<p>When trying to determine a discount for each level, we have to specify some required conditions:</p>
+<p>This topic explains how ERP.net determines a single applicable line discount for one requested discount level.</p>
+<p>Line discounts allow multiple discounts to be defined under different conditions.</p>
+<p>Typical examples include:</p>
+<ul>
+<li>a general line discount valid for all customers;</li>
+<li>a line discount valid only for a specific customer;</li>
+<li>a line discount valid only for a specific product;</li>
+<li>a line discount valid only for a specific quantity range of a product;</li>
+<li>a line discount valid only for a specific price list;</li>
+<li>a promotional line discount valid for a limited period.</li>
+</ul>
+<p>In addition to these applicability conditions, line discounts can also be defined for different discount levels.</p>
+<p>For example, a company can use level 1 for customer-specific discounts, level 2 for promotions, and level 3 for additional special discounts.</p>
+<p>ERP.net determines line discounts separately for each discount level.</p>
+<p>For information about how discounts from multiple levels are combined in a sales document line, see <a href="multi-level-line-discounts.html">Multi-level line discounts</a>.</p>
+<p>To determine the applicable line discount in a specific business context, ERP.net evaluates the available line discounts against the context data and then selects the best match for the requested discount level.</p>
+<p>The determination has two stages:</p>
+<ol>
+<li>ERP.net filters the available line discounts by applicability.</li>
+<li>If more than one line discount remains for the requested discount level, ERP.net selects the best match according to the selection criteria.</li>
+</ol>
+<h2 id="context-data-used-to-determine-the-line-discount">Context data used to determine the line discount</h2>
+<p>ERP.net determines the applicable line discount based on data from the current sales context, typically provided by the current sales document and its lines.</p>
+<p>In this topic, <strong>sales documents</strong> refers to:</p>
+<ul>
+<li><strong>Offers</strong></li>
+<li><strong>Sales Orders</strong></li>
+<li><strong>Invoices</strong></li>
+</ul>
+<p>Some context data is required so that line discount determination is possible.<br>
+Other context data is used when available to narrow the selection.</p>
+<h3 id="minimum-required-data">Minimum required data</h3>
+<p>The following data must be available:</p>
 <ul>
 <li><strong>Product</strong></li>
-<li><strong>Date</strong></li>
 <li><strong>Quantity</strong></li>
-<li><strong>List of customers</strong></li>
+<li><strong>Date</strong></li>
+<li><strong>Customer</strong> or <strong>Ship To Customer</strong></li>
 </ul>
-<p>and some not required:</p>
+<p>The context <strong>Date</strong> is taken from the sales document as follows:</p>
 <ul>
-<li><strong>Discount level</strong> – default is 1, can be changed if we are calculating the discount for a higher level</li>
-<li><strong>Enterprise company</strong> - Only in the specified Enterprise Company</li>
-<li><strong>Enterprise company location</strong> - Only in the specified Enterprise Company location</li>
-<li><strong>Price list</strong> - self-explanatory</li>
-<li><strong>Distribution channel</strong> - self-explanatory</li>
-<li><strong>Current line discount</strong> - The current discount should not be changed if it satisfies the conditions and has the same priority as the determined top discount.</li>
+<li>in <strong>Offers</strong> and <strong>Sales Orders</strong>, from <strong>Required Delivery Date</strong>;</li>
+<li>in <strong>Invoices</strong>, from <strong>Delivery Date</strong>. If <strong>Delivery Date</strong> is empty, from <strong>Document Date</strong>.</li>
 </ul>
-<p>ERP.net filters all active discounts from the respective level that match these criteria. When a discount is defined with a blank value for the Customer, the discount applies to <strong>all</strong> customers. The same goes for Customer Type, Product, From Date To Date, MinQuantity, MaxQuantity, Enterprise Company, Price List, etc.</p>
-<p>Generally, the algorithm is the following:</p>
-<p>•	ERP.net filters the active discounts from the respective level.</p>
-<p>•	Among the remaining discounts, the one with the highest priority is selected. If there is more than one price within the same highest priority, the newer one is selected (the one with later From Date).</p>
-<p>•	If a current line discount is provided and it satisfies the conditions and has the same priority as the selected one, then the current line discount is selected.</p>
-<p>So, after the selection process, one and only one discount is selected and applied to the document line.</p>
+<h3 id="additional-context-data">Additional context data</h3>
+<p>The following data is used when available to narrow the selection:</p>
+<ul>
+<li><strong>Discount Level</strong></li>
+<li><strong>Enterprise Company</strong></li>
+<li><strong>Enterprise Company Location</strong></li>
+<li><strong>Distribution Channel</strong></li>
+<li><strong>Price List</strong></li>
+</ul>
+<p>The requested <strong>Discount Level</strong> determines which level is evaluated by the algorithm. Automatic application of higher discount levels depends on the selected price list.
+For more information, see <a href="multi-level-line-discounts.html">Multi-level line discounts</a>.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If the requested <strong>Discount Level</strong> is not specified, ERP.net determines the line discount for level 1.</p>
+</div>
+<p>In addition, the algorithm can consider the <strong>Current Line Discount</strong> when preserving an already selected applicable line discount.</p>
 <h2 id="filtering-conditions">Filtering conditions</h2>
+<p>ERP.net filters the available line discounts by comparing the conditions defined in each line discount with the corresponding context data.</p>
+<p>A line discount remains in the candidate set only if all of the following conditions are met:</p>
 <ul>
-<li>Discount Is Active is true</li>
-<li>Discount Discount Level is equal to the specified level</li>
-<li>Discount From Date is empty or &lt;= required Date</li>
-<li>Discount To Date is empty or &gt;= required Date</li>
-<li>Discount Product is empty or equal to required Product</li>
-<li>Discount Min Quantity is empty or &lt;= required Quantity</li>
-<li>Discount Max Quantity is empty or &gt;= required Quantity</li>
-<li>Discount Customer is empty or it is in the required list of customers</li>
-<li>Discount Product Group is empty, the same as the product group or parent of the product group</li>
-<li>Discount Distribution Channel is empty or equal to required Distribution channel</li>
-<li>Discount Price List is empty or valid for the required Date</li>
-<li>The discount Target group is empty or at least one of the customers is a member of the target group</li>
-<li>Discount Customer type is empty or it is in the list of customer types, derived from the required customer’s list</li>
+<li><strong>Active</strong> is true.</li>
+<li><strong>Discount Level</strong> is equal to the requested discount level.</li>
+<li><strong>From Date</strong> is empty or is earlier than or equal to the context <strong>Date</strong>.</li>
+<li><strong>Thru Date</strong> is empty or is later than or equal to the context <strong>Date</strong>.</li>
+<li><strong>Product</strong> is empty or is equal to the context <strong>Product</strong>.</li>
+<li><strong>Min Quantity</strong> is empty or is less than or equal to the context <strong>Quantity</strong>.</li>
+<li><strong>Max Quantity</strong> is empty or is greater than or equal to the context <strong>Quantity</strong>.</li>
+<li><strong>Customer</strong> is empty or is equal to the context <strong>Customer</strong> or <strong>Ship To Customer</strong>.</li>
+<li><strong>Customer Type</strong> is empty or is equal to the customer types of the context <strong>Customer</strong> or <strong>Ship To Customer</strong>.</li>
+<li><strong>Product Group</strong> is empty, is equal to the product group of the context <strong>Product</strong>, or is a parent of that product group.</li>
+<li><strong>Distribution Channel</strong> is empty or is equal to the context <strong>Distribution Channel</strong>.</li>
+<li><strong>Price List</strong> is empty or is equal to the context <strong>Price List</strong>, and the price list is valid on the context <strong>Date</strong>.</li>
+<li><strong>Target Group</strong> is empty or at least one customer from the context <strong>Customer</strong> or <strong>Ship To Customer</strong> belongs to the target group.</li>
+</ul>
+<p>If any specified condition does not match, the line discount is excluded from the candidate set.</p>
+<h2 id="selection-logic">Selection logic</h2>
+<p>After filtering, ERP.net may find one, many, or no applicable line discounts for the requested discount level.</p>
+<ul>
+<li>If no line discount remains in the candidate set, no line discount is determined.</li>
+<li>If exactly one line discount remains, that line discount is selected.</li>
+<li>If more than one line discount remains, ERP.net selects one of them according to the following criteria, in this order:
+<ol>
+<li><strong>Highest Priority</strong></li>
+<li><strong>Latest From Date</strong></li>
+</ol>
+</li>
+</ul>
+<p>This ensures deterministic selection when multiple line discounts are applicable for the same discount level.</p>
+<h3 id="current-line-discount-preservation">Current line discount preservation</h3>
+<p>When more than one applicable line discount remains, ERP.net can also consider the <strong>Current Line Discount</strong>.</p>
+<p>If the current line discount is still applicable and has the same selection priority as the newly selected line discount, ERP.net can preserve the current line discount instead of replacing it.</p>
+<p>This helps avoid unnecessary changes when the current line discount is still equally valid.</p>
+<h2 id="result">Result</h2>
+<p>The algorithm returns at most one applicable line discount for the requested discount level.</p>
+<p>If no line discount satisfies the filtering conditions, no line discount is returned.</p>
+<p>If discounts from multiple levels are present in the sales document line, this algorithm is executed separately for each level. For more information, see <a href="multi-level-line-discounts.html">Multi-level line discounts</a>.</p>
+<h2 id="troubleshooting-line-discount-determination">Troubleshooting line discount determination</h2>
+<p>When the selected line discount is not the expected one, check the following:</p>
+<ol>
+<li>Whether the expected line discount satisfies all filtering conditions.</li>
+<li>Whether the correct <strong>Discount Level</strong> is being determined.</li>
+<li>Whether another applicable line discount outranks it by:
+<ol>
+<li><strong>Priority</strong></li>
+<li><strong>From Date</strong></li>
+</ol>
+</li>
+<li>Whether the <strong>Current Line Discount</strong> was preserved because it is still applicable and equally ranked.</li>
+</ol>
+<p>Keep in mind that:</p>
+<ul>
+<li>empty condition values mean &quot;applies to all&quot;;</li>
+<li>filtering is performed before ranking;</li>
+<li>multiple applicable line discounts can exist for the same discount level, but only one is selected;</li>
+<li><strong>Product Group</strong> matching also considers parent product groups;</li>
+<li><strong>Target Group</strong> and <strong>Customer Type</strong> matching is derived from the context <strong>List of customers</strong>.</li>
+</ul>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../create-basic-line-discount.html">Create basic line discount</a></li>
+<li><a href="../configuration.html">Configuring line discounts</a></li>
+<li><a href="multi-level-line-discounts.html">Multi-level line discounts</a></li>
 </ul>
 
 </article>

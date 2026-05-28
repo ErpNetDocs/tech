@@ -104,6 +104,11 @@
 </ol>
 <h2 id="context-data-used-to-determine-the-product-price">Context data used to determine the product price</h2>
 <p>ERP.net determines the applicable product price based on data from the current sales context, typically provided by the current sales document and its lines.</p>
+<p>In this topic, <strong>sales documents</strong> refers to:</p>
+<ul>
+<li><strong>Offers</strong></li>
+<li><strong>Sales Orders</strong></li>
+</ul>
 <p>Some context data is required so that product price determination is possible.<br>
 Other context data is used when available to narrow the selection.</p>
 <h3 id="minimum-required-data">Minimum required data</h3>
@@ -112,7 +117,7 @@ Other context data is used when available to narrow the selection.</p>
 <li><strong>Product</strong></li>
 <li><strong>Quantity</strong></li>
 <li><strong>Quantity unit</strong></li>
-<li><strong>Date</strong></li>
+<li><strong>Required Delivery Date</strong></li>
 </ul>
 <h3 id="additional-context-data">Additional context data</h3>
 <p>The following data is used when available to narrow the selection:</p>
@@ -129,6 +134,7 @@ Other context data is used when available to narrow the selection.</p>
 <p>ERP.net filters the available product prices by comparing the conditions defined in each product price with the corresponding context data.</p>
 <p>A product price remains in the candidate set only if all of the following conditions are met:</p>
 <ul>
+<li><strong>Is Active</strong> is true.</li>
 <li><strong>From Date</strong> is empty or is earlier than or equal to the context <strong>Date</strong>.</li>
 <li><strong>Thru Date</strong> is empty or is later than or equal to the context <strong>Date</strong>.</li>
 <li><strong>Product</strong> is equal to the context <strong>Product</strong>.</li>

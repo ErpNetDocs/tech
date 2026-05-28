@@ -7336,6 +7336,16 @@
       "version": ""
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "modules/crm/pricing/line-discounts/concepts/multi-level-line-discounts.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/pricing/line-discounts/concepts/multi-level-line-discounts.html"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "modules/crm/pricing/line-discounts/concepts/toc.yml",
       "output": {
@@ -7447,16 +7457,6 @@
         },
         ".json": {
           "relative_path": "modules/crm/pricing/line-discounts/toc.json"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/crm/pricing/multiple-line-discounts.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/crm/pricing/multiple-line-discounts.html"
         }
       },
       "version": ""
