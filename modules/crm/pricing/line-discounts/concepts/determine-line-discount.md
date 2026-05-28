@@ -34,6 +34,11 @@ The determination has two stages:
 
 @@name determines the applicable line discount based on data from the current sales context, typically provided by the current sales document and its lines.
 
+In this topic, **sales documents** refers to:
+- **Offers**
+- **Sales Orders**
+- **Invoices**
+
 Some context data is required so that line discount determination is possible.  
 Other context data is used when available to narrow the selection.
 
@@ -45,6 +50,11 @@ The following data must be available:
 - **Quantity**
 - **Date**
 - **Customer** or **Ship To Customer**
+
+The context **Date** is taken from the sales document as follows:
+
+- in **Offers** and **Sales Orders**, from **Required Delivery Date**;
+- in **Invoices**, from **Delivery Date**. If **Delivery Date** is empty, from **Document Date**.
 
 ### Additional context data
 
@@ -77,7 +87,7 @@ A line discount remains in the candidate set only if all of the following condit
 - **Product** is empty or is equal to the context **Product**.
 - **Min Quantity** is empty or is less than or equal to the context **Quantity**.
 - **Max Quantity** is empty or is greater than or equal to the context **Quantity**.
-- **Customer** is empty or is is equal to the context **Customer** or **Ship To Customer**.
+- **Customer** is empty or is equal to the context **Customer** or **Ship To Customer**.
 - **Customer Type** is empty or is equal to the customer types of the context **Customer** or **Ship To Customer**.
 - **Product Group** is empty, is equal to the product group of the context **Product**, or is a parent of that product group.
 - **Distribution Channel** is empty or is equal to the context **Distribution Channel**.
