@@ -134,5 +134,5 @@ Keep in mind that:
 ## See also
 
 - [Create basic line discount](../create-basic-line-discount.md)
-- [Configuring line discounts](../configuration/index.md)
+- [Configuring line discounts](../configuration.md)
 - [Multi-level line discounts](multi-level-line-discounts.md)
