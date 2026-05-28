@@ -4,7 +4,7 @@ Line discounts are configured by defining a line discount record and the conditi
 
 Multiple line discount records can be defined, each with its own applicability conditions. When more than one line discount matches the current context, @@name determines the applicable line discount for each discount level according to the [line discount determination algorithm](concepts/determine-line-discount.md).
 
-When a sales document line is processed, the system automatically populates the corresponding **Level 1 Discount**, **Level 2 Discount**, or **Level 3 Discount** field with the selected line discount record, loads its discount percent into the corresponding discount percent field, and includes the result in the calculated *Line Standard Discount Percent** field.
+When a sales document line is processed, the system automatically populates the corresponding **Level 1 Discount**, **Level 2 Discount**, or **Level 3 Discount** field with the selected line discount record, loads its discount percent into the corresponding discount percent field, and includes the result in the calculated **Line Standard Discount Percent** field.
 
 ## Discount definition
 
@@ -65,8 +65,8 @@ Use these conditions when the discount depends on the organizational context of 
 
 Use these conditions when the discount must be available only during a specific period or only while the record is enabled.
 
-- **From Date** – limits the discount to sales documents whose required delivery date is on or after this date.  
-- **Thru Date** – limits the discount to sales documents whose required delivery date is on or before this date.  
+- **From Date** – limits the discount to sales documents for which the context **Date** is on or after this date.
+- **Thru Date** – limits the discount to sales documents for which the context **Date** is on or before this date.
 - **Active** – indicates whether the line discount record is enabled for use.
 
 ## Priority and discount level
