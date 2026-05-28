@@ -89,17 +89,18 @@
 
 <p>This topic explains how line discounts from different discount levels work together in a sales order line.</p>
 <p>For each discount level, ERP.net first determines at most one applicable line discount by using the <a href="determine-line-discount.html">Determine line discount</a> algorithm.</p>
-<p>After the line discounts for the individual levels are selected, their discount percentages can be accumulated in cascade in the <strong>Line Standard Discount Percent</strong> field.</p>
+<p>After the line discounts for the individual levels are selected, their discount percentages are accumulated in cascade in the <strong>Line Standard Discount Percent</strong> field.</p>
 <p>Line discounts can be defined for three discount levels:</p>
 <ul>
 <li><strong>Level 1 Discount</strong></li>
 <li><strong>Level 2 Discount</strong></li>
 <li><strong>Level 3 Discount</strong></li>
 </ul>
+<p>These level-specific discount fields are used in sales order lines.</p>
 <p>Each level can contain at most one selected line discount in a sales order line.</p>
-<p>This means that multiple line discounts can affect the same sales document line, but only one line discount can be selected for each discount level.</p>
+<p>This means that multiple line discounts can affect the same sales order line, but only one line discount can be selected for each discount level.</p>
 <h2 id="how-multi-level-line-discounts-are-applied">How multi-level line discounts are applied</h2>
-<p>Line discounts from different levels can be applied to sales document lines in the following ways:</p>
+<p>Line discounts from different levels can be applied to sales order lines in the following ways:</p>
 <ul>
 <li>automatically – by determining the applicable line discount for the level;</li>
 <li>manually – by selecting a line discount in the document line;</li>
@@ -120,7 +121,7 @@ Level 2 and level 3 discounts are applied automatically only when a <strong>Pric
 <p>Increasing the auto apply discount level may have performance implications.</p>
 </div>
 <h2 id="how-the-final-line-discount-percent-is-calculated">How the final line discount percent is calculated</h2>
-<p>After the selected line discounts are applied to the sales document line, ERP.net calculates the final <strong>Line Standard Discount Percent</strong> by accumulating the discount percentages from all selected levels in cascade.</p>
+<p>After the selected line discounts are applied to the sales order line, ERP.net calculates the final <strong>Line Standard Discount Percent</strong> by accumulating the discount percentages from all selected levels in cascade.</p>
 <p>The calculation formula is:</p>
 <pre><code class="lang-text">[Line Standard Discount Percent] =
 1 - ((1 - [Level 1 Discount Percent]) *
@@ -169,9 +170,9 @@ Instead, each discount level is applied successively to the remaining amount aft
 <li>a user business rule can assign a predefined level 3 line discount with 5% when a lot has less than 20 days remaining until expiration date;</li>
 <li>a user business rule can assign a predefined level 3 line discount with 2% when a sales order line amount is greater than 1000 BGN.</li>
 </ul>
-<p>In this business model, level 1 and level 2 discounts are determined from line discount records that match the sales document context.</p>
+<p>In this business model, level 1 and level 2 discounts are determined from line discount records that match the sales order context.</p>
 <p>Level 3 discounts are assigned through user business rules based on conditions that are outside the standard line discount applicability fields.</p>
-<p>A sales document can then apply discounts from the selected levels according to the price list configuration and any additional business rules.</p>
+<p>A sales order can then apply discounts from the selected levels according to the price list configuration and any additional business rules.</p>
 <p>If the price list selected in the sales order is configured with <strong>Auto Apply Discount Level = 2</strong>, ERP.net can apply level 1 and level 2 discounts automatically.</p>
 <p>Level 3 discounts can also be assigned through user business rules when the relevant conditions are met.</p>
 <h2 id="see-also">See also</h2>
