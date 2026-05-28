@@ -88,7 +88,7 @@
 <h1 id="configuring-line-discounts">Configuring line discounts</h1>
 
 <p>Line discounts are configured by defining a line discount record and the conditions under which it can be applied.</p>
-<p>Multiple line discount records can be defined, each with its own applicability conditions. When more than one line discount matches the current context, ERP.net determines the final discount for each discount level according to the <a href="../concepts/determine-line-discount.md">line discount determination algorithm</a>.</p>
+<p>Multiple line discount records can be defined, each with its own applicability conditions. When more than one line discount matches the current context, ERP.net determines the final discount for each discount level according to the <a href="concepts/determine-line-discount.html">line discount determination algorithm</a>.</p>
 <p>When a sales document line is processed, the system automatically populates the corresponding <strong>Level 1 Discount</strong>, <strong>Level 2 Discount</strong>, or <strong>Level 3 Discount</strong> field with the selected line discount record, loads its discount percent into the corresponding discount percent field, and includes the result in the calculated <em>Line Standard Discount Percent</em>* field.</p>
 <h2 id="discount-definition">Discount definition</h2>
 <p>A line discount record includes the following basic fields:</p>
@@ -144,13 +144,13 @@
 <p>These fields control that behavior:</p>
 <ul>
 <li><strong>Priority</strong> – ranks applicable line discounts for the same level.</li>
-<li><strong>Discount Level</strong> – determines which discount field in the sales document line is affected.</li>
+<li><strong>Discount Level</strong> – determines which discount field in the sales order line is affected.</li>
 </ul>
-<p>A line discount with <strong>Discount Level = 1</strong> can populate the <strong>Level 1 Discount</strong> field in the sales document line.<br>
+<p>A line discount with <strong>Discount Level = 1</strong> can populate the <strong>Level 1 Discount</strong> field.<br>
 A line discount with <strong>Discount Level = 2</strong> can populate the <strong>Level 2 Discount</strong> field.<br>
 A line discount with <strong>Discount Level = 3</strong> can populate the <strong>Level 3 Discount</strong> field.</p>
-<p>The selected line discount also provides the value for the corresponding discount percent field. The final calculated result is reflected in the <strong>Line Standard Discount Percent</strong> field of the sales document line.</p>
-<p>For more information about applying discounts from multiple levels and how the final standard discount is accumulated, see <a href="../concepts/multiple-line-discounts.md">Multiple line discounts</a>.</p>
+<p>The selected line discount also provides the value for the corresponding discount percent field. The final calculated result is reflected in the <strong>Line Standard Discount Percent</strong> field of the sales order line.</p>
+<p>For more information about applying discounts from multiple levels and how the final standard discount is accumulated, see <a href="concepts/multi-level-line-discounts.html">Multi-level line discounts</a>.</p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>A line discount record must be unique for its combination of discount level and applicability context fields, such as product, product group, customer, customer type, price list, target group, distribution channel, validity period, quantity range, enterprise company, and enterprise company location. As a result, ERP.net does not allow duplicate line discount records for the same discount level and applicability context.</p>
