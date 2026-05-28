@@ -8,7 +8,7 @@ This topic explains how line discounts from different discount levels work toget
 
 For each discount level, @@name first determines at most one applicable line discount by using the [Determine line discount](determine-line-discount.md) algorithm.
 
-After the line discounts for the individual levels are selected, their discount percentages can be accumulated in cascade in the **Line Standard Discount Percent** field.
+After the line discounts for the individual levels are selected, their discount percentages are accumulated in cascade in the **Line Standard Discount Percent** field.
 
 Line discounts can be defined for three discount levels:
 
@@ -16,13 +16,15 @@ Line discounts can be defined for three discount levels:
 - **Level 2 Discount**
 - **Level 3 Discount**
 
+These level-specific discount fields are used in sales order lines.
+
 Each level can contain at most one selected line discount in a sales order line.
 
-This means that multiple line discounts can affect the same sales document line, but only one line discount can be selected for each discount level.
+This means that multiple line discounts can affect the same sales order line, but only one line discount can be selected for each discount level.
 
 ## How multi-level line discounts are applied
 
-Line discounts from different levels can be applied to sales document lines in the following ways:
+Line discounts from different levels can be applied to sales order lines in the following ways:
 
 - automatically – by determining the applicable line discount for the level;
 - manually – by selecting a line discount in the document line;
@@ -46,7 +48,7 @@ For example:
 
 ## How the final line discount percent is calculated
 
-After the selected line discounts are applied to the sales document line, @@name calculates the final **Line Standard Discount Percent** by accumulating the discount percentages from all selected levels in cascade.
+After the selected line discounts are applied to the sales order line, @@name calculates the final **Line Standard Discount Percent** by accumulating the discount percentages from all selected levels in cascade.
 
 The calculation formula is:
 
@@ -114,11 +116,11 @@ For instance:
 - a user business rule can assign a predefined level 3 line discount with 5% when a lot has less than 20 days remaining until expiration date;
 - a user business rule can assign a predefined level 3 line discount with 2% when a sales order line amount is greater than 1000 BGN.
 
-In this business model, level 1 and level 2 discounts are determined from line discount records that match the sales document context.
+In this business model, level 1 and level 2 discounts are determined from line discount records that match the sales order context.
 
 Level 3 discounts are assigned through user business rules based on conditions that are outside the standard line discount applicability fields.
 
-A sales document can then apply discounts from the selected levels according to the price list configuration and any additional business rules.
+A sales order can then apply discounts from the selected levels according to the price list configuration and any additional business rules.
 
 If the price list selected in the sales order is configured with **Auto Apply Discount Level = 2**, @@name can apply level 1 and level 2 discounts automatically.
 
