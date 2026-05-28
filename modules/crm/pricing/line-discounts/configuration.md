@@ -71,20 +71,22 @@ Use these conditions when the discount must be available only during a specific 
 
 ## Priority and discount level
 
-When more than one line discount is applicable for the same discount level, ERP.net selects the matching policy with the highest priority.
+The **Priority** and **Discount Level** fields affect how line discounts are selected and applied.
 
-These fields control that behavior:
+- **Priority** – ranks applicable line discounts within the same discount level during line discount determination in sales documents.
+- **Discount Level** – determines which level-specific discount field is populated when line discounts are applied in sales order lines.
 
-- **Priority** – ranks applicable line discounts for the same level.  
-- **Discount Level** – determines which discount field in the sales order line is affected.
+The level-specific discount fields are available in sales order lines only:
 
-A line discount with **Discount Level = 1** can populate the **Level 1 Discount** field.  
-A line discount with **Discount Level = 2** can populate the **Level 2 Discount** field.  
-A line discount with **Discount Level = 3** can populate the **Level 3 Discount** field.
+- **Discount Level = 1** populates **Level 1 Discount**.
+- **Discount Level = 2** populates **Level 2 Discount**.
+- **Discount Level = 3** populates **Level 3 Discount**.
 
-The selected line discount also provides the value for the corresponding discount percent field. The final calculated result is reflected in the **Line Standard Discount Percent** field of the sales order line.
+The selected line discount also provides the value for the corresponding discount percent field. The accumulated result is reflected in **Line Standard Discount Percent**.
 
-For more information about applying discounts from multiple levels and how the final standard discount is accumulated, see [Multi-level line discounts](concepts/multi-level-line-discounts.md).
+For more information about how @@name selects the applicable line discount, see [Determine line discount](concepts/determine-line-discount.md).
+
+For more information about how discounts from multiple levels are applied and accumulated, see [Multi-level line discounts](concepts/multi-level-line-discounts.md).
 
 > [!NOTE]
 > A line discount record must be unique for its combination of discount level and applicability context fields, such as product, product group, customer, customer type, price list, target group, distribution channel, validity period, quantity range, enterprise company, and enterprise company location. As a result, @@name does not allow duplicate line discount records for the same discount level and applicability context.
