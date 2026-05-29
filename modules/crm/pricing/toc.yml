@@ -6,5 +6,8 @@
 - name: Line discounts
   href: line-discounts/toc.yml
   topicHref: line-discounts/index.md
+- name: Bonus programs
+  href: bonus-programs/toc.yml
+  topicHref: bonus-programs/index.md
 - name: Promotional packages
   href: promotional-packages.md
