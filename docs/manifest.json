@@ -7317,6 +7317,29 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/crm/pricing/bonus-programs/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/pricing/bonus-programs/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "modules/crm/pricing/bonus-programs/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/pricing/bonus-programs/toc.html"
+        },
+        ".json": {
+          "relative_path": "modules/crm/pricing/bonus-programs/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/crm/pricing/index.md",
       "output": {
         ".html": {
@@ -7331,6 +7354,16 @@
       "output": {
         ".html": {
           "relative_path": "modules/crm/pricing/line-discounts/concepts/determine-line-discount.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/crm/pricing/line-discounts/concepts/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/pricing/line-discounts/concepts/index.html"
         }
       },
       "version": ""
@@ -16128,6 +16161,75 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/composite-products/working-with-composite-products.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/wms/concepts/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/wms/concepts/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "modules/logistics/wms/concepts/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/wms/concepts/toc.html"
+        },
+        ".json": {
+          "relative_path": "modules/logistics/wms/concepts/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/wms/configuration/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/wms/configuration/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "modules/logistics/wms/configuration/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/wms/configuration/toc.html"
+        },
+        ".json": {
+          "relative_path": "modules/logistics/wms/configuration/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/wms/getting-started/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/wms/getting-started/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "modules/logistics/wms/getting-started/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/wms/getting-started/toc.html"
+        },
+        ".json": {
+          "relative_path": "modules/logistics/wms/getting-started/toc.json"
         }
       },
       "version": ""
