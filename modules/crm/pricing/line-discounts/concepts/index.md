@@ -5,5 +5,4 @@ This section explains the main concepts behind line discounts in @@name, includi
 Recommended reading order:
 
 - [Determine line discount](determine-line-discount.md)
-- [Multi-level line discounts](/multi-level-line-discounts.md)
-  
+- [Multi-level line discounts](multi-level-line-discounts.md)
