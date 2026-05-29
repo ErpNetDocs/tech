@@ -9,4 +9,4 @@
   topicHref: configurationt.md
 - name: Concepts
   href: concepts/toc.yml
-  topicHref: concepts/determine-line-discount.md
+  topicHref: concepts/index.md
