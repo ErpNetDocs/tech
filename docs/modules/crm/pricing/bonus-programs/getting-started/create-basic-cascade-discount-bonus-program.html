@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Create a basic cascade discount bonus program | ERP.net Tech Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Create a basic cascade discount bonus program | ERP.net Tech Docs ">
+      
+      
+      <link rel="icon" href="../../../../../favicon.ico">
+      <link rel="stylesheet" href="../../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/crm/pricing/bonus-programs/getting-started/create-basic-cascade-discount-bonus-program.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../../index.html">
+            <img id="logo" class="svg" src="../../../../../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="create-a-basic-cascade-discount-bonus-program">Create a basic cascade discount bonus program</h1>
+
+<p>This example shows how to create a cascade discount bonus program and verify that it is applied in a sales order.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Cascade discount bonuses are applied after the standard discount percent on the sales order line. To test this example, use a product that already has an active line discount.</p>
+</div>
+<p>For an example of how to create a line discount, see <a href="https://docs.erp.net/tech/modules/crm/pricing/line-discounts/create-basic-line-discount.html">Create a basic line discount</a>.</p>
+<h2 id="steps">Steps</h2>
+<ol>
+<li>Open the <strong>Pricing</strong> module.</li>
+<li>In the <strong>Bonus Programs</strong> tile, select <strong>+</strong> button.</li>
+</ol>
+<p><img src="pictures/bonus-programs.png" alt="Bonus Programs"></p>
+<ol start="3">
+<li>In the new bonus program record, enter the following:</li>
+</ol>
+<ul>
+<li><strong>Name</strong> – text that identifies the bonus program</li>
+<li><strong>Bonus Action</strong> –  select <strong>Cascade discount</strong> to create a bonus program that adds an additional discount after the standard discount percent</li>
+<li><strong>Bonus Line Discount Percent</strong> - the cascade discount percentage to apply</li>
+<li><strong>Product</strong> – the product that activates the bonus</li>
+<li><strong>Min Quantity</strong> – the minimum ordered quantity required for the bonus to apply</li>
+</ul>
+<ol start="4">
+<li>Save the record.</li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p><strong>Enterprise Company</strong> is filled in automatically with the current enterprise company.</p>
+</div>
+<p><img src="pictures/create-cascade-discount-bonus-program.png" alt="Create Cascade Bonus Program"></p>
+<h2 id="verify-the-result">Verify the result</h2>
+<ol>
+<li>Create a new <strong>Sales Order</strong>.</li>
+<li>Select a customer.</li>
+<li>Add a line for the same product with a quantity that fulfills the bonus program condition.</li>
+<li>Review the values in the <strong>Bonus Program</strong> and <strong>Line Standard Discount Percent</strong> fields.</li>
+</ol>
+<p>The <strong>Bonus Program</strong> field should contain a reference to the bonus program that was just created.<br>
+The <strong>Line Standard Discount Percent</strong> field should contain the final discount percent, calculated cumulatively from the existing line discount and the cascade discount bonus.</p>
+<p><img src="pictures/sales-order-cascade-discount-bonus-program.png" alt="Sales Order Set Cascade Discount Bonus Program"></p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/crm/pricing/bonus-programs/getting-started/create-basic-cascade-discount-bonus-program.md/#L1" class="edit-link">Suggest improvement to this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

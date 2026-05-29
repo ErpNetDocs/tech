@@ -7317,6 +7317,139 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/crm/pricing/bonus-programs/getting-started/create-basic-cascade-discount-bonus-program.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/pricing/bonus-programs/getting-started/create-basic-cascade-discount-bonus-program.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/crm/pricing/bonus-programs/getting-started/create-basic-discount-bonus-program.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/pricing/bonus-programs/getting-started/create-basic-discount-bonus-program.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/crm/pricing/bonus-programs/getting-started/create-basic-product-bonus-program.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/pricing/bonus-programs/getting-started/create-basic-product-bonus-program.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/crm/pricing/bonus-programs/getting-started/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/pricing/bonus-programs/getting-started/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/pricing/bonus-programs/getting-started/pictures/bonus-programs.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/pricing/bonus-programs/getting-started/pictures/bonus-programs.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/pricing/bonus-programs/getting-started/pictures/create-cascade-discount-bonus-program.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/pricing/bonus-programs/getting-started/pictures/create-cascade-discount-bonus-program.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/pricing/bonus-programs/getting-started/pictures/create-discount-bonus-program.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/pricing/bonus-programs/getting-started/pictures/create-discount-bonus-program.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/pricing/bonus-programs/getting-started/pictures/create-product-bonus-program.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/pricing/bonus-programs/getting-started/pictures/create-product-bonus-program.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/crm/pricing/bonus-programs/getting-started/pictures/readME.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/pricing/bonus-programs/getting-started/pictures/readME.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/pricing/bonus-programs/getting-started/pictures/sales-order-cascade-discount-bonus-program.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/pricing/bonus-programs/getting-started/pictures/sales-order-cascade-discount-bonus-program.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/pricing/bonus-programs/getting-started/pictures/sales-order-discount-bonus-program.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/pricing/bonus-programs/getting-started/pictures/sales-order-discount-bonus-program.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/pricing/bonus-programs/getting-started/pictures/sales-order-product-bonus-program.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/pricing/bonus-programs/getting-started/pictures/sales-order-product-bonus-program.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "modules/crm/pricing/bonus-programs/getting-started/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/pricing/bonus-programs/getting-started/toc.html"
+        },
+        ".json": {
+          "relative_path": "modules/crm/pricing/bonus-programs/getting-started/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/crm/pricing/bonus-programs/index.md",
       "output": {
         ".html": {
