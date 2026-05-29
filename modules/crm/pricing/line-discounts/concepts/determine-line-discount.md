@@ -4,7 +4,7 @@ uid: determine-line-discount
 
 # Determine line discount
 
-This topic explains how @@name determines a single applicable line discount for one requested discount level. It does not explain how discounts from multiple levels are accumulated in sales orders.
+This topic explains how @@name determines a single applicable line discount for one requested discount level.
 
 Line discounts allow multiple discounts to be defined under different conditions.
 
@@ -22,7 +22,7 @@ For example, a company can use level 1 for customer-specific discounts, level 2 
 
 @@name determines line discounts separately for each discount level.
 
-For information about how discounts from multiple levels are combined in a sales document line, see [Multi-level line discounts](multi-level-line-discounts.md).
+For information about how discounts from multiple levels are accumulated in sales order lines, see [Multi-level line discounts](multi-level-line-discounts.md).
 
 To determine the applicable line discount in a specific business context, @@name evaluates the available line discounts against the context data and then selects the best match for the requested discount level.
 
