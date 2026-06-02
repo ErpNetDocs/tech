@@ -1,0 +1,6 @@
+- name: Overview
+  href: index.md
+- name: Customer information
+  href: customer-information.md
+- name: Files in Customer Profile
+  href: files-in-customer-profile.md
