@@ -223,11 +223,4 @@ The embedded Timeline also keeps the familiar navigation experience. Users can m
 
 ![Timeline widget in Customer form](pictures/Timeline-Customer.png)
 
-### 15. Search Company Location
-
-Finding the right Company Location is now faster and easier if many locations per Enterprise Compny are defined. We've added a search box to the Company Locations list in the ERP.net Desktop Client.
-
-When logging in, users can now enter a keyword to quickly find the Company Location they need to work with. As you type, the list is automatically filtered to display only the locations matching your search criteria, helping you locate the desired entry more efficiently.
-
-![picture](pictures/search-location.png)
 
