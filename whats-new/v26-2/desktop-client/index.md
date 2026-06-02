@@ -64,3 +64,10 @@ We’ve added the standard **Is Active** field to Currency, allowing currencies 
 
 ![picture](pictures/currency_active.png)
 
+### 7. Search Company Location
+
+Finding the right Company Location is now faster and easier if many locations per Enterprise Compny are defined. We've added a search box to the Company Locations list in the ERP.net Desktop Client.
+
+When logging in, users can now enter a keyword to quickly find the Company Location they need to work with. As you type, the list is automatically filtered to display only the locations matching your search criteria, helping you locate the desired entry more efficiently.
+
+![picture](pictures/search-location.png)
