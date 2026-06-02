@@ -1,8 +1,8 @@
 - name: Overview
   href: index.md
-- name: Invoices
-  href: invoices.md
-- name: Due Payments
-  href: due-payments.md
-- name: Payment History
-  href: payment-history.md
+- name: Operations
+  href: operations/toc.yml
+  topicHref: operations/index.md
+- name: Concepts
+  href: concepts/toc.yml
+  topicHref: concepts/index.md
