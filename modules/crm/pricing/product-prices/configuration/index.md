@@ -61,8 +61,6 @@ Use these conditions when the price depends on the organizational context of the
 - **Enterprise Company** – limits the price to sales documents made from a specific enterprise company.
 - **Enterprise Company Location** – limits the price to sales documents made from a specific enterprise company location.
 
-![Product Price Configuration Basic](pictures/product-price-definition-basic.png)
-
 ### Validity context
 
 Use these conditions when the price must be available only during a specific period or only while the record is enabled.
@@ -86,6 +84,8 @@ These fields include:
 If a product price record has a defined **Price Type**, it takes precedence over applicable prices without a price type. If more than one applicable price has a defined price type, the product price with the lower **Ordinal Position** of its price type has higher priority.
 
 For more information, see [Price Types](price-types.md) and [Determine product price](../concepts/determine-product-price.md).
+
+![Product Price Configuration Basic](pictures/product-price-definition-basic.png)
 
 ![Product Price Configuration Advanced](pictures/product-price-definition-advanced.png)
 
