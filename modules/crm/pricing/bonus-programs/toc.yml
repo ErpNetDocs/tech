@@ -4,3 +4,6 @@
 - name: Getting started
   href: getting-started/toc.yml
   topicHref: getting-started/index.md
+- name: Configuration
+  href: configuration.md
+  topicHref: configurationt.md
