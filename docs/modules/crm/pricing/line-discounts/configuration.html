@@ -131,7 +131,6 @@
 <li><strong>Enterprise Company</strong> – limits the discount to sales documents issued from a specific enterprise company.</li>
 <li><strong>Enterprise Company Location</strong> – limits the discount to sales documents issued from a specific enterprise company location.</li>
 </ul>
-<p><img src="pictures/line-discount-definition-basic2.png" alt="Line Discount Configuration Basic"></p>
 <h3 id="validity-context">Validity context</h3>
 <p>Use these conditions when the discount must be available only during a specific period or only while the record is enabled.</p>
 <ul>
@@ -158,12 +157,13 @@
 <h5>Note</h5>
 <p>A line discount record must be unique for its combination of discount level and applicability context fields, such as product, product group, customer, customer type, price list, target group, distribution channel, validity period, quantity range, enterprise company, and enterprise company location. As a result, ERP.net does not allow duplicate line discount records for the same discount level and applicability context.</p>
 </div>
+<p><img src="pictures/line-discount-definition-basic2.png" alt="Line Discount Configuration Basic"></p>
+<p><img src="pictures/line-discount-definition-advanced2.png" alt="Line Discount Configuration Advanced"></p>
 <h2 id="document-amount-categorization">Document amount categorization</h2>
 <p>The <strong>Document Amount Type</strong> field specifies the document amount category for the line discount.</p>
 <p>When a line discount with a specified <strong>Document Amount Type</strong> is applied in a sales order, ERP.net records the corresponding discount amount as a document amount and distributes it to the affected sales order line. This enables separate tracking of discount amounts for reporting and posting purposes.</p>
 <p>This field does not participate in the line discount determination algorithm and does not affect discount applicability.</p>
 <p>For more information about document amounts, see <a href="../../../../advanced/document-amounts/index.html">Additional amounts</a> and <a href="../../../../advanced/document-amounts/determination-and-recording.html">Additional amounts determination and recording</a>.</p>
-<p><img src="pictures/line-discount-definition-advanced2.png" alt="Line Discount Configuration Advanced"></p>
 <h2 id="matching-configured-conditions">Matching configured conditions</h2>
 <p>A line discount can be considered only when the values in the sales document match the configured applicability conditions.</p>
 <p>If a line discount record contains multiple applicability conditions, all of them must match for the discount to be applied.</p>

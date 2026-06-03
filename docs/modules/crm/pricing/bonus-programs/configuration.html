@@ -184,7 +184,6 @@
 <li><strong>Condition Distribution Channel</strong> - limits the bonus program to sales orders in a specific distribution channel.</li>
 <li><strong>Condition Distribution Channel Filter XML</strong> - applies the bonus program only when the distribution channel matches the specified filter criteria.</li>
 </ul>
-<p><img src="pictures/bonus-program-definition-basic.png" alt="Bonus Program Configuration Basic"></p>
 <h3 id="validity-context">Validity context</h3>
 <p>Use these conditions when the bonus program must be available only during a specific period or only while the record is enabled.</p>
 <ul>
@@ -200,6 +199,8 @@
 <li><strong>5</strong> is the highest priority</li>
 </ul>
 <p>When multiple bonus programs match the current sales order context, the <strong>Priority</strong> field is used to compare them.</p>
+<p><img src="pictures/bonus-program-definition-basic.png" alt="Bonus Program Configuration Basic">
+<img src="pictures/bonus-program-definition-advanced.png" alt="Bonus Program Configuration Advanced"></p>
 <h2 id="document-amount-categorization">Document amount categorization</h2>
 <p>The <strong>Document Amount Type</strong> field specifies the document amount category for the bonus program.</p>
 <p>When a discount or cascade discount bonus program with a specified <strong>Document Amount Type</strong> is applied in a sales order, ERP.net records the corresponding discount amount as a document amount and distributes it to the eligible sales order lines.
@@ -207,7 +208,6 @@ This enables separate tracking of bonus-program discount amounts for reporting a
 <p>The field is used only for categorization and recording of the applied discount amount. It does not affect the applicability conditions of the bonus program.</p>
 <p>Only document amount types with <strong>Distributed By = Bonus Program</strong> can be selected.</p>
 <p>For more information about document amounts, see <a href="../../../../advanced/document-amounts/index.html">Additional amounts</a> and <a href="../../../../advanced/document-amounts/determination-and-recording.html">Additional amounts determination and recording</a>.</p>
-<p><img src="pictures/bonus-program-definition-advanced.png" alt="Bonus Program Configuration Advanced"></p>
 <h2 id="matching-configured-conditions">Matching configured conditions</h2>
 <p>A bonus program can be considered only when the values in the sales order match the configured applicability conditions.</p>
 <p>If a bonus program contains multiple applicability conditions, all of them must match for the program to be considered.</p>
