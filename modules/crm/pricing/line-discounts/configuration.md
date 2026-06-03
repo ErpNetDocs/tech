@@ -90,6 +90,7 @@ For more information about how discounts from multiple levels are applied and ac
 > A line discount record must be unique for its combination of discount level and applicability context fields, such as product, product group, customer, customer type, price list, target group, distribution channel, validity period, quantity range, enterprise company, and enterprise company location. As a result, @@name does not allow duplicate line discount records for the same discount level and applicability context.
 
 ![Line Discount Configuration Basic](pictures/line-discount-definition-basic2.png)
+
 ![Line Discount Configuration Advanced](pictures/line-discount-definition-advanced2.png)
 
 ## Document amount categorization
