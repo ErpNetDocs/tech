@@ -137,6 +137,7 @@ The **Priority** field ranks bonus programs relative to other applicable bonus p
 When multiple bonus programs match the current sales order context, the **Priority** field is used to compare them.
 
 ![Bonus Program Configuration Basic](pictures/bonus-program-definition-basic.png)
+
 ![Bonus Program Configuration Advanced](pictures/bonus-program-definition-advanced.png)
 
 ## Document amount categorization
