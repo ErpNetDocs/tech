@@ -7317,6 +7317,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/crm/pricing/bonus-programs/configuration.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/pricing/bonus-programs/configuration.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/crm/pricing/bonus-programs/getting-started/create-basic-cascade-discount-bonus-program.md",
       "output": {
         ".html": {
@@ -7454,6 +7464,36 @@
       "output": {
         ".html": {
           "relative_path": "modules/crm/pricing/bonus-programs/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/pricing/bonus-programs/pictures/bonus-action.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/pricing/bonus-programs/pictures/bonus-action.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/pricing/bonus-programs/pictures/bonus-program-definition-advanced.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/pricing/bonus-programs/pictures/bonus-program-definition-advanced.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/pricing/bonus-programs/pictures/bonus-program-definition-basic.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/pricing/bonus-programs/pictures/bonus-program-definition-basic.png"
         }
       },
       "version": ""
