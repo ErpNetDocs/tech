@@ -197,7 +197,7 @@ Discount Percent: 15%
 Discount Level: 1  
 
 **Sales document context**  
-Document Date: 2026-06-15  
+Required Delivery Date: 2026-06-15  
 
 **Result**  
 Level 1 Discount: Line Discount A  
