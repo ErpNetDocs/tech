@@ -117,6 +117,8 @@ Use these conditions when the bonus depends on the commercial setup of the sales
 - **Condition Distribution Channel** - limits the bonus program to sales orders in a specific distribution channel.
 - **Condition Distribution Channel Filter XML** - applies the bonus program only when the distribution channel matches the specified filter criteria.
 
+![Bonus Program Configuration Basic](pictures/bonus-program-definition-basic.png)
+
 ### Validity context
 
 Use these conditions when the bonus program must be available only during a specific period or only while the record is enabled.
@@ -148,6 +150,8 @@ The field is used only for categorization and recording of the applied discount 
 Only document amount types with **Distributed By = Bonus Program** can be selected.
 
 For more information about document amounts, see [Additional amounts](~/advanced/document-amounts/index.md) and [Additional amounts determination and recording](~/advanced/document-amounts/determination-and-recording.md).
+
+![Bonus Program Configuration Advanced](pictures/bonus-program-definition-advanced.png)
 
 ## Matching configured conditions
 
