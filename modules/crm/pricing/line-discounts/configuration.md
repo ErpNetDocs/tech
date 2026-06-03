@@ -59,8 +59,6 @@ Use these conditions when the discount depends on the organizational context of 
 - **Enterprise Company** – limits the discount to sales documents issued from a specific enterprise company.  
 - **Enterprise Company Location** – limits the discount to sales documents issued from a specific enterprise company location.
 
-![Line Discount Configuration Basic](pictures/line-discount-definition-basic2.png)
-
 ### Validity context
 
 Use these conditions when the discount must be available only during a specific period or only while the record is enabled.
@@ -91,6 +89,9 @@ For more information about how discounts from multiple levels are applied and ac
 > [!NOTE]
 > A line discount record must be unique for its combination of discount level and applicability context fields, such as product, product group, customer, customer type, price list, target group, distribution channel, validity period, quantity range, enterprise company, and enterprise company location. As a result, @@name does not allow duplicate line discount records for the same discount level and applicability context.
 
+![Line Discount Configuration Basic](pictures/line-discount-definition-basic2.png)
+![Line Discount Configuration Advanced](pictures/line-discount-definition-advanced2.png)
+
 ## Document amount categorization
 
 The **Document Amount Type** field specifies the document amount category for the line discount.
@@ -100,8 +101,6 @@ When a line discount with a specified **Document Amount Type** is applied in a s
 This field does not participate in the line discount determination algorithm and does not affect discount applicability.
 
 For more information about document amounts, see [Additional amounts](~/advanced/document-amounts/index.md) and [Additional amounts determination and recording](~/advanced/document-amounts/determination-and-recording.md).
-
-![Line Discount Configuration Advanced](pictures/line-discount-definition-advanced2.png)
 
 ## Matching configured conditions
 
