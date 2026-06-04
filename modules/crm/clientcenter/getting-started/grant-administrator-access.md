@@ -4,7 +4,7 @@ After creating a Client Center website, grant access to the ERP.net administrato
 
 This access is assigned in ERP.net through the **External Access** navigator.
 
-For more information, see [External Access](../sales/customers/external-access.md#roles).
+For more information, see [External Access](../../sales/customers/external-access.md#roles).
 
 ## Assign administrator access
 
