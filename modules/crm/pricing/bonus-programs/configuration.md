@@ -84,7 +84,7 @@ Additional triggering products can be configured in the **Products** panel of th
 > When additional triggering products are added in the **Products** panel, all of them must use the same base measurement unit. Otherwise, @@name cannot evaluate the quantity conditions correctly.
 
 > [!IMPORTANT]
-> **Condition Min Quantity** and **Condition Max Quantity** can be used only when **Condition Product** is defined.
+> **Condition Min Quantity** and **Condition Max Quantity** can be used only when the bonus program has a product condition. Such a condition can be defined either through the **Condition Product** field or through the **Products** panel.
 
 > [!IMPORTANT]
 > **Condition Product Group** should not be combined with **Condition Min Quantity** or **Condition Max Quantity**. Quantity-based evaluation requires a consistent base measurement unit, which cannot be guaranteed for all products in a group.
