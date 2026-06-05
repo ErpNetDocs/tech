@@ -38,9 +38,6 @@ Depending on the conditions defined in the bonus program, the following data can
 
 The context **Date** is taken from the sales order **Required Delivery Date**. If **Required Delivery Date** is empty, from **Document Date**.
 
-In this topic, a product condition means that the bonus program is configured to apply only to specific products. 
-This can be defined through the **Condition Product** field or through the **Products** panel.
-
 ## Filtering conditions
 
 @@name filters the available bonus programs by comparing the conditions defined in each bonus program with the corresponding context data.
@@ -69,8 +66,7 @@ After the general filtering, @@name evaluates the remaining bonus programs again
 
 If a bonus program contains multiple line-based conditions, all of them must match for the program to remain applicable.
 
-If the bonus program has no product condition, the evaluation is based on all sales order lines. If the bonus program has a product condition, only the sales order lines whose products match that condition participate in the product and quantity evaluation.	
-Lines that already have a bonus program or belong to a promotional package do not participate in this evaluation.
+If the bonus program has no product condition, the evaluation is based on all sales order lines. If the bonus program has a product condition, defined either through the **Condition Product** field or through the **Products** panel, only the sales order lines whose products match that condition participate in the product and quantity evaluation. Lines that already have a bonus program or belong to a promotional package do not participate in this evaluation.
 
 ### Product and quantity conditions
 
@@ -82,7 +78,6 @@ A bonus program remains applicable only if all of the following conditions are m
 
 > [!NOTE]
 > When additional triggering products are configured in the **Products** panel, quantities from products with different base measurement units are not accumulated together for the quantity evaluation.
-
 
 ### Amount conditions
 
