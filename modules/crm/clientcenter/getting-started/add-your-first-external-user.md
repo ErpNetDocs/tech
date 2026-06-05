@@ -18,7 +18,7 @@ The required fields are:
 - **Full Name**
 - **Password**
 
-<!-- Screenshot needed: Client Center sign-in page with the local account creation form -->
+<!-- Screenshot needed: cc-gs-01-local-account-form.png -->
 
 ## Set up access for the first external user
 
@@ -32,7 +32,7 @@ Assign the user the **L80 - Admin** external access role.
 
 This gives the user access to the Client Center and allows them to manage other users through the **User Management** page.
 
-<!-- Screenshot needed: External Access record with role L80 - Admin -->
+<!-- Screenshot needed: cc-gs-02-external-access-first-user-admin.png -->
 
 > [!IMPORTANT]
 > If this step is omitted, the user will receive a lack-of-access error message when trying to sign in.
@@ -40,8 +40,6 @@ This gives the user access to the Client Center and allows them to manage other 
 ## Add other users in Client Center
 
 After the first external user has been given **L80 - Admin** access, they can add other users through the **User Management** page in Client Center.
-
-<!-- Screenshot needed: Add User form with Email, Days Back Access, and external access role -->
 
 1. Open the **User Management** page.
 2. Click **Add User**.
@@ -54,11 +52,12 @@ After the first external user has been given **L80 - Admin** access, they can ad
 
 The new user can then sign in with their credentials and start using the Client Center.
 
+<!-- Screenshot needed: cc-gs-03-user-management-add-user-form.png -->
+
 > [!IMPORTANT]
 > To give the same user access to more of your customers, switch to another customer and repeat the steps above.
 
-<!-- Screenshot needed: Add cc screen with multi customer choice -->
-
+<!-- Screenshot needed: cc-gs-04-user-management-multi-customer.png -->
 
 ## Related information
 
