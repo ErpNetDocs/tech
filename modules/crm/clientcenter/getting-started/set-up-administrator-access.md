@@ -1,14 +1,14 @@
-# Grant administrator access
+# Set up administrator access
 
-After creating a Client Center website, grant access to the ERP.net administrator who will configure and administer it.
+After creating a Client Center website, set up access for the ERP.net administrator who will configure and administer it.
 
 This access is assigned in ERP.net through the **External Access** navigator.
 
-For more information, see [External Access](../../sales/customers/external-access.md).
+For more information, see [External Access](../../sales/customers/external-access.md#roles).
 
-## Assign administrator access
+## Set up administrator access
 
-Open the **External Access** navigator and create or edit the record for the customer and user who will administer the Client Center.
+Open the **External Access** navigator and create а record for the customer and user who will administer the Client Center.
 
 Assign the user the **L90 - Owner** external access role.
 
@@ -27,4 +27,4 @@ For external users who need to manage other users in Client Center, assign **L80
 
 ## Next step
 
-After administrator access is granted, continue with [Add your first external user](add-your-first-external-user.md).
+After administrator access is set up, continue with [Add your first external user](add-your-first-external-user.md).
