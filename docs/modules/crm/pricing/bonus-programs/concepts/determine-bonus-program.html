@@ -98,7 +98,7 @@
 <li>a bonus program valid only for a limited period;</li>
 <li>a bonus program valid only when the ordered quantity or amount reaches a defined threshold.</li>
 </ul>
-<p>To determine the applicable bonus program in a specific business context, ERP.net evaluates the available bonus programs against the context data and then selects the applicable bonus program.</p>
+<p>To determine the applicable bonus program in a specific business context, ERP.net evaluates the available bonus programs against the context data and then selects one to apply.</p>
 <p>The determination has three stages:</p>
 <ol>
 <li>ERP.net filters the available bonus programs by general applicability.</li>
@@ -120,8 +120,6 @@
 <li>Sales order line data, such as Product, Quantity, and Line Amount</li>
 </ul>
 <p>The context <strong>Date</strong> is taken from the sales order <strong>Required Delivery Date</strong>. If <strong>Required Delivery Date</strong> is empty, from <strong>Document Date</strong>.</p>
-<p>In this topic, a product condition means that the bonus program is configured to apply only to specific products.
-This can be defined through the <strong>Condition Product</strong> field or through the <strong>Products</strong> panel.</p>
 <h2 id="filtering-conditions">Filtering conditions</h2>
 <p>ERP.net filters the available bonus programs by comparing the conditions defined in each bonus program with the corresponding context data.</p>
 <p>A bonus program remains in the candidate set only if all of the following conditions are met:</p>
@@ -144,7 +142,7 @@ This can be defined through the <strong>Condition Product</strong> field or thro
 <h2 id="line-based-filtering">Line-based filtering</h2>
 <p>After the general filtering, ERP.net evaluates the remaining bonus programs against the sales order lines.</p>
 <p>If a bonus program contains multiple line-based conditions, all of them must match for the program to remain applicable.</p>
-<p>If the bonus program has no product condition, the evaluation is based on all sales order lines. If the bonus program has a product condition, only the sales order lines whose products match that condition participate in the product and quantity evaluation.	
+<p>If the bonus program has no product condition, the evaluation is based on all sales order lines. If the bonus program has a product condition, defined either through the <strong>Condition Product</strong> field or through the <strong>Products</strong> panel, only the sales order lines whose products match that condition participate in the product and quantity evaluation.<br>
 Lines that already have a bonus program or belong to a promotional package do not participate in this evaluation.</p>
 <h3 id="product-and-quantity-conditions">Product and quantity conditions</h3>
 <p>A bonus program remains applicable only if all of the following conditions are met:</p>
