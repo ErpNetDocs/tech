@@ -103,6 +103,9 @@ After filtering and line-based evaluation, @@name may find one, many, or no appl
 
 This ensures deterministic selection when multiple bonus programs are applicable in the same sales order context.
 
+> [!NOTE]
+> Bonus programs are considered only when the **Apply Trade Conditions** field is enabled on the sales order and on the relevant sales order lines.
+
 ## Troubleshooting bonus program determination
 
 When an expected bonus program is not determined, check the following:
@@ -117,7 +120,7 @@ When an expected bonus program is not determined, check the following:
 8. Whether the evaluated **Amount** satisfies **Condition Min Amount** / **Condition Max Amount**.
 9. Whether the document currency matches **Condition Document Currency**, when amount conditions are defined.
 10. Whether a higher-priority bonus program is applicable in the same context.
-
+11. Whether trade conditions are applied on the sales order and on the relevant sales order lines.
 
 Keep in mind that:
 
