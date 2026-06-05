@@ -12,7 +12,7 @@ Typical examples include:
   - a bonus program valid only for a limited period;
   - a bonus program valid only when the ordered quantity or amount reaches a defined threshold.
 
-To determine the applicable bonus program in a specific business context, @@name evaluates the available bonus programs against the context data and then selects the applicable bonus program.
+To determine the applicable bonus program in a specific business context, @@name evaluates the available bonus programs against the context data and then selects one to apply.
 
 The determination has three stages:
 
