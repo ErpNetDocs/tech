@@ -179,9 +179,13 @@ For information about how discounts from multiple levels are combined in sales o
 </li>
 </ul>
 <p>This ensures deterministic selection when multiple line discounts are applicable for the same discount level.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Automatic line discount determination is relevant only when the <strong>Apply Trade Conditions</strong> field is enabled on the sales document and on the relevant document lines.</p>
+</div>
 <h3 id="current-line-discount-preservation">Current line discount preservation</h3>
 <p>When more than one applicable line discount remains, ERP.net can also consider the <strong>current Line Discount</strong>.</p>
-<p>If the current line discount is still applicable and has the same selection priority as the newly selected line discount, ERP.net can preserve the current line discount instead of replacing it.</p>
+<p>If the current line discount is still applicable and is equally ranked with the newly selected line discount, ERP.net can preserve the current line discount instead of replacing it.</p>
 <p>This helps avoid unnecessary changes when the current line discount is still equally valid.</p>
 <h2 id="result">Result</h2>
 <p>The algorithm returns at most one applicable line discount for the requested discount level.</p>
@@ -199,6 +203,7 @@ For information about how discounts from multiple levels are combined in sales o
 </ol>
 </li>
 <li>Whether the <strong>Current Line Discount</strong> was preserved because it is still applicable and equally ranked.</li>
+<li>Whether the <strong>Apply Trade Conditions</strong> field is enabled on the sales document and on the relevant document lines.</li>
 </ol>
 <p>Keep in mind that:</p>
 <ul>

@@ -147,11 +147,6 @@
 <li><strong>Condition Min Quantity</strong> - sets the minimum ordered quantity required for the bonus program to be considered.</li>
 <li><strong>Condition Max Quantity</strong> - sets the maximum ordered quantity for which the bonus program can be considered.</li>
 </ul>
-<p>Additional triggering products can be configured in the <strong>Products</strong> panel of the bonus program. When quantity conditions are used, ERP.net evaluates the total quantity of all configured triggering products together.</p>
-<div class="IMPORTANT">
-<h5>Important</h5>
-<p>When additional triggering products are added in the <strong>Products</strong> panel, all of them must use the same base measurement unit. Otherwise, ERP.net cannot evaluate the quantity conditions correctly.</p>
-</div>
 <div class="IMPORTANT">
 <h5>Important</h5>
 <p><strong>Condition Min Quantity</strong> and <strong>Condition Max Quantity</strong> can be used only when the bonus program has a product condition. Such a condition can be defined either through the <strong>Condition Product</strong> field or through the <strong>Products</strong> panel.</p>
@@ -159,6 +154,10 @@
 <div class="IMPORTANT">
 <h5>Important</h5>
 <p><strong>Condition Product Group</strong> should not be combined with <strong>Condition Min Quantity</strong> or <strong>Condition Max Quantity</strong>. Quantity-based evaluation requires a consistent base measurement unit, which cannot be guaranteed for all products in a group.</p>
+</div>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>When quantity conditions are used with additional triggering products configured in the <strong>Products</strong> panel, quantities from products with different base measurement units are not accumulated together. To ensure predictable quantity-based evaluation, use triggering products with the same base measurement unit.</p>
 </div>
 <h3 id="amount-context">Amount context</h3>
 <p>Use these conditions when the bonus depends on the total amount of the relevant sales order context.</p>

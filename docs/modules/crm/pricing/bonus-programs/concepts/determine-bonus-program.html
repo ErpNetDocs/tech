@@ -175,6 +175,10 @@ Lines that already have a bonus program or belong to a promotional package do no
 <li>If more than one bonus program remains, the bonus program with the highest priority is selected.</li>
 </ul>
 <p>This ensures deterministic selection when multiple bonus programs are applicable in the same sales order context.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Bonus programs are considered only when the <strong>Apply Trade Conditions</strong> field is enabled on the sales order and on the relevant sales order lines.</p>
+</div>
 <h2 id="troubleshooting-bonus-program-determination">Troubleshooting bonus program determination</h2>
 <p>When an expected bonus program is not determined, check the following:</p>
 <ol>
@@ -188,6 +192,7 @@ Lines that already have a bonus program or belong to a promotional package do no
 <li>Whether the evaluated <strong>Amount</strong> satisfies <strong>Condition Min Amount</strong> / <strong>Condition Max Amount</strong>.</li>
 <li>Whether the document currency matches <strong>Condition Document Currency</strong>, when amount conditions are defined.</li>
 <li>Whether a higher-priority bonus program is applicable in the same context.</li>
+<li>Whether the <strong>Apply Trade Conditions</strong> field is enabled on the sales order and on the relevant sales order lines.</li>
 </ol>
 <p>Keep in mind that:</p>
 <ul>
