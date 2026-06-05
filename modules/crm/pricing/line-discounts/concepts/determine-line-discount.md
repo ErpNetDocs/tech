@@ -109,7 +109,7 @@ After filtering, @@name may find one, many, or no applicable line discounts for 
 This ensures deterministic selection when multiple line discounts are applicable for the same discount level.
 
 > [!NOTE]
-> Automatic line discount determination is relevant only when the **Apply Trade Conditions** field is enabled on the sales document and on the relevant document lines.
+> Automatic line discount determination applies only when the **Apply Trade Conditions** field is enabled on the sales document and on the relevant document lines.
 
 ### Current line discount preservation
 
