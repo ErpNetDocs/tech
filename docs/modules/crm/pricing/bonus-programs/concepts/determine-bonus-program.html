@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Determine bonus program | ERP.net Tech Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Determine bonus program | ERP.net Tech Docs ">
+      
+      
+      <link rel="icon" href="../../../../../favicon.ico">
+      <link rel="stylesheet" href="../../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/crm/pricing/bonus-programs/concepts/determine-bonus-program.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../../index.html">
+            <img id="logo" class="svg" src="../../../../../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="determine-bonus-program">Determine bonus program</h1>
+
+<p>Bonus programs allow promotional benefits to be defined under different conditions.</p>
+<p>Typical examples include:</p>
+<ul>
+<li>a bonus program valid for all customers;</li>
+<li>a bonus program valid only for a specific customer;</li>
+<li>a bonus program valid only for a specific ship to customer;</li>
+<li>a bonus program valid only for a specific distribution channel;</li>
+<li>a bonus program valid only for a specific price list;</li>
+<li>a bonus program valid only for a limited period;</li>
+<li>a bonus program valid only when the ordered quantity or amount reaches a defined threshold.</li>
+</ul>
+<p>To determine the applicable bonus program in a specific business context, ERP.net evaluates the available bonus programs against the context data and then selects the applicable bonus program.</p>
+<p>The determination has three stages:</p>
+<ol>
+<li>ERP.net filters the available bonus programs by general applicability.</li>
+<li>ERP.net filters the remaining bonus programs by line-based conditions.</li>
+<li>If more than one bonus program remains applicable, ERP.net selects the one with the highest priority.</li>
+</ol>
+<h2 id="context-data-used-to-determine-the-bonus-program">Context data used to determine the bonus program</h2>
+<p>ERP.net evaluates the available bonus programs based on data from the current sales order and its lines.</p>
+<p>Depending on the conditions defined in the bonus program, the following data can participate in the determination:</p>
+<ul>
+<li>Date</li>
+<li>Customer</li>
+<li>Ship To Customer</li>
+<li>Distribution Channel</li>
+<li>Price List</li>
+<li>Enterprise Company</li>
+<li>Enterprise Company Location</li>
+<li>Currency</li>
+<li>Sales order line data, such as Product, Quantity, and Line Amount</li>
+</ul>
+<p>The context <strong>Date</strong> is taken from the sales order <strong>Required Delivery Date</strong>. If <strong>Required Delivery Date</strong> is empty, from <strong>Document Date</strong>.</p>
+<p>In this topic, a product condition means that the bonus program is configured to apply only to specific products.
+This can be defined through the <strong>Condition Product</strong> field or through the <strong>Products</strong> panel.</p>
+<h2 id="filtering-conditions">Filtering conditions</h2>
+<p>ERP.net filters the available bonus programs by comparing the conditions defined in each bonus program with the corresponding context data.</p>
+<p>A bonus program remains in the candidate set only if all of the following conditions are met:</p>
+<ul>
+<li><strong>Active</strong> is true.</li>
+<li><strong>Condition From Date</strong> is empty or is earlier than or equal to the context Date.</li>
+<li><strong>Condition To Date</strong> is empty or is later than or equal to the context Date.</li>
+<li><strong>Enterprise Company</strong> is empty or is equal to the context Enterprise Company.</li>
+<li><strong>Enterprise Company Location</strong> is empty or is equal to the context Enterprise Company Location.</li>
+<li><strong>Condition Customer</strong> is empty or is equal to the context Customer.</li>
+<li><strong>Condition Ship To Customer</strong> is empty or is equal to the context Ship To Customer.</li>
+<li><strong>Condition Distribution Channel</strong> is empty or is equal to the context Distribution Channel.</li>
+<li><strong>Condition Price List</strong> is empty or is equal to the context Price List.</li>
+<li><strong>Condition Customer Filter</strong> is empty or the context Customer satisfies the filter.</li>
+<li><strong>Condition Ship To Customer Filter</strong> is empty or the context Ship To Customer satisfies the filter.</li>
+<li><strong>Condition Distribution Channel Filter</strong> is empty or the context Distribution Channel satisfies the filter.</li>
+<li><strong>Condition Target Group</strong> is empty or the context Customer belongs to the target group.</li>
+</ul>
+<p>If any specified condition does not match, the bonus program is excluded from the candidate set.</p>
+<h2 id="line-based-filtering">Line-based filtering</h2>
+<p>After the general filtering, ERP.net evaluates the remaining bonus programs against the sales order lines.</p>
+<p>If a bonus program contains multiple line-based conditions, all of them must match for the program to remain applicable.</p>
+<p>If the bonus program has no product condition, the evaluation is based on all sales order lines. If the bonus program has a product condition, only the sales order lines whose products match that condition participate in the product and quantity evaluation.	
+Lines that already have a bonus program or belong to a promotional package do not participate in this evaluation.</p>
+<h3 id="product-and-quantity-conditions">Product and quantity conditions</h3>
+<p>A bonus program remains applicable only if all of the following conditions are met:</p>
+<ul>
+<li>If the bonus program has a product condition, at least one participating sales order line matches it.</li>
+<li><strong>Condition Min Quantity</strong> is empty or is less than or equal to the context <strong>Quantity</strong>.</li>
+<li><strong>Condition Max Quantity</strong> is empty or is greater than or equal to the context <strong>Quantity</strong>.</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>When additional triggering products are configured in the <strong>Products</strong> panel, quantities from products with different base measurement units are not accumulated together for the quantity evaluation.</p>
+</div>
+<h3 id="amount-conditions">Amount conditions</h3>
+<p>A bonus program remains applicable only if all of the following conditions are met:</p>
+<ul>
+<li><strong>Condition Min Amount</strong> is empty or is less than or equal to the context <strong>Amount</strong>.</li>
+<li><strong>Condition Max Amount</strong> is empty or is greater than or equal to the context <strong>Amount</strong>.</li>
+<li>If <strong>Condition Min Amount</strong> or <strong>Condition Max Amount</strong> is specified, <strong>Condition Document Currency</strong> is equal to the document currency.</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Amount conditions are evaluated in the document currency.</p>
+<p>If the bonus program has a product condition, the context <strong>Amount</strong> is the total amount of the participating sales order lines. Otherwise, it is the total amount of all sales order lines.</p>
+</div>
+<h2 id="selection-logic">Selection logic</h2>
+<p>After filtering and line-based evaluation, ERP.net may find one, many, or no applicable bonus programs.</p>
+<ul>
+<li>If no bonus program remains in the candidate set, no bonus program is determined.</li>
+<li>If exactly one bonus program remains, that bonus program is selected.</li>
+<li>If more than one bonus program remains, the bonus program with the highest priority is selected.</li>
+</ul>
+<p>This ensures deterministic selection when multiple bonus programs are applicable in the same sales order context.</p>
+<h2 id="troubleshooting-bonus-program-determination">Troubleshooting bonus program determination</h2>
+<p>When an expected bonus program is not determined, check the following:</p>
+<ol>
+<li>Whether the bonus program is active.</li>
+<li>Whether the context <strong>Date</strong> is within the <strong>Condition From Date</strong> / <strong>Condition To Date</strong> range.</li>
+<li>Whether the <strong>Customer</strong>, <strong>Ship To Customer</strong>, <strong>Distribution Channel</strong>, and <strong>Price List</strong> match the defined conditions.</li>
+<li>Whether the <strong>Customer</strong>, <strong>Ship To Customer</strong>, or <strong>Distribution Channel</strong> satisfies the corresponding filter.</li>
+<li>Whether the <strong>Customer</strong> belongs to the defined <strong>Target Group</strong>.</li>
+<li>Whether the sales order lines contain products that match the product condition, if such a condition is defined.</li>
+<li>Whether the evaluated <strong>Quantity</strong> satisfies <strong>Condition Min Quantity</strong> / <strong>Condition Max Quantity</strong>.</li>
+<li>Whether the evaluated <strong>Amount</strong> satisfies <strong>Condition Min Amount</strong> / <strong>Condition Max Amount</strong>.</li>
+<li>Whether the document currency matches <strong>Condition Document Currency</strong>, when amount conditions are defined.</li>
+<li>Whether a higher-priority bonus program is applicable in the same context.</li>
+</ol>
+<p>Keep in mind that:</p>
+<ul>
+<li>empty condition values mean &quot;applies to all&quot;;</li>
+<li>filtering is performed before line-based evaluation;</li>
+<li>if the bonus program has a product condition, only sales order lines whose products match that condition participate in the product and quantity evaluation;</li>
+<li>lines that already have a bonus program or belong to a promotional package do not participate in this evaluation;</li>
+<li>when quantity conditions are used with additional triggering products, quantities from products with different base measurement units are not accumulated together;</li>
+<li>if more than one bonus program is applicable, the bonus program with the highest priority is selected.</li>
+</ul>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../getting-started/create-basic-product-bonus-program.html">Create product bonus program</a></li>
+<li><a href="../getting-started/create-basic-discount-bonus-program.html">Create discount bonus program</a></li>
+<li><a href="../getting-started/create-basic-cascade-discount-bonus-program.html">Create cascade discount bonus program</a></li>
+<li><a href="../configuration.html">Configuring bonus programs</a></li>
+</ul>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/crm/pricing/bonus-programs/concepts/determine-bonus-program.md/#L1" class="edit-link">Suggest improvement to this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

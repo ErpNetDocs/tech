@@ -7317,6 +7317,29 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/crm/pricing/bonus-programs/concepts/determine-bonus-program.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/pricing/bonus-programs/concepts/determine-bonus-program.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "modules/crm/pricing/bonus-programs/concepts/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/pricing/bonus-programs/concepts/toc.html"
+        },
+        ".json": {
+          "relative_path": "modules/crm/pricing/bonus-programs/concepts/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/crm/pricing/bonus-programs/configuration.md",
       "output": {
         ".html": {
