@@ -108,11 +108,14 @@ After filtering, @@name may find one, many, or no applicable line discounts for 
 
 This ensures deterministic selection when multiple line discounts are applicable for the same discount level.
 
+> [!NOTE]
+> Automatic line discount determination is relevant only when the **Apply Trade Conditions** field is enabled on the sales document and on the relevant document lines.
+
 ### Current line discount preservation
 
 When more than one applicable line discount remains, @@name can also consider the **current Line Discount**.
 
-If the current line discount is still applicable and has the same selection priority as the newly selected line discount, @@name can preserve the current line discount instead of replacing it.
+If the current line discount is still applicable and is equally ranked with the newly selected line discount, @@name can preserve the current line discount instead of replacing it.
 
 This helps avoid unnecessary changes when the current line discount is still equally valid.
 
@@ -134,6 +137,7 @@ When the selected line discount is not the expected one, check the following:
    1. **Priority**
    2. **From Date**
 4. Whether the **Current Line Discount** was preserved because it is still applicable and equally ranked.
+5. Whether the **Apply Trade Conditions** field is enabled on the sales document and on the relevant document lines.
 
 Keep in mind that:
 - empty condition values mean "applies to all";
