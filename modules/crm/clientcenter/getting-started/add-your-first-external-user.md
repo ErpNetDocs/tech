@@ -24,7 +24,7 @@ The required fields are:
 
 Access for the first external user is assigned in ERP.net through the **External Access** navigator.
 
-For more information about external access, see [External Access](../../sales/customers/external-access.md).
+For more information about external access roles, see [External Access](../../sales/customers/external-access.md).
 
 Open the **External Access** navigator and create or edit the record for the customer and user who will use the Client Center.
 
