@@ -78,16 +78,14 @@ Use these conditions when the bonus depends on the product being sold.
 - **Condition Min Quantity** - sets the minimum ordered quantity required for the bonus program to be considered.
 - **Condition Max Quantity** - sets the maximum ordered quantity for which the bonus program can be considered.
 
-Additional triggering products can be configured in the **Products** panel of the bonus program. When quantity conditions are used, @@name evaluates the total quantity of all configured triggering products together.
-
-> [!IMPORTANT]
-> When additional triggering products are added in the **Products** panel, all of them must use the same base measurement unit. Otherwise, @@name cannot evaluate the quantity conditions correctly.
-
 > [!IMPORTANT]
 > **Condition Min Quantity** and **Condition Max Quantity** can be used only when the bonus program has a product condition. Such a condition can be defined either through the **Condition Product** field or through the **Products** panel.
 
 > [!IMPORTANT]
 > **Condition Product Group** should not be combined with **Condition Min Quantity** or **Condition Max Quantity**. Quantity-based evaluation requires a consistent base measurement unit, which cannot be guaranteed for all products in a group.
+
+> [!IMPORTANT]
+> When quantity conditions are used with additional triggering products configured in the **Products** panel, quantities from products with different base measurement units are not accumulated together. To ensure predictable quantity-based evaluation, use triggering products with the same base measurement unit.
 
 ### Amount context
 
