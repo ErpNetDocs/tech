@@ -138,4 +138,3 @@ Keep in mind that:
 - [Create discount bonus program](getting-started/create-basic-discount-bonus-program.md)
 - [Create cascade discount bonus program](getting-started/create-basic-cascade-discount-bonus-program.md)
 - [Configuring bonus programs](../configuration.md)
-  
