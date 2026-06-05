@@ -6,7 +6,7 @@
   topicHref: getting-started/index.md
 - name: Configuration
   href: configuration.md
-  topicHref: configurationt.md
+  topicHref: configuration.md
 - name: Concepts
   href: concepts/toc.yml
   topicHref: concepts/determine-bonus-program.md
