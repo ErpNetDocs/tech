@@ -66,7 +66,7 @@ After the general filtering, @@name evaluates the remaining bonus programs again
 
 If a bonus program contains multiple line-based conditions, all of them must match for the program to remain applicable.
 
-If the bonus program has no product condition, the evaluation is based on all sales order lines. If the bonus program has a product condition, defined either through the **Condition Product** field or through the **Products** panel, only the sales order lines whose products match that condition participate in the product and quantity evaluation. 
+If the bonus program has no product condition, the evaluation is based on all sales order lines. If the bonus program has a product condition, defined either through the **Condition Product** field or through the **Products** panel, only the sales order lines whose products match that condition participate in the product and quantity evaluation.  
 Lines that already have a bonus program or belong to a promotional package do not participate in this evaluation.
 
 ### Product and quantity conditions
