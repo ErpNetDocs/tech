@@ -106,6 +106,12 @@ This ensures deterministic selection when multiple bonus programs are applicable
 > [!NOTE]
 > Bonus programs are considered only when the **Apply Trade Conditions** field is enabled on the sales order and on the relevant sales order lines.
 
+## Result
+
+The algorithm determines the bonus program applicable in the current sales order context.
+
+If no bonus program satisfies the defined conditions, no bonus program is determined.
+
 ## Troubleshooting bonus program determination
 
 When an expected bonus program is not determined, check the following:
