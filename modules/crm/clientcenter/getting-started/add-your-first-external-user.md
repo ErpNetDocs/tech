@@ -4,7 +4,7 @@ This article describes how to add the first external user to a Client Center.
 
 If you have not created a Client Center website yet, first complete [Set up a Client Center](set-up-a-client-center.md).
 
-For the internal ERP.net administrator who will administer the Client Center, see [Grant administrator access](grant-administrator-access.md).
+For the internal ERP.net administrator who will administer the Client Center, see [Set up administrator access](set-up-administrator-access.md).
 
 ## Create a local account
 
