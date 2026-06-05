@@ -96,30 +96,49 @@
 <p>The parameters and settings for each job are described in its documentation.</p>
 <h2 id="job-scheduling">Job scheduling</h2>
 <p>Jobs can be started <strong>automatically</strong> by an execution system, following a predefined schedule.</p>
+<p>A job is picked up by the automatic scheduler only when both of the following are true in its definition:</p>
+<ul>
+<li>The <em>Is Active</em> option is enabled.</li>
+<li>The <em>Schedule</em> is set to <em>Night</em>.</li>
+</ul>
 <div class="NOTE">
 <h5>Note</h5>
-<p>Idle jobs are started in non-busy hours, subject to the availability of resources.
-A job uses the <strong>on-idle</strong> auto-start schedule only when the <em>Is Active</em> and <em>Run On Idle</em> options are activated in its definition.</p>
+<p>The <em>Run On Idle</em> option does <strong>not</strong> decide whether a job is scheduled. It only controls how the job reacts when the server is busy (see <a href="#server-session-limit">Server session limit</a> below). A job with <em>Schedule = Night</em> still runs at night even when <em>Run On Idle</em> is off, regardless of the session count.</p>
 </div>
-<p><strong>The job's execution system works only when the following requirements are met:</strong></p>
+<h3 id="idle-period-gate">Idle period gate</h3>
+<p>The scheduler runs on a timer that fires roughly every 60 seconds. On each tick it starts the job procedure only when <strong>all</strong> of the following are met:</p>
 <ul>
-<li>The time of day is between 22:00 and 05:00.</li>
-<li>The current server sessions are <strong>fewer</strong> than 5. (this requirement can be manipulated through point 65./JobsManager/IgnoreSessionsForIdleSchedule in the <a href="../../reference/config-options-reference.html">Config Options Reference</a>).</li>
-<li>The last time the job's procedure was completed is <strong>more</strong> than 30 minutes ago.</li>
-<li>The procedure is <strong>not</strong> currently working.</li>
-<li>There are <strong>no</strong> manually started jobs currently running.</li>
+<li>The time of day is within the idle period - between <strong>22:00 and 05:00</strong> (start 22:00, duration 7 hours).</li>
+<li>The <strong>System Jobs</strong> procedure is <strong>not</strong> already running.</li>
+<li>The last time the job procedure completed is <strong>more</strong> than 30 minutes ago.</li>
 </ul>
-<p>If these conditions are met, the execution system initiates a special long-running procedure called <strong>System Jobs</strong>, which can be monitored like any other long-running procedure in the <strong>Procedures</strong> navigator in ERP.net, or the <em>Procedures</em> tab in the <strong>Server Manager</strong>.</p>
-<p>The jobs execution system will then create a list of pending jobs and will start executing them sequentially. The list is made on the basis of active jobs defined in the databases</p>
-<p>Each job can run a maximum of 5 minutes before it's cancelled by the job runner. Jobs can actually execute up to six 5-minute runs, or 30 minutes, until they break the existing loop of pending jobs.</p>
-<p>If a job is interrupted before its work is finished, it must be started again during the 30-minute period. <br> If there are more records that need to be processed after the 30-minute window has elapsed, the job will start again on the next day.</p>
+<p>When these conditions are met, the scheduler starts a special long-running procedure called <strong>System Jobs</strong>, which can be monitored like any other long-running procedure in the <strong>Procedures</strong> navigator in ERP.net.</p>
+<h3 id="building-the-job-list">Building the job list</h3>
+<p>After the procedure starts, it builds the list of pending jobs. Jobs are processed only when the system is the <strong>primary</strong> instance and is in <strong>production</strong> mode; otherwise an information message is logged and no jobs run.</p>
+<p>The list contains the jobs that are <em>Active</em> and have <em>Schedule = Night</em>.</p>
+<h3 id="server-session-limit">Server session limit</h3>
+<p>Before queueing the jobs, the scheduler checks the number of active non-system server sessions:</p>
+<ul>
+<li>If there are <strong>5 or more</strong> active non-system sessions, the jobs flagged <em>Run On Idle</em> are removed from the list and an information message is logged. Jobs that are <em>Night</em>-scheduled but not <em>Run On Idle</em> still run.</li>
+<li>This session check can be disabled by setting <strong>/JobsManager/IgnoreSessionsForIdleSchedule</strong> to <code>1</code>. See the <a href="../../reference/config-options-reference.html">Config Options Reference</a>. When disabled, <em>Run On Idle</em> jobs run regardless of the session count.</li>
+</ul>
+<h3 id="executing-the-jobs">Executing the jobs</h3>
+<p>The collected jobs are executed <strong>sequentially</strong>. For each job:</p>
+<ul>
+<li><strong>One job at a time.</strong> If another job is already running (for example a manually started one), the idle procedure stops with a message and the remaining jobs are skipped.</li>
+<li><strong>Skip if already done in this idle period.</strong> A job is skipped if it has already completed successfully in the current idle period - that is, it is marked completed, was not cancelled, and less than 7 hours have passed since it completed.</li>
+<li><strong>5-minute run limit.</strong> Each job run is cancelled after 5 minutes. If a job is cancelled by this timeout before finishing, it is re-queued and retried later in the same procedure run.</li>
+<li><strong>30-minute procedure cap.</strong> The whole procedure runs for at most 30 minutes total (across all jobs, not per job). When this limit is reached, the remaining and unfinished jobs are deferred and continue in the next idle period.</li>
+</ul>
+<p>If a job still has records to process after the 30-minute window elapses, it resumes on the next idle period (effectively the next night).</p>
 <h2 id="manual-job-execution">Manual job execution</h2>
 <p>Each job could be started manually.</p>
 <p>This way, its execution begins <strong>immediately</strong>, without the need to wait for the next on-idle iteration.</p>
 <p><strong>There are a few important things to keep in mind when executing a job manually:</strong></p>
 <ul>
 <li>The same job <strong>can't</strong> be executed more than once simultaneously (e.g., &quot;in parallel&quot;).</li>
-<li>The job execution system will <strong>discard</strong> its job's queue if manual job execution is running.</li>
+<li>A manual run has <strong>no</strong> time limit. Unlike the idle run, it is not cancelled after 5 minutes; it runs until it finishes or is stopped manually.</li>
+<li>The idle job execution will <strong>discard</strong> its queue if a manual job is running.</li>
 <li>A job execution <strong>won't</strong> start if the <em>Is Active</em> option is disabled in its definition.</li>
 </ul>
 <h2 id="execution-log">Execution log</h2>
