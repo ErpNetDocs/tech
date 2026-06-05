@@ -7,7 +7,7 @@ Use these articles when you are preparing a new Client Center or onboarding the 
 ## In this section
 
 - [Set up a Client Center](set-up-a-client-center.md)
-- [Grant administrator access](grant-administrator-access.md)
+- [Set up administrator access](set-up-administrator-access.md)
 - [Add your first external user](add-your-first-external-user.md)
 
 ## What to read first
