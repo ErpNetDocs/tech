@@ -120,7 +120,7 @@ When an expected bonus program is not determined, check the following:
 8. Whether the evaluated **Amount** satisfies **Condition Min Amount** / **Condition Max Amount**.
 9. Whether the document currency matches **Condition Document Currency**, when amount conditions are defined.
 10. Whether a higher-priority bonus program is applicable in the same context.
-11. Whether trade conditions are applied on the sales order and on the relevant sales order lines.
+11. Whether the **Apply Trade Conditions** field is enabled on the sales order and on the relevant sales order lines.
 
 Keep in mind that:
 
