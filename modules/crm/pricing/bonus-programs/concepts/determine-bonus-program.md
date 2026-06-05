@@ -60,7 +60,7 @@ A bonus program remains in the candidate set only if all of the following condit
 
 If any specified condition does not match, the bonus program is excluded from the candidate set.
 
-## Line-based filtering
+## Line-based conditions
 
 After the general filtering, @@name evaluates the remaining bonus programs against the sales order lines.
 
