@@ -14,4 +14,4 @@ Use these articles when you are preparing a new Client Center or onboarding the 
 
 If you are configuring Client Center for the first time, start with [Set up a Client Center](set-up-a-client-center.md).
 
-After the initial setup is complete, continue with [Grant administrator access](grant-administrator-access.md), and then [Add your first external user](add-your-first-external-user.md).
+After the initial setup is complete, continue with [Set up administrator access](set-up-administrator-access.md) and then [Add your first external user](add-your-first-external-user.md)
