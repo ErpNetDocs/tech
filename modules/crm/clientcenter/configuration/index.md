@@ -21,6 +21,5 @@ For related problems, see [Settings changes are not applied](../troubleshooting/
 
 ## In this section
 
-- [Client Center settings](client-center-settings.md)
 - [Order-related settings](order-related-settings.md)
 - [Billing visibility settings](billing-visibility-settings.md)
