@@ -134,7 +134,7 @@ Keep in mind that:
 
 ## See also
 
-- [Create product bonus program](getting-started/create-basic-product-bonus-program.md)
-- [Create discount bonus program](getting-started/create-basic-discount-bonus-program.md)
-- [Create cascade discount bonus program](getting-started/create-basic-cascade-discount-bonus-program.md)
+- [Create product bonus program](../getting-started/create-basic-product-bonus-program.md)
+- [Create discount bonus program](../getting-started/create-basic-discount-bonus-program.md)
+- [Create cascade discount bonus program](../getting-started/create-basic-cascade-discount-bonus-program.md)
 - [Configuring bonus programs](../configuration.md)
