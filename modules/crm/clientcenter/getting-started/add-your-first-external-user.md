@@ -26,7 +26,7 @@ Access for the first external user is assigned in ERP.net through the **External
 
 For more information about external access roles, see [External Access](../../sales/customers/external-access.md).
 
-Open the **External Access** navigator and create or edit the record for the customer and user who will use the Client Center.
+Open the **External Access** navigator and create a record for the customer and user who will use the Client Center.
 
 Assign the user the **L80 - Admin** external access role.
 
@@ -41,9 +41,7 @@ This gives the user access to the Client Center and allows them to manage other 
 
 After the first external user has been given **L80 - Admin** access, they can add other users through the **User Management** page in Client Center.
 
-If you use multiple customers, first switch to the customer whose data you want to share with the user.
-
-Then:
+<!-- Screenshot needed: Add User form with Email, Days Back Access, and external access role -->
 
 1. Open the **User Management** page.
 2. Click **Add User**.
@@ -56,10 +54,11 @@ Then:
 
 The new user can then sign in with their credentials and start using the Client Center.
 
-<!-- Screenshot needed: Add User form with Email, Days Back Access, and external access role -->
-
 > [!IMPORTANT]
 > To give the same user access to more of your customers, switch to another customer and repeat the steps above.
+
+<!-- Screenshot needed: Add cc screen with multi customer choice -->
+
 
 ## Related information
 
