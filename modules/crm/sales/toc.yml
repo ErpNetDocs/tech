@@ -9,3 +9,6 @@
 - name: Customers
   href: customers/toc.yml
   topicHref: customers/index.md
+- name: Configurations
+  href: configurations/toc.yml
+  topicHref: configurations/index.md
