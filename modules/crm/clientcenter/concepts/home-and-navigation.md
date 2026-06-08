@@ -20,18 +20,29 @@ It also shows real-time metrics for the number of orders and invoices created fo
 
 ## Navigation
 
-The menu structure of Client Center provides access to the available sections and pages according to the user's assigned role.
+The menu structure of Client Center provides access to the available sections and pages according to the site's [configuration](../configuration/index.md) and the user's [external access role](access-model-and-external-roles.md).
 
 The main areas of Client Center are:
 
-- **Orders**
-- **Billing**
-- **User Management**
-- **Customer Profile**
+- [**Orders**](../orders/index.md)
+- [**Billing**](../billing/index.md)
+- [**User Management**](../user-management/index.md)
+- [**Customer Profile**](../customer-profile/index.md)
 
-A user sees only the sections and pages allowed by their external access role.
+The website can be configured to control what is shown in Client Center.
 
-## Additional notes
+For example, you can configure:
+
+- whether the **Orders** section is visible;
+- whether the **New Order** page is available;
+- which document types are shown in **Orders**;
+- which document types are shown in **Invoices**.
+
+For more information, see [Configuration](../configuration/index.md).
+
+A user sees only the sections and pages allowed by their [external access role](access-model-and-external-roles.md).
+
+## Multiple Client Centers
 
 Depending on your business size and reach, you can create and manage multiple Client Centers.
 
