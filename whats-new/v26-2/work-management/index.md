@@ -15,7 +15,7 @@ Key benefits include:
 - per-project control over who can change Cases to specific states;
 - automatic filtering of inaccessible Cases from navigation and search results.
 
-For more information, see [Security](~/modules/work-management/agile/security.md).
+For more information, see [Security](../../../modules/work-management/agile/security.md).
 
 ## Other features
 
@@ -41,4 +41,4 @@ Agile PM now supports two new UI functions for working with template projects:
 
 These functions help teams reuse standard project structures, reduce manual setup, and get recurring projects started faster.
 
-For more details, see [Create project from template](~/modules/work-management/agile/operations/create-project-from-template.md) and [Import cases from template project](~/modules/work-management/agile/operations/import-cases-from-template-project.md).
+For more details, see [Create project from template](../../../modules/work-management/agile/operations/create-project-from-template.md) and [Import cases from template project](../../../modules/work-management/agile/operations/import-cases-from-template-project.md).
