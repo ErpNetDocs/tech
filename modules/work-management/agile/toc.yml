@@ -11,3 +11,6 @@
   topicHref: advanced-features/index.md
 - name: Security
   href: security.md
+- name: Operations
+  href: operations/toc.yml
+  topicHref: operations/index.md
