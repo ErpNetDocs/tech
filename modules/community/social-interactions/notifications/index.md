@@ -79,6 +79,7 @@ Also, most of the notifications are created automatically via business rules whe
 |27| NT_WEBSITE_EXT_VIDEOCONFERENCING_RECORDING | System |  - | Notify corresponding user that a new recording from a Video Conference (meeting) is available.
 |28| NT_INSTANCE_CHANGE_REQUEST_ASSIGN | System | Rxxxxx| Notify the assigned user when the Instance Change Request has been assigned to them. |
 |29| NT_CASE_IMPLICIT | Case Development | **[R39543](https://docs.erp.net/model/business-rules/R39543.html) Case Development** - Notify All Case Implicit Followers | Notify users who follow (at Favorite level) at least one entity referenced in the Case header when a Case Development for that Case is committed. |
+|30| NT_DOC_TYPE_NOTIFICATIONS | Document | **[R38198](https://docs.erp.net/model/business-rules/R38198.html) Document** - Notify Users For Document Type Notifications |---|
 
 ## I don't care about notifications
 
