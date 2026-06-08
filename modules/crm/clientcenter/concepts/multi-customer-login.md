@@ -20,7 +20,6 @@ When the same user is granted access to multiple customers, they can switch betw
 
 If multiple customers are detected for the same user, upon first-time login, the user will be asked to select a customer they wish to log into.
 
-This choice will be stored as a cookie in the browser, allowing for future sign-ins to be automated and not requiring the selection again.
 
 For more information about external access roles, see [External Access](../../sales/customers/external-access.md#roles).
 
