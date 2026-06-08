@@ -44,7 +44,6 @@ This group represents the team or department involved in the discussions and dec
 
 ![Project Responsibility](pictures/project-responsibility.png)
 
-
 ### Association with Project Groups
 
 Each Project can optionally be associated with a [Project Group](project-groups.md), which enables multiple related projects to share common configurations such as [Project Areas](project-areas.md) and [Project Milestones](project-milestones.md).  
@@ -95,4 +94,3 @@ Template projects help teams standardize project initialization by allowing user
 *System field name:* `Template`
 
 ![Project Template](pictures/project-template.png)
-
