@@ -23684,6 +23684,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/work-management/agile/configuration-and-structure/project-definitions/pictures/project-template.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/agile/configuration-and-structure/project-definitions/pictures/project-template.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/work-management/agile/configuration-and-structure/project-definitions/pictures/project-wip.png",
       "output": {
         "resource": {
@@ -23804,6 +23814,69 @@
       "output": {
         ".html": {
           "relative_path": "modules/work-management/agile/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/work-management/agile/operations/create-project-from-template.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/work-management/agile/operations/create-project-from-template.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/work-management/agile/operations/import-cases-from-template-project.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/work-management/agile/operations/import-cases-from-template-project.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/work-management/agile/operations/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/work-management/agile/operations/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/agile/operations/pictures/create-project-from-this-template.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/agile/operations/pictures/create-project-from-this-template.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/agile/operations/pictures/import-cases-from-template-project.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/agile/operations/pictures/import-cases-from-template-project.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "modules/work-management/agile/operations/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "modules/work-management/agile/operations/toc.html"
+        },
+        ".json": {
+          "relative_path": "modules/work-management/agile/operations/toc.json"
         }
       },
       "version": ""
