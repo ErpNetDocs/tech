@@ -78,8 +78,21 @@ If a limit is exceeded, the system will block transitions to the respective stat
 **Configuration path:** *Project Definition → WIP Limits panel → Consider, Ready, and In Progress fields*  
 *Display panel name:* `WIP Limits`<br>
 *System panel name:* `Project`<br>
-*Display field name:* `Consider WIP Limit`, `Ready WIP Limit`, and `In Progress WIP Limit` fields <br>
-*System field name:* `Consider WIP Limit`, `Ready WIP Limit`, and `In Progress WIP Limit` fields
 
-![Project WIP Limits](pictures/project-wip.png)
+### Template projects
+
+Some Projects can be used as templates for recurring work.
+
+Template projects help teams standardize project initialization by allowing users to create a new project from a template or import Cases from a template project into an existing project.
+
+> [!Note]
+> For each Project Type, only one Project can be designated as a template by enabling the **Is Template** option.
+
+**Configuration path:** *Project Definition → Basic panel → Template field*  
+*Display panel name:* `Basic`<br>
+*System panel name:* `Project`<br>
+*Display field name:* `Is Template`<br>
+*System field name:* `Template`
+
+![Project Template](pictures/project-template.png)
 
