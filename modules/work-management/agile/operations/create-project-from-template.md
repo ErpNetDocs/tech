@@ -23,7 +23,7 @@ If the selected Project is not marked as a template, the system shows an error m
 
 The function is disabled while the Project is in edit mode.
 
-![Create project from template](pictures/create-project-from-template.png)
+![Create project from template](pictures/create-project-from-this-template.png)
 
 ## Project data in the new Project
 
