@@ -41,5 +41,5 @@ Agile PM now supports two new UI functions for working with template projects:
 
 These functions help teams reuse standard project structures, reduce manual setup, and get recurring projects started faster.
 
-For more details, see [Create project from template](../../../modules/work-management/agile/operations/create-project-from-template.html) and [Import cases from template project](../../../modules/work-management/agile/operations/import-cases-from-template-project.html).
+For more details, see [Create project from template](/modules/work-management/agile/operations/create-project-from-template.md) and [Import cases from template project](/modules/work-management/agile/operations/import-cases-from-template-project.md).
 
