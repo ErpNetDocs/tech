@@ -31,3 +31,15 @@ Users who follow with level **Favorite** at least one object referenced in a Cas
 This helps users stay informed about important Cases related to the objects they are most interested in.
 
 For more information, see [R39543 - Case Developments: Notify All Case Implicit Followers](https://docs.erp.net/model/business-rules/R39543.html).
+
+### 3. Working with template projects
+
+Agile PM now supports two new UI functions for working with template projects:
+
+- **Create project from this template** – creates a new active project based on a template project.
+- **Import cases from template project** – imports cases from a template project into an existing project.
+
+These functions help teams reuse standard project structures, reduce manual setup, and get recurring projects started faster.
+
+For more details, see [Create project from template](../../../modules/work-management/agile/operations/create-project-from-template.html) and [Import cases from template project](../../../modules/work-management/agile/operations/import-cases-from-template-project.html).
+
