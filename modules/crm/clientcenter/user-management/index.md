@@ -1,68 +1,98 @@
-# User Management 
+# User Management
 
-The User Management page is an administrative hub for a customer's users in the **Client Center**. It also allows registered users to be **added** into the Client Center with a specific access role, and existing ones to be **modified** or **removed** from it entirely.
+The **User Management** section in Client Center allows authorized external users to add and manage other external users for the currently selected customer.
 
-The page is only visible to Client Center users with **[external access role](https://docs.erp.net/tech/modules/crm/sales/customers/external-access.html#roles)** **L80 - Admin** and above.
+This section is intended for customer-side administration of external access. It allows users with sufficiently high access rights to control who can enter the Client Center and what level of access each external user has for that customer.
 
-![pictures](pictures/user_management_page_new.png)
+[screenshot: client-center/user-management/cc-user-management-overview-01-user-management-section.png]
 
-> [!NOTE]
-> User-to-customer relationships are sourced from the **[@@name External Access table](https://docs.erp.net/tech/modules/crm/sales/customers/external-access.html)**.
+## What users can do in User Management
 
-### Details
+In the User Management section, authorized users can typically:
 
-You can find the following information about each user in the table:
+- add a new external user for the current customer;
+- assign an external role to that user;
+- define a **Days Back Access** limit, when needed;
+- review the list of existing external users for the customer;
+- manage existing user access assignments.
 
-* **User** -  Name of the user in the format {Name} <{Login}> [{UserType:DB}] as defined in **[Systems.Security.Users](https://docs.erp.net/model/entities/Systems.Security.Users.html)**.
-* **Role** - **[External access role](../index.md#role-based-access)** of the user. Each superior role includes the rights granted by roles with fewer permissions.
-* **Access Back (days)** - The maximum number of past days the user is allowed to view data to which their role grants them access.
-* **Notes** - Optional notes for the user.
+These actions allow the customer to maintain external access directly in Client Center without working in ERP.net.
 
-## Add user
+For more information about the access model behind this functionality, see [Access model and external roles](../concepts/access-model-and-external-roles.md).
 
-Users with roles Admins and Owners can add any **already registered** user into the Client Center.
+## Role-based visibility in User Management
 
-To learn how a new user account is registered and defined for a Client Center, read the **[following guide](https://docs.erp.net/tech/modules/crm/clientcenter/how-to/setup-a-new-user-account-v26.html)**.
+Access to User Management is role-based.
 
-1. Click the **Add User** buttom.
-   
-   ![pictures](pictures/user_management_adduser.png)
-   
-2. This will trigger a window where you need to provide the user's exact **email address**.
+Only users with **L80 - Admin** or **L90 - Owner** can access this section.
 
-   ![pictures](pictures/user_add.png)
+Lower roles do not have access to user administration.
 
-   If no email record is found, you will get an **error**.
+The **Owner** role has the same general access scope as **Admin**, but it is protected and cannot be revoked by Admin users.
 
-   ![pictures](pictures/user_management_error.png)
+For more information, see [Access model and external roles](../concepts/access-model-and-external-roles.md).
 
-3. Proceed to fill out necessary **Days Back Access** and **Role** fields. The name will be filled out automatically.
+## User Management and customer-specific access
 
-   When done, click **Save**.
+User Management always works in the context of the currently selected customer.
 
-   ![pictures](pictures/user_fields.png)
+This is important because external access in Client Center is assigned **per customer**, not globally per user. A user can have access to one customer and no access to another, or different access levels for different customers.
 
-   The new user will be added for the respective customer.
+The User Management section therefore manages the relationship between:
 
-> [!TIP]
-> 
-> To expand a user's access to **more** customers within the same Client Center, a user should have Admin role for **at least one more** customer. Then, they only need to switch to that customer and follow the same steps as described above. <br>
-> This will essentially enable a **[multi-customer login](https://docs.erp.net/tech/modules/crm/clientcenter/index.html#multi-customer-login)** for the user's account.
+- the external user account;
+- the selected customer;
+- the assigned external role;
+- the optional **Days Back Access** restriction.
 
-### Actions
+For more information, see [User access and customer assignment](concepts/user-access-and-customer-assignment.md).
 
-You can change any of the details of an existing user with the help of the **Edit button**.
+[screenshot: client-center/user-management/cc-user-management-overview-02-user-management-list.png]
 
-This includes their external access role days back access setting.
+## Adding and managing users
 
-Alternatively, you may **remove** a user's access to the Client Center with the **trash bin**.
+The User Management section combines two related activities:
 
-![pictures](pictures/user_actions.png)
+- adding a new external user to the current customer;
+- maintaining the access settings of users who are already assigned to that customer.
 
-Note that this action will only revoke the user's external access to the Client Center, not delete the actual user.
+This includes assigning or changing the user's role and controlling how much historical data the user is allowed to see.
 
-![pictures](pictures/user_delete_warning.png)
+For task-oriented guidance, see [Add and manage external users](operations/add-and-manage-external-users.md).
 
-> [!NOTE]
-> 
-> The screenshots taken for this article are from v26 of the platform.
+## Relationship to multi-customer access
+
+Because external access is customer-specific, the same person can be assigned to more than one customer.
+
+This is what makes **multi-customer login** possible in Client Center. A single user account can be linked to several customers through separate access records, each with its own role and restrictions.
+
+For more information, see [Multi-customer login](../concepts/multi-customer-login.md).
+
+## In this section
+
+### Operations
+
+Use the Operations pages for task-oriented guidance:
+
+- [Operations overview](operations/index.md)
+- [Add and manage external users](operations/add-and-manage-external-users.md)
+
+### Concepts
+
+Use the Concepts pages to understand how User Management works:
+
+- [Concepts overview](concepts/index.md)
+- [User access and customer assignment](concepts/user-access-and-customer-assignment.md)
+
+## Related sections
+
+- [Getting Started](../getting-started/index.md)
+- [Access model and external roles](../concepts/access-model-and-external-roles.md)
+- [Multi-customer login](../concepts/multi-customer-login.md)
+- [Troubleshooting](../troubleshooting/index.md)
+
+## Summary
+
+The User Management section allows authorized external users to manage Client Center access for the current customer.
+
+It is available only to users with **Admin** or **Owner** access and is used to assign external roles, control customer-specific access, and maintain external user assignments directly in Client Center.
