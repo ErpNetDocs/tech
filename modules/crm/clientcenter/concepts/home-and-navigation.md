@@ -1,49 +1,148 @@
 # Home and navigation
 
-Client Center has a hierarchical menu structure consisting of several sections and pages.
+The **Home** page is the default landing page in Client Center after a successful sign-in.
 
-Each works with accurate and simplified data to provide a seamless platform experience, allowing customers to view documents important to them on demand.
+It provides a summary view of the customer's activity and gives users direct access to the main sections available to them. The exact content and navigation options depend on the external role assigned to the user for the currently selected customer.
 
-User access to the available sections and pages depends on the assigned external access role.
+Home and navigation in Client Center are role-based and customer-specific. This means that the available sections are determined by the user's **external access role** and, when applicable, by the currently selected customer context.
+
+[screenshot: client-center/concepts/home-and-navigation/cc-concepts-home-and-navigation-01-home-overview.png]
+
+## Home as the starting point
+
+Home serves as the main entry point to Client Center.
+
+From there, users can orient themselves in the portal, review the information available for the active customer, and move to the sections they are allowed to access.
+
+Depending on the assigned role, Home can provide access to:
+
+- **Orders**;
+- **Billing**;
+- **User Management**;
+- **Customer Profile**.
+
+The Home page reflects the current customer context. If the same user has access to multiple customers, the information shown on Home belongs to the customer currently selected in the session.
+
+For more about customer-specific access, see [Multi-customer login](multi-customer-login.md).
+
+## Navigation is role-based
+
+Client Center navigation is not identical for all users.
+
+The available sections depend on the external role assigned to the user for the selected customer. As a result, two users signing in to the same Client Center can see different navigation options.
+
+In general:
+
+- users with basic access can reach Home and Customer Profile;
+- users with order access can also reach Orders;
+- users with billing access can also reach Billing;
+- users with admin-level access can also reach User Management.
+
+This is why navigation in Client Center should be understood as a reflection of the user's assigned access level rather than as a fixed portal menu.
 
 For more information, see [Access model and external roles](access-model-and-external-roles.md).
 
-## Home page
+[screenshot: client-center/concepts/home-and-navigation/cc-concepts-home-and-navigation-02-navigation-by-role.png]
 
-The **Home** page is the default landing page of Client Center.
+## Main sections in Client Center
 
-It provides quick access to all orders, invoices, and due payments based on the user's role access.
+Client Center is organized into functional sections that become available according to the user's role.
 
-It also shows real-time metrics for the number of orders and invoices created for the current month.
+### Orders
 
-<!-- Screenshot needed: cc-con-02-home-page-overview.png -->
+The **Orders** section gives users access to order-related information and actions. Depending on the role and configuration, users can review existing orders and use **New Order**.
 
-## Navigation
+For more information, see:
 
-The menu structure of Client Center provides access to the available sections and pages according to the site's [configuration](../configuration/index.md) and the user's [external access role](access-model-and-external-roles.md).
+- [Orders overview](../orders/index.md)
+- [Orders page](../orders/concepts/orders-page.md)
+- [New Order behavior](../orders/concepts/new-order-behavior.md)
 
-The main areas of Client Center are:
+### Billing
 
-- [**Orders**](../orders/index.md)
-- [**Billing**](../billing/index.md)
-- [**User Management**](../user-management/index.md)
-- [**Customer Profile**](../customer-profile/index.md)
+The **Billing** section provides access to invoice and payment-related information.
 
-The website can be configured to control what is shown in Client Center.
+Depending on the assigned role, users can view:
 
-For example, you can configure:
+- **Invoices**;
+- **Due Payments**;
+- **Payment History**.
 
-- whether the **Orders** section is visible;
-- whether the **New Order** page is available;
-- which document types are shown in **Orders**;
-- which document types are shown in **Invoices**.
+For more information, see:
 
-For more information, see [Configuration](../configuration/index.md).
+- [Billing overview](../billing/index.md)
+- [Invoices page](../billing/concepts/invoices-page.md)
+- [Due Payments page](../billing/concepts/due-payments-page.md)
+- [Payment History page](../billing/concepts/payment-history-page.md)
 
-A user sees only the sections and pages allowed by their [external access role](access-model-and-external-roles.md).
+### User Management
 
-## Multiple Client Centers
+The **User Management** section is available only to users with **Admin** or **Owner** access.
 
-Depending on your business size and reach, you can create and manage multiple Client Centers.
+It allows them to add and manage external users for the corresponding customer.
 
-This can be useful for departments dealing with different tasks and issues, because each Client Center can remain tailored to the users it serves.
+For more information, see:
+
+- [User Management overview](../user-management/index.md)
+- [Add and manage external users](../user-management/operations/add-and-manage-external-users.md)
+
+### Customer Profile
+
+The **Customer Profile** section contains information about the current customer and, where applicable, customer-related files.
+
+All users with Client Center access can view the basic customer information. Access to additional file-related functionality depends on role and file visibility settings.
+
+For more information, see:
+
+- [Customer Profile overview](../customer-profile/index.md)
+- [Customer information](../customer-profile/concepts/customer-information.md)
+- [Files in Customer Profile](../customer-profile/concepts/files-in-customer-profile.md)
+
+## Home content depends on the current customer
+
+When a user has access to more than one customer, the Home page always shows the information for the **currently selected customer**.
+
+After switching to another customer, the Home page updates to reflect that customer's context. This includes the available sections, visible documents, and customer-specific information.
+
+This keeps the portal consistent with the active customer selection and prevents information from multiple customers from being mixed in the same working view.
+
+For more information, see [Multi-customer login](multi-customer-login.md).
+
+## Relationship to file visibility
+
+Navigation to a page or section does not automatically grant visibility to all files related to the documents shown there.
+
+A user may be able to access Orders, Billing, or Customer Profile and still not see attached files unless those files are explicitly shared for external users.
+
+This is why section availability and file visibility should be treated as separate parts of the Client Center access model.
+
+For more information, see [File visibility and downloads](file-visibility-and-downloads.md).
+
+[screenshot: client-center/concepts/home-and-navigation/cc-concepts-home-and-navigation-03-home-sections-and-files.png]
+
+## Relationship to roles and restrictions
+
+The external role determines not only whether a section is visible, but also how much information is shown inside that section.
+
+For example:
+
+- a user may have access to Orders without seeing prices, discounts, and amounts;
+- a user may have access to Billing only when the assigned role includes billing rights;
+- a user may see User Management only when the assigned role is **L80 - Admin** or **L90 - Owner**.
+
+Additional restrictions such as **Days Back Access** can further limit which historical records are visible in the available sections.
+
+For more information, see [Access model and external roles](access-model-and-external-roles.md).
+
+## Summary
+
+Home is the main starting page in Client Center, and navigation is generated according to the user's external role for the active customer.
+
+This determines:
+
+- which sections are available in the portal;
+- what type of information the user can access;
+- whether orders, billing pages, and user management are available;
+- how the portal changes when the user switches to another customer.
+
+As a result, Home and navigation in Client Center always reflect the current customer context and the level of access assigned to the signed-in user.
