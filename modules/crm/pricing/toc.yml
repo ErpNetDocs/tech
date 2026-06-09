@@ -10,4 +10,7 @@
   href: bonus-programs/toc.yml
   topicHref: bonus-programs/index.md
 - name: Promotional packages
+  href: promotional-packages/toc.yml
+  topicHref: promotional-packages/index.md
+- name: Promotional packages
   href: promotional-packages.md
