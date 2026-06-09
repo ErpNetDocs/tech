@@ -68,29 +68,18 @@ The created **Company Location** uses the following name:
 
 As a result, all **Enterprise Companies** will have at least one available **Company Location**, and existing documents with missing **Enterprise Company Location** values will be updated automatically.
 
-##  7. A System object is now created for every aggregate root
+##  7. System object is now created for every aggregate root
 
-ERP.net now creates a **system object for every business object that is an aggregate root**. This means the system maintains a consistent object registry across the entire domain model.
+⭐ ERP.net now creates a **system object for every business object that is an aggregate root**. This means the system maintains a consistent object registry across the entire domain model.
 
-As a result, **Track Changes Level 1 is now effectively enabled for all aggregate roots**. At minimum, the system now consistently keeps the basic tracking information for every object — including **who created it** and **when it was last updated**.
-
-In addition, the system object now stores the object’s **display text** in a dedicated field. This provides a ready-to-use human-readable title for each object and improves scenarios such as object lookup, search, lists, folders, and future AI-driven features.
-
-### A system object is always created
-For every aggregate root in the system, ERP.net now always creates a corresponding **system object**. This establishes a complete and consistent registry of objects across the platform.
-
-### Track Changes Level 1 is now available for all aggregate roots
-Because every aggregate root now has a system object, the platform can consistently maintain the basic tracking metadata for all objects, including:
+⭐ As a result, **Track Changes Level 1 is now effectively enabled for all aggregate roots**. Because every aggregate root now has a system object, the platform can consistently maintain the basic tracking metadata for all objects, including:
 - the object creator
 - creation time
 - last update time
 
 This provides system-wide minimum tracking coverage out of the box.
 
-### Display text is now stored in the system object
-The system now stores the object’s **Display Text** in a dedicated field in the system object.
-
-This makes the system object more useful in practical scenarios where a human-readable object title is needed, for example:
+⭐ In addition, the system object now stores the object’s **display text** in a dedicated field. This makes the system object more useful in practical scenarios where a human-readable object title is needed, for example:
 - search results
 - selection dropdowns
 - lists and folders
