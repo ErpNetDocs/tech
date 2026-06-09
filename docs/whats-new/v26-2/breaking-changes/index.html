@@ -133,6 +133,34 @@ Numeric enum comparisons may no longer work as expected.</p>
 <li><strong>bg:</strong> Централен офис</li>
 </ul>
 <p>As a result, all <strong>Enterprise Companies</strong> will have at least one available <strong>Company Location</strong>, and existing documents with missing <strong>Enterprise Company Location</strong> values will be updated automatically.</p>
+<h2 id="7-system-object-is-now-created-for-every-aggregate-root">7. System object is now created for every aggregate root</h2>
+<p>⭐ ERP.net now creates a <strong>system object for every business object that is an aggregate root</strong>. This means the system maintains a consistent object registry across the entire domain model.</p>
+<p>⭐ As a result, <strong>Track Changes Level 1 is now effectively enabled for all aggregate roots</strong>. Because every aggregate root now has a system object, the platform can consistently maintain the basic tracking metadata for all objects, including:</p>
+<ul>
+<li>the object creator</li>
+<li>creation time</li>
+<li>last update time</li>
+</ul>
+<p>This provides system-wide minimum tracking coverage out of the box.</p>
+<p>⭐ In addition, the system object now stores the object’s <strong>display text</strong> in a dedicated field. This makes the system object more useful in practical scenarios where a human-readable object title is needed, for example:</p>
+<ul>
+<li>search results</li>
+<li>selection dropdowns</li>
+<li>lists and folders</li>
+<li>cross-entity navigation</li>
+<li>AI-related scenarios</li>
+</ul>
+<h3 id="overall-impact">Overall impact</h3>
+<p>This change is important because it gives ERP.net a <strong>uniform registry of business objects</strong> across the system.</p>
+<p>It improves:</p>
+<ul>
+<li>traceability</li>
+<li>object discovery</li>
+<li>recency-based scenarios</li>
+<li>human-readable object identification</li>
+<li>future extensibility for cross-entity and AI features</li>
+</ul>
+<p><img src="SysObject.png" alt="picture"></p>
 
 </article>
 
