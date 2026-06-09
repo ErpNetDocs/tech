@@ -7880,6 +7880,79 @@
       "version": ""
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "modules/crm/pricing/promotional-packages/create-basic-promotional-package.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/pricing/promotional-packages/create-basic-promotional-package.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/crm/pricing/promotional-packages/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/pricing/promotional-packages/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/pricing/promotional-packages/pictures/create-promotional-package.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/pricing/promotional-packages/pictures/create-promotional-package.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/pricing/promotional-packages/pictures/promotional-packages.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/pricing/promotional-packages/pictures/promotional-packages.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/crm/pricing/promotional-packages/pictures/readME.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/pricing/promotional-packages/pictures/readME.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/pricing/promotional-packages/pictures/sales-order-promotional-package.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/pricing/promotional-packages/pictures/sales-order-promotional-package.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "modules/crm/pricing/promotional-packages/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/pricing/promotional-packages/toc.html"
+        },
+        ".json": {
+          "relative_path": "modules/crm/pricing/promotional-packages/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "modules/crm/pricing/toc.yml",
       "output": {
