@@ -11143,6 +11143,188 @@
       "version": ""
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "modules/financials/saft/country-specific/bulgaria/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/financials/saft/country-specific/bulgaria/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/financials/saft/country-specific/bulgaria/nra-nomenclatures.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/financials/saft/country-specific/bulgaria/nra-nomenclatures.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/financials/saft/country-specific/bulgaria/pictures/accounts-mapping.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/financials/saft/country-specific/bulgaria/pictures/accounts-mapping.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/financials/saft/country-specific/bulgaria/pictures/chart-of-accounts-group-60.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/financials/saft/country-specific/bulgaria/pictures/chart-of-accounts-group-60.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/financials/saft/country-specific/bulgaria/pictures/nra-harmonized-codes.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/financials/saft/country-specific/bulgaria/pictures/nra-harmonized-codes.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/financials/saft/country-specific/bulgaria/pictures/nra-marketplace.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/financials/saft/country-specific/bulgaria/pictures/nra-marketplace.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/financials/saft/country-specific/bulgaria/pictures/saft-profile.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/financials/saft/country-specific/bulgaria/pictures/saft-profile.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/financials/saft/country-specific/bulgaria/saft-profiles/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/financials/saft/country-specific/bulgaria/saft-profiles/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/financials/saft/country-specific/bulgaria/saft-profiles/saft-accounts-maping.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/financials/saft/country-specific/bulgaria/saft-profiles/saft-accounts-maping.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/financials/saft/country-specific/bulgaria/saft-profiles/saft-product-type-mapping.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/financials/saft/country-specific/bulgaria/saft-profiles/saft-product-type-mapping.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/financials/saft/country-specific/bulgaria/saft-profiles/saft-profiles.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/financials/saft/country-specific/bulgaria/saft-profiles/saft-profiles.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "modules/financials/saft/country-specific/bulgaria/saft-profiles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "modules/financials/saft/country-specific/bulgaria/saft-profiles/toc.html"
+        },
+        ".json": {
+          "relative_path": "modules/financials/saft/country-specific/bulgaria/saft-profiles/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "modules/financials/saft/country-specific/bulgaria/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "modules/financials/saft/country-specific/bulgaria/toc.html"
+        },
+        ".json": {
+          "relative_path": "modules/financials/saft/country-specific/bulgaria/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/financials/saft/country-specific/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/financials/saft/country-specific/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "modules/financials/saft/country-specific/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "modules/financials/saft/country-specific/toc.html"
+        },
+        ".json": {
+          "relative_path": "modules/financials/saft/country-specific/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/financials/saft/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/financials/saft/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "modules/financials/saft/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "modules/financials/saft/toc.html"
+        },
+        ".json": {
+          "relative_path": "modules/financials/saft/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "modules/financials/toc.yml",
       "output": {
