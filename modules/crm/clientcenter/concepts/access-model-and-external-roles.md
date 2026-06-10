@@ -51,7 +51,7 @@ The following table summarizes the access granted by each external role in Clien
 | **L30 - Orders + Prices** | ✅ | ✅ | ❌ | ❌ | ✅ | Same as L20, but including **Price**, **Discount**, and **Amount**. |
 | **L40 - Billing** | ✅ | ✅ | ✅ | ❌ | ✅ | Adds access to billing-related pages, including **Invoices**, **Due Payments**, and **Payment History**. |
 | **L80 - Admin** | ✅ | ✅ | ✅ | ✅ | ✅ | Full access, including **User Management**. |
-| **L90 - Owner** | ✅ | ✅ | ✅ | ✅ | ✅ | Same as **Admin**, but Owner access cannot be revoked by anyone, including Admins. |
+| **L90 - Owner** | ✅ | ✅ | ✅ | ✅ | ✅ | Same as **Admin**, but the Owner role cannot be modified or removed by Admins. |
 
 [screenshot: client-center/concepts/access-model-and-external-roles/cc-concepts-access-model-and-external-roles-02-role-matrix.png]
 
