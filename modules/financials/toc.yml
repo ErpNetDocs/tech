@@ -15,6 +15,9 @@
 - name: Intrastat
   href: intrastat/toc.yml
   topicHref: intrastat/index.md
+- name: SAF-T
+  href: saft/toc.yml
+  topicHref: saft/index.md
 - name: Payments
   href: payments/toc.yml
   topicHref: payments/index.md
