@@ -24,5 +24,5 @@ SAF-T профилът е мястото където се прави връзк
 
 
 
-![SAF-T профил](../pictures/saft-profile.png)
+![SAF-T профил](pictures/saft-profile.png)
 
