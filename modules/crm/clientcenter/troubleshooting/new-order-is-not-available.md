@@ -14,7 +14,7 @@ To enable it, the Client Center website definition must include the required JSO
 {"NewOrderDocumentType": "DocumentType.Id","IsNewOrderEnabled": true}
 ```
 
-`DocumentType.EntityName` must be equal to `"SalesOrders"`.
+The specified NewOrderDocumentType must reference a document type whose EntityName is SalesOrders.
 
 Example:
 
