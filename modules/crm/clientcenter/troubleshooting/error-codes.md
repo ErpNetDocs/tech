@@ -18,6 +18,10 @@ Use this page when Client Center shows an explicit error code. If the problem do
 | **CC009** | Incorrect setup of Client Center: the `NewOrderDocumentType` option is set, but `DocumentType` is null. | Configure a valid document type for `NewOrderDocumentType`. |
 | **CC010** | The logged-in user does not have a defined role. | Add the user to the `Crm_Customer_External_Access` table and assign an appropriate role. |
 
+> [!NOTE]
+> Errors **CC002** and **CC003** are preserved here because they are still listed in the Client Center error reference.
+> However, starting with version 26, Client Center access no longer generally depends on **Person** or **Parent Party** records.
+
 ## Related pages
 
 - [Cannot access a page or section](cannot-access-a-page-or-section.md)
