@@ -3,4 +3,5 @@
   topicHref: index.md
 - name: Getting started
   href: create-basic-promotional-package.md
-  
+- name: Configuration
+  href: configuration.md
