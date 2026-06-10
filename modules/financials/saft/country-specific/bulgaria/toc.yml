@@ -1,0 +1,5 @@
+- name: SAF-T номенклатури на НАП
+  href: nra-nomenclatures.md
+- name: SAF-T профили
+  href: saft-profiles/toc.yml
+  topicHref: saft-profiles/index.md
