@@ -15,6 +15,7 @@ The Finance module consists of several submodules, each managing a distinct area
 | **[Cost](https://docs.erp.net/tech/modules/financials/cost-accounting/index.html)** | Provides structures for cost analysis and internal management reporting, including calculations and distributions based on allocation models and defined cost types. |
 | **[Excise](https://docs.erp.net/tech/modules/financials/excise/index.html)** | Manages compliance for excise tax on regulated products. It handles defining tax warehouses, tracking issue/receipt transactions, and generating the final excise declaration and stamping reports. |
 | **[Intrastat](https://docs.erp.net/tech/modules/financials/intrastat/index.html)** | Manages statistical reporting for goods movement, including the creation of intrastat declarations and maintaining commodity codes. |
+| **[SAF-T](https://docs.erp.net/tech/modules/financials/saft/index.html)** | Manages preparation and export of Standard Audit File for Tax (SAF-T) reports. Includes loading official tax nomenclatures and configuring SAF-T profiles with mappings between ERP.net and national tax authority definitions. |
 | **[Payments](https://docs.erp.net/tech/modules/financials/payments/index.html)** | Manages the flow of money in and out of an organization. Deals with payment orders, payment transactions and transfers. |
 | **[VAT](https://docs.erp.net/tech/modules/financials/VAT/index.html)** | Handles Value Added Tax compliance. Includes documents for VAT declarations and entries (Sale/Purchase). |
 
