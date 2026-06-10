@@ -4,7 +4,7 @@
 
 [https://marketplace.erp.net/](https://marketplace.erp.net/)
 
-![image-20260610115535054](C:\Users\i.ivanov\AppData\Roaming\Typora\typora-user-images\image-20260610115535054.png)
+![SAF-T номенклатури в Marketplace](pictures/nra-marketplace.png)
 
 
 Необходимо е да се инсталират следните:
@@ -24,5 +24,5 @@
 
 
 
-![image-20260610120312838](C:\Users\i.ivanov\AppData\Roaming\Typora\typora-user-images\image-20260610120312838.png)
+![Генериране на хармонизирани кодове на стоки](pictures/nra-harmonized-codes.png)
 
