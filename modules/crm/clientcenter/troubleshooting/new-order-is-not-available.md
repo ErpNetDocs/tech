@@ -2,7 +2,7 @@
 
 Use this page when the **New Order** function is missing or unavailable in Client Center.
 
-According to the Client Center documentation, order creation is **disabled by default**. Before users can create orders, the required JSON settings must be applied in the Client Center website definition.
+Order creation is **disabled by default**. Before users can create orders, the required JSON settings must be applied in the Client Center website definition.
 
 ## Check whether New Order is enabled
 
@@ -14,7 +14,7 @@ To enable it, the Client Center website definition must include the required JSO
 {"NewOrderDocumentType": "DocumentType.Id","IsNewOrderEnabled": true}
 ```
 
-The specified NewOrderDocumentType must reference a document type whose EntityName is SalesOrders.
+The specified `NewOrderDocumentType` must reference a document type whose `EntityName` is `"SalesOrders"`.
 
 Example:
 
@@ -28,9 +28,7 @@ For more information, see [Settings and errors](https://docs.erp.net/tech/module
 
 ## Check whether both required settings are present and valid
 
-The reference documentation states that if only one of the JSON settings is set, or if the specified ID does not match a sales order document type, Client Center shows error **CC008** or **CC009**.
-
-According to the reference page:
+If only one of the required JSON settings is set, or if the specified ID does not match a sales order document type, Client Center shows error **CC008** or **CC009**.
 
 - **CC008** means that the JSON string is not well formatted.
 - **CC009** means that the setup is incorrect because the option `NewOrderDocumentType` is set, but `DocumentType` is null.
