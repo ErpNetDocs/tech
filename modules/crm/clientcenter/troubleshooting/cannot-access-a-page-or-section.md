@@ -60,6 +60,9 @@ The following error codes from the reference documentation are related to user a
 
 If one of these errors appears, review the user and customer setup in ERP.net.
 
+> [!NOTE]
+> Although **CC002** is still listed in the Client Center error reference, starting with version 26 it is no longer generally required for the logged user to be linked to a **Person** record.
+
 For more information, see:
 
 - [User access and customer assignment](../user-management/concepts/user-access-and-customer-assignment.md)
