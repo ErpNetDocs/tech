@@ -24,5 +24,5 @@ SAF-T профилът е мястото където се прави връзк
 
 
 
-![image-20260610125043240](C:\Users\i.ivanov\AppData\Roaming\Typora\typora-user-images\image-20260610125043240.png)
+![SAF-T профил](../pictures/saft-profile.png)
 
