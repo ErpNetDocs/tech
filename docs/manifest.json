@@ -7881,6 +7881,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/crm/pricing/promotional-packages/configuration.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/pricing/promotional-packages/configuration.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/crm/pricing/promotional-packages/create-basic-promotional-package.md",
       "output": {
         ".html": {
