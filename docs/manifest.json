@@ -11174,26 +11174,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "modules/financials/saft/country-specific/bulgaria/pictures/accounts-mapping.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/financials/saft/country-specific/bulgaria/pictures/accounts-mapping.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/financials/saft/country-specific/bulgaria/pictures/chart-of-accounts-group-60.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/financials/saft/country-specific/bulgaria/pictures/chart-of-accounts-group-60.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "modules/financials/saft/country-specific/bulgaria/pictures/nra-harmonized-codes.png",
       "output": {
         "resource": {
@@ -11213,21 +11193,41 @@
       "version": ""
     },
     {
-      "type": "Resource",
-      "source_relative_path": "modules/financials/saft/country-specific/bulgaria/pictures/saft-profile.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/financials/saft/country-specific/bulgaria/pictures/saft-profile.png"
-        }
-      },
-      "version": ""
-    },
-    {
       "type": "Conceptual",
       "source_relative_path": "modules/financials/saft/country-specific/bulgaria/saft-profiles/index.md",
       "output": {
         ".html": {
           "relative_path": "modules/financials/saft/country-specific/bulgaria/saft-profiles/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/financials/saft/country-specific/bulgaria/saft-profiles/pictures/accounts-mapping.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/financials/saft/country-specific/bulgaria/saft-profiles/pictures/accounts-mapping.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/financials/saft/country-specific/bulgaria/saft-profiles/pictures/chart-of-accounts-group-60.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/financials/saft/country-specific/bulgaria/saft-profiles/pictures/chart-of-accounts-group-60.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/financials/saft/country-specific/bulgaria/saft-profiles/pictures/saft-profile.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/financials/saft/country-specific/bulgaria/saft-profiles/pictures/saft-profile.png"
         }
       },
       "version": ""
