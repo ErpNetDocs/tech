@@ -83,6 +83,6 @@ The result of the determination is the set of promotional packages that are avai
 
 ## Related topics
 
-- [Apply promotional packages](determine-available-promotional-packages.md)
+- [Apply promotional packages](apply-promotional-packages.md)
 - [Create basic promotional package](../create-basic-promotional-package.md)
 - [Promotional package configuration](../configuration.md)
