@@ -7,3 +7,6 @@
 - name: Configuration
   href: configuration.md
   topicHref: configuration.md
+- name: Concepts
+  href: concepts/toc.yml
+  topicHref: concepts/index.md
