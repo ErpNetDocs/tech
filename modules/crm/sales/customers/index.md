@@ -20,7 +20,7 @@ To add a new Customer, click the **New** button.
 
 The system allows you to select a Customer type directly from here: **Customer**, **Retail**, and **Wholesale**.
 
-![pictures](pictures/Customer_type_add.png)
+![pictures](pictures/customer_type_add.png)
 
 Creating a new Customer involves setting up their identification, financial and operational defaults, system permissions, and enterprise assignments for immediate use in sales processing.
 
@@ -28,7 +28,7 @@ It also involves adding **products**, **prices** and other entities contracted w
 
 For more information, please refer to **[How to define a Customer](https://docs.erp.net/tech/modules/crm/sales/definitions/define-Customers.html)**.
 
-![pictures](pictures/addnew_Customer.png)
+![pictures](pictures/addnew_customer.png)
 
 > [!NOTE]
 >

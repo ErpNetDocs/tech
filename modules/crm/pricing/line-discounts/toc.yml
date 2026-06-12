@@ -6,7 +6,7 @@
   topicHref: create-basic-line-discount.md
 - name: Configuration
   href: configuration.md
-  topicHref: configurationt.md
+  topicHref: configuration.md
 - name: Concepts
   href: concepts/toc.yml
   topicHref: concepts/index.md

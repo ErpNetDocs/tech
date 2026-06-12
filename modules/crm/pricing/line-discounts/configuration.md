@@ -111,7 +111,7 @@ If a line discount record contains multiple applicability conditions, all of the
 
 For example, a line discount configured for a specific product and customer is considered only when both the product and the customer in the sales document line match the configured values.
 
-For more information about how @@name selects the final discount when multiple line discounts are applicable for the same discount level, see [Determine line discount](../concepts/determine-line-discount.md).
+For more information about how @@name selects the final discount when multiple line discounts are applicable for the same discount level, see [Determine line discount](concepts/determine-line-discount.md).
 
 ## Example scenarios
 

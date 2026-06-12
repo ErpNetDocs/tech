@@ -32,4 +32,4 @@ Once you've completed the previous steps, a separate page will open, where you n
 
 When you are ready, click on the **Save and reload** button to finish the creation process
 
-![picture](pictures/Logistical_Unit_Save_14_03.png)
+![picture](Pictures/Logistical_Unit_Save_14_03.png)
