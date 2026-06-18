@@ -1,4 +1,4 @@
-## Line Discounts
+# Line Discounts
 
 **Line discounts** define the discounts applied to sales document lines. A line discount can be configured for different applicability conditions and discount levels.
 
