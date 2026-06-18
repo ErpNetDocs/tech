@@ -1,4 +1,4 @@
-## Product Prices
+# Product Prices
 
 **Product prices** define the sales prices applied to sales document lines. A product can have multiple product price records, each configured for different pricing conditions and commercial scenarios.
 
