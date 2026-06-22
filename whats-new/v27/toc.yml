@@ -1,7 +1,7 @@
 - name: WEB Client
   href: web-client/index.md
   topicHref: web-client/index.md
-- name: Social interactions
+- name: Social Interactions
   href: social-interactions/index.md
   topicHref: social-interactions/index.md
   
