@@ -1,34 +1,43 @@
 # Set up a Client Center
 
-This article provides a step-by-step guide on creating a Client Center website in ERP.net.
+This article provides a step-by-step guide on creating a Client Center website through ERP.net.
+
+## Before you start
+
+Before creating the website, determine:
+
+- the **Enterprise Company** for which the Client Center will be created;
+- the **Relative Url** that the website will use.
+
+> [!TIP]
+> Define a distinct site with a unique **Relative Url** for each **Enterprise Company**.
 
 ## Step-by-step process
 
-To set up a website of **Client Center** type, open the **Web Sites** navigator in the **Configuration** section of the **System** module.
+To set up a website of **Client Center** type, navigate to **System** > **Configuration** > **Web Sites**.
 
 Then click **New** to begin creating a new website.
 
-## Website definition
+[screenshot: client-center/getting-started/set-up-a-client-center/cc-getting-started-set-up-a-client-center-01-new-web-site-form.png]
 
-<!-- Screenshot needed: New Web Site form with Enterprise Company, Web Site Type, Relative Url, and Settings -->
+### Website definition
 
-In the **New Web Site** form:
+In the **New Web Site** form, enter the relevant data in the available fields.
 
-1. Select the appropriate **Enterprise Company** for which the Client Center is created.  
+1. Select the appropriate **Enterprise Company**.  
    The currently logged-in company is selected by default.
 
 2. Set **Web Site Type** to **Client Center**.  
-   This is the only mandatory field.
-
+   
 3. Specify the **Relative Url** of the website.  
    By default, it is set to `cc`.
 
-> [!TIP]
-> Define a separate site with a unique **Relative Url** for each **Enterprise Company**.
+4. If needed, specify the settings that will apply to the Client Center website.  
+   You can do this now or later when editing the website.
 
-You can also specify the settings that will apply to the Client Center website.
+   Client Center settings are entered in the **Settings** field in key-value pair JSON format.
 
-You can do this now or later when editing the website. For more information, see [Configuration](../configuration/index.md).
+   For more information, see [Configuration](../configuration/index.md).
 
 When you are ready, click **Save and reload**.
 
@@ -37,18 +46,20 @@ The new Client Center website is created and can be accessed through the configu
 > [!NOTE]
 > The **Trusted Application** field does not need to be configured when creating a website. It can be left empty. The site runs under the internal **SYSTEM** user, and its background service session does not consume a license.
 
-## Apply platform settings
+> [!NOTE]
+> Whenever you apply or change settings for the Client Center, you need to restart the website through the Instance Manager.
 
-Client Center supports settings that control its visual appearance and functional behavior.
+## Expected result
 
-Important examples include:
+After completing these steps, you have a Client Center website definition that can be accessed through its **Relative Url**.
 
-- showing or hiding the **New Order** module;
-- defining which document types are shown in the **Orders** module;
-- defining which document types are shown in the **Invoices** module.
+## Related pages
 
-For the full list of settings, see [Configuration](../configuration/index.md).
+- [Configuration](../configuration/index.md)
+- [Common configuration notes](../configuration/common-configuration-notes.md)
+- [Set up administrator access](set-up-administrator-access.md)
+
 
 ## Next step
 
-After the website is created, continue with [Add your first external user](add-your-first-external-user.md).
+After the website is created, continue with [Set up administrator access](set-up-administrator-access.md).
