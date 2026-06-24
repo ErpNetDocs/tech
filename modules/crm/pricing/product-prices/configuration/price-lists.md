@@ -2,7 +2,6 @@
 
 Price lists are defined in **Pricing** → **Price Lists** in the **Set Up** section.
 
-A price list is used as an applicability condition for product prices in sales documents.  
 A product price can reference a specific price list, which is then used as an applicability condition during price determination.
 
 **For example**:  
