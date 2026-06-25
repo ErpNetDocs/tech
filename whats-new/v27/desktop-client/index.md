@@ -4,7 +4,7 @@
 
 ## Notable features
 
-⚠️ Desktop reports: Maximum row limit reduced to 200,000
+⚠️ **Desktop reports: Maximum row limit reduced to 200,000**
 
 The maximum number of rows that can be requested in Desktop reports has been reduced from 1,000,000 to 200,000 to prevent excessive load on the server, network, and Desktop client.
 
