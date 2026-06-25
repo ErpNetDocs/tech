@@ -9,7 +9,7 @@ Before creating the website, determine:
 - the **Enterprise Company** for which the Client Center will be created;
 - the **Relative Url** that the website will use.
 
-> [!TIP]
+> [!Note]
 > Define a distinct site with a unique **Relative Url** for each **Enterprise Company**.
 
 ## Step-by-step process
