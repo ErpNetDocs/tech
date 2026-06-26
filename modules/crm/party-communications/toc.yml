@@ -1,5 +1,5 @@
 - name: Overview
   href: index.md
-- name: Operations 
-  href: guide/toc.yml
-  topicHref: guide/index.md
+- name: Configuration 
+  href: configuration.md
+ 
