@@ -4,3 +4,5 @@
   href: configuration.md
 - name: Concepts 
   href: concepts.md
+- name: Operations 
+  href: operations.md
