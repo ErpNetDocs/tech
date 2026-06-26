@@ -24,6 +24,8 @@ The main supported channel values are:
 
 - `Note`
 
+![picture](conf.png)
+
 - `SubChannel` can identify the specific origin of the communication, for example: 
 
  
