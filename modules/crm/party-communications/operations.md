@@ -1,6 +1,6 @@
 ### Create communication record
 
-
+![picture](create.png)
 
 ### Add an internal note 
 
