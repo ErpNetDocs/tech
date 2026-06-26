@@ -4,6 +4,15 @@
 
 Party Communications does not rely on a large standalone configuration surface. Its behavior is mainly determined by the related access model and by the integrations that create or synchronize communication records. 
 
+Before using Party Communications, make sure that: 
+
+ 
+
+- the related party exists in the system 
+
+- the business object that provides the communication context exists 
+
+- users have access rights to the related records 
  
 
 ### Source channel classification 
