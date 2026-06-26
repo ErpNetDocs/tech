@@ -28,4 +28,4 @@ This allows communication to be tracked not only by participant, but also by bus
 
 Party Communications should be used when communication history must remain traceable, structured, and available in the context of the related business process.
 
-![picture](1.png)
+![picture](party.png)
