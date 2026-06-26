@@ -1,6 +1,3 @@
----
-uid: index-product-relations
----
 # Product Relations
 
 The Product Relations framework provides a unified and extensible way to **define and manage how products are connected within the system** — whether functionally, commercially, or technically. 
