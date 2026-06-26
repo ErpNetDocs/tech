@@ -53,9 +53,9 @@ A bonus program remains in the candidate set only if all of the following condit
   - **Condition Ship To Customer** is empty or is equal to the context Ship To Customer.
   - **Condition Distribution Channel** is empty or is equal to the context Distribution Channel.
   - **Condition Price List** is empty or is equal to the context Price List.
-  - **Condition Customer Filter** is empty or the context Customer satisfies the filter.
-  - **Condition Ship To Customer Filter** is empty or the context Ship To Customer satisfies the filter.
-  - **Condition Distribution Channel Filter** is empty or the context Distribution Channel satisfies the filter.
+  - **Condition Customer Filter XML** is empty or the context Customer satisfies the filter.
+  - **Condition Ship To Customer Filter XML** is empty or the context Ship To Customer satisfies the filter.
+  - **Condition Distribution Channel Filter XML** is empty or the context Distribution Channel satisfies the filter.
   - **Condition Target Group** is empty or the context Customer belongs to the target group.
 
 If any specified condition does not match, the bonus program is excluded from the candidate set.

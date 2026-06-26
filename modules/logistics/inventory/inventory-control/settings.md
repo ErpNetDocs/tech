@@ -71,7 +71,7 @@ This applies to the **[Receive](../inventory-control/receive.md)** and **[Issue]
 
      => A **selection menu** is displayed with a dropdown list containing all returned results from the Document Routes plus the Document Type specified in the Inventory Control **[Settings](../inventory-control/settings.md)**.
   
-     ![pictures](pictures/document-routes-doc.png)
+     ![pictures](../how-to/pictures/document-routes-doc.png)
 
      The dropdown list will have a **default** value, determined as follows:
                

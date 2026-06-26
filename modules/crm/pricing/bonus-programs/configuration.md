@@ -161,7 +161,7 @@ If **Condition Product** is not specified, the configured conditions are matched
 
 For example, a bonus program configured for a specific product and customer is considered only when both the product and the customer in the sales order match the configured values.
 
-For more information about how @@name selects the final bonus program when multiple bonus programs are applicable, see [Determine bonus program](../concepts/determine-bonus-program.md).
+For more information about how @@name selects the final bonus program when multiple bonus programs are applicable, see [Determine bonus program](concepts/determine-bonus-program.md).
 
 ## Example scenarios
 

@@ -1,4 +1,4 @@
-## Concepts
+# Concepts
 
 This section explains the main concepts behind line discounts in @@name, including how the system determines the applicable discount and how discounts from multiple levels are combined.
 

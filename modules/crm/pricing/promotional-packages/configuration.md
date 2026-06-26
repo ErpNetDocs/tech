@@ -87,6 +87,10 @@ Use these conditions when the package must be available only during a specific p
 - **Valid To Date** - limits the promotional package to sales orders for which the context **Date** is on or before this date.
 - **Active** - indicates whether the promotional package is enabled for use.
 
+![Promotional Package Configuration Basic](pictures/promotional-package-definition-basic.png)
+
+![Promotional Package Configuration Advanced](pictures/promotional-package-definition-advanced.png)
+
 ## Document amount categorization
 
 The **Document Amount Type** field specifies the document amount category for the discount effect of the promotional package line.

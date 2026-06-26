@@ -1,4 +1,4 @@
-## Bonus Programs
+# Bonus Programs
 
 Bonus programs define promotional benefits applied to sales orders. A bonus program can be configured for different applicability conditions and bonus actions, such as product bonus, line discount, or cascade discount.
 

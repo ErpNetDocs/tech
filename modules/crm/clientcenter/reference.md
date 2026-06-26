@@ -4,7 +4,7 @@ This article contains reference points for specific JSON settings and error code
 
 If a setting is not explicitly added in the definition of the Client Center website, its rule will **not** be enforced.
 
-To **[apply a setting](how-to/apply-platform-settings.md)**, you need to **restart** the website using the **Instance Manager**.
+To **[apply a setting](how-to/define-a-new-cc.md#apply-platform-settings)**, you need to **restart** the website using the **Instance Manager**.
 
 ## IsNewOrderEnabled setting
 

@@ -35,7 +35,9 @@ Automatic application depends on the discount level and the current sales contex
 Level 1 discounts can be determined without additional requirements.  
 Level 2 and level 3 discounts are applied automatically only when a **Price List** is set in the sales order.
 
-The maximum level that is applied automatically is controlled by the **Auto Apply Discount Level** field in the price list definition.
+The maximum level that is applied automatically is controlled by the **Auto Apply Discount Level** field in the price list definition. This setting allows automatic application up to level 1, level 2, or level 3. 
+
+For more information about configuring this behavior, see [Price Lists](../../product-prices/configuration/price-lists.md).
 
 For example:
 
