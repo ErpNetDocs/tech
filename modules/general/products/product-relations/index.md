@@ -66,7 +66,7 @@ Its purpose is to ensure that product interactions — such as replacements, com
 
 --------------------------
 Learn more about the two major entities within product relations framework: 
-1. [Types of Product Relations](https://docs.erp.net/tech/modules/general/products/product-relations/product_relation_types.html)
+1. [Product relation Types](https://docs.erp.net/tech/modules/general/products/product-relations/product_relation_types.html)
 2. [Product Relations](https://docs.erp.net/tech/modules/general/products/product-relations/product_relations.html)
 
 If you need to access the **domain model**, click here:
