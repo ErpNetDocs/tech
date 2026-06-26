@@ -27,3 +27,7 @@
 - name: Client Center
   href: clientcenter/toc.yml
   topicHref:  clientcenter/index.md
+- name: Party Communications 
+  href: party-communications/toc.yml
+  topicHref: party-communications/index.md
+  
