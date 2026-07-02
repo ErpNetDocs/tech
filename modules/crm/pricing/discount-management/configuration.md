@@ -104,7 +104,7 @@ Their line-level distribution can be reviewed in the **Document Distributed Amou
 
 Discount amounts can be posted in two different ways, depending on the required accounting result.
 
-#### Option 1. Post the calculated discount attributes directly
+**Option 1. Post the calculated discount attributes directly**
 
 If discount categorization is not required, configure the accounting template to post the system-calculated discount amounts directly from the sales order lines.
 
@@ -122,7 +122,7 @@ This option is appropriate when the goal is to post the discount amounts themsel
 
 ![Posting Discount Amounts](pictures/posting-discount-amounts.png)
 
-#### Option 2. Post discount amounts by category through distributed amounts
+**Option 2. Post discount amounts by category through distributed amounts**
 
 If discounts must be posted by category, first configure discount categorization through **Document Amount Types** and assign them to the corresponding discount sources.
 
@@ -134,7 +134,7 @@ This option is appropriate when accounting and reporting must distinguish betwee
 
 If discounts must be posted by category, use the distributed amounts posting mechanism.
 
-#### Sales Orders
+**Sales Orders**
 
 In sales order accounting templates, configure the template line to post the required discount category directly from the sales order lines.
 
@@ -145,7 +145,7 @@ Set:
 
 ![Posting Discount Categories In Sales Order Accounting Template](pictures/posting-discount-categories-sales-order.png)
 
-#### Invoices
+**Invoices**
 
 In invoice accounting templates, discount categories can be posted from the related sales order lines.
 
