@@ -24,6 +24,8 @@ These attributes are calculated automatically from the applied discount sources 
 
 They can be added to the sales order lines layout and used directly for reporting and analytics.
 
+![Discount Amounts](discount-amounts.png)
+
 ## Recording discount amounts as categorized additional amounts
 
 If discount amounts must be categorized and recorded as additional amounts, the setup has two steps:
