@@ -83,9 +83,9 @@ For promotional packages, this configuration is relevant for promotional package
 
 For source-specific setup, see:
 
-- [Line Discounts](https://docs.erp.net/tech/modules/crm/pricing/line-discounts/index.html)
-- [Bonus programs](https://docs.erp.net/tech/modules/crm/pricing/bonus-programs/configuration.html)
-- [Promotional packages](https://docs.erp.net/tech/modules/crm/pricing/promotional-packages.html)
+- [Line Discounts](../line-discounts/index.md)
+- [Bonus programs](../bonus-programs/index.md)
+- [Promotional packages](../promotional-packages/index.md)
 
 ### Result
 
