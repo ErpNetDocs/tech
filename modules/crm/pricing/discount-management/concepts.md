@@ -16,25 +16,39 @@ These amounts are calculated on the sales order line and can be used for visuali
 
 The discount amounts are calculated as separate components of the final line discount.
 
+**Line discount levels**
+
 The three line discount levels are calculated in cascade:
 
 - **Level 1 Discount Amount** is calculated on the original line amount;
 - **Level 2 Discount Amount** is calculated on the remaining amount after level 1;
 - **Level 3 Discount Amount** is calculated on the remaining amount after levels 1 and 2.
 
-Bonus programs and promotional packages also contribute separate discount amounts.
+**Bonus programs**
 
-For bonus programs:
+Bonus programs contribute a separate discount amount.
+
+Its calculation depends on **Bonus Action**:
 
 - **Discount** calculates the bonus discount on the original line amount;
-- **Cascade discount** calculates the bonus discount on the remaining amount after the standard line discounts.
+- **Cascade discount** calculates the bonus discount on the remaining amount after the standard line discounts have been applied.
 
-For promotional packages:
+**Promotional packages**
+
+Promotional packages also contribute a separate discount amount.
+
+Its calculation depends on the package line setup:
 
 - **Add** and **Replace** calculate the promotional discount on the original line amount;
-- **MarkDown** calculates the promotional discount on the remaining amount after the standard line discounts.
+- **MarkDown** calculates the promotional discount on the remaining amount after the standard line discounts have been applied.
 
-As a result, the final discount can be analyzed as a combination of five calculated components.
+**Rounding and reconciliation**
+
+The final line discount is reconciled with the sum of its calculated components.
+
+If a rounding difference appears between the total discount amount and the sum of the five component amounts, the difference is assigned to the largest discount component.
+
+This ensures that the sum of the separate discount amounts matches the final calculated line discount.
 
 ## Categorized additional amounts
 
@@ -42,9 +56,9 @@ When discount sources are assigned to **Document Amount Types**, the calculated 
 
 In this context, document amount types act as discount categories.  
 They do not change the calculation itself.  
-Instead, they classify the calculated discount amounts for recording, reporting, analytics, and posting.
+Instead, they classify the calculated discount amounts for recording, reporting, analytics, posting, and line-level distribution.
 
-The sales order creates categorized document amounts only for the discount categories that are actually used in the document.
+The sales order creates categorized document amounts only for the distinct discount categories that are actually used in the document.
 
 These document amounts are created automatically with:
 
@@ -53,7 +67,7 @@ These document amounts are created automatically with:
 
 This means that each categorized additional amount represents the full calculated discount amount for the selected category.
 
-## Distributed amounts
+## Distributed amounts in the sales order
 
 After the categorized additional amounts are created, the system distributes them to the affected sales order lines.
 
@@ -70,10 +84,11 @@ This is useful when the discount originates from the sales order line, but the a
 
 When an invoice covers only part of the original sales order quantity, the system posts a proportional part of the related discount amount according to the invoiced quantity.
 
-## Rounding and reconciliation
+## Special cases
 
-The final line discount is reconciled with the sum of its calculated components.
+If no **Document Amount Type** is assigned to a discount source, the discount amount is still calculated in the sales order line.  
+However, it is not recorded as a categorized additional amount through this mechanism.
 
-If a rounding difference appears between the total discount amount and the sum of the five component amounts, the difference is assigned to the largest discount component.
+For bonus programs, category-based recording is relevant when **Bonus Action** is set to **Discount** or **Cascade discount**.
 
-This ensures that the sum of the separate discount amounts matches the final calculated line discount.
+For promotional packages, category-based recording is relevant for package lines that define a discount through **Standard Discount Percent Adjust**.
