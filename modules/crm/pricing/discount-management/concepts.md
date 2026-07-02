@@ -2,7 +2,7 @@
 
 ## Calculated discount amounts
 
-Discount management breaks down the final line discount into five system-calculated amounts:
+The total discount of a sales order line is broken down into five system-calculated amounts:
 
 - **Level 1 Discount Amount**
 - **Level 2 Discount Amount**
