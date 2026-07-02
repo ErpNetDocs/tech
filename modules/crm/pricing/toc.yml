@@ -12,3 +12,6 @@
 - name: Promotional packages
   href: promotional-packages/toc.yml
   topicHref: promotional-packages/index.md
+- name: Discount management
+  href: discount-management/toc.yml
+  topicHref: discount-management/index.md
