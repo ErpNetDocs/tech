@@ -1,4 +1,4 @@
-## Promotional Packages
+# Promotional Packages
 
 **Promotional packages** are used to define predefined promotional offers that can be made available and applied during the sales process. They help organize promotional logic in a structured way, so that users can work with ready-to-use promotion bundles instead of configuring each promotional benefit separately.
 
