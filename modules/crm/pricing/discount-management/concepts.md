@@ -14,19 +14,22 @@ These amounts are calculated on the sales order line and can be used for visuali
 
 ### How discount amounts are calculated
 
-The discount amounts are calculated as separate components of the final line discount.
+The discount amounts are calculated as separate components of the total line discount.
+
+Each component amount is calculated from its corresponding discount percent and the applicable sales order line base amount (`Quantity × Unit Price` or the remaining amount after standard line discounts).  
+Each component is rounded to two decimal places before the final reconciliation step.
 
 **Line discount levels**
 
-The three line discount levels are calculated in cascade:
+The three line discount levels are calculated in cascade from their corresponding line discount percentages:
 
-- **Level 1 Discount Amount** is calculated on the original line amount;
-- **Level 2 Discount Amount** is calculated on the remaining amount after level 1;
-- **Level 3 Discount Amount** is calculated on the remaining amount after levels 1 and 2.
+- **Level 1 Discount Amount** is calculated from **Level 1 Discount Percent** on the original line amount;
+- **Level 2 Discount Amount** is calculated from **Level 2 Discount Percent** on the remaining amount after level 1;
+- **Level 3 Discount Amount** is calculated from **Level 3 Discount Percent** on the remaining amount after levels 1 and 2.
 
 **Bonus programs**
 
-Bonus programs contribute a separate discount amount.
+Bonus programs contribute a separate discount amount, calculated from **Bonus Line Discount Percent**.
 
 Its calculation depends on **Bonus Action**:
 
@@ -35,20 +38,29 @@ Its calculation depends on **Bonus Action**:
 
 **Promotional packages**
 
-Promotional packages also contribute a separate discount amount.
+Promotional packages also contribute a separate discount amount, calculated from **Standard Discount Percent Adjust**.
 
 Its calculation depends on the package line setup:
 
 - **Add** and **Replace** calculate the promotional discount on the original line amount;
 - **MarkDown** calculates the promotional discount on the remaining amount after the standard line discounts have been applied.
 
+Bonus program and promotional package amounts are calculated independently from each other.  
+Their calculation base can be either the original line amount or the amount remaining after the standard line discounts.
+
+If a discount source is not applied, its corresponding component amount is `0`.
+
 **Rounding and reconciliation**
 
-The final line discount is reconciled with the sum of its calculated components.
+The system first determines the final standard line discount percent for the sales order line.  
+It then calculates the total line discount amount and compares it with the sum of the five calculated discount components.
 
-If a rounding difference appears between the total discount amount and the sum of the five component amounts, the difference is assigned to the largest discount component.
+If a rounding difference appears, the difference is assigned to the largest discount component.
 
-This ensures that the sum of the separate discount amounts matches the final calculated line discount.
+This ensures that the sum of the separate discount amounts matches the total calculated line discount.
+
+The calculated component amounts are returned in the sales order document currency.  
+For regular sales lines they are typically negative, while for return lines they can be positive.
 
 ## Categorized additional amounts
 
