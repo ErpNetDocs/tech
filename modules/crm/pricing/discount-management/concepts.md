@@ -29,7 +29,7 @@ The three line discount levels are calculated in cascade from their correspondin
 
 **Bonus programs**
 
-Bonus programs contribute a separate discount amount, calculated from **Bonus Line Discount Percent**.
+Bonus programs contribute a separate discount amount, calculated from **Bonus Line Discount Percent** of the applied bonus program.
 
 Its calculation depends on **Bonus Action**:
 
@@ -38,7 +38,7 @@ Its calculation depends on **Bonus Action**:
 
 **Promotional packages**
 
-Promotional packages also contribute a separate discount amount, calculated from **Standard Discount Percent Adjust**.
+Promotional packages also contribute a separate discount amount, calculated from **Standard Discount Percent Adjust** of the applied promotional package.
 
 Its calculation depends on the package line setup:
 
