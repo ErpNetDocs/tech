@@ -24,7 +24,7 @@ These attributes are calculated automatically from the applied discount sources 
 
 They can be added to the sales order lines layout and used directly for reporting and analytics.
 
-![Discount Amounts](discount-amounts.png)
+![Discount Amounts](pictures/discount-amounts.png)
 
 ## Recording discount amounts as categorized additional amounts
 
@@ -49,7 +49,7 @@ For each discount source type, the document amount type must have the matching *
 Multiple document amount types can be defined within the same discount source type.  
 For example, several promotional package categories can be used when different package discounts must be tracked, reported, or posted separately.
 
-![Discount document amount types](discount-document-amount-types.png)
+![Discount document amount types](pictures/discount-document-amount-types.png)
 
 ### Step 2. Assign document amount types to discount sources
 
@@ -65,7 +65,7 @@ In each source, the field lists only document amount types with the matching **D
 
 Each discount definition can be assigned to one document amount type of the corresponding distribution type.
 
-![Assign document amount types](assign-document-amount-types.png)
+![Assign document amount types](pictures/assign-document-amount-types.png)
 
 > [!NOTE]
 > If no **Document Amount Type** is assigned, the discount source still applies normally, but its discount amount is not recorded and categorized through this mechanism.
@@ -98,7 +98,7 @@ They appear in the **Additional Document Amounts** panel with:
 
 Their line-level distribution can be reviewed in the **Document Distributed Amounts** panel.
 
-![Distributed Discount Amounts](distributed-discount-amounts.png)
+![Distributed Discount Amounts](pictures/distributed-discount-amounts.png)
 
 ## Posting discounts
 
@@ -120,7 +120,7 @@ In the accounting template line, set:
 
 This option is appropriate when the goal is to post the discount amounts themselves, without grouping them by discount category.
 
-![Posting Discount Amounts](posting-discount-amounts.png)
+![Posting Discount Amounts](pictures/posting-discount-amounts.png)
 
 #### Option 2. Post discount amounts by category through distributed amounts
 
@@ -143,7 +143,7 @@ Set:
 - **Amount Source Name** = **Sales Orders - Lines**
 - **Amount Column Name** = **Document Amount: _[discount category]_**
 
-![Posting Discount Categories In Sales Order Accounting Template](posting-discount-categories-sales-order.png)
+![Posting Discount Categories In Sales Order Accounting Template](pictures/posting-discount-categories-sales-order.png)
 
 #### Invoices
 
@@ -158,5 +158,5 @@ This setup allows the invoice posting to use the discount category from the rela
 
 If the invoice covers only part of the original sales order quantity, the system posts a proportional part of the related discount amount according to the invoiced quantity.
 
-![Posting Discount Categories In Invoice Accounting Template](posting-discount-categories-invoice.png)
+![Posting Discount Categories In Invoice Accounting Template](pictures/posting-discount-categories-invoice.png)
 
