@@ -74,7 +74,7 @@ The **Bonus Program Amount** is calculated by applying the **Bonus Line Discount
 
 Its behavior depends on **Bonus Action**:
 
-- **Discount** applies the bonus percent to the original line amount and does not depend on standard line discount levels on the line;
+- **Discount** applies the bonus percent to the original line amount;
 - **Cascade discount** applies the bonus percent to the amount remaining after the standard line discount levels that are applied on the line, if any.
   
 ### Example
