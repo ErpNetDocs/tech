@@ -177,9 +177,9 @@ For setup details, see [Configuration](configuration.md).
 
 After the categorized additional amounts are created, the system distributes them to the affected sales order lines.
 
-This distribution is based on the calculated discount amount of the applied source on each line.  
+This distribution is based on the calculated discount amount contributed by the applied source on each line.
 
 As a result, the **Document Distributed Amounts** panel shows which part of each discount category belongs to each sales order line.
 
-For more information about how additional amounts are calculated and distributed through document lines, see [Additional amounts determination and recording](../../../../advanced/document-amounts/determination-and-recording.md) and [Amounts distribution](../../../../advanced/document-amounts/amounts-distribution/index.md).
+For more information about the general mechanism for calculating and distributing additional amounts through document lines, see [Additional amounts determination and recording](../../../../advanced/document-amounts/determination-and-recording.md) and [Amounts distribution](../../../../advanced/document-amounts/amounts-distribution/index.md).
 
