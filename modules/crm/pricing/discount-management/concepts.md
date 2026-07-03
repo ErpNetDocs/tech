@@ -162,49 +162,23 @@ They are typically negative for regular sales lines and positive for lines with 
 
 ## Categorized additional amounts
 
-When discount sources are assigned to **Document Amount Types**, the calculated discount amounts can also be recorded as categorized additional amounts.
+A calculated discount amount becomes part of discount categorization only when its discount source is assigned to a **Document Amount Type**.
 
-In this model, document amount types act as discount categories.
+In this model:
 
-They do not change the discount calculation itself.  
-Instead, they classify the calculated discount amounts for:
+- the **Document Amount Type** defines the discount category;
+- the calculated discount amount provides the category value.
 
-- recording;
-- reporting and analytics;
-- posting;
-- line-level distribution.
+This makes the discount visible not only as a line-level calculation result, but also as a categorized amount that can later be distributed and posted.
 
-The sales order creates one additional document amount for each distinct **Document Amount Type** that is actually used by the applied discount sources in the document.
-
-These amounts are created automatically with:
-
-- **Input Amount** = `null`
-- **Input Percent** = `100%`
-
-This means that each categorized additional amount represents the full calculated discount amount for its category.
+For setup details, see [Configuration](configuration.md).
 
 ## Distributed amounts in the sales order
 
 After the categorized additional amounts are created, the system distributes them to the affected sales order lines.
 
 This distribution is based on the calculated discount amount of the applied source on each line.  
-It is not based on a manually entered document amount.
 
 As a result, the **Document Distributed Amounts** panel shows which part of each discount category belongs to each sales order line.
 
-## Posting discount categories across documents
-
-Discount categories can be posted directly from sales orders or through invoice templates that reference the related sales order lines.
-
-This is useful when the discount originates from the sales order line, but the accounting entry must use the analytical context of the invoice document and invoice lines.
-
-If an invoice covers only part of the original sales order quantity, the system posts a proportional part of the related discount amount according to the invoiced quantity.
-
-## Special cases
-
-If no **Document Amount Type** is assigned to a discount source, the discount amount is still calculated in the sales order line.  
-However, it is not recorded as a categorized additional amount through this mechanism.
-
-For bonus programs, category-based recording is relevant when **Bonus Action** is set to **Discount** or **Cascade discount**.
-
-For promotional packages, category-based recording is relevant for package lines that define a discount through **Standard Discount Percent Adjust**.
+For more information about how additional amounts are calculated and distributed through document lines, see [Additional amounts determination and recording](../../../../advanced/document-amounts/determination-and-recording.md) and [Amounts distribution](../../../../advanced/document-amounts/amounts-distribution/index.md).
