@@ -25,7 +25,7 @@ Each component is calculated by applying the corresponding discount percent to a
 The base amount depends on the discount source:
 
 - some discounts are calculated on the original line amount;
-- some discounts are calculated on the remaining amount after the three standard line discount levels have been applied.
+- some discounts are calculated on the remaining amount after the standard line discount levels that are applied on the line, if any.
 
 The original line amount is:
 
@@ -74,8 +74,8 @@ The **Bonus Program Amount** is calculated by applying the **Bonus Line Discount
 
 Its behavior depends on **Bonus Action**:
 
-- **Discount** applies the bonus percent to the original line amount;
-- **Cascade discount** applies the bonus percent to the remaining amount after level 1, level 2, and level 3 discounts.
+- **Discount** applies the bonus percent to the original line amount and does not depend on standard line discount levels on the line;
+- **Cascade discount** applies the bonus percent to the amount remaining after the standard line discount levels that are applied on the line, if any.
   
 ### Example
 
@@ -114,7 +114,7 @@ Its behavior depends on the package line setup:
 
 - **Add** applies the promotional percent to the original line amount;
 - **Replace** applies the promotional percent to the original line amount;
-- **MarkDown** applies the promotional percent to the remaining amount after level 1, level 2, and level 3 discounts.
+- **MarkDown** applies the promotional percent to the amount remaining after the standard line discount levels that are applied on the line, if any.
 
 ### Example
 
@@ -182,3 +182,4 @@ This distribution is based on the calculated discount amount of the applied sour
 As a result, the **Document Distributed Amounts** panel shows which part of each discount category belongs to each sales order line.
 
 For more information about how additional amounts are calculated and distributed through document lines, see [Additional amounts determination and recording](../../../../advanced/document-amounts/determination-and-recording.md) and [Amounts distribution](../../../../advanced/document-amounts/amounts-distribution/index.md).
+
