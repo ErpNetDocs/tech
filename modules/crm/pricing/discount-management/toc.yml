@@ -4,4 +4,6 @@
 - name: Configuration
   href: configuration.md
   topicHref: configuration.md
-  
+- name: Concepts
+  href: concepts.md
+  topicHref: concepts.md
