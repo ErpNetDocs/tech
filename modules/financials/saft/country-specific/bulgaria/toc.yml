@@ -3,5 +3,7 @@
 - name: SAF-T профили
   href: saft-profiles/toc.yml
   topicHref: saft-profiles/index.md
+- name: Подготовка и експорт
+  href: saft-export.md
 - name: Определяне на CustomerId и SupplierId
   href: CustomerId.md
