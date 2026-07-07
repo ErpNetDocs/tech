@@ -6,3 +6,15 @@
   href: saft-accounts-maping.md
 - name: Съответствие на типове продукти
   href: saft-product-type-mapping.md
+- name: Допълнителни суми
+  href: saft-additional-amount.md
+- name: Съответствие на счетоводни операции
+  href: saft-tax-codes-by-accounts-mapping.md
+- name: Съответствие на типове сделки
+  href: saft-tax-codes-by-deal-type-mapping.md
+- name: Платежни профили
+  href: saft-payment-profile.md
+- name: Начини на плащане
+  href: saft-payment-type.md
+- name: Мерни единици
+  href: saft-masurement-units.md
