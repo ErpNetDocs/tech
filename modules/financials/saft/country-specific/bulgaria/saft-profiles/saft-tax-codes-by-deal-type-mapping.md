@@ -11,7 +11,7 @@
 
 
 
-![image-20260701154807912](C:\Users\i.ivanov\AppData\Roaming\Typora\typora-user-images\image-20260701154807912.png)
+![Съответствие на типове сделки със SAF-T данъчни кодове](pictures/tax-codes-by-deal-type.png)
 
 
 

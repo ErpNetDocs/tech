@@ -9,6 +9,6 @@
   
 
 
-![image-20260707114748143](C:\Users\i.ivanov\AppData\Roaming\Typora\typora-user-images\image-20260707114748143.png)
+![Съответствие на начините на плащане със SAF-T начини на плащане](pictures/payment-type.png)
 
 

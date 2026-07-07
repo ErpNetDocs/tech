@@ -9,7 +9,7 @@
   
 
 
-![image-20260707114245340](C:\Users\i.ivanov\AppData\Roaming\Typora\typora-user-images\image-20260707114245340.png)
+![Съответствие на мерните единици със SAF-T мерни единици](pictures/measurement-units.png)
 
 
 
