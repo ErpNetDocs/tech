@@ -15,3 +15,5 @@ A new "Update records" function is now available in supported navigators, allowi
 The function compares the prepared rows with existing records using the entity's **primary key**. Matching records are updated with the new values, while rows with no matching record are created as new records.
 
 This is especially useful when copying or importing predefined data into a navigator, enabling you to apply mass changes quickly and consistently without editing records one by one.
+
+[!picture](update-success.png)
