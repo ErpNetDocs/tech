@@ -16,4 +16,4 @@ The function compares the prepared rows with existing records using the entity's
 
 This is especially useful when copying or importing predefined data into a navigator, enabling you to apply mass changes quickly and consistently without editing records one by one.
 
-[!picture](update-success.png)
+![picture](./pictures/update-success.png)
