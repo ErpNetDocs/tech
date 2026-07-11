@@ -6,6 +6,9 @@
 - name: Configuration
   href: configuration/toc.yml
   topicHref: configuration/index.md
+- name: New WMS Worker
+  href: new-wms-worker/toc.yml
+  topicHref: new-wms-worker/index.md
 - name: Concepts
   href: concepts/toc.yml
   topicHref: concepts/index.md
