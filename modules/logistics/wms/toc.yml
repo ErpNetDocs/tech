@@ -25,7 +25,7 @@
 - name: Composite products
   href: composite-products/toc.yml
   topicHref: composite-products/index.md
-- name: WMS Worker
+- name: WMS Worker Classic
   href: wms-worker/toc.yml
   topicHref: wms-worker/index.md
 - name: Planned Reconcile
