@@ -1,8 +1,5 @@
-- name: Overview
-  href: index.md
-
 - name: Getting started
-  href: getting-started.md
+  href: index.md
 
 - name: Configuration
   href: configuration.md
