@@ -53,7 +53,7 @@ The system creates one or more Warehouse Orders with:
 - `TaskType = Count`
 - a document type determined by the [warehouse policy](../../how-to/setup-warehouse/warehouse-policies.md) `CountingOrderDocumentType`
 - `Warehouse = Warehouse Reconciliation.Warehouse`
-- `Parent = Warehouse Reconciliation`
+- `Parent = null`
 - `Prime Cause Document = Warehouse Reconciliation`
 - `DocumentDate = today`
 - `State = Planned`
