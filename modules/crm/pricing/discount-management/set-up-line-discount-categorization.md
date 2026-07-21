@@ -15,7 +15,7 @@ You will:
   
 2. Enter the following:
 
-- **Amount Type Name** - a recognizable name, such as `General discount`.
+- **Amount Type Name** - a recognizable name, such as `General Discount`.
 - **Distribute By** - select **Line Discount**
 - **Percent Input Allowed** - set to False
 - **Add To Customer** - set to False
