@@ -45,7 +45,7 @@ The document amount type defines the category under which the calculated discoun
 
 1. Create a new **Sales Order**.
 
-2. Select the **Customer** and **Document Currency**.
+2. Select a **Customer** and **Document Currency**.
 
 3. Add a line with the product specified in the line discount definition.
 
