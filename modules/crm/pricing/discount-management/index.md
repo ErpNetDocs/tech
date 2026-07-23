@@ -22,4 +22,4 @@ For a basic setup example, see [Set up line discount categorization](set-up-line
 
 For the available setup options, see [Configuration](configuration.md).
 
-For information about calculation, rounding, categorization, and distribution, see [Concepts](concepts.md).
+For information about calculation, categorization, and distribution, see [Concepts](concepts.md).
