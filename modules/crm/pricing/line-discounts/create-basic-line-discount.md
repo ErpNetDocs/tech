@@ -39,4 +39,3 @@ The **Level 1 Discount Percent** field should contain the discount percent from 
 The **Line Standard Discount Percent** field should contain the calculated discount applied to the sales order line.
 
 ![Sales Order Set Line Discount](pictures/sales-order-line-discount.png)
-
