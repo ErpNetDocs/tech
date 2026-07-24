@@ -1,7 +1,5 @@
 - name: Overview
   href: index.md
-- name: SAF-T профил
-  href: saft-profiles.md
 - name: Съответствие на счетоводни сметки
   href: saft-accounts-maping.md
 - name: Съответствие на типове продукти
