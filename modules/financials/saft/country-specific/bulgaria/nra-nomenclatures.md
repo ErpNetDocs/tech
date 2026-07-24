@@ -13,7 +13,7 @@ https://operator.net/community/open-exchange-data-importer
 
 [Open Exchange Data Importer — Community](https://operator.net/community/open-exchange-data-importer)
 
-![image-20260724161354166](C:\Users\i.ivanov\AppData\Roaming\Typora\typora-user-images\image-20260724161354166.png)
+![SAF-T nomenclatures in Marketplace](pictures/nra-marketplace.png)
 
 
 
