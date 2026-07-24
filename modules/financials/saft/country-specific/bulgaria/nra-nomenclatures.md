@@ -13,7 +13,7 @@ https://operator.net/community/open-exchange-data-importer
 
 [Open Exchange Data Importer — Community](https://operator.net/community/open-exchange-data-importer)
 
-![SAF-T nomenclatures in Marketplace](pictures/nra-marketplace.png)
+![Импорт на SAF-T номенклатури с Open Exchange Importer](pictures/open-exchange-importer.png)
 
 
 
