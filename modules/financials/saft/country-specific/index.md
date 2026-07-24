@@ -1,3 +1,3 @@
 # Country-specific
 
-[!list folder="." depth=0 style="bullet" limit=100]
+[!list folder="." depth=1 style="bullet" limit=100]
