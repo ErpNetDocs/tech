@@ -1,17 +1,17 @@
 # SAF-T
 
-**SAF-T** (Standard Audit File for Tax) е стандартен одитен файл за данъчни цели, използван за подаване на счетоводна и фактурна информация към националните данъчни администрации.
+**SAF-T** (Standard Audit File for Tax) is a standardized electronic file used to submit accounting and invoicing information to national tax authorities.
 
-Подмодулът **SAF-T** в @@name позволява подготовка и експорт на SAF-T файлове в съответствие с изискванията на съответната държава. Системата осигурява връзка (мапинг) между вътрешните номенклатури в ERP.net и официалните номенклатури, предоставени от данъчната администрация.
+The **SAF-T submodule in @@name** enables the preparation and export of SAF-T files in accordance with the requirements of each country. It provides mappings between the internal nomenclatures in @@name and the official nomenclatures published by the relevant tax authority.
 
-## Структура
+## Structure
 
-Основните стъпки за работа с SAF-T са:
+The main steps in working with SAF-T are:
 
-1. **Зареждане на номенклатури** – инсталиране на официалните SAF-T номенклатури от Marketplace.
-2. **Дефиниране на SAF-T профил** – настройка на мапинги между ERP.net и SAF-T номенклатури за една или повече собствени фирми.
-3. **Експорт на SAF-T файл** – генериране на файла за подаване към данъчната администрация.
+1. **Load nomenclatures** – install the official SAF-T nomenclatures.
+2. **Define a SAF-T profile** – configure mappings between the nomenclatures in @@name and the SAF-T nomenclatures for one or more enterprise companies.
+3. **Export a SAF-T file** – generate the file to be submitted to the tax authority.
 
-Научете повече в следните статии:
+Country-specific requirements and procedures are documented separately:
 
-- **[Country specific](country-specific/index.md)**
+- **[Country-specific documentation](country-specific/index.md)**
