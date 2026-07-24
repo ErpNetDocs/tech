@@ -1,22 +1,23 @@
 # SAF-T номенклатури на НАП
 
-За да работят експортите на SAF-T e необходимо да се да се напави първоначално зареждане на предоставените номенклатури от НАП. Част от тях се намират в ERP.net Marketplace
+За да работят експортите на SAF-T e необходимо да се да се напави първоначално зареждане на предоставените номенклатури от НАП. 
 
-[https://marketplace.erp.net/](https://marketplace.erp.net/)
+1. Основната част от тях могат да се заредят с помощта на приложението:
 
-![SAF-T номенклатури в Marketplace](pictures/nra-marketplace.png)
+https://operator.net/community/open-exchange-data-importer
+
+Трябва да се влезе с оператора в текущата инстанция и да се стартира приложението.
+На първа позиция има системен файл готов за импорт.
 
 
-Необходимо е да се инсталират следните:
 
-1. SAF-T Chart of Account 
-2. SAF-T Payment Mechanisms
-3. SAF-T Tax Codes
-4. SAF-T Units of Measure
+[Open Exchange Data Importer — Community](https://operator.net/community/open-exchange-data-importer)
 
-**Трябва да се започне с SAF-T Chart of Account!**
+![image-20260724161354166](C:\Users\i.ivanov\AppData\Roaming\Typora\typora-user-images\image-20260724161354166.png)
 
-Освен това трябва да се заредят Хармонизираните кодове на ЕС.
+
+
+2. Освен това трябва да се заредят Хармонизираните кодове на ЕС.
 
 Това се прави от Регулаторни / Интрастат / Хармонизирани кодове / Функции / Генериране на кодове на стоки
 
