@@ -1,7 +1,7 @@
 - name: Overview
   href: index.md
 - name: Съответствие на счетоводни сметки
-  href: saft-accounts-maping.md
+  href: saft-accounts-mapping.md
 - name: Съответствие на типове продукти
   href: saft-product-type-mapping.md
 - name: Допълнителни суми
@@ -15,4 +15,4 @@
 - name: Начини на плащане
   href: saft-payment-type.md
 - name: Мерни единици
-  href: saft-masurement-units.md
+  href: saft-measurement-units.md
