@@ -7,6 +7,7 @@ To learn more about the apps in a group, use the following list:
 - **[My](https://docs.erp.net/tech/modules/my/index.html)**
 - **[CRM](https://docs.erp.net/tech/modules/crm/index.html)**
 - **[Finance](https://docs.erp.net/tech/modules/financials/index.html)**
+- **[Regulatory](https://docs.erp.net/tech/modules/regulatory/index.html)**
 - **[Foundation](https://docs.erp.net/tech/modules/general/index.html)**
 - **[Logistics](https://docs.erp.net/tech/modules/logistics/index.html)**
 - **[Production](https://docs.erp.net/tech/modules/production/index.html)**

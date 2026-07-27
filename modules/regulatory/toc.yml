@@ -1,0 +1,14 @@
+- name: Overview
+  href: index.md
+- name: Excise
+  href: excise/toc.yml
+  topicHref: excise/index.md
+- name: Intrastat
+  href: intrastat/toc.yml
+  topicHref: intrastat/index.md
+- name: SAF-T
+  href: saft/toc.yml
+  topicHref: saft/index.md
+- name: VAT
+  href: VAT/toc.yml
+  topicHref: VAT/index.md

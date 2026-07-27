@@ -54,7 +54,7 @@ The **[Commodity Codes entity](https://docs.erp.net/model/entities/Finance.Excis
 
 > [!NOTE]
 >
-> Commodity codes define the statistical category under which each product movement is reported and are also used in **[Excise reporting](https://docs.erp.net/tech/modules/financials/excise/definitions/other-excise-definitions.html)** within @@name.
+> Commodity codes define the statistical category under which each product movement is reported and are also used in **[Excise reporting](https://docs.erp.net/tech/modules/regulatory/excise/definitions/other-excise-definitions.html)** within @@name.
 
 ![pictures](pictures/codes.png)
 

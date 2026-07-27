@@ -9,18 +9,6 @@
 - name: Cost
   href: cost-accounting/toc.yml
   topicHref: cost-accounting/index.md
-- name: Excise
-  href: excise/toc.yml
-  topicHref: excise/index.md
-- name: Intrastat
-  href: intrastat/toc.yml
-  topicHref: intrastat/index.md
-- name: SAF-T
-  href: saft/toc.yml
-  topicHref: saft/index.md
 - name: Payments
   href: payments/toc.yml
   topicHref: payments/index.md
-- name: VAT
-  href: VAT/toc.yml
-  topicHref: VAT/index.md

@@ -90,7 +90,7 @@ When ready, you need to export it as an **XML** file and send it to the respecti
 > [!NOTE]
 > Customs or other taxing authorities may need **direct access** to your ERP.net system in order to observe your tax warehouse. In the case of Bulgarian clients, for example, there's a **[separate environment](https://testdb-model.my.erp.net/legal)** offering the ability for custom agencies to generate reports and see which products are available in a tax warehouse for a specific period of time.
 >
-> ![image-20240627135948467](C:\Users\i.ivanov.ERPBG\AppData\Roaming\Typora\typora-user-images\image-20240627135948467.png)
+> ![LegalBG reporting environment](pictures/legalBGnew.png)
 
 
 

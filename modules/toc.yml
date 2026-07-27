@@ -10,6 +10,9 @@
 - name: Finance
   href: financials/toc.yml
   topicHref: financials/index.md  
+- name: Regulatory
+  href: regulatory/toc.yml
+  topicHref: regulatory/index.md
 - name: Foundation
   href: general/toc.yml
   topicHref: general/index.md  
