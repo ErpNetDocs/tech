@@ -4,16 +4,12 @@
 
 1. Основната част от тях могат да се заредят с помощта на приложението:
 
-https://operator.net/community/open-exchange-data-importer
+[SAF-T INITIAL SETUP BUNDLE — Community](https://operator.net/community/saf-t-initial-setup-bundle)
 
 Трябва да се влезе с оператора в текущата инстанция и да се стартира приложението.
-На първа позиция има системен файл готов за импорт.
+От секцията Импорт на номенклатури на НАП за SAF-T се импортират.
 
-
-
-[Open Exchange Data Importer — Community](https://operator.net/community/open-exchange-data-importer)
-
-![Импорт на SAF-T номенклатури с Open Exchange Importer](pictures/open-exchange-importer.png)
+![SAF-T Initial Setup Bundle](pictures/saft-initial-setup-bundle.png)
 
 
 
