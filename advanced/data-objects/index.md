@@ -13,6 +13,7 @@ The following data and operations can be associated with a data object:
 ### See more
 
 - **[Extensible Data Objects](https://docs.erp.net/tech/advanced/data-objects/edo.html)**
+- **[Additional Data JSON](https://docs.erp.net/tech/advanced/data-objects/additional-data-json.html)**
 - **[Track Changes](https://docs.erp.net/tech/advanced/data-objects/track-changes.html)**
 - **[Default tracking levels](https://docs.erp.net/tech/advanced/data-objects/default-tracking-levels.html)**
 - **[Display format](https://docs.erp.net/tech/advanced/data-objects/display-format.html)**

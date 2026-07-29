@@ -2,6 +2,8 @@
   href: index.md
 - name: EDO
   href: edo.md
+- name: Additional Data JSON
+  href: additional-data-json.md
 - name: Track Changes
   href: track-changes.md
 - name: Default tracking levels
