@@ -2,13 +2,13 @@
 
 `AdditionalDataJson` is an optional attribute available on aggregate root entities. It is stored in the entity's [Extensible Data Object (EDO)](edo.md), rather than in the entity's primary table.
 
-It is an independent extension point for per-record integration data. Use it when an application needs to retain unmodeled state with an @@name record, whether the record originates in an external system, in @@name itself, or in an internal automation.
+It is an independent extension point for per-record integration data. Use it when an application needs to persist unmodeled state with an @@name record, whether the record originates in an external system, in @@name itself, or in an internal automation.
 
 The field is similar to a small, per-record NoSQL document slot: an integration can keep arbitrary keys and nested values without changing the standard relational data model. For example, it can hold synchronization metadata or source-specific flags for a product, customer, or document.
 
 ## Limitations and appropriate use
 
-This field is not a document database feature. @@name stores its value as an opaque string:
+@@name stores `AdditionalDataJson` as a plain string. It does not parse, validate, query, index, or partially update its contents:
 
 - The name does not guarantee valid JSON or even a JSON object. Clients must not trust the format without parsing and validating it.
 - @@name does not interpret the JSON structure and does not provide schema, data types, JSON-path queries, filtering, sorting, grouping, indexing, or partial JSON updates.
