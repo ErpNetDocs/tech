@@ -36,7 +36,6 @@ In addition to the base price definition fields, a product price record can incl
 Use these conditions when the price depends on customer-related information in the sales document.
 
 - **Customer** – limits the price to sales documents for a specific customer.
-- **Customer Type** – limits the price to sales documents for customers of a specific type.
 - **Ship To Customer** – limits the price to sales documents with a specific ship-to customer.
 - **Target Group** – limits the price to sales documents for customers in a specific target group.
 
