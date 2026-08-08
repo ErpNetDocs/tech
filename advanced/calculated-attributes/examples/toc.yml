@@ -52,3 +52,5 @@
   href: count-outstanding-invoices-based-on-sales-order-to-party.md
 - name: Check whether the current user is in the Manager group
   href: check-whether-the-current-user-is-in-the-manager-group.md
+- name: Get the total amount of the selected offer lines
+  href: get-the-total-amount-of-the-selected-offer-lines.md
