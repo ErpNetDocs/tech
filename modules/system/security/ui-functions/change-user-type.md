@@ -1,4 +1,4 @@
-# Change type
+# Change User type
 
 The **Change type** function allows one click change of the type of the user. Use this function when a user’s status or relationship with the organization changes—for example, when an external user becomes an internal employee.
 
