@@ -4,4 +4,7 @@
 
 Here, you can learn more about:
 
-- **[Confirm email](confirm-email.md)**
+- [Confirm email](confirm-email.md)
+- [Send invitation mail](send-invitation-mail.md)
+- [Change user type](change-user-type.md)
+  
