@@ -8,13 +8,16 @@ Changing the user type may affect the user’s profile settings. It does **not**
 
 1. Open the users's profile - its current type is indicated just below its Title
 2. Open the menu of button "Actions" 
-![picture](user.png)
+
+![picture](pictures/user.png)
 
 3. Locate and press UI "Change type"
-   - choose the type form the drop-down list in the pop-up window and press OK
-![picture](changetype.png)
+- choose the desired type in the drop-down list of the pop-up window and press OK
+
+![picture](pictures/changetype.png)
  
 The form reloads and the type of the user is now changed.
 
 4. Assign a Role to the user, crucial for Internal users.
-![picture](changed.png)
+
+![picture](pictures/changed.png)
