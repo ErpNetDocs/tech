@@ -32,3 +32,7 @@ OUTPUT:
 > [!NOTE]
 > 
 > The repository of the attribute is *Crm.Sales.SalesOrderLines*
+
+> [!NOTE]
+OR is not supported by SELECT but used by the FILTER operator.
+More information: https://docs.erp.net/tech/advanced/calculated-attributes/operators/select.html 
