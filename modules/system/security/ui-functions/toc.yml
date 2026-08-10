@@ -1,5 +1,9 @@
 - name: Overview
   href: index.md
-- name: Confirm Email
+- name: Confirm email
   href: confirm-email.md
+- name: Send invitation mail
+  href: send-invitation-mail.md
+- name: Change user type
+  href: change-user-type.md
   
