@@ -45,8 +45,9 @@ It is time to **send the invitation**.
 **6.** On the header line, click **“Run”**.
 
 **7.** Choose option:  "Send invitation mail"
-   ```  
+
 ![Inviteuser](pictures/invite.png)
+
 The system will ask for confirmation. Confirm by clicking OK. This sends an email to the user. The e-mail letter contains a link, leading to the registration form of the instance, where the new user should put his passowrd.
 
 ## User's steps
@@ -54,19 +55,19 @@ The system will ask for confirmation. Confirm by clicking OK. This sends an emai
 **8.** The user will receive an email **from**: notification@erpnet.info,  **Subject:**   Invitation to join {InstanceName.my.erp.net}
 ![Email](pictures/mailuser.png)
    
-**9.** The user must click the **Create Account** link and will be transferred to a form.  
-In the form, **email** is elready filled, and confirmed. <br>
-Enter user's name.<br>
-Create an **8-character password** and **confirm**.
+**9.** The user must click the **Create Account** link and will be transferred to a form:
+
+- **email** is elready filled and confirmed. <br>
+- еnter user's name.<br>
+- цreate an **8-character password** and **confirm**.
 
 ![Formtofill](pictures/formfill.png)
 
-
 **10.** The user can now log into the instance using the given login and the newly set password.
 
-**11.** The **User Type** will automatically change to "Internal" <br><br>
+**11.** The **User Type** will automatically change to "Internal".
 
-**12.** The User will aitomatically be assigned to System group "<Everybody>"
+**12.** The User will aitomatically be assigned to System group "Everybody".
 
 The final result looks like this:
 
