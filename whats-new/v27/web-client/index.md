@@ -17,3 +17,13 @@ The function compares the prepared rows with existing records using the entity's
 This is especially useful when copying or importing predefined data into a navigator, enabling you to apply mass changes quickly and consistently without editing records one by one.
 
 ![picture](./pictures/update-success.png)
+
+### 2. Search box for all list fields
+
+Finding values in dropdown lists is now easier. Whenever you open a dropdown list using the **chevron**, a search box is now immediately available and ready for typing. Whether you need to find a Customer, a Responsible person, or a Product, just insert some key symbols into the Search box and the results will be filtered. This improvement is available consistently throughout the Web Client, helping you find and select values faster—regardless of the list size.
+
+[picture](./pictures/searchbox.png)
+
+
+
+
