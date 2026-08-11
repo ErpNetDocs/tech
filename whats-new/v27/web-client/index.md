@@ -22,7 +22,7 @@ This is especially useful when copying or importing predefined data into a navig
 
 Finding values in dropdown lists is now easier. Whenever you open a dropdown list using the **chevron**, a search box is now immediately available and ready for typing. Whether you need to find a Customer, a Responsible person, or a Product, just insert some key symbols into the Search box and the results will be filtered. This improvement is available consistently throughout the Web Client, helping you find and select values faster—regardless of the list size.
 
-[picture](./pictures/searchbox.png)
+![picture](./pictures/searchbox.png)
 
 
 
