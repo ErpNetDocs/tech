@@ -1,8 +1,8 @@
 # Desktop Client
 
-**Version 27**
+**Versions 26.3 and 27**
 
-## Notable features
+## Breaking Change
 
 ⚠️ **Desktop reports: Maximum row limit reduced to 200,000**
 
@@ -12,4 +12,5 @@ If a higher value is entered in Filter field "Max row count", it is automaticall
 
 <img width="325" height="96" alt="image" src="https://github.com/user-attachments/assets/57d710b2-9c62-4059-945e-9dae844ea4b3" />
 
+## Notable features
 ## Other features
