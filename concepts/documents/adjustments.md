@@ -50,6 +50,10 @@ Also if the adjustment document has no record corresponding to a record in the m
 - A value of a key field cannot be changed;
 - A row cannot be deleted.
 
+> [!Note]
+> Adjustment documents, that qualify as Corrective (as if "Released" Adjustments) cannot be voided!<br>
+> Adjustment documents of state "New" can be voided.
+
 ## Special types of adjustment documents
 
 There are some special types of adjustment documents in @@name, which are prepared by the system and the user does not have to fill the scalar values in them.

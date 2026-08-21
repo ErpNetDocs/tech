@@ -35,9 +35,16 @@ New Order consists of one primary tab - **Order**, but it can be configured to i
 
    ![pictures](pictures/channel_customer_tab.png)
 
-4. A tab listing products linked to the **Client Center's distribution channel** - It can be optionally enabled with a **[JSON setting](../reference.md#sitechannel-setting)** and always carries the name of that channel.
+4. A tab listing products linked to the **Client Center's distribution channel** - The Client Center uses a distribution channel called the **site channel**.
 
-   Like in all other tabs, you can specify product quantities in the **Quantity** field to add them to the order.
+Every sales order created in the Client Center is assigned to this channel. This identifies the order as coming from the Client Center.
+
+Changes made in the **New Order** module are automatically saved to an order in status **New**. When the module is reopened, the system uses the customer and the site channel to find and restore the latest unfinished order. After the order is placed, it is no longer loaded as the active new order.
+
+
+Products linked to the site channel are shown in a separate tab. The tab has the name of the channel. To add a product to the order, enter a quantity. The product is then added to the **Order** tab. **If the channel has no linked products, the tab is not shown.**
+
+The site channel is specified in the [**SiteChannel setting**](../reference.html#sitechannel-setting). If this setting is missing, the Client Center uses the distribution channel with code `CC`and name **"Client Center"**. 
 
    ![pictures](pictures/channel_CC_tab.png)
 

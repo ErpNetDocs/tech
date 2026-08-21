@@ -1,7 +1,7 @@
-- name: 'Version 26.2'
+- name: Version 26.2
   href: v26-2/toc.yml
   topicHref: v26-2/index.md
 
-- name: 'Version 27'
+- name: Versions 26.3 and 27
   href: v27/toc.yml
   topicHref: v27/index.md
