@@ -223,4 +223,17 @@ The embedded Timeline also keeps the familiar navigation experience. Users can m
 
 ![Timeline widget in Customer form](pictures/Timeline-Customer.png)
 
+### 15. Search now covers all displayed navigator fields
+
+Search in navigators now works across all displayed fields, including Calculated Attributes.
+
+Previously, some displayed fields that don't support filtering couldn't be searched. For example, "DisplayText" is a Calculated Attribute and its values were excluded from Search. In practice this means that you can perform search to any field that builds the [DisplayTextFormat of an entity](https://docs.erp.net/model/entities/Systems.Security.EntitySettings.html#displaytextformat).
+
+Now, if a Calculated Attribute is displayed in the navigator, users can search for and find records by the values shown in that field as well.
+
+Use the big or the small Search box. The matches are highlited.
+
+![picture](pictures/CAsearch.png)
+
+
 
