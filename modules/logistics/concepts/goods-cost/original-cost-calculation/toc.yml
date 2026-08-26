@@ -1,4 +1,4 @@
-- name: How original cost is calculated
+- name: Original cost calculation
   href: index.md
 - name: Calculating cost for inventory reconciliation
   href: calculating-cost-for-inventory-reconciliation.md
