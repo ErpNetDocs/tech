@@ -36,7 +36,16 @@ The recalculation of the record cost is performed as follows:
 
 - If the record is a <b>receipt</b> transaction and is not part of a transfer or a production process, the record is not recalculated.
 
-<b><i>Example 1:</b></i>
+This includes Inventory Reconciliation receipt transactions and other receipt store transactions that are not part of a transfer or production process.
+
+A transaction released later with an earlier Transaction Timestamp can change the accumulated cost in the store transaction chronology. Cost Correction can use this change when recalculating subsequent issue transactions.
+
+However, receipt transactions that are not part of a transfer or production process are not recalculated. Therefore, an Inventory Reconciliation receipt that was originally calculated with zero cost can remain with zero cost after Cost Correction.
+
+For details about transaction participation in the original cost calculation, see [Original cost calculation](../original-cost-calculation/index.md).
+
+
+## <b><i>Example 1:</b></i>
 
 There are two stores and three products, the first two of which are provided by external suppliers. The third is internally produced. A recalculation of the cost for <b>January 2020</b> is needed. This is the data for the first store. The second store has no movements recorded (including the current period):
 
