@@ -20,7 +20,9 @@ A transaction that is released earlier does not participate if its Transaction T
 
 For details and examples, see [Original cost calculation](../goods-cost/original-cost-calculation/index.md).
 
-## Usually, transaction timestamps are set automatically with no need for user intervention. This is executed in two general ways:
+## How the Transaction Timestamp is set 
+
+Usually, transaction timestamps are set automatically with no need for user intervention. This is executed in two general ways:
 
  1. On transaction release, if there is no transaction timestamp, then it is set automatically by the date of the transaction and/or by the current date and time.
 
