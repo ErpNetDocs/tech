@@ -2,7 +2,25 @@
 
 The current article describes the principles for defining a <i>transaction timestamp</i> in the transactions rows. A timestamp is essential for goods cost definition. It represents the exact moment when a specific transaction starts affecting the goods cost. For more information, see [Goods cost](https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/index.html?q=Goods%20cost) and its sub-articles.
 
-Usually, transaction timestamps are set automatically with no need for user intervention. This is executed in two general ways:
+## Transaction Timestamp and transaction release
+
+The Transaction Timestamp and the release time have different roles in the original cost calculation:
+
+- The transaction must already be released when the original cost is calculated.
+- The Transaction Timestamp determines the position of the transaction in the store transaction chronology.
+
+Therefore, both conditions must be met for a previous transaction to participate:
+
+1. The transaction must already be released when the original cost is calculated.
+2. Its Transaction Timestamp must precede the Transaction Timestamp of the transaction being costed.
+
+A transaction with an earlier Transaction Timestamp does not participate if it is released after the original cost has already been calculated.
+
+A transaction that is released earlier does not participate if its Transaction Timestamp is later than the Transaction Timestamp of the transaction being costed.
+
+For details and examples, see [Original cost calculation](../goods-cost/original-cost-calculation/index.md).
+
+## Usually, transaction timestamps are set automatically with no need for user intervention. This is executed in two general ways:
 
  1. On transaction release, if there is no transaction timestamp, then it is set automatically by the date of the transaction and/or by the current date and time.
 
