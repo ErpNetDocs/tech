@@ -7,3 +7,6 @@
 - name: Work Management
   href: work-management/index.md
   topicHref: work-management/index.md
+- name: POS
+  href: POS/index.md
+  topicHref: POS/index.md
