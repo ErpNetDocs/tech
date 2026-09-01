@@ -1,3 +1,5 @@
+# New Features
+
 ## Breaking Change
 
 ⚠️ **Desktop reports: Maximum row limit reduced to 200,000**
