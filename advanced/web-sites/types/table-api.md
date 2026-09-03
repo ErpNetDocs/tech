@@ -23,6 +23,12 @@ Below are the rate limiting options supported by Table API:
 
 - **[GlobalConcurrentRequests](../rate-limits.md#globalconcurrentrequests)** - Caps total concurrent API requests across all sessions.
 
+## License availability
+
+A request is served inside a session, and a session needs a concurrent-use license. When the instance has none available, the request is answered with `503 - Service Unavailable` and a `Retry-After` header stating how long to wait before repeating it. The response body names the reason, so the caller can tell it apart from a failed operation.
+
+For more information, see the separate topic **[Sessions and licenses](../../security/sessions-and-licenses.md)**.
+
 -------------
 ## See more
 

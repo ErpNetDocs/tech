@@ -192,6 +192,7 @@ The options set for the database are visible in the Configurations navigator and
 - b.The user sets it manually.
 
 ## 40. ReservedLicenses (not implemented/ cancelled)
+- a.This configuration key was never implemented. Licenses can still be reserved for named accounts, but that is a per-database setting on the application server, not a configuration key. See [Sessions and licenses](../advanced/security/sessions-and-licenses.md).
 
 ## 41. EnableCreateGroupForUser
 - a.Action: When this key has value and this value is "1" or "true" (case-insensitive), when creating a new user in the database, a new group with the user’s name will be created automatically as well. 

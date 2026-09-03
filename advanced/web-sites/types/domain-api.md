@@ -25,6 +25,12 @@ Below are the rate limiting options supported by Domain API:
 - **[SessionConcurrentRequests](../rate-limits.md#sessionconcurrentrequests)** - Restricts simultaneous API requests in a session.
 - **[SessionConcurrentTransactions](../rate-limits.md#sessionconcurrenttransactions)** - Limits the number of concurrent transactions in a session.
 
+## License availability
+
+A request is served inside a session, and a session needs a concurrent-use license. When the instance has none available, the request is answered with `503 - Service Unavailable` and a `Retry-After` header stating how long to wait before repeating it. The response body names the reason, so the caller can tell it apart from a failed operation.
+
+For more information, see the separate topic **[Sessions and licenses](../../security/sessions-and-licenses.md)**.
+
 -------------
 ## See more
 
