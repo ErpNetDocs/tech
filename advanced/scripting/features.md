@@ -1,4 +1,4 @@
-## Features
+# Scripting features
 
 - Full use of the scripting language syntax and all language constructs.
 
@@ -13,3 +13,5 @@
 - Access to current session data.
 
 - Safe, sandboxed script execution.
+
+The [Developer Documentation scripting guide](https://docs.erp.net/dev/scripting/index.html) explains the supported APIs, execution limits, security, and examples.

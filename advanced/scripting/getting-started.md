@@ -1,4 +1,4 @@
-## Getting started
+# Getting started with business-rule scripts
 
 The scripting feature in @@name is accessible from specific modules and workflows, such as **user-defined business rules** within your instance.
 
@@ -26,7 +26,7 @@ It allows you to embed custom logic directly where business decisions or specifi
 
 Done.
 
-The script will execute every time the rule is activated.
+The script runs when the configured rule event occurs while the rule is active.
 
 ### Your first script
 
@@ -42,4 +42,4 @@ This serves as a simple test to confirm that your scripting environment is worki
 
 > [!NOTE]
 >
-> The `Action` variable is a reference to the **global action object**. You can find more information and usage details [here](./global-action-object/index.md).
+> The `Action` variable is the global action object. Its methods and context requirements are documented in the [Developer Documentation](https://docs.erp.net/dev/scripting/action/index.html).
