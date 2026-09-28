@@ -34,10 +34,10 @@ Before scripting support, these scenarios typically required workarounds, helper
   Write JavaScript code in the calculated attribute's `ScriptText`.  
   This script is executed whenever the calculated attribute is evaluated.
 
-The script runs in a sandboxed environment with access to:
+The script can use the scripting APIs exposed in this context, including:
 
 - `subject` – the entity instance for which the calculated attribute is being evaluated
-- The entire @@name Domain Model (via the `Domain` object)
+- The @@name Domain Model through the `Domain` object, subject to transaction permissions
 
 Unlike user business rules, calculated attribute scripts are expected to **produce a value**.  
 The value returned by the script becomes the value of the calculated attribute.
