@@ -10,3 +10,6 @@
 - name: POS
   href: POS/index.md
   topicHref: POS/index.md
+- name: System features
+  href: system/index.md
+  topicHref: system/index.md
