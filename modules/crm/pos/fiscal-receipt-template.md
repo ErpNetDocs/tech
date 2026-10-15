@@ -1,4 +1,4 @@
-# Overview
+# Fiscal recepit template
 
 Receipt templates can provide businesses with a customizable solution that enhances their fiscal printing process. They serve as pre-designed formats that you can easily modify and apply on a document type level.
 
