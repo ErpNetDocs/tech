@@ -1,9 +1,9 @@
 - name: Overview
   href: index.md
-- name: Getting started
-  href: create-product-relation.md
 - name: Configuration
-  href: configure-relation-types.md
+  href: configure-relation-type.md
+- name: Operations
+  href: create-product-relation.md
 - name: Concepts
   href: concepts/toc.yml
   topicHref: concepts/index.md
