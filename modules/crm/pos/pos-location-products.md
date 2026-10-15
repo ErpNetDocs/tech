@@ -6,6 +6,12 @@ The same product can be included at multiple POS locations, with different setti
 
 POS Location Products does **not** create a new product or record actual stock on hand. It specifies how an existing product is offered at a POS location. Minimum and maximum quantities are targets; entering them does not, by itself, create a replenishment order or stock transfer.
 
+<img width="1919" height="996" alt="image" src="https://github.com/user-attachments/assets/6125e1ca-6b34-4288-a946-58b9c199e259" />
+
+Desktop client - a single record of a POS Location Product
+
+<img width="1919" height="540" alt="image" src="https://github.com/user-attachments/assets/bb2c42f0-882c-4e94-bf91-c18cec3d4536" />
+
 ## Purpose
 
 POS Location Products is used to manage:
