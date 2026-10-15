@@ -22,4 +22,4 @@ The entity is now also available in the Desktop Client, as part of our ongoing e
 
 Learn more [HERE](https://docs.erp.net/tech/modules/crm/pos/pos-location-products.html)
 
-![picture](./POSLP.png)
+![picture](POSLP.png)
