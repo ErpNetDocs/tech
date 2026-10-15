@@ -27,4 +27,8 @@ Retail POS uses locally loaded data. Changes to a location’s assortment or pri
 To avoid ambiguity, maintain validity periods carefully, particularly when more than one record for the same product and location could apply on the same date.
 
 
-**Related documentation:** [POS Location Products — Domain Model](https://docs.erp.net/model/entities/Crm.Pos.LocationProducts.html) · [Retail POS — Pull Data](https://retailpos.app.erp.net/help/pull-data)
+**Related documentation:** 
+
+[POS Location Products — Domain Model](https://docs.erp.net/model/entities/Crm.Pos.LocationProducts.html) 
+
+[Retail POS — Pull Data](https://retailpos.app.erp.net/help/pull-data)
