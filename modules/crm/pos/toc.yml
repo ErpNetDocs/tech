@@ -1,6 +1,9 @@
 - name: Overview
   href: index.md
 
+- name: POS location products
+  href: pos-location-products.md
+
 - name: Fiscal receipt template
   href: fiscal-receipt-template.md
 
