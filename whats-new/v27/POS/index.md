@@ -15,3 +15,7 @@ Bundles can be used for meal deals, gift sets, promotional packages, seasonal of
 <img width="1912" height="995" alt="image" src="https://github.com/user-attachments/assets/9fbc1714-4bc2-4899-bdb1-19bc41cbfa46" />
 
 ![picture](./POS-bundle.png)
+
+**2. POS Location Products in Desktop client**
+
+The entity is now added in Desctop client as well, as part of the strive for unified experience between Desktop and WEB Clients.
