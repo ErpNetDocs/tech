@@ -1,7 +1,5 @@
 # POS Location Products
 
-# POS Location Products
-
 **POS Location Products** defines the products offered for sale at a particular POS location. Each record links a product to a POS location and holds settings that apply to that combination, such as its status, validity period, gross price, and target stock quantities.
 
 The same product can be included at multiple POS locations, with different settings for each location. This allows locations to share a product catalog while maintaining their own assortments.
