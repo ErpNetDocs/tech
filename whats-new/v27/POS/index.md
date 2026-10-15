@@ -18,4 +18,8 @@ Bundles can be used for meal deals, gift sets, promotional packages, seasonal of
 
 **2. POS Location Products in Desktop client**
 
-The entity is now added in Desctop client as well, as part of the strive for unified experience between Desktop and WEB Clients.
+The entity is now also available in the Desktop Client, as part of our ongoing efforts to provide a consistent experience across the Desktop and Web Clients.
+
+Learn more [HERE](https://docs.erp.net/tech/modules/crm/pos/pos-location-products.html)
+
+![picture](./POSLP.png)
