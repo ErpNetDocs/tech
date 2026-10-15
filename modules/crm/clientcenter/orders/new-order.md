@@ -44,7 +44,7 @@ Changes made in the **New Order** module are automatically saved to an order in 
 
 Products linked to the site channel are shown in a separate tab. The tab has the name of the channel. To add a product to the order, enter a quantity. The product is then added to the **Order** tab. **If the channel has no linked products, the tab is not shown.**
 
-The site channel is specified in the [**SiteChannel setting**](../reference.html#sitechannel-setting). If this setting is missing, the Client Center uses the distribution channel with code `CC`and name **"Client Center"**. 
+The site channel is specified in the [**SiteChannel setting**](../reference.md#sitechannel-setting). If this setting is missing, the Client Center uses the distribution channel with code `CC`and name **"Client Center"**. 
 
    ![pictures](pictures/channel_CC_tab.png)
 
