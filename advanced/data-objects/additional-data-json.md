@@ -11,9 +11,10 @@ The field is similar to a small, per-record NoSQL document slot: an integration 
 The field does not support JSON-path queries, filtering, sorting, grouping, indexing, or partial JSON updates.
 
 - The value is limited to **32,000 characters**. A client save that exceeds the limit is rejected by [business rule R101790](https://docs.erp.net/model/business-rules/R101790.html).
+- Empty values are allowed. Nonblank values must contain a valid JSON object; otherwise the save is rejected by [business rule R101839-1](https://docs.erp.net/model/business-rules/R101839-1.html).
 - The attribute is hidden by default in the user interface and is primarily intended for integrations and technical scenarios.
 
-Use `AdditionalDataJson` only for data owned and interpreted by the integration. If the value needs a user interface field, filtering, grouping, or reporting, use [Stored Attributes (Custom Properties)](../stored-attributes/index.md) or a dedicated entity instead.
+The complete JSON document can be viewed and edited through the client JSON editor, subject to permissions. For individual business fields that need their own controls, filtering, grouping, or reporting, use [Stored Attributes (Custom Properties)](../stored-attributes/index.md) or a dedicated entity instead.
 
 ## Integration ownership convention
 
@@ -38,5 +39,9 @@ An application may create and update only its own top-level object. It must pres
 ## Availability
 
 `AdditionalDataJson` is available only on aggregate root entities. It is loaded only when requested, so ordinary reads of an entity do not transfer its payload.
+
+In Desktop Client, the field can be added under the aggregate root in the field selector for a single-record form. It is excluded from Desktop navigators to avoid loading the JSON payload for every listed record.
+
+The complete value can be cleared. In the Domain API, explicitly send `null` or an empty string to clear it; omitting the property from a PATCH request leaves the stored value unchanged. Sending `"{}"` stores an empty JSON object. When other applications also own data in the document, remove only your application's top-level object and preserve the rest.
 
 For implementation details and Domain API examples, see [Additional Data JSON in Domain API](https://docs.erp.net/dev/domain-api/data-sync/additional-data-json.html).

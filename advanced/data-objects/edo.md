@@ -8,17 +8,18 @@ The Extensible Data Objects (EDO) is a system in @@name, which allows attaching 
 
 - files
 - **[Track Changes](https://docs.erp.net/tech/advanced/data-objects/track-changes.html)** tracking data
+- **[Additional Data JSON](additional-data-json.md)** for integration-owned, per-record data
 
 ## How does it work?
 
 Extensible data objects are stored in the **Sys_Objects** entity. The system works in the following way:
 
 1. An object in an entity requires attaching additional data => A new record is created in Sys_Objects. 
-2. Additional data is created in sub-tables which have referential integrity to Sys_Objects. 
+2. Some additional data, including `AdditionalDataJson`, is stored directly in Sys_Objects. Other data, such as file attachments, is stored in related tables which have referential integrity to Sys_Objects.
 
 The record in Sys_Objects has only untyped soft reference (not referential integrity) to the original record. <br> It contains the **Entity_Type** and **Entity_Item_Id** fields, which uniquely identify the original record. 
 
-All additional data is related to Sys_Objects through **typed** referential integrity. 
+Additional data stored in related tables is linked to Sys_Objects through **typed** referential integrity.
 
 Therefore, the only untyped soft reference is the original reference in Sys_Objects. <br> Most data is solidly related through typed referential integrity.
 
