@@ -8,7 +8,7 @@ The @@webclientfull is the web-based user interface of the ERP.net business-mana
 
 We have added a new table and entity, [Entity Attribute Default Values](https://docs.erp.net/model/entities/Systems.Core.EntityAttributeDefaultValues.html), for storing default values for fields. This is now the **preferred approach** for creating default values. Values configured through the new approach can be applied in both the **Desktop Client** and the **Web Client**.
 
-<img width="433" height="216" alt="image" src="https://github.com/user-attachments/assets/a23b95ed-4190-41fd-a6e0-4b58d81f115e" />
+<img width="433" height="216" alt="image" src="https://github.com/user-attachments/assets/a23b95ed-4190-41fd-a6e0-4b58d81f115e" /><br>
 
 
 ➡️ Who can configure defaults?
@@ -21,7 +21,7 @@ As in the Desktop Client, saving a default value in the Web Client lets you choo
 
 Open a field’s context menu and select **Default attribute value → Set as default attribute value**.
 
-<img width="1405" height="905" alt="image" src="https://github.com/user-attachments/assets/aa4eae52-75fb-4adc-9856-0e5d2ed9aa26" />
+<img width="1405" height="905" alt="image" src="https://github.com/user-attachments/assets/aa4eae52-75fb-4adc-9856-0e5d2ed9aa26" /><br>
 
 The dialog shows the value you are saving and lets you select any applicable conditions:
 
@@ -32,13 +32,13 @@ The dialog shows the value you are saving and lets you select any applicable con
 - language
 - record category
 
-<img width="803" height="698" alt="image" src="https://github.com/user-attachments/assets/816f6a8b-87ac-4e1d-bf5f-0f8cd6d7dcc8" />
+<img width="803" height="698" alt="image" src="https://github.com/user-attachments/assets/816f6a8b-87ac-4e1d-bf5f-0f8cd6d7dcc8" /><br>
 
 You can also select "For all cases". In that case, the saved value is applied immediately when a new record is created. 
 
 **OK** button creates a record in the new table that will be applied in the new objects.
 
-<img width="1382" height="498" alt="image" src="https://github.com/user-attachments/assets/9a7aec0a-bd95-4d5b-ba23-4dbe49dfdf55" />
+<img width="1382" height="498" alt="image" src="https://github.com/user-attachments/assets/9a7aec0a-bd95-4d5b-ba23-4dbe49dfdf55" /><br>
 
 
 When conditions are selected, the default applies in a matching context. If more than one saved default is applicable, the value matching the **most conditions** is used.
