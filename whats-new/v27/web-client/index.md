@@ -8,13 +8,22 @@ The @@webclientfull is the web-based user interface of the ERP.net business-mana
 
 We have added a new table and entity, [Entity Attribute Default Values](https://docs.erp.net/model/entities/Systems.Core.EntityAttributeDefaultValues.html), for storing default values for fields. This is now the **preferred approach** for creating default values. Values configured through the new approach can be applied in both the **Desktop Client** and the **Web Client**.
 
+<img width="433" height="216" alt="image" src="https://github.com/user-attachments/assets/a23b95ed-4190-41fd-a6e0-4b58d81f115e" />
+
+
 ➡️ Who can configure defaults?
 
 The **Set** and **Manage** options are available to users with **Global Layout Manager permissions and the Layout Admin role**. Other users do not see these options.
 
 ➡️ Set a value for the right context
 
-As in the Desktop Client, saving a default value in the Web Client lets you choose the conditions under which it applies. Open a field’s context menu and select **Default attribute value → Set as default attribute value**. The dialog shows the value you are saving and lets you select any applicable conditions:
+As in the Desktop Client, saving a default value in the Web Client lets you choose the conditions under which it applies.
+
+Open a field’s context menu and select **Default attribute value → Set as default attribute value**.
+
+<img width="1405" height="905" alt="image" src="https://github.com/user-attachments/assets/aa4eae52-75fb-4adc-9856-0e5d2ed9aa26" />
+
+The dialog shows the value you are saving and lets you select any applicable conditions:
 
 - current user
 - current role
@@ -23,8 +32,15 @@ As in the Desktop Client, saving a default value in the Web Client lets you choo
 - language
 - record category
 
-You can also select **no conditions**. In that case, the saved value is applied immediately when a new record is created. 
-OK button creates a record in the new table that will be applied in the new objects.
+<img width="803" height="698" alt="image" src="https://github.com/user-attachments/assets/816f6a8b-87ac-4e1d-bf5f-0f8cd6d7dcc8" />
+
+You can also select "For all cases". In that case, the saved value is applied immediately when a new record is created. 
+
+**OK** button creates a record in the new table that will be applied in the new objects.
+
+<img width="1382" height="498" alt="image" src="https://github.com/user-attachments/assets/9a7aec0a-bd95-4d5b-ba23-4dbe49dfdf55" />
+
+
 When conditions are selected, the default applies in a matching context. If more than one saved default is applicable, the value matching the **most conditions** is used.
 
 Default attribute values are **context-sensitive**. If the relevant context changes—for example, the user switches role, enterprise company, company location, language, or record category—the applicable defaults are evaluated for the new context.
@@ -38,9 +54,6 @@ settings—including records in both the existing and new default-value entities
 Use **Default attribute value → Manage default attribute value** to open the navigator and review or edit saved settings.
 
 The existing "Default Values" records and the new "Entity Attribute Default Values" records are separate but they work in both the Desktop Client and the Web Client. **Before creating or changing a default, check both sets of records for settings that could apply to the same field in the same context.** This is recommended to avoid conflicting defaults.
-
-
-
 
 ## Other features
 
