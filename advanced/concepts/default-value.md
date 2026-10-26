@@ -59,7 +59,10 @@ The available conditions are:
 
 A condition that is not selected does not restrict the default. **If no conditions are selected, the setting is an unconditional default:** it can be applied immediately when a new record is created. Selecting conditions restricts it to a matching context.
 
-Saving a different value for the **same attribute and the same set of conditions** updates the existing default-value record rather than creating another record. This was observed in the sales-order tests.
+A record of an "Entity attribute default value".
+<img width="1397" height="510" alt="image" src="https://github.com/user-attachments/assets/9743952f-6eb6-4fef-8aa4-02429368b541" />
+
+Saving a different value for the **same attribute and the same set of conditions** updates the existing default-value record rather than creating another record. 
 
 ## Manage saved values
 
