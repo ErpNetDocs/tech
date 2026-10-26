@@ -25,22 +25,24 @@ Comparative table between the two entities:
 | `ConditionDocumentType` | `ConditionEntityCategory` |
 | `ConditionFormName` | N/A |
 | `ConditionUserMachine` | N/A |
-| `PanelName` | Няма съвместимост |
+| `PanelName` | N/A |
 | N/A | `DefaultTextValue` |
 | N/A | `ConditionEnterpriseCompanyLocation` |
 | N/A | `ConditionLanguage` |
 
 ## Why use a separate entity?
 
-The existing model identifies a default primarily by **table and column** and has its own set of conditions. The new model identifies the **repository and attribute**, stores both the internal value and its display text, and provides conditions for context such as **location, language, and entity category**. These differences make the new entity a better fit for the new field-level Web Client workflow. 
+The existing model identifies a default primarily by **table and column** and has its own set of conditions. The new model stores both the internal value and its display text, and provides conditions for context such as location, language, and entity category. These differences make the new entity a better fit for the new Web Client workflow. 
 
-The new conditions are **context conditions**, not conditions based on any arbitrary field in the record. For example, a sales order’s document type can determine which default applies. Changing the role, or Enterprise company, Language forces the system to match any other default-value record and set it properly according to the new context.
+The new conditions are **context conditions**. For example, a sales order’s document type can determine which default applies. Changing the role, or Enterprise company, Language forces the system to match any other default-value record and set it properly according to the new context.
 
 ## Set a default in the Web Client
 
 Users with **Global Layout Manager permissions and the Layout Admin role** can open a field’s three-dot menu and choose **Default attribute value → Set as default attribute value**. The options are not available to other users.
 
 First, enter or select the value to save. The dialog then lets you select the context conditions under which that value should apply. This follows the familiar [Desktop Client idea](https://docs.erp.net/winclient/introduction/fields-management/default-values-management.html) of saving a field value with optional conditions, while using the new entity to store the Web Client setting.
+
+![picture](./pictures/menu.png)
 
 The available conditions are:
 
@@ -77,5 +79,6 @@ The two entities can contain settings for the **same field**. Based on the sales
 
 **Before creating or changing a default, review applicable settings in both entities.** In particular, check for the same field with overlapping contexts; do not assume that a setting created through one client affects only that client. 
 
+Learn how to use "Entity attribute default values" [HERE](https://docs.erp.net/webclient/introduction/how-to/create-default-value.html)
 > [!IMPORTANT]
 > Administrators should carefully review saved settings — records in both the existing DataEntryDefaultValues table and the new EntityAttributeDefaultValues table — and avoid configurations that could apply to the same field in the same context. Although tests of the feature show that Desktop client "prefers" values from the old table, administrators need not rely on the order in which matching values are found to select a particular default.
