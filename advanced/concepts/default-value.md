@@ -55,6 +55,8 @@ The available conditions are:
 | Language | Apply for the specified current language. |
 | Entity category | Apply when the record has the specified category; for the tested sales-order scenario, this is associated with document type. |
 
+![picture](./pictures/conditions.png)
+
 A condition that is not selected does not restrict the default. **If no conditions are selected, the setting is an unconditional default:** it can be applied immediately when a new record is created. Selecting conditions restricts it to a matching context.
 
 Saving a different value for the **same attribute and the same set of conditions** updates the existing default-value record rather than creating another record. This was observed in the sales-order tests.
