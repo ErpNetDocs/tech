@@ -84,6 +84,20 @@ The two entities can contain settings for the **same field**. Based on the sales
 
 **Before creating or changing a default, review applicable settings in both entities.** In particular, check for the same field with overlapping contexts; do not assume that a setting created through one client affects only that client. 
 
-Learn how to use "Entity attribute default values" [HERE](https://docs.erp.net/webclient/introduction/how-to/create-default-value.html)
+### Desktop Client: examples of defaults stored in both entities
+
+The examples below compare a default for **Customer** in the old *Data Entry Default Values* entity with one in the new *Entity Attribute Default Values* entity.
+
+| Example | Existing entity: Customer | Existing conditions | New entity: Customer | New conditions | Context | Customer applied in Desktop |
+|---|---|---|---|---|---|---|
+| 1 | A Racing Ltd | None | Professional Components Ltd | None | Create a sales order of any type | **A Racing Ltd** |
+| 2 | A Racing Ltd | Document Type = Direct Sale | Professional Components Ltd | Document Type = Direct Sale | Document Type = Direct Sale | **A Racing Ltd** |
+| 3 | A Racing Ltd | Document Type = Direct Sale | Professional Components Ltd | Document Type = Direct Sale; Role = X Tech MI Role | Document Type = Direct Sale; Role = X Tech MI Role | **A Racing Ltd** |
+| 4 | A Racing Ltd | Document Type = Direct Sale | Professional Components Ltd | Document Type = Direct Sale; Role = X Tech MI Role | Document Type = Shop Order; Role = X Tech MI Role | **A Racing Ltd — observed result¹** |
+
+What the first three examples show: when both settings are applicable, the Desktop Client selects the value from the existing entity, even when the new setting has more matching conditions.
+
+Example 4 shows the preference of Desktop client to apply the old entity default value even though the new default value matches more conditions.
+
 > [!IMPORTANT]
 > Administrators should carefully review saved settings — records in both the existing DataEntryDefaultValues table and the new EntityAttributeDefaultValues table — and avoid configurations that could apply to the same field in the same context. Although tests of the feature show that Desktop client "prefers" values from the old table, administrators need not rely on the order in which matching values are found to select a particular default.
