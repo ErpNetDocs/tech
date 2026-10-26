@@ -11,11 +11,11 @@ We have added a new table and entity, [Entity Attribute Default Values](https://
 <img width="433" height="216" alt="image" src="https://github.com/user-attachments/assets/a23b95ed-4190-41fd-a6e0-4b58d81f115e" /><br>
 
 
-➡️** Who can configure defaults?**
+➡️**Who can configure defaults?**
 
 The **Set** and **Manage** options are available to users with **Global Layout Manager permissions and the Layout Admin role**. Other users do not see these options.
 
-➡️** Set a value for the right context**
+➡️**Set a value for the right context**
 
 As in the Desktop Client, saving a default value in the Web Client lets you choose the conditions under which it applies.
 
