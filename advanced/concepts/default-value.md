@@ -4,9 +4,30 @@ Default attribute values automatically fill fields when a new record is created.
 
 ## Concepts
 
-[Entity Attribute Default Values]((https://docs.erp.net/model/entities/Systems.Core.EntityAttributeDefaultValues.html) is a new entity and table for storing defaults for attributes of ERP.net repositories. It is the **preferred approach for creating new default-value settings**. Settings created through this approach can be used by both the Web Client and the Desktop Client. The existing **Data Entry Default Values** entity remains available; the new entity does not replace or migrate its records.
+[Entity Attribute Default Values](https://docs.erp.net/model/entities/Systems.Core.EntityAttributeDefaultValues.html) is a new entity and table for storing defaults for attributes of ERP.net repositories. It is the **preferred approach for creating new default-value settings**. Settings created through this approach can be used by both the Web Client and the Desktop Client. The existing **Data Entry Default Values** entity remains available; the new entity does not replace or migrate its records.
 
-**Why use a separate entity? **
+Comparative table between the two entities:
+1. [DataEntryDefaultValues](https://docs.erp.net/model/entities/Systems.Core.DataEntryDefaultValues.html)
+2. [Entity_Attribute_Default_Values](https://docs.erp.net/model/entities/Systems.Core.EntityAttributeDefaultValues.html)
+
+| `Sys_Default_Values`- old table | `Sys_Entity_Attribute_Default_Values` - new table |
+|---|---|
+| `TableName` | `RepositoryName` |
+| `ColumnName` | `AttributeName` |
+| `DefaultValueField` | `DefaultInternalValue` |
+| `ConditionUserLogin` | `ConditionUser` |
+| `ConditionRole` | `ConditionRole` |
+| `ConditionEnterpriseCompany` | `ConditionEnterpriseCompany` |
+| `ConditionDocumentType` | `ConditionEntityCategory` |
+| `ConditionFormName` | N/A |
+| `ConditionUserMachine` | N/A |
+| `PanelName` | Няма съвместимост |
+| N/A | `DefaultTextValue` |
+| N/A | `ConditionEnterpriseCompanyLocation` |
+| N/A | `ConditionLanguage` |
+
+## Why use a separate entity?
+
 The existing model identifies a default primarily by **table and column** and has its own set of conditions. The new model identifies the **repository and attribute**, stores both the internal value and its display text, and provides conditions for context such as **location, language, and entity category**. These differences make the new entity a better fit for the new field-level Web Client workflow. 
 
 The new conditions are **context conditions**, not conditions based on any arbitrary field in the record. For example, a sales order’s document type can determine which default applies. Changing the role, or Enterprise company, Language forces the system to match any other default-value record and set it properly according to the new context.
@@ -51,3 +72,6 @@ The two entities can contain settings for the **same field**. Based on the sales
 - A setting saved in the new entity can therefore also affect Desktop users, even when it was created through the Web Client.
 
 **Before creating or changing a default, review applicable settings in both entities.** In particular, check for the same field with overlapping contexts; do not assume that a setting created through one client affects only that client. 
+
+> [!IMPORTANT]
+> Administrators should carefully review saved settings — records in both the existing DataEntryDefaultValues table and the new EntityAttributeDefaultValues table — and avoid configurations that could apply to the same field in the same context. Although tests of the feature show that Desktop client "prefers" values from the old table, administrators need not rely on the order in which matching values are found to select a particular default.
