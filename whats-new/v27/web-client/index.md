@@ -56,6 +56,8 @@ The existing "Default Values" records and the new "Entity Attribute Default Valu
 
 Learn how to use the new entity from [HERE](https://docs.erp.net/webclient/introduction/how-to/create-default-value.html).
 
+Learn more technical information [HERE](https://docs.erp.net/tech/advanced/concepts/default-value.html)
+
 ## Other features
 
 ### 1. Search box for all list fields
