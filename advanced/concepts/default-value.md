@@ -74,6 +74,8 @@ Defaults are context-sensitive. In the tested Web Client behavior, changing the 
 
 **Administrators should take care when configuring defaults for important fields:** a context change in the Web Client may change a value that was already displayed in the form. These observations were tested with sales orders and should be verified before being stated as universal behavior for every form.
 
+Learn how to use Entity Attribute Default Values [HERE](https://docs.erp.net/webclient/introduction/how-to/create-default-value.html)
+
 ## Existing defaults and precedence
 
 The two entities can contain settings for the **same field**. Based on the sales-order tests:
