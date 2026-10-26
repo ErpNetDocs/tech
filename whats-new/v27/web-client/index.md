@@ -46,8 +46,7 @@ When conditions are selected, the default applies in a matching context. If more
 Default attribute values are **context-sensitive**. If the relevant context changes—for example, the user switches role, enterprise company, company location, language, or record category—the applicable defaults are evaluated for the new context.
 
 > [!IMPORTANT]
-> If more than one default value matches the applicable conditions, the system uses the first matching value. Administrators should carefully review saved
-settings—including records in both the existing and new default-value entities—and avoid configurations that could apply to the same field in the same context. Do not rely on the order in which matching values are found to select a particular default.
+> Administrators should carefully review saved settings — records in both the existing DataEntryDefaultValues table and the new EntityAttributeDefaultValues table — and avoid configurations that could apply to the same field in the same context. Although tests of the feature show that Desktop client "prefers" values from the old table, administrators need not rely on the order in which matching values are found to select a particular default.
 
 ➡️ Review and manage saved values
 
