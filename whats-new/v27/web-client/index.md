@@ -11,11 +11,11 @@ We have added a new table and entity, [Entity Attribute Default Values](https://
 <img width="433" height="216" alt="image" src="https://github.com/user-attachments/assets/a23b95ed-4190-41fd-a6e0-4b58d81f115e" /><br>
 
 
-➡️ Who can configure defaults?
+➡️** Who can configure defaults?**
 
 The **Set** and **Manage** options are available to users with **Global Layout Manager permissions and the Layout Admin role**. Other users do not see these options.
 
-➡️ Set a value for the right context
+➡️** Set a value for the right context**
 
 As in the Desktop Client, saving a default value in the Web Client lets you choose the conditions under which it applies.
 
@@ -43,16 +43,16 @@ You can also select "For all cases". In that case, the saved value is applied im
 
 When conditions are selected, the default applies in a matching context. If more than one saved default is applicable, the value matching the **most conditions** is used.
 
-Default attribute values are **context-sensitive**. If the relevant context changes—for example, the user switches role, enterprise company, company location, language, or record category—the applicable defaults are evaluated for the new context.
+Default attribute values are *context-sensitive*. If the relevant context changes—for example, the user switches role, enterprise company, company location, language, or record category—the applicable defaults are evaluated for the new context.
+
+➡️ **Review and manage saved values**
+
+Use option "Manage default attribute value" to open the navigator and review or edit saved settings.
+
+The existing "Default Values" records and the new "Entity Attribute Default Values" records are separate but they work in both the Desktop Client and the Web Client. **Before creating or changing a default, check both sets of records for settings that could apply to the same field in the same context.** This is recommended to avoid conflicting defaults.
 
 > [!IMPORTANT]
 > Administrators should carefully review saved settings — records in both the existing DataEntryDefaultValues table and the new EntityAttributeDefaultValues table — and avoid configurations that could apply to the same field in the same context. Although tests of the feature show that Desktop client "prefers" values from the old table, administrators need not rely on the order in which matching values are found to select a particular default.
-
-➡️ Review and manage saved values
-
-Use **Default attribute value → Manage default attribute value** to open the navigator and review or edit saved settings.
-
-The existing "Default Values" records and the new "Entity Attribute Default Values" records are separate but they work in both the Desktop Client and the Web Client. **Before creating or changing a default, check both sets of records for settings that could apply to the same field in the same context.** This is recommended to avoid conflicting defaults.
 
 ## Other features
 
