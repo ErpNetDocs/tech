@@ -1,8 +1,9 @@
+
 # Configuring a Client Center with the Setup App
 
 ## Purpose
 
-The Client Center Setup App is used to view, create, edit, and delete ERP.net websites of type Client Center. It also lets you manage users’ access to customers in the relevant center.
+The Client Center Setup App is used to view, create, edit, and delete ERP.net websites of type Client Center. It also allows you to manage users’ access to the Client Center for individual customers.
 
 A Client Center gives customers access to information and documents such as orders, invoices, and payments. Depending on their settings and role, users may also be able to create new orders.
 
@@ -10,12 +11,12 @@ A Client Center gives customers access to information and documents such as orde
 
 ## Before you start
 
-Prepare the following information:
+To configure a Client Center, you need to know:
 
-- The Enterprise Company for which you are creating the Client Center.
-- The Web Host and the relative website address.
-- The document types that should be visible.
-- The settings for new orders, distribution channels, and warehouses, if applicable.
+- Which Enterprise Company the Client Center is for.
+- Which Web Host to use and the desired website address.
+- Which document types should be visible to customers.
+- Whether customers should be able to create new orders and, if so, which document type, products, and warehouse settings to use.
 - An existing ERP.net user account for each person who will be granted access.
 
 The app displays the available license information and may prevent you from creating a new Client Center if no license is available.
@@ -26,7 +27,7 @@ The main screen lists the defined Client Center websites. You can search by comp
 
 For each website, the list shows the company, address, status, whether the website is hidden from automatic discovery, access information, and available actions. Select the address to open the website in a new tab. Use the actions in the row to edit the website, manage user access, or delete it.
 
-> **Important:** “Hidden from automatic discovery” is not an access-security setting. The website remains accessible to anyone who knows its address.
+> **Important:** “Hidden from automatic discovery” is not a security setting. The website remains accessible to anyone who knows its address.
 
 ![Main list of Client Center websites](images/client-centers-list.png)
 
@@ -88,11 +89,11 @@ To enable **Show Availability**, select a default store and enter a positive who
 
 ### 6. Review and save
 
-Review the configuration summary before saving. If there is a problem with a setting or a selected reference value, the app marks the relevant step or field and displays a warning.
+Review the configuration summary before saving. If there is a problem with a setting or a selected value, the app marks the relevant step or field and displays a warning.
 
 The **Advanced Settings — SettingsJson Preview** section is read-only. Configure settings using the fields in the app. Changes to this section must be made separately in ERP.net.
 
-Select **Save** to create the website. Once it has been created, you can add users immediately or do so later using the access action in the list.
+Select **Save** to create the website. Once it has been created, you can grant users access immediately or do so later using **Users and Access** in the list.
 
 ![Review and save step](images/wizard-review-save.png)
 
@@ -108,7 +109,7 @@ If a website row displays a settings warning, open it for editing and check the 
 
 ## Managing users and access
 
-Select **Users and Access** for the relevant Client Center. From the list, you can search by customer or user, filter the records, and add, edit, or remove access.
+Select **Users and Access** for the relevant Client Center. You can search by customer or user, filter the list, and grant, change, or remove access to the Client Center for individual customers.
 
 ![Users list](images/participants-list.png)
 
@@ -123,9 +124,9 @@ Select **Users and Access** for the relevant Client Center. From the list, you c
 7. Optionally, add an administrative note.
 8. Select **Save Access**.
 
-The user must already have an active ERP.net account. The app searches for the exact email address or username entered; it does not create the user account. The same user cannot have duplicate access records for the same customer.
+The user must already have an active ERP.net account. The app searches for the exact email address or username entered; it does not create the user account. A user cannot be granted access more than once for the same customer.
 
-> **Serviced by Enterprise Company Location:** If you select a location for a customer who does not yet have one defined, the app also saves the selected location in the customer’s ERP.net definition—not only in the access record.
+> **Serviced by Enterprise Company Location:** If you select a location for a customer who does not yet have one defined, the app also saves the selected location in the customer’s ERP.net record—not just in the Client Center access settings.
 
 ![User access editor](images/participant-access-editor.png)
 
@@ -150,16 +151,16 @@ Enter a non-negative whole number in **Days Back Access** to limit how far back 
 
 ### Removing a user’s access
 
-Removing access deletes the user’s access record for the customer. It **does not delete the ERP.net user account**. Before confirming, check the specified user and customer carefully.
+Removing access prevents the user from accessing the Client Center for the selected customer. It **does not delete the ERP.net user account**. Before confirming, check the specified user and customer carefully.
 
 ## Deleting a Client Center
 
 When deleting a website, select one of the available options:
 
-- **Delete the Website Only**—deletes the Client Center website and keeps the customer access records.
-- **Delete the Website and Access Records**—deletes the website and its associated customer access records. ERP.net user accounts are not deleted.
+- **Delete the Website Only**—deletes the Client Center website but keeps the existing user access settings for customers.
+- **Delete the Website and Access Records**—deletes the website and its associated user access settings for customers. ERP.net user accounts are not deleted.
 
-The second option may be unavailable if the same access records are used by another Client Center for the company, or if the app cannot safely determine which records should be deleted.
+The second option may be unavailable if those user access settings are also used by another Client Center for the company, or if the app cannot safely determine which settings should be deleted.
 
 ![Delete confirmation dialog](images/delete-client-center-confirmation.png)
 
@@ -169,9 +170,9 @@ The second option may be unavailable if the same access records are used by anot
 
 Check that you entered the exact email address or username and that the user already has an active ERP.net account.
 
-### The user already has access to the customer
+### The user already has access to the Client Center for this customer
 
-Open and edit the existing record instead of adding a duplicate.
+Edit the user’s existing access instead of adding it again.
 
 ### Availability cannot be enabled
 
