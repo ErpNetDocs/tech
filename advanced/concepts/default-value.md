@@ -4,7 +4,11 @@ Default attribute values automatically fill fields when a new record is created.
 
 ## Concepts
 
-[Entity Attribute Default Values](https://docs.erp.net/model/entities/Systems.Core.EntityAttributeDefaultValues.html) is a new entity and table for storing defaults for attributes of ERP.net repositories. It is the **preferred approach for creating new default-value settings**. Settings created through this approach can be used by both the Web Client and the Desktop Client. The existing **Data Entry Default Values** entity remains available; the new entity does not replace or migrate its records.
+ERP.net has two entities for field defaults. 
+
+The existing [Data Entry Default Values](https://docs.erp.net/model/entities/Systems.Core.DataEntryDefaultValues.html) entity stores defaults for columns in data-entry forms; in the [Desktop Client](https://docs.erp.net/winclient/introduction/fields-management/default-values-management.html), users can save a field’s current value with optional conditions, such as the current user or document type. 
+
+The newer [Entity Attribute Default Values](https://docs.erp.net/model/entities/Systems.Core.EntityAttributeDefaultValues.html) is a new entity and table for storing defaults for attributes of ERP.net repositories. It is the **preferred approach for creating new default-value settings**. Settings created through this approach can be used by both the Web Client and the Desktop Client. The existing **Data Entry Default Values** entity remains available; the new entity does not replace or migrate its records.
 
 Comparative table between the two entities:
 1. [DataEntryDefaultValues](https://docs.erp.net/model/entities/Systems.Core.DataEntryDefaultValues.html)
