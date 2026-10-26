@@ -72,7 +72,7 @@ Choose **Default attribute value → Manage default attribute value** from the f
 
 Defaults are context-sensitive. In the tested Web Client behavior, changing the relevant enterprise company, location, role, or language causes the applicable default to be evaluated against the new context and the field value to change accordingly. Changing the document type also caused the applicable default to be reevaluated in both clients. By contrast, changing session context alone did not automatically refresh an already open Desktop Client document in the tests.
 
-**Administrators should take care when configuring defaults for important fields:** a context change in the Web Client may change a value that was already displayed in the form. These observations were tested with sales orders and should be verified before being stated as universal behavior for every form.
+**Administrators should take care when configuring defaults for important fields:** a context change in the Web Client may change a value that was already displayed in the form. 
 
 Learn how to use Entity Attribute Default Values [HERE](https://docs.erp.net/webclient/introduction/how-to/create-default-value.html)
 
