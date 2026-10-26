@@ -4,5 +4,7 @@
   href: define-a-new-cc.md
 - name: Add new users and manage permissions
   href: setup-a-new-user-account-v26.md
+- name: Configuring a Client Center with the Setup App
+  href: client-center-setup-app-guide.md
 - name: Download attached files
   href: download-attachments.md
