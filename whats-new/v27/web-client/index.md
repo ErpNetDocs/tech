@@ -30,7 +30,7 @@ The dialog shows the value you are saving and lets you select any applicable con
 - enterprise company
 - company location
 - language
-- record category
+- entity category
 
 <img width="803" height="698" alt="image" src="https://github.com/user-attachments/assets/816f6a8b-87ac-4e1d-bf5f-0f8cd6d7dcc8" /><br>
 
@@ -53,6 +53,8 @@ The existing "Default Values" records and the new "Entity Attribute Default Valu
 
 > [!IMPORTANT]
 > Administrators should carefully review saved settings — records in both the existing DataEntryDefaultValues table and the new EntityAttributeDefaultValues table — and avoid configurations that could apply to the same field in the same context. Although tests of the feature show that Desktop client "prefers" values from the old table, administrators need not rely on the order in which matching values are found to select a particular default.
+
+Learn how to use the new entity from [HERE](https://docs.erp.net/webclient/introduction/how-to/create-default-value.html)
 
 ## Other features
 
