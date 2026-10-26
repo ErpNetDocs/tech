@@ -54,7 +54,7 @@ The existing "Default Values" records and the new "Entity Attribute Default Valu
 > [!IMPORTANT]
 > Administrators should carefully review saved settings — records in both the existing DataEntryDefaultValues table and the new EntityAttributeDefaultValues table — and avoid configurations that could apply to the same field in the same context. Although tests of the feature show that Desktop client "prefers" values from the old table, administrators need not rely on the order in which matching values are found to select a particular default.
 
-Learn how to use the new entity from [HERE](https://docs.erp.net/webclient/introduction/how-to/create-default-value.html)
+Learn how to use the new entity from [HERE](https://docs.erp.net/webclient/introduction/how-to/create-default-value.html).
 
 ## Other features
 
