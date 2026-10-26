@@ -14,3 +14,5 @@
   href: webhooks.md
 - name: Real-time events
   href: real-time-events.md
+- name: Default value
+  href: default-value.md
