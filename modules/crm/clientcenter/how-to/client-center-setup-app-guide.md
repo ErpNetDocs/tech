@@ -125,7 +125,7 @@ Select **Users and Access** for the relevant Client Center. You can search by cu
 
 <img src="images/participants-list.png"
      alt="Users and access list"
-     style="width: 850px; max-width: 100%; height: auto; border: 1px solid #D5DBE4; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+     style="width: 950px; max-width: 100%; height: auto; border: 1px solid #D5DBE4; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
 
 ### Adding or editing access
 
@@ -144,7 +144,7 @@ The user must already have an active ERP.net account. The app searches for the e
 
 <img src="images/participant-access-editor.png"
      alt="User access editor"
-     style="width: 850px; max-width: 100%; height: auto; border: 1px solid #D5DBE4; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+     style="width: 800px; max-width: 100%; height: auto; border: 1px solid #D5DBE4; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
 
 ### Roles
 
@@ -180,7 +180,7 @@ The second option may be unavailable if those user access settings are also used
 
 <img src="images/delete-client-center-confirmation.png"
      alt="Delete confirmation dialog"
-     style="width: 850px; max-width: 100%; height: auto; border: 1px solid #D5DBE4; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+     style="width: 750px; max-width: 100%; height: auto; border: 1px solid #D5DBE4; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
 
 ## Troubleshooting
 
