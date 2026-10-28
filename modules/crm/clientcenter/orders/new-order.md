@@ -48,6 +48,8 @@ New Order consists of one primary tab - **Order**, but it can be configured to i
   > [!Important]
 >
 > The site channel is **separate from the customer's default distribution channel**. It serves as a marker to identify sales orders created through the Client Center.
+
+> [!NOTE]
 >
 > **Every sales order created through the Client Center is automatically assigned the site channel**, regardless of the customer's default distribution channel.
 
