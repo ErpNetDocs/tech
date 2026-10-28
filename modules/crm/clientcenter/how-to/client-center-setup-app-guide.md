@@ -29,9 +29,7 @@ For each website, the list shows the company, address, status, whether the websi
 
 > **Important:** “Hidden from automatic discovery” is not a security setting. The website remains accessible to anyone who knows its address.
 
-<img src="images/client-centers-list.png"
-     alt="Main list of Client Center websites"
-     style="width: 100%; max-width: 100%; height: auto; border: 1px solid #D5DBE4; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+![Main list of Client Center websites](images/client-centers-list.png)
 
 ## Creating a Client Center
 
