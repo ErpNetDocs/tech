@@ -17,27 +17,35 @@ As soon as you access the module, you can find which is the **Supplier**, **Cust
 
 New Order consists of one primary tab - **Order**, but it can be configured to include more:
 
-1. **Order** - This is where the order is built. You can add products manually by entering their **code** and **quantity**.
+1. **Order**
+
+   This is where the order is built. You can add products manually by entering their **code** and **quantity**.
 
    Product quantities specified in other tabs will automatically appear here.
 
    ![pictures](pictures/order_tab.png)
    
-2. **My Products** - All available **[customer products](https://docs.erp.net/tech/modules/crm/sales/definitions/define-customers.html#customer-products)** are stored here. This tab can be hidden or enabled with an appropriate **[JSON setting](../reference.md#hidecustomerproducts-setting)**.
+2. **My Products**
+
+   All available **[customer products](https://docs.erp.net/tech/modules/crm/sales/definitions/define-customers.html#customer-products)** are stored here. This tab can be hidden or enabled with an appropriate **[JSON setting](../reference.md#hidecustomerproducts-setting)**.
   
    You can add customer products to the order simply by specifying their quantities in the **Quantity** field. Once a quantity is set, the respective product will appear in the **Order** tab.
 
    ![pictures](pictures/my_products_tab.png)
    
-3. A tab listing products linked to the **customer's default distribution channel** - It can be optionally revealed with a **[JSON setting](../reference.md#hidedistributionchannel-setting)** and always carries the name of that channel.
+3. **Customer's default distribution channel**
+
+   A tab listing products linked to the **customer's default distribution channel** - It can be optionally revealed with a **[JSON setting](../reference.md#hidedistributionchannel-setting)** and always carries the name of that channel.
 
    You can specify product quantities in the **Quantity** field to add them to the order. Once a quantity is set, the respective product will appear in the **Order** tab.
 
    ![pictures](pictures/channel_customer_tab.png)
 
-4. A tab listing products linked to the **Client Center's distribution channel** - The Client Center uses a distribution channel called the **site channel**.
+4. **Client Center's distribution channel**
+  
+   A tab listing products linked to the **Client Center's distribution channel** - The Client Center uses a distribution channel called the **site channel**.
 
-Every sales order created in the Client Center is assigned to this channel. This identifies the order as coming from the Client Center.
+   Every sales order created in the Client Center is assigned to this channel. This identifies the order as coming from the Client Center.
 
 Changes made in the **New Order** module are automatically saved to an order in status **New**. When the module is reopened, the system uses the customer and the site channel to find and restore the latest unfinished order. After the order is placed, it is no longer loaded as the active new order.
 
