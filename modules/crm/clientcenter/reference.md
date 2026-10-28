@@ -2,6 +2,8 @@
 
 This article contains reference points for specific JSON settings and error codes within the **Client Center**.
 
+## Settings
+
 If a setting is not explicitly added in the definition of the Client Center website, its rule will **not** be enforced.
 
 To **[apply a setting](how-to/define-a-new-cc.md#apply-platform-settings)**, you need to **restart** the website using the **Instance Manager**.
@@ -10,7 +12,7 @@ To **[apply a setting](how-to/define-a-new-cc.md#apply-platform-settings)**, you
 > 
 > Settings are configured as key-value pairs in JSON format in the **Settings** field of the Client Center website definition.
 
-## IsNewOrderEnabled setting
+### IsNewOrderEnabled setting
 
 By default, the ability to **[create new orders](https://docs.erp.net/tech/modules/crm/clientcenter/orders/new-order.html)** in the Client Center is disabled. 
 
@@ -34,7 +36,7 @@ For example:
 
 If only one of the JSON settings is set or the ID doesn't match any sales order document type, an **error code** CC008 or CC009 is displayed.
 
-## IsOrdersEnabled setting
+### IsOrdersEnabled setting
 
 By default, the **[Orders](orders/index.md)** section of the Client Center is **enabled**. 
 
@@ -44,7 +46,7 @@ To disable it, enter the following **value** in the Settings field:
 {"IsOrdersEnabled": false} 
 ```
 
-## OrderDocumentTypes setting
+### OrderDocumentTypes setting
 
 This setting defines which document types are shown in the **[Orders](orders/orders.md)** module. 
 
@@ -56,7 +58,7 @@ To include a type to be shown, enter its **ID** in the Settings field. Multiple 
 
 If this setting is not included in the configuration, **all document types** in the module are displayed.
 
-## InvoiceDocumentTypes setting
+### InvoiceDocumentTypes setting
 
 This setting defines which document types are shown in the **[Invoices](billing/invoices.md)** module. 
 
@@ -68,7 +70,7 @@ To include a type to be shown, enter its **ID** in the Settings field. Multiple 
 
 If this setting is not included in the configuration, **all document types** in the module are displayed.
 
-## HideLines setting
+### HideLines setting
 
 Document lines are visible by default both in the **[Billing](billing/index.md)** and the **[Orders](orders/index.md)** sections of the Client Center.
 
@@ -78,7 +80,7 @@ To hide them, enter the following **value** in the Settings field:
 {"HideLines": true}
 ```
 
-## HideCustomerProducts setting
+### HideCustomerProducts setting
 
 **[Customer products](https://docs.erp.net/tech/modules/crm/sales/definitions/define-customers.html)** are visible by default in the **My Products** tab during the creation of a new order in the Client Center.
 
@@ -88,7 +90,7 @@ To hide the products and this tab, enter the following **value** in the Settings
 {"HideCustomerProducts": true}
 ```
 
-## HideDistributionChannel setting
+### HideDistributionChannel setting
 
 Products linked to a customer's default **[distribution channel](https://docs.erp.net/tech/modules/crm/marketing/distribution-channels/index.html)** are visible by default during the creation of a new order in the Client Center.
 
@@ -98,7 +100,7 @@ To hide the products and this tab, enter the following **value** in the Settings
 {"HideDistributionChannel": true}
 ```
 
-## DefaultStore setting
+### DefaultStore setting
 
 You can set a default store for every **[new order](https://docs.erp.net/tech/modules/crm/clientcenter/orders/new-order.html)** created in the Client Center. This is a prerequisite when you want to see the actual availability when adding quantities of a product to the order, as long as an AvailabilityMax setting is also in place.
 
@@ -110,7 +112,7 @@ To set a default store, enter the following **value** in the Settings field:
 
 where ID is the identifier of the store (e.g. 00002).
 
-## AvailabilityMax setting
+### AvailabilityMax setting
 
 This setting defines the maximum  product (stock) quantity to be displayed directly in the **Availability** column when creating a **[new order](https://docs.erp.net/tech/modules/crm/clientcenter/orders/new-order.html)**. It is also a prerequisite for availability to be shown as a whole, provided a DefaultStore is also present.
 
@@ -131,7 +133,7 @@ To enforce the rule, enter the following **value** in the Settings field:
 
 where <number> is an integer representing the maximum pcs that can be directly visualized in the **Availability** column.
 
-## SiteChannel setting
+### SiteChannel setting
 
 Each Client Center has its own **[distribution (site) channel](https://docs.erp.net/tech/modules/crm/marketing/distribution-channels/index.html)**. 
 
