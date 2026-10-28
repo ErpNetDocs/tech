@@ -131,6 +131,12 @@ where <number> is an integer representing the maximum pcs that can be directly v
 
 Each Client Center has its own **[distribution (site) channel](https://docs.erp.net/tech/modules/crm/marketing/distribution-channels/index.html)**. 
 
+> [!IMPORTANT]
+>
+> The site channel is **separate from the customer's default distribution channel**. It serves as a marker to identify sales orders created through the Client Center. 
+>
+> For more details, see [Client Center's distribution channel](orders/new-order.md#4-client-centers-distribution-channel).
+
 If a custom distribution channel is not explicitly defined, the Client Center is automatically assigned a distribution channel with code **"CC"** and name **"Client Center"**. When products are linked to this channel, they will appear as part of a tab carrying that channel's name in the **[New Order](orders/new-order.md)** module.  
 
 Site channels can be overridden by specifying the **code value** of another distribution channel in the Settings field:
