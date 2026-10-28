@@ -38,7 +38,8 @@ The new conditions are **context conditions**. For example, a sales order’s do
 
 ## Set a default in the Web Client
 
-Users with **Global Layout Manager permissions and the Layout Admin role** can open a field’s three-dot menu and choose **Default attribute value → Set as default attribute value**. The options are not available to other users.
+Users with **Global Layout Manager** system permissions can see and choose **Default attribute value → Set as default attribute value**. The options are not available to other users.
+(The system permission is granted through the Desktop client).
 
 First, enter or select the value to save. The dialog then lets you select the context conditions under which that value should apply. This follows the familiar [Desktop Client idea](https://docs.erp.net/winclient/introduction/fields-management/default-values-management.html) of saving a field value with optional conditions, while using the new entity to store the Web Client setting.
 
