@@ -137,9 +137,9 @@ where <number> is an integer representing the maximum pcs that can be directly v
 
 Each Client Center has its own **[distribution (site) channel](https://docs.erp.net/tech/modules/crm/marketing/distribution-channels/index.html)**. 
 
-> [!IMPORTANT]
+> [!Note]
 >
-> The site channel is **separate from the customer's default distribution channel**. It serves as a marker to identify sales orders created through the Client Center. 
+> The site channel is separate from the customer's default distribution channel. It serves as a **marker** to identify **sales orders created through the Client Center**. 
 >
 > For more details, see [Client Center's distribution channel](orders/new-order.md#4-client-centers-distribution-channel).
 
