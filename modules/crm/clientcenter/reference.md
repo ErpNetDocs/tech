@@ -6,6 +6,10 @@ If a setting is not explicitly added in the definition of the Client Center webs
 
 To **[apply a setting](how-to/define-a-new-cc.md#apply-platform-settings)**, you need to **restart** the website using the **Instance Manager**.
 
+> [!NOTE]
+> 
+> Settings are applied in a key-value pair JSON format in the **Settings** field of the Client Center website definition.
+
 ## IsNewOrderEnabled setting
 
 By default, the ability to **[create new orders](https://docs.erp.net/tech/modules/crm/clientcenter/orders/new-order.html)** in the Client Center is disabled. 
@@ -147,9 +151,6 @@ Site channels can be overridden by specifying the **code value** of another dist
 
 where DistributionChannel.Code is the code of the channel (e.g. "CC").
 
-> [!NOTE]
-> 
-> Settings are applied in a key-value pair JSON format in the **Settings** field of the Client Center website definition. 
 
 ## Error exception codes
 
