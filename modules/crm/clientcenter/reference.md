@@ -8,7 +8,7 @@ To **[apply a setting](how-to/define-a-new-cc.md#apply-platform-settings)**, you
 
 > [!NOTE]
 > 
-> Settings are configured as key-value pairs in JSON format in the **Settings** field of the Client Center website definition..
+> Settings are configured as key-value pairs in JSON format in the **Settings** field of the Client Center website definition.
 
 ## IsNewOrderEnabled setting
 
