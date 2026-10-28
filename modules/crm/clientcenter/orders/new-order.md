@@ -56,7 +56,9 @@ The site channel is specified in the [**SiteChannel setting**](../reference.md#s
 
    ![pictures](pictures/channel_CC_tab.png)
 
-5. **Promotional packages** - This tab shows the promotional packages available for the current customer and order context. For details on how to use it, see [Promotional packages](#promotional-packages). 
+5. **Promotional packages**
+  
+   This tab shows the promotional packages available for the current customer and order context. For details on how to use it, see [Promotional packages](#promotional-packages). 
 
 
 ### Product info
