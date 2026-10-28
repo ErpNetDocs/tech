@@ -45,6 +45,7 @@ Select **New Client Center**. The form is organised into six steps. Some setting
 
 <img src="images/wizard-basic-information.png"
      alt="Basic information step"
+     width="850"
      style="border: 1px solid #D5DBE4; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); max-width: 100%;">
 
 ### 2. Modules and visibility
