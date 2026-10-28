@@ -45,14 +45,17 @@ New Order consists of one primary tab - **Order**, but it can be configured to i
   
    The Client Center uses a distribution channel called the **site channel**.
 
-   Every sales order created in the Client Center is assigned to this channel. **This identifies the order as coming from the Client Center.**
+   > [!NOTE]
+> The site channel is **separate from the customer's default distribution channel**. It serves as a marker to identify sales orders created through the Client Center.
+>
+> **Every sales order created through the Client Center is automatically assigned the site channel**, regardless of the customer's default distribution channel.
 
-Changes made in the **New Order** module are automatically saved to an order in status **New**. When the module is reopened, the system uses the customer and the site channel to find and restore the latest unfinished order. After the order is placed, it is no longer loaded as the active new order.
+Changes made in the New Order module are automatically saved to an order in status **New**. When the module is reopened, the system uses the customer and the site channel to find and restore the latest unfinished order. After the order is placed, it is no longer loaded as the active new order.
 
+If products are linked to the site channel, they are displayed in a separate tab named after the channel. To add a product to the order, enter a quantity. The product is then added to the **Order** tab. If no products are linked to the site channel, the tab is not displayed.
 
-Products linked to the site channel are shown in a separate tab. The tab has the name of the channel. To add a product to the order, enter a quantity. The product is then added to the **Order** tab. **If the channel has no linked products, the tab is not shown.**
-
-The site channel is specified in the [**SiteChannel setting**](../reference.md#sitechannel-setting). If this setting is missing, the Client Center uses the distribution channel with code `CC`and name **"Client Center"**. 
+The site channel is defined by the [**SiteChannel setting**](../reference.md#sitechannel-setting). If this setting is not configured, the Client Center uses the distribution channel with code `CC` and name **"Client Center"**.
+ 
 
    ![pictures](pictures/channel_CC_tab.png)
 
