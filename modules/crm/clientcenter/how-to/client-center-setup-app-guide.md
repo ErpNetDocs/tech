@@ -7,7 +7,9 @@ The Client Center Setup App is used to view, create, edit, and delete ERP.net we
 
 A Client Center gives customers access to information and documents such as orders, invoices, and payments. Depending on their settings and role, users may also be able to create new orders.
 
-> **Note:** The app interface is currently available in Bulgarian only. Screenshots in this guide reflect the original interface language.
+> [!Note]
+>
+> The app interface is currently available in Bulgarian only. Screenshots in this guide reflect the original interface language.
 
 ## Before you start
 
