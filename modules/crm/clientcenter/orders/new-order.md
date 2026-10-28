@@ -17,7 +17,7 @@ As soon as you access the module, you can find which is the **Supplier**, **Cust
 
 New Order consists of one primary tab - **Order**, but it can be configured to include more:
 
-1. **Order**
+### 1. **Order**
 
    This is where the order is built. You can add products manually by entering their **code** and **quantity**.
 
@@ -25,7 +25,7 @@ New Order consists of one primary tab - **Order**, but it can be configured to i
 
    ![pictures](pictures/order_tab.png)
    
-2. **My Products**
+### 2. **My Products**
 
    All available **[customer products](https://docs.erp.net/tech/modules/crm/sales/definitions/define-customers.html#customer-products)** are stored here. This tab can be hidden or enabled with an appropriate **[JSON setting](../reference.md#hidecustomerproducts-setting)**.
   
@@ -33,7 +33,7 @@ New Order consists of one primary tab - **Order**, but it can be configured to i
 
    ![pictures](pictures/my_products_tab.png)
    
-3. **Customer's default distribution channel**
+### 3. **Customer's default distribution channel**
 
    A tab listing products linked to the **customer's default distribution channel** - It can be optionally revealed with a **[JSON setting](../reference.md#hidedistributionchannel-setting)** and always carries the name of that channel.
 
@@ -41,9 +41,9 @@ New Order consists of one primary tab - **Order**, but it can be configured to i
 
    ![pictures](pictures/channel_customer_tab.png)
 
-4. **Client Center's distribution channel**
+### 4. **Client Center's distribution channel**
   
-   The Client Center uses a distribution channel called the **site channel**.
+The Client Center uses a distribution channel called the **site channel**.
 
   > [!Important]
 >
@@ -51,9 +51,9 @@ New Order consists of one primary tab - **Order**, but it can be configured to i
 
 > [!NOTE]
 >
-> **Every sales order created through the Client Center is automatically assigned the site channel**, regardless of the customer's default distribution channel.
+> Every sales order created through the Client Center is **automatically assigned the site channel**, regardless of the customer's default distribution channel.
 
-Changes made in the New Order module are automatically saved to an order in status **New**. When the module is reopened, the system uses the customer and the site channel to find and restore the latest unfinished order. After the order is placed, it is no longer loaded as the active new order.
+Changes made in the New Order module are automatically saved to an order in status **New**. When the module is reopened, the system uses the **customer** and the **site channel** to find and restore the latest unfinished order. After the order is placed, it is no longer loaded as the active new order.
 
 If products are linked to the site channel, they are displayed in a separate tab named after the channel. To add a product to the order, enter a quantity. The product is then added to the **Order** tab. If no products are linked to the site channel, the tab is not displayed.
 
@@ -62,9 +62,9 @@ The site channel is defined by the [**SiteChannel setting**](../reference.md#sit
 
    ![pictures](pictures/channel_CC_tab.png)
 
-5. **Promotional packages**
+### 5. **Promotional packages**
   
-   This tab shows the promotional packages available for the current customer and order context. For details on how to use it, see [Promotional packages](#promotional-packages). 
+This tab shows the promotional packages available for the current customer and order context. For details on how to use it, see [Promotional packages](#promotional-packages). 
 
 
 ### Product info
