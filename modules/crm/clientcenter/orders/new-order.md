@@ -43,9 +43,9 @@ New Order consists of one primary tab - **Order**, but it can be configured to i
 
 4. **Client Center's distribution channel**
   
-   A tab listing products linked to the **Client Center's distribution channel** - The Client Center uses a distribution channel called the **site channel**.
+   The Client Center uses a distribution channel called the **site channel**.
 
-   Every sales order created in the Client Center is assigned to this channel. This identifies the order as coming from the Client Center.
+   Every sales order created in the Client Center is assigned to this channel. **This identifies the order as coming from the Client Center.**
 
 Changes made in the **New Order** module are automatically saved to an order in status **New**. When the module is reopened, the system uses the customer and the site channel to find and restore the latest unfinished order. After the order is placed, it is no longer loaded as the active new order.
 
