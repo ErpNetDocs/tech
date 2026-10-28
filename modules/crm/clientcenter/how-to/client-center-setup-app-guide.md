@@ -29,7 +29,9 @@ For each website, the list shows the company, address, status, whether the websi
 
 > **Important:** “Hidden from automatic discovery” is not a security setting. The website remains accessible to anyone who knows its address.
 
-![Main list of Client Center websites](images/client-centers-list.png)
+<img src="images/client-centers-list.png"
+     alt="Main list of Client Center websites"
+     style="width: 100%; max-width: 100%; height: auto; border: 1px solid #D5DBE4; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
 
 ## Creating a Client Center
 
@@ -45,8 +47,7 @@ Select **New Client Center**. The form is organised into six steps. Some setting
 
 <img src="images/wizard-basic-information.png"
      alt="Basic information step"
-     width="850"
-     style="border: 1px solid #D5DBE4; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); max-width: 100%;">
+     style="width: 850px; max-width: 100%; height: auto; border: 1px solid #D5DBE4; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
 
 ### 2. Modules and visibility
 
@@ -54,7 +55,9 @@ Choose whether to display the **Orders** page and whether users can create a **N
 
 The **Invoicing** section is included in the Client Center. Each user’s access to invoices, payments, and payment history is determined by their role.
 
-![Modules and visibility step](images/wizard-modules-visibility.png)
+<img src="images/wizard-modules-visibility.png"
+     alt="Modules and visibility step"
+     style="width: 850px; max-width: 100%; height: auto; border: 1px solid #D5DBE4; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
 
 ### 3. Visible documents
 
@@ -66,7 +69,9 @@ Configure which document types users can view:
 
 If you select **Selected Types**, select at least one document type. When the Orders setting is disabled, options for order document types may not be available.
 
-![Visible documents step](images/wizard-visible-documents.png)
+<img src="images/wizard-visible-documents.png"
+     alt="Visible documents step"
+     style="width: 850px; max-width: 100%; height: auto; border: 1px solid #D5DBE4; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
 
 ### 4. New order
 
@@ -80,7 +85,9 @@ You can also control which product lists are available:
 
 By default, the Client Center uses a site channel with code **CC** and name **Client Center**. Products linked to the site channel appear in a separate tab in New Order when available. Orders created through the Client Center are associated with the site channel.
 
-![New order step](images/wizard-new-order.png)
+<img src="images/wizard-new-order.png"
+     alt="New order step"
+     style="width: 850px; max-width: 100%; height: auto; border: 1px solid #D5DBE4; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
 
 ### 5. Availability
 
@@ -88,7 +95,9 @@ You can select a **Default Store** (`DefaultStore`) for new orders. If no store 
 
 To enable **Show Availability**, select a default store and enter a positive whole number for **AvailabilityMax** (the maximum availability threshold). This setting limits the quantity for which availability can be displayed directly. For requested quantities above this threshold, the Availability column shows **Call**, indicating that the customer should contact a sales representative for confirmation.
 
-![Availability step](images/wizard-availability.png)
+<img src="images/wizard-availability.png"
+     alt="Availability step"
+     style="width: 850px; max-width: 100%; height: auto; border: 1px solid #D5DBE4; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
 
 ### 6. Review and save
 
@@ -98,7 +107,9 @@ The **Advanced Settings — SettingsJson Preview** section is read-only. Configu
 
 Select **Save** to create the website. Once it has been created, you can grant users access immediately or do so later using **Users and Access** in the list.
 
-![Review and save step](images/wizard-review-save.png)
+<img src="images/wizard-review-save.png"
+     alt="Review and save step"
+     style="width: 850px; max-width: 100%; height: auto; border: 1px solid #D5DBE4; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
 
 ### Changes that require a restart
 
@@ -114,7 +125,9 @@ If a website row displays a settings warning, open it for editing and check the 
 
 Select **Users and Access** for the relevant Client Center. You can search by customer or user, filter the list, and grant, change, or remove access to the Client Center for individual customers.
 
-![Users list](images/participants-list.png)
+<img src="images/participants-list.png"
+     alt="Users and access list"
+     style="width: 850px; max-width: 100%; height: auto; border: 1px solid #D5DBE4; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
 
 ### Adding or editing access
 
@@ -131,7 +144,9 @@ The user must already have an active ERP.net account. The app searches for the e
 
 > **Serviced by Enterprise Company Location:** If you select a location for a customer who does not yet have one defined, the app also saves the selected location in the customer’s ERP.net record—not just in the Client Center access settings.
 
-![User access editor](images/participant-access-editor.png)
+<img src="images/participant-access-editor.png"
+     alt="User access editor"
+     style="width: 850px; max-width: 100%; height: auto; border: 1px solid #D5DBE4; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
 
 ### Roles
 
@@ -165,7 +180,9 @@ When deleting a website, select one of the available options:
 
 The second option may be unavailable if those user access settings are also used by another Client Center for the company, or if the app cannot safely determine which settings should be deleted.
 
-![Delete confirmation dialog](images/delete-client-center-confirmation.png)
+<img src="images/delete-client-center-confirmation.png"
+     alt="Delete confirmation dialog"
+     style="width: 850px; max-width: 100%; height: auto; border: 1px solid #D5DBE4; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
 
 ## Troubleshooting
 
