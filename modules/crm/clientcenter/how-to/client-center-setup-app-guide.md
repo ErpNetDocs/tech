@@ -125,7 +125,7 @@ Select **Users and Access** for the relevant Client Center. You can search by cu
 
 <img src="images/participants-list.png"
      alt="Users and access list"
-     style="width: 950px; max-width: 100%; height: auto; border: 1px solid #D5DBE4; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+     style="width: 1000px; max-width: 100%; height: auto; border: 1px solid #D5DBE4; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
 
 ### Adding or editing access
 
