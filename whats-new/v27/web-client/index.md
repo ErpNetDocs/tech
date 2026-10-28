@@ -13,7 +13,7 @@ We have added a new table and entity, [Entity Attribute Default Values](https://
 
 ➡️**Who can configure defaults?**
 
-The **Set** and **Manage** options are available to users with **Global Layout Manager permissions and the Layout Admin role**. Other users do not see these options.
+The **Set** and **Manage** options are available to users with **Global Layout Manager permissions**. Other users do not see these options.
 
 ➡️**Set a value for the right context**
 
