@@ -1,8 +1,6 @@
-# How to add new users and manage permissions (v.26)
+# How to add new users and manage permissions
 
 This is a step-by-step guide on defining a new user and configuring their access to a Client Center (CC) **in @@name version 26**.
-
-For details on how to define a user of a Client Center in **@@name version 24**, please see **[this guide](https://docs.erp.net/tech/modules/crm/clientcenter/how-to/setup-a-new-user-account-v24.html)**.
 
 > [!NOTE]
 > If you haven't created a CC website already, please read **[Set up a Client Center](define-a-new-cc.md)**. 
