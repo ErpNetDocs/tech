@@ -5,7 +5,6 @@ This article provides a step-by-step guide on creating a Client Center website t
 > [!Note]
 > 
 > As of **@@name version 26**, website configuration takes place under **System** -> **Configuration** -> **Web Sites**. <br>
-> For version 24, you can find the Web Sites panel under **Setup** -> **Core**.
 
 ## Step by step process
 
