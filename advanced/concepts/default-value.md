@@ -36,6 +36,13 @@ The existing model identifies a default primarily by **table and column** and ha
 
 The new conditions are **context conditions**. For example, a sales order’s document type can determine which default applies. Changing the role, or Enterprise company, Language forces the system to match any other default-value record and set it properly according to the new context.
 
+## How can I access the new table and records in Desktop client?
+
+To review defaults stored in Entity Attribute Default Values within Desktop Client, go to Setup/Tools/Entity Navigator. In the field choose table "Sys_Entity_Attribute_Default_Values" and Show data. Use the navigator to locate settings for the relevant repository and attribute, then review their values and conditions. These are separate from the existing Data Entry Default Values settings.
+
+<img width="1917" height="579" alt="image" src="https://github.com/user-attachments/assets/beeb4df5-80bc-4471-98f4-ee8c1ed2f279" />
+<br>
+
 ## Set a default in the Web Client
 
 Users with **Global Layout Manager** system permissions can see and choose **Default attribute value → Set as default attribute value**. The options are not available to other users.
