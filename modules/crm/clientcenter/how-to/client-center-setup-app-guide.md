@@ -29,6 +29,8 @@ The main screen lists the defined Client Center websites. You can search by comp
 
 For each website, the list shows the company, address, status, whether the website is hidden from automatic discovery, access information, and available actions. Select the address to open the website in a new tab. Use the actions in the row to edit the website, manage user access, or delete it.
 
+You can access this guide directly from the app by selecting **User Guide** in the upper-right corner of the main screen. It provides quick access to instructions whenever you need assistance with Client Center configuration or user access management.
+
 > **Important:** “Hidden from automatic discovery” is not a security setting. The website remains accessible to anyone who knows its address.
 
 ![Main list of Client Center websites](images/client-centers-list.png)
