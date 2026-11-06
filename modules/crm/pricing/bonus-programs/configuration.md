@@ -81,34 +81,26 @@ Use these conditions when the bonus depends on the product being sold.
 > [!NOTE]
 > To specify additional triggering products for a bonus program, add them to the **Products** panel in the bonus program's form.
 
-#### Quantity conditions
+#### Sum Quantities Regardless Of Measurement Unit
 
-Use **Condition Min Quantity** and **Condition Max Quantity** to define the quantity range in which a bonus program is eligible.
+Use **Condition Min Quantity** and **Condition Max Quantity** to define the quantity thresholds for the bonus program. The **Sum Quantities Regardless Of Measurement Unit** setting controls which product quantities contribute to the total compared with these thresholds and whether quantities with different base measurement units can be added together.
 
-By default, these conditions require triggering products to be specified through **Condition Product** or the **Products** panel. Quantities are accumulated only for products with the same base measurement unit; quantities from products with different base measurement units are not added together.
+The setting affects only the quantity used to check **Condition Min Quantity** and **Condition Max Quantity**. If neither threshold is specified, the setting has no effect.
 
-To combine numeric base quantities across different measurement units, or to use quantity conditions with **Condition Product Group**, including its subgroups, enable the setting described below.
+When the setting is **disabled** (the default), the following rules apply:
 
-#### Exception: summing quantities regardless of measurement unit
+- Quantities from matching products specified through **Condition Product** or the **Products** panel contribute to the quantity total only if the products have the same base measurement unit.
+- Quantities from products matched only through **Condition Product Group**, including its subgroups, do not contribute to the total, even if their base measurement units are the same.
 
-If a bonus program intentionally uses a combined numeric quantity across products with different base measurement units, enable **Sum Quantities Regardless Of Measurement Unit**.
+When the setting is **enabled**, the following rules apply:
 
-This setting is disabled by default. Enable it only when the numeric base quantities should contribute to the same threshold, regardless of their measurement units.
+- Numeric base quantities from matching products specified through **Condition Product** or the **Products** panel are added together regardless of the products' base measurement units.
+- Quantities from products matched through **Condition Product Group**, including its subgroups, also contribute to the total.
 
-When the setting is enabled and **Condition Min Quantity** and/or **Condition Max Quantity** is specified, ERP.net:
-
-- Uses the sales order lines that match the bonus program's product conditions.
-- Sums the numeric base quantities of those lines, regardless of the products' base measurement units.
-- Compares the resulting total with the configured minimum and/or maximum quantity.
-
-The product conditions can identify a specific product, products listed in the **Products** panel, or products in a specified product group, including its subgroups. Enabling the setting does not change which lines match these conditions.
-
-This allows quantity conditions to be used for a product group with different base measurement units when the bonus program explicitly requires a combined numeric total.
+In both cases, the resulting total is compared with **Condition Min Quantity** and/or **Condition Max Quantity**.
 
 > [!IMPORTANT]
-> No conversion between measurement units is performed. For example, base quantities of 60 pcs and 40 kg contribute a numeric total of 100 to the quantity threshold check. This total is not a physical quantity expressed in a common measurement unit.
-
-The setting affects only the quantity used to check **Condition Min Quantity** and **Condition Max Quantity**. If neither threshold is specified, it has no effect on quantity evaluation.
+> When the setting is enabled, numeric base quantities are summed without conversion between measurement units. For example, base quantities of 60 pcs and 40 kg contribute a numeric total of 100 to the quantity threshold check. This total is not a physical quantity expressed in a common measurement unit.
 
 ### Amount context
 
