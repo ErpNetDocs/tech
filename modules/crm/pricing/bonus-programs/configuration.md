@@ -78,14 +78,34 @@ Use these conditions when the bonus depends on the product being sold.
 - **Condition Min Quantity** - sets the minimum ordered quantity required for the bonus program to be considered.
 - **Condition Max Quantity** - sets the maximum ordered quantity for which the bonus program can be considered.
 
-> [!IMPORTANT]
-> **Condition Min Quantity** and **Condition Max Quantity** can be used only when the bonus program has a product condition. Such a condition can be defined either through the **Condition Product** field or through the **Products** panel.
+#### Quantity conditions
+
+Use **Condition Min Quantity** and **Condition Max Quantity** to define the quantity range in which a bonus program is eligible.
+
+By default, these conditions require triggering products to be specified through **Condition Product** or the **Products** panel. Quantities are accumulated only for products with the same base measurement unit; quantities from products with different base measurement units are not added together.
+
+To combine numeric base quantities across different measurement units, or to use quantity conditions with **Condition Product Group**, including its subgroups, enable the setting described below.
+
+#### Exception: summing quantities regardless of measurement unit
+
+If a bonus program intentionally uses a combined numeric quantity across products with different base measurement units, enable **Sum Quantities Regardless Of Measurement Unit**.
+
+This setting is disabled by default. Enable it only when the numeric base quantities should contribute to the same threshold, regardless of their measurement units.
+
+When the setting is enabled and **Condition Min Quantity** and/or **Condition Max Quantity** is specified, ERP.net:
+
+- Uses the sales order lines that match the bonus program's product conditions.
+- Sums the numeric base quantities of those lines, regardless of the products' base measurement units.
+- Compares the resulting total with the configured minimum and/or maximum quantity.
+
+The product conditions can identify a specific product, products listed in the **Products** panel, or products in a specified product group, including its subgroups. Enabling the setting does not change which lines match these conditions.
+
+This allows quantity conditions to be used for a product group with different base measurement units when the bonus program explicitly requires a combined numeric total.
 
 > [!IMPORTANT]
-> **Condition Product Group** should not be combined with **Condition Min Quantity** or **Condition Max Quantity**. Quantity-based evaluation requires a consistent base measurement unit, which cannot be guaranteed for all products in a group.
+> No conversion between measurement units is performed. For example, base quantities of 60 pcs and 40 kg contribute a numeric total of 100 to the quantity threshold check. This total is not a physical quantity expressed in a common measurement unit.
 
-> [!IMPORTANT]
-> When quantity conditions are used with additional triggering products configured in the **Products** panel, quantities from products with different base measurement units are not accumulated together. To ensure predictable quantity-based evaluation, use triggering products with the same base measurement unit.
+The setting affects only the quantity used to check **Condition Min Quantity** and **Condition Max Quantity**. If neither threshold is specified, it has no effect on quantity evaluation.
 
 ### Amount context
 
@@ -153,13 +173,11 @@ For more information about document amounts, see [Additional amounts](~/advanced
 
 ## Matching configured conditions
 
-A bonus program can be considered only when the values in the sales order match the configured applicability conditions.
+A bonus program can be considered only when the sales order satisfies all configured applicability conditions.
 
-If a bonus program contains multiple applicability conditions, all of them must match for the program to be considered.
+If product conditions are defined, the sales order must also contain products that match them. If no product conditions are defined, no product match is required; the bonus program is evaluated against the remaining configured conditions.
 
-If **Condition Product** is not specified, the configured conditions are matched in the context of the whole sales order. If **Condition Product** is specified, the configured conditions are matched only for the sales order lines that contain that product.
-
-For example, a bonus program configured for a specific product and customer is considered only when both the product and the customer in the sales order match the configured values.
+For example, a bonus program configured for a specific product and customer is considered only when the sales order contains that product and is for that customer.
 
 For more information about how @@name selects the final bonus program when multiple bonus programs are applicable, see [Determine bonus program](concepts/determine-bonus-program.md).
 
