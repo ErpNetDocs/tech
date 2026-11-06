@@ -81,7 +81,7 @@ Use these conditions when the bonus depends on the product being sold.
 > [!NOTE]
 > To specify additional triggering products for a bonus program, add them to the **Products** panel in the bonus program's form.
 
-#### Sum Quantities Regardless Of Measurement Unit
+#### Sum Quantities Regardless Of Measurement Unit 
 
 The **Sum Quantities Regardless Of Measurement Unit** controls which product quantities contribute to the total used to check **Condition Min Quantity** and **Condition Max Quantity**, and whether quantities with different base measurement units can be added together. It has no effect if neither quantity threshold is specified.
 
