@@ -87,13 +87,13 @@ The **Sum Quantities Regardless Of Measurement Unit** controls which product qua
 
 When the setting is **disabled** (the default), the following rules apply:
 
-- Quantities from matching products specified through **Condition Product** or the **Products** panel contribute to the quantity total only if the products have the same base measurement unit.
+- If **Condition Product** is specified, only quantities for that product contribute to the total. Otherwise, quantities from matching products in the **Products** panel contribute only if the products have the same base measurement unit.
 - Quantities from products matched only through **Condition Product Group**, including its subgroups, do not contribute to the total, even if their base measurement units are the same.
 
 When the setting is **enabled**, the following rules apply:
 
-- Numeric base quantities from matching products specified through **Condition Product** or the **Products** panel are added together regardless of the products' base measurement units.
-- Quantities from products matched through **Condition Product Group**, including its subgroups, also contribute to the total.
+- If **Condition Product** is specified, only quantities for that product contribute to the total. Otherwise, numeric base quantities from matching products in the **Products** panel are added together regardless of their base measurement units.
+- Numeric base quantities from products matched through **Condition Product Group**, including its subgroups, also contribute to the total, regardless of their base measurement units.
 
 In both cases, the resulting total is compared with **Condition Min Quantity** and/or **Condition Max Quantity**.
 
