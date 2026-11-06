@@ -275,7 +275,7 @@ Use this scenario when quantities from multiple triggering products should be co
 
 **Example configuration**
 
-**Bonus Program: Bonus Program A** 
+**Bonus Program: Bonus Program A**  
 Bonus Action: Product  
 Condition Product: not specified  
 Condition Min Quantity: 5  
