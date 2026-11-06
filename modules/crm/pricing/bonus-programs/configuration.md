@@ -78,6 +78,9 @@ Use these conditions when the bonus depends on the product being sold.
 - **Condition Min Quantity** - sets the minimum ordered quantity required for the bonus program to be considered.
 - **Condition Max Quantity** - sets the maximum ordered quantity for which the bonus program can be considered.
 
+> [!NOTE]
+> To specify additional triggering products for a bonus program, add them to the **Products** panel in the bonus program's form.
+
 #### Quantity conditions
 
 Use **Condition Min Quantity** and **Condition Max Quantity** to define the quantity range in which a bonus program is eligible.
