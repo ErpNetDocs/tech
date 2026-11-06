@@ -125,7 +125,7 @@ When an expected bonus program is not determined, check the following:
 5. Whether the **Customer** belongs to the defined **Target Group**.
 6. Whether the sales order lines contain products that match the product condition, if such a condition is defined.
 7. Whether the evaluated **Quantity** satisfies **Condition Min Quantity** / **Condition Max Quantity**.
-8. Whether **Sum Quantities Regardless Of Measurement Unit** is enabled when the expected quantity total includes products with different base measurement units or products matched only through **Condition Product Group**.
+8. Whether **Sum Quantities Regardless Of Measurement Unit** is enabled when the expected quantity total includes products with different base measurement units or products selected only by **Condition Product Group**, including its subgroups.
 9. Whether **Condition Product** is specified, causing products listed in the **Products** panel to be ignored in the quantity and amount calculations.
 10. Whether the evaluated **Amount** satisfies **Condition Min Amount** / **Condition Max Amount**.
 11. Whether the document currency matches **Condition Document Currency**, when amount conditions are defined.
