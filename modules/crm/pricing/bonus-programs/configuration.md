@@ -279,7 +279,7 @@ Use this scenario when quantities from multiple triggering products should be co
 Bonus Action: Product  
 Condition Product: not specified  
 Condition Min Quantity: 5  
-Sum Quantities Regardless Of Measurement Unit: disabled 
+Sum Quantities Regardless Of Measurement Unit: disabled  
 Bonus Product: Product C  
 Bonus Product Quantity: 1  
 Bonus Product Quantity Unit: pcs  
