@@ -271,31 +271,70 @@ Line Standard Discount Percent: 15%
 
 ### Bonus program for multiple triggering products
 
-Use this scenario when the same bonus should apply to more than one triggering product.
+Use this scenario when quantities from multiple triggering products should be combined to meet a quantity threshold.
 
 **Example configuration**
 
-**Bonus Program: Bonus Program A**  
-Bonus Action: Product  
-Condition Product: Product A    
-Condition Min Quantity: 5  
-Bonus Product: Product C  
-Bonus Product Quantity: 1  
-Bonus Product Quantity Unit: pcs  
+**Bonus Program: Bonus Program A**
+Bonus Action: Product
+Condition Product: not specified
+Condition Min Quantity: 5
+Sum Quantities Regardless Of Measurement Unit: disabled
+Bonus Product: Product C
+Bonus Product Quantity: 1
+Bonus Product Quantity Unit: pcs
 
-Products panel: 
+Products panel:
+Product: Product A
 Product: Product B
+
+Both triggering products have **pcs** as their base measurement unit.
 
 **Sales order context**  
 Line No: 10  
 Product: Product A  
-Quantity: 2  
+Quantity Base: 2 pcs
+
+Line No: 20  
+Product: Product B    
+Quantity Base: 2 pcs
+
+The combined base quantity is **2 + 3 = 5**, so the minimum quantity condition is satisfied.
+
+**Result**  
+Bonus Program: Bonus Program A  
+An additional sales order line is added.  
+Line No: 30  
+Product: Product C  
+Quantity: 1  
 Quantity Unit: pcs  
+
+### Quantity threshold for a product group
+
+Use this scenario when numeric base quantities from products in a group should be combined to meet a quantity threshold.
+
+**Example configuration**
+
+**Bonus Program: Bonus Program A**
+Bonus Action: Product
+Condition Product: not specified
+Condition Product Group: Group A
+Condition Min Quantity: 100
+Sum Quantities Regardless Of Measurement Unit: enabled
+Bonus Product: Product C
+Bonus Product Quantity: 1
+Bonus Product Quantity Unit: pcs
+
+The **Products** panel is empty. Product A and Product B belong to Group A.
+
+**Sales order context**  
+Line No: 10  
+Product: Product A  
+Quantity Base: 60 pcs
 
 Line No: 20  
 Product: Product B  
-Quantity: 3  
-Quantity Unit: pcs  
+Quantity Base: 40 kg
 
 **Result**  
 Bonus Program: Bonus Program A  
