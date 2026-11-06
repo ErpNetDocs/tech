@@ -284,8 +284,8 @@ Bonus Product: Product C
 Bonus Product Quantity: 1  
 Bonus Product Quantity Unit: pcs  
 
-Products panel: 
-Product: Product A 
+Products panel:  
+Product: Product A  
 Product: Product B 
 
 Both triggering products have **pcs** as their base measurement unit.
