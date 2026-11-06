@@ -276,17 +276,17 @@ Use this scenario when quantities from multiple triggering products should be co
 **Example configuration**
 
 **Bonus Program: Bonus Program A**
-Bonus Action: Product
-Condition Product: not specified
-Condition Min Quantity: 5
-Sum Quantities Regardless Of Measurement Unit: disabled
-Bonus Product: Product C
-Bonus Product Quantity: 1
-Bonus Product Quantity Unit: pcs
+Bonus Action: Product 
+Condition Product: not specified 
+Condition Min Quantity: 5 
+Sum Quantities Regardless Of Measurement Unit: disabled 
+Bonus Product: Product C 
+Bonus Product Quantity: 1 
+Bonus Product Quantity Unit: pcs 
 
-Products panel:
-Product: Product A
-Product: Product B
+Products panel: 
+Product: Product A 
+Product: Product B 
 
 Both triggering products have **pcs** as their base measurement unit.
 
@@ -315,14 +315,14 @@ Use this scenario when numeric base quantities from products in a group should b
 
 **Example configuration**
 
-**Bonus Program: Bonus Program A**
-Bonus Action: Product
-Condition Product: not specified
-Condition Product Group: Group A
-Condition Min Quantity: 100
-Sum Quantities Regardless Of Measurement Unit: enabled
-Bonus Product: Product C
-Bonus Product Quantity: 1
+**Bonus Program: Bonus Program A** 
+Bonus Action: Product 
+Condition Product: not specified 
+Condition Product Group: Group A 
+Condition Min Quantity: 100 
+Sum Quantities Regardless Of Measurement Unit: enabled 
+Bonus Product: Product C 
+Bonus Product Quantity: 1 
 Bonus Product Quantity Unit: pcs
 
 The **Products** panel is empty. Product A and Product B belong to Group A.
