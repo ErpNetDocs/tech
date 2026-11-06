@@ -68,7 +68,7 @@ Lines that already have a bonus program or belong to a promotional package do no
 
 Product conditions determine which of the remaining sales order lines are relevant to the bonus program. They can be defined through **Condition Product**, the **Products** panel, or **Condition Product Group**, including its subgroups. If no product conditions are defined, the evaluation uses the sales order as its context.
 
-If **Condition Product** is specified, products listed in the **Products** panel are ignored when calculating both the quantity and the amount used to evaluate the bonus program's conditions. This rule applies regardless of the **Sum Quantities Regardless Of Measurement Unit** setting.
+If **Condition Product** is specified, products listed in the **Products** panel are ignored when calculating both the quantity and the amount used to evaluate the bonus program's conditions.
 
 ### Product and quantity conditions
 
