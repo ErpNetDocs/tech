@@ -83,9 +83,7 @@ Use these conditions when the bonus depends on the product being sold.
 
 #### Sum Quantities Regardless Of Measurement Unit
 
-Use **Condition Min Quantity** and **Condition Max Quantity** to define the quantity thresholds for the bonus program. The **Sum Quantities Regardless Of Measurement Unit** setting controls which product quantities contribute to the total compared with these thresholds and whether quantities with different base measurement units can be added together.
-
-The setting affects only the quantity used to check **Condition Min Quantity** and **Condition Max Quantity**. If neither threshold is specified, the setting has no effect.
+The **Sum Quantities Regardless Of Measurement Unit** controls which product quantities contribute to the total used to check **Condition Min Quantity** and **Condition Max Quantity**, and whether quantities with different base measurement units can be added together. It has no effect if neither quantity threshold is specified.
 
 When the setting is **disabled** (the default), the following rules apply:
 
