@@ -95,10 +95,8 @@ Even though all Shipment Orders are dated in November, the Sales Order date dete
 - Keep its original generation settings, apart from the necessary date changes.
 - Make sure the generating document's **Activation Date / Deactivation Date** also allows documents to be generated after the process change.
 
-> [!IMPORTANT]
-> Master document dates do not preserve previous route configurations automatically.
->
-> If an existing route is changed or disabled, unfinished document flows may no longer be able to generate documents using the old process.
+> [!WARNING]
+> To keep existing document flows using the old process, do not modify or disable the existing route. Instead, create a new route with the updated configuration and use master document dates to control which route applies.
 
 ## See also
 
