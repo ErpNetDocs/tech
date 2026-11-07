@@ -1,141 +1,108 @@
 # Route activation dates
 
-Document routes can be configured with date ranges that determine when a
-[document generation](generation.md) route is applicable.
+Document routes use date ranges to determine when a route can be used for [document generation](https://docs.erp.net/tech/advanced/document-flow/generation.html).
 
-There are two independent date ranges:
+Each route can have two date ranges:
 
-- **Activation Date** and **Deactivation Date** are compared with the document
-  date of the **generating document**.
-- **Master Document Activation Date** and **Master Document Deactivation Date**
-  are compared with the document date of the **master document**.
+- **Activation Date / Deactivation Date** — checked against the date of the document generating the next document.
+- **Master Document Activation Date / Master Document Deactivation Date** — checked against the date of the original document that started the document flow.
 
-The generating document is the document from which the route generates another
-document. The master document is the document that starts the document flow.
+## Why and when to use master document dates
+
+Master document dates are useful when a company changes its document generation process but still has unfinished documents from the old process.
+
+**For example:**
+
+A company introduces a new document route starting **01 Nov 2026**. However, some Sales Orders created in October are still being processed.
+
+These Sales Orders must continue using the old route, even when their next documents are generated in November or later.
+
+Checking only the generating document's date cannot distinguish these old document flows from new ones.
+
+**Master document dates solve this problem.** They allow:
+
+- Existing document flows to continue using the old route.
+- New document flows to use the new route.
+- Both routes to remain active at the same time.
+
+This is useful whenever a process changes but unfinished document flows must continue under the previous rules.
 
 > [!NOTE]
-> Master document activation dates are available from version **27.1.1.35**.
+> Master document activation and deactivation dates are available from version **27.1.1.35**.
 
-## Activation Date and Deactivation Date
+## How the date fields work
 
-These fields define the period during which a route is applicable based on the
-document date of the generating document.
+### Activation Date and Deactivation Date
 
-- **Activation Date** is the first date on which the route is applicable.
-- **Deactivation Date** is the last date on which the route is applicable.
-  If empty, there is no deactivation date.
+These fields check the date of the **generating document**.
 
-Both boundaries are **inclusive**. Activation Date is required.
+- **Activation Date** — First applicable date. Required.
+- **Deactivation Date** — Last applicable date. Optional.
 
-### Example
+### Master Document Activation Date and Master Document Deactivation Date
 
-A route has the following settings:
+These fields check the date of the **master document**.
 
-| Field | Value |
-| --- | --- |
-| Activation Date | 01 Jan 2026 |
-| Deactivation Date | 31 Dec 2026 |
+- **Master Document Activation Date** — First applicable master document date.
+- **Master Document Deactivation Date** — Last applicable master document date.
 
-The route is applicable to a generating document dated **01 Jan 2026** or
-**31 Dec 2026**, but not to one dated **01 Jan 2027**.
+Both fields are optional. If both are empty, the master document date does not restrict the route.
 
-Other route conditions must also be met for the route to run.
+For all four fields, the date boundaries are **inclusive**. An empty optional date means no limit in that direction.
 
-## Master Document Activation Date and Master Document Deactivation Date
+When both date ranges are configured, **both conditions must be satisfied**. Other route conditions must also be met.
 
-These fields define the period during which a route is applicable based on the
-document date of the master document.
+The checks use document dates, **not the current system date or the date when generation is executed**.
 
-- **Master Document Activation Date** is the first master document date for
-  which the route is applicable.
-- **Master Document Deactivation Date** is the last master document date for
-  which the route is applicable. If empty, there is no master document
-  deactivation date.
-
-Both boundaries are **inclusive**. Both fields can be left empty.
-
-### Example
+## Example: Changing document routes
 
 Consider the following document flow:
 
 **Sales Order → Shipment Order → Shipment**
 
-The Sales Order is the master document. A route from Shipment Order to Shipment
-has a master document period from **01 Nov 2026** to **30 Nov 2026**.
+When generating a Shipment:
 
-| Sales Order date | Within the master document period? |
-| --- | --- |
-| 31 Oct 2026 | No |
-| 01 Nov 2026 | Yes |
-| 30 Nov 2026 | Yes |
-| 01 Dec 2026 | No |
+- **Sales Order** is the master document.
+- **Shipment Order** is the generating document.
 
-When the route is evaluated, the date of the **Sales Order** is checked against
-the master document period, not the date of the Shipment Order.
+The company introduces a new document generation process starting **01 Nov 2026**.
 
-## Combining both periods
+To keep the old process available for existing Sales Orders, configure two routes.
 
-When both periods are configured, the corresponding document dates must meet
-**both** conditions:
+The table below shows only the master document date settings. Both routes must also have a valid **Activation Date**.
 
-1. The generating document date must fall within the Activation Date and
-   Deactivation Date period.
-2. The master document date must fall within the Master Document Activation Date
-   and Master Document Deactivation Date period.
+| Field | Existing route | New route |
+|---|---|---|
+| Master Document Activation Date | Empty | 01 Nov 2026 |
+| Master Document Deactivation Date | 31 Oct 2026 | Empty |
 
-The route must also be active and satisfy its other configured conditions.
+**Result:**
 
-### Example
+| Sales Order date | Shipment Order date | Applicable route based on master date |
+|---|---|---|
+| 18 Oct 2026 | 05 Nov 2026 | Existing route |
+| 31 Oct 2026 | 15 Nov 2026 | Existing route |
+| 01 Nov 2026 | 05 Nov 2026 | New route |
+| 10 Nov 2026 | 20 Nov 2026 | New route |
 
-A route has these settings:
+Even though all Shipment Orders are dated in November, the Sales Order date determines which route meets the master document date condition.
 
-| Field | Value |
-| --- | --- |
-| Activation Date | 01 Jan 2026 |
-| Deactivation Date | 31 Dec 2026 |
-| Master Document Activation Date | 01 Oct 2026 |
-| Master Document Deactivation Date | 31 Oct 2026 |
+**The generating document date is also checked.** For example, if the existing route has a Deactivation Date of **31 Dec 2026**, a Shipment Order dated **05 Jan 2027** cannot use this route, even if its Sales Order is dated in October 2026.
 
-For a Sales Order dated **18 Oct 2026** and a generating Shipment Order dated
-**05 Nov 2026**, both dates are within their respective periods. The date
-conditions are satisfied.
+### Important configuration notes
 
-If the Shipment Order is dated **05 Jan 2027**, the generating document date
-is outside the first period. The route does not meet the date conditions, even
-though the Sales Order date is within the master document period.
-
-## Changing routes for new document flows
-
-Master document dates can be used to apply different routes to existing and new
-document flows.
-
-For example, configure two routes with non-overlapping master document periods:
-
-| Route | Master Document Activation Date | Master Document Deactivation Date |
-| --- | --- | --- |
-| Existing route | Empty | 31 Oct 2026 |
-| New route | 01 Nov 2026 | Empty |
-
-A flow with a master document dated **18 Oct 2026** can continue using the
-existing route. A flow with a master document dated **01 Nov 2026** can use the
-new route.
-
-Keep the existing route active and applicable to the old master document dates
-for as long as those flows may need it. Its generating document date period and
-other conditions must also allow it to run.
+- Keep the existing route active while unfinished document flows still need it.
+- Keep its original generation settings, apart from the necessary date changes.
+- Make sure the generating document's **Activation Date / Deactivation Date** also allows documents to be generated after the process change.
 
 > [!IMPORTANT]
-> Changing a route's master document period does not by itself preserve an old
-> route configuration. If a route is changed, disabled, or configured with a
-> period that excludes an existing flow's master document date, do not assume
-> that the flow can generate further documents through that route.
+> Master document dates do not preserve previous route configurations automatically.
 >
-> Documents generated before the change may already exist. This is different
-> from generating a new document through a route after its settings change.
+> If an existing route is changed or disabled, unfinished document flows may no longer be able to generate documents using the old process.
 
 ## See also
 
-- [Document generation](generation.md)
-- [Generation procedures](generation-procedures.md)
-- [Document flow](index.md)
-- [Document routes in the Domain Model](xref:Systems.Documents.Routes)
+- [Document generation](https://docs.erp.net/tech/advanced/document-flow/generation.html)
+- [Generation procedures](https://docs.erp.net/tech/advanced/document-flow/generation-procedures.html)
+- [Document flow](https://docs.erp.net/tech/advanced/document-flow/index.html)
+- [Document routes in the Domain Model](https://docs.erp.net/model/entities/Systems.Documents.Routes.html)
