@@ -11,7 +11,7 @@ Access to a resource and permission to perform an action are not the same.
 For example, a user may be able to open a record without being allowed to
 update or delete it.
 
-## Permissions for individual documents
+## Access permissions on individual documents
 
 An individual document can have its own access key. The permissions associated
 with that key control access to the document and actions such as:
@@ -51,17 +51,6 @@ A document type also has its own access permissions. Some apply to the
 **type definition**, while others control specific actions on **documents of
 that type**.
 
-<!-- Add the document type access permissions section here. -->
-
-## See also
-
-- [Security in ERP.net](https://info.erp.net/information/system-information/security.html)
-- [Document states](https://docs.erp.net/tech/concepts/documents/states.html)
-- [Documents reference](https://docs.erp.net/model/entities/General.Documents.Documents.html)
-
-
-# Access permissions on document types
-
 The **Access Permissions** panel for a document type contains two kinds of permissions:
 
 | Permission | What it controls |
@@ -71,28 +60,26 @@ The **Access Permissions** panel for a document type contains two kinds of permi
 
 See the [Document Types reference](https://docs.erp.net/model/entities/Systems.Documents.DocumentTypes.html).
 
-> **Important:** Not having **Update** permission for a document type does **not**, by itself, prevent a user from editing documents of that type.
-
 ![picture](accessdoctype.png)
 
 ## Example 1: Editing but not releasing
 
-Chocho has no **Update** or **Release Documents** permission on the document type *Seller Order*.
+A user has no Update, Delete, Administer or Release Documents permission on the document type *Seller Order*.
 
-- He cannot edit the document type definition.
-- He may still be able to edit and save an order of that type in the **New** state, if his other applicable permissions allow it.
-- He cannot release the order unless he receives **Release Documents** permission through another group.
+- He cannot edit the **document type definition**.
+- He may still be able to edit and save an order of that type in a state lower than "Released"
+- He cannot release the order unless he receives "Release Documents" permission 
 
 A document's state and its permissions are separate checks: **New** generally allows editing, but it does not override access restrictions. See [Document States](https://docs.erp.net/tech/concepts/documents/states.html).
 
 ## Example 2: Restricting a specific document
 
-To restrict editing of a particular order, the document itself can have an **access key** with its own Update, Delete and Administer permissions. Restricting the document type definition does not automatically apply those restrictions to the order.
+To restrict editing of a particular document, the document itself can have an **access key** with its own Update, Delete and Administer permissions. Restricting the document type definition does not automatically apply those restrictions to the document itself.
 
 See the [Documents reference](https://docs.erp.net/model/entities/General.Documents.Documents.html).
 
 ## Check all group memberships
 
-If a user belongs to multiple groups, check all of them: a permission may be granted through another group. An unchecked permission for **Everyone** alone does not establish the user's effective permissions.
+If a user belongs to multiple groups, check all of them: a permission may be granted through another group.
 
 See [Security](https://info.erp.net/information/system-information/security.html).
