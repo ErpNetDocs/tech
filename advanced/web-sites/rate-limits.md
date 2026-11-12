@@ -9,10 +9,10 @@ Exceeding any type of limit will result in an HTTP response `429 - Too Many Requ
 "@@erpnet introduces several types of rate limits, each targeting a specific use case. These rate limits are summarized in the following table and described in more detail below.
 
 | Rate limit | Config key | Default value |
-| ----------- | ----------- |
+| ----------- | ----------- | ----------- |
 | Requests per minute per session | `SessionRpm` | 600 |
 | Concurrent requests per session | `SessionConcurrentRequests` | 1 |
-| Concurrent transactions per session | `SessionConcurrentTransactions` | 1 |
+| Concurrent transactions per session | `SessionConcurrentTransactions` | 10 from **27.1.1.96**; 1 before that version |
 | Global concurrent requests | `GlobalConcurrentRequests` | 2 |
 
 > [!NOTE]
@@ -34,7 +34,13 @@ If the concurrency limit is reached, an internal queue with a size of 5 is used 
 
 ### SessionConcurrentTransactions
 
-Session concurrent transactions is a rate limit that restricts the number of simultaneous API transactions within a session. By default, only one open transaction is allowed at a time during a session. Exceeding this limit will result in an HTTP response of 429 - Too Many Requests until the current transaction is completed.
+`SessionConcurrentTransactions` limits the number of Domain API transactions a session can keep open between `BeginTransaction` and `EndTransaction` calls.
+
+Starting with ERP.net version **27.1.1.96**, the default is **10 open transactions per session**. Earlier versions default to **1**. The limit is configurable in both version ranges: an explicit `RateLimits.SessionConcurrentTransactions` value in the website settings overrides the default and continues to apply after an upgrade.
+
+When the limit is reached, another `BeginTransaction` call returns **429 (Too Many Requests)** with the message "Maximum allowed transactions for this session have been reached." Close an existing transaction with `EndTransaction` before retrying. Open transactions count toward the limit even between HTTP requests; `SessionConcurrentRequests` independently controls the number of simultaneous HTTP requests.
+
+See [Domain API transactions](https://docs.erp.net/dev/domain-api/data-manipulation/transactions.html#concurrent-open-transactions) for transaction management and the versioned defaults.
 
 ### GlobalConcurrentRequests
 
@@ -56,10 +62,12 @@ The rate limits settings are expressed by a JSON object in a specific format. He
   "RateLimits": {
     "SessionRpm": 600,
     "SessionConcurrentRequests": 1,
-    "SessionConcurrentTransactions": 1
+    "SessionConcurrentTransactions": 10
   }
 }
 ```
+
+The example explicitly allows 10 open transactions per session, including on versions before 27.1.1.96. Use a positive integer for `SessionConcurrentTransactions`. If this setting is omitted, the website uses the default for its ERP.net version.
 
 > [!NOTE]
 > 
