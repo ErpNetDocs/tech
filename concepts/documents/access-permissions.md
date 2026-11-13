@@ -52,12 +52,15 @@ Group "Everybody" has no permissions but being listed here gives its members the
    - **Document access key** — the access key created earlier.
    - **Priority** — used to select a condition when more than one matches.
    - **Description** — identifies the condition.
+
 <br>
 <img width="680" height="506" alt="image" src="https://github.com/user-attachments/assets/9dec5375-fbe0-43f6-93d2-1d8e6650ef58" />
 <br>
+
 For future documents of that type that match the condition, the system applies the selected key. 
 
 The individual document's security type is set to **Shared access key**.
+
 <br>
 <img width="712" height="476" alt="image" src="https://github.com/user-attachments/assets/6a6142ec-dae2-4c7d-bff1-5a73f1ca4372" />
 <br>
