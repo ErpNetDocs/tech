@@ -32,4 +32,4 @@ This makes it possible to introduce new routes for document flows started from a
 
 The new fields are configured directly on the document route and work together with the existing activation dates and all other route conditions.
 
-For configuration details, examples, and important considerations when changing existing routes, see [Route activation dates](https://docs.erp.net/tech/advanced/document-flow/route-activation-dates.html).
+For configuration details, examples, and important considerations when changing existing routes, see [Route activation dates](../../../advanced/document-flow/route-activation-dates.md).
