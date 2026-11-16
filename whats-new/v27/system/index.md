@@ -19,3 +19,17 @@ In the Web client, a Reference attribute can be selected from the entity’s **s
 Learn more from the dedicated page: [User-defined references](https://docs.erp.net/dev/domain-api/common-tasks/custom-property-references.html)
 
 ![picture](reference.png)
+
+## 2. Master Document Activation and Deactivation Dates for Document Routes
+
+Document routes now support two new optional fields: **Master Document Activation Date** and **Master Document Deactivation Date**.
+
+When a document generates the next document through a route, the system can now check not only the date of the document performing the generation, but also the date of the original document that started the document flow.
+
+For example, a **Warehouse Order** generated in November may belong to a document flow that started from a **Sales Order** dated in October. When the Warehouse Order generates the next document, the existing **Activation Date / Deactivation Date** fields check the Warehouse Order date, while the new master document dates check the date of the original Sales Order.
+
+This makes it possible to introduce new routes for document flows started from a specific date, while unfinished older flows can continue using their previous routes.
+
+The new fields are configured directly on the document route and work together with the existing activation dates and all other route conditions.
+
+For configuration details, examples, and important considerations when changing existing routes, see [Route activation dates](https://docs.erp.net/tech/advanced/document-flow/route-activation-dates.html).
