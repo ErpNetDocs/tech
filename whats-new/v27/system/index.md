@@ -33,3 +33,22 @@ This makes it possible to introduce new routes for document flows started from a
 The new fields are configured directly on the document route and work together with the existing activation dates and all other route conditions.
 
 For configuration details, examples, and important considerations when changing existing routes, see [Route activation dates](../../../advanced/document-flow/route-activation-dates.md).
+
+## 3. System-Calculated Attributes: Total Line Amount and Amount To Pay 
+
+The **Total Line Amount** and **Amount To Pay** system-calculated attributes are being extended to **Invoice Orders, Receiving Orders, Purchase Invoices, and Offers (Total Line Amount only)**.
+
+These attributes give users a convenient way to view key document amounts without manual calculations. 
+
+👉**Total Line Amount** represents the sum of the document’s lines. For Offers, it includes **all lines**, including unselected alternatives.
+
+👉**Amount to Pay** is the total amount payable for a document. For Sales Orders and Invoices, ERP.net calculates it as: Total Line Amount + additional amounts marked “Add To Customer”. 
+Those additional amounts can include VAT and other charges payable by the customer.
+
+👉 Both calculated attributes can be displayed in the document header and in navigators, making key amounts easy to review. However, they cannot be used as search criteria in the advanced filter.
+
+This enhancement makes financial figures easier to review when working with documents.
+
+---
+
+
