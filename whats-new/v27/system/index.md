@@ -45,7 +45,7 @@ These attributes give users a convenient way to view key document amounts withou
 👉**Amount to Pay** is the total amount payable for a document. For Sales Orders and Invoices, ERP.net calculates it as: Total Line Amount + additional amounts marked “Add To Customer”. 
 Those additional amounts can include VAT and other charges payable by the customer.
 
-👉 Both calculated attributes can be displayed in the document header and in navigators, making key amounts easy to review. However, they cannot be used as search criteria in the advanced filter.
+👉 **Both** calculated attributes can be displayed in the document header and in navigators, making key amounts easy to review. However, they cannot be used as search criteria in the advanced filter.
 
 This enhancement makes financial figures easier to review when working with documents.
 
