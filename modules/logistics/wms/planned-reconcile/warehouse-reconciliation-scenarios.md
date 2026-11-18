@@ -250,7 +250,7 @@ At this stage, the system generates **Warehouse Transactions** for the approved 
 
 The created transactions use:
 
-- task type **Count**;
+- task type **Reconciliation**;
 - direction **IN** for positive differences;
 - direction **OUT** for negative differences;
 - and the corresponding quantities from the approved reconciliation result.
@@ -264,7 +264,7 @@ The approved differences are applied in WMS, and the warehouse availability is u
 
 After the approved differences are applied in WMS, the result can be transferred to an **Inventory Reconciliation** document.
 
-This is done by using the **Add the reconciliation lines from the WMS module** UI function in the **Reconciliation** document.
+This is done by using the [Add the reconciliation lines from the WMS module](operations/transfer-the-result-to-inventory-reconciliation.md). UI function in the **Reconciliation** document.
 
 At this stage, the result from WMS is ready to be loaded into the Inventory module for further review and application to the inventory availability.
 
