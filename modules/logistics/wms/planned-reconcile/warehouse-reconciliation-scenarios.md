@@ -229,7 +229,7 @@ At this stage, the approved differences are turned into [Warehouse Transactions]
 
 The created transactions use:
 
-- task type Count,
+- task type Reconciliation,
 - direction IN for positive differences,
 - direction OUT for negative differences,
 - and the corresponding quantities from the approved reconciliation result.
