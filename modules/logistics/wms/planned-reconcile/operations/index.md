@@ -11,5 +11,5 @@ Use them in the following order:
 - [Populate Counted Quantities](populate-counted-quantities.md) - Aggregate the performed counts into the reconciliation details.
 - [Generate recount orders](generate-recount-orders.md) - Send the selected rows to another counting cycle when another verification is needed.
 - [Generate warehouse transactions](generate-warehouse-transactions.md) - Change the document state to **Release** to generate warehouse transactions for the approved differences.
-
+- [Transfer the result to inventory reconciliation](transfer-the-result-to-inventory-reconciliation.md)
 Some operations can be repeated. For example, after a recount is executed in **WMS Worker**, users can populate the counted quantities again, review the result again, and generate another recount if needed.
