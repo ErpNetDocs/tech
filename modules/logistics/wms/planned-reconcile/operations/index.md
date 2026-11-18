@@ -13,4 +13,5 @@ Use them in the following order:
 - [Generate warehouse transactions](generate-warehouse-transactions.md) - Change the document state to **Release** to generate warehouse transactions for the approved differences.
 - [Transfer the result to inventory reconciliation](transfer-the-result-to-inventory-reconciliation.md) -  Create a new Inventory Reconciliation, select the Store, and use the Add the reconciliation lines from the WMS module UI function to add reconciliation lines for the detected differences.
 
-Some operations can be repeated. For example, after a recount is executed in **WMS Worker**, users can populate the counted quantities again, review the result again, and generate another recount if needed.
+> [!Note]
+> Some operations can be repeated. For example, after a recount is executed in **WMS Worker**, users can populate the counted quantities again, review the result again, and generate another recount if needed.
