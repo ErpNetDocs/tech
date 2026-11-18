@@ -1,4 +1,6 @@
-# This section highlights the latest improvements in WMS, bringing together new functionality, process enhancements, and usability updates across warehouse operations.
+# WMS features 
+
+This section highlights the latest improvements in WMS, bringing together new functionality, process enhancements, and usability updates across warehouse operations.
 
 ## Improved Inventory reconciliation from WMS
 
