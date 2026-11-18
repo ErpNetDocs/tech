@@ -16,4 +16,4 @@ The function can be used for reconciliation adjustments created through differen
 
 See:
 - [Planned Reconcile](https://docs.erp.net/tech/modules/logistics/wms/planned-reconcile/index.html)
-- [transfer the result to inventory reconciliation](transfer-the-result-to-inventory-reconciliation.md)
+- [Transfer the result to inventory reconciliation](transfer-the-result-to-inventory-reconciliation.md)
