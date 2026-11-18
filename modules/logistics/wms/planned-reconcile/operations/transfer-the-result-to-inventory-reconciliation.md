@@ -144,6 +144,6 @@ When the result is correct, **release the Inventory Reconciliation** to apply th
 
 ## Related topics
 
-- [Planned Reconcile](https://docs.erp.net/tech/modules/logistics/wms/planned-reconcile/index.html)
-- [Warehouse reconciliation scenarios](https://docs.erp.net/tech/modules/logistics/wms/planned-reconcile/warehouse-reconciliation-scenarios.html)
-- [Generate warehouse transactions](https://docs.erp.net/tech/modules/logistics/wms/planned-reconcile/operations/generate-warehouse-transactions.html)
+[Planned Reconcile](https://docs.erp.net/tech/modules/logistics/wms/planned-reconcile/index.html)
+[Warehouse reconciliation scenarios](https://docs.erp.net/tech/modules/logistics/wms/planned-reconcile/warehouse-reconciliation-scenarios.html)
+[Generate warehouse transactions](https://docs.erp.net/tech/modules/logistics/wms/planned-reconcile/operations/generate-warehouse-transactions.html)
