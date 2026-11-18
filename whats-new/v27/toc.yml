@@ -16,3 +16,6 @@
 - name: System features
   href: system/index.md
   topicHref: system/index.md
+- name: WMS
+  href: wms/index.md
+  topicHref: wms/index.md
