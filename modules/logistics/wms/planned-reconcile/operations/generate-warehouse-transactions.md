@@ -8,14 +8,14 @@ The system uses the approved **Warehouse Reconciliation Details**. For each appr
 
 The generated transactions use:
 
-- **TaskType = Count**;
+- **TaskType = Reconciliation**;
 - the warehouse and stock position from the approved reconciliation row;
 - the quantity of the approved difference.
 
 The transaction direction depends on the approved result:
 
-- **Count IN** for positive differences;
-- **Count OUT** for negative differences.
+- **Reconciliation IN** for positive differences;
+- **Reconciliation OUT** for negative differences.
 
 ### Example
 
@@ -24,9 +24,9 @@ A row shows:
 - **SnapshotQuantity**: 10
 - **CountedQuantity**: 8
 
-After the row is approved, the warehouse manager changes the document state to **Release**. The system then generates a **Count OUT** warehouse transaction for the corresponding quantity.
+After the row is approved, the warehouse manager changes the document state to **Release**. The system then generates a **Reconciliation OUT** warehouse transaction for the corresponding quantity.
 
-If another approved row has a counted quantity greater than the snapshot quantity, the system generates a **Count IN** warehouse transaction.
+If another approved row has a counted quantity greater than the snapshot quantity, the system generates a **Reconciliation IN** warehouse transaction.
 
 ### What users should expect after the operation finishes
 

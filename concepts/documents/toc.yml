@@ -6,5 +6,7 @@
   href: display.md
 - name: States
   href: states.md
+- name: Access permissions
+  href: access-permissions.md
 - name: Scalar and Key fields
   href: scalar_and_key_fields.md

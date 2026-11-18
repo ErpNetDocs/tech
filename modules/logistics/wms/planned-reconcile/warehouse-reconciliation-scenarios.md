@@ -229,7 +229,7 @@ At this stage, the approved differences are turned into [Warehouse Transactions]
 
 The created transactions use:
 
-- task type Count,
+- task type Reconciliation,
 - direction IN for positive differences,
 - direction OUT for negative differences,
 - and the corresponding quantities from the approved reconciliation result.
@@ -250,7 +250,7 @@ At this stage, the system generates **Warehouse Transactions** for the approved 
 
 The created transactions use:
 
-- task type **Count**;
+- task type **Reconciliation**;
 - direction **IN** for positive differences;
 - direction **OUT** for negative differences;
 - and the corresponding quantities from the approved reconciliation result.
@@ -264,7 +264,7 @@ The approved differences are applied in WMS, and the warehouse availability is u
 
 After the approved differences are applied in WMS, the result can be transferred to an **Inventory Reconciliation** document.
 
-This is done by using the **Add the reconciliation lines from the WMS module** UI function in the **Reconciliation** document.
+This is done by using the [Add the reconciliation lines from the WMS module](operations/transfer-the-result-to-inventory-reconciliation.md). UI function in the **Reconciliation** document.
 
 At this stage, the result from WMS is ready to be loaded into the Inventory module for further review and application to the inventory availability.
 
@@ -329,9 +329,9 @@ At this stage, the manager decides which rows can be accepted and which rows nee
 
 ### Step 5: Approve the accepted rows or repeat the recount, then apply the approved differences in WMS
 
-Review the counted quantities and either approve the accepted rows or generate [recount orders](operations/generate-recount-orders.md) for the rows that still require verification. For more information about the review flow, see [Sessions and review statuses](operations/sessions-and-review-statuses.md).
+Review the counted quantities and either approve the accepted rows or generate [Recount orders](operations/generate-recount-orders.md) for the rows that still require verification. For more information about the review flow, see [Sessions and review statuses](operations/sessions-and-review-statuses.md).
 
-After the result is accepted, change the state of the reconciliation document to **Released**. This lets the system generate the [warehouse transactions](operations/generate-warehouse-transactions.md) and apply the approved differences in WMS for the selected product rows.
+After the result is accepted, change the state of the reconciliation document to **Released**. This lets the system generate the [Warehouse transactions](operations/generate-warehouse-transactions.md) and apply the approved differences in WMS for the selected product rows.
 
 ### Step 6: Transfer the result to Inventory Reconciliation
 

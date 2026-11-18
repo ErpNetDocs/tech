@@ -62,23 +62,25 @@ If any specified condition does not match, the bonus program is excluded from th
 
 ## Line-based conditions
 
-After the general filtering, @@name evaluates the remaining bonus programs against the sales order lines.
+After the general filtering, @@name evaluates the remaining bonus programs against the sales order lines. All configured line-based conditions must be satisfied for a bonus program to remain applicable.
 
-If a bonus program contains multiple line-based conditions, all of them must match for the program to remain applicable.
-
-If the bonus program has no product condition, the evaluation is based on all sales order lines. If the bonus program has a product condition, defined either through the **Condition Product** field or through the **Products** panel, only the sales order lines whose products match that condition participate in the product and quantity evaluation.  
 Lines that already have a bonus program or belong to a promotional package do not participate in this evaluation.
+
+Product conditions determine which of the remaining sales order lines are relevant to the bonus program. They can be defined through **Condition Product**, the **Products** panel, or **Condition Product Group**, including its subgroups. If no product conditions are defined, the evaluation uses the sales order as its context.
+
+If **Condition Product** is specified, products listed in the **Products** panel are ignored when calculating both the quantity and the amount used to evaluate the bonus program's conditions.
 
 ### Product and quantity conditions
 
 A bonus program remains applicable only if all of the following conditions are met:
 
 - If the bonus program has a product condition, at least one participating sales order line matches it.
-- **Condition Min Quantity** is empty or is less than or equal to the context **Quantity**.
-- **Condition Max Quantity** is empty or is greater than or equal to the context **Quantity**.
+- **Condition Min Quantity** is empty or is less than or equal to the context quantity.
+- **Condition Max Quantity** is empty or is greater than or equal to the context quantity.
 
-> [!NOTE]
-> When additional triggering products are configured in the **Products** panel, quantities from products with different base measurement units are not accumulated together for the quantity evaluation.
+The context quantity is calculated according to the product conditions and the **Sum Quantities Regardless Of Measurement Unit** setting. For details on which quantities contribute to this total and how measurement units affect the calculation, see [Sum Quantities Regardless Of Measurement Unit](../configuration.md#sum-quantities-regardless-of-measurement-unit).
+
+If any of these conditions is not satisfied, the bonus program is excluded from the candidate set.
 
 ### Amount conditions
 
@@ -123,10 +125,12 @@ When an expected bonus program is not determined, check the following:
 5. Whether the **Customer** belongs to the defined **Target Group**.
 6. Whether the sales order lines contain products that match the product condition, if such a condition is defined.
 7. Whether the evaluated **Quantity** satisfies **Condition Min Quantity** / **Condition Max Quantity**.
-8. Whether the evaluated **Amount** satisfies **Condition Min Amount** / **Condition Max Amount**.
-9. Whether the document currency matches **Condition Document Currency**, when amount conditions are defined.
-10. Whether a higher-priority bonus program is applicable in the same context.
-11. Whether the **Apply Trade Conditions** field is enabled on the sales order and on the relevant sales order lines.
+8. Whether **Sum Quantities Regardless Of Measurement Unit** is enabled when the expected quantity total includes products with different base measurement units or products selected only by **Condition Product Group**, including its subgroups.
+9. Whether **Condition Product** is specified, causing products listed in the **Products** panel to be ignored in the quantity and amount calculations.
+10. Whether the evaluated **Amount** satisfies **Condition Min Amount** / **Condition Max Amount**.
+11. Whether the document currency matches **Condition Document Currency**, when amount conditions are defined.
+12. Whether a higher-priority bonus program is applicable in the same context.
+13. Whether the **Apply Trade Conditions** field is enabled on the sales order and on the relevant sales order lines.
 
 Keep in mind that:
 
@@ -134,7 +138,8 @@ Keep in mind that:
 - filtering is performed before line-based evaluation;
 - if the bonus program has a product condition, only sales order lines whose products match that condition participate in the product and quantity evaluation;
 - lines that already have a bonus program or belong to a promotional package do not participate in this evaluation;
-- when quantity conditions are used with additional triggering products, quantities from products with different base measurement units are not accumulated together;
+- when **Sum Quantities Regardless Of Measurement Unit** is disabled, quantities from additional triggering products with different base measurement units are not accumulated together;
+- when **Sum Quantities Regardless Of Measurement Unit** is enabled and a quantity threshold is specified, the numeric base quantities of all participating lines are summed without conversion between measurement units;
 - if more than one bonus program is applicable, the bonus program with the highest priority is selected.
 
 ## See also

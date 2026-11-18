@@ -78,14 +78,27 @@ Use these conditions when the bonus depends on the product being sold.
 - **Condition Min Quantity** - sets the minimum ordered quantity required for the bonus program to be considered.
 - **Condition Max Quantity** - sets the maximum ordered quantity for which the bonus program can be considered.
 
-> [!IMPORTANT]
-> **Condition Min Quantity** and **Condition Max Quantity** can be used only when the bonus program has a product condition. Such a condition can be defined either through the **Condition Product** field or through the **Products** panel.
+> [!NOTE]
+> To specify additional triggering products for a bonus program, add them to the **Products** panel in the bonus program's form.
+
+#### Sum Quantities Regardless Of Measurement Unit 
+
+The **Sum Quantities Regardless Of Measurement Unit** setting controls which product quantities contribute to the total used to check **Condition Min Quantity** and **Condition Max Quantity**, and whether quantities with different base measurement units can be added together. It has no effect if neither quantity threshold is specified.
+
+When the setting is **disabled** (the default), the following rules apply:
+
+- If **Condition Product** is specified, only quantities for that product contribute to the total. Otherwise, quantities from matching products in the **Products** panel contribute only if the products have the same base measurement unit.
+- Quantities from products matched only through **Condition Product Group**, including its subgroups, do not contribute to the total, even if their base measurement units are the same.
+
+When the setting is **enabled**, the following rules apply:
+
+- If **Condition Product** is specified, only quantities for that product contribute to the total. Otherwise, numeric base quantities from matching products in the **Products** panel are added together regardless of their base measurement units.
+- Numeric base quantities from products matched through **Condition Product Group**, including its subgroups, also contribute to the total, regardless of their base measurement units.
+
+In both cases, the resulting total is compared with **Condition Min Quantity** and/or **Condition Max Quantity**.
 
 > [!IMPORTANT]
-> **Condition Product Group** should not be combined with **Condition Min Quantity** or **Condition Max Quantity**. Quantity-based evaluation requires a consistent base measurement unit, which cannot be guaranteed for all products in a group.
-
-> [!IMPORTANT]
-> When quantity conditions are used with additional triggering products configured in the **Products** panel, quantities from products with different base measurement units are not accumulated together. To ensure predictable quantity-based evaluation, use triggering products with the same base measurement unit.
+> When the setting is enabled, numeric base quantities are summed without conversion between measurement units. For example, base quantities of 60 pcs and 40 kg contribute a numeric total of 100 to the quantity threshold check. This total is not a physical quantity expressed in a common measurement unit.
 
 ### Amount context
 
@@ -153,13 +166,11 @@ For more information about document amounts, see [Additional amounts](~/advanced
 
 ## Matching configured conditions
 
-A bonus program can be considered only when the values in the sales order match the configured applicability conditions.
+A bonus program can be considered only when the sales order satisfies all configured applicability conditions.
 
-If a bonus program contains multiple applicability conditions, all of them must match for the program to be considered.
+If product conditions are defined, the sales order must also contain products that match them. If no product conditions are defined, no product match is required; the bonus program is evaluated against the remaining configured conditions.
 
-If **Condition Product** is not specified, the configured conditions are matched in the context of the whole sales order. If **Condition Product** is specified, the configured conditions are matched only for the sales order lines that contain that product.
-
-For example, a bonus program configured for a specific product and customer is considered only when both the product and the customer in the sales order match the configured values.
+For example, a bonus program configured for a specific product and customer is considered only when the sales order contains that product and is for that customer.
 
 For more information about how @@name selects the final bonus program when multiple bonus programs are applicable, see [Determine bonus program](concepts/determine-bonus-program.md).
 
@@ -260,31 +271,72 @@ Line Standard Discount Percent: 15%
 
 ### Bonus program for multiple triggering products
 
-Use this scenario when the same bonus should apply to more than one triggering product.
+Use this scenario when quantities from multiple triggering products should be combined to meet a quantity threshold.
 
 **Example configuration**
 
 **Bonus Program: Bonus Program A**  
 Bonus Action: Product  
-Condition Product: Product A    
+Condition Product: not specified  
 Condition Min Quantity: 5  
+Sum Quantities Regardless Of Measurement Unit: disabled  
 Bonus Product: Product C  
 Bonus Product Quantity: 1  
 Bonus Product Quantity Unit: pcs  
 
-Products panel: 
-Product: Product B
+Products panel:  
+Product: Product A  
+Product: Product B 
+
+Both triggering products have **pcs** as their base measurement unit.
 
 **Sales order context**  
 Line No: 10  
 Product: Product A  
-Quantity: 2  
+Quantity Base: 2 pcs
+
+Line No: 20  
+Product: Product B    
+Quantity Base: 3 pcs
+
+The combined base quantity is **2 + 3 = 5**, so the minimum quantity condition is satisfied.
+
+**Result**  
+Bonus Program: Bonus Program A  
+An additional sales order line is added.  
+Line No: 30  
+Product: Product C  
+Quantity: 1  
 Quantity Unit: pcs  
+
+### Quantity threshold for a product group
+
+Use this scenario when numeric base quantities from products in a group should be combined to meet a quantity threshold.
+
+**Example configuration**
+
+**Bonus Program: Bonus Program A**  
+Bonus Action: Product  
+Condition Product: not specified  
+Condition Product Group: Group A  
+Condition Min Quantity: 100  
+Sum Quantities Regardless Of Measurement Unit: enabled  
+Bonus Product: Product C   
+Bonus Product Quantity: 1  
+Bonus Product Quantity Unit: pcs 
+
+The **Products** panel is empty. Product A and Product B belong to Group A.
+
+**Sales order context**  
+Line No: 10  
+Product: Product A  
+Quantity Base: 60 pcs
 
 Line No: 20  
 Product: Product B  
-Quantity: 3  
-Quantity Unit: pcs  
+Quantity Base: 40 kg
+
+The numeric base quantities are added together: **60 + 40 = 100**. The minimum quantity condition is satisfied.
 
 **Result**  
 Bonus Program: Bonus Program A  
@@ -304,7 +356,7 @@ Use this scenario to show that a product-specific bonus program is not considere
 
 **Example configuration**
 
-**Bonus Program: Bonus Program A**  
+**Bonus Program: Bonus Program A**   
 Bonus Action: Product  
 Condition Product: Product A  
 Bonus Product: Product B  

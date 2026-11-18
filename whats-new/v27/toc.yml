@@ -7,9 +7,15 @@
 - name: Work Management
   href: work-management/index.md
   topicHref: work-management/index.md
+- name: CRM
+  href: crm/index.md
+  topicHref: crm/index.md
 - name: POS
   href: POS/index.md
   topicHref: POS/index.md
 - name: System features
   href: system/index.md
   topicHref: system/index.md
+- name: WMS
+  href: wms/index.md
+  topicHref: wms/index.md
