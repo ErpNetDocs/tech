@@ -51,3 +51,34 @@ This enhancement makes financial figures easier to review when working with docu
 <br>
 <img width="1373" height="821" alt="image" src="https://github.com/user-attachments/assets/3c601512-3e68-4df5-8c02-bb03a2993570" />
 <br>
+
+
+## 4. Product Type Properties Now Available in Purchase Invoice Lines in the Web Client
+
+The Web Client now supports up to five custom properties in [Purchase invoice lines](https://docs.erp.net/model/entities/Logistics.Procurement.PurchaseInvoiceLines.html#linecustomproperty1), bringing functionality already available in the Desktop Client to the web interface.
+
+These properties capture additional information about a specific purchase, such as a **project, cost center, or activity**. The product type determines which properties are relevant, helping users enter consistent information without searching through all custom properties available for purchase invoice lines. Where the accounting template is configured accordingly, these values can also be used to populate accounting analytics during posting.
+
+Through **Customize panel** in the purchase invoice lines panel, users can **display** the five property positions as grid columns - section "Purchase invoice line properties".
+
+<br>
+<img width="876" height="331" alt="image" src="https://github.com/user-attachments/assets/68f6ccb5-d212-47a9-ad48-11de154d90db" />
+<br>
+
+Each position is linked to the corresponding custom property configured in the selected product’s **Product Type**. The same position can therefore represent different properties on different invoice lines—for example, “Project” for Product Type "Goods" and “Colour” for Product Type "Materials".
+
+<br>
+<img width="758" height="554" alt="image" src="https://github.com/user-attachments/assets/5de0ccef-e3ca-45df-bc98-766e7d13a132" />
+<br>
+
+Each Property 1-5 offers its configured allowed values. Values entered through these columns are stored in the invoice line’s existing custom properties—not as a separate set of data—and remain **synchronized** with other representations of the same property.<br>
+
+<br>
+<img width="1596" height="143" alt="image" src="https://github.com/user-attachments/assets/1d60a88f-988e-489c-b3c2-58fdff8ea9f5" />
+<br>
+
+The property columns **update dynamically** when the product on a line changes, reflecting the new product type’s configuration. Each position displays the corresponding custom property and offers its allowed values, so users always work with the properties relevant to the currently selected product.
+
+This makes product-type-specific information easier to access and enter directly in the Web Client’s invoice grid.
+
+Learn more about [Stored Attributes](https://docs.erp.net/tech/advanced/stored-attributes/index.html)
