@@ -82,3 +82,31 @@ The property columns **update dynamically** when the product on a line changes, 
 This makes product-type-specific information easier to access and enter directly in the Web Client’s invoice grid.
 
 Learn more about [Stored Attributes](https://docs.erp.net/tech/advanced/stored-attributes/index.html)
+
+## 5. Global Layout Management Without Administrator Rights in the Desktop Client
+
+Users with the **Global Layout Manager** permission can now customize and save layouts for specific roles or all users in the Desktop Client, without requiring system administrator rights.
+
+This functionality is available for the home screen, single-record forms, and navigators.
+
+### Required Permissions
+
+In **Setup → Security → System Permissions**, assign the following permissions to the user:
+
+- **General → Layout → Global Layout Manager**
+- **General → Users → Advanced User** or **Super User**
+
+In the Desktop Client, the user must also set **User interface complexity** to **Advanced User** or **Super User**.
+
+### Customizing and Saving Layouts
+
+On the **View** tab, select **Customize Current View** and make your changes.
+Then choose how to save the layout:
+
+- **For yourself:** Click **Save layout changes**.
+- **For a role or all users:** Select **More → Save current view as…**.
+  In the **Save Layout As** dialog, choose **Role** or **All users**.
+  To save the layout under a specific name, select **Named Layout** and enter a name.
+  Click **Save**.
+
+![Save Layout As dialog with All users selected](save-layout-as.png)
