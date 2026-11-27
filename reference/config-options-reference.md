@@ -562,13 +562,15 @@ If you need to analyze the data, you may use Python code.
 
 * a. Action: Controls parameter Reset state of parent document at VOID operation When the option is enabled, the state of the parent document will be reset.br> When the value of this key is:\
   "0" (False) or the key is not defined - The parent document's state will NOT be reset.\
-  "1" (True) - The parent document's state will be reset. **(default behavior)** 
+  "1" (True) - The parent document's state will be reset. **(default behavior)**
 * b. The user sets it manually.
 * c. The key is introduced in version: 26.2.
 
 # 78. /Monitoring/InstanceStatisticsRetentionYear
 
 <br />
+
+
 
 * a.Action: When the key is defined and has a value, its value specifies the retention period, in yers, of Instance Statistics (these are the records in the [Sys_Instance_Statistics](https://docs.erp.net/model/tables/Sys_Instance_Statistics.html) table). The retention period starts from the date set in  [Sys_Instance_Statistics.statistic_date](https://docs.erp.net/model/tables/Sys_Instance_Statistics.html#statistic_date) field. When the key is not defined or has no value, the retention period is set to 1 year by default.\
   If the [J102116 Delete old Instance Statistics](https://docs.erp.net/tech/advanced/jobs/J38417.html) job is configured and active - the instant statistics, whose retention period has expired, will be deleted.
